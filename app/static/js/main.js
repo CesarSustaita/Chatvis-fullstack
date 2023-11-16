@@ -237,6 +237,27 @@ reader.addEventListener('loadend', function (e) {
 				}, ((i - 1) < 100 ? 75 : Math.max(5, 75 - ((i - 1) - 100))));
 			}
 
+			let msg = {
+				message: messages[i]
+			};
+
+			fetch('/classify',  {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(msg)
+			})
+			.then(response => response.json())
+			.then(data => {
+				console.log('Success');
+				console.log('msg: ', msg);
+				console.log('response: ', data);
+			})
+			.catch((error) => {
+				console.error('Error:', error);
+			});
+
 			if (++i < contacts.length) update(i);
 		}, (i < 100 ? 75 : Math.max(5, 75 - (i - 100))));
 	})(0);
