@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Analizador de Chats de WhatsApp</title>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <!-- Estilos gráficas -->
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  <!-- Dependencias -->
+  <!-- * D3: https://github.com/d3/d3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  <!-- * WhatsApp Chat Parser: https://github.com/Pustur/whatsapp-chat-parser -->
+  <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser/dist/whatsapp-chat-parser.min.js"></script>
+  <!-- * Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+  <!-- * jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- * Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- https://github.com/ghophp/bootstrap-popover-move -->
+  <script src="/static/js/bootstrap.tooltip.js"></script>
+  <script src="/static/js/bootstrap.popover.js"></script>
+  <!-- Extras -->
+  <script src="/static/js/d3.layout.chord.sort.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- Acceder a credenciales de AWS -->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.1121.0/aws-sdk.min.js"></script> -->
+</head>
+
+<body style="background-color: #1dcaff21;">
+  <div class="title">Analizador de Chats de WhatsApp</div>
+  <div id="tiempo"
+    style="position: fixed; bottom: 20px; right: 50px; font-size: 50px; border: 2px solid black; padding: 15px; z-index: 1000">
+  </div>
+  <hr>
+  <div class="row" id="tabla">
+    <div class="mx-auto bg-white rounded shadow">
+      <div class="table-responsive texts">
+        <table cellspacing="0" cellpadding="0" class="table table-fixed">
+          <thead>
+            <tr>
+              <th style="width:10%;" scope="col">ID</th>
+              <th style="width:90%;" scope="col">Nombre/Teléfono</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="chart" style="display: none;"></div>
+    <div id="chat" class="container" style="display: none; background-image: url(./fondo.jpg);"></div>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="bar-chart" style="display: none;"></canvas>
+  </div>
+  <hr style="display: none;">
+  <h2 class="texts">Aplicación</h2>
+  <div class="explanation texts" style="text-align: center; ">
+    <label id="boton" for="whatsChat"
+      style="width: 300px; border-radius: 5px; border: none; background-color: #4ab969;color: white;">Iniciar</label>
+    <input style="display: none;" type="file" id="whatsChat">
+  </div>
+  <br>
+  <div class="explanation texts" style="text-align: center;">
+    <label for="whatsChatSinAnimaciones"
+      style="width: 300px; border-radius: 5px;border: none; background-color: #4ab969;color: white;">Iniciar (versión
+      sin animaciones)</label>
+    <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
+  </div>
+  <div class="explanation texts">
+    <br>
+    * Antes de iniciar, se le mostrará un diálogo de selección de archivo para que cargue el archivo exportado por
+    WhatsApp
+    <br> <br>
+    ** Para chats con 12 o más contactos se ocultará la simulación del chat, se ampliará el diagrama y en vez de mostrar
+    el nombre de los contactos se usará un ID para facilitar la visualización.
+    <br>En la esquina superior izquierda se habilitará una tabla que indica que ID le corresponde a cada contacto.
+  </div>
+  <hr>
+  <h2 class="texts">Ayuda</h2>
+  <div class="explanation texts" style="text-align: center;">
+    <br>
+    <span type="file" id="exportarArchivo"
+      style="width: 300px; border-radius: 5px; border: none; background-color: #4ab969;">
+      <a style="color:white;" href="https://faq.whatsapp.com/es/android/23756533/" target="_blank">
+        Link: Cómo exportar un chat de WhatsApp
+      </a>
+    </span>
+    <br> <br>
+  </div>
+  <hr>
+  <div class="credit texts">Basado en el trabajo de <a href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2">Nadieh
+      Bremer</a> | <a href="http://www.visualcinnamon.com/">VisualCinnamon.com</a></div>
+  <div class="notes texts">
+    Bibliotecas usadas:
+    <ul>
+      <li><a href="https://jquery.com/">jQuery</a></li>
+      <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+      <li><a href="https://github.com/Pustur/whatsapp-chat-parser">WhatsApp Chat Parser</a></li>
+      <li><a href="https://d3js.org/">D3.js</a></li>
+      <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+    </ul>
+  </div>
+
+  <script src="/static/js/chordDiagram.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1883 @@
+[22/03/19 3:09:52] +52 1 444 174 3562: <attached: 00000691-PHOTO-2019-03-22-03-09-
+52.jpg>
+[22/03/19 3:12:26] +52 1 444 828 5391: Enterado, cubierto con Pip/Taz, sospecha de foco neumonico intrahospitalario
+[22/03/19 8:13:02] +52 1 444 315 3292: <attached: 00000693-PHOTO-2019-03-22-08-13-
+02.jpg>
+[22/03/19 8:13:33] +52 1 444 315 3292: <attached: 00000694-PHOTO-2019-03-22-08-13-
+33.jpg>
+[22/03/19 8:13:38] +52 1 444 315 3292: Buen día
+[22/03/19 8:18:29] +52 1 614 190 9354: Enterados gracias. Paciente con vancomicina
+[23/03/19 13:02:26] +52 1 444 169 7469: Buenas tardes hemocultivo positivo 
+[23/03/19 13:02:46] +52 1 444 169 7469: HD 87.27
+[23/03/19 13:40:40] +52 1 444 335 4399: Enterados, ya cubierta
+[24/03/19 14:46:35] +52 1 444 541 8919: Registro : 530471
+[24/03/19 15:18:38] +52 1 444 426 9240: Enterados, paciente que solicitó su alta voluntaria
+[24/03/19 20:17:19] Dr Araújo: Y alguien de guardia puede pedir el número de teléfono del paciente en trabajo Social e informar por teléfono que tiene un cultivo en sangre positivo ?
+[24/03/19 20:29:10] +52 1 444 176 8601: Ok Dr deje investigo...
+[24/03/19 20:32:13] +52 1 444 426 9240: Iban a ir a un hospital particular doctor, pero si, no está demás avisarles
+[24/03/19 20:35:30] Dr Araújo: Gracias
+[24/03/19 22:33:42] +52 1 444 174 3562: Registro 530465
+[24/03/19 22:34:09] +52 1 444 174 3562: HD 24.26 hrs
+[24/03/19 23:58:37] +52 1 444 284 4819: Enterados.. gracias
+[25/03/19 12:56:37] +52 1 444 315 3292: Buena tarde
+[25/03/19 12:57:01] +52 1 444 315 3292: <attached: 00000711-PHOTO-2019-03-25-12-57-
+01.jpg>
+[25/03/19 13:06:01] +52 1 444 119 8070: @5214442844819 @5212288352671
+[25/03/19 13:07:15] Dr Araújo: Retirarían catéteres ?
+[25/03/19 13:07:45] Dr Araújo: Ya lleva hospitalizado varias semanas , considerar enterococcus resistente
+[25/03/19 13:08:00] Dr Araújo: Y obvio el aislamiento porfavor
+[25/03/19 13:17:06] +52 1 444 315 3292: <attached: 00000716-PHOTO-2019-03-25-13-17-
+06.jpg>
+[27/03/19 10:31:33] +52 1 444 315 3292: <attached: 00000722-PHOTO-2019-03-27-10-31-
+33.jpg>
+[27/03/19 10:33:15] +52 1 228 835 2671: Enterados
+[27/03/19 10:33:40] +52 1 444 315 3292: <attached: 00000724-PHOTO-2019-03-27-10-33-
+40.jpg>
+[27/03/19 10:35:55] +52 1 444 315 3292: <attached: 00000725-PHOTO-2019-03-27-10-35-
+55.jpg>
+[27/03/19 10:36:17] +52 1 444 315 3292: <attached: 00000726-PHOTO-2019-03-27-10-36-
+17.jpg>
+[27/03/19 10:39:13] +52 1 444 315 3292: <attached: 00000727-PHOTO-2019-03-27-10-39-
+13.jpg>
+[27/03/19 10:40:26] +52 1 444 315 3292: 2do Hemocultivo periferico derecho pisitivo del paciente Andrés###
+[27/03/19 10:40:44] +52 1 444 315 3292: *Positivo
+[27/03/19 10:41:37] +52 1 444 176 8601: Ya falleció, gracias!
+[27/03/19 11:07:23] +52 1 444 315 3292: <attached: 00000731-PHOTO-2019-03-27-11-07-
+23.jpg>
+[27/03/19 11:32:34] +52 1 444 315 3292: <attached: 00000732-PHOTO-2019-03-27-11-32-
+34.jpg>
+[27/03/19 12:14:12] +52 1 444 199 9101: Enterados. Se avisa a nefro
+[28/03/19 1:38:49] +52 1 444 110 7186: <attached: 00000734-PHOTO-2019-03-28-01-38-
+49.jpg>
+[28/03/19 4:17:55] +52 1 444 110 7186: <attached: 00000735-PHOTO-2019-03-28-04-17-
+55.jpg>
+[28/03/19 6:11:24] +52 1 444 199 9101: Enterados, gracias
+[28/03/19 6:31:56] +52 1 444 110 7186: Gracias
+[28/03/19 9:15:00] +52 1 444 426 9240: Enterados
+[28/03/19 9:28:26] +52 1 444 315 3292: Buen día
+[28/03/19 13:51:38] +52 1 444 315 3292: <attached: 00000743-PHOTO-2019-03-28-13-51-
+38.jpg>
+[28/03/19 13:55:37] +52 1 444 426 9240: Enterado, ya cubierto, gracias
+[29/03/19 9:22:52] +52 1 444 315 3292: Buen día!
+[29/03/19 9:23:12] +52 1 444 315 3292: <attached: 00000746-PHOTO-2019-03-29-09-23-
+12.jpg>
+[29/03/19 9:34:44] +52 1 444 426 9240: Enterado! Gracias Andres
+[29/03/19 20:42:55] +52 1 444 190 0770: <attached: 00000750-PHOTO-2019-03-29-20-42-
+55.jpg>
+[29/03/19 20:43:55] +52 1 444 311 1941: @5214444272543
+[29/03/19 20:44:20] +52 1 444 311 1941: Tiene cefepime como tratamiento
+[29/03/19 20:44:26] +52 1 444 311 1941: Gracias
+[29/03/19 20:46:50] +52 1 444 130 5108: Enterados
+[30/03/19 0:43:41] +52 1 444 110 7186: <attached: 00000755-PHOTO-2019-03-30-00-43-
+41.jpg>
+[30/03/19 0:43:48] +52 1 444 110 7186: Buenas noches
+[30/03/19 1:11:57] +52 1 444 110 8567: Buenas noches
+[30/03/19 1:12:01] +52 1 444 110 8567: Falleció
+[30/03/19 1:13:21] +52 1 444 110 7186: Gracias
+[30/03/19 4:58:19] +52 1 444 110 7186: Buen día
+Ma. Del###
+RH 333776	URA
+Hemocultivo positivo catéter central
+15.75 HD
+Gram:cgp sugestivo de Staphylococcus
+[30/03/19 6:10:02] +52 1 444 130 5108: Buen día ! Falleció el día de ayer
+[30/03/19 7:04:28] +52 1 444 110 7186: Gracias
+[01/04/19 17:26:33] +52 1 444 134 3534: <attached: 00000770-PHOTO-2019-04-01-17-26-
+33.jpg>
+[01/04/19 17:27:16] +52 1 444 311 1941: @5212224021992
+[01/04/19 17:31:34] +52 1 222 402 1992: Gracias Dinora
+[01/04/19 17:31:38] +52 1 222 402 1992: Ya está cubierto
+[01/04/19 17:32:21] +52 1 444 311 1941:#
+[02/04/19 11:08:34] Dr Arturo added +52 1 444 189 9103
+[03/04/19 6:36:26] +52 1 444 174 3562: Ho###Cunas 1032716Folio 16080Periferico brazo derecho Gram bgnHd 7.68hrs
+[03/04/19 6:38:15] +52 1 444 174 7867: GraciasIngresó a UCIN 10 ayer Ya tiene ma eso
+[03/04/19 6:38:23] +52 1 444 174 7867: *manejo
+[05/04/19 6:43:38] +52 1 444 174 3562: Ho###
+Cunas 1032859
+Folio 16905 Periférico izquierdo Hd 12.02 hrs
+Gram: cgp
+Sugest. diplococos
+[05/04/19 6:47:25] +52 1 444 506 6404: Gracias
+[05/04/19 19:59:26] +52 1 444 184 4453: Hola buenas noches !
+[05/04/19 20:01:33] +52 1 444 184 4453: Joel###
+Folio:17292
+Sala: cirugía mujeres Central Lumen distal HD 12.02 hrs
+Gran: bgn, levaduras.
+[05/04/19 20:01:51] +52 1 444 184 4453: Gram*
+[05/04/19 20:03:24] +52 1 444 548 1522: Gracias, se notifico al residente de medicina interna de guardia
+[05/04/19 20:04:18] +52 1 444 184 4453: Gracias
+[05/04/19 21:52:44] Dr Arturo: Perfecto gracias
+[05/04/19 22:39:58] +52 1 444 110 7186: <attached: 00000792-PHOTO-2019-04-05-22-39-
+58.jpg>
+[05/04/19 22:39:59] +52 1 444 110 7186: Buenas noches
+[05/04/19 22:41:48] +52 1 622 116 5975: Gracias. Hoy se agregó meropenem
+[05/04/19 22:47:03] +52 1 444 110 7186: Gracias
+[06/04/19 1:25:16] +52 1 444 110 7186: <attached: 00000796-PHOTO-2019-04-06-01-25-
+16.jpg>
+[06/04/19 10:47:43] +52 1 444 541 8919: Registro 528188
+Folio :. 17357 Reynos### Urgencias
+Hemocultivo periférico positivo Gram : CGP en cadena
+HD : 11:53 HRS.
+[06/04/19 11:06:42] +52 1 444 110 8567: Enterados
+[06/04/19 11:56:52] +52 1 444 541 8919: Registro 1030309
+Folio 17293 CIM Martínez###
+Hemocultivo periférico positivo Gram : BGN HD : 21:09
+[06/04/19 12:48:24] +52 1 444 199 9101: Enterados
+[09/04/19 0:26:14] +52 1 444 110 7186: <attached: 00000806-PHOTO-2019-04-09-00-26-
+14.jpg>
+[09/04/19 13:43:16] +52 1 444 140 2815: Buenas tardes
+[09/04/19 13:43:35] +52 1 444 140 2815: <attached: 00000808-PHOTO-2019-04-09-13-43-
+35.jpg>
+[09/04/19 13:49:21] +52 1 444 426 9240: Enterados, se avisa a UTI
+[09/04/19 13:49:35] +52 1 444 311 1941: @5214442606967
+[09/04/19 13:51:15] +52 1 444 140 2815: Gracias!
+[09/04/19 14:38:16] +52 1 444 260 6967: Gracias enterados
+[10/04/19 0:22:29] +52 1 444 174 3562: <attached: 00000813-PHOTO-2019-04-10-00-22-
+29.jpg>
+[10/04/19 0:42:17] +52 1 444 179 7341: Viste el cultivo del 10?
+[10/04/19 0:43:13] +52 1 444 176 8601: Cubierto con vancomicina
+[10/04/19 17:10:05] +52 1 444 828 1616: <attached: 00000817-Graciela Silos.vcf>
+[10/04/19 17:10:13] +52 1 444 416 1285: Gracias!
+[11/04/19 21:30:59] +52 1 444 105 8978: <attached: 00000819-PHOTO-2019-04-11-21-30-
+59.jpg>
+[11/04/19 21:45:41] +52 1 444 199 9101: Enterados, gracias
+[14/04/19 6:33:13] +52 1 444 169 7469: Buenos días
+Henocultivo brazo derecho positivo Folio 20055
+Juan
+8 años URP
+Registro 529927 Gram bgn
+[14/04/19 11:43:10] +52 1 444 541 8919: Registro : 531478
+Folio : 19973 Coronado###
+Hemocultivo periférico positivo
+[14/04/19 11:47:23] +52 1 444 219 1321: Juan### en aislados dr
+[14/04/19 11:47:40] +52 1 444 541 8919: Registro : 1039605
+Folio : 20026 Chávez###  UCN Vial de LCR positivo
+Gram CGP Sugestivo a Estafilococos HD 18:09
+[14/04/19 11:48:23] +52 1 444 541 8919: Hola está en UCN
+[14/04/19 11:57:44] +52 1 444 174 7867: Enterados, gracias
+[14/04/19 11:58:03] +52 1 444 174 7867: Si, enterados también Gracias
+[15/04/19 2:34:14] +52 1 444 429 1684: Registro : 1028277
+Folio : 20160 Morales###
+Hemocultivo periférico izquierdo positivo Gram : CGP Sugestivo a Estafilococos
+HD : 19.25 h
+[15/04/19 2:34:58] +52 1 444 429 1684: Px de Ginecología
+[15/04/19 6:43:26] +52 1 444 174 3562: <attached: 00000833-PHOTO-2019-04-15-06-43-
+26.jpg>
+[15/04/19 6:45:03] +52 1 444 548 1522: Enterado, en un momento más confirmo la cobertura
+[15/04/19 9:09:48] +52 1 444 238 7962: <attached: 00000835-PHOTO-2019-04-15-09-09-
+48.jpg>
+[15/04/19 9:18:13] +52 1 444 130 5108: Enterados gracias
+[15/04/19 9:18:36] +52 1 444 130 5108: Ya cubierto con ceftaZidima vanco
+[15/04/19 9:43:56] +52 1 55 5103 7632: Enterado. Confirmo cobertura
+[15/04/19 10:17:21] +52 1 444 238 7962: <attached: 00000839-PHOTO-2019-04-15-10-17-
+21.jpg>
+[15/04/19 10:38:45] +52 1 444 165 9553: Enterado
+[15/04/19 10:40:48] +52 1 444 238 7962: <attached: 00000841-PHOTO-2019-04-15-10-40-
+48.jpg>
+[15/04/19 10:45:35] +52 1 492 125 4555: Waiting for this message. This may take a while.
+[15/04/19 12:07:43] +52 1 444 105 8978: <attached: 00000843-PHOTO-2019-04-15-12-07-
+43.jpg>
+[15/04/19 12:08:55] +52 1 55 5103 7632: Enterado ya cubierto con Cefta banco
+[15/04/19 12:09:00] +52 1 55 5103 7632: Vanco*
+[16/04/19 0:16:42] +52 1 444 110 7186: <attached: 00000846-PHOTO-2019-04-16-00-16-
+42.jpg>
+[16/04/19 0:20:49] +52 1 444 110 7186: Buen día
+[16/04/19 0:21:36] +52 1 492 143 7076: Enterado, gracias
+[16/04/19 0:26:29] +52 1 444 110 7186: Gracias
+[17/04/19 22:50:06] +52 1 444 110 7186: <attached: 00000855-PHOTO-2019-04-17-22-50-
+06.jpg>
+[17/04/19 22:50:11] +52 1 444 110 7186: Buenas noches
+[18/04/19 1:56:33] +52 1 444 110 7186: Buen día
+María###
+79 años RH 545330
+Encefalopatía Hepática
+Hemocultivo Positivo periférico derecho HD 13.12
+Gram bgn
+[18/04/19 2:18:54] +52 1 444 284 4819: Enterados... defunción.
+[18/04/19 3:01:32] +52 1 444 110 7186: Gracias
+[18/04/19 3:17:55] +52 1 444 110 7186: Buen día
+Alma###
+45 años RH 982251
+Colitis
+Hemocultivo Positivo CVC HD 13.22
+Gram bgn
+[18/04/19 3:22:24] +52 1 834 147 8032: @5214442844819 enteradas
+[18/04/19 3:34:57] +52 1 444 110 7186: Gracias
+[21/04/19 17:22:41] +52 1 444 541 8919: Registro 1030250
+Folio 22078
+Martínez Ramírez Blas MEH
+Hemocultivo periférico positivo Gram CGP Sugestivo a Estafilococos.
+HD 16:06 HRS
+[21/04/19 17:23:20] +52 1 55 5103 7632: Gracias. Hoy falleció el paciente
+[21/04/19 17:26:33] +52 1 444 260 6967:
+[21/04/19 18:23:50] +52 1 444 426 9240:
+[22/04/19 9:57:01] Dr Arturo added +52 1 444 430 8981
+[22/04/19 11:11:45] +52 1 444 498 1995: <attached: 00000883-PHOTO-2019-04-22-11-11-
+45.jpg>
+[22/04/19 11:16:19] +52 1 444 336 9449: Enterados gracias
+[23/04/19 18:28:35] +52 1 444 169 7469: <attached: 00000886-PHOTO-2019-04-23-18-28-
+35.jpg>
+[23/04/19 19:20:04] +52 1 444 174 7867: Enterados Ya tiene manejo con vancomicina Muchas gracias
+[24/04/19 14:56:02] +52 1 444 238 7962: <attached: 00000892-PHOTO-2019-04-24-14-56-
+02.jpg>
+[24/04/19 14:56:25] +52 1 444 238 7962: <attached: 00000893-PHOTO-2019-04-24-14-56-
+25.jpg>
+[24/04/19 14:58:05] +52 1 834 147 8032: Enterada,,,,,, @5214443369449
+[24/04/19 14:59:38] +52 1 55 1808 8899: Se reiniciará Vanco
+[24/04/19 15:00:05] +52 1 55 1808 8899: Se va a iniciar Vanco Gracias
+[24/04/19 15:31:29] +52 1 444 105 7996: Enterados
+[24/04/19 15:59:19] +52 1 444 336 9449: Enterados gracias
+[24/04/19 19:00:25] +52 1 444 105 8978: <attached: 00000899-PHOTO-2019-04-24-19-00-
+25.jpg>
+[24/04/19 19:01:10] +52 1 444 260 6967: Enterados gracias
+[24/04/19 19:01:14] +52 1 444 260 6967: Ya inició tratamiento
+[25/04/19 0:02:30] +52 1 444 110 7186: <attached: 00000902-PHOTO-2019-04-25-00-02-
+30.jpg>
+[25/04/19 6:40:01] +52 1 444 426 9240: Enterados
+[25/04/19 7:07:54] +52 1 444 110 7186: Gracias
+[25/04/19 15:09:28] +52 1 444 140 2815: <attached: 00000906-PHOTO-2019-04-25-15-09-
+28.jpg>
+[25/04/19 15:17:28] +52 1 444 201 0087: Enterados, muchas gracias.. Ya en manejo con DOTBAL
+[25/04/19 23:05:15] +52 1 444 174 3562: <attached: 00000908-PHOTO-2019-04-25-23-05-
+15.jpg>
+[26/04/19 4:07:06] +52 1 222 402 1992: Ya con tratamiento con vancomicina gracias
+[26/04/19 16:47:47] +52 1 444 315 3292: <attached: 00000910-PHOTO-2019-04-26-16-47-
+47.jpg>
+[26/04/19 23:26:28] +52 1 444 110 7186: <attached: 00000911-PHOTO-2019-04-26-23-26-
+28.jpg>
+[26/04/19 23:27:11] +52 1 834 147 8032: Buenas noches, enterada!
+[29/04/19 2:12:14] +52 1 444 174 3562: Buenas noches
+Sánchez###
+Registro 62402 urg adulto Folio 24947 brazo derecho Hd 9.20 hrs
+Folio 24948 brazo izquierdo Hd 9.36 hrs
+Gram cgp sugest estafilococo En los dos hemocultivos
+[29/04/19 2:15:08] +52 1 492 164 2822 left
+[29/04/19 3:03:04] +52 1 444 426 9240: Enterado gracias, cubierto con vancomicina
+[29/04/19 12:32:17] +52 1 444 238 7962: <attached: 00000920-PHOTO-2019-04-29-12-32-
+17.jpg>
+[29/04/19 12:34:10] +52 1 444 239 4352 left
+[29/04/19 13:05:53] +52 1 622 116 5975: Enterados. Se inicia manejo
+[29/04/19 13:05:55] +52 1 622 116 5975: Gracias
+[29/04/19 18:29:43] +52 1 444 429 1684: <attached: 00000924-PHOTO-2019-04-29-18-29-
+43.jpg>
+[29/04/19 18:32:48] +52 1 834 147 8032: @5214442844819 enteradas
+[29/04/19 18:39:35] +52 1 444 284 4819: Cubierto con vancomicina
+[30/04/19 12:17:39] +52 1 444 185 3087: This message was deleted.
+[30/04/19 12:18:06] +52 1 444 185 3087: <attached: 00000928-PHOTO-2019-04-30-12-18-
+06.jpg>
+[30/04/19 12:18:17] +52 1 444 185 3087: <attached: 00000929-PHOTO-2019-04-30-12-18-
+17.jpg>
+[30/04/19 13:10:58] +52 1 444 498 1995: <attached: 00000930-PHOTO-2019-04-30-13-10-
+58.jpg>
+[30/04/19 13:12:32] +52 1 444 828 1616:
+[30/04/19 13:12:33] +52 1 444 828 1616: En 58 horas!!!!
+[30/04/19 13:12:42] +52 1 444 828 1616: This message was deleted.
+[30/04/19 13:13:03] +52 1 444 219 1321: Enterados, gracias
+[30/04/19 14:07:37] +52 1 444 426 9240: Enterados, paciente en seguimiento ambulatorio, ya se localizó a paciente para ajustar tratamiento acorde a infectologia
+[30/04/19 17:24:43] +52 1 444 429 1684: <attached: 00000936-PHOTO-2019-04-30-17-24-
+43.jpg>
+[30/04/19 17:51:57] +52 1 444 429 1684: <attached: 00000937-PHOTO-2019-04-30-17-51-
+57.jpg>
+[30/04/19 17:56:08] +52 1 444 548 1522: Enterado se notificará al residente de guardia
+[30/04/19 18:47:05] +52 1 444 828 1616: Cuidemos (y mucho) los antimicrobianos que tenemos. La pan resistencia (regreso de la era pre antibiótica) esta a la vuelta de la esquina.☹
+[30/04/19 18:47:17] +52 1 444 828 1616: <attached: 00000940-PHOTO-2019-04-30-18-47-
+17.jpg>
+[30/04/19 19:29:05] +52 1 444 110 2282: <attached: 00000941-PHOTO-2019-04-30-19-29-
+05.jpg>
+[30/04/19 20:08:24] +52 1 444 130 5108: Enterados cubierto con vanco
+[01/05/19 14:19:21] +52 1 444 541 8919: Registro 925302
+Folio 25915 Luna### CIM D 6
+Vial de LCR positivo
+Gram : CGP Sugestivo a Estafilococos. HD 20:25 HRS.
+[01/05/19 14:23:50] +52 1 444 858 7498: Enterados
+[02/05/19 22:06:02] +52 1 444 429 1684: <attached: 00000946-PHOTO-2019-05-02-22-06-
+02.jpg>
+[02/05/19 22:08:29] +52 1 492 125 4555: Fallecio	el 1 de Mayo
+[02/05/19 22:09:44] +52 1 444 429 1684: Registro 572325
+Folio 026284 Sánchez### MEH C-4
+Hemocultivo Positivo
+Gram : CGP Sugestivo a Estafilococo HD: 17.10 h
+[02/05/19 22:13:54] +52 1 444 305 0708: Enterados ya cubierto con vanco
+[03/05/19 2:25:17] +52 1 444 174 3562: <attached: 00000950-PHOTO-2019-05-03-02-25-
+17.jpg>
+[03/05/19 9:06:14] +52 1 444 829 1903: Enterados gracias!
+[03/05/19 20:46:25] +52 1 444 429 1684: <attached: 00000952-PHOTO-2019-05-03-20-46-
+25.jpg>
+[03/05/19 21:01:45] +52 1 55 5103 7632: Enterados con @5214443050708, ya con
+cobertura desde el lunes gracias!
+[03/05/19 22:05:54] +52 1 444 110 7186: <attached: 00000954-PHOTO-2019-05-03-22-05-
+54.jpg>
+[03/05/19 23:17:22] +52 1 444 110 7186: <attached: 00000955-PHOTO-2019-05-03-23-17-
+22.jpg>
+[03/05/19 23:22:50] +52 1 444 174 7867: Enterados, gracias
+[03/05/19 23:33:52] +52 1 444 110 7186: Gracias
+[03/05/19 23:38:54] +52 1 622 116 5975: Enterado. Ahorita con pip taz
+[03/05/19 23:41:30] +52 1 444 110 7186: Gracias
+[04/05/19 0:57:24] +52 1 444 110 7186: Buen día
+[04/05/19 5:05:15] +52 1 444 305 0708: Enterado
+[04/05/19 5:05:30] +52 1 444 110 7186: Gracias
+[04/05/19 11:55:20] +52 1 444 541 8919: Registro 532201
+Folio 26206 Vázquez### Hemocultivo positivo
+Gram  : CGP  Sugestivo a Estafilococos	HD 61:28 HRS [05/05/19 10:38:08] Dr Araújo: Gracias
+[07/05/19 4:18:28] +52 1 444 189 9103: <attached: 00000968-PHOTO-2019-05-07-04-18-
+28.jpg>
+[07/05/19 5:52:06] +52 1 444 199 9101: Enterados. Gracias
+[07/05/19 10:25:01] +52 1 444 185 3087: This message was deleted.
+[07/05/19 10:25:46] +52 1 444 185 3087: <attached: 00000971-PHOTO-2019-05-07-10-25-
+46.jpg>
+[07/05/19 10:29:16] +52 1 444 130 5108: Enterados ya cubierta con mero vanco
+[07/05/19 19:57:54] +52 1 444 169 7469: <attached: 00000973-PHOTO-2019-05-07-19-57-
+54.jpg>
+[07/05/19 19:58:33] +52 1 444 336 9449: Enterados gracias
+[07/05/19 23:16:37] +52 1 444 174 3562: <attached: 00000975-PHOTO-2019-05-07-23-16-
+37.jpg>
+[07/05/19 23:17:27] +52 1 444 174 3562: <attached: 00000976-PHOTO-2019-05-07-23-17-
+27.jpg>
+[07/05/19 23:18:09] +52 1 444 336 9449: Enterados ya cubierta gracias
+[07/05/19 23:46:51] +52 1 444 219 1839: Enterados, ya cubierto. Gracias!
+[09/05/19 0:36:12] +52 1 444 110 7186: <attached: 00000979-PHOTO-2019-05-09-00-36-
+12.jpg>
+[09/05/19 0:41:18] +52 1 444 829 4934: Gracias, ya con manejo.
+[09/05/19 0:50:03] +52 1 444 110 7186: Gracias
+[11/05/19 11:06:06] +52 1 444 541 8919: Registro : 531799
+Folio : 29861 Almarez### Urgencias
+Hemocultivo periférico positivo Gram : BGN HD : 10:10 HRS
+[11/05/19 11:06:40] +52 1 444 336 9449: Enterados paciente ya cubierta
+[11/05/19 17:22:56] +52 1 444 541 8919: Registro :531749
+[11/05/19 17:23:47] +52 1 444 336 9449: Enterados gracias paciente ya cubierta
+[11/05/19 17:27:03] +52 1 444 541 8919: Registro ; 532862
+[11/05/19 17:31:02] +52 1 444 541 8919: Registro : 275797
+Folio : 29845
+Hernández Tristán Francisco Irad urgencias Hemocultivo positivo
+Gram : CGP Sugestivo a Estafilococos HD : 18:17 HRS
+[11/05/19 17:32:05] +52 1 444 305 0708: Ya cubierto Gracias.
+[11/05/19 17:55:56] +52 1 444 284 4819: Enterados, ya está cubierta.. gracias
+[12/05/19 1:22:27] +52 1 444 498 1995: <attached: 00000992-PHOTO-2019-05-12-01-22-
+27.jpg>
+[12/05/19 1:27:07] +52 1 444 498 1995: <attached: 00000993-PHOTO-2019-05-12-01-27-
+07.jpg>
+[12/05/19 1:29:06] +52 1 444 284 4819: Enterados.. ya cubierta
+[13/05/19 3:19:09] +52 1 444 174 3562: Hemocultivo periférico brazo derecho Hernández####
+Registro 219493 urg adulto Folio 30259
+Gram. cgp suges estreptococo	Hd 7.34hrs
+[13/05/19 5:48:42] +52 1 444 130 5108: Enterados ya cubierto
+[14/05/19 20:01:08] +52 1 444 541 8919: Registro 1034187
+Folio 30739 Gaytan### UCN
+Hemocultivo periférico positivo
+Gram : CGP Sugestivo a estafilococos, Levaduras HD : 22:34 HRS
+[14/05/19 20:18:48] +52 1 444 105 7996: Enterada
+[15/05/19 0:28:12] +52 1 444 174 3562: Registro 487052
+Folio 30876 Medicina mujeres Ramírez####
+Hemocultivo periférico derecho Gram cgp sugest estafilococo Hd 15.10 hrs
+[15/05/19 0:31:15] +52 1 444 284 4819: Enterados
+[15/05/19 0:31:19] +52 1 444 199 9101: Enterados, gracias. @5214442844819
+[15/05/19 0:31:37] +52 1 444 284 4819: Gracias
+[15/05/19 15:24:25] +52 1 444 185 3087: <attached: 00001004-PHOTO-2019-05-15-15-24-
+25.jpg>
+[15/05/19 15:24:39] +52 1 444 185 3087: <attached: 00001005-PHOTO-2019-05-15-15-24-
+39.jpg>
+[15/05/19 15:25:02] +52 1 444 185 3087: <attached: 00001006-PHOTO-2019-05-15-15-25-
+02.jpg>
+[15/05/19 15:25:41] +52 1 618 103 3611: Enterado
+[15/05/19 15:47:23] +52 1 444 199 9101: Enterados. Gracias :)
+[16/05/19 5:05:56] +52 1 444 110 7186: <attached: 00001009-PHOTO-2019-05-16-05-05-
+56.jpg>
+[16/05/19 5:34:46] +52 1 449 394 8960: Enterados
+[16/05/19 5:37:21] +52 1 444 110 7186: Gracias
+[16/05/19 14:17:53] +52 1 444 185 3087: <attached: 00001012-PHOTO-2019-05-16-14-17-
+53.jpg>
+[16/05/19 15:46:27] +52 1 444 336 9449: Enterados ya está cubierto gracias
+[16/05/19 21:24:44] +52 1 444 105 9196: <attached: 00001014-PHOTO-2019-05-16-21-24-
+44.jpg>
+[16/05/19 21:29:11] +52 1 444 199 9101: Enterados. Gracias.
+[17/05/19 3:51:55] +52 1 444 174 3562: Hemocultivo periférico brazo derecho
+Folio 32059
+Registro 533347 Sarrion####
+Urg adulto Gram bgn Hd 11.38
+[17/05/19 3:58:24] +52 1 449 394 8960: Enterado
+[18/05/19 13:12:22] +52 1 444 541 8919: Registro 1034036
+Folio 32052
+Montejano Navarro Antonio. CM P 4
+Hemocultivo Periférico positivo Gram : CGP Sugestivo a Estafilococos HD 42:37 HRS
+[18/05/19 14:26:37] +52 1 444 858 7498: Enterados . Se avisa a residente de guardia
+[18/05/19 16:49:56] +52 1 444 541 8919: Registro 239650
+[18/05/19 23:41:34] +52 1 444 105 8978: <attached: 00001021-PHOTO-2019-05-18-23-41-
+34.jpg>
+[18/05/19 23:45:29] +52 1 444 858 7498: Falleció en la madrugada
+[18/05/19 23:45:32] +52 1 444 858 7498: Gracias
+[19/05/19 12:21:50] +52 1 485 102 3952: Registro 533347
+Folio 32060 Sarrion##### Urgencias adulto
+Hemocultivo positivo gram bgn HD 67:11 hrs
+[19/05/19 12:23:58] +52 1 449 394 8960: Gracias, paciente falleció ayer
+[19/05/19 19:36:37] +52 1 485 102 3952: This message was deleted.
+[19/05/19 19:51:03] +52 1 485 102 3952: Registro 686182
+[19/05/19 20:01:01] +52 1 444 260 1805: Enterados! Dx de pancreatitis grave, Neumonia por broncoaspiración y choque septico. Postoperada de necrosectomía y drenaje de absceso abdominal. En cobertura con mero y vanco... se agrega fluconazol
+[19/05/19 21:43:57] +52 1 444 260 1805: This message was deleted.
+[19/05/19 21:44:05] +52 1 444 260 1805: This message was deleted.
+[19/05/19 23:46:30] +52 1 444 140 3943: <attached: 00001031-PHOTO-2019-05-19-23-46-
+30.jpg>
+[20/05/19 5:31:04] +52 1 444 305 0708: Buenos dias. Enterado
+[20/05/19 15:17:20] +52 1 444 185 3087: <attached: 00001033-PHOTO-2019-05-20-15-17-
+20.jpg>
+[20/05/19 15:20:35] +52 1 444 336 9449: Enterados gracias
+[23/05/19 13:13:15] +52 1 444 238 7962: <attached: 00001043-PHOTO-2019-05-23-13-13-
+15.jpg>
+[25/05/19 5:40:59] +52 1 444 110 7186: <attached: 00001044-PHOTO-2019-05-25-05-40-
+59.jpg>
+[25/05/19 6:19:31] +52 1 444 856 2543: Enterados gracias
+[25/05/19 6:21:34] +52 1 444 110 7186: Gracias
+[25/05/19 6:26:56] +52 1 444 110 7186: <attached: 00001047-PHOTO-2019-05-25-06-26-
+56.jpg>
+[25/05/19 7:57:25] +52 1 444 858 7498: Enterados
+[25/05/19 7:57:36] +52 1 444 858 7498: Se comenta con residente de guardia [25/05/19 7:59:16] Dr Araújo: 🤔🤔🤔🤔hay que checar
+[25/05/19 7:59:26] Dr Araújo: Como que están saliendo muchos staphy [25/05/19 8:04:03] +52 1 444 379 4312: Falleció el día de ayer. Gracias.
+[25/05/19 8:10:44] +52 1 444 110 7186: Gracias
+[25/05/19 16:19:18] +52 1 444 541 8919: Registro : 529959
+Folio : 35199 Vega#### MEH P - 6
+Vial de LCR positivo
+Gram : CGP Sugestivo a Estafilococos.
+HD : 24:21 HRS
+[25/05/19 16:22:59] +52 1 444 541 8919: Registro 1074787
+Folio 35254 Bautista###. Aislados P 3
+Hemocultivo Central positivo
+Gram : CGP Sugestivo a Estafilococos HD 17:04 HRS.
+[25/05/19 16:23:45] Dr Araújo: Mucho staphy
+[25/05/19 16:24:05] +52 1 449 394 8960: Enterados, se comenta con residente de guardia
+[25/05/19 16:24:44] +52 1 444 219 1321: Enterados
+[25/05/19 16:27:43] +52 1 444 541 8919: Registro 1074787
+
+
+Folio 35259
+Aislados P 3
+Hemocultivo Centralp positivo
+Gram : CGP Sugestivo a Estafilococos HD 17:54 HRS
+[25/05/19 16:29:01] +52 1 444 858 7498: Ella tiene diagnóstico de Tb pulmonar MDR , se envió LCR por sospecha de tb meningea
+[25/05/19 16:29:25] +52 1 444 858 7498: Citoquimico de LCR sin datos compatibles con infección bacteriana
+[25/05/19 16:30:12] +52 1 444 541 8919: Corrigiendo el folio 35354 es el periférico una disculpa.
+[25/05/19 16:49:29] +52 1 444 219 1321: Ok, enterados, gracias
+[26/05/19 1:16:57] +52 1 444 429 1684: Registro 533777
+Folio 035408 Leyva### MEH P-4
+Hemocultivo Periférico Positivo (Brazo Derecho) Gram: bgn
+HD: 9.72 h
+[26/05/19 1:17:56] +52 1 444 858 7498: Enterados
+[26/05/19 1:18:02] +52 1 444 858 7498: Ya cubierta
+[26/05/19 18:54:16] +52 1 444 541 8919: Registro 533839
+Folio 35473 Castillo### Urgencias Choque
+Hemocultivo periférico positivo
+Gram : CGP Sugestivo a Estafilococos HD 18 : 31 HRS
+[26/05/19 19:14:04] +52 1 444 201 0087: Enterados, muchas grcias
+[26/05/19 23:38:02] +52 1 444 140 3943:
+Registró 1036081
+Folio   35495 CxM
+Hemocultivo periférico brazo derecho Gram : CGP Sugestivo a Estafilococos HD 19:74HRS
+[26/05/19 23:40:01] +52 1 444 199 9101: Enterados. Gracias
+[29/05/19 10:45:29] +52 1 444 238 7962: <attached: 00001087-PHOTO-2019-05-29-10-45-
+29.jpg>
+[29/05/19 12:15:35] +52 1 444 426 9240: @5214442010087 @5214448587498
+[29/05/19 12:32:44] +52 1 444 858 7498: Enterado
+[29/05/19 12:32:49] +52 1 444 858 7498: Se comenta con servicio
+[29/05/19 13:00:41] +52 1 55 5103 7632: <attached: 00001091-PHOTO-2019-05-29-13-00-
+41.jpg>
+[29/05/19 13:02:22] Dr Araújo: -voy por el , Gracias
+[29/05/19 13:38:28] +52 1 444 238 7962: <attached: 00001093-PHOTO-2019-05-29-13-38-
+28.jpg>
+[29/05/19 13:40:35] Dr Araújo: Enterado gracias
+[30/05/19 13:17:33] +52 1 444 238 7962: <attached: 00001095-PHOTO-2019-05-30-13-17-
+33.jpg>
+[30/05/19 13:21:21] +52 1 444 426 9240: @5214442010087
+[30/05/19 13:29:40] +52 1 444 426 9240: @5214442010087
+[30/05/19 14:23:01] Dr Arturo added +52 1 444 837 6877
+[31/05/19 20:30:53] +52 1 444 134 4758: <attached: 00001099-PHOTO-2019-05-31-20-30-
+53.jpg>
+[31/05/19 20:32:23] +52 1 55 5103 7632: Enterado ya con manejo
+[31/05/19 20:33:58] +52 1 444 426 9240: Ella ya había tenido infección por clostridium hace unas semanas, chequen eso
+[31/05/19 20:35:31] +52 1 444 426 9240: Por eso les puede estar saliendo positiva @5215551037632
+[31/05/19 20:36:08] +52 1 222 402 1992: Está grave, está cubierta
+[31/05/19 20:36:08] +52 1 444 828 1616: Por favor. Implementación de lavado de manos obligatorio y aislamiento de contacto estricto. Limitar al máximo traslados e ingreso de personas a su cama.
+[31/05/19 20:37:04] Dr Arturo: Con que tratamiento se encuentra?? [31/05/19 20:37:18] +52 1 222 402 1992: Vanco vía oral, metro IV
+[31/05/19 20:50:12] +52 1 444 856 2543 left
+[31/05/19 22:32:38] +52 1 444 302 2516: <attached: 00001108-PHOTO-2019-05-31-22-32-
+38.jpg>
+[31/05/19 22:33:23] +52 1 33 1845 5424: Enterados se iniciará manejo [31/05/19 22:33:34] Dr Araújo: Ay nanita
+[31/05/19 22:33:40] Dr Araújo: Porfavor [31/05/19 22:33:49] Dr Araújo: Aislamientos [31/05/19 22:34:43] +52 1 444 302 2516: Gracias!!
+[01/06/19 9:36:59] +52 1 834 147 8032: Enterados
+[01/06/19 9:37:20] Dr Arturo: Se aísla esa sala por favor
+[01/06/19 9:37:37] +52 1 444 511 4007: Enterado Laboratorio clínico [01/06/19 9:37:53] Dr Arturo: Muchas gracias!!!
+[01/06/19 9:41:18] +52 1 444 119 8070: Ok enterados
+[01/06/19 9:46:15] +52 1 834 147 8032: Enterados
+[01/06/19 11:24:35] +52 1 444 541 8919: <attached: 00001131-PHOTO-2019-06-01-11-24-
+35.jpg>
+[01/06/19 11:28:44] Dr Arturo: Muchas gracias [01/06/19 11:30:03] +52 1 444 188 0748: Enterado
+[01/06/19 23:15:28] +52 1 444 140 3943: Buenas noches!!!
+Hemocultivo central positivo Edwin###
+Registró 986575
+Folio 37954 Lactantes C2 Gram : Bgn
+HD  9.00 Hrs
+[01/06/19 23:16:49] +52 1 444 829 4934: Enterados
+[02/06/19 6:28:54] +52 1 444 140 3943: <attached: 00001137-PHOTO-2019-06-02-06-28-
+54.jpg>
+[02/06/19 6:29:07] +52 1 444 140 3943: <attached: 00001138-PHOTO-2019-06-02-06-29-
+jpg>
+[02/06/19 6:29:08] +52 1 444 140 3943: <attached: 00001139-PHOTO-2019-06-02-06-29-
+jpg>
+[02/06/19 6:37:34] +52 1 834 147 8032: Enterados
+[02/06/19 7:29:46] +52 1 618 103 3611: Enterados gracias
+[02/06/19 13:05:02] +52 1 444 336 9449: Enterados se avisa a residente de guardia
+[02/06/19 16:06:43] Dr Arturo added +52 1 444 121 5364 and +52 1 444 370 0242
+[02/06/19 16:36:02] +52 1 444 541 8919: <attached: 00001145-PHOTO-2019-06-02-16-36-
+02.jpg>
+[02/06/19 16:56:56] Dr Araújo: Buenas tardes , Alguien puede confirmar si es paciente de neurocirugia y si ha recibido visitas de los mismos médicos ?
+[02/06/19 16:57:42] +52 1 444 829 4934: Estefania Doctor? [02/06/19 16:58:06] Dr Araújo: Si
+[02/06/19 16:58:20] Dr Araújo: O ha estado en quirófano recientemente ?
+[02/06/19 16:58:29] Dr Araújo: Última semana ?
+[02/06/19 16:58:30] +52 1 444 829 4934: Si es paciente de Neurocirugia y de Oncología
+[02/06/19 16:58:32] +52 1 444 829 4934: No
+[02/06/19 16:59:24] +52 1 444 829 4934: Su última vez en quirófano fue cuando se operó el 7 de mayo
+[03/06/19 9:43:11] +52 1 444 315 3292: Hola buen dia
+Benjamin### Campos MH P10 hemocultivo central lumen distal Gram: Levaduras HD: 63.43
+[03/06/19 9:43:36] +52 1 444 315 3292: <attached: 00001164-PHOTO-2019-06-03-09-43-
+36.jpg>
+[03/06/19 9:47:31] +52 1 444 336 9449: Enterados gracias
+[03/06/19 10:07:40] Dr Araújo: Perdón la insistencia , este paciente apenas hoy se colocó aislamiento
+[03/06/19 10:07:50] Dr Araújo: Así no vamos la lograr nada
+[03/06/19 10:09:25] Dr Araújo: Y el estudiante que llevo la muestra de ese paciente trae diarrea
+[03/06/19 10:19:56] +52 1 444 800 0604: Enterados muchas gracias. En el periférico no creció nada?
+[03/06/19 10:25:02] Dr Arturo: Ya se pueden integrar los estudiantes a sus servicios?
+[03/06/19 10:44:27] +52 1 444 315 3292: Benjamin### P10 hemocultivo periferico brazo izquierdo va negativo
+[03/06/19 10:48:08] +52 1 444 336 9449: Enterados gracias
+[03/06/19 11:06:15] +52 1 444 828 1616: Buen día. NO aun, hasta el controle el brote.
+[03/06/19 11:59:41] +52 1 444 238 7962: <attached: 00001174-PHOTO-2019-06-03-11-59-
+41.jpg>
+[03/06/19 11:59:48] +52 1 444 238 7962: <attached: 00001175-PHOTO-2019-06-03-11-59-
+48.jpg>
+[03/06/19 12:03:22] Dr Arturo: Si lo sospechabamos [03/06/19 12:03:25] Dr Arturo:
+[03/06/19 12:03:37] Dr Arturo: Muchas gracias!!! Tiene tratamiento adecuado
+[03/06/19 19:42:29] +52 1 444 169 7469: <attached: 00001195-PHOTO-2019-06-03-19-42-
+29.jpg>
+[03/06/19 19:43:09] +52 1 834 147 8032: Enterados
+[03/06/19 19:43:30] +52 1 834 147 8032: Muchas gracias
+[04/06/19 7:32:53] +52 1 444 315 3292: Enterados gracias
+[04/06/19 8:55:59] +52 1 444 315 3292: Buen día
+Jonathan#### Lactantes C6 Folio 38676
+Hemocultivo periferico brazo derecho Gram: cocos Gram positivos agrupados en cadenas HD: 11.39
+[04/06/19 8:56:18] +52 1 444 315 3292: <attached: 00001209-PHOTO-2019-06-04-08-56-
+18.jpg>
+[04/06/19 9:22:18] +52 1 444 238 7962: <attached: 00001210-PHOTO-2019-06-04-09-22-
+18.jpg>
+[04/06/19 10:46:07] +52 1 444 315 3292: Buen día
+[04/06/19 10:46:31] +52 1 444 315 3292: <attached: 00001212-PHOTO-2019-06-04-10-46-
+31.jpg>
+[04/06/19 10:46:46] +52 1 444 315 3292: <attached: 00001213-PHOTO-2019-06-04-10-46-
+46.jpg>
+[04/06/19 10:48:49] +52 1 444 829 4934: Gracias
+[04/06/19 11:34:02] +52 1 444 315 3292: <attached: 00001215-PHOTO-2019-06-04-11-34-
+02.jpg>
+[04/06/19 11:34:19] +52 1 444 315 3292: <attached: 00001216-PHOTO-2019-06-04-11-34-
+19.jpg>
+[04/06/19 12:08:55] +52 1 444 238 7962: <attached: 00001217-PHOTO-2019-06-04-12-08-
+55.jpg>
+[04/06/19 12:10:12] +52 1 444 199 9101: Enterados. Gracias.
+[06/06/19 1:51:07] +52 1 444 140 3943: <attached: 00001233-PHOTO-2019-06-06-01-51-
+07.jpg>
+[06/06/19 1:51:21] +52 1 444 140 3943: <attached: 00001234-PHOTO-2019-06-06-01-51-
+21.jpg>
+[06/06/19 6:24:51] +52 1 492 125 4555: Enterada. Paciente ya en piso de cirugía desde ayer. Estable; sin datos de respuesta inflamatoria. Se avisa a Neurocx
+[06/06/19 15:46:29] +52 1 444 134 4758: <attached: 00001236-PHOTO-2019-06-06-15-46-
+29.jpg>
+[06/06/19 16:22:44] +52 1 444 199 9101: Enterados. Avisamos a ortopedia
+[06/06/19 22:25:17] +52 1 444 174 3562: <attached: 00001238-PHOTO-2019-06-06-22-25-
+17.jpg>
+[06/06/19 22:29:21] Dr Araújo: Gracias
+[07/06/19 0:51:31] +52 1 444 174 3562: <attached: 00001240-PHOTO-2019-06-07-00-51-
+31.jpg>
+[07/06/19 6:54:38] +52 1 444 199 9101: Enterados, paciente se TyO ya cubierto con vancomicina
+[07/06/19 10:18:11] +52 1 444 315 3292: Buen día
+[07/06/19 10:18:53] +52 1 444 315 3292: <attached: 00001244-PHOTO-2019-06-07-10-18-
+53.jpg>
+[07/06/19 10:18:57] +52 1 444 315 3292: Cocos Gram positivos sugestivos de estafilococos
+[07/06/19 10:31:46] +52 1 444 199 9101: Ya cubierto con vancomicina. Gracias
+[07/06/19 10:42:27] +52 1 444 315 3292: <attached: 00001247-PHOTO-2019-06-07-10-42-
+27.jpg>
+[07/06/19 10:47:57] +52 1 444 315 3292: <attached: 00001248-PHOTO-2019-06-07-10-47-
+jpg>
+[07/06/19 10:48:01] +52 1 444 315 3292: <attached: 00001249-PHOTO-2019-06-07-10-48-
+jpg>
+[07/06/19 11:12:55] +52 1 444 511 8145: Enterada gracias
+[07/06/19 14:11:10] +52 1 444 238 7962: <attached: 00001251-PHOTO-2019-06-07-14-11-
+10.jpg>
+[07/06/19 14:11:21] +52 1 834 147 8032: Enterados
+[07/06/19 14:12:09] +52 1 444 336 9449: Se incia cobertura y aislamiento
+[07/06/19 14:13:53] +52 1 444 238 7962: Es paciente de medicina hombres
+[07/06/19 14:14:37] +52 1 444 336 9449: Si
+[07/06/19 14:14:52] +52 1 834 147 8032: Privado 7
+[08/06/19 4:06:24] +52 1 444 498 1995: Jesús## hemocultivo periférico derecho positivo Folio 40480 de URA choque
+T.gram : bgn HD: 10.36 hrs
+[08/06/19 4:08:25] +52 1 444 800 0604: Enterados, muchas gracias. Paciente en trasplantes cubierta con meropenem.
+[08/06/19 4:08:59] +52 1 444 498 1995: Gracias
+[08/06/19 9:01:25] +52 1 55 2727 7642 left
+[09/06/19 15:42:47] +52 1 444 541 8919: <attached: 00001261-PHOTO-2019-06-09-15-42-
+47.jpg>
+[09/06/19 16:11:30] +52 1 444 379 4312: Enterados
+[09/06/19 17:31:19] +52 1 444 541 8919: <attached: 00001263-PHOTO-2019-06-09-17-31-
+19.jpg>
+[10/06/19 2:32:11] +52 1 444 174 3562:
+Folio 40887
+Registro 243339 Urgencias adulto
+Hemocultivo periférico brazo derecho Gram cgp sugestivos estafilococo
+Hd 10.71
+[10/06/19 2:42:17] +52 1 55 5103 7632: Enterados, ya con cobertura con vanco
+[10/06/19 9:02:00] +52 1 444 315 3292: Buen día
+[10/06/19 9:03:09] +52 1 55 5103 7632: Enterado, hemocultivo central de catéter tunelizado tomado por personal de hemldiàlisis, se informa con residente y ya cuenta con cobertura
+[10/06/19 9:04:11] +52 1 444 800 0604: Enterados
+[10/06/19 15:31:16] +52 1 444 315 3292: Buena tarde
+[10/06/19 15:31:34] +52 1 444 315 3292: <attached: 00001273-PHOTO-2019-06-10-15-31-
+34.jpg>
+[10/06/19 15:37:20] +52 1 444 829 4934: Enterados
+[11/06/19 10:36:58] +52 1 444 315 3292: Hola buen dia
+Jonathan Rojas Camargo Lactantes C6 cateter central lumen distal realización y nueva tinción de Gram: levaduras HD: 41.31 hrs
+[11/06/19 10:38:13] +52 1 444 829 4934: Enterados
+[11/06/19 10:54:07] +52 1 444 315 3292: Hola nuevamente
+[11/06/19 10:54:34] +52 1 444 315 3292: <attached: 00001278-PHOTO-2019-06-11-10-54-
+34.jpg>
+[11/06/19 11:28:27] +52 1 33 1845 5424: Enterado, ya cubierto con vancomicina
+[11/06/19 12:23:37] +52 1 444 140 2815: <attached: 00001280-PHOTO-2019-06-11-12-23-
+37.jpg>
+[11/06/19 14:55:37] +52 1 444 315 3292: Hola buena tarde
+[11/06/19 14:55:49] +52 1 444 315 3292: <attached: 00001282-PHOTO-2019-06-11-14-55-
+49.jpg>
+[11/06/19 14:57:07] +52 1 444 315 3292: Periferico brazo derecho
+HD 3.53
+Gram: no se observan formas bacterianas [11/06/19 15:11:57] +52 1 444 165 9553: Enterado
+[11/06/19 15:11:59] +52 1 444 165 9553: Gracis
+[11/06/19 19:44:36] +52 1 444 169 7469: <attached: 00001286-PHOTO-2019-06-11-19-44-
+36.jpg>
+[11/06/19 19:46:06] Dr Araújo: Gracias , alguien sabe si sigue en urgencias o lo pasaron a piso ?
+[11/06/19 19:47:11] +52 1 614 190 9354: Ingresó a piso dr [11/06/19 19:48:39] Dr Araújo: Con quien me podré comunicar ? [11/06/19 19:49:41] +52 1 614 190 9354: Conmigo dr
+[11/06/19 20:12:39] Dr Araújo: Gracias
+[12/06/19 0:54:09] +52 1 444 174 3562: <attached: 00001292-PHOTO-2019-06-12-00-54-
+09.jpg>
+[12/06/19 6:30:17] +52 1 444 174 3562: <attached: 00001293-PHOTO-2019-06-12-06-30-
+17.jpg>
+[12/06/19 7:17:49] +52 1 444 829 4934: Enterados
+[12/06/19 7:18:43] +52 1 444 199 9101: Enterados
+[12/06/19 13:52:14] +52 1 444 315 3292: Hola buena tarde
+[12/06/19 13:54:36] +52 1 444 315 3292: Rectificación del Gram de Mónica folio 41407 hemocultivo periférico brazo derecho cultivado en mycof/litic
+Gram: cocos Gram positivos y bacilos Gram negativos
+[12/06/19 13:56:14] +52 1 444 315 3292: Folio 41406 de Mónica hemocultivo periferico brazo derecho Gram: cocos Gram positivos
+[12/06/19 14:04:01] +52 1 449 216 6789:
+[12/06/19 14:12:42] +52 1 449 980 3930: Gracias. Está actualmente cubierta con meropenem y vancomicina.
+[13/06/19 0:20:04] +52 1 444 140 3943: <attached: 00001301-PHOTO-2019-06-13-00-20-
+04.jpg>
+[13/06/19 0:23:28] +52 1 55 5103 7632: Enterados gracias
+[13/06/19 12:33:07] +52 1 444 238 7962: <attached: 00001303-PHOTO-2019-06-13-12-33-
+07.jpg>
+[13/06/19 12:52:34] +52 1 444 110 8567: Gracias
+[13/06/19 13:02:56] +52 1 444 315 3292: Buena tarde
+[13/06/19 13:03:07] +52 1 444 315 3292: <attached: 00001306-PHOTO-2019-06-13-13-03-
+07.jpg>
+[13/06/19 13:08:17] +52 1 444 511 4007: <attached: 00001307-PHOTO-2019-06-13-13-08-
+17.jpg>
+[13/06/19 13:09:05] +52 1 444 174 8198: Gracias química , me podría reportar el torch de el hijo de esa paciente por favor
+[13/06/19 13:12:52] +52 1 444 511 4007: La muestra del bebé llegó 12:24
+[13/06/19 13:13:17] +52 1 444 511 4007: Aproximadamente en 20 minutos está completo
+[13/06/19 13:27:24] +52 1 492 143 7076: Enterado, ya está cubierto
+[13/06/19 18:26:19] +52 1 444 134 4758: <attached: 00001312-PHOTO-2019-06-13-18-26-
+19.jpg>
+[13/06/19 20:56:05] +52 1 444 134 4758: <attached: 00001313-PHOTO-2019-06-13-20-56-
+05.jpg>
+[13/06/19 20:56:31] +52 1 444 199 9101: Enterados. Gracias.
+[14/06/19 18:48:23] +52 1 444 541 8919: Registro 62402
+Folio 42861 , 42862
+Francisco###. Urgencias Choque 2
+Hemocultivos de brazo izquierdo y derecho positivos
+Gram ;. CGP HD : brazo izq. 13:38 HRS,brazo derecho 13:55 HRS [14/06/19 18:49:14] +52 1 222 402 1992: Gracias, ya cubierto
+[15/06/19 16:52:13] +52 1 444 541 8919: Registro 271864
+[16/06/19 2:07:55] +52 1 444 169 7469: <attached: 00001319-PHOTO-2019-06-16-02-07-
+55.jpg>
+[16/06/19 2:09:09] +52 1 444 176 8601: Enterados
+[16/06/19 2:09:16] +52 1 444 176 8601: Se cubrirá con vancomicina
+[16/06/19 9:50:22] +52 1 444 190 0770: Alba Montoya Jose
+Hemocultivo periferico bd positivo Urgencias
+Gram bgn Hd 5.67 hrs
+[16/06/19 9:50:45] +52 1 444 190 0770: Folio hcr43462
+[16/06/19 9:55:17] +52 1 444 336 9449: Enterados paciente ya cubierto gracias
+[17/06/19 0:02:22] +52 1 444 174 3562: Hemocultivo periférico brazo derecho Gutiérrez###
+Urg adulto Registro 271864
+Folio 42997 Gram levaduras Hd 60.94 hrs
+[17/06/19 0:43:10] +52 1 444 159 0829: Enterados, paciente cubierto, estable, gracias
+[17/06/19 19:11:05] +52 1 485 102 3952: <attached: 00001335-PHOTO-2019-06-17-19-11-
+05.jpg>
+[17/06/19 19:11:56] +52 1 444 800 0604: Enterados, paciente cubierto, muchas gracias [17/06/19 19:13:31] Dr Araújo: @5214448000604 Me pueden recordar quien es y está cubierto con qué ?
+[17/06/19 19:15:57] +52 1 444 800 0604: DM2, ERC5, llegó con criterios para HD por sobrecarga. Se documenta foco urinario. Después de que se colocó catéter para hemodialisis se documenta EGO sugerente de foco urinario, sin otro foco documentado al momento. Está con doble esquema vasopresor e intubando. No se ha podido llevar a un estudio de imagen por la inestabilidad. Tiene meropenem.
+[17/06/19 19:58:32] Dr Araújo: Gracias
+[17/06/19 21:27:49] +52 1 485 102 3952: <attached: 00001340-PHOTO-2019-06-17-21-27-
+49.jpg>
+[17/06/19 21:37:32] +52 1 485 102 3952: Folio paciente 43605
+[17/06/19 21:43:04] +52 1 444 829 4934: Enterados
+[17/06/19 22:12:18] +52 1 444 110 7186: <attached: 00001343-PHOTO-2019-06-17-22-12-
+18.jpg>
+[17/06/19 22:12:25] +52 1 444 110 7186: <attached: 00001344-PHOTO-2019-06-17-22-12-
+25.jpg>
+[17/06/19 23:15:23] +52 1 444 379 4312: Enterado, ya cubierta con Meropenem
+[18/06/19 5:31:24] +52 1 444 110 7186: <attached: 00001349-PHOTO-2019-06-18-05-31-
+24.jpg>
+[18/06/19 5:55:06] +52 1 444 305 0708: Enterados.
+[18/06/19 5:55:33] +52 1 444 110 7186: Gracias
+[19/06/19 7:09:25] +52 1 444 199 9101: @5212224021992
+[19/06/19 7:11:11] +52 1 222 402 1992: Gracias, enterados
+[19/06/19 7:11:55] +52 1 222 402 1992: Paciente en trasplantes, se avisa a nefrología
+[19/06/19 12:18:13] +52 1 444 315 3292: Hola buena tarde
+[19/06/19 12:18:13] +52 1 444 315 3292: Les envío los resultados de los hemocultivos positivos
+[19/06/19 12:18:29] +52 1 444 315 3292: <attached: 00001371-PHOTO-2019-06-19-12-18-
+29.jpg>
+[19/06/19 12:18:41] +52 1 444 315 3292: <attached: 00001372-PHOTO-2019-06-19-12-18-
+41.jpg>
+[19/06/19 12:18:57] +52 1 444 315 3292: <attached: 00001373-PHOTO-2019-06-19-12-18-
+57.jpg>
+[19/06/19 12:19:14] +52 1 444 315 3292: <attached: 00001374-PHOTO-2019-06-19-12-19-
+14.jpg>
+[19/06/19 12:21:59] +52 1 444 336 9449: Enterados paciente cubierta gracias
+[19/06/19 14:42:10] +52 1 444 238 7962: <attached: 00001376-PHOTO-2019-06-19-14-42-
+10.jpg>
+[19/06/19 14:48:25] +52 1 444 336 9449: Enterados gracias
+[19/06/19 22:23:54] +52 1 444 110 7186: <attached: 00001378-PHOTO-2019-06-19-22-23-
+54.jpg>
+[20/06/19 6:53:54] +52 1 444 284 4819: Buen día, ya cubierta, gracias
+[20/06/19 6:54:24] +52 1 444 110 7186: Buen día, gracias
+[20/06/19 17:52:49] +52 1 444 413 1858: <attached: 00001381-PHOTO-2019-06-20-17-52-
+49.jpg>
+[20/06/19 17:53:40] +52 1 444 413 1858: Es un vial positivo de Liquido Cefalorraquídeo
+[20/06/19 17:54:33] +52 1 222 402 1992: Gracias cubierto con vancomicina
+[23/06/19 7:25:49] +52 1 444 429 1684: <attached: 00001408-PHOTO-2019-06-23-07-25-
+49.jpg>
+[23/06/19 7:29:57] +52 1 444 429 1684: <attached: 00001409-PHOTO-2019-06-23-07-29-
+57.jpg>
+[23/06/19 10:36:25] +52 1 444 199 9101: @5214444272543
+[23/06/19 11:17:40] +52 1 444 426 9240: Enterados, se inicia cobertura
+[23/06/19 21:34:23] +52 1 444 174 3562: Hemocultivo periférico brazo derecho positivo
+Registro 535266
+Folio 45821 Urgencias adulto Gram bgn
+Hd 50.28
+[23/06/19 21:55:01] +52 1 222 402 1992: Paciente
+[23/06/19 21:55:14] +52 1 222 402 1992: Se trasladó a otro hospital, gracias
+[25/06/19 8:10:44] +52 1 444 315 3292: Buen día
+[25/06/19 8:12:34] +52 1 444 315 3292:
+URA folio 46640 hemocultivo periferico brazo izquierdo HD: 12.20 Gram: bacilos Gram negativos
+[25/06/19 8:12:51] +52 1 444 315 3292: <attached: 00001417-PHOTO-2019-06-25-08-12-
+51.jpg>
+[25/06/19 8:20:49] +52 1 222 402 1992: Paciente cubierta con meropenem. Gracias
+[25/06/19 14:00:19] +52 1 444 315 3292: Hola buena tarde
+[25/06/19 14:00:41] +52 1 444 315 3292: <attached: 00001420-PHOTO-2019-06-25-14-00-
+41.jpg>
+[25/06/19 14:17:07] +52 1 444 119 8070: @5214441880748
+[25/06/19 14:17:53] +52 1 492 143 7076: Ya se encuentra cubierto con vancomicina y meropenem, gracias
+[25/06/19 17:41:13] +52 1 444 184 4453: Buenas tardes!
+[25/06/19 17:41:49] +52 1 444 184 4453: <attached: 00001424-PHOTO-2019-06-25-17-41-
+49.jpg>
+[25/06/19 17:58:44] +52 1 444 119 8070: Enterados. Cubierta con meropenem. Se notifica a residente de urgencias
+[25/06/19 23:54:05] +52 1 444 174 3562: <attached: 00001426-PHOTO-2019-06-25-23-54-
+05.jpg>
+[25/06/19 23:55:46] +52 1 444 199 9101: Enterados. Gracias
+[26/06/19 10:04:21] +52 1 444 315 3292: Hola buen día
+[26/06/19 10:04:42] +52 1 444 315 3292: <attached: 00001429-PHOTO-2019-06-26-10-04-
+42.jpg>
+[26/06/19 10:05:03] +52 1 444 315 3292: <attached: 00001430-PHOTO-2019-06-26-10-05-
+03.jpg>
+[26/06/19 10:05:22] +52 1 444 315 3292: <attached: 00001431-PHOTO-2019-06-26-10-05-
+22.jpg>
+[26/06/19 10:05:32] +52 1 449 394 8960: Enterados
+[27/06/19 0:04:34] +52 1 444 110 7186: <attached: 00001433-PHOTO-2019-06-27-00-04-
+34.jpg>
+[27/06/19 0:51:43] +52 1 492 143 7076: Enterado, gracias
+[27/06/19 0:56:14] +52 1 444 110 7186: Gracias
+[27/06/19 3:44:45] +52 1 444 110 7186: Juana María del Rosario Herrera Tello
+40 años
+MEH	Dx ERC
+Hemocultivo positivo Cateter 3.35 HD Gram bgn
+26 Jun 19 LMV
+[27/06/19 8:24:04] +52 1 444 829 9696: mm6824a3-H • 8 pages <attached: 00001437-
+mm6824a3-H.pdf>
+[27/06/19 12:18:13] +52 1 444 105 8978: <attached: 00001438-PHOTO-2019-06-27-12-18-
+13.jpg>
+[27/06/19 12:20:57] +52 1 444 426 9240: Enterado
+[28/06/19 9:49:30] +52 1 485 102 3952: <attached: 00001440-PHOTO-2019-06-28-09-49-
+30.jpg>
+[28/06/19 10:44:16] +52 1 485 102 3952: <attached: 00001441-PHOTO-2019-06-28-10-44-
+16.jpg>
+[28/06/19 10:44:28] +52 1 485 102 3952: Buen día
+[28/06/19 10:44:50] +52 1 444 828 5391: Enterados, el paciente fallecio anoche
+[28/06/19 10:44:55] +52 1 444 828 5391: Gracias
+[29/06/19 0:10:37] +52 1 444 110 7186: Buenas noches
+Hemocultivo positivo periférico brazo derecho HCR48321
+44 años	URA
+Dx Absceso Hepático
+6.53 HD Gram bgn
+28/ junio/'19 LMV
+[29/06/19 0:14:47] +52 1 444 260 1805: No es Tomas Rosas Rivera??
+[29/06/19 0:14:58] +52 1 444 260 1805: Buenas noches
+[29/06/19 0:19:13] +52 1 444 110 7186: <attached: 00001448-PHOTO-2019-06-29-00-19-
+13.jpg>
+[29/06/19 0:19:59] +52 1 444 110 7186: En solicitud está cómo José Rosas Rivera
+[29/06/19 0:49:04] +52 1 444 260 1805: Gracias!!
+[29/06/19 1:08:20] +52 1 444 110 7186: A sus órdenes
+[29/06/19 6:37:46] +52 1 444 110 7186: <attached: 00001452-PHOTO-2019-06-29-06-37-
+46.jpg>
+[29/06/19 15:08:00] +52 1 444 190 0770: <attached: 00001453-PHOTO-2019-06-29-15-08-
+jpg>
+[29/06/19 15:08:51] +52 1 444 238 7962: Corrección de hemocultivos positivo
+[29/06/19 15:09:50] +52 1 444 238 7962: Folio no. 46990 Juan David Barco Castillo se observan Cgn
+[29/06/19 15:37:19] +52 1 444 829 4934: Enterados
+[29/06/19 15:37:26] +52 1 444 829 4934: Se inició manejo
+[29/06/19 18:03:58] +52 1 55 5418 8323: Genta doxi
+[29/06/19 18:11:29] +52 1 444 541 8919: Registro : 280619
+Folio : 48361 UTI T - 5
+Hemocultivo Periférico positivo Gram : BGN HD : 17:36 HRS
+[29/06/19 18:32:41] +52 1 444 427 2543: Enterada. Cubierto con piperacilina.
+[30/06/19 12:58:01] +52 1 444 429 1684: <attached: 00001461-PHOTO-2019-06-30-12-58-
+jpg>
+[30/06/19 21:04:56] +52 1 444 110 7186: <attached: 00001462-PHOTO-2019-06-30-21-04-
+56.jpg>
+[30/06/19 21:06:58] +52 1 449 394 8960: Enterados, gracias
+[30/06/19 21:07:22] +52 1 444 110 7186: Gracias
+[02/07/19 23:39:42] +52 1 444 169 7469: <attached: 00001465-PHOTO-2019-07-02-23-39-
+42.jpg>
+[02/07/19 23:40:08] +52 1 444 336 9449: Enterados gracias
+[03/07/19 18:47:07] +52 1 444 184 4453: Buenas tardes!
+[03/07/19 18:49:14] +52 1 444 184 4453: Folio: 49616
+11años Escolares
+Hemocultivo periférico izq. Gram: bgn
+[03/07/19 18:49:40] +52 1 444 184 4453: HD: 14.56 hrs
+[03/07/19 18:50:23] +52 1 444 426 9240: @5214443863935
+[03/07/19 19:13:40] +52 1 444 386 3935: Se informa al residente de guardia Gracias,
+[04/07/19 11:53:52] +52 1 444 105 9196: <attached: 00001472-PHOTO-2019-07-04-11-53-
+52.jpg>
+[04/07/19 11:53:54] +52 1 444 105 9196: <attached: 00001473-PHOTO-2019-07-04-11-53-
+54.jpg>
+[04/07/19 11:56:52] +52 1 444 858 7498: Enterado
+[05/07/19 5:28:58] +52 1 444 429 1684: Rosas###
+Registro : 280619
+Folio: 048364 UTI	T-5
+Hemocultivo Central Positivo Gram : bgn HD : 144.03 h
+[05/07/19 6:24:42] +52 1 444 260 6967: Buen día enterado, cubierto con Meropenem
+[05/07/19 9:14:56] +52 1 444 315 3292: Buen día
+[05/07/19 9:15:07] +52 1 444 315 3292: <attached: 00001478-PHOTO-2019-07-05-09-15-
+jpg>
+[05/07/19 11:42:38] +52 1 444 199 9101: Enterados. Gracias @5214442844819
+[05/07/19 12:18:17] +52 1 444 284 4819: Gracias, enterados
+[05/07/19 13:54:30] +52 1 444 105 1571: Mario.	Folio: 048687.
+Uti-Ped T-1.	Catéter venoso central, lumen distal.	Gram: levaduras. HD: 111.62 hrs
+[05/07/19 13:56:54] +52 1 444 219 1321: Enterados, gracias
+[05/07/19 14:32:34] +52 1 444 416 1285: Ya con caspofungina
+[06/07/19 3:03:03] +52 1 444 448 5806: Valentín Segura Martínez
+Folio : 50768 URA
+PERIFERICO BRAZO DERECHO GRAM: BGN H. D. 8.70 HRS
+Folio : 50769
+URA
+PERIFERICO BRAZO IZQ. GRAM: BGN H. D. 8.70 HRS
+[06/07/19 3:12:33] +52 1 492 143 7076: Enterado, cubierto con meropenem
+[06/07/19 12:08:10] +52 1 444 169 7469: <attached: 00001487-PHOTO-2019-07-06-12-08-
+10.jpg>
+[06/07/19 12:12:09] +52 1 444 193 8852: Enterado. Se pide IC por MI
+[06/07/19 22:07:26] +52 1 444 413 1858: <attached: 00001489-PHOTO-2019-07-06-22-07-
+26.jpg>
+[06/07/19 22:11:04] +52 1 444 260 1805: Enterados gracias!
+[07/07/19 13:59:58] +52 1 444 511 4007: <attached: 00001491-PHOTO-2019-07-07-13-59-
+58.jpg>
+[07/07/19 18:25:42] +52 1 444 190 0770: Mendoza
+Uti
+Folio 50945 LCR
+Gram: cgp Hd: 26.01
+[07/07/19 18:34:00] +52 1 444 119 8070: Enterados @5214441762465
+[08/07/19 5:24:09] +52 1 444 413 1858: REG. HOSP. 1034787
+FOLIO 51144 (TPE P3)
+HEMOCULTIVO CATETER CENTRAL POSITIVO GRAM BGN
+HD 11.38 HRS.
+[08/07/19 5:46:58] +52 1 444 580 9208: Gracias
+[08/07/19 12:43:46] +52 1 444 105 1571: Buen día !! Corrección de henocultivo positivo del paciente Jonathan Rojas Camargo, se observan cgp
+[08/07/19 12:44:35] +52 1 444 105 1571: <attached: 00001497-PHOTO-2019-07-08-12-44-
+35.jpg>
+[08/07/19 12:44:46] +52 1 444 105 1571: <attached: 00001498-PHOTO-2019-07-08-12-44-
+46.jpg>
+[08/07/19 12:48:44] +52 1 444 199 9101: Enterados. Gracias
+[08/07/19 12:50:10] +52 1 444 105 1571: .	Folio: 50062.
+UTI T4, hemocultivo periferico	Gram: levaduras. HD: 97.29 hrs [08/07/19 12:55:52] +52 1 444 119 8070: Enterados, ya está en piso de Qx @5214448490244 @5214443369449
+[08/07/19 14:18:11] +52 1 444 580 9208: Ya en manejo grax
+[08/07/19 14:19:48] +52 1 444 336 9449: Enterados
+[08/07/19 14:54:08] +52 1 444 105 1571:	Liquido cefalorraquideo, gram directo: pmn ocasionales, no mn, cgp +. Escolares P-2
+[08/07/19 15:02:37] +52 1 444 828 1470: Citoquimico ??
+[08/07/19 15:07:59] +52 1 444 828 1470: Lo veo en escolares
+[08/07/19 16:40:08] +52 1 444 429 1684: <attached: 00001507-PHOTO-2019-07-08-16-40-
+jpg>
+[08/07/19 17:37:04] +52 1 444 105 1571: Es el líquido que mandaron para cultivo, creo que no pidieron citoquimico
+[08/07/19 19:30:08] +52 1 444 429 1684: This message was deleted.
+[08/07/19 19:30:34] +52 1 444 429 1684: <attached: 00001510-PHOTO-2019-07-08-19-30-
+34.jpg>
+[08/07/19 19:36:15] +52 1 444 828 1616: Urgente medidas de aislamiento de contacto. Por favor.
+[08/07/19 19:37:26] +52 1 492 143 7076: Si, la pasaremos a privado y comenzaremos tratamiento
+[08/07/19 21:30:24] +52 1 444 429 1684: <attached: 00001513-PHOTO-2019-07-08-21-30-
+24.jpg>
+[08/07/19 21:33:09] +52 1 444 429 1684: This message was deleted.
+[08/07/19 21:33:40] +52 1 444 429 1684: REG. HOSP. 1034861
+FOLIO 51595 (P-2)
+LCR POSITIVO
+GRAM CGP en racimos HD: 5.35 h
+[08/07/19 21:34:41] +52 1 444 828 1470: Claudia y Estefanía ya en tx.
+[08/07/19 22:45:35] +52 1 444 110 7186: <attached: 00001517-PHOTO-2019-07-08-22-45-
+35.jpg>
+[08/07/19 22:59:56] +52 1 444 110 7186: <attached: 00001518-PHOTO-2019-07-08-22-59-
+56.jpg>
+[09/07/19 12:09:53] +52 1 444 105 1571: <attached: 00001519-PHOTO-2019-07-09-12-09-
+53.jpg>
+[09/07/19 12:32:28] +52 1 444 105 1571: <attached: 00001520-PHOTO-2019-07-09-12-32-
+28.jpg>
+[09/07/19 12:36:19] +52 1 444 199 9101: Enterados, gracias @5212288352671
+[09/07/19 13:57:20] +52 1 444 498 1995: Buenas tardes corrección del hemocultivo de la paciente Claudia folio 51161. T.Gram :bgp
+[09/07/19 13:58:47] +52 1 444 498 1995: <attached: 00001523-PHOTO-2019-07-09-13-58-
+47.jpg>
+[09/07/19 14:33:51] +52 1 444 828 1470: Sigue igual ab. Hasta cultivo definitivo
+[09/07/19 15:24:17] +52 1 481 116 6622: This message was deleted.
+[09/07/19 16:43:05] +52 1 444 131 0709: <attached: 00001526-PHOTO-2019-07-09-16-43-
+05.jpg>
+[10/07/19 13:14:01] +52 1 444 176 8601 left
+[10/07/19 13:27:55] +52 1 444 105 1571: <attached: 00001528-PHOTO-2019-07-10-13-27-
+55.jpg>
+[10/07/19 14:17:54] +52 1 444 580 9208: Grax
+[10/07/19 15:53:51] +52 1 444 413 1858: <attached: 00001530-PHOTO-2019-07-10-15-53-
+51.jpg>
+[10/07/19 16:09:28] +52 1 444 413 1858: <attached: 00001531-PHOTO-2019-07-10-16-09-
+28.jpg>
+[10/07/19 16:32:11] +52 1 444 413 1858: <attached: 00001532-PHOTO-2019-07-10-16-32-
+11.jpg>
+[10/07/19 20:06:08] +52 1 444 413 1858: <attached: 00001533-PHOTO-2019-07-10-20-06-
+08.jpg>
+[10/07/19 20:06:20] +52 1 444 413 1858: Buenas noches.
+[10/07/19 20:08:43] +52 1 444 858 7498: Enterados
+[10/07/19 20:08:48] +52 1 444 858 7498: Se comenta con residente a cargo
+[11/07/19 0:49:13] +52 1 444 140 3943: <attached: 00001537-PHOTO-2019-07-11-00-49-
+13.jpg>
+[11/07/19 0:49:52] +52 1 444 140 3943: <attached: 00001538-PHOTO-2019-07-11-00-49-
+52.jpg>
+[11/07/19 0:50:20] +52 1 444 336 9449: Enterados gracias
+[11/07/19 0:50:33] +52 1 444 336 9449: Enterados ya cubierta
+[11/07/19 0:53:12] +52 1 444 140 3943: Gracias
+[11/07/19 12:39:25] +52 1 444 105 1571: <attached: 00001542-PHOTO-2019-07-11-12-39-
+25.jpg>
+[11/07/19 23:48:02] +52 1 444 174 3562: This message was deleted.
+[11/07/19 23:48:47] +52 1 444 261 0651: <attached: 00001544-PHOTO-2019-07-11-23-48-
+47.jpg>
+[12/07/19 6:31:13] +52 1 444 261 0651: <attached: 00001545-PHOTO-2019-07-12-06-31-
+13.jpg>
+[12/07/19 12:39:47] +52 1 444 105 1571: <attached: 00001546-PHOTO-2019-07-12-12-39-
+47.jpg>
+[12/07/19 12:41:11] +52 1 444 284 4819: Enterados, gracias
+[13/07/19 6:25:15] +52 1 444 110 7186: <attached: 00001548-PHOTO-2019-07-13-06-25-
+15.jpg>
+[13/07/19 7:16:51] +52 1 444 284 4819: Enterados, ya cubierto... gracias
+[13/07/19 7:17:31] +52 1 444 110 7186: Gracias
+[13/07/19 17:53:25] +52 1 444 190 0770: <attached: 00001551-PHOTO-2019-07-13-17-53-
+25.jpg>
+[13/07/19 19:49:43] +52 1 444 190 0770: <attached: 00001552-PHOTO-2019-07-13-19-49-
+43.jpg>
+[13/07/19 19:54:13] +52 1 444 336 9449: Enterados ya cubierto
+[13/07/19 23:43:03] +52 1 444 498 1995: <attached: 00001554-PHOTO-2019-07-13-23-43-
+03.jpg>
+[14/07/19 3:53:02] +52 1 444 498 1995: Buenos días
+Hemocultivo positivo de Ha. Ma. de catéter lumen central folio 53518-H de UCIN C-13 Gram: bgn y cgp sugestivos de estreptococos.
+HD: 10.22 hrs.
+[14/07/19 3:54:08] +52 1 444 498 1995: <attached: 00001556-PHOTO-2019-07-14-03-54-
+08.jpg>
+[14/07/19 20:13:07] +52 1 444 190 0770:Lcr positivo Mem folio 53590
+Gram cgp sug staph Hd 22.56
+[14/07/19 20:13:30] +52 1 444 858 7498: @5215551037632
+[14/07/19 20:13:32] +52 1 444 858 7498: Enterados
+[14/07/19 20:13:34] +52 1 55 5103 7632: Enterados
+[14/07/19 21:39:57] +52 1 444 174 7867: Estábamos fuera de la ciudad Estamos viendo este Hemocultivos
+Muchas gracias
+[14/07/19 21:40:07] +52 1 444 174 7867: Enterados en Neos
+[14/07/19 22:42:06] +52 1 444 105 8978: <attached: 00001563-PHOTO-2019-07-14-22-42-
+06.jpg>
+[14/07/19 23:36:53] +52 1 444 105 8978: <attached: 00001564-PHOTO-2019-07-14-23-36-
+53.jpg>
+[14/07/19 23:36:53] +52 1 444 105 8978: <attached: 00001565-PHOTO-2019-07-14-23-36-
+53.jpg>
+[14/07/19 23:40:41] +52 1 55 5103 7632: Enterado de paciente P9 MM
+[14/07/19 23:42:37] Dr Arturo added +52 1 771 569 2797 and +52 1 492 116 6142
+[15/07/19 0:39:16] +52 1 444 201 0087: Enterado, ya cubierto.. Gracias
+[15/07/19 13:15:40] +52 1 444 105 1571: <attached: 00001569-PHOTO-2019-07-15-13-15-
+40.jpg>
+[15/07/19 15:10:52] +52 1 444 140 2815: This message was deleted.
+[15/07/19 15:11:56] +52 1 444 140 2815: <attached: 00001571-PHOTO-2019-07-15-15-11-
+56.jpg>
+[15/07/19 15:17:19] +52 1 444 828 1616: Buenas tardes. Es paciente ambulatorio?
+[15/07/19 15:26:05] +52 1 444 140 2815: Si, por consulta externa
+[15/07/19 15:27:16] +52 1 444 140 2815: Ya lo envié en el chat de micro
+[15/07/19 15:41:31] +52 1 444 828 1616: Gracias
+[16/07/19 0:01:29] +52 1 444 110 7186: Buenas noches
+Hemocultivo positivo periférico brazo izquierdo HCR054179
+6m	Lac RH 1036455
+Dx Epilepsia
+9.70 HD	Gram: bgn
+[16/07/19 0:05:23] +52 1 444 110 7186: HCR 054179 Hemocultivo positivo periférico brazo derecho HCR 054183
+48 años	MEM RH 1039401
+Dx Hepatitis alcohólica
+8.35 HD Gram cgp
+[16/07/19 0:06:22] +52 1 444 110 7186: Hemocultivo positivo periférico brazo izquierdo
+HCR 054184
+48 años	MEM
+RH 1039401
+Dx Hepatitis alcohólica
+9.02 HD Gram cgp
+[16/07/19 0:07:18] +52 1 449 394 8960: Enterados gracias
+[16/07/19 0:08:15] +52 1 444 110 7186: Gracias
+[16/07/19 2:17:42] +52 1 444 110 7186: <attached: 00001581-PHOTO-2019-07-16-02-17-
+42.jpg>
+[16/07/19 2:18:34] +52 1 444 110 7186: <attached: 00001582-PHOTO-2019-07-16-02-18-
+34.jpg>
+[16/07/19 6:05:28] +52 1 993 198 1338: Buenos días enterados ya cubierto
+[16/07/19 6:08:47] +52 1 444 110 7186: Gracias
+[16/07/19 11:04:33] Dr Arturo added +52 1 444 827 3901
+[16/07/19 11:50:49] Dr Araújo: <attached: 00001586-PHOTO-2019-07-16-11-50-49.jpg>
+[16/07/19 12:01:04] +52 1 55 5418 8323: El bicho centralero para los compras
+[16/07/19 12:01:19] +52 1 55 5418 8323: This message was deleted.
+[16/07/19 12:01:35] +52 1 55 5418 8323: Compas*
+[16/07/19 14:01:40] +52 1 444 105 1571: <attached: 00001590-PHOTO-2019-07-16-14-01-
+40.jpg>
+[16/07/19 14:02:53] +52 1 449 394 8960: Gracias enterados
+[16/07/19 14:11:26] +52 1 444 416 1285: Ok
+[16/07/19 20:58:02] +52 1 444 190 0770: <attached: 00001593-PHOTO-2019-07-16-20-58-
+02.jpg>
+[16/07/19 20:58:37] +52 1 444 190 0770: <attached: 00001594-PHOTO-2019-07-16-20-58-
+37.jpg>
+[16/07/19 21:00:00] +52 1 493 114 0774: Enterados, falleció hoy
+[16/07/19 21:34:43] +52 1 444 174 3562: <attached: 00001596-PHOTO-2019-07-16-21-34-
+43.jpg>
+[16/07/19 21:53:59] +52 1 444 827 3901: Racias
+[16/07/19 21:57:47] +52 1 618 103 3611: Gracias enterados
+[16/07/19 21:57:55] +52 1 618 103 3611: Gracias enterados :)
+[17/07/19 11:56:27] +52 1 444 105 1571: <attached: 00001600-PHOTO-2019-07-17-11-56-
+27.jpg>
+[17/07/19 13:13:25] +52 1 444 105 1571: <attached: 00001601-PHOTO-2019-07-17-13-13-
+25.jpg>
+[18/07/19 10:34:44] +52 1 444 238 7962: <attached: 00001602-PHOTO-2019-07-18-10-34-
+44.jpg>
+[18/07/19 10:49:31] +52 1 444 105 1571: <attached: 00001603-PHOTO-2019-07-18-10-49-
+31.jpg>
+[18/07/19 10:58:18] +52 1 444 858 7498: Gracias
+[18/07/19 11:02:31] +52 1 444 199 9101: Enterados. Gracias
+[18/07/19 17:19:37] +52 1 444 413 1858: <attached: 00001606-PHOTO-2019-07-18-17-19-
+37.jpg>
+[18/07/19 17:20:08] +52 1 444 413 1858: <attached: 00001607-PHOTO-2019-07-18-17-20-
+08.jpg>
+[18/07/19 21:00:11] +52 1 444 858 7498: Enterados
+[19/07/19 3:08:04] +52 1 444 174 3562:
+UTI. 1038821
+Folio 55378:
+Central lumen proximal hd 12.88hrs Folio 55377:
+Central lumen proximal hd 13.89hrs Gram: levaduras en ambos hemocultivos
+[19/07/19 6:30:25] +52 1 444 119 8070: Enterados, ya cubierto
+[19/07/19 20:25:14] +52 1 444 413 1858: <attached: 00001611-PHOTO-2019-07-19-20-25-
+14.jpg>
+[19/07/19 20:25:18] +52 1 444 413 1858: Buenas noches.
+[19/07/19 20:26:41] +52 1 444 416 1285: Enterados gracias
+[20/07/19 8:24:05] +52 1 444 169 7469: Buen día hemocultivo positivo Periférico brazo izquierdo 55839
+MEH
+HD 15.05 Gram cgp
+[20/07/19 9:43:40] +52 1 444 284 4819: Gracias... ya cubierto
+[20/07/19 9:50:10] Dr Araújo: <attached: 00001616-PHOTO-2019-07-20-09-50-10.jpg> [20/07/19 9:50:11] Dr Araújo: <attached: 00001617-PHOTO-2019-07-20-09-50-11.jpg>
+[20/07/19 9:50:14] Dr Araújo: Saludos
+[20/07/19 10:03:08] +52 1 444 169 7469: <attached: 00001619-PHOTO-2019-07-20-10-03-
+08.jpg>
+[20/07/19 10:03:54] +52 1 444 828 5391 left
+[20/07/19 10:40:20] +52 1 492 143 7076: This message was deleted.
+[21/07/19 12:34:52] +52 1 444 169 7469: <attached: 00001622-PHOTO-2019-07-21-12-34-
+jpg>
+[21/07/19 12:34:53] +52 1 444 169 7469: <attached: 00001623-PHOTO-2019-07-21-12-34-
+jpg>
+[21/07/19 12:48:52] +52 1 444 336 9449: Enterados gracias
+[22/07/19 12:39:32] +52 1 444 105 1571: <attached: 00001625-PHOTO-2019-07-22-12-39-
+32.jpg>
+[22/07/19 12:40:10] +52 1 444 105 1571: <attached: 00001626-PHOTO-2019-07-22-12-40-
+10.jpg>
+[22/07/19 12:43:33] Dr Araújo: Otra vez cirugía hombres [22/07/19 12:50:40] Dr Arturo: Salió de uti el sábado
+[22/07/19 12:56:58] Dr Araújo: <attached: 00001629-PHOTO-2019-07-22-12-56-58.jpg> [22/07/19 12:58:04] Dr Araújo: <attached: 00001630-PHOTO-2019-07-22-12-58-04.jpg>
+[22/07/19 12:59:32] +52 1 444 119 8070: Salió el jueves por la tarde*
+[22/07/19 12:59:54] +52 1 444 165 9553: Es de cirugía Javier ??
+[22/07/19 13:00:03] +52 1 444 119 8070: El y otro paciente que salió positivo son de UTI, no estaban uno al lado de otro ni compartieron personal de enfermería. Aquí en uti no manifestaron sintomatología
+[22/07/19 13:03:00] Dr Araújo: Si David , Zambrano González Martín , tiene un drenaje conectado a una bolsa de colostomia , el interno pensó que era colostomia y de ahí tomó la
+Muestra
+[22/07/19 13:05:01] Dr Araújo: Fui a ver al paciente , no ha vuelto a presentar diarrea , dice que le cayó mal la leche que se tomó ( espero sea eso)
+[22/07/19 14:30:46] +52 1 444 829 9696: Gracias
+[22/07/19 23:55:57] +52 1 444 140 3943: <attached: 00001637-PHOTO-2019-07-22-23-55-
+57.jpg>
+[22/07/19 23:56:02] +52 1 444 140 3943: <attached: 00001638-PHOTO-2019-07-22-23-56-
+02.jpg>
+[23/07/19 0:00:18] +52 1 492 116 6142: Gracias
+[23/07/19 0:00:28] +52 1 493 114 0774: Enterados
+[23/07/19 3:07:35] +52 1 444 336 9449: Enterados
+[23/07/19 7:02:25] +52 1 444 140 3943: <attached: 00001642-PHOTO-2019-07-23-07-02-
+25.jpg>
+[23/07/19 7:09:53] +52 1 834 147 8032: Buenos días, enterados @5219931981338 @5214444269240 gracias
+[23/07/19 10:47:45] +52 1 444 105 1571: <attached: 00001644-PHOTO-2019-07-23-10-47-
+45.jpg>
+[23/07/19 10:49:21] +52 1 444 336 9449: Enterados gracias
+[23/07/19 13:30:19] +52 1 444 238 7962: <attached: 00001646-PHOTO-2019-07-23-13-30-
+19.jpg>
+[24/07/19 3:26:16] +52 1 444 174 3562: <attached: 00001647-PHOTO-2019-07-24-03-26-
+16.jpg>
+[24/07/19 7:22:08] +52 1 444 336 9449: Enterados gracias
+[24/07/19 9:44:00] Dr Arturo added +52 1 444 288 8011
+[25/07/19 4:45:11] +52 1 444 110 7186: Buen día
+[25/07/19 4:45:40] +52 1 444 110 7186: <attached: 00001651-PHOTO-2019-07-25-04-45-
+40.jpg>
+[25/07/19 20:10:16] +52 1 444 413 1858: <attached: 00001652-PHOTO-2019-07-25-20-10-
+16.jpg>
+[25/07/19 23:19:41] +52 1 444 174 3562: <attached: 00001653-PHOTO-2019-07-25-23-19-
+41.jpg>
+[26/07/19 6:41:11] +52 1 444 174 3562: <attached: 00001654-PHOTO-2019-07-26-06-41-
+11.jpg>
+[26/07/19 12:28:34] +52 1 444 105 1571: <attached: 00001655-PHOTO-2019-07-26-12-28-
+34.jpg>
+[26/07/19 12:29:35] +52 1 444 827 3901 left
+[26/07/19 17:53:35] +52 1 444 261 0651 left
+[26/07/19 19:11:14] +52 1 444 413 1858: <attached: 00001658-PHOTO-2019-07-26-19-11-
+14.jpg>
+[26/07/19 19:12:09] +52 1 444 336 9449: Enterados gracias
+[27/07/19 2:42:46] +52 1 444 131 0709: <attached: 00001660-PHOTO-2019-07-27-02-42-
+46.jpg>
+[28/07/19 11:26:37] +52 1 444 541 8919: <attached: 00001661-PHOTO-2019-07-28-11-26-
+37.jpg>
+[28/07/19 14:09:44] +52 1 444 541 8919: <attached: 00001662-PHOTO-2019-07-28-14-09-
+44.jpg>
+[28/07/19 19:34:28] +52 1 444 541 8919: <attached: 00001663-PHOTO-2019-07-28-19-34-
+28.jpg>
+[28/07/19 19:39:36] +52 1 614 190 9354: Enterado
+[29/07/19 22:41:59] +52 1 444 110 7186: <attached: 00001667-PHOTO-2019-07-29-22-41-
+59.jpg>
+[29/07/19 22:42:39] +52 1 444 416 1285: Enterados gracias
+[29/07/19 22:53:14] +52 1 444 110 7186: Gracias
+[30/07/19 3:03:15] +52 1 444 110 7186: <attached: 00001670-PHOTO-2019-07-30-03-03-
+15.jpg>
+[30/07/19 3:09:10] +52 1 444 416 1285: Gracias !
+[30/07/19 3:17:43] +52 1 444 110 7186: Ala orden
+[30/07/19 10:29:33] +52 1 444 238 7962: <attached: 00001673-PHOTO-2019-07-30-10-29-
+33.jpg>
+[30/07/19 20:30:44] +52 1 444 169 7469: <attached: 00001674-PHOTO-2019-07-30-20-30-
+jpg>
+[30/07/19 20:30:45] +52 1 444 169 7469: <attached: 00001675-PHOTO-2019-07-30-20-30-
+jpg>
+[30/07/19 20:30:51] +52 1 444 169 7469: Buenas noches, hemocultivos positivos
+[30/07/19 20:31:35] +52 1 444 284 4819: Gracias.. enterados.. ya cubierto
+[30/07/19 20:52:50] +52 1 444 201 0087: Enterados, paciente ya cubierto.. Muchas gracias
+[31/07/19 7:04:53] +52 1 444 174 3562: Hemocultivo periférico brazo derecho positivo
+Registro 289352
+Folio 59565 Urg adulto
+Gram cgp sugest estafilococo Hd 18.76
+[31/07/19 7:09:31] +52 1 444 336 9449: Enterados gracias ya cubierto
+[31/07/19 12:20:17] +52 1 444 238 7962: <attached: 00001681-PHOTO-2019-07-31-12-20-
+17.jpg>
+[31/07/19 12:37:49] +52 1 444 199 9101: Enterados. Gracias
+[31/07/19 18:09:04] +52 1 444 413 1858: <attached: 00001683-PHOTO-2019-07-31-18-09-
+04.jpg>
+[31/07/19 18:09:49] +52 1 444 284 4819: Enterados, ya cubierto
+[31/07/19 18:09:51] +52 1 444 284 4819: Gracias
+[31/07/19 18:12:01] +52 1 444 413 1858: <attached: 00001686-PHOTO-2019-07-31-18-12-
+jpg>
+[31/07/19 18:12:44] +52 1 444 284 4819: Enterados
+[31/07/19 21:02:10] +52 1 444 413 1858: REG. HOSP 449847
+FOLIO 600090
+HEMOCULTIVO PERIFERICO POSITIVO BRAZO IZQUIERDO GRAM:BGN
+HD 2 HRS FOLIO 60091 (URA CHOQUE)
+HEMOCULTIVO PERIFERICO POSITIVO BRAZO DERECHO GRAM: BGN
+HD 2 HRS.
+[31/07/19 21:13:01] +52 1 444 199 9101: Gracias. Paciente falleció.
+[01/08/19 6:27:10] +52 1 444 110 7186: Buen día
+[01/08/19 6:27:23] +52 1 444 110 7186: <attached: 00001691-PHOTO-2019-08-01-06-27-
+23.jpg>
+[01/08/19 6:28:11] +52 1 444 110 7186: <attached: 00001692-PHOTO-2019-08-01-06-28-
+11.jpg>
+[01/08/19 6:35:49] +52 1 444 199 9101: Enterados. Gracias
+[01/08/19 7:13:27] +52 1 444 110 7186: Gracias
+[01/08/19 7:28:01] +52 1 444 110 7186: Buen día RH481410
+HCR60143 (Periférico brazo izquierdo) 7.50 H D. HCR60144 (Periférico brazo derecho) 7.84 H.D Edad 45 años	URA
+Sx febril en estudio Gram: bgn
+[01/08/19 10:55:02] +52 1 444 105 8978: <attached: 00001696-PHOTO-2019-08-01-10-55-
+jpg>
+[01/08/19 12:21:28] +52 1 444 105 8978: <attached: 00001697-PHOTO-2019-08-01-12-21-
+28.jpg>
+[01/08/19 23:25:58] +52 1 444 174 3562: <attached: 00001698-PHOTO-2019-08-01-23-25-
+58.jpg>
+[01/08/19 23:48:14] +52 1 444 174 3562: <attached: 00001699-PHOTO-2019-08-01-23-48-
+14.jpg>
+[01/08/19 23:58:02] +52 1 55 5103 7632: Enterado
+[02/08/19 6:33:42] +52 1 444 174 3562: <attached: 00001701-PHOTO-2019-08-02-06-33-
+42.jpg>
+[02/08/19 6:33:44] +52 1 444 174 3562: <attached: 00001702-PHOTO-2019-08-02-06-33-
+44.jpg>
+[02/08/19 7:41:04] +52 1 444 284 4819: Gracias enterados
+[02/08/19 11:13:52] +52 1 444 105 8978: <attached: 00001704-PHOTO-2019-08-02-11-13-
+52.jpg>
+[02/08/19 13:16:20] +52 1 444 105 8978: <attached: 00001705-PHOTO-2019-08-02-13-16-
+20.jpg>
+[02/08/19 14:17:53] +52 1 444 800 0604: Enterados, ya con manejo en urgencias,gracias
+[02/08/19 23:55:59] +52 1 444 110 7186: <attached: 00001707-PHOTO-2019-08-02-23-55-
+59.jpg>
+[02/08/19 23:56:08] +52 1 444 110 7186: <attached: 00001708-PHOTO-2019-08-02-23-56-
+08.jpg>
+[02/08/19 23:58:37] +52 1 444 130 5108: Enterados Gracias
+[03/08/19 0:05:28] +52 1 444 110 7186: Gracias
+[03/08/19 8:34:09] +52 1 444 858 7498 left
+[03/08/19 12:28:36] +52 1 444 541 8919: Buenas tardes Registro  : 1034495
+Folio : 60963 Pediatría  Lactantes
+Hemocultivo Central positivo Gram : BGN HD 11:20 HRS
+[03/08/19 12:34:04] +52 1 444 541 8919: Registro : 536798
+Folio : 61000 Urgencias Choque
+Hemocultivo periférico positivo Gram BGN HD 09:25 HRS
+[03/08/19 12:36:22] +52 1 444 336 9449: Enterados gracias
+[03/08/19 12:37:24] +52 1 444 541 8919: Registro : 536898
+Folio 61001 Urgencias Choque
+Hemocultivo periférico brazo derecho positivo Gram : BGN HD 09:19 HRS
+[03/08/19 12:37:47] +52 1 444 829 4934: Enterados cubierto con meropenem
+[03/08/19 17:44:11] +52 1 444 541 8919: Registro 295403
+Folio 61047 Urgencias Choque
+Hemocultivo de catéter venoso central Positivo
+Gram. : BGN HD 11:03
+[03/08/19 18:11:08] +52 1 444 201 0087: Enterados, muchas grcias
+[03/08/19 23:48:54] +52 1 444 413 1858: REG. HOSP. 1039152
+FOLIO 61166
+HEMOCULTIVO CENTRAL POSITIVO GRAM: BGN HD 4.34 HRS.
+[03/08/19 23:49:48] +52 1 444 829 4934: Enterados, falleció.
+[04/08/19 11:40:41] +52 1 444 541 8919: <attached: 00001721-PHOTO-2019-08-04-11-40-
+jpg>
+[05/08/19 10:18:27] +52 1 444 185 3087: This message was deleted.
+[05/08/19 14:03:42] +52 1 444 105 8978: <attached: 00001723-PHOTO-2019-08-05-14-03-
+jpg>
+[05/08/19 17:09:54] +52 1 444 190 0770: <attached: 00001724-PHOTO-2019-08-05-17-09-
+54.jpg>
+[05/08/19 17:12:00] +52 1 444 174 7867: Enterados
+Gracias
+[06/08/19 13:28:35] +52 1 444 105 8978: <attached: 00001726-PHOTO-2019-08-06-13-28-
+35.jpg>
+[06/08/19 17:37:13] Dr Araújo: Gracias [06/08/19 17:51:45] +52 1 444 425 9699:
+[06/08/19 18:19:37] +52 1 444 190 0770: <attached: 00001731-PHOTO-2019-08-06-18-19-
+37.jpg>
+[06/08/19 20:03:35] +52 1 444 190 0770: <attached: 00001732-PHOTO-2019-08-06-20-03-
+35.jpg>
+[06/08/19 20:35:37] +52 1 622 116 5975: Gracias se comentará con gine de guardia!
+[07/08/19 1:46:30] +52 1 444 174 3562: image omitted
+[07/08/19 2:00:28] +52 1 493 114 0774: Enterados
+[07/08/19 12:25:47] +52 1 444 105 8978: <attached: 00001736-PHOTO-2019-08-07-12-25-
+47.jpg>
+[07/08/19 17:45:56] +52 1 444 413 1858: <attached: 00001737-PHOTO-2019-08-07-17-45-
+56.jpg>
+[08/08/19 6:49:05] +52 1 444 140 3943: <attached: 00001738-PHOTO-2019-08-08-06-49-
+05.jpg>
+[08/08/19 11:01:52] +52 1 444 185 3087: <attached: 00001739-PHOTO-2019-08-08-11-01-
+52.jpg>
+[08/08/19 11:03:07] +52 1 444 185 3087: <attached: 00001740-PHOTO-2019-08-08-11-03-
+07.jpg>
+[08/08/19 11:03:14] +52 1 444 185 3087: Buenos días.
+[08/08/19 11:03:20] +52 1 55 5103 7632: Enterados ya bajo cobertura
+[08/08/19 11:03:47] +52 1 444 185 3087: Gracias
+[08/08/19 11:09:36] +52 1 444 305 0708: Enterado.
+[08/08/19 12:49:24] +52 1 444 105 8978: <attached: 00001745-PHOTO-2019-08-08-12-49-
+24.jpg>
+[08/08/19 20:12:36] +52 1 444 413 1858: <attached: 00001746-PHOTO-2019-08-08-20-12-
+36.jpg>
+[08/08/19 20:12:56] +52 1 444 413 1858: <attached: 00001747-PHOTO-2019-08-08-20-12-
+56.jpg>
+[08/08/19 20:13:13] +52 1 444 413 1858: <attached: 00001748-PHOTO-2019-08-08-20-13-
+13.jpg>
+[08/08/19 20:13:14] +52 1 444 199 9101: Enterados. Gracias
+[08/08/19 20:24:48] +52 1 771 569 2797: Enterados gracias
+[09/08/19 10:56:35] +52 1 444 105 8978: <attached: 00001751-PHOTO-2019-08-09-10-56-
+35.jpg>
+[09/08/19 10:58:49] +52 1 444 305 0708: Enterados gracias.
+[09/08/19 15:20:34] +52 1 444 185 3087: <attached: 00001753-PHOTO-2019-08-09-15-20-
+34.jpg>
+[09/08/19 15:23:11] +52 1 493 114 0774: Enterados
+[09/08/19 15:47:12] +52 1 444 413 1858: <attached: 00001755-PHOTO-2019-08-09-15-47-
+12.jpg>
+[09/08/19 15:47:40] +52 1 449 394 8960: Enterados, gracias
+[09/08/19 19:50:20] +52 1 444 413 1858: CORRECCION DEL FOLIO 63685 SE LLAMA MARIA CANDELARIA CASIMIRO FLORES.
+[09/08/19 19:50:49] +52 1 444 413 1858: <attached: 00001758-PHOTO-2019-08-09-19-50-
+49.jpg>
+[09/08/19 22:24:15] +52 1 449 394 8960: Enterados, gracias
+[10/08/19 0:03:49] +52 1 444 105 8978: <attached: 00001760-PHOTO-2019-08-10-00-03-
+49.jpg>
+[10/08/19 2:28:26] +52 1 444 105 8978: <attached: 00001761-PHOTO-2019-08-10-02-28-
+26.jpg>
+[10/08/19 2:30:30] +52 1 444 105 8978: <attached: 00001762-PHOTO-2019-08-10-02-30-
+30.jpg>
+[10/08/19 8:20:03] +52 1 444 305 0708: Enterados la paciente ya cubierta.
+[10/08/19 9:30:46] +52 1 444 207 7269: Buenos días
+[10/08/19 9:47:39] +52 1 444 207 7269:
+Folio:063735 URA
+Hemocultivo catéter central positivo Gram: CGP. H.D. 11:55 hrs
+[10/08/19 15:46:58] +52 1 444 131 0709: <attached: 00001766-PHOTO-2019-08-10-15-46-
+58.jpg>
+[10/08/19 15:48:16] +52 1 614 190 9354: Enterados
+[10/08/19 15:49:28] +52 1 444 131 0709: <attached: 00001768-PHOTO-2019-08-10-15-49-
+28.jpg>
+[10/08/19 16:05:11] Dr Araújo: https://medicine- matters.blogs.hopkinsmedicine.org/2016/03/one-minute-guide-to-clostridium-difficile- testing/
+[10/08/19 17:31:37] +52 1 444 800 0604: Enterados Dr. Gracias
+[10/08/19 17:32:36] +52 1 614 190 9354: Enterados
+[10/08/19 17:43:12] +52 1 444 188 0748: Enterados dr gracias
+[10/08/19 18:36:36] +52 1 444 131 0709: <attached: 00001783-PHOTO-2019-08-10-18-36-
+36.jpg>
+[11/08/19 18:35:01] +52 1 444 829 9696: 10.1001@jamasurg.2019.0569 • 9 pages
+<attached: 00001784-10.1001@jamasurg.2019.0569.pdf> [11/08/19 20:09:23] Dr Araújo: Gracias Dra
+[11/08/19 21:14:22] +52 1 444 829 9696: ✔
+[12/08/19 2:17:14] +52 1 444 174 3562: Hemocultivo periférico brazo derecho positivo Montalvo Hdz Ana Sofia
+Registro 189866
+Folio 64093 Escolares Gram bgn Hd 8.85 hrs
+[12/08/19 8:59:58] +52 1 444 185 3087: <attached: 00001788-PHOTO-2019-08-12-08-59-
+58.jpg>
+[12/08/19 9:00:10] +52 1 444 185 3087: <attached: 00001789-PHOTO-2019-08-12-09-00-
+10.jpg>
+[12/08/19 9:22:00] +52 1 444 130 5108: Enterados gracias !
+[13/08/19 9:08:14] +52 1 444 185 3087: <attached: 00001791-PHOTO-2019-08-13-09-08-
+14.jpg>
+[13/08/19 9:08:38] +52 1 444 185 3087: This message was deleted.
+[13/08/19 9:08:59] +52 1 481 116 6622: Informados
+[13/08/19 9:09:49] +52 1 444 185 3087: <attached: 00001794-PHOTO-2019-08-13-09-09-
+49.jpg>
+[13/08/19 9:10:07] +52 1 444 185 3087: <attached: 00001795-PHOTO-2019-08-13-09-10-
+07.jpg>
+[13/08/19 9:10:40] +52 1 444 199 9101: @5214445481522
+[13/08/19 9:23:36] +52 1 444 548 1522: Gracias enterado
+[14/08/19 18:30:45] +52 1 444 413 1858: <attached: 00001798-PHOTO-2019-08-14-18-30-
+45.jpg>
+[14/08/19 22:33:17] +52 1 444 110 7186: <attached: 00001799-PHOTO-2019-08-14-22-33-
+17.jpg>
+[14/08/19 22:33:24] +52 1 444 110 7186: <attached: 00001800-PHOTO-2019-08-14-22-33-
+24.jpg>
+[14/08/19 22:33:42] +52 1 449 394 8960: Enterados, gracias
+[14/08/19 22:33:56] +52 1 444 110 7186: Gracias
+[15/08/19 14:33:47] +52 1 444 829 9696: Saludos!!
+[17/08/19 6:51:08] +52 1 444 110 7186: Hemocultivo positivo central HCR66392
+URA	RH 309871
+29 años
+Dx ERC V, Fiebre en estudio 7.20HD	Gram cgp
+[17/08/19 6:51:16] +52 1 444 110 7186: Buen día
+[17/08/19 6:53:07] +52 1 444 379 4312: Enterados
+[17/08/19 7:01:01] +52 1 444 110 7186: Gracias
+[17/08/19 11:24:02] +52 1 444 541 8919: Registro 1039501
+Folio 66321
+MM P 8
+Hemocultivo Central positivo Gram : CGP HD 19:42 HRS
+[17/08/19 11:26:45] +52 1 444 541 8919: Registro 309871
+Folio 66388 Urgencias pasillo
+Hemocultivo periférico positivo Gram : CGP HD 12:39 HRS
+[17/08/19 11:27:58] +52 1 993 198 1338: Enterados gracias
+[17/08/19 11:28:45] +52 1 444 336 9449: Enterados gracias
+[17/08/19 22:22:12] +52 1 444 413 1858: <attached: 00001812-PHOTO-2019-08-17-22-22-
+12.jpg>
+[17/08/19 22:22:46] +52 1 444 336 9449: Enterados gracias
+[18/08/19 2:09:07] +52 1 444 413 1858: <attached: 00001814-PHOTO-2019-08-18-02-09-
+07.jpg>
+[18/08/19 22:48:52] +52 1 444 828 1470: <attached: 00001815-PHOTO-2019-08-18-22-48-
+52.jpg>
+[19/08/19 0:15:16] +52 1 444 174 3562: Buenas noches
+Rodríguez Torres Adela Registro 1040168 Ginecologia
+Hemocultivo periferico positivo
+Brazo izquierdo Hd 11.37 hrs Folio 66702 Brazo derecho Hd 11.71
+hrs Folio 66703 GRAM : bgn
+[19/08/19 0:27:01] +52 1 834 104 8401: Enterados, gracias [19/08/19 8:21:21] Dr Araújo: Gracias
+[19/08/19 19:25:05] +52 1 444 190 0770: <attached: 00001819-PHOTO-2019-08-19-19-25-
+05.jpg>
+[19/08/19 22:23:02] +52 1 444 140 3943: <attached: 00001820-PHOTO-2019-08-19-22-23-
+02.jpg>
+[19/08/19 22:24:32] +52 1 444 110 8567: Enterada
+[20/08/19 2:30:21] +52 1 444 336 9449: Enterados ya cubierto
+[20/08/19 4:41:02] +52 1 444 140 3943: <attached: 00001823-PHOTO-2019-08-20-04-41-
+jpg>
+[20/08/19 11:25:24] +52 1 444 134 4758: <attached: 00001824-PHOTO-2019-08-20-11-25-
+24.jpg>
+[21/08/19 12:44:34] +52 1 444 134 4758: <attached: 00001825-PHOTO-2019-08-21-12-44-
+34.jpg>
+[21/08/19 20:07:34] +52 1 444 413 1858: <attached: 00001826-PHOTO-2019-08-21-20-07-
+34.jpg>
+[21/08/19 20:15:56] +52 1 444 336 9449: Enterados ya cubierta
+[21/08/19 21:39:52] +52 1 444 829 4934: Enterados
+[22/08/19 0:15:56] +52 1 444 174 3562: <attached: 00001829-PHOTO-2019-08-22-00-15-
+56.jpg>
+[22/08/19 2:42:00] +52 1 444 174 3562: LCR positivo
+Zuñiga Morales Alma Yaneth Escolares
+Registro 1039055
+Folio 68178 Gram bgn Hd 5.02 hrs
+[22/08/19 14:07:26] +52 1 444 134 4758: <attached: 00001831-PHOTO-2019-08-22-14-07-
+26.jpg>
+[22/08/19 20:35:42] +52 1 444 413 1858: REG. HOSP. 1039381
+FOLIO 68469
+JOSE AARON HERNANDEZ BRIONES (TPE) HEMOCULTIVO PERIFERICO DERECHO POSITIVO GRAM BGN
+HD 8.55 HRS.
+[22/08/19 20:37:20] +52 1 444 829 4934: Falleció, gracias.
+[25/08/19 0:17:06] +52 1 444 413 1858: REG. HOSP. 538622
+FOLIO 69108
+FORTINA LUNA SANCHEZ (URA) LCR POSITIVO
+GRAM CGP (SUGESTIVO STAPH.) HD 27.31 HRS
+[25/08/19 0:17:20] +52 1 444 413 1858: Buenas noches.
+[25/08/19 12:29:27] +52 1 444 541 8919: Registro 1037629
+Folio 69088
+Ramírez Villegas Valentina. MM P 9
+Hemocultivo Periférico positivo Gram : BGN HD : 36:35 HRS
+[25/08/19 12:48:57] +52 1 444 541 8919: Registro 1040261
+Folio 69145
+UCN 8
+Hemocultivo periférico positivo
+Gran : Estafilococos Gram positivos HD 33:51 HRS [25/08/19 12:53:17] +52 1 444 105 7996: Enterados
+[25/08/19 13:19:46] +52 1 55 5103 7632: Enterados
+[25/08/19 13:20:17] +52 1 55 5103 7632: Ya concobertura
+[25/08/19 13:30:38] +52 1 444 174 7867: E
+[25/08/19 22:39:35] +52 1 444 174 3562: LCR positivo
+Escolares Gram cgp Hd 33.13 hrs
+[26/08/19 6:51:24] +52 1 444 174 3562: LCR POSITIVO
+FOLIO 69441
+Escolares Gram bgn Hd 16.88
+[26/08/19 6:52:48] +52 1 444 174 3562: Ambos Líquidos de la paciente son tomados por válvula de derivación
+[26/08/19 7:17:48] +52 1 55 5418 8323: Enterados
+[27/08/19 6:02:59] +52 1 444 110 7186: Buen día
+Hemocultivo positivo brazo derecho HCR69924
+66 años	CIM Hernia Diafragmática
+16.63 HD Gram cgp
+[27/08/19 18:29:49] +52 1 444 429 1684: <attached: 00001851-PHOTO-2019-08-27-18-29-
+49.jpg>
+[27/08/19 18:30:20] +52 1 444 336 9449: Enterados
+[28/08/19 12:54:03] +52 1 444 134 4758: <attached: 00001853-PHOTO-2019-08-28-12-54-
+jpg>
+[28/08/19 20:40:28] +52 1 444 413 1858: REG. HOSP. 1042172
+FOLIO 70797
+HEMOCULTIVO PERIFERICO POSITIVO BRAZO DERECHO GRAM NEGATIVO
+HD 4.70 HR.
+[28/08/19 20:47:30] +52 1 444 260 6967: Enterados gracias
+[28/08/19 20:47:45] +52 1 444 829 4934: This message was deleted.
+[28/08/19 20:50:13] +52 1 444 335 4399: Enterados, ya cubierto.
+[28/08/19 21:18:20] +52 1 492 100 0880:	Gracias
+[28/08/19 23:33:43] +52 1 444 110 7186: Buenas noches
+Hemocultivo positivo lumen arterial RH 479191	URP
+HCR 70848
+5.02 HD Gram cgp
+[29/08/19 5:17:01] +52 1 444 110 7186: Buenos días
+Hemocultivo positivo lumen venoso Briana Guadalupe Tovar Tovar
+RH 479191	URP
+HCR 70846
+10.54 HD Gram cgp
+[29/08/19 9:37:20] +52 1 449 216 6789: <attached: 00001861-PHOTO-2019-08-29-09-37-
+20.jpg>
+[29/08/19 9:37:59] +52 1 449 216 6789: Los invitamos este domingo a la carrera del adulto mayor, en el parque tangamanga en la unidad infantil a las 8am
+[29/08/19 9:43:45] Dr Araújo:
+[29/08/19 9:46:53] +52 1 444 110 2282:
+[29/08/19 12:37:35] +52 1 444 134 4758: <attached: 00001865-PHOTO-2019-08-29-12-37-
+35.jpg>
+[29/08/19 12:40:10] +52 1 449 394 8960: This message was deleted.
+[29/08/19 21:48:31] +52 1 444 147 5485: Gracias Dra
+[30/08/19 10:10:09] +52 1 444 185 3087: <attached: 00001868-PHOTO-2019-08-30-10-10-
+09.jpg>
+[30/08/19 11:17:14] +52 1 492 100 0880: Gracias, enterados
+[30/08/19 15:13:04] +52 1 444 185 3087: <attached: 00001870-PHOTO-2019-08-30-15-13-
+04.jpg>
+[31/08/19 23:10:28] +52 1 444 413 1858: <attached: 00001871-PHOTO-2019-08-31-23-10-
+28.jpg>
+[31/08/19 23:11:13] +52 1 444 260 1805: Enterados, ya con cobertura apropiada
+[02/09/19 2:24:21] +52 1 444 174 3562: Hemocultivo periférico positivo
+Folio 72107
+Registro 305920 Cirugía hombres Gram:bgn
+Hd: 13.56 hrs
+[02/09/19 3:45:50] +52 1 444 174 3562: Hemocultivo central positivo Vázquez Aguilar Rubén
+Folio 72100
+Registro 305920 Cirugía hombres Gram bgn
+Hd 15.23
+[03/09/19 11:30:19] +52 1 444 315 3292: Buen dia
+[03/09/19 11:31:37] +52 1 444 315 3292: <attached: 00001876-PHOTO-2019-09-03-11-31-
+37.jpg>
+[03/09/19 11:31:57] +52 1 444 315 3292: <attached: 00001877-PHOTO-2019-09-03-11-31-
+57.jpg>
+[03/09/19 11:32:35] +52 1 444 315 3292: <attached: 00001878-PHOTO-2019-09-03-11-32-
+35.jpg>
+[03/09/19 11:33:46] Dr Arturo: Éste es de Rubén??
+[03/09/19 11:34:07] +52 1 444 315 3292: Se observan cocos Gram positivos agrupados en cadenas y en tetradas
+[03/09/19 11:34:16] +52 1 444 315 3292: Así es
+[03/09/19 16:58:53] +52 1 444 169 7469: <attached: 00001882-PHOTO-2019-09-03-16-58-
+53.jpg>
+[03/09/19 18:16:33] +52 1 444 335 4399: Enterado, muchas gracias
+[03/09/19 22:59:33] +52 1 444 174 3562: Hemocultivo periférico brazo izquierdo Rosa Torres Glez
+Medicina mujeres Registro 622194
+Folio 72622
+Gram cgp sugest estafilococo Hd 26.03 hrs
+[03/09/19 23:46:33] +52 1 444 174 3562: Hemocultivo periférico brazo izquierdo Núñez Morales ha Martha Aracely
+UCIN
+Registro 1042343
+Folio 73009 Gram bgn Hd 5.85 hrs
+[03/09/19 23:46:53] +52 1 493 114 0774: Enterados
+[03/09/19 23:46:58] +52 1 493 114 0774: En tx con cefepime
+[04/09/19 11:14:33] +52 1 444 315 3292: Hola buen día
+[04/09/19 11:17:42] +52 1 444 315 3292: Rectificación del hemocultivo de cvc con 24 hrs adicionales de incubación del paciente Mateo Flores Mtz de terapia pediatrica con HD: 39.36
+Gram: levaduras
+[04/09/19 11:18:02] +52 1 444 315 3292: <attached: 00001890-PHOTO-2019-09-04-11-18-
+02.jpg>
+[04/09/19 11:18:04] +52 1 444 315 3292: <attached: 00001891-PHOTO-2019-09-04-11-18-
+04.jpg>
+[04/09/19 11:18:07] +52 1 444 315 3292: <attached: 00001892-PHOTO-2019-09-04-11-18-
+07.jpg>
+[04/09/19 11:18:10] +52 1 444 315 3292: <attached: 00001893-PHOTO-2019-09-04-11-18-
+jpg>
+[04/09/19 11:58:56] +52 1 444 829 4934: Enterados
+[04/09/19 13:02:11] +52 1 444 238 7962: <attached: 00001895-PHOTO-2019-09-04-13-02-
+jpg>
+[04/09/19 13:09:56] +52 1 444 284 4819: Gracias... enterados
+[04/09/19 13:20:29] +52 1 444 260 6967: Gracias
+[05/09/19 18:19:13] +52 1 444 413 1858: <attached: 00001898-PHOTO-2019-09-05-18-19-
+13.jpg>
+[05/09/19 18:34:45] +52 1 444 165 9553: Enterado
+[05/09/19 18:41:48] +52 1 444 335 4399: Enterado, gracias.
+[05/09/19 18:42:53] +52 1 444 193 8852: Enterados
+[05/09/19 20:18:31] +52 1 444 413 1858: <attached: 00001902-PHOTO-2019-09-05-20-18-
+31.jpg>
+[06/09/19 6:20:31] +52 1 444 174 3562: Hemocultivo periférico brazo izquierdo
+Folio 73537 Registro 1041931
+Gram cgp sugest estafilococo Hd 26.83
+[06/09/19 6:20:48] +52 1 444 174 3562: Medicina mujeres
+[06/09/19 6:55:43] +52 1 444 426 9240: Gracias, el otro hemocultivo de ella sin desarrollo aún?
+[06/09/19 8:28:04] +52 1 444 315 3292: Buen día
+[06/09/19 8:28:14] +52 1 444 315 3292: <attached: 00001907-PHOTO-2019-09-06-08-28-
+14.jpg>
+[06/09/19 8:32:24] +52 1 444 315 3292: sólo tenemos registrado ese hemocultivo y bitácora actualizada hasta el dia de hoy
+[06/09/19 8:39:07] +52 1 444 426 9240: Gracias
+[06/09/19 11:29:42] +52 1 444 119 8070 left
+[06/09/19 14:52:29] +52 1 444 315 3292: Buena tarde
+[06/09/19 14:52:50] +52 1 444 315 3292: <attached: 00001912-PHOTO-2019-09-06-14-52-
+50.jpg>
+[06/09/19 16:45:31] +52 1 444 413 1858: <attached: 00001913-PHOTO-2019-09-06-16-45-
+31.jpg>
+[06/09/19 18:21:19] +52 1 444 413 1858: <attached: 00001914-PHOTO-2019-09-06-18-21-
+19.jpg>
+[06/09/19 23:09:15] +52 1 444 110 7186: <attached: 00001915-PHOTO-2019-09-06-23-09-
+15.jpg>
+[06/09/19 23:32:31] +52 1 444 110 7186: <attached: 00001916-PHOTO-2019-09-06-23-32-
+31.jpg>
+[07/09/19 1:16:54] +52 1 444 110 7186: <attached: 00001917-PHOTO-2019-09-07-01-16-
+54.jpg>
+[07/09/19 1:17:04] +52 1 444 110 7186: <attached: 00001918-PHOTO-2019-09-07-01-17-
+04.jpg>
+[07/09/19 1:45:31] +52 1 444 335 4399: Enterados.
+[07/09/19 1:48:27] +52 1 444 110 7186: Gracias
+[08/09/19 20:22:54] +52 1 444 541 8919: Registro : 794852
+Folio 74687
+CIH	B Hemocultivo CVC Distal positivo Gram : BGN HD : 07:36 HRS
+[08/09/19 20:30:37] +52 1 444 260 1805: Enterados, ya con cobertura antibiótica
+[08/09/19 23:23:49] +52 1 444 174 3562: Registro 794852
+Folio 74686
+Ruiz Vázquez Juan
+CIH Hemocultivo periférico brazo derecho positivo Gram bgn
+Hd 9.03 hrs
+[09/09/19 8:40:36] +52 1 444 130 5108: Enterados ya con tratamiento
+[09/09/19 11:07:45] +52 1 444 315 3292: Buen día
+[09/09/19 11:07:59] +52 1 444 315 3292: <attached: 00001926-PHOTO-2019-09-09-11-07-
+59.jpg>
+[09/09/19 21:09:28] +52 1 444 190 0770: <attached: 00001927-PHOTO-2019-09-09-21-09-
+28.jpg>
+[09/09/19 21:32:11] +52 1 444 335 4399: Enterados
+[10/09/19 19:26:53] +52 1 444 190 0770: <attached: 00001929-PHOTO-2019-09-10-19-26-
+53.jpg>
+[10/09/19 19:28:24] +52 1 444 829 1903: Enterados,gracias
+[10/09/19 20:08:18] +52 1 444 190 0770: <attached: 00001931-PHOTO-2019-09-10-20-08-
+18.jpg>
+[10/09/19 20:08:42] +52 1 444 190 0770: <attached: 00001932-PHOTO-2019-09-10-20-08-
+42.jpg>
+[10/09/19 20:09:40] +52 1 449 394 8960: Enterados
+[10/09/19 20:11:52] +52 1 55 1808 8899: Enterados
+[11/09/19 10:03:23] +52 1 444 315 3292: Buen día
+[11/09/19 10:03:44] +52 1 444 315 3292: <attached: 00001936-PHOTO-2019-09-11-10-03-
+44.jpg>
+[11/09/19 10:11:28] +52 1 55 5103 7632: Enterado muchas gracias
+[11/09/19 11:07:10] Dr Araújo: <attached: 00001938-PHOTO-2019-09-11-11-07-10.jpg>
+[11/09/19 11:08:56] Dr Araújo: Es oxidasa positivo , ureasa positivo e hidroliza esculina [11/09/19 11:11:43] Dr Araújo: <attached: 00001940-PHOTO-2019-09-11-11-11-43.jpg>
+[11/09/19 19:50:04] +52 1 444 315 3292: Hola dr buena noche
+[11/09/19 19:51:01] +52 1 444 315 3292: Es oxidasa negativa, metimos pruebas convencionales para checar la ID
+[11/09/19 19:51:38] Dr Araújo: Ok [11/09/19 19:51:39] Dr Araújo: Gracias
+[11/09/19 19:51:43] Dr Araújo: Vemos mañana
+[12/09/19 12:36:16] +52 1 444 105 1571: <attached: 00001946-PHOTO-2019-09-12-12-36-
+16.jpg>
+[12/09/19 12:51:07] +52 1 444 336 9449: Enterados
+[12/09/19 18:17:22] +52 1 444 110 7186: <attached: 00001948-PHOTO-2019-09-12-18-17-
+22.jpg>
+[12/09/19 18:17:55] +52 1 444 110 7186: <attached: 00001949-PHOTO-2019-09-12-18-17-
+55.jpg>
+[12/09/19 18:18:01] +52 1 444 110 7186: Buenas tardes
+[13/09/19 10:38:55] +52 1 444 315 3292: Buen día
+[13/09/19 10:40:23] +52 1 444 315 3292: <attached: 00001952-PHOTO-2019-09-13-10-40-
+23.jpg>
+[13/09/19 10:41:57] +52 1 444 416 1285: Enterado. Gracias
+[13/09/19 21:24:42] +52 1 444 413 1858: REG. HOSP. 419381 JUAN GERARDO EVANGELISTA TORRES FOLIO 76750 HEMOCULTIVO PERIFÉRICO BRAZO IZQUIERDO HD: 7.7 HRS FOLIO 76752
+HEMOCULTIVO BRAZO DERECHO HD: 7.87 HRS. GRAM CGP SUGESTIVO STAFILOCOCO
+[13/09/19 21:27:24] +52 1 614 190 9354: Enterados gracias!
+[13/09/19 23:36:03] +52 1 444 110 7186: Hemocultivo positivo Brazo derecho
+Registro Hospitalario 459381 URA	Pb TB
+FOLIO HCR 77039
+HD: 10.07
+Gram cgp
+[13/09/19 23:36:11] +52 1 444 110 7186: Buenas noches
+[13/09/19 23:36:43] +52 1 449 394 8960: Enterados, ya cubierto
+[13/09/19 23:36:57] +52 1 444 110 7186: Gracias
+[14/09/19 12:56:52] +52 1 444 541 8919: Registro : 191899
+Folio : 75709
+Hemocultivo periférico positivo
+Gram : CGP Sugestivos a Estafilococo HD 82:56 HRS
+[14/09/19 17:54:28] +52 1 444 541 8919: <attached: 00001961-PHOTO-2019-09-14-17-54-
+28.jpg>
+[14/09/19 18:08:28] +52 1 444 335 4399: Enterados, gracias.
+[14/09/19 23:01:42] +52 1 444 413 1858: <attached: 00001963-PHOTO-2019-09-14-23-01-
+42.jpg>
+[15/09/19 3:11:10] +52 1 444 413 1858: REG. HOSP. 668435 TR PARTICULAR)
+HEMOCULTIVO POSITIVO GRAM. CGP SUGESTIVO STAPH.
+[15/09/19 3:11:49] +52 1 444 413 1858: HD: 9.38 HRS.
+[15/09/19 11:44:40] +52 1 444 541 8919: Registro : 1038993
+Folio : 77336 ,77341
+CIH I 1
+Hemocultivo positivos
+Brazo izquierdo y brazo derecho Gram : CGP Sugestivo a Estafilococos HD 77336 8:36 HRS
+HD  77341   8:19 HRS
+[15/09/19 11:53:49] +52 1 444 260 1805: Enterados se ajusta esquema antibiótico
+[15/09/19 11:54:22] +52 1 444 260 1805:
+[15/09/19 19:02:32] +52 1 444 541 8919: <attached: 00001969-PHOTO-2019-09-15-19-02-
+32.jpg>
+[16/09/19 5:03:59] +52 1 444 131 0709: <attached: 00001970-PHOTO-2019-09-16-05-03-
+59.jpg>
+[16/09/19 5:04:34] +52 1 444 131 0709: 77488 brazo izquierdo
+[16/09/19 5:04:47] +52 1 444 131 0709: 77489 brazo derecho
+[16/09/19 9:07:05] +52 1 33 1845 5424: Enterados gracias
+[16/09/19 15:47:40] +52 1 444 302 2516: <attached: 00001974-PHOTO-2019-09-16-15-47-
+40.jpg>
+[16/09/19 20:30:46] +52 1 444 302 2516: <attached: 00001975-PHOTO-2019-09-16-20-30-
+46.jpg>
+[16/09/19 21:29:21] +52 1 444 829 9696: 190917121525_ • 13 pages <attached: 00001976-190917121525_.pdf>
+[17/09/19 1:17:24] +52 1 444 110 7186: Buen día Hemocultivo positivo brazo izquierdo HCR77506
+URA	RH539921
+PO Transplantado renal, IVU
+30.58 HD Gram bgn
+[17/09/19 1:17:53] +52 1 449 394 8960: Enterados ya con cobertura
+[17/09/19 1:25:34] +52 1 444 110 7186: Gracias
+[17/09/19 6:03:51] +52 1 444 110 7186: Buen día Hemocultivo positivo brazo derecho HCR77749
+MEH	RH983199 ERC, PO TRDC, DM2
+8.02 HD Gram bgn
+[17/09/19 6:04:32] +52 1 55 5103 7632: Enterados ya con cobertura
+[17/09/19 6:07:18] +52 1 444 110 7186: Gracias
+[18/09/19 5:53:06] +52 1 444 131 0709: <attached: 00001983-PHOTO-2019-09-18-05-53-
+jpg>
+[18/09/19 5:54:12] +52 1 444 199 9101: Enterados. Gracias
+[18/09/19 14:02:50] +52 1 444 426 9240: Enterado doctor [18/09/19 14:04:31] Dr Araújo: Se pide 🙏🙏porfavor :
+1.- higiene de manos
+2.- se está monitorizando niveles de cloro en el agua
+3.- limpieza y desinfección efectivas ( ya se está trabajando con intendencia )
+5.- Apego a aislamientos y uso de equipo médico individual para los colonizados e infectados
+6.- Porfavor no hacer cultivos de rutina ( los cultivos confirman infección ) , no son para ver qué sale
+[18/09/19 14:05:15] Dr Araújo: Y pues es necesario restringir el uso de carbapenemicos
+[18/09/19 14:05:42] Dr Araújo: Dr Magaña , los Infectologos y Dr Olán estamos de acuerdo en que :
+[18/09/19 14:06:26] +52 1 444 828 1616: Enterado y de acuerdo con todo lo anterior. Da pavor el comportamiento de los riesgos. Se debe restringir al máximo el uso de carbapenemicos. No sólo en las UCIs, también en hospitalizados en general. Además de las medidas ya indicadas.
+[18/09/19 14:06:42] Dr Araújo: La indicación de carbapenemico debe de estar evaluada por el
+Médico tratante y/o los Infectologos [18/09/19 14:06:55] +52 1 444 828 1616:
+[18/09/19 14:08:19] Dr Arturo:	de acuerdo
+[18/09/19 14:08:31] Dr Araújo: Esto en tanto desarrollamos nuestras guías de buenas prácticas para el uso de carbapenemicos ( tienen que desarrollarse en este mes ) [18/09/19 14:08:46] +52 1 444 800 0604: Enterado.
+[18/09/19 14:13:23] Dr Araújo: Gracias
+[18/09/19 14:24:52] +52 1 444 335 4399: Enterado
+[18/09/19 14:29:06] +52 1 444 829 4934: Pediatría enterados [18/09/19 14:30:17] Dr Araújo: Gracias
+[18/09/19 15:21:33] +52 1 444 130 5108: Enterada
+[18/09/19 15:22:42] +52 1 444 580 9208: Oqk [18/09/19 15:25:15] Dr Araújo:
+[18/09/19 15:25:41] +52 1 493 114 0774: Enterados neonatologia [18/09/19 15:27:20] Dr Araújo: Gracias
+[18/09/19 15:28:17] +52 1 444 174 8198:
+[18/09/19 20:00:07] +52 1 444 413 1858: <attached: 00002010-PHOTO-2019-09-18-20-00-
+jpg>
+[18/09/19 20:19:14] +52 1 444 260 6967: Enterados
+[18/09/19 21:13:32] +52 1 55 1808 8899: Ahorita no está en UTI el paciente
+[19/09/19 0:08:25] +52 1 444 185 3087: This message was deleted.
+[19/09/19 10:27:23] +52 1 444 315 3292: Buen día
+[19/09/19 10:27:36] +52 1 444 315 3292: <attached: 00002015-PHOTO-2019-09-19-10-27-
+jpg>
+[19/09/19 11:38:37] +52 1 444 315 3292: <attached: 00002016-PHOTO-2019-09-19-11-38-
+jpg>
+[19/09/19 20:33:35] +52 1 449 394 8960: Enterados ya con cobertura
+[19/09/19 23:30:07] +52 1 444 131 0709: <attached: 00002018-PHOTO-2019-09-19-23-30-
+07.jpg>
+[19/09/19 23:30:41] +52 1 33 1845 5424: Enterados ya cubierto
+[20/09/19 1:39:25] +52 1 444 131 0709: <attached: 00002020-PHOTO-2019-09-20-01-39-
+25.jpg>
+[20/09/19 1:39:26] +52 1 444 131 0709: Buen día
+[20/09/19 2:05:36] +52 1 444 386 3935: Enterados
+[20/09/19 10:13:40] Dr Araújo: Buenos días
+[20/09/19 10:14:17] Dr Araújo: Enviaron una muestra hoy de un paciente que se sospecha infeccion por acinetobacter baumanni
+[20/09/19 10:14:47] Dr Araújo: Pero me dice la mamá del paciente que la muestra la recolectó ayer a las 19 hrs aprox
+[20/09/19 10:15:12] Dr Araújo: Pero esa muestra se la llevaron al laboratorio hoy a las 7 am aprox
+[20/09/19 10:15:30] Dr Araújo: 12 HORAS para transportar la muestra [20/09/19 10:15:41] Dr Araújo: Esa muestra ya no es confiable [20/09/19 10:15:45] Dr Araújo: Ya avise a laboratorio
+[20/09/19 10:15:56] Dr Araújo: Pero porfavor ayudenos con eso
+[20/09/19 10:16:16] Dr Araújo: Esas muestras no deben de tardar más de 60 minutos en procesarse
+[20/09/19 10:16:53] Dr Araújo: Si se cultiva así van a crecer microorganismos que no sabremos qué valor darles
+[20/09/19 11:28:27] +52 1 444 105 8978: <attached: 00002033-PHOTO-2019-09-20-11-28-
+27.jpg>
+[20/09/19 18:36:22] +52 1 444 413 1858: <attached: 00002034-PHOTO-2019-09-20-18-36-
+22.jpg>
+[20/09/19 18:38:01] +52 1 444 335 4399: Enterado, gracias.
+[21/09/19 2:53:30] +52 1 444 110 7186: Buen día
+Hemocultivo positivo Catéter HCR79516
+Adán Vega Arroyo 53 años
+RH 1042397
+Neumopatia intersticial UTI
+[23/09/19 11:59:48] +52 1 444 800 0604: Enterados. Gracias.
+[23/09/19 23:01:09] +52 1 444 110 7186: <attached: 00002058-PHOTO-2019-09-23-23-01-
+09.jpg>
+[23/09/19 23:01:40] +52 1 444 110 7186: <attached: 00002059-PHOTO-2019-09-23-23-01-
+40.jpg>
+[24/09/19 9:43:11] +52 1 444 315 3292: <attached: 00002060-PHOTO-2019-09-24-09-43-
+11.jpg>
+[24/09/19 9:43:14] +52 1 444 315 3292: Buen día
+[24/09/19 9:45:55] +52 1 444 315 3292: <attached: 00002062-PHOTO-2019-09-24-09-45-
+55.jpg>
+[25/09/19 9:56:46] +52 1 444 315 3292: Buen día
+[25/09/19 9:57:02] +52 1 444 315 3292: <attached: 00002064-PHOTO-2019-09-25-09-57-
+02.jpg>
+[25/09/19 23:32:21] +52 1 444 110 7186: Buenas noches
+J. Jacinto Elías Salas HCR 81357-H
+RH 844085 LLA	53 Años	MEH
+6.69 HD Gram bgn
+[25/09/19 23:32:36] +52 1 444 110 7186: Hemocultivo positivo brazo izquierdo
+[25/09/19 23:32:51] +52 1 449 394 8960: Enterados ya cubierto.
+[25/09/19 23:33:06] +52 1 444 110 7186: Gracias
+[26/09/19 1:40:33] +52 1 444 110 7186: Buen día
+Hemocultivo positivo brazo derecho
+J. Jacinto Elías Salas HCR 81378-H
+RH 844085
+LLA	53 Años	MEH
+7.05 HD Gram bgn
+[26/09/19 1:40:51] +52 1 444 199 9101: Enterados
+[26/09/19 1:40:53] +52 1 444 199 9101: Gracias
+[26/09/19 1:44:25] +52 1 444 110 7186: Gracias
+[26/09/19 23:08:05] +52 1 444 174 3562: <attached: 00002073-PHOTO-2019-09-26-23-08-
+05.jpg>
+[27/09/19 1:45:29] +52 1 444 174 3562: <attached: 00002074-PHOTO-2019-09-27-01-45-
+jpg>
+[27/09/19 2:35:53] +52 1 444 174 3562: Hemocultivo periférico brazo derecho URA
+Folio 81832
+Registro 538391
+Gram bgn, cgp sugest estreptococos Hd 7.88
+[27/09/19 6:24:54] +52 1 444 174 3562: Hemocultivo central positivo
+Folio 81868
+Registro 538391
+Gram bgn, cgp sugest estreptococos Hd 9.38 hrs
+[27/09/19 6:58:57] +52 1 444 379 4312: Enterados
+[27/09/19 10:41:46] +52 1 444 315 3292: Buen día
+[27/09/19 10:42:01] +52 1 444 315 3292: <attached: 00002079-PHOTO-2019-09-27-10-42-
+jpg>
+[27/09/19 14:12:36] +52 1 444 315 3292: Buena tarde
+[27/09/19 14:12:54] +52 1 444 315 3292: <attached: 00002081-PHOTO-2019-09-27-14-12-
+54.jpg>
+[27/09/19 16:18:52] +52 1 444 110 2282: This message was deleted.
+[28/09/19 8:59:37] +52 1 444 829 9696: BACTERIA AND WASHING MACHINE • 3 pages
+<attached: 00002083-BACTERIA AND WASHING MACHINE.docx>
+[28/09/19 9:02:57] +52 1 444 829 9696: IMMUNIZATION AT MID-DAY • 1 page <attached: 00002084-IMMUNIZATION AT MID-DAY.docx>
+[28/09/19 16:20:04] +52 1 444 541 8919: <attached: 00002085-PHOTO-2019-09-28-16-20-
+04.jpg>
+[29/09/19 14:02:13] +52 1 444 541 8919: <attached: 00002086-PHOTO-2019-09-29-14-02-
+13.jpg>
+[29/09/19 14:05:48] +52 1 444 541 8919: Registro 1043915
+Folio 80974
+UTI T 7
+Hemocultivo periférico brazo derecho positivo Gram : BGN HD 109 :20 HRS
+[29/09/19 17:11:40] +52 1 444 541 8919: Registro 392657 izquierdo
+Folio 82532
+HD 17:40 HRS
+Registro 392657 derecho
+Folio 82531
+HD 16:28 HRS
+Hemocultivos positivos Gram : BGN
+[30/09/19 12:01:19] +52 1 444 302 2516: <attached: 00002089-PHOTO-2019-09-30-12-01-
+19.jpg>
+[30/09/19 12:01:32] +52 1 444 302 2516: <attached: 00002090-PHOTO-2019-09-30-12-01-
+32.jpg>
+[30/09/19 12:03:03] +52 1 33 1845 5424: Enterados
+[30/09/19 13:59:43] Dr Araújo: Porfavor las precauciones de contacto que no se olviden ,
+Gracias
+[30/09/19 14:06:13] +52 1 444 219 0028: Listo ya está en aislamiento plus [30/09/19 15:30:04] Dr Araújo: Gracias Flor
+[01/10/19 13:34:16] +52 1 444 498 1995: <attached: 00002095-PHOTO-2019-10-01-13-34-
+16.jpg>
+[01/10/19 14:10:23] +52 1 444 174 7867: Enterados gracias
+[01/10/19 18:06:37] +52 1 444 169 7469: <attached: 00002097-PHOTO-2019-10-01-18-06-
+37.jpg>
+[01/10/19 18:07:44] +52 1 449 394 8960: Enterados, gracias
+[01/10/19 19:55:06] +52 1 444 315 3292: <attached: 00002099-PHOTO-2019-10-01-19-55-
+06.jpg>
+[01/10/19 19:56:34] +52 1 444 169 7469: <attached: 00002100-PHOTO-2019-10-01-19-56-
+34.jpg>
+[01/10/19 19:57:49] +52 1 493 114 0774: Enterados
+[02/10/19 13:47:57] +52 1 444 498 1995: <attached: 00002102-PHOTO-2019-10-02-13-47-
+57.jpg>
+[02/10/19 14:12:55] +52 1 444 130 5108: Enterados ya con tratamiento
+[02/10/19 19:11:49] +52 1 444 829 9696: Valor del infectologo al cuidado de la salud • 6 pages <attached: 00002104-Valor del infectologo al cuidado de la salud.pdf>
+[03/10/19 11:20:53] +52 1 444 498 1995: <attached: 00002105-PHOTO-2019-10-03-11-20-
+53.jpg>
+[03/10/19 14:12:04] +52 1 444 498 1995: <attached: 00002106-PHOTO-2019-10-03-14-12-
+04.jpg>
+[03/10/19 14:13:10] +52 1 444 498 1995: <attached: 00002107-PHOTO-2019-10-03-14-13-
+10.jpg>
+[03/10/19 18:34:51] +52 1 444 134 4758: <attached: 00002108-PHOTO-2019-10-03-18-34-
+51.jpg>
+[03/10/19 18:35:42] +52 1 444 199 9101: Enterados. Gracias
+[03/10/19 20:22:44] +52 1 444 134 4758: <attached: 00002110-PHOTO-2019-10-03-20-22-
+44.jpg>
+[04/10/19 2:25:46] +52 1 444 174 3562: <attached: 00002111-PHOTO-2019-10-04-02-25-
+46.jpg>
+[04/10/19 6:23:36] +52 1 444 336 9449: Enterados ya tiene cobertura gracias
+[04/10/19 11:12:10] +52 1 444 169 7469: <attached: 00002113-PHOTO-2019-10-04-11-12-
+10.jpg>
+[04/10/19 11:16:51] +52 1 55 5103 7632: Enterados
+[04/10/19 21:34:47] +52 1 485 102 3952: <attached: 00002115-PHOTO-2019-10-04-21-34-
+47.jpg>
+[05/10/19 8:09:38] +52 1 614 190 9354: Enterado gracias
+[05/10/19 12:00:15] +52 1 444 174 8198: Exacto , y cada día como dice el dr Araujo se incrementan más casos , simplemente ayer llegaron 4 niños en la tarde con síntomas compatibles a dengue
+[05/10/19 12:03:32] Dr Araújo: Algunas de las colonias que mencionan no tienen agua y les surten por pipas ( me comento un paciente ) tienen meses así , tienen agua almacenada en tambos y no tapada , cuando menos espero que salubridad esté tomando cartas en el asunto con eso
+[05/10/19 12:05:36] +52 1 444 174 8198: Eso y muchas cosas más espero que la SSA ponga el dedo en el renglón aunque lo veo difícil la verdad
+[05/10/19 20:25:35] +52 1 444 541 8919: Registro 1032648
+Folio 84899
+Luna Hernández Mariana Guadalupe Terapia pediátrica T 3
+Hemocultivo positivo lumen proximal Gram : BGN HD : 05:19 HRS
+[05/10/19 20:26:54] +52 1 444 541 8919: De catéter lumen proximal
+[05/10/19 20:27:15] +52 1 444 829 4934: Enterados
+[06/10/19 0:02:29] +52 1 444 498 1995: Hemocultivo positivo periférico brazo derecho Mariana Guadalupe Luna Hernández de TPE T-3 folio 84900
+Gram: bgn. HD: 10.38 hrs.
+[06/10/19 6:05:53] +52 1 444 498 1995: Hemocultivo periférico brazo izquierdo Antonia Pérez Zavala de URA folio 84989
+Gram: bgn. HD: 10.55 hrs.
+[06/10/19 13:30:49] +52 1 444 541 8919: Registro 541184 Folio 84988 Hemocultivo positivo brazo derecho Gram BGN HD 12:56 HRS
+[06/10/19 13:33:20] +52 1 449 216 6789: Enterados. Paciente con pielonefritis enfisema tosa, cubierta con Meropenem
+[06/10/19 13:34:49] +52 1 444 541 8919: Registro 329960 Folios 85084 brazo derecho 85085 brazo izquierdo Hemocultivos positivos Gram 85084
+BGN HD 8:52 HRS
+Gram 85085 BGN HD 9:09 HRS
+[06/10/19 22:33:23] +52 1 444 581 4541 left
+[07/10/19 6:24:29] +52 1 444 174 3562: Hemocultivo periférico brazo derecho positivo MeH Folio 85255
+Registro 540169 Gram bgn
+Hd 10.41
+[07/10/19 6:26:14] +52 1 55 5103 7632: Enterado se inicia obertura
+[07/10/19 13:49:46] +52 1 444 498 1995: <attached: 00002147-PHOTO-2019-10-07-13-49-
+46.jpg>
+[07/10/19 14:21:35] +52 1 444 105 1571: <attached: 00002148-PHOTO-2019-10-07-14-21-
+35.jpg>
+[07/10/19 14:37:24] +52 1 444 426 9240: Enterados, gracias
+[07/10/19 16:30:41] +52 1 444 169 7469: <attached: 00002150-PHOTO-2019-10-07-16-30-
+jpg>
+[07/10/19 16:30:42] +52 1 444 169 7469: <attached: 00002151-PHOTO-2019-10-07-16-30-
+jpg>
+[07/10/19 16:30:51] +52 1 444 169 7469: Buenas tardes, Clostridium positivo
+[07/10/19 18:52:16] +52 1 444 169 7469: <attached: 00002153-PHOTO-2019-10-07-18-52-
+16.jpg>
+[07/10/19 18:54:58] +52 1 444 386 3935: Gracias ya cubierta con meropenem indicación de infectologia pediatrica
+[07/10/19 19:29:35] +52 1 444 169 7469: <attached: 00002155-PHOTO-2019-10-07-19-29-
+35.jpg>
+[07/10/19 19:29:39] +52 1 444 169 7469: <attached: 00002156-PHOTO-2019-10-07-19-29-
+39.jpg>
+[07/10/19 19:30:45] +52 1 444 199 9101: Enterados. Se avisa a residente de cardio.
+Gracias
+[07/10/19 19:30:50] Dr Araújo: Porfavor alguien de guardia que me apoye con ese paciente e indique suspender ceftriaxona y clindamicina
+[07/10/19 19:30:58] Dr Araújo: Y reiniciar cefalotina
+[07/10/19 19:31:07] Dr Araújo: Además claro de iniciar vancomicina oral [07/10/19 19:31:11] +52 1 444 199 9101: Si doctor
+[07/10/19 19:31:18] Dr Araújo: Porfas @5214441999101
+[07/10/19 19:31:19] Dr Araújo: Gracias
+[07/10/19 19:31:26] +52 1 444 199 9101: Ahorita lo checo. Gracias [07/10/19 19:31:29] Dr Araújo:
+[07/10/19 19:31:42] Dr Araújo: Y el aislamiento gracias
+[07/10/19 19:32:01] +52 1 444 199 9101: Si, ahorita aviso a enfermería

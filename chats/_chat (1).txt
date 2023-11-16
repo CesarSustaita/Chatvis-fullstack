@@ -1,0 +1,4690 @@
+[06/09/22, 11:45:28] Equipo Tarea 2 IS: ‎Los mensajes y las llamadas están cifrados de extremo a extremo. Nadie fuera de este chat, ni siquiera WhatsApp, puede leerlos ni escucharlos.
+[06/09/22, 11:45:28] ‎Raul Moreno creó este grupo.
+[06/09/22, 11:49:23] ‎Raul Moreno te añadió.
+[06/09/22, 11:49:34] ‎Ahora eres admin. del grupo
+[06/09/22, 11:49:44] ‎+52 444 380 2885 añadió a Kevin Márquez
+[06/09/22, 11:50:34] ‎‪+52 444 374 1420‬ se unió usando el enlace de invitación de este grupo
+[06/09/22, 11:52:53] Mikel Barajas: Hola equipo
+[06/09/22, 11:52:05] ‎‪+52 444 136 6505‬ se unió usando el enlace de invitación de este grupo
+[06/09/22, 11:53:59] ‎‪+52 444 718 5474‬ se unió usando el enlace de invitación de este grupo
+[06/09/22, 11:54:19] ‪+52 444 718 5474‬: Quién está a cargo?
+[06/09/22, 11:54:29] Mikel Barajas: Podría ser yo
+[06/09/22, 11:54:35] Mikel Barajas: Si están de acuerdo los demás?
+[06/09/22, 11:54:42] Raul Moreno: Yo si
+[06/09/22, 11:54:53] ‪+52 444 718 5474‬: Yo no
+[06/09/22, 11:54:54] Mikel Barajas: Sin el signo de interrogación *
+[06/09/22, 11:55:11] ‪+52 444 718 5474‬: Avdd
+[06/09/22, 11:55:20] ‪+52 444 718 5474‬: Xd
+[06/09/22, 11:55:35] ‪+52 444 718 5474‬: Pues como vean ustedes
+[06/09/22, 11:57:57] ‪+52 444 380 2885‬: Por mi está bien
+[06/09/22, 12:07:59] ‪+52 444 285 9212‬: Hola
+[06/09/22, 12:08:01] ‪+52 444 285 9212‬: Si
+[06/09/22, 12:13:37] Montserrat Gallegos: Ei
+‎[06/09/22, 12:13:53] Montserrat Gallegos: ‎sticker omitido
+‎[07/09/22, 15:29:45] Raul Moreno: Tarea-2-REQUERIMIENTOS Y TRABAJO EN EQUIPO 2022-otoño.pdf • ‎2 páginas ‎documento omitido
+[07/09/22, 15:30:18] Raul Moreno: El profesor ya subió los requerimientos de la tarea, se los pasó para que lo tengan a la mano
+[07/09/22, 15:32:03] Mikel Barajas: Muchas gracias
+[07/09/22, 15:32:14] Mikel Barajas: Hay que escribir nuestro nombre
+[07/09/22, 15:32:18] Mikel Barajas: Para tenerlo de una vez
+[07/09/22, 15:32:20] Mikel Barajas: Por apellidos
+[07/09/22, 15:32:22] Mikel Barajas: Empiezo yo
+[07/09/22, 15:32:53] Mikel Barajas: Nombre: Barajas Marínes Mikel Ignacio
+[07/09/22, 15:33:05] Mikel Barajas: Lo de nombre es para buscarlo más rápido por chat
+[07/09/22, 15:33:45] Montserrat Gallegos: Hernández Gallegos Montserrat Ximena
+[07/09/22, 15:33:50] Raul Moreno: Cerda Moreno Carlos Raul
+[07/09/22, 15:35:49] ‪+52 444 285 9212‬: Ola
+[07/09/22, 15:37:04] ‪+52 444 380 2885‬: Abarca Cárcamo Alan Yahir
+[07/09/22, 15:37:27] ‪+52 444 285 9212‬: Ojeda Gutiérrez Fernando Juriel
+[07/09/22, 15:43:09] ‪+52 444 374 1420‬: Hernández Guerrero Sergio Andrés
+[07/09/22, 15:43:52] Alfredo Villaseñor: Villaseñor Monsiváis Alfredo
+[07/09/22, 16:03:32] ‪+52 444 136 6505‬: Rojas Martínez Jorge Ángel
+[07/09/22, 16:39:57] Kevin Márquez: Marquez Guerrero Kevin
+[07/09/22, 17:35:37] ‪+52 444 718 5474‬: Hernández Salazar Isaih Roberto
+[07/09/22, 21:37:29] ‪+52 444 718 5474‬: Como propuesta para hacer los códigos les recomiendo que antes de programar cualquier cosa definamos el algoritmo en una especie de pseudocódigo y veamos si el algoritmo es correcto, para que a la hora de programar haya los menos errores y problemas posibles
+[07/09/22, 21:38:04] ‪+52 444 285 9212‬: Si profe
+[07/09/22, 21:38:12] ‪+52 444 718 5474‬: Créanme, cuando lleguen a ED2 o a Algoritmos y Complejidad esto les va servir :3
+[07/09/22, 21:40:31] ‪+52 444 285 9212‬: Creo que todos ya vamos en ED2 no?
+[07/09/22, 21:50:12] ‎+52 444 285 9212 añadió a ‪+52 444 887 5251‬
+[07/09/22, 21:40:38] ‪+52 444 718 5474‬: xd
+[07/09/22, 21:40:42] ‪+52 444 718 5474‬: No todos
+[07/09/22, 21:40:53] ‪+52 444 718 5474‬: Conozco unos que van en Pensamiento avrdd
+[07/09/22, 21:40:54] ‪+52 444 718 5474‬: xd
+[07/09/22, 21:41:01] ‪+52 444 718 5474‬: Por cierto
+[07/09/22, 21:41:09] ‪+52 444 718 5474‬: Falta un chavo
+‎[07/09/22, 21:41:29] ‪+52 444 718 5474‬: ‎Tarjeta de contacto omitida
+[07/09/22, 21:42:46] Kevin Márquez: Pero no se supone que el profe vera el chat del grupo para ver todo el avance dela tarea
+[07/09/22, 21:43:31] ‪+52 444 718 5474‬: Ah si pero pues para que lo hagamos aquí también
+[07/09/22, 21:43:40] ‪+52 444 285 9212‬: @5214441190036 dame admin
+‎[07/09/22, 21:43:57] ‪+52 444 718 5474‬: ‎audio omitido
+[07/09/22, 21:45:29] Kevin Márquez: O hacer un diagrama de flujo
+[07/09/22, 21:49:43] Raul Moreno: Yo también digo que está bien eso, analizar los problemas antes de hacerlos siempre ayuda
+[07/09/22, 22:00:39] Kevin Márquez: Estuve leyendo el programa y pide 7 cosas diferentes, propongo que nos dividamos  las 7 actividades, y luego ver si entre esas 7 hay una parte de algoritmo en comun para luego resumirlo
+[07/09/22, 22:01:30] Mikel Barajas: Me parece bien lo de dividir
+[07/09/22, 22:01:36] Mikel Barajas: Son 7 problemas más el menú
+[07/09/22, 22:01:40] ‪+52 444 718 5474‬: Hay que ir viendo porque hay algunos que realmente están muy fáciles man
+[07/09/22, 22:01:40] Mikel Barajas: En total 8 cosas
+[07/09/22, 22:01:55] ‪+52 444 718 5474‬: Por ejemplo el Factorial es un ciclo nada más
+[07/09/22, 22:02:11] Mikel Barajas: Propongo que cada problema lo tengamos en su propia función y solo lo llamemos desde el menú
+[07/09/22, 22:02:25] ‪+52 444 718 5474‬: Smn x2
+[07/09/22, 22:02:32] ‪+52 444 718 5474‬: Yo tengo un menú a ver que les parece
+[07/09/22, 22:02:37] ‪+52 444 718 5474‬: O sea de programas anteriores
+[07/09/22, 22:02:48] Mikel Barajas: Podrías mandarlo como un recurso
+[07/09/22, 22:02:55] ‪+52 444 718 5474‬: Si voy
+[07/09/22, 22:03:00] Mikel Barajas: Solo qué hay que ponernos de acuerdo en convenciones de código
+[07/09/22, 22:03:13] ‪+52 444 718 5474‬: int main()
+{
+	system("color 0A");
+    NODO *cab=NULL, *aux;
+    int dato;
+    int opcion;
+
+	do
+    {
+    	printf("\n |-----------------LISTAS SIMPLES ENLAZADAS-----------------|");
+		printf("\n |1. Insertar al Inicio              5. Eliminar Final      |");
+		printf("\n |2. Insertar al Final               6. Buscar y Eliminar   |");
+		printf("\n |3. Insertar Ordenado               7. Mostrar Lista	      |");
+		printf("\n |4. Elimina Inicio                  8. Salir               |");
+		printf("\n |----------------------------------------------------------|");
+		printf("\n\n\t Elige una opcion: ");
+		scanf("%d",&opcion);
+
+    	switch(opcion)
+    	{
+    		case 1:
+    			printf("\n Insercion al inicio");
+				printf("\n Ingresa el dato: ");
+				scanf("%d",&dato);
+    			InsertaInicio(&cab, dato);
+    			break;
+    		case 2:
+    			printf("Insercion al Final");
+    			printf("\n Ingresa el dato: ");
+				scanf("%d",&dato);
+    			insertaFinal(&cab, dato);
+    			break;
+    		case 3:
+    			printf("Insercion Ordenada");
+    			printf("\n Ingresa el dato: ");
+				scanf("%d",&dato);
+				insertaOrdenadoRec(&cab, dato);
+    			break;
+    		case 4:
+    			printf("Elimina Inicio");
+				eliminaInicio(&cab);
+    			break;
+    		case 5:
+    			printf("Elimina Final");
+				eliminaFinalRec(&cab);
+    			break;
+    		case 6:
+    			printf("Buscar y Eliminar");
+    			printf("\n Dato a eliminar: ");
+    			scanf("%d",&dato);
+    			eliminaDatoBuscadoRec(&cab, dato);
+    		case 7:
+    			printf("Mostrar Lista \n");
+    			imprimeListaRec(cab);
+    			break;
+    		case 8:
+    			printf("PROGRAMA ELABORADO POR ISAIH HERNANDEZ IsaGamesInc.");
+    			break;
+		}
+	}while(opcion < 8);
+	
+	liberaLista(&cab);
+    
+    return 0;
+}
+[07/09/22, 22:03:23] Mikel Barajas: Como si vamos a usar camelCase o snake_case
+[07/09/22, 22:03:37] ‪+52 444 718 5474‬: Queseso? xdd
+[07/09/22, 22:03:40] Mikel Barajas: En qué idioma vamos a tener nuestras variables
+[07/09/22, 22:03:49] Mikel Barajas: Cómo le llamamos a las variables
+[07/09/22, 22:03:53] ‪+52 444 718 5474‬: a
+[07/09/22, 22:03:56] Mikel Barajas: Así como puse el nombre sería el estilo
+[07/09/22, 22:04:14] ‪+52 444 718 5474‬: Pues una vez un primo que ya es inge me regañó por no tener los nombres completos de las varibales
+[07/09/22, 22:04:19] Mikel Barajas: También de qué nombres le pondremos
+[07/09/22, 22:04:27] Mikel Barajas: Yo propongo que sean significativos
+[07/09/22, 22:04:28] ‪+52 444 718 5474‬: Y me dijo que lo principal en una variable es que tenga el nombre completo
+[07/09/22, 22:04:31] Mikel Barajas: Y qué queden largos
+[07/09/22, 22:04:33] Mikel Barajas: Sí
+[07/09/22, 22:04:35] ‪+52 444 718 5474‬: Por lo general yo no uso i
+[07/09/22, 22:04:39] ‪+52 444 718 5474‬: Le pongo contador
+[07/09/22, 22:04:49] Mikel Barajas: También hay que ver eso
+[07/09/22, 22:04:57] Mikel Barajas: Pero pues por votación
+[07/09/22, 22:04:58] ‪+52 444 718 5474‬: Yo propongo que nombres completos
+[07/09/22, 22:05:08] Mikel Barajas: Yo digo que divídanos mañana bien eso
+[07/09/22, 22:05:10] ‪+52 444 718 5474‬: Porque luego vamos a batallar con eso si lo modificamos
+[07/09/22, 22:05:13] Mikel Barajas: Por orden alfabético cada problema
+[07/09/22, 22:05:27] ‪+52 444 718 5474‬: Y además, podríamos usar la descripción del grupo para programar
+[07/09/22, 22:05:34] Mikel Barajas: Y decidimos las convenciones de código
+[07/09/22, 22:05:36] Kevin Márquez: Por eso digo, que al final hagamos comparación para ver qué cambios o resúmenes hacer del código
+[07/09/22, 22:05:39] ‪+52 444 718 5474‬: Así nos permite a todos modificar sin perder lo demás
+[07/09/22, 22:05:45] Mikel Barajas: Puede ser
+[07/09/22, 22:05:57] Mikel Barajas: Solo que no sé si lo dejé
+[07/09/22, 22:06:03] Mikel Barajas: Por qué no se guarda en el chat
+[07/09/22, 22:06:18] ‎‪+52 444 718 5474‬ cambió la descripción del grupo
+[07/09/22, 22:06:27] Mikel Barajas: Y supongo que el propósito de hacer la comunicación solo por aquí es que se tenga guardado todo lo que hicimos
+[07/09/22, 22:06:52] ‪+52 444 718 5474‬: También como que por día podemos mandar un resumen completo como copia de seguridad
+[07/09/22, 22:07:09] ‪+52 444 718 5474‬: A las 12am que alguien copie lo que haya en la descripción y lo manda aquí a la conver
+[07/09/22, 22:07:17] ‪+52 444 718 5474‬: Para no perder en caso de que algo suceda
+[07/09/22, 22:07:19] ‪+52 444 718 5474‬: ;v
+[07/09/22, 22:07:26] ‪+52 444 718 5474‬: Mark Zuckerberg es impredecible
+[07/09/22, 22:07:37] ‪+52 444 718 5474‬: Nomas le mueve poquito y tira wp
+[08/09/22, 11:09:29] ‎‪+52 444 193 2391‬ se unió usando el enlace de invitación de este grupo
+[10/09/22, 13:20:02] Mikel Barajas: Hola equipos
+[10/09/22, 13:20:07] Mikel Barajas: Ahora sí hay que dividir los programas
+[10/09/22, 13:20:23] Mikel Barajas: Quieren elegir cada quien su parte, o solo lo asignamos por orden alfabético
+[10/09/22, 13:21:38] ‪+52 444 285 9212‬: Cualquiera de las dos estaría bien desde mi humilde opinión
+‎[10/09/22, 13:21:38] ‪+52 444 285 9212‬: ‎sticker omitido
+[10/09/22, 13:21:56] ‪+52 444 718 5474‬: Yo elijo el main y el factorial
+[10/09/22, 13:22:16] Mikel Barajas: Somos 12
+[10/09/22, 13:22:27] Mikel Barajas: Ocupamos solo una parte cada uno
+[10/09/22, 13:23:05] Raul Moreno: Yo creo que por orden alfabético para que así no haya problemas porque a alguien le toco el más fácil
+[10/09/22, 13:23:42] ‪+52 444 718 5474‬: El main pues
+[10/09/22, 13:25:50] Mikel Barajas: Miren
+[10/09/22, 13:25:58] Mikel Barajas: Ya después de consultar bien los problemas
+[10/09/22, 13:26:23] Mikel Barajas: Me parece que del b) al f) son más implicados
+[10/09/22, 13:26:29] Mikel Barajas: Entonces ocuparían dos personas cada uno
+[10/09/22, 13:26:42] Mikel Barajas: Y el a) y el g) son más simples
+[10/09/22, 13:26:47] Mikel Barajas: Entonces con una sola persona se puede
+[10/09/22, 13:27:14] Mikel Barajas: Vamos a formar parejas para esos 5 problemas
+[10/09/22, 13:27:19] Mikel Barajas: Y así ya tenemos algo los 12
+[10/09/22, 13:27:37] Mikel Barajas: También estoy de acuerdo con esto
+[10/09/22, 13:27:38] Mikel Barajas: Ahora
+[10/09/22, 13:27:51] Mikel Barajas: Las parejas las quieren formar así también?
+[10/09/22, 13:28:02] Mikel Barajas: O eso si lo hacemos eligiendo?
+[10/09/22, 13:28:20] Mikel Barajas: Y están de acuerdo con esta manera de hacerlo?
+[10/09/22, 13:30:22] Montserrat Gallegos: Sip está bien
+[10/09/22, 13:30:32] Alfredo Villaseñor: Me parece bien
+[10/09/22, 13:43:24] Mikel Barajas: Ya van 7 votos
+[10/09/22, 13:43:31] Mikel Barajas: Contando mensajes y pulgares arriba
+[10/09/22, 13:43:41] Mikel Barajas: Pasen su nombre por apellidos por favor
+[10/09/22, 13:43:47] Mikel Barajas: Para ir haciendo una lista
+[10/09/22, 13:43:54] ‪+52 444 718 5474‬: Ah caray estamos votando?
+[10/09/22, 13:43:55] ‪+52 444 718 5474‬: xdd
+[10/09/22, 13:43:58] Mikel Barajas: Por mientras también cada quien piense en qué convenciones de código
+[10/09/22, 13:44:02] ‪+52 444 285 9212‬: Ojeda Gutiérrez Fernando Juriel 🤙🏽
+[10/09/22, 13:44:11] ‪+52 444 285 9212‬: Estábamos, ya gano la votación
+[10/09/22, 13:44:12] Mikel Barajas: Pues es que 7 están de acuerdo
+[10/09/22, 13:44:16] Mikel Barajas: Ya con eso es mayoría
+[10/09/22, 13:44:20] ‪+52 444 718 5474‬: Henández Salazar Isaih Roberto
+[10/09/22, 13:44:27] Montserrat Gallegos: Hernández Gallegos Montserrat Ximena
+[10/09/22, 13:44:30] ‪+52 444 193 2391‬: Salazar Rico Diego Isaí:)
+[10/09/22, 13:44:32] ‪+52 444 718 5474‬: Jjaja si pero no avisaste eso xd
+[10/09/22, 13:45:07] Mikel Barajas: Si alguna vez quieren cambiar algo
+[10/09/22, 13:45:09] Mikel Barajas: Digan
+[10/09/22, 13:45:14] Mikel Barajas: Por eso siempre pregunto si están de acuerdo
+[10/09/22, 13:45:49] ‪+52 444 887 5251‬: Yo puedo hacer lo del factorial?
+[10/09/22, 13:46:41] Mikel Barajas: Quienes prefieren trabajar solos, en lugar de por pareja?
+[10/09/22, 13:46:42] ‪+52 444 887 5251‬: Rodriguez Perez José Rogelio
+[10/09/22, 13:47:27] ‪+52 444 887 5251‬: Yo en mi caso si se puede solo
+[10/09/22, 13:47:28] Mikel Barajas: Para ver a quién le va a tocar el primero y el último
+[10/09/22, 13:48:48] Alfredo Villaseñor: Villaseñor Monsiváis Alfredo
+[10/09/22, 13:49:32] Raul Moreno: Cerda moreno Carlos Raul
+[10/09/22, 13:49:51] Montserrat Gallegos: Yo uno de esos
+[10/09/22, 13:51:56] Mikel Barajas: Ya van dos
+[10/09/22, 13:52:04] Mikel Barajas: Si nadie más quiere ellos dos les tocaría
+[10/09/22, 13:52:10] Mikel Barajas: Si alguien quiere diga por aquí
+[10/09/22, 13:52:15] Mikel Barajas: Y nos ponemos de acuerdo
+[10/09/22, 13:52:35] Mikel Barajas: Mientras está la lista vayan pensando en qué convenciones podríamos usar y más de rato lo decidimos
+[10/09/22, 13:52:53] ‪+52 444 887 5251‬: Yo el g)
+[10/09/22, 13:52:58] Mikel Barajas: Y si hay dos personas que quieren trabajar juntos, sí se puede
+[10/09/22, 13:53:19] Mikel Barajas: Así no es solo lo que te toca y ya
+[10/09/22, 13:53:31] ‪+52 444 718 5474‬: Igual el c) está fácil man, si quieres ese yo lo hago solo
+[10/09/22, 13:53:35] Mikel Barajas: Los que no tengan problema pues nomás les asignamos algo
+[10/09/22, 13:53:57] Montserrat Gallegos: El a)
+[10/09/22, 13:53:59] ‪+52 444 193 2391‬: Alguien podría mandarme ss de los incisos? Es que fui agregado más tarde al grupo:)
+[10/09/22, 13:54:08] Mikel Barajas: Pero es también para que trabajemos todos, en equipo
+[10/09/22, 13:54:11] Mikel Barajas: Bueno al menos siento eso
+[10/09/22, 13:54:13] ‪+52 444 718 5474‬: Digo porque dices que del b al f están como para 2 personas
+[10/09/22, 13:54:21] ‪+52 444 718 5474‬: Entonces pues el c no está tan para dos personas
+[10/09/22, 13:54:48] Mikel Barajas: El e) tampoco es tan largo
+‎[10/09/22, 13:54:50] ‪+52 444 718 5474‬: ‎imagen omitida
+[10/09/22, 13:54:59] ‪+52 444 718 5474‬: Esos son los incisos
+[10/09/22, 13:55:01] Mikel Barajas: Pero así ya quedamos los 12 trabajando
+[10/09/22, 13:55:14] Mikel Barajas: A menos que pues tú hagas ese
+[10/09/22, 13:55:21] Mikel Barajas: Y el que hubiera sido tu pareja el main
+[10/09/22, 13:55:34] Mikel Barajas: Solo que ocupamos a alguien más que quiera trabajar solo
+[10/09/22, 13:55:52] ‪+52 444 718 5474‬: .
+[10/09/22, 13:56:17] Mikel Barajas: Entonces por que no tú el main?
+[10/09/22, 13:56:32] Mikel Barajas: Y otro el c)
+[10/09/22, 13:56:36] ‪+52 444 718 5474‬: Pues si quieres lo diseño mejor y ahorita lo mando
+[10/09/22, 13:56:39] Mikel Barajas: Está bien?
+[10/09/22, 13:56:42] ‪+52 444 718 5474‬: Y que alguien más haga el c
+[10/09/22, 13:56:45] ‪+52 444 718 5474‬: Smn
+[10/09/22, 13:56:47] Mikel Barajas: Va
+[10/09/22, 13:57:07] Mikel Barajas: Nomás falta quien quiera hacer el c) solo
+[10/09/22, 13:57:29] ‪+52 444 285 9212‬: Yo lo hago 🫶🏼
+[10/09/22, 13:57:35] Mikel Barajas: Ya está
+[10/09/22, 13:57:37] Mikel Barajas: Entonces
+[10/09/22, 13:58:30] Mikel Barajas: @5214871594881 @5214447185474 @5214448875251 y @5214442859212 trabajan solos
+[10/09/22, 13:58:34] Mikel Barajas: Los demás hacemos pareja
+[10/09/22, 13:59:41] Mikel Barajas: Dejen llego a mi casa y mando una propuesta de lista de convención
+[10/09/22, 13:59:47] Mikel Barajas: Vayan pensando en otras ustedes también
+[10/09/22, 13:59:56] Mikel Barajas: Y hacemos una final
+[10/09/22, 14:00:07] Mikel Barajas: O si quieren cambiar alguna de las que mande también digan
+[10/09/22, 14:00:11] Mikel Barajas: Pero todo por aquí
+[10/09/22, 14:00:55] Mikel Barajas: Mientras llego por favor manden su nombre los que aún no lo mandan
+[10/09/22, 14:01:10] ‪+52 444 136 6505‬: Rojas Martínez Jorge Ángel
+[10/09/22, 14:01:26] Mikel Barajas: Me parece son @5214443163254 @5214441366505 @5214443802885 y @5214443741420
+[10/09/22, 14:01:27] Mikel Barajas: Creo
+[10/09/22, 14:01:31] Mikel Barajas: Uno menos
+[10/09/22, 14:02:05] ‪+52 444 380 2885‬: No puedo contestar ahorita, estoy en clase
+Cuando llegue a mi casa contesto
+[10/09/22, 14:03:43] Mikel Barajas: Pasa tu nombre por apellidos
+[10/09/22, 14:07:03] ‪+52 444 380 2885‬: Abarca Cárcamo Alan Yahir
+[10/09/22, 14:10:31] ‪+52 444 136 6505‬: Entonces como quedaron?
+[10/09/22, 14:10:35] ‪+52 444 136 6505‬: Que me toca a mí?
+[10/09/22, 14:13:53] ‪+52 444 718 5474‬: Traer las bebidas
+[10/09/22, 14:13:55] ‪+52 444 718 5474‬: Avd
+[10/09/22, 14:13:55] ‪+52 444 718 5474‬: XD
+[10/09/22, 14:23:41] ‪+52 444 374 1420‬: Hernández Guerrero Sergio Andrés
+[10/09/22, 15:16:17] Mikel Barajas: Ya llegué a mi casa
+[10/09/22, 15:16:35] Mikel Barajas: Oigan hay problema si nomás asignó las parejas aleatoriamente?
+[10/09/22, 15:22:12] Mikel Barajas: Miren
+[10/09/22, 15:22:19] Mikel Barajas: Esta es mi propuesta de convenciones
+[10/09/22, 15:22:38] Mikel Barajas: *Convenciones de Mensajes*
+
+•Incluir asunto al principio del mensaje.
+•Etiquetar a las personas involucradas en el mensaje.
+•Si se esta respondiendo a un mensaje ya enviado, usar la función de responder mensaje de whatsapp.
+
+_Ejemplo:_
+
+*Asunto*
+@nombre1 @nombre2
+
+Hola, creo que… (texto del mensaje)
+[10/09/22, 15:22:59] Mikel Barajas: *Convenciones de código*
+
+_Naming Conventions (nombres de variables y funciones)_
+•Nombres en Inglés.
+•Nombres significativos, aunque queden largos.
+•Usar snake_case (ejemplo: variable_name).
+•Usar i, j, y k como contadores dentro de los ciclos.
+•Declarar variables cuando sea necesario (no todas al inicio).
+
+_Funciones_
+•Incluir prototipos de las funciones.
+•Hacer una función *void* que será llamada desde el menú, y que maneje las entradas y salidas.
+•Hacer otras funciones si se requiere un proceso más complejo, que se llame desde la funcion anterior.
+
+_Entradas y salidas (scanf, printf)_
+•Mensajes en español.
+•*No* escribir los mensajes a manera de pregunta. (Ejemplo: "¿Cuál es la escala de temperatura?")
+•Si una entrada tiene opciones específicas, imprimirlas entre corchetes.
+    ·Ejemplos:
+    ·"Confirmar operación [Y/N]:"
+    ·Escala de temperatura [C, F, R]: "
+
+_Comentarios_
+•Todas las funciones deben ir comentadas.
+[10/09/22, 15:25:06] Mikel Barajas: *Tareas*
+
+•*Main:* Isaih @5214447185474
+•*a) Bisiesto:* Montse @5214871594881
+•*b) Días:* Raul @5214441190036 Joe @5214441366505
+•*c) Temperatura:* Fernando @5214442859212
+•*d) Edades:* Alan @5214443802885 Alfredo @5214442145259
+•*e) Trigonometría:*  Sergio @5214443741420 Kevin @5214443163254
+•*f) Estadística:* Mikel @yo Isaí @5214441932391
+•*g) Factorial:* Rogelio @5214448875251
+[10/09/22, 15:25:15] Mikel Barajas: Qué les parece?
+[10/09/22, 15:25:45] Mikel Barajas: Intenté respetar a los que les tocó juntos en la primera tarea según
+[10/09/22, 15:25:59] Mikel Barajas: Denle like si están de acuerdo
+[10/09/22, 15:26:38] Mikel Barajas: *desacuerdos*
+
+Si quisieran cambiar algo, respondan el mensaje de la convención y digan que cambiarían, y por qué.
+[10/09/22, 15:27:03] Mikel Barajas: *otras propuestas*
+Si quieren proponer otras convenciones por completo, envíen una lista y eso
+[10/09/22, 15:27:09] ‪+52 444 718 5474‬: Unos cuantos detallitos que de hecho iba a proponer, no como desacuerdo
+[10/09/22, 15:27:10] ‪+52 444 718 5474‬: Pero
+[10/09/22, 15:27:15] ‪+52 444 718 5474‬: Si para checar
+[10/09/22, 15:27:19] ‪+52 444 718 5474‬: Ah, justo eso dd
+[10/09/22, 15:27:59] Mikel Barajas: Solo ponlas con el formato de mensaje
+[10/09/22, 15:28:12] Mikel Barajas: Si es de agregar, las agrego al mensaje después
+[10/09/22, 15:28:20] Mikel Barajas: Por ahora creo podemos empezar
+[10/09/22, 15:28:53] Mikel Barajas: Qué les parece tener cada parte por separado para mañana a las 3pm?
+[10/09/22, 15:29:07] Mikel Barajas: Para que le dé tiempo a @5214447185474 de conectarlo todo
+[10/09/22, 15:29:14] Mikel Barajas: Y ver los detalles que surjan
+[10/09/22, 15:29:49] ‪+52 444 718 5474‬: Antes de comenzar con lo de propuestas y eso, para que veas el main prototipo de como queda, para resolver cosas como lo de paso de parametros, etc
+[10/09/22, 15:29:52] ‪+52 444 718 5474‬: int main()
+{
+	int opcion;
+
+	do
+    {
+    	printf("\n |------------------PROGRAMA FORMULAS 2022------------------|");
+		printf("\n |1. BISIESTO                         5. TRIGONOMETRIA      |");
+		printf("\n |2. DIAS PARA LLEGAR A UNA FECHA     6. ESTADISTICA        |");
+		printf("\n |3. TEMPERATURA                      7. FACTORIAL	      |");
+		printf("\n |4. EDADES                           8. SALIR              |");
+		printf("\n |----------------------------------------------------------|");
+		printf("\n\n Elige una opcion: ");
+		scanf("%d",&opcion);
+
+    	switch(opcion)
+    	{
+    		case 1:
+    			printf("\n BISIESTO");
+    			break;
+    		case 2:
+    			printf("\n DIAS PARA LLEGAR A UNA FECHA");
+    			break;
+    		case 3:
+    			printf("\n TEMPERATURA");
+    			break;
+    		case 4:
+    			printf("\n EDADES");
+    			break;
+    		case 5:
+    			printf("\n TRIGONOMETRIA");
+    			break;
+    		case 6:
+    			printf("\n ESTADISTICA");
+    			break;
+    		case 7:
+    			printf("\n FACTORAIL");
+    			break;
+    		case 8:
+    			break;
+    		default:
+    			printf("\n NO EXISTE");
+		}
+	}while(opcion != 8);
+    
+    return 0;
+}
+[10/09/22, 15:29:58] ‪+52 444 718 5474‬: Ese es el main prototipo
+[10/09/22, 15:30:19] ‪+52 444 718 5474‬: En cada case habrá una función obviamente, la cosa es la siguiente
+[10/09/22, 15:30:46] ‪+52 444 718 5474‬: Necesito que en las funciones me especifiquen si lo están mandando por parámetro o por retorno
+[10/09/22, 15:30:54] ‪+52 444 718 5474‬: Para así saber qué variables necesito
+[10/09/22, 15:31:00] ‪+52 444 718 5474‬: Y otra cosilla
+[10/09/22, 15:31:09] Raul Moreno: Yo no puedo jajaja, estoy trabajando ahorita, salgo a las 11 y mañana entro a 8 y salgo a las 4
+[10/09/22, 15:31:22] Mikel Barajas: Yo pensaba que mejor solo se llamara un void, y que cada problema contara con su “main”
+[10/09/22, 15:31:34] Mikel Barajas: Así cada persona maneja variables, entradas y salidas
+[10/09/22, 15:31:42] Mikel Barajas: Y así nos evitamos tener que organizar parámetros
+[10/09/22, 15:31:50] Mikel Barajas: Así hasta podría verse más limpio el main
+[10/09/22, 15:31:55] ‪+52 444 718 5474‬: Hay algunas variables que podrían resultar repetitivas, entonces aquí si *propuesta* que definamos una sola variable a usar para ciertas funciones
+[10/09/22, 15:32:31] ‪+52 444 718 5474‬: Ah o sea, cada función tendrá lo suyo, el menú solo es para mandar a llamar la función
+[10/09/22, 15:32:35] Mikel Barajas: Sí
+[10/09/22, 15:32:39] Mikel Barajas: Así es más fácil revisarla
+[10/09/22, 15:32:59] Mikel Barajas: No tienes que saltar tanto de función a función mientras ves que es lo que hace
+[10/09/22, 15:33:03] ‪+52 444 718 5474‬: Bueno, igual si llego a ver inconsistencias con los nombre de variable yo lo analizo
+[10/09/22, 15:33:07] Mikel Barajas: Va
+[10/09/22, 15:33:45] ‪+52 444 718 5474‬: Ya está, por lo pronto tengo el main base del menú y como vayamos avanzando pues a ver qué rollo
+[10/09/22, 15:34:18] Mikel Barajas: Bueno, en tu caso nomás que le vaya avanzando el otro de tu equipo
+[10/09/22, 15:34:25] ‪+52 444 193 2391‬: Lo que podemos hacer es que cuando mandemos las funciones hechas, revisemos qué variables se repiten en varias y solo esas las hacemos globales
+[10/09/22, 15:34:32] ‪+52 444 193 2391‬: Y que el resto funcionen en su propio bloque
+[10/09/22, 15:34:33] Mikel Barajas: Y con tener el nombre de la función podemos seguirle
+[10/09/22, 15:34:45] Mikel Barajas: Yo creo que mejor no hay que usar ninguna variable global
+[10/09/22, 15:34:47] ‪+52 444 718 5474‬: Ya eso es lo que yo me encargo ntp
+[10/09/22, 15:34:59] Mikel Barajas: Podríamos hacer una struct persona por qué esa se repite varias veces
+[10/09/22, 15:35:03] Mikel Barajas: Pero el mismo profe dijo
+[10/09/22, 15:35:10] Mikel Barajas: Que era mala idea usar variables globales
+[10/09/22, 15:35:17] ‪+52 444 718 5474‬: Ah esa es otra
+[10/09/22, 15:35:26] ‪+52 444 718 5474‬: Con lo de las edades
+[10/09/22, 15:35:46] ‪+52 444 718 5474‬: Bueno, para cualquier función mejor dicho
+[10/09/22, 15:35:59] Raul Moreno: O igual no se si aún se puede cambiar y que me dejen una individual, para no tardar tanto en hacerlo
+[10/09/22, 15:36:02] ‪+52 444 718 5474‬: Si hay structs o algo así, también mandenlos para agregarlos, nomas especifiquen que onda
+[10/09/22, 15:36:29] Mikel Barajas: No hay mucho impacto de memoria si usamos son variables parecidas en varias funciones
+[10/09/22, 15:36:31] Mikel Barajas: Va
+[10/09/22, 15:36:40] Mikel Barajas: Pregunta por aquí a los que les tocó individual
+[10/09/22, 15:36:43] Mikel Barajas: Si no te cambian
+[10/09/22, 15:36:55] Raul Moreno: @5214442859212  no me cambias?
+[10/09/22, 15:37:03] Raul Moreno: Y te hago una pizza
+[10/09/22, 15:37:23] ‪+52 444 718 5474‬: Tssss
+[10/09/22, 15:37:35] ‪+52 444 718 5474‬: Yo quiero una, pero no cambio, nomas regalamela uwu
+[10/09/22, 15:37:37] ‪+52 444 718 5474‬: JAJAJA
+[10/09/22, 15:40:06] Mikel Barajas: *Convenciones de Mensajes*
+
+•Incluir asunto al principio del mensaje.
+•Etiquetar a las personas involucradas en el mensaje.
+•Si se esta respondiendo a un mensaje ya enviado, usar la función de responder mensaje de whatsapp.
+
+_Ejemplo:_
+
+*Asunto*
+@nombre1 @nombre2
+
+Hola, creo que (texto del mensaje)
+
+*Convenciones de código*
+
+_Naming Conventions (nombres de variables y funciones)_
+•Nombres en Inglés.
+•Nombres significativos, aunque queden largos.
+•Usar snake_case (ejemplo: variable_name).
+•Usar i, j, y k como contadores dentro de los ciclos.
+•Declarar variables cuando sea necesario (no todas al inicio).
+•Avisar si van a necesitar usar una struct.
+•Usar typedef en structs.
+•No variables globales.
+
+_Funciones_
+•Incluir prototipos de las funciones.
+•Hacer una función *void* que será llamada desde el menú, y que maneje las entradas y salidas (Es como un main por cada problema).
+•Hacer otras funciones si se requiere un proceso más complejo, que se llame desde la funcion anterior.
+
+_Entradas y salidas (scanf, printf)_
+•Mensajes en español.
+•*No* escribir los mensajes a manera de pregunta. (Ejemplo: "¿Cuál es la escala de temperatura?")
+•Si una entrada tiene opciones específicas, imprimirlas entre corchetes.
+    ·Ejemplos:
+    ·"Confirmar operación [Y/N]:"
+    ·Escala de temperatura [C, F, R]: "
+
+_Comentarios_
+•Todas las funciones deben ir comentadas.
+
+*Tareas*
+
+•*Main:* Isaih @5214447185474
+•*a) Bisiesto:* Montse @5214871594881
+•*b) Días:* Raul @5214441190036 Joe @5214441366505
+•*c) Temperatura:* Fernando @5214442859212
+•*d) Edades:* Alan @5214443802885 Alfredo @5214442145259
+•*e) Trigonometría:*  Sergio @5214443741420 Kevin @5214443163254
+•*f) Estadística:* Mikel @yo Isaí @5214441932391
+•*g) Factorial:* Rogelio @5214448875251
+[10/09/22, 15:40:26] Mikel Barajas: Ya quedó con lo que dijo isaih de las structs
+[10/09/22, 15:40:31] Mikel Barajas: Si es que se ocupan
+[10/09/22, 15:40:43] Mikel Barajas: Si hay cambio en las tareas las pongo luego
+[10/09/22, 15:41:14] Mikel Barajas: Por mientras ya podemos empezar
+[10/09/22, 15:41:16] Mikel Barajas: Ya saben
+[10/09/22, 15:41:20] Mikel Barajas: Toda la comunicación por aquí
+[10/09/22, 15:43:24] Mikel Barajas: *Problema f) estadística*
+@5214441932391 
+
+Ando afuera de mi casa, no puedo empezar yo. Puedes ir viendo cómo que datos podríamos ir calculando? Así como los que saca el INEGI en el censo. Con qué sean  por individuo, no de familias o demás.
+[10/09/22, 15:44:17] Mikel Barajas: El formato de mensaje es para no perdernos tanto mientras hablan todos los demás, así nomás le damos a cada respuesta para ver de qué trataba originalmente
+[10/09/22, 15:49:30] ‪+52 444 193 2391‬: *Problema f) estadística*
+@5214445027537 
+Creo que con “población” se refiere a una población de datos, no? Por ejemplo dar n datos y de ellos calcular media, mediana y moda. 
+
+Por la complejidad del resto de incisos, no me hace tanta lógica que se trate de una población de personas como tal.  No sé qué opines
+[10/09/22, 15:50:24] Mikel Barajas: Primero había pensado eso, pero siento que lo dejo amplio para el lunes ya meterle la complejidad
+[10/09/22, 15:50:40] Mikel Barajas: Por qué es el más vagamente definido
+[10/09/22, 15:51:02] Mikel Barajas: Me parece buena tu idea de primero hacerlo para datos únicamente, pero hay que preparar por si pide para personas
+[10/09/22, 15:51:16] Mikel Barajas: @5214441932391 también estás de acuerdo con primero solo hacerlo de datos números?
+[10/09/22, 15:51:48] Mikel Barajas: Yo sí estoy de acuerdo con @5214447185474 , tiene más sentido que sea de números
+[10/09/22, 15:52:07] Mikel Barajas: Nomás con ver qué sube el lunes
+[10/09/22, 15:52:49] ‪+52 444 718 5474‬: Ah caray xdd como como, contexto de qué propuse
+[10/09/22, 15:53:05] Mikel Barajas: O sea población de datos, no de personas
+[10/09/22, 15:53:18] Mikel Barajas: Yo me fui con la finta de que era de personas
+[10/09/22, 15:53:42] Mikel Barajas: Pero tiene más sentido lo que tú dijiste aquí
+[10/09/22, 15:53:54] ‪+52 444 193 2391‬: Sí, me parece mejor prepararlo así de números y si quieres dejamos preparado un prototipo de lo otro por si acaso 👍
+[10/09/22, 15:54:03] Mikel Barajas: Perfecto
+[10/09/22, 15:54:17] Mikel Barajas: Entonces solo ve viendo qué datos podemos calcular
+[10/09/22, 15:54:22] Mikel Barajas: Llegando nos dividimos esos
+[10/09/22, 15:54:26] ‪+52 444 193 2391‬: Vaqueva
+[10/09/22, 15:56:24] Mikel Barajas: Alguien más no puede?
+[10/09/22, 15:57:01] Mikel Barajas: @5214441932391 @5214442145259 @5214443163254 @5214871594881 @5214441190036 @5214441366505 @5214442859212 @5214443741420 @5214443802885 @5214447185474 @5214448875251
+[10/09/22, 15:57:33] ‪+52 444 718 5474‬: Pues yo por ahora ya tengo lo mío, ya nada más que vayan haciendo sus funciones pues me las mandan
+[10/09/22, 15:58:33] ‪+52 444 285 9212‬: Es que ya elegí la mía jejeje 🙈
+[10/09/22, 15:59:07] ‪+52 444 285 9212‬: Yo si puedo para mañana, pero no creo estar en mi casa a las 3, sería como hasta las 6-7
+[10/09/22, 16:00:46] Raul Moreno: Ándale mejor amigo ferxxo, y te invito un bolis
+[10/09/22, 16:00:48] ‪+52 444 718 5474‬: Oigan, como recurso para que prueben sus funciones les dejo este "prototipo" 
+int main()
+{	
+	<nombre de la funcion>; //Basicamente aquí se pone la función que se probará
+	return 0;
+}
+[10/09/22, 16:02:31] ‪+52 444 718 5474‬: *Propuesta*
+Programación modular, básicamente significa que no usemos paso de parámetros ni nada de eso si no se requiere ya que no usaremos arreglos dinámicos ni listas enlazadas, etc.
+
+Así en vez de hacer funciones por ejemplo:
+int factorial(int numero);
+
+Hacemos funciones como:
+void factorial();
+[10/09/22, 16:13:56] Mikel Barajas: Solamente que si ocupan una función que calcule un número, sí úsenla
+[10/09/22, 16:14:08] Mikel Barajas: Como dice isaih, si se requiere
+[10/09/22, 16:14:45] Mikel Barajas: Cada problema será un módulo entonces
+[10/09/22, 16:18:38] Mikel Barajas: *propuesta*
+
+Validar valores que deben estar en un rango con un ciclo do while
+[10/09/22, 16:18:49] Mikel Barajas: Por ejemplo, el tamaño de un arreglo
+[10/09/22, 16:19:41] Mikel Barajas: *propuesta* 
+Definir un MAX para el tamaño del arreglo, por ejemplo 100
+[11/09/22, 14:00:55] ‪+52 444 136 6505‬: @5214441190036 oye, entonces a qué hora estás en tu casa para hacer el programa?
+[11/09/22, 14:03:34] Raul Moreno: Estoy disponible a las 5
+[11/09/22, 14:03:37] Raul Moreno: Puedes?
+[11/09/22, 14:05:06] Mikel Barajas: @5214441932391, qué podemos agregarle a nuestra parte?
+[11/09/22, 14:05:16] Mikel Barajas: Qué cálculos digo
+[11/09/22, 14:05:30] Mikel Barajas: Me imagino pro ahora que media, moda y mediana
+[11/09/22, 14:06:32] ‪+52 444 136 6505‬: Smn
+[11/09/22, 14:18:28] ‪+52 444 380 2885‬: *Problema d) edades*
+@5214442145259 
+¿Estás para hacerlo?
+[11/09/22, 14:19:32] Alfredo Villaseñor: Si, apenas me iba a comunicar contigo
+[11/09/22, 14:22:43] ‪+52 444 380 2885‬: ¿Como se te ocurre que podamos hacerlo?
+[11/09/22, 14:27:36] Kevin Márquez: *e) Trigonometría:*  @5214443741420 estás listo?
+[11/09/22, 14:31:09] Alfredo Villaseñor: Primero que nada, definiendo si pedimos la edad mediante el rol del integrante de la familia.
+Ejemplo:
+Edad de la madre:
+
+Pero tendríamos que preguntar si tiene padre, madre y cuántos herman@s, delimitando hasta ahí la familia o agregando más roles.
+
+Se me hace más sencillo pedirlo como:
+Edad integrante 1:
+
+No sé qué opines
+[11/09/22, 14:35:45] ‪+52 444 374 1420‬: ya había empezado algo, pero me surgió la duda de que si pregunta de hacer 3 funciones o elegir de las 3 una
+[11/09/22, 14:36:26] ‪+52 444 374 1420‬: o si no de poner de todas tipo seno, coseno, tangente, csc, sec, cot, acos, asen y así
+[11/09/22, 14:36:30] ‪+52 444 380 2885‬: Sip, yo opino lo mismo 
+Que pidamos primero cuántos integrantes son y ya después con un ciclo que vaya pidiendo las edades
+
+Edad del integrante 1
+Edad del integrante 2
+…
+[11/09/22, 14:37:52] ‪+52 444 380 2885‬: Y bueno pedir los años y los meses
+Algo así como
+
+Años del integrante 1
+Meses del integrante 2
+[11/09/22, 14:37:54] ‪+52 444 380 2885‬: Tal vez
+[11/09/22, 14:39:44] Alfredo Villaseñor: ------ EDAD INTEGRANTE 1 ------
+Años:
+Meses:
+[11/09/22, 14:42:08] Kevin Márquez: No, el programa dice solo 3
+[11/09/22, 14:42:22] Kevin Márquez: Y me imagino que las principales de sen, cos, tan
+[11/09/22, 14:43:13] Kevin Márquez: X2
+[11/09/22, 14:47:42] ‪+52 444 374 1420‬: void Trigonometria()
+{
+    float radianes,resultado;
+    int funcion_del_angulo;
+    printf("Ingresa el angulo en radianes: ");
+    scanf("%f",&radianes);
+    printf("Elige la funcion a realizar:\n");
+    printf("1. Seno\n");
+    printf("2. Coseno\n");
+    printf("3. Tangente\n");
+    scanf("%d",&funcion_del_angulo);
+    switch(funcion_del_angulo)
+    {
+        case 1:     //Funcion seno
+        resultado=sin(radianes);
+        printf("Seno de %f radianes: %f ",radianes,resultado);
+        break;
+        case 2:     //Funcion coseno
+        resultado=cos(radianes);
+        printf("Coseno de %f radianes: %f ",radianes,resultado);
+        break;
+        case 3:     //Funcion tangente
+        resultado=tan(radianes);
+        printf("Tangente de %f radianes: %f ",radianes,resultado);
+        break;
+    }
+}
+
+si son solo de esas 3 elegir entonces tengo esto, igual y ya viendo bien cambiarle
+[11/09/22, 14:49:57] Montserrat Gallegos: *PROBLEMA A*
+[11/09/22, 14:50:05] Kevin Márquez: Entonces la respuesta será en números?
+[11/09/22, 14:50:23] Kevin Márquez: Deja veo que le puedo cambiar o mejorar
+[11/09/22, 14:50:52] Montserrat Gallegos: *PROBLEMA A*
+
+void is_a_leap_year(){
+    int year, leap_year;
+
+    do{
+        printf("Ingresa el anio a consultar:\n");
+        scanf("%d", &year);
+        if(year<0){
+            printf("El anio no es valido:\n");
+        }
+    }while(year<0);
+
+    if(year%4==0){
+        if(year%100 == 0){
+            if(year%400 == 0){
+                leap_year=1;
+            }else{
+                leap_year=0;
+            }
+        }else{
+            leap_year=1;
+        }
+    }else{
+        leap_year=0;
+    }
+
+    if(leap_year==1){
+        printf("El anio SI es bisiesto\n");
+    }else{
+        printf("El anio NO es bisiesto\n");
+    }
+}
+[11/09/22, 14:51:55] Montserrat Gallegos: Esa es la función que me tocó... Ya la probé, y pues funciona, pero si tengo algo que corregir en cuestión de la convención del código me dicen
+[11/09/22, 14:52:48] ‪+52 444 374 1420‬: Yo diría
+[11/09/22, 14:54:16] Kevin Márquez: Le agregaré el %.2f para evitar el exceso de decimas, un default al switch para marcarle al usuario que se equivocó y vuelva a intentar
+[11/09/22, 14:54:18] ‪+52 444 374 1420‬: Ok, igual y eso de si sí son pedir 3 de varias agregarle más opciones al switch y poner un ciclo
+[11/09/22, 14:54:26] ‪+52 444 374 1420‬: Ok
+[11/09/22, 14:55:44] ‪+52 444 380 2885‬: Yep una struct?
+[11/09/22, 14:55:55] ‪+52 444 380 2885‬: ¿Y para sacar el promedio como se te ocurre?
+[11/09/22, 14:56:16] ‪+52 444 380 2885‬: La forma que se me ocurrre es pasar el año a meses y sumarlo a los meses y de ahí sacar el promedio y después pasarlo a años de nuevo jaja
+[11/09/22, 14:56:30] ‪+52 444 380 2885‬: Pero está muy revoltoso creo, no sé si se te ocurre algo mejor
+[11/09/22, 14:59:24] ‪+52 444 193 2391‬: Yo diría que con esas tres, la vdd
+[11/09/22, 14:59:46] ‪+52 444 193 2391‬: Tan solo en la moda siento que ya es suficiente código, porque tenemos que ir contando cada que se repita un término
+[11/09/22, 15:02:11] Alfredo Villaseñor: Se me ocurrió de la misma manera
+¿Y cómo pasamos la parte decimal del promedio a meses?
+Supongo que debemos mostrarlo así, ¿no?
+[11/09/22, 15:02:31] Kevin Márquez: void Trigonometria()
+{
+    float radianes,resultado;
+    int funcion_del_angulo;
+    char resp[5];
+    do
+    {
+        printf("Ingresa el angulo en radianes: ");
+        scanf("%f",&radianes);
+        printf("Elige la funcion a realizar:\n");
+        printf("1. Seno\n");
+        printf("2. Coseno\n");
+        printf("3. Tangente\n");
+        scanf("%d",&funcion_del_angulo);
+        switch(funcion_del_angulo)
+        {
+            case 1:     //Funcion seno
+                resultado=sin(radianes);
+                printf("Seno de %.2f radianes: %.2f ",radianes,resultado);
+            break;
+            case 2:     //Funcion coseno
+                resultado=cos(radianes);
+                printf("Coseno de %.2f radianes: %.2f ",radianes,resultado);
+            break;
+            case 3:     //Funcion tangente
+                resultado=tan(radianes);
+                printf("Tangente de %.2f radianes: %.2f ",radianes,resultado);
+            break;
+            default:
+                printf("Esa opcion no esta disponible, vuelva a intentar\n");
+        }
+        printf("Continuar(s/n)");
+        gets(resp);
+    }while(resp=='s');
+}
+[11/09/22, 15:06:07] ‪+52 444 374 1420‬: Ya quedó entonces?
+[11/09/22, 15:08:13] Kevin Márquez: Solo queda hacerle una prueba rápida
+[11/09/22, 15:09:02] Kevin Márquez: No ando en casa y lo edite en el cel
+[11/09/22, 15:21:35] ‪+52 444 380 2885‬: Si
+Déjame checarlo y ahorita te enseño
+[11/09/22, 15:46:30] Alfredo Villaseñor: ¿Debe estar todo dentro de una misma función *void*?
+[11/09/22, 15:49:36] Mikel Barajas: No
+[11/09/22, 15:49:41] Mikel Barajas: Pueden usar funciones aparte
+[11/09/22, 15:49:59] Mikel Barajas: Mejor úsenlas si calculan varias cosas dé hecho
+[11/09/22, 15:50:04] Mikel Barajas: No hay que tener funciones gigantes
+[11/09/22, 15:54:19] ‪+52 444 380 2885‬: Déjame intentar hacerlo, ahorita te mando mi progreso
+[11/09/22, 15:54:31] ‪+52 444 285 9212‬: Hola, tengo un pequeño problema por asi decirlo. 
+
+printf("Ingresa la escala que estas utilizando[C/F/K]:");
+    scanf("%c",&scale);
+    printf("Ingresa la temperatura: ");
+    scanf("%d",&temperature);
+    printf("Ingresa la escala a la que deseas convertirla[C/F/K]:");
+    scanf("%c",&option);
+
+Al momento de querer leer el segundo caracter el codigo no me lo lee, he utilizado varios compiladores y el error es el mismo. Ya tengo la funcion hecha, solo me falta esa pequeña parte para poder completarlo. Alguien sabe por que puede ser?
+[11/09/22, 15:56:53] Raul Moreno: Eso pasa por no querer dejármelo
+[11/09/22, 15:57:33] Mikel Barajas: Ponle un espacio antes del %c
+[11/09/22, 15:57:42] ‪+52 444 285 9212‬: Una disculpa estimado
+[11/09/22, 15:57:47] Mikel Barajas: Lo qué pasa es que scanf lee lo que está en el buffer
+[11/09/22, 15:58:08] Mikel Barajas: Y cuando le das enter se queda el espacio de ‘/n’ guardado
+[11/09/22, 15:58:18] Mikel Barajas: Y eso pone en la variable option
+[11/09/22, 15:58:29] Mikel Barajas: Si pones “ %c”
+[11/09/22, 15:58:33] Mikel Barajas: Con un espacio antes
+[11/09/22, 15:58:36] Mikel Barajas: En el segundo scanf
+[11/09/22, 15:58:39] Mikel Barajas: Ya lo lee bien
+[11/09/22, 15:59:14] ‪+52 444 285 9212‬: Ahhhh ya ya, esa no me la sabia. Ya me jalo la función jejej, en un momento la mando, ya solo la complemento
+[11/09/22, 15:59:24] ‪+52 444 285 9212‬: Muchas gracias 🫱🏽‍🫲🏽
+[11/09/22, 16:06:46] Raul Moreno: También pudiste usar la función setbuff después del scanf donde lees el entero
+[11/09/22, 16:07:09] Mikel Barajas: *entrega*
+Oigan, entonces se entrega el jueves o el martes?
+[11/09/22, 16:07:38] Raul Moreno: Yo también tengo la misma duda, porque lo encargo el martes, pero luego mencionó que el jueves
+[11/09/22, 16:07:52] ‪+52 444 380 2885‬: Según yo se entrega el jueves
+[11/09/22, 16:08:13] Mikel Barajas: Vamos a intentar acabar una versión hoy o mañana
+[11/09/22, 16:08:18] Mikel Barajas: Para no presionarnos tanto
+[11/09/22, 16:08:22] Mikel Barajas: Qué opinan
+[11/09/22, 16:10:20] ‪+52 444 380 2885‬: Yo digo que sip mañana, sirve que nos actualiza el programa
+[11/09/22, 16:14:22] Mikel Barajas: @5214441932391 puedes hacer una función que reciba un arreglo de double y regrese un valor double que sea el promedio?
+[11/09/22, 16:14:33] Mikel Barajas: También recibiría tamaño
+[11/09/22, 16:14:45] ‪+52 444 193 2391‬: Sip
+[11/09/22, 16:16:32] ‪+52 444 374 1420‬: void Trigonometria()
+{
+    float radianes,resultado;
+    int funcion_del_angulo;
+    char resp;
+    do
+    {
+        printf("Ingresa el angulo en radianes: ");
+        scanf("%f",&radianes);
+        printf("Elige la funcion a realizar:\n");
+        printf("1. Seno\n");
+        printf("2. Coseno\n");
+        printf("3. Tangente\n");
+        scanf("%d",&funcion_del_angulo);
+        switch(funcion_del_angulo)
+        {
+            case 1:     //Funcion seno
+                resultado=sin(radianes);
+                printf("Seno de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            case 2:     //Funcion coseno
+                resultado=cos(radianes);
+                printf("Coseno de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            case 3:     //Funcion tangente
+                resultado=tan(radianes);
+                printf("Tangente de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            default:
+                printf("Esa opcion no esta disponible, vuelva a intentar\n");
+        }
+        printf("Continuar(s/n)");
+        scanf(" %c",&resp);
+    }while(resp=='s');
+}
+
+ya nada más le cambié en lugar de cadena un carácter y un scan y ya probé y sí funciona
+[11/09/22, 16:17:15] Mikel Barajas: Es con math.h vea?
+[11/09/22, 16:17:22] Mikel Barajas: O con cmath?
+[11/09/22, 16:17:35] ‪+52 444 374 1420‬: si
+[11/09/22, 16:17:41] Mikel Barajas: Nomás para nosotros usar la misma
+[11/09/22, 16:17:43] Mikel Barajas: Gracias
+[11/09/22, 16:18:09] Mikel Barajas: Pueden agregar cómo comentario las librerías que usen?
+[11/09/22, 16:18:57] Mikel Barajas: @5214441932391 @5214442145259 @5214443163254 @5214871594881 @5214441190036 @5214441366505 @5214442859212 @5214443741420 @5214443802885 @5214447185474 @5214448875251
+[11/09/22, 16:19:21] Mikel Barajas: Aunque sea el stdio.h
+[11/09/22, 16:19:31] Mikel Barajas: Y el stdlib
+[11/09/22, 16:19:51] Mikel Barajas: También denle a destacar su mensaje con la última versión de la función que les toco
+[11/09/22, 16:19:54] Mikel Barajas: Para no perderlas
+[11/09/22, 16:23:53] Montserrat Gallegos: *PROBLEMA A*
+
+//PROTOTIPO: 
+//void is_a_leap_yesr();
+
+//LIBRERÍAS:
+//#include <stdio.h>
+//#include <stdlib.h>
+
+//FUNCION:
+void is_a_leap_year(){
+    int year, leap_year;
+
+    do{
+        printf("Ingresa el anio a consultar:\n");
+        scanf("%d", &year);
+        if(year<0){
+            printf("El anio no es valido:\n");
+        }
+    }while(year<0);
+
+    if(year%4==0){
+        if(year%100 == 0){
+            if(year%400 == 0){
+                leap_year=1;
+            }else{
+                leap_year=0;
+            }
+        }else{
+            leap_year=1;
+        }
+    }else{
+        leap_year=0;
+    }
+
+    if(leap_year==1){
+        printf("El anio SI es bisiesto\n");
+    }else{
+        printf("El anio NO es bisiesto\n");
+    }
+}
+[11/09/22, 16:40:12] ‪+52 444 193 2391‬: //Esta función calcula el promedio de los datos del arreglo
+//<stdio.h>
+double average(double arr[], int size){
+	double ave=0;
+	int i=0;
+	for(i; i<size; i++)
+		ave += arr[i];
+	ave /= size;
+	return ave;
+}
+[11/09/22, 16:50:16] ‪+52 444 285 9212‬: No imagine que fuera por el buffer jjejeje
+[11/09/22, 16:54:34] Alfredo Villaseñor: @5214443802885 
+Por alguna razón termina la ejecución antes de la instrucción
+auxiliary = scan_family_ages(family_members);
+del main:(
+
+/ Librerías
+#include <stdio.h>
+
+// Prototipos
+int scan_family_members();
+int scan_family_ages(int members_number);
+void calculate_average_age(int members_number, int *aux);
+
+/// FUNCIÓN PRINCIPAL
+int main(){
+    int family_members, auxiliary;
+
+    family_members = scan_family_members();
+    auxiliary = scan_family_ages(family_members);
+    calculate_average_age(family_members, &auxiliary);
+}
+
+// Función para pedir el número de integrantes
+int scan_family_members(){
+    int members_number;
+
+    printf("No. de integrantes en la familia: ");
+    scanf("%d", members_number);
+
+    return(members_number);
+}
+
+// Función para pedir las edades de los integrantes
+int scan_family_ages(int members_number){
+    int i, age, aux = 0;
+
+    for(i = 1; i <= members_number; i++){
+        printf("\n------ EDAD INTEGRANTE %d ------\n", i);
+        printf("Anios: ");
+        scanf("%d", &age);
+        aux += age * 12;
+        printf("Meses: ");
+        scanf("%d", &age);
+        aux += age;
+    }
+
+    return(aux);
+}
+
+// Función para capturar y mostrar la edad promedio
+void calculate_average_age(int members_number, int *aux){
+    int years, months;
+
+    *aux /= members_number;
+    years = *aux / 12;
+    months = *aux % 12;
+
+    printf("\n------ EDAD PROMEDIO ------\n");
+    printf("Anios: %d", years);
+    printf("Meses: %d", months);
+}
+[11/09/22, 16:57:48] ‪+52 444 380 2885‬: ah caray, yo ya andaba haciendo uno, pero llevaba poco
+
+Déjame checar eso que me dices
+[11/09/22, 17:22:36] ‪+52 444 136 6505‬: @5214441190036 avisas cuando puedas
+[11/09/22, 17:22:53] Raul Moreno: Ya puedo, como quieres hacerlo?
+[11/09/22, 17:27:05] ‪+52 444 136 6505‬: Como vamos a regresar el resultado? por parametro o retorno?
+[11/09/22, 17:28:23] Raul Moreno: Creo que no debemos regresar ningún valor, o si @5214445027537 ?
+[11/09/22, 17:40:15] ‪+52 444 136 6505‬: //PROTOTIPO: 
+//void dias();
+
+//LIBRERÍAS:
+//#include <stdio.h>
+//#include <stdlib.h>
+
+//FUNCION:
+
+void dias()
+{
+    int dia, anio;
+    
+    printf("\nIngresa el dia de le fecha a consultar:");
+    scanf("%i", &dia);
+    
+    printf("\nIngresa el anio de la fecha a consultar:");
+    scanf("%i", &anio);
+}
+[11/09/22, 17:40:20] ‪+52 444 136 6505‬: Esto es lo que llevo
+[11/09/22, 17:41:19] Raul Moreno: Chin creo que llevamos mas o menos lo mismo jajaa
+[11/09/22, 17:41:22] Raul Moreno: Deja te lo mando
+[11/09/22, 17:41:53] ‪+52 444 136 6505‬: Va
+[11/09/22, 17:42:20] ‪+52 444 136 6505‬: //PROTOTIPO: 
+//void dias();
+
+//LIBRERÍAS:
+//#include <stdio.h>
+//#include <stdlib.h>
+
+//FUNCION:
+
+void dias()
+{
+    int dia, mes, anio;
+    
+    printf("\nIngresa el dia de le fecha a consultar:");
+    scanf("%i", &dia);
+    
+    printf("\nIngresa el mes de le fecha a consultar:");
+    scanf("%i", &mes);
+    
+    printf("\nIngresa el anio de la fecha a consultar:");
+    scanf("%i", &anio);
+}
+[11/09/22, 17:43:28] Raul Moreno: ‎Se eliminó este mensaje.
+[11/09/22, 17:43:45] Raul Moreno: //PROTOTIPO: 
+//void dias();
+
+//LIBRERÍAS:
+//#include <stdio.h>
+//#include <stdlib.h>
+
+//FUNCION
+
+void dias{
+    int current_day,current_month, current_year;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
+    current_day = local->tm_mday;            // obtener el día del mes (1 a 31)
+    current_month = local->tm_mon + 1; // obtener el mes del año (0 a 11)
+    current_year = local->tm_year + 1900; // obtener el año desde 1900 
+    
+    int future_day, future_month, future_year,cont=1;
+    while(cont){
+        printf("\nIngrese el DIA: ");
+        scanf("%d",&future_day);
+        printf("\nIngrese el MES: ");
+        scanf("%d",&future_month);
+        printf("\nIngrese el ANIO: ");
+        scanf("%d",&future_year);
+        if(!((future_day<32&&future_day>0)&&(future_month<13&&future_month>0)&&(future_month>current_year)){
+            printf("Ingrese una fecha valida \n");
+        }else{
+            cont=0;
+        }
+    }
+}
+[11/09/22, 17:44:17] Raul Moreno: Creo que lo único diferente es que puse un ciclo para validar que la fecha ingresada sea correcta
+[11/09/22, 17:44:33] ‪+52 444 285 9212‬: Tenemos que preocuparnos por la memoria? 🤠
+[11/09/22, 17:49:41] Mikel Barajas: Por qué?
+[11/09/22, 17:53:58] ‪+52 444 285 9212‬: Bueno ya termine mi parte. Cuando el usuario especifique que esta utilizando grados Celsius quize evitar que pudiera convertirlo de nuevo a grados Celsius porque sería redundante, entonces hice la pregunta de a qué escala quiere convertirlo dentro de cada case. Entonces le agregué como 4 líneas más a cada case,
+
+Se lo puedo quitar y dejar todo de forma general, aunque también  tendría que agregar la opción si el usuario quisiera por alguna extraña razón convertirlo a la misma escala jjajaja
+[11/09/22, 17:54:03] ‪+52 444 285 9212‬: Si no ya para así dejarlo
+[11/09/22, 18:05:45] ‪+52 444 136 6505‬: Podemos usar estructuras?
+[11/09/22, 18:17:55] ‪+52 444 136 6505‬: @5214441190036 para obtener la fecha actual no necesitas la libreria time.h?
+[11/09/22, 18:23:39] Raul Moreno: Cierto, se me paso ponerla
+[11/09/22, 18:33:23] ‪+52 444 136 6505‬: #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>>
+
+typedef struct {
+        int dia;
+        int mes;
+        int anio;
+} TFecha;
+
+int DiasTranscurridos(TFecha Fecha);
+
+int main()
+{
+    TFecha fecha1, fecha2;
+    int anioinicio=0, aniofinal=0, numanios=0, sumadias;
+    long totaldias=0;
+
+    time_t now;
+
+    time(&now);
+
+    struct tm *local = localtime(&now);
+
+    fecha2.dia = local->tm_mday;
+    fecha2.mes = local->tm_mon + 1;
+    fecha2.anio = local->tm_year + 1900;
+
+    printf("\nIngresa el dia de la fecha a consultar:");
+    scanf("%i", &fecha1.dia);
+
+    printf("\nIngresa el mes de la fecha a consultar:");
+    scanf("%i", &fecha1.mes);
+
+    printf("\nIngresa el anio de la fecha a consultar:");
+    scanf("%i", &fecha1.anio);
+
+
+    printf("\n\n%i %i %i", fecha1.dia, fecha1.mes, fecha1.anio);
+
+    printf("\n\n%i %i %i", fecha2.dia, fecha2.mes, fecha2.anio);
+
+
+    anioinicio = fecha1.anio==fecha2.anio?0:
+          365 - DiasTranscurridos(fecha1);
+
+    aniofinal = DiasTranscurridos(fecha2);
+
+
+    for(numanios=fecha1.anio+1;numanios<fecha2.anio;numanios)
+     {
+        sumadias+=365;
+     }
+
+     totaldias+=anioinicio+aniofinal;
+
+     printf("\n\n\n %i", totaldias);
+}
+
+
+int DiasTranscurridos(TFecha Fecha)
+{
+  int contador=0, suma=0, dia=Fecha.dia, mes=Fecha.mes, anio=Fecha.anio;
+
+  int Meses[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+  for (contador=0;contador<mes-1;contador++)
+  {
+     suma+= Meses[contador];
+  }
+
+  suma+= dia;
+
+  if(((anio%4==0) && (anio%100!=0)) || (anio%400==0) && mes>2)
+     suma++;
+  return suma;
+}
+[11/09/22, 18:33:51] ‪+52 444 136 6505‬: @5214441190036 creo que ya quedo, pero no le puse lo de verificar si la fecha es valida
+[11/09/22, 18:34:32] Raul Moreno: Oye eso era lo que te iba comentar, el año lo estas tomando como 365? Es que yo lo pensaba calcular también con los bisiestos pero no se
+[11/09/22, 18:45:28] ‪+52 444 136 6505‬: Deja le agrego eso
+[11/09/22, 18:52:16] ‪+52 444 380 2885‬: *PROBLEMA D) EDADES*
+
+@5214442145259 
+
+Ya hice un código nuevo, solo que todo lo hice en el main, mira te lo paso y lo checas
+[11/09/22, 18:52:38] ‪+52 444 380 2885‬: #include<stdio.h>
+#define MAX 100
+#define CONSTANT 0.08333 // Es la división de 1 mes entre 12 que sería para pasar un mes a años
+
+typedef struct
+{
+    float age_month;
+    int age_year;
+}family;
+
+
+int main()
+{
+    family arr_family[MAX];
+    int members;
+    int i;
+    float month,total;
+    int aux;
+    int year_2;
+    float month_2;
+
+    printf("El numero de miembros en tu familia:  ");
+
+    scanf("%d",&members);
+    for(i = 0; i < members; i++)
+    {
+        printf("Edad en anios del integrante %d\n",i + 1);
+        scanf("%d",&arr_family[i].age_year);
+        printf("Edad en mes del integrante %d\n",i + 1);
+        scanf("%f",&month);
+
+        month = month * CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        arr_family[i].age_month = month;
+        total = total + arr_family[i].age_year + month;
+    }
+    total = total / members;
+
+    year_2 = total;
+    month_2 = total - year_2;
+    month_2 = month_2 * 10;
+
+    printf("El promedio de edad es %d anios y %.0f meses ",year_2, month_2);
+[11/09/22, 18:52:49] ‪+52 444 136 6505‬: #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+typedef struct {
+        int dia;
+        int mes;
+        int anio;
+} TFecha;
+
+int DiasTranscurridos(TFecha Fecha);
+
+int main()
+{
+    TFecha fecha1, fecha2;
+    int anioinicio=0, aniofinal=0, numanios=0;
+    long totaldias=0;
+
+    time_t now;
+
+    time(&now);
+
+    struct tm *local = localtime(&now);
+
+    fecha1.dia = local->tm_mday;
+    fecha1.mes = local->tm_mon + 1;
+    fecha1.anio = local->tm_year + 1900;
+
+    printf("\nIngresa el dia de la fecha a consultar:");
+    scanf("%i", &fecha2.dia);
+
+    printf("\nIngresa el mes de la fecha a consultar:");
+    scanf("%i", &fecha2.mes);
+
+    printf("\nIngresa el anio de la fecha a consultar:");
+    scanf("%i", &fecha2.anio);
+
+
+    printf("\n\n%i %i %i", fecha1.dia, fecha1.mes, fecha1.anio);
+
+    printf("\n\n%i %i %i", fecha2.dia, fecha2.mes, fecha2.anio);
+
+
+    anioinicio = fecha1.anio==fecha2.anio?0:
+        365 - DiasTranscurridos(fecha1);
+
+
+    aniofinal = DiasTranscurridos(fecha2);
+
+
+    for(numanios=fecha1.anio+1;numanios<fecha2.anio;numanios)
+     {
+        if(((numanios%4==0) && (numanios%100!=0)))
+            totaldias+=366;
+        else
+            totaldias+=365;
+     }
+
+     totaldias+=anioinicio+aniofinal;
+
+     printf("\n\n\n El numero de dias transcurridos entre %i/%i/%i y  %i/%i/%i es: %i dias", fecha1.dia, fecha1.mes, fecha1.anio, fecha2.dia, fecha2.mes, fecha2.anio, totaldias);
+}
+
+
+int DiasTranscurridos(TFecha Fecha)
+{
+  int contador=0, suma=0, dia=Fecha.dia, mes=Fecha.mes, anio=Fecha.anio;
+
+  int Meses[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+  for (contador=0;contador<mes-1;contador++)
+  {
+     suma+= Meses[contador];
+  }
+
+  suma+= dia;
+
+  if(((anio%4==0) && (anio%100!=0)) || (anio%400==0) && mes>2)
+     suma++;
+  return suma;
+}
+[11/09/22, 18:52:56] ‪+52 444 136 6505‬: @5214441190036
+[11/09/22, 19:04:06] ‪+52 444 136 6505‬: @5214441190036 puedes agregarle la validacion de fecha?
+[11/09/22, 19:04:39] Raul Moreno: Sip, también ahorita le pongo los nombres de las variables como las pidió Mikel
+[11/09/22, 19:41:25] Raul Moreno: *PROBLEMA B* 
+//PROTOTIPOS 
+int Days_elapsed(date_t date);
+void Days();
+
+//LIBRERIAS 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+//FUNCIONES 
+void Days(){
+    int start_year=0, end_year=0, num_years=0;
+    long total_days=0;
+
+    date_t current,future;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
+    current.day = local->tm_mday;            // obtener el día del mes (1 a 31)
+    current.month = local->tm_mon + 1; // obtener el mes del año (0 a 11)
+    current.year = local->tm_year + 1900; // obtener el año desde 1900
+
+    int band=1;
+    while(band){
+        printf("\nIngresa el dia de la fecha a consultar:");
+        scanf("%i", &future.day);
+
+        printf("\nIngresa el mes de la fecha a consultar:");
+        scanf("%i", &future.month);
+
+        printf("\nIngresa el anio de la fecha a consultar:");
+        scanf("%i", &future.year);
+        if(!((future.day<32&&future.day>0)&&(future.month<13&&future.month>0)&&(future.year>current.year))){
+            printf("Ingrese una fecha valida \n");
+        }
+        else{
+            band=0;
+        }
+    }
+
+    printf("\n%i/%i/%i", current.day, current.month, current.year);
+    printf("\n%i/%i/%i", future.day, future.month, future.year);
+
+    start_year = current.day==future.day?0:
+        365 - Days_elapsed(current);
+
+    end_year = Days_elapsed(future);
+
+    for(num_years=current.day+1;num_years<future.day;num_years)
+     {
+        if(((num_years%4==0) && (num_years%100!=0)))
+            total_days+=366;
+        else
+            total_days+=365;
+     }
+
+     total_days+=start_year+end_year;
+
+     printf("\n\n El numero de dias transcurridos entre %i/%i/%i y  %i/%i/%i es: %i dias", current.day, current.month, current.year, future.day, future.month, future.year, total_days);
+}
+
+
+int Days_elapsed(date_t date)
+{
+  int sum=0;
+
+  int months[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+  for (int cont=0;cont<date.month-1;cont++)
+  {
+     sum+= months[cont];
+  }
+
+  sum+= date.day;
+
+  if(((date.year%4==0) && (date.year%100!=0)) || (date.year%400==0) && date.month>2)
+     sum++;
+  return sum;
+}
+[11/09/22, 19:45:02] Alfredo Villaseñor: @5214443802885 
+
+Está bien, sólo faltó convertir a meses la parte fraccionaria del promedio
+
+month_2 = month_2 * 12 / 10;
+
+Esa instrucción antes del printf del promedio y ya
+[11/09/22, 19:52:24] Alfredo Villaseñor: *PROBLEMA D*
+
+@5214443802885 
+Creo que quedaría así
+
+// LIBRERÍAS
+//#include <stdio.h>
+
+// CONSTANTES
+#define MAX 100
+#define CONSTANT 0.08333 // Es la división de 1 mes entre 12 que sería para pasar un mes a años
+
+typedef struct
+{
+    int age_year;
+    float age_month;
+} FAMILY;
+
+// PROTOTIPO
+void average_age();
+
+
+// FUNCIÓN
+void average_age()
+{
+    FAMILY array_family[MAX];
+    int i, members, aux, year_2;
+    float month, month_2, total;
+
+    printf("\nNumero de miembros en tu familia:  ");
+    scanf("%d", &members);
+
+    for(i = 0; i < members; i++)
+    {
+        printf("\nEdad en anios del integrante %d: ", i + 1);
+        scanf("%d", &array_family[i].age_year);
+        printf("Edad en meses del integrante %d: ", i + 1);
+        scanf("%f", &month);
+
+        month *= CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        array_family[i].age_month = month;
+        total = total + array_family[i].age_year + month;
+    }
+
+    total /= members;
+    year_2 = total;
+    month_2 = total - year_2;
+    month_2 *= 10;
+    month_2 = month_2 * 12 / 10;
+
+    printf("\nEl promedio de edad es %d anios y %.0f meses.\n", year_2, month_2);
+}
+[11/09/22, 19:57:54] ‪+52 444 380 2885‬: ¿Por que?
+No te entendí
+[11/09/22, 20:02:57] Alfredo Villaseñor: Supongamos que el promedio de edad es 17.5
+
+El programa muestra
+"El promedio de edad es 17 años y *5* meses."
+
+Cuando en realidad debe mostrar
+"El promedio de edad es 17 años y *6* meses."
+Porque 0.5 años son 6 meses.
+[11/09/22, 20:04:54] ‪+52 444 380 2885‬: ohh vale si ya te entendí
+[11/09/22, 20:05:06] ‪+52 444 380 2885‬: entonces así quedaría ya de final
+[11/09/22, 20:07:16] ‪+52 444 718 5474‬: Si lo resolviste?
+[11/09/22, 20:07:43] ‪+52 444 285 9212‬: Ahh si, se me olvido mandar mi función jjajaja
+[11/09/22, 20:08:04] ‪+52 444 718 5474‬: Ah porque puedes usar también el gets para cadenas de caracteres
+[11/09/22, 20:08:04] ‪+52 444 887 5251‬: ‎Se eliminó este mensaje.
+[11/09/22, 20:08:19] ‪+52 444 887 5251‬: El g)
+[11/09/22, 20:08:41] ‪+52 444 887 5251‬: Esperen tengo que corregirle
+[11/09/22, 20:08:53] ‪+52 444 285 9212‬: *PROBLEMA C*
+
+//LIBRERIAS//
+#include <stdlib.h>
+#include <stdio.h>
+//PROTOTIPO//
+void get_temperature();
+
+
+
+//FUNCION PARA CAMBIAR LA TEMPERATURA//
+void get_temperature(){
+    
+    //VARIABLES INICIALES//
+    float temperature;
+    char scale;
+    char option;
+    
+    //AQUI SE PIDE LA ESCALA QUE SE ESTA UTILIZANDO, SI INGRESA UN VALOR 
+    //INVALIDO RE REPETIRA HASTA QUE SEA UNO CORRECTO
+    do{
+    printf("Ingresa la escala que estas utilizando[C/F/K]:");
+    scanf(" %c",&scale);
+    }while(scale!='C' && scale!='F' && scale!='K');
+    //AQUI SE INGRESA LA TEMPERATURA//
+    printf("Ingresa la temperatura: ");
+    scanf("%f",&temperature);
+    void calculated_temperatur(scale,temperature);
+    //SE DECLARA LA VARIABLE QUE UTILIZAREMOS 
+    float converted_temperature;
+
+    switch(scale){
+        case 'C':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [F/K]:");
+                scanf(" %c",&option);
+            }while(option!='F' && option!='K');
+
+            if(option=='F'){
+                converted_temperature=(temperature * (1.8)) + 32;
+                printf("%.2f Celsius a fahrenheits son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=temperature + 273.15;
+                printf("%.2f Celsius a kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'F':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [C/K]:");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='K');
+
+            if(option=='C'){
+                converted_temperature=(temperature - 32) * (0.55555);
+                printf("%.2f fahrenheits a celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 32) * (0.555)) + 273.15;
+                printf("%.2f fahrenheits a kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'K':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [C/F]:");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='F');
+            if(option=='C'){
+                converted_temperature=temperature - 273.15;
+               printf("%.2f kelvin a celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 273.15) * (1.8)) + 32;
+                printf("%.2f kelvin a fahrenheits son: %.2f",temperature,converted_temperature);
+            }
+        break;
+    }
+}
+[11/09/22, 20:12:41] ‪+52 444 887 5251‬: void factorial()
+{
+    int factorial=1;
+    int contador, dato;
+
+    printf("\n Factorial de: ");
+    scanf("%d",&dato);
+
+    for(contador=1;contador<=dato;contador++)
+         factorial = factorial*contador;
+}
+[11/09/22, 20:12:46] ‪+52 444 887 5251‬: Problema g)
+[11/09/22, 20:46:39] Mikel Barajas: Sin regresar nada
+[11/09/22, 20:46:42] Mikel Barajas: Todo se imprime ahí
+[11/09/22, 20:46:50] Mikel Barajas: Perdón por responder hasta ahorita jajaja no lo leí
+‎[11/09/22, 20:46:52] Mikel Barajas: ‎sticker omitido
+[11/09/22, 20:47:01] Raul Moreno: Igual si lo hicimos así jajaja
+‎[11/09/22, 20:47:03] Raul Moreno: ‎sticker omitido
+[11/09/22, 20:47:05] Mikel Barajas: Puedes regresar valores en funciones auxiliares
+[11/09/22, 20:47:13] Mikel Barajas: Pero en el “módulo” no
+[11/09/22, 20:47:15] Mikel Barajas: Con todo
+[11/09/22, 21:38:34] Mikel Barajas: ‎Eliminaste este mensaje.
+[11/09/22, 21:39:25] Mikel Barajas: *Problema G*
+
+//LIBRERIAS//
+#include <stdio.h>
+#include <stdlib.h>
+
+//CONSTANTES//
+#define MAX 1000
+
+//PROTOTIPOS//
+void g_estadistica();
+
+void scan_sample(double *sample, int size);
+int double_comparator(const void* a, const void* b);
+
+double get_arithmetic_mean(double *sample, int size);
+double get_mode(double *sample, int size);
+double get_median(double *sample, int size);
+
+//FUNCIONES//
+
+// Obtener las más simples medidas estadísticas relacionadas con una población dada a partir de los datos de una muestra de esa población.
+void g_estadistica()
+{
+    int size;
+    double sample[MAX];
+
+    do{
+        printf("\nIngresar tamaño de la muestra: " );
+        scanf("%d", &size);
+        if(size <= 0 || size > MAX){
+            printf("\nTamaño Inválido: " );
+        }
+    } while(size <= 0 || size > MAX);
+
+    printf("\n");
+    scan_sample(sample, size);
+
+    //Se ordenan los valores de la muestra desde el inicio, ya que se necesita para calcular la mediana y la moda.
+    qsort(sample, size, sizeof(double), double_comparator);
+
+    int op;
+    do{
+
+        printf("\n\nOperación a realizar: " );
+        printf("\n> 1. Media aritmética." );
+        printf("\n> 2. Moda." );
+        printf("\n> 3. Mediana." );
+        printf("\n> 4. Salir." );
+        printf("\n");
+
+        scanf("%d", &op);
+        
+        switch(op)
+        {
+            case 1:
+                printf("\nMedia aritmética: %lf", get_arithmetic_mean(sample, size)); 
+                break;
+
+            case 2:
+                printf("\nModa: %lf", get_mode(sample, size)); 
+                break;
+            
+            case 3:
+                printf("\nMediana: %lf", get_median(sample, size)); 
+                break;
+            
+            case 4:
+                printf("\nSaliendo..."); 
+                break;
+            
+            default:
+                printf("\nOpción inválida."); 
+                break;
+        }
+
+    } while(op != 4);
+
+}
+
+//Leer la muestra de datos
+void scan_sample(double *sample, int size){
+    for(int i = 0; i < size; i++){
+        printf("Elemento %d: ", i+1);
+        scanf("%lf", &sample[i]);
+    }
+}
+
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b)
+{
+    return **(double **)a - **(double **)b;
+}
+
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size){
+
+	double mean = 0;
+
+	for(int i = 0; i < size; i++){
+        mean += sample[i];
+    }
+	mean /= size;
+
+	return mean;
+}
+
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size){
+
+    double mode = sample[0]; //Se le da un valor por default
+    int max_frequency = 0, current_frequency = 0;
+
+    for(int i = 1; i < size; i++){
+        
+        if(sample[i] == sample[i-1]){ //Mientras sean iguales los elementos contiguos, se aumenta la frecuencia actual.
+            current_frequency++;
+        }else{
+            if(current_frequency > max_frequency){ //Cuando se encuentra un valor diferente al actual, se compara la frecuencia del último con la frecuencia máxima.
+                mode = sample[i-1];
+                max_frequency = current_frequency;
+            }
+            current_frequency = 0;
+        }
+    }
+
+    return mode;
+}
+
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size){
+    int mid = size / 2;
+
+	if(size % 2 == 0){ //si el no. de elementos es impar, se toma el promedio de ambos elementos de en medio.
+        return (sample[mid] + sample[mid - 1]) / 2;
+    }
+
+    return sample[mid];
+}
+[11/09/22, 21:39:53] Mikel Barajas: Perdón, envié el mensaje recortado
+[12/09/22, 11:06:12] ‪+52 444 718 5474‬: Banda, un favorsote, vuelvan a mandar sus funciones PERO solo la función, nada de prototipos ni de librerías A MENOS que las librerías sean diferentes de la stdio y la stdlib, por ejemplo si usan otras esas si póngalas, también al principio del mensaje pónganle PROBLEMA A) por ejemplo, para ya tener las funciones definitivas y acomodarlas en el main
+[12/09/22, 11:06:26] ‪+52 444 718 5474‬: Recuerden que todas deben ser void y sin paso de parámetros
+[12/09/22, 11:06:42] ‪+52 444 718 5474‬: Si usan funciones adicionales también pónganlas por favor
+[12/09/22, 11:19:14] Raul Moreno: *PROBLEMA B)* 
+//LIBRERIAS 
+#include <time.h>
+
+//FUNCIONES 
+void Days(){
+    int start_year=0, end_year=0, num_years=0;
+    long total_days=0;
+
+    date_t current,future;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
+    current.day = local->tm_mday;            // obtener el día del mes (1 a 31)
+    current.month = local->tm_mon + 1; // obtener el mes del año (0 a 11)
+    current.year = local->tm_year + 1900; // obtener el año desde 1900
+
+    int band=1;
+    while(band){
+        printf("\nIngresa el dia de la fecha a consultar:");
+        scanf("%i", &future.day);
+
+        printf("\nIngresa el mes de la fecha a consultar:");
+        scanf("%i", &future.month);
+
+        printf("\nIngresa el anio de la fecha a consultar:");
+        scanf("%i", &future.year);
+        if(!((future.day<32&&future.day>0)&&(future.month<13&&future.month>0)&&(future.year>current.year))){
+            printf("Ingrese una fecha valida \n");
+        }
+        else{
+            band=0;
+        }
+    }
+
+    printf("\n%i/%i/%i", current.day, current.month, current.year);
+    printf("\n%i/%i/%i", future.day, future.month, future.year);
+
+    start_year = current.day==future.day?0:
+        365 - Days_elapsed(current);
+
+    end_year = Days_elapsed(future);
+
+    for(num_years=current.day+1;num_years<future.day;num_years)
+     {
+        if(((num_years%4==0) && (num_years%100!=0)))
+            total_days+=366;
+        else
+            total_days+=365;
+     }
+
+     total_days+=start_year+end_year;
+
+     printf("\n\n El numero de dias transcurridos entre %i/%i/%i y  %i/%i/%i es: %i dias", current.day, current.month, current.year, future.day, future.month, future.year, total_days);
+}
+
+
+int Days_elapsed(date_t date)
+{
+  int sum=0;
+
+  int months[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+  for (int cont=0;cont<date.month-1;cont++)
+  {
+     sum+= months[cont];
+  }
+
+  sum+= date.day;
+
+  if(((date.year%4==0) && (date.year%100!=0)) || (date.year%400==0) && date.month>2)
+     sum++;
+  return sum;
+}
+[12/09/22, 12:18:39] Montserrat Gallegos: ‎Se eliminó este mensaje.
+[12/09/22, 12:18:57] Montserrat Gallegos: // *PROBLEMA A*
+
+void is_a_leap_year(){
+    int year, leap_year;
+
+    do{
+        printf("Ingresa el anio a consultar:\n");
+        scanf("%d", &year);
+        if(year<0){
+            printf("El anio no es valido:\n");
+        }
+    }while(year<0);
+
+    if(year%4==0){
+        if(year%100 == 0){
+            if(year%400 == 0){
+                leap_year=1;
+            }else{
+                leap_year=0;
+            }
+        }else{
+            leap_year=1;
+        }
+    }else{
+        leap_year=0;
+    }
+
+    if(leap_year==1){
+        printf("El anio SI es bisiesto\n");
+    }else{
+        printf("El anio NO es bisiesto\n");
+    }
+}
+[12/09/22, 15:24:06] ‪+52 444 285 9212‬: *PROBLEMA C*
+
+//FUNCION PARA CAMBIAR LA TEMPERATURA//
+void get_temperature(){
+    
+    //VARIABLES INICIALES//
+    float temperature;
+    char scale;
+    char option;
+    
+    //AQUI SE PIDE LA ESCALA QUE SE ESTA UTILIZANDO, SI INGRESA UN VALOR 
+    //INVALIDO RE REPETIRA HASTA QUE SEA UNO CORRECTO
+    do{
+    printf("Ingresa la escala que estas utilizando[C/F/K]:");
+    scanf(" %c",&scale);
+    }while(scale!='C' && scale!='F' && scale!='K');
+    //AQUI SE INGRESA LA TEMPERATURA//
+    printf("Ingresa la temperatura: ");
+    scanf("%f",&temperature);
+    void calculated_temperatur(scale,temperature);
+    //SE DECLARA LA VARIABLE QUE UTILIZAREMOS 
+    float converted_temperature;
+
+    switch(scale){
+        case 'C':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [F/K]:");
+                scanf(" %c",&option);
+            }while(option!='F' && option!='K');
+
+            if(option=='F'){
+                converted_temperature=(temperature * (1.8)) + 32;
+                printf("%.2f Celsius a fahrenheits son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=temperature + 273.15;
+                printf("%.2f Celsius a kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'F':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [C/K]:");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='K');
+
+            if(option=='C'){
+                converted_temperature=(temperature - 32) * (0.55555);
+                printf("%.2f fahrenheits a celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 32) * (0.555)) + 273.15;
+                printf("%.2f fahrenheits a kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'K':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [C/F]:");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='F');
+            if(option=='C'){
+                converted_temperature=temperature - 273.15;
+               printf("%.2f kelvin a celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 273.15) * (1.8)) + 32;
+                printf("%.2f kelvin a fahrenheits son: %.2f",temperature,converted_temperature);
+            }
+        break;
+    }
+}
+[12/09/22, 17:36:15] ‪+52 444 374 1420‬: *PROBLEMA E*
+//Libreria
+#include <math.h>
+
+//Funcion
+void Trigonometria()
+{
+    float radianes,resultado;
+    int funcion_del_angulo;
+    char resp;
+    do
+    {
+        printf("Ingresa el angulo en radianes: ");
+        scanf("%f",&radianes);
+        printf("Elige la funcion a realizar:\n");
+        printf("1. Seno\n");
+        printf("2. Coseno\n");
+        printf("3. Tangente\n");
+        scanf("%d",&funcion_del_angulo);
+        switch(funcion_del_angulo)
+        {
+            case 1:     //Funcion seno
+                resultado=sin(radianes);
+                printf("Seno de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            case 2:     //Funcion coseno
+                resultado=cos(radianes);
+                printf("Coseno de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            case 3:     //Funcion tangente
+                resultado=tan(radianes);
+                printf("Tangente de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            default:
+                printf("Esa opcion no esta disponible, vuelva a intentar\n");
+        }
+        printf("Continuar(s/n)");
+        scanf(" %c",&resp);
+    }while(resp=='s');
+}
+[12/09/22, 17:38:00] Mikel Barajas: *Problema G*
+
+//FUNCIONES//
+
+// Obtener las más simples medidas estadísticas relacionadas con una población dada a partir de los datos de una muestra de esa población.
+void g_estadistica()
+{
+    int size;
+    double sample[MAX];
+
+    do{
+        printf("\nIngresar tamaño de la muestra: " );
+        scanf("%d", &size);
+        if(size <= 0 || size > MAX){
+            printf("\nTamaño Inválido: " );
+        }
+    } while(size <= 0 || size > MAX);
+
+    printf("\n");
+    scan_sample(sample, size);
+
+    //Se ordenan los valores de la muestra desde el inicio, ya que se necesita para calcular la mediana y la moda.
+    qsort(sample, size, sizeof(double), double_comparator);
+
+    int op;
+    do{
+
+        printf("\n\nOperación a realizar: " );
+        printf("\n> 1. Media aritmética." );
+        printf("\n> 2. Moda." );
+        printf("\n> 3. Mediana." );
+        printf("\n> 4. Salir." );
+        printf("\n");
+
+        scanf("%d", &op);
+        
+        switch(op)
+        {
+            case 1:
+                printf("\nMedia aritmética: %lf", get_arithmetic_mean(sample, size)); 
+                break;
+
+            case 2:
+                printf("\nModa: %lf", get_mode(sample, size)); 
+                break;
+            
+            case 3:
+                printf("\nMediana: %lf", get_median(sample, size)); 
+                break;
+            
+            case 4:
+                printf("\nSaliendo..."); 
+                break;
+            
+            default:
+                printf("\nOpción inválida."); 
+                break;
+        }
+
+    } while(op != 4);
+
+}
+
+//Leer la muestra de datos
+void scan_sample(double *sample, int size){
+    for(int i = 0; i < size; i++){
+        printf("Elemento %d: ", i+1);
+        scanf("%lf", &sample[i]);
+    }
+}
+
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b)
+{
+    return **(double **)a - **(double **)b;
+}
+
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size){
+
+	double mean = 0;
+
+	for(int i = 0; i < size; i++){
+        mean += sample[i];
+    }
+	mean /= size;
+
+	return mean;
+}
+
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size){
+
+    double mode = sample[0]; //Se le da un valor por default
+    int max_frequency = 0, current_frequency = 0;
+
+    for(int i = 1; i < size; i++){
+        
+        if(sample[i] == sample[i-1]){ //Mientras sean iguales los elementos contiguos, se aumenta la frecuencia actual.
+            current_frequency++;
+        }else{
+            if(current_frequency > max_frequency){ //Cuando se encuentra un valor diferente al actual, se compara la frecuencia del último con la frecuencia máxima.
+                mode = sample[i-1];
+                max_frequency = current_frequency;
+            }
+            current_frequency = 0;
+        }
+    }
+
+    return mode;
+}
+
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size){
+    int mid = size / 2;
+
+	if(size % 2 == 0){ //si el no. de elementos es impar, se toma el promedio de ambos elementos de en medio.
+        return (sample[mid] + sample[mid - 1]) / 2;
+    }
+
+    return sample[mid];
+}
+[12/09/22, 18:07:37] ‪+52 444 380 2885‬: *PROBLEMA D*
+
+// CONSTANTES
+#define MAX 100
+#define CONSTANT 0.08333 // Es la división de 1 mes entre 12 que sería para pasar un mes a años
+
+typedef struct
+{
+    int age_year;
+    float age_month;
+} FAMILY;
+
+// PROTOTIPO
+void average_age();
+
+
+// FUNCIÓN
+void average_age()
+{
+    FAMILY array_family[MAX];
+    int i, members, aux, year_2;
+    float month, month_2, total;
+
+    printf("\nNumero de miembros en tu familia:  ");
+    scanf("%d", &members);
+
+    for(i = 0; i < members; i++)
+    {
+        printf("\nEdad en anios del integrante %d: ", i + 1);
+        scanf("%d", &array_family[i].age_year);
+        printf("Edad en meses del integrante %d: ", i + 1);
+        scanf("%f", &month);
+
+        month *= CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        array_family[i].age_month = month;
+        total = total + array_family[i].age_year + month;
+    }
+
+    total /= members;
+    year_2 = total;
+    month_2 = total - year_2;
+    month_2 *= 10;
+    month_2 = month_2 * 12 / 10;
+
+    printf("\nEl promedio de edad es %d anios y %.0f meses.\n", year_2, month_2);
+}
+[12/09/22, 19:39:47] Mikel Barajas: Quién falta de mandar su parte así?
+[12/09/22, 19:40:16] Mikel Barajas: @5214441932391 @5214442145259 @5214443163254 @5214871594881 @5214441190036 @5214441366505 @5214442859212 @5214443741420 @5214443802885 @5214447185474 @5214448875251
+[12/09/22, 20:04:58] ‪+52 444 718 5474‬: Bro este sería el F no?
+[12/09/22, 20:05:09] ‪+52 444 718 5474‬: Nomas pa cambiarle acá en donde lo estoy haciendo xdd
+[12/09/22, 20:05:40] Mikel Barajas: Sí
+[12/09/22, 20:05:42] Mikel Barajas: Perdón
+[12/09/22, 20:05:45] ‪+52 444 718 5474‬: Ok, gracias
+[12/09/22, 20:05:51] ‪+52 444 718 5474‬: No hay problema ;D
+[12/09/22, 20:05:55] Mikel Barajas: Se me fue la onda jaja
+[12/09/22, 20:13:08] ‪+52 444 285 9212‬: Yo ya mande la mia
+[12/09/22, 20:15:14] ‪+52 444 380 2885‬: Yo y mi equipo ya la mandamos
+[12/09/22, 20:15:59] Montserrat Gallegos: Yo tmb mandé la mía
+[12/09/22, 20:19:39] ‪+52 444 887 5251‬: *Problema G*
+
+void factorial()
+{
+    int factorial=1;
+    int contador, dato;
+
+    printf("\n Factorial de: ");
+    scanf("%d",&dato);
+
+    for(contador=1;contador<=dato;contador++)
+         factorial = factorial*contador;
+}
+[12/09/22, 20:28:40] ‪+52 444 718 5474‬: #include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<time.h>
+#define MAX 100
+#define CONSTANT 0.08333 // Es la división de 1 mes entre 12 que sería para pasar un mes a años
+
+typedef struct{
+    int age_year;
+    float age_month;
+}FAMILY;
+
+int main()
+{
+	int opcion;
+
+	do
+    {
+    	printf("\n |------------------PROGRAMA FORMULAS 2022------------------|");
+		printf("\n |1. BISIESTO                         5. TRIGONOMETRIA      |");
+		printf("\n |2. DIAS PARA LLEGAR A UNA FECHA     6. ESTADISTICA        |");
+		printf("\n |3. TEMPERATURA                      7. FACTORIAL	      |");
+		printf("\n |4. EDADES                           8. SALIR              |");
+		printf("\n |----------------------------------------------------------|");
+		printf("\n\n Elige una opcion: ");
+		scanf("%d",&opcion);
+
+    	switch(opcion)
+    	{
+    		case 1:
+    			printf("\n BISIESTO");
+    			//PROBLEMA A
+				void is_a_leap_year();
+    			break;
+    		case 2:
+    			printf("\n DIAS PARA LLEGAR A UNA FECHA");
+    			//PROBLEMA B
+				void Days();
+    			break;
+    		case 3:
+    			printf("\n TEMPERATURA");
+    			//PROBLEMA C
+				void get_temperature();
+    			break;
+    		case 4:
+    			printf("\n EDADES");
+    			//PROBLEMA D
+				void average_age();
+    			break;
+    		case 5:
+    			printf("\n TRIGONOMETRIA");
+    			//PROBLEMA E
+				void Trigonometria();
+    			break;
+    		case 6:
+    			printf("\n ESTADISTICA");
+    			//PROBLEMA F
+				void g_estadistica();		
+    			break;
+    		case 7:
+    			printf("\n FACTORAIL");
+				//PROBLEMA G
+				void factorial();
+    			break;
+    		case 8:
+    			break;
+    		default:
+    			printf("\n NO EXISTE");
+		}
+	}while(opcion != 8);
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////PROBLEMA A////////////////////////////////////////////////
+void is_a_leap_year(){
+    int year, leap_year;
+
+    do{
+        printf("Ingresa el anio a consultar:\n");
+        scanf("%d", &year);
+        if(year<0){
+            printf("El anio no es valido:\n");
+        }
+    }while(year<0);
+
+    if(year%4==0){
+        if(year%100 == 0){
+            if(year%400 == 0){
+                leap_year=1;
+            }else{
+                leap_year=0;
+            }
+        }else{
+            leap_year=1;
+        }
+    }else{
+        leap_year=0;
+    }
+
+    if(leap_year==1){
+        printf("El anio SI es bisiesto\n");
+    }else{
+        printf("El anio NO es bisiesto\n");
+    }
+}
+
+///////////////////////////////////////////////////PROBLEMA B////////////////////////////////////////////////
+
+int Days_elapsed(date_t date);
+
+void Days(){
+    int start_year=0, end_year=0, num_years=0;
+    long total_days=0;
+
+    date_t current,future;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
+    current.day = local->tm_mday;            // obtener el día del mes (1 a 31)
+    current.month = local->tm_mon + 1; // obtener el mes del año (0 a 11)
+    current.year = local->tm_year + 1900; // obtener el año desde 1900
+
+    int band=1;
+    while(band){
+        printf("\nIngresa el dia de la fecha a consultar:");
+        scanf("%i", &future.day);
+
+        printf("\nIngresa el mes de la fecha a consultar:");
+        scanf("%i", &future.month);
+
+        printf("\nIngresa el anio de la fecha a consultar:");
+        scanf("%i", &future.year);
+        if(!((future.day<32&&future.day>0)&&(future.month<13&&future.month>0)&&(future.year>current.year))){
+            printf("Ingrese una fecha valida \n");
+        }
+        else{
+            band=0;
+        }
+    }
+
+    printf("\n%i/%i/%i", current.day, current.month, current.year);
+    printf("\n%i/%i/%i", future.day, future.month, future.year);
+
+    start_year = current.day==future.day?0:
+        365 - Days_elapsed(current);
+
+    end_year = Days_elapsed(future);
+
+    for(num_years=current.day+1;num_years<future.day;num_years)
+     {
+        if(((num_years%4==0) && (num_years%100!=0)))
+            total_days+=366;
+        else
+            total_days+=365;
+     }
+
+     total_days+=start_year+end_year;
+
+     printf("\n\n El numero de dias transcurridos entre %i/%i/%i y  %i/%i/%i es: %i dias", current.day, current.month, current.year, future.day, future.month, future.year, total_days);
+}
+
+
+int Days_elapsed(date_t date)
+{
+  int sum=0;
+
+  int months[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+  for (int cont=0;cont<date.month-1;cont++)
+  {
+     sum+= months[cont];
+  }
+
+  sum+= date.day;
+
+  if(((date.year%4==0) && (date.year%100!=0)) || (date.year%400==0) && date.month>2)
+     sum++;
+  return sum;
+}
+
+///////////////////////////////////////////////////PROBLEMA C////////////////////////////////////////////////
+void get_temperature(){
+    
+    //VARIABLES INICIALES//
+    float temperature;
+    char scale;
+    char option;
+    
+    //AQUI SE PIDE LA ESCALA QUE SE ESTA UTILIZANDO, SI INGRESA UN VALOR 
+    //INVALIDO RE REPETIRA HASTA QUE SEA UNO CORRECTO
+    do{
+    printf("Ingresa la escala que estas utilizando[C/F/K]:");
+    scanf(" %c",&scale);
+    }while(scale!='C' && scale!='F' && scale!='K');
+    //AQUI SE INGRESA LA TEMPERATURA//
+    printf("Ingresa la temperatura: ");
+    scanf("%f",&temperature);
+    void calculated_temperatur(scale,temperature);
+    //SE DECLARA LA VARIABLE QUE UTILIZAREMOS 
+    float converted_temperature;
+
+    switch(scale){
+        case 'C':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [F/K]:");
+                scanf(" %c",&option);
+            }while(option!='F' && option!='K');
+
+            if(option=='F'){
+                converted_temperature=(temperature * (1.8)) + 32;
+                printf("%.2f Celsius a fahrenheits son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=temperature + 273.15;
+                printf("%.2f Celsius a kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'F':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [C/K]:");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='K');
+
+            if(option=='C'){
+                converted_temperature=(temperature - 32) * (0.55555);
+                printf("%.2f fahrenheits a celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 32) * (0.555)) + 273.15;
+                printf("%.2f fahrenheits a kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'K':
+            do{
+                printf("\nIngresa la escala a la que la quieres convertir: [C/F]:");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='F');
+            if(option=='C'){
+                converted_temperature=temperature - 273.15;
+               printf("%.2f kelvin a celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 273.15) * (1.8)) + 32;
+                printf("%.2f kelvin a fahrenheits son: %.2f",temperature,converted_temperature);
+            }
+        break;
+    }
+}
+
+///////////////////////////////////////////////////PROBLEMA D////////////////////////////////////////////////
+void average_age()
+{
+    FAMILY array_family[MAX];
+    int i, members, aux, year_2;
+    float month, month_2, total;
+
+    printf("\nNumero de miembros en tu familia:  ");
+    scanf("%d", &members);
+
+    for(i = 0; i < members; i++)
+    {
+        printf("\nEdad en anios del integrante %d: ", i + 1);
+        scanf("%d", &array_family[i].age_year);
+        printf("Edad en meses del integrante %d: ", i + 1);
+        scanf("%f", &month);
+
+        month *= CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        array_family[i].age_month = month;
+        total = total + array_family[i].age_year + month;
+    }
+
+    total /= members;
+    year_2 = total;
+    month_2 = total - year_2;
+    month_2 *= 10;
+    month_2 = month_2 * 12 / 10;
+
+    printf("\nEl promedio de edad es %d anios y %.0f meses.\n", year_2, month_2);
+}
+
+
+///////////////////////////////////////////////////PROBLEMA E////////////////////////////////////////////////
+void Trigonometria()
+{
+    float radianes,resultado;
+    int funcion_del_angulo;
+    char resp;
+    do
+    {
+        printf("Ingresa el angulo en radianes: ");
+        scanf("%f",&radianes);
+        printf("Elige la funcion a realizar:\n");
+        printf("1. Seno\n");
+        printf("2. Coseno\n");
+        printf("3. Tangente\n");
+        scanf("%d",&funcion_del_angulo);
+        switch(funcion_del_angulo)
+        {
+            case 1:     //Funcion seno
+                resultado=sin(radianes);
+                printf("Seno de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            case 2:     //Funcion coseno
+                resultado=cos(radianes);
+                printf("Coseno de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            case 3:     //Funcion tangente
+                resultado=tan(radianes);
+                printf("Tangente de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            default:
+                printf("Esa opcion no esta disponible, vuelva a intentar\n");
+        }
+        printf("Continuar(s/n)");
+        scanf(" %c",&resp);
+    }while(resp=='s');
+}
+
+///////////////////////////////////////////////////PROBLEMA F////////////////////////////////////////////////
+
+//Leer la muestra de datos
+void scan_sample(double *sample, int size);
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b);
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size);
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size);
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size);
+
+void g_estadistica()
+{
+    int size;
+    double sample[MAX];
+
+    do{
+        printf("\nIngresar tamaño de la muestra: " );
+        scanf("%d", &size);
+        if(size <= 0 || size > MAX){
+            printf("\nTamaño Inválido: " );
+        }
+    } while(size <= 0 || size > MAX);
+
+    printf("\n");
+    scan_sample(sample, size);
+
+    //Se ordenan los valores de la muestra desde el inicio, ya que se necesita para calcular la mediana y la moda.
+    qsort(sample, size, sizeof(double), double_comparator);
+
+    int op;
+    do{
+
+        printf("\n\nOperación a realizar: " );
+        printf("\n> 1. Media aritmética." );
+        printf("\n> 2. Moda." );
+        printf("\n> 3. Mediana." );
+        printf("\n> 4. Salir." );
+        printf("\n");
+
+        scanf("%d", &op);
+        
+        switch(op)
+        {
+            case 1:
+                printf("\nMedia aritmética: %lf", get_arithmetic_mean(sample, size)); 
+                break;
+
+            case 2:
+                printf("\nModa: %lf", get_mode(sample, size)); 
+                break;
+            
+            case 3:
+                printf("\nMediana: %lf", get_median(sample, size)); 
+                break;
+            
+            case 4:
+                printf("\nSaliendo..."); 
+                break;
+            
+            default:
+                printf("\nOpción inválida."); 
+                break;
+        }
+
+    } while(op != 4);
+
+}
+
+//Leer la muestra de datos
+void scan_sample(double *sample, int size){
+    for(int i = 0; i < size; i++){
+        printf("Elemento %d: ", i+1);
+        scanf("%lf", &sample[i]);
+    }
+}
+
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b)
+{
+    return *(double *)a - *(double *)b;
+}
+
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size){
+
+	double mean = 0;
+
+	for(int i = 0; i < size; i++){
+        mean += sample[i];
+    }
+	mean /= size;
+
+	return mean;
+}
+
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size){
+
+    double mode = sample[0]; //Se le da un valor por default
+    int max_frequency = 0, current_frequency = 0;
+
+    for(int i = 1; i < size; i++){
+        
+        if(sample[i] == sample[i-1]){ //Mientras sean iguales los elementos contiguos, se aumenta la frecuencia actual.
+            current_frequency++;
+        }else{
+            if(current_frequency > max_frequency){ //Cuando se encuentra un valor diferente al actual, se compara la frecuencia del último con la frecuencia máxima.
+                mode = sample[i-1];
+                max_frequency = current_frequency;
+            }
+            current_frequency = 0;
+        }
+    }
+
+    return mode;
+}
+
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size){
+    int mid = size / 2;
+
+	if(size % 2 == 0){ //si el no. de elementos es impar, se toma el promedio de ambos elementos de en medio.
+        return (sample[mid] + sample[mid - 1]) / 2;
+    }
+
+    return sample[mid];
+}
+
+///////////////////////////////////////////////////PROBLEMA G////////////////////////////////////////////////
+void factorial()
+{
+    int factorial=1;
+    int contador, dato;
+
+    printf("\n Factorial de: ");
+    scanf("%d",&dato);
+
+    for(contador=1;contador<=dato;contador++)
+         factorial = factorial*contador;
+	printf("El factorial de %d es %d",dato,factorial);
+}
+[12/09/22, 20:28:49] ‪+52 444 718 5474‬: Básicamente esto es el programa
+[12/09/22, 20:28:58] ‪+52 444 718 5474‬: Pero tira muchos errores con la función de Days
+[12/09/22, 20:29:57] ‪+52 444 718 5474‬: Los prototipos están declarados dentro de cada Case, y los que hicieron sus funciones de más los declare en la parte del problema de cada uno
+[12/09/22, 20:30:04] ‪+52 444 718 5474‬: No se que proceda con lo del Days
+[12/09/22, 20:31:40] Raul Moreno: Creo que fue porque no pusiste el struct
+[12/09/22, 20:31:48] ‪+52 444 718 5474‬: Si está
+[12/09/22, 20:31:49] Raul Moreno: Según yo si lo mande con todo y struct
+[12/09/22, 20:31:56] ‪+52 444 718 5474‬: el de Family?
+[12/09/22, 20:32:01] ‪+52 444 718 5474‬: O falta otro struct?
+[12/09/22, 20:32:44] ‪+52 444 718 5474‬: Si, falta un struct man
+[12/09/22, 20:32:48] Raul Moreno: Falta otro
+[12/09/22, 20:32:50] Raul Moreno: El de los días jajaa
+[12/09/22, 20:32:51] ‪+52 444 718 5474‬: Pero no está
+[12/09/22, 20:32:53] ‪+52 444 718 5474‬: Mandamelo
+[12/09/22, 20:32:54] Raul Moreno: Por eso te da error
+[12/09/22, 20:32:54] Mikel Barajas: Los prototipos deben ir todos hasta arriba
+[12/09/22, 20:32:55] ‪+52 444 718 5474‬: Paro
+[12/09/22, 20:32:58] Mikel Barajas: Al menos arriba del main
+[12/09/22, 20:33:09] Mikel Barajas: Para que no mande errores
+[12/09/22, 20:34:21] ‪+52 444 718 5474‬: Smn, que no está declarado un tipo date_t
+[12/09/22, 20:34:23] ‪+52 444 718 5474‬: Mandalo paro
+[12/09/22, 20:34:36] Raul Moreno: typedef struct{
+    int day;
+    int month;
+    int year;
+}date_t;
+[12/09/22, 20:34:45] Raul Moreno: Es ese
+[12/09/22, 20:35:36] ‪+52 444 718 5474‬: Ok gracias
+[12/09/22, 20:43:21] ‪+52 444 718 5474‬: Que equipo somos? @5214445027537
+[12/09/22, 21:08:41] ‪+52 444 718 5474‬: #include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<time.h>
+#define MAX 100
+#define CONSTANT 0.08333 // Es la división de 1 mes entre 12 que sería para pasar un mes a años
+
+typedef struct{
+    int age_year;
+    float age_month;
+}FAMILY;
+
+typedef struct{
+    int day;
+    int month;
+    int year;
+}date_t;
+
+//PROBLEMA A
+void is_a_leap_year();
+
+//PROBLEMA B
+void Days();
+int Days_elapsed(date_t date);
+
+//PROBLEMA C
+void get_temperature();
+
+//PROBLEMA D
+void average_age();
+
+//PROBLEMA E
+void Trigonometria();
+
+//PROBLEMA F
+// Obtener las más simples medidas estadísticas relacionadas con una población dada a partir de los datos de una muestra de esa población.
+void g_estadistica();
+//Leer la muestra de datos
+void scan_sample(double *sample, int size);
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b);
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size);
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size);
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size);
+
+//PROBLEMA G
+void factorial();
+
+/////////////////////////FUNCION PRINCIPAL////////////////////////////////////////
+int main()
+{
+	int opcion;
+
+	do
+    {
+    	printf("\n |------------------PROGRAMA FORMULAS 2022------------------|");
+		printf("\n |1. BISIESTO                         5. TRIGONOMETRIA      |"); //Como observamos, de primera instancia tenemos un menú
+		printf("\n |2. DIAS PARA LLEGAR A UNA FECHA     6. ESTADISTICA        |"); //el cual se programó con ayuda de un ciclo do while y
+		printf("\n |3. TEMPERATURA                      7. FACTORIAL	    |");   //un switch. Mostramos cada opeción y en una variable
+		printf("\n |4. EDADES                           8. SALIR              |"); //guardamos el numero de la opción elegida para mandarlo
+		printf("\n |----------------------------------------------------------|"); //al switch de manera que cuando dicha variable sea 8
+		printf("\n\n Elige una opcion: ");                                         //el ciclo do while nos sacará del programa.
+		scanf("%d",&opcion);
+
+    	switch(opcion)
+    	{
+    		case 1:
+    			printf("\n BISIESTO \n");
+    			//PROBLEMA A
+				is_a_leap_year();
+    			break;
+    		case 2:
+    			printf("\n DIAS PARA LLEGAR A UNA FECHA \n"); //Observemos que en cada case pusimos una función dependiendo de la opción que
+    			//PROBLEMA B                                    le correspondía seguido de un break para volver al menú de opciones.
+				Days();
+    			break;
+    		case 3:
+    			printf("\n TEMPERATURA \n");
+    			//PROBLEMA C
+				get_temperature();
+    			break;
+    		case 4:
+    			printf("\n EDADES \n");
+    			//PROBLEMA D
+				average_age();
+    			break;
+    		case 5:
+    			printf("\n TRIGONOMETRIA \n");
+    			//PROBLEMA E
+				Trigonometria();
+    			break;
+    		case 6:
+    			printf("\n ESTADISTICA \n");
+    			//PROBLEMA F
+				g_estadistica();		
+    			break;
+    		case 7:
+    			printf("\n FACTORIAL \n");
+				//PROBLEMA G
+				factorial();
+    			break;
+    		case 8:
+    			printf("\n PROGRAMA ELABORADO POR EL EQUIPO 1 \n");
+    			break;
+    		default:
+    			printf("\n NO EXISTE");
+		}
+	}while(opcion != 8);
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////PROBLEMA A////////////////////////////////////////////////
+void is_a_leap_year(){
+    int year, leap_year;
+
+    do{
+        printf(" Ingresa el anio a consultar: ");
+        scanf("%d", &year);
+        if(year<0){
+            printf(" El anio no es valido: ");
+        }
+    }while(year<0);
+
+    if(year%4==0){
+        if(year%100 == 0){
+            if(year%400 == 0){
+                leap_year=1;
+            }else{
+                leap_year=0;
+            }
+        }else{
+            leap_year=1;
+        }
+    }else{
+        leap_year=0;
+    }
+
+    if(leap_year==1){
+        printf(" El anio SI es bisiesto\n");
+    }else{
+        printf(" El anio NO es bisiesto\n");
+    }
+}
+
+///////////////////////////////////////////////////PROBLEMA B////////////////////////////////////////////////
+void Days(){
+    int start_year=0, end_year=0, num_years=0;
+    long total_days=0;
+
+    date_t current,future;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
+    current.day = local->tm_mday;            // obtener el día del mes (1 a 31)
+    current.month = local->tm_mon + 1; // obtener el mes del año (0 a 11)
+    current.year = local->tm_year + 1900; // obtener el año desde 1900
+
+    int band=1;
+    while(band){
+        printf(" Ingresa el dia de la fecha a consultar: ");
+        scanf("%i", &future.day);
+
+        printf(" Ingresa el mes de la fecha a consultar: ");
+        scanf("%i", &future.month);
+
+        printf(" Ingresa el anio de la fecha a consultar:");
+        scanf("%i", &future.year);
+        if(!((future.day<32&&future.day>0)&&(future.month<13&&future.month>0)&&(future.year>current.year))){
+            printf(" Ingrese una fecha valida \n");
+        }
+        else{
+            band=0;
+        }
+    }
+
+    printf("\n %i/%i/%i", current.day, current.month, current.year);
+    printf("\n %i/%i/%i", future.day, future.month, future.year);
+
+    start_year = current.day==future.day?0:
+        365 - Days_elapsed(current);
+
+    end_year = Days_elapsed(future);
+
+    for(num_years=current.day+1;num_years<future.day;num_years)
+     {
+        if(((num_years%4==0) && (num_years%100!=0)))
+            total_days+=366;
+        else
+            total_days+=365;
+     }
+
+     total_days+=start_year+end_year;
+
+     printf("\n\n El numero de dias transcurridos entre %i/%i/%i y  %i/%i/%i es: %i dias \n", current.day, current.month, current.year, future.day, future.month, future.year, total_days);
+}
+
+
+int Days_elapsed(date_t date)
+{
+  int sum=0;
+
+  int months[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+  for (int cont=0;cont<date.month-1;cont++)
+  {
+     sum+= months[cont];
+  }
+
+  sum+= date.day;
+
+  if(((date.year%4==0) && (date.year%100!=0)) || (date.year%400==0) && date.month>2)
+     sum++;
+  return sum;
+}
+
+///////////////////////////////////////////////////PROBLEMA C////////////////////////////////////////////////
+void get_temperature(){
+    
+    //VARIABLES INICIALES//
+    float temperature;
+    char scale;
+    char option;
+    
+    //AQUI SE PIDE LA ESCALA QUE SE ESTA UTILIZANDO, SI INGRESA UN VALOR 
+    //INVALIDO RE REPETIRA HASTA QUE SEA UNO CORRECTO
+    do{
+    printf(" Ingresa la escala que estas utilizando[C/F/K]:");
+    scanf(" %c",&scale);
+    }while(scale!='C' && scale!='F' && scale!='K');
+    //AQUI SE INGRESA LA TEMPERATURA//
+    printf(" Ingresa la temperatura: ");
+    scanf("%f",&temperature);
+    void calculated_temperatur(char scale, float temperature);
+    //SE DECLARA LA VARIABLE QUE UTILIZAREMOS 
+    float converted_temperature;
+
+    switch(scale){
+        case 'C':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[F/K]:");
+                scanf(" %c",&option);
+            }while(option!='F' && option!='K');
+
+            if(option=='F'){
+                converted_temperature=(temperature * (1.8)) + 32;
+                printf(" %.2f Celsius a Fahrenheits son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=temperature + 273.15;
+                printf(" %.2f Celsius a Kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'F':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[C/K]:");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='K');
+
+            if(option=='C'){
+                converted_temperature=(temperature - 32) * (0.55555);
+                printf(" %.2f Fahrenheits a Celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 32) * (0.555)) + 273.15;
+                printf(" %.2f Fahrenheits a Kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'K':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[C/F]:");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='F');
+            if(option=='C'){
+                converted_temperature=temperature - 273.15;
+               printf(" %.2f Kelvin a Celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 273.15) * (1.8)) + 32;
+                printf("%.2f Kelvin a Fahrenheits son: %.2f",temperature,converted_temperature);
+            }
+        break;
+    }
+    printf("\n");
+}
+
+///////////////////////////////////////////////////PROBLEMA D////////////////////////////////////////////////
+void average_age()
+{
+    FAMILY array_family[MAX];
+    int i, members, aux, year_2;
+    float month, month_2, total;
+
+    printf(" Numero de miembros en tu familia:  ");
+    scanf("%d", &members);
+
+    for(i = 0; i < members; i++)
+    {
+        printf("\n Edad en anios del integrante %d: ", i + 1);
+        scanf("%d", &array_family[i].age_year);
+        printf(" Edad en meses del integrante %d: ", i + 1);
+        scanf("%f", &month);
+
+        month *= CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        array_family[i].age_month = month;
+        total = total + array_family[i].age_year + month;
+    }
+
+    total /= members;
+    year_2 = total;
+    month_2 = total - year_2;
+    month_2 *= 10;
+    month_2 = month_2 * 12 / 10;
+
+    printf("\n El promedio de edad es %d anios y %.0f meses.\n", year_2, month_2);
+}
+
+
+///////////////////////////////////////////////////PROBLEMA E////////////////////////////////////////////////
+void Trigonometria()
+{
+    float radianes,resultado;
+    int funcion_del_angulo;
+    char resp;
+    do
+    {
+        printf(" Ingresa el angulo en radianes: ");
+        scanf("%f",&radianes);
+        printf(" 1. Seno\n");
+        printf(" 2. Coseno\n");
+        printf(" 3. Tangente\n");
+        printf(" Elige la funcion a realizar: ");
+        scanf("%d",&funcion_del_angulo);
+        printf("\n");
+        switch(funcion_del_angulo)
+        {
+            case 1:     //Funcion seno
+                resultado=sin(radianes);
+                printf(" Seno de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            case 2:     //Funcion coseno
+                resultado=cos(radianes);
+                printf(" Coseno de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            case 3:     //Funcion tangente
+                resultado=tan(radianes);
+                printf(" Tangente de %.2f radianes: %.2f \n",radianes,resultado);
+            break;
+            default:
+                printf(" Esa opcion no esta disponible, vuelva a intentar\n");
+        }
+        printf("\n Continuar(s/n): ");
+        scanf(" %c",&resp);
+    }while(resp=='s');
+}
+
+///////////////////////////////////////////////////PROBLEMA F////////////////////////////////////////////////
+void g_estadistica()
+{
+    int size;
+    double sample[MAX];
+
+    do{
+        printf(" Ingresar tamano de la muestra: " );
+        scanf("%d", &size);
+        if(size <= 0 || size > MAX){
+            printf("\n Tamaño Inválido: " );
+        }
+    } while(size <= 0 || size > MAX);
+
+    printf("\n");
+    scan_sample(sample, size);
+
+    //Se ordenan los valores de la muestra desde el inicio, ya que se necesita para calcular la mediana y la moda.
+    qsort(sample, size, sizeof(double), double_comparator);
+
+    int op;
+    do{
+        printf("\n\n> 1. Media aritmetica." );
+        printf("\n> 2. Moda." );
+        printf("\n> 3. Mediana." );
+        printf("\n> 4. Salir." );
+        printf("\n\n Operacion a realizar: " );
+		scanf("%d", &op);
+        printf("\n");
+
+        switch(op)
+        {
+            case 1:
+                printf("\n Media aritmetica: %lf", get_arithmetic_mean(sample, size)); 
+                break;
+
+            case 2:
+                printf("\n Moda: %lf", get_mode(sample, size)); 
+                break;
+            
+            case 3:
+                printf("\n Mediana: %lf", get_median(sample, size)); 
+                break;
+            
+            case 4:
+                printf("\n Saliendo..."); 
+                break;
+            
+            default:
+                printf("\n Opcion inválida."); 
+                break;
+        }
+
+    } while(op != 4);
+
+}
+
+//Leer la muestra de datos
+void scan_sample(double *sample, int size){
+    for(int i = 0; i < size; i++){
+        printf(" Elemento %d: ", i+1);
+        scanf("%lf", &sample[i]);
+    }
+}
+
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b)
+{
+    return *(double *)a - *(double *)b;
+}
+
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size){
+
+	double mean = 0;
+
+	for(int i = 0; i < size; i++){
+        mean += sample[i];
+    }
+	mean /= size;
+
+	return mean;
+}
+
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size){
+
+    double mode = sample[0]; //Se le da un valor por default
+    int max_frequency = 0, current_frequency = 0;
+
+    for(int i = 1; i < size; i++){
+        
+        if(sample[i] == sample[i-1]){ //Mientras sean iguales los elementos contiguos, se aumenta la frecuencia actual.
+            current_frequency++;
+        }else{
+            if(current_frequency > max_frequency){ //Cuando se encuentra un valor diferente al actual, se compara la frecuencia del último con la frecuencia máxima.
+                mode = sample[i-1];
+                max_frequency = current_frequency;
+            }
+            current_frequency = 0;
+        }
+    }
+
+    return mode;
+}
+
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size){
+    int mid = size / 2;
+
+	if(size % 2 == 0){ //si el no. de elementos es impar, se toma el promedio de ambos elementos de en medio.
+        return (sample[mid] + sample[mid - 1]) / 2;
+    }
+
+    return sample[mid];
+}
+
+///////////////////////////////////////////////////PROBLEMA G////////////////////////////////////////////////
+void factorial()
+{
+    int factorial=1;
+    int contador, dato;
+
+    printf(" Factorial de: ");
+    scanf("%d",&dato);
+
+    for(contador=1;contador<=dato;contador++)
+         factorial = factorial*contador;
+	printf(" El factorial de %d es %d\n",dato,factorial);
+}
+[12/09/22, 21:08:43] ‪+52 444 718 5474‬: Listo
+[12/09/22, 21:08:49] ‪+52 444 718 5474‬: Todo funciona correctamente
+[12/09/22, 21:09:18] ‪+52 444 718 5474‬: Básicamente y en términos generales... está terminado
+[12/09/22, 21:09:27] Mikel Barajas: Gracias bro
+[12/09/22, 21:09:37] Mikel Barajas: Mañana todos hay que probar las funciones para ver qué no se pase nada
+[12/09/22, 21:09:41] Mikel Barajas: Pero por mientras
+[12/09/22, 21:09:46] Mikel Barajas: Gracias a todos equipo
+[12/09/22, 21:10:15] ‪+52 444 718 5474‬: Simón, igual ya probé todo y parece ser que funciona correctamente pero por si las dudas pruebenlo ;D
+[12/09/22, 21:12:56] Raul Moreno: No digas eso, suena a que te vas a dar de baja
+[12/09/22, 21:13:03] Raul Moreno: Y el que se va a dar de baja aquí soy yo
+[12/09/22, 21:13:26] ‪+52 444 193 2391‬: Cuenta conmigo
+[12/09/22, 21:13:39] ‪+52 444 718 5474‬: GPI
+[15/09/22, 15:07:02] Mikel Barajas: Hola equipo
+[15/09/22, 15:07:16] Mikel Barajas: Yo subo los archivos, nomás si alguien más puede hacer pruebas estaría Perfecto
+[15/09/22, 15:07:33] Mikel Barajas: Digan sí compila en su máquina
+[15/09/22, 15:07:35] Mikel Barajas: Y así
+[15/09/22, 16:05:00] Mikel Barajas: *Problema Fechas*
+
+Disculpen, qué hace esta parte del código?
+
+for(num_years=current.day+1;num_years<future.day;num_years)
+     {
+        if(((num_years%4==0) && (num_years%100!=0)))
+            total_days+=366;
+        else
+            total_days+=365;
+     }
+[15/09/22, 16:05:14] Mikel Barajas: Es que me manda un warning por lo último del for
+[15/09/22, 16:29:37] Raul Moreno: Chin, deberías preguntarle a @5214441366505, el lo hizo, yo lo cambié al formato
+[15/09/22, 16:29:51] Raul Moreno: Pero igual lo corrí en mi computadora y si jalo al 100
+[15/09/22, 16:32:14] ‪+52 444 718 5474‬: Ah caray, a mi no me marcó nada de nada ._.
+[15/09/22, 16:32:25] ‪+52 444 718 5474‬: Igual a ver @5214441366505
+[15/09/22, 16:32:25] ‪+52 444 136 6505‬: Checa si es bisiesto el año
+[15/09/22, 16:34:11] Mikel Barajas: Pero por qué en un for?
+[15/09/22, 16:39:32] Mikel Barajas: Bueno aún así, si lo corre en replit no le va a dar el warning
+[15/09/22, 16:39:46] Mikel Barajas: Ya quedó el archivo,solo me falta el comentario de los nombres
+[15/09/22, 16:39:59] Mikel Barajas: Le hice unos cambios para que quedara con las convenciones
+[15/09/22, 16:40:04] Mikel Barajas: De variables en inglés y así
+[15/09/22, 16:40:13] Mikel Barajas: Además cambié el borde para que tuviera esquinas
+[15/09/22, 16:40:19] Mikel Barajas: Dejen lo mando por aquí para que lo vean
+[15/09/22, 17:16:36] Mikel Barajas: #include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<time.h>
+
+#define MAX 100
+#define CONSTANT 0.08333 // Es la división de 1 mes entre 12 que sería para pasar un mes a años
+
+/////////////////////////ESTRUCTURAS DE DATOS///////////////////////////////
+
+typedef struct{
+    int age_year;
+    float age_month;
+}FAMILY;
+
+typedef struct{
+    int day;
+    int month;
+    int year;
+}date_t;
+
+/////////////////////////PROTOTIPOS////////////////////////////////////////
+
+//PROBLEMA A
+void is_a_leap_year();
+
+//PROBLEMA B
+void days();
+int days_elapsed(date_t date);
+
+//PROBLEMA C
+void get_temperature();
+
+//PROBLEMA D
+void average_age();
+
+//PROBLEMA E
+void trigonometry();
+
+//PROBLEMA F
+void g_estadistica();
+void scan_sample(double *sample, int size);
+int double_comparator(const void* a, const void* b);
+double get_arithmetic_mean(double *sample, int size);
+double get_mode(double *sample, int size);
+double get_median(double *sample, int size);
+
+//PROBLEMA G
+void factorial();
+
+/////////////////////////FUNCIÓN PRINCIPAL////////////////////////////////////////
+int main()
+{
+    printf("\n ╔══════════════════════════════════════════════════════════╗");
+    printf("\n ║       TAREA 2: REQUERIMIENTOS Y TRABAJO EN EQUIPO        ║");
+    printf("\n ╚══════════════════════════════════════════════════════════╝");
+    printf("\n\n INTEGRANTES: ");
+    printf("\n • Abarca Cárcamo Alan Yahir ");
+    printf("\n • Barajas Martínez Mikel Ignacio ");
+    printf("\n • Cerda Moreno Carlos Raul ");
+    printf("\n • Hernández Gallegos Montserrat Ximena ");
+    printf("\n • Hernández Guerrero Sergio Andrés ");
+    printf("\n • Hernández Salazar Isaih Roberto");
+    printf("\n • Marquez Guerrero Kevin ");
+    printf("\n • Ojeda Gutiérrez Fernando Juriel");
+    printf("\n • Rodriguez Perez José Rogelio");
+    printf("\n • Rojas Martínez Jorge Ángel");
+    printf("\n • Salazar Rico Diego Isaí");
+    printf("\n • Villaseñor Monsiváis Alfredo ");
+    printf("\n\n ════════════════════════════════════════════════════════════\n");
+
+	int op;
+	do{
+        fflush(stdin);
+    	printf("\n ╔══════════════════════════════════════════════════════════╗");
+		printf("\n ║1. BISIESTO                         5. TRIGONOMETRÍA      ║"); //Como observamos, de primera instancia tenemos un menú
+		printf("\n ║2. DÍAS PARA LLEGAR A UNA FECHA     6. ESTADÍSTICA        ║"); //el cual se programó con ayuda de un ciclo do while y
+		printf("\n ║3. TEMPERATURA                      7. FACTORIAL	    ║");   //un switch. Mostramos cada opeción y en una variable
+		printf("\n ║4. EDADES                           8. SALIR              ║"); //guardamos el numero de la opción elegida para mandarlo
+		printf("\n ╚══════════════════════════════════════════════════════════╝"); //al switch de manera que cuando dicha variable sea 8
+		printf("\n\n Elige una opción: ");                                         //el ciclo do while nos sacará del programa.
+		scanf("%d",&op);
+
+        printf("\n ════════════════════════════════════════════════════════════\n");
+    	switch(op)
+    	{
+    		case 1:
+    			printf("\n BISIESTO \n");
+    			//PROBLEMA A
+				is_a_leap_year();
+    			break;
+    		case 2:
+    			printf("\n DÍAS PARA LLEGAR A UNA FECHA \n"); //Observemos que en cada case pusimos una función dependiendo de la opción que
+    			//PROBLEMA B                                    le correspondía seguido de un break para volver al menú de opciones.
+				days();
+    			break;
+    		case 3:
+    			printf("\n TEMPERATURA \n");
+    			//PROBLEMA C
+				get_temperature();
+    			break;
+    		case 4:
+    			printf("\n EDADES \n");
+    			//PROBLEMA D
+				average_age();
+    			break;
+    		case 5:
+    			printf("\n TRIGONOMETRÍA \n");
+    			//PROBLEMA E
+				trigonometry();
+    			break;
+    		case 6:
+    			printf("\n ESTADÍSTICA \n");
+    			//PROBLEMA F
+				g_estadistica();		
+    			break;
+    		case 7:
+    			printf("\n FACTORIAL \n");
+				//PROBLEMA G
+				factorial();
+    			break;
+    		case 8:
+    			printf("\n PROGRAMA ELABORADO POR EL EQUIPO 1 \n");
+    			break;
+    		default:
+    			printf("\n OPCIÓN INVÁLIDA");
+		}
+        printf("\n ════════════════════════════════════════════════════════════\n");
+	} while(op != 8);
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////PROBLEMA A////////////////////////////////////////////////
+void is_a_leap_year()
+{
+    int year, leap_year;
+
+    do{
+        printf("\n Ingresa el año a consultar: ");
+        scanf("%d", &year);
+        if(year<0){
+            printf(" El año no es válido. ");
+        }
+    }while(year<0);
+
+    if(year%4==0){
+        if(year%100 == 0){
+            if(year%400 == 0){
+                leap_year=1;
+            }else{
+                leap_year=0;
+            }
+        }else{
+            leap_year=1;
+        }
+    }else{
+        leap_year=0;
+    }
+
+    if(leap_year==1){
+        printf(" El año SÍ es bisiesto\n");
+    }else{
+        printf(" El año NO es bisiesto\n");
+    }
+}
+
+///////////////////////////////////////////////////PROBLEMA B////////////////////////////////////////////////
+void days()
+{
+    int start_year = 0, end_year = 0, num_years = 0;
+    long total_days = 0;
+
+    date_t current, future;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
+    current.day = local->tm_mday;            // obtener el día del mes (1 a 31)
+    current.month = local->tm_mon + 1;       // obtener el mes del año (0 a 11)
+    current.year = local->tm_year + 1900;    // obtener el año desde 1900
+
+    int band=1;
+    while(band){
+        printf("\n Ingresa el día de la fecha a consultar: ");
+        scanf("%d", &future.day);
+
+        printf(" Ingresa el mes de la fecha a consultar: ");
+        scanf("%d", &future.month);
+
+        printf(" Ingresa el año de la fecha a consultar: ");
+        scanf("%d", &future.year);
+
+        if((future.day > 32 || future.day < 0) || (future.month > 13 || future.month < 0) || (future.year < current.year)){
+            printf(" Ingrese una fecha válida \n");
+        }
+        else{
+            band=0;
+        }
+    }
+
+    start_year = current.day == future.day ? 0 : 365 - days_elapsed(current);
+
+    end_year = days_elapsed(future);
+
+    for(num_years=current.day+1; num_years<future.day; num_years)
+     {
+        if(((num_years%4==0) && (num_years%100!=0)))
+            total_days+=366;
+        else
+            total_days+=365;
+     }
+
+     total_days += start_year + end_year;
+
+     printf("\n\n El numero de días transcurridos entre %i/%i/%i y %i/%i/%i es: %li días \n", current.day, current.month, current.year, future.day, future.month, future.year, total_days);
+}
+
+
+int days_elapsed(date_t date)
+{
+  int sum=0;
+
+  int months[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+  for (int cont=0;cont<date.month-1;cont++){
+     sum+= months[cont];
+  }
+
+  sum+= date.day;
+
+  if((((date.year % 4 == 0) && (date.year % 100 != 0)) || (date.year % 400==0)) && date.month>2){
+    sum++;
+  }
+
+  return sum;
+}
+
+///////////////////////////////////////////////////PROBLEMA C////////////////////////////////////////////////
+void get_temperature()
+{
+    
+    //VARIABLES INICIALES//
+    float temperature;
+    char scale;
+    char option;
+    
+    //AQUI SE PIDE LA ESCALA QUE SE ESTA UTILIZANDO, SI INGRESA UN VALOR 
+    //INVALIDO RE REPETIRA HASTA QUE SEA UNO CORRECTO
+    do{
+    printf("\n Ingresa la escala que estas utilizando[C/F/K]: ");
+    scanf(" %c",&scale);
+    }while(scale!='C' && scale!='F' && scale!='K');
+    //AQUI SE INGRESA LA TEMPERATURA//
+    printf(" Ingresa la temperatura: ");
+    scanf("%f",&temperature);
+    void calculated_temperatur(char scale, float temperature);
+    //SE DECLARA LA VARIABLE QUE UTILIZAREMOS 
+    float converted_temperature;
+
+    switch(scale){
+        case 'C':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[F/K]: ");
+                scanf(" %c",&option);
+            }while(option!='F' && option!='K');
+
+            if(option=='F'){
+                converted_temperature=(temperature * (1.8)) + 32;
+                printf(" %.2f Celsius a Fahrenheit son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=temperature + 273.15;
+                printf(" %.2f Celsius a Kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'F':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[C/K]: ");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='K');
+
+            if(option=='C'){
+                converted_temperature=(temperature - 32) * (0.55555);
+                printf(" %.2f Fahrenheit a Celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 32) * (0.555)) + 273.15;
+                printf(" %.2f Fahrenheit a Kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'K':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[C/F]: ");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='F');
+            if(option=='C'){
+                converted_temperature=temperature - 273.15;
+               printf(" %.2f Kelvin a Celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 273.15) * (1.8)) + 32;
+                printf("%.2f Kelvin a Fahrenheit son: %.2f",temperature,converted_temperature);
+            }
+        break;
+    }
+    printf("\n");
+}
+
+///////////////////////////////////////////////////PROBLEMA D////////////////////////////////////////////////
+void average_age()
+{
+    FAMILY array_family[MAX];
+    int i, members, year_2;
+    float month, month_2, total;
+
+    printf("\n Número de miembros en tu familia:  ");
+    scanf("%d", &members);
+
+    for(i = 0; i < members; i++)
+    {
+        printf("\n Edad en años del integrante %d: ", i + 1);
+        scanf("%d", &array_family[i].age_year);
+        printf(" Edad en meses del integrante %d: ", i + 1);
+        scanf("%f", &month);
+
+        month *= CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        array_family[i].age_month = month;
+        total = total + array_family[i].age_year + month;
+    }
+
+    total /= members;
+    year_2 = total;
+    month_2 = total - year_2;
+    month_2 *= 10;
+    month_2 = month_2 * 12 / 10;
+
+    printf("\n El promedio de edad es %d años y %.0f meses.\n", year_2, month_2);
+}
+
+///////////////////////////////////////////////////PROBLEMA E////////////////////////////////////////////////
+void trigonometry()
+{
+    float rad, ans;
+    int function;
+    char op;
+    do
+    {
+        fflush(stdin);
+        printf("\n Ángulo en radianes: ");
+        scanf("%f",&rad);
+        printf("\n 1. Seno");
+        printf("\n 2. Coseno");
+        printf("\n 3. Tangente");
+        printf("\n\n Función a realizar: ");
+        scanf("%d",&function);
+        printf("\n");
+        switch(function)
+        {
+            case 1:     //Funcion seno
+                ans=sin(rad);
+                printf(" Seno de %.2f radianes: %.2f \n", rad, ans);
+            break;
+            case 2:     //Funcion coseno
+                ans=cos(rad);
+                printf(" Coseno de %.2f radianes: %.2f \n", rad , ans);
+            break;
+            case 3:     //Funcion tangente
+                ans=tan(rad);
+                printf(" Tangente de %.2f radianes: %.2f \n", rad , ans);
+            break;
+            default:
+                printf(" Opción inválida.\n");
+        }
+        printf("\n Continuar[s/n]: ");
+        scanf(" %c",&op);
+    }while(op=='s');
+}
+
+///////////////////////////////////////////////////PROBLEMA F////////////////////////////////////////////////
+void g_estadistica()
+{
+    int size;
+    double sample[MAX];
+
+    do{
+        printf("\n Ingresar tamano de la muestra: " );
+        scanf("%d", &size);
+        if(size <= 0 || size > MAX){
+            printf("\n Tamaño Inválido: " );
+        }
+    } while(size <= 0 || size > MAX);
+
+    printf("\n");
+    scan_sample(sample, size);
+
+    //Se ordenan los valores de la muestra desde el inicio, ya que se necesita para calcular la mediana y la moda.
+    qsort(sample, size, sizeof(double), double_comparator);
+
+    int op;
+    do{
+        fflush(stdin);
+        printf("\n 1. Media aritmetica." );
+        printf("\n 2. Moda." );
+        printf("\n 3. Mediana." );
+        printf("\n 4. Salir." );
+        printf("\n\n Operacion a realizar: " );
+		scanf("%d", &op);
+        printf("\n");
+
+        switch(op)
+        {
+            case 1:
+                printf("\n Media aritmetica: %lf", get_arithmetic_mean(sample, size)); 
+                break;
+
+            case 2:
+                printf("\n Moda: %lf", get_mode(sample, size)); 
+                break;
+            
+            case 3:
+                printf("\n Mediana: %lf", get_median(sample, size)); 
+                break;
+            
+            case 4:
+                printf("\n Saliendo...\n"); 
+                break;
+            
+            default:
+                printf("\n Opcion inválida."); 
+        }
+
+    } while(op != 4);
+
+}
+
+//Leer la muestra de datos
+void scan_sample(double *sample, int size)
+{
+    for(int i = 0; i < size; i++){
+        printf(" Elemento %d: ", i+1);
+        scanf("%lf", &sample[i]);
+    }
+}
+
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b)
+{
+    return *(double *)a - *(double *)b;
+}
+
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size)
+{
+	double mean = 0;
+
+	for(int i = 0; i < size; i++){
+        mean += sample[i];
+    }
+	mean /= size;
+
+	return mean;
+}
+
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size)
+{
+    double mode = sample[0]; //Se le da un valor por default
+    int max_frequency = 0, current_frequency = 0;
+
+    for(int i = 1; i < size; i++){
+        
+        if(sample[i] == sample[i-1]){ //Mientras sean iguales los elementos contiguos, se aumenta la frecuencia actual.
+            current_frequency++;
+        }else{
+            if(current_frequency > max_frequency){ //Cuando se encuentra un valor diferente al actual, se compara la frecuencia del último con la frecuencia máxima.
+                mode = sample[i-1];
+                max_frequency = current_frequency;
+            }
+            current_frequency = 0;
+        }
+    }
+
+    return mode;
+}
+
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size)
+{
+    int mid = size / 2;
+
+	if(size % 2 == 0){ //si el no. de elementos es impar, se toma el promedio de ambos elementos de en medio.
+        return (sample[mid] + sample[mid - 1]) / 2;
+    }
+
+    return sample[mid];
+}
+
+///////////////////////////////////////////////////PROBLEMA G////////////////////////////////////////////////
+void factorial()
+{
+    int factorial=1;
+    int contador, dato;
+
+    printf("\n Factorial de: ");
+    scanf("%d",&dato);
+
+    for(contador=1;contador<=dato;contador++)
+         factorial = factorial*contador;
+	printf(" El factorial de %d es %d\n",dato,factorial);
+}
+[15/09/22, 17:16:47] Mikel Barajas: Le agregue el nombre de los integrantes también
+[15/09/22, 17:16:51] Mikel Barajas: Bueno falta en comentario
+[15/09/22, 17:16:53] Mikel Barajas: Voy
+[15/09/22, 17:20:17] Mikel Barajas: /*
+Ingeniería de Software
+
+TAREA 2: REQUERIMIENTOS Y TRABAJO EN EQUIPO
+
+• Abarca Cárcamo Alan Yahir
+• Barajas Martínez Mikel Ignacio
+• Cerda Moreno Carlos Raul
+• Hernández Gallegos Montserrat Ximena
+• Hernández Guerrero Sergio Andrés
+• Hernández Salazar Isaih Roberto
+• Marquez Guerrero Kevin
+• Ojeda Gutiérrez Fernando Juriel
+• Rodriguez Perez José Rogelio
+• Rojas Martínez Jorge Ángel
+• Salazar Rico Diego Isaí
+• Villaseñor Monsiváis Alfredo
+
+15/09/2022
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<time.h>
+
+#define MAX 100
+#define CONSTANT 0.08333 // Es la división de 1 mes entre 12 que sería para pasar un mes a años
+
+/////////////////////////ESTRUCTURAS DE DATOS///////////////////////////////
+
+typedef struct{
+    int age_year;
+    float age_month;
+}FAMILY;
+
+typedef struct{
+    int day;
+    int month;
+    int year;
+}date_t;
+
+/////////////////////////PROTOTIPOS////////////////////////////////////////
+
+//PROBLEMA A
+void is_a_leap_year();
+
+//PROBLEMA B
+void days();
+int days_elapsed(date_t date);
+
+//PROBLEMA C
+void get_temperature();
+
+//PROBLEMA D
+void average_age();
+
+//PROBLEMA E
+void trigonometry();
+
+//PROBLEMA F
+void g_estadistica();
+void scan_sample(double *sample, int size);
+int double_comparator(const void* a, const void* b);
+double get_arithmetic_mean(double *sample, int size);
+double get_mode(double *sample, int size);
+double get_median(double *sample, int size);
+
+//PROBLEMA G
+void factorial();
+
+/////////////////////////FUNCIÓN PRINCIPAL////////////////////////////////////////
+int main()
+{
+    printf("\n ╔══════════════════════════════════════════════════════════╗");
+    printf("\n ║       TAREA 2: REQUERIMIENTOS Y TRABAJO EN EQUIPO        ║");
+    printf("\n ╚══════════════════════════════════════════════════════════╝");
+    printf("\n\n INTEGRANTES: ");
+    printf("\n • Abarca Cárcamo Alan Yahir ");
+    printf("\n • Barajas Martínez Mikel Ignacio ");
+    printf("\n • Cerda Moreno Carlos Raul ");
+    printf("\n • Hernández Gallegos Montserrat Ximena ");
+    printf("\n • Hernández Guerrero Sergio Andrés ");
+    printf("\n • Hernández Salazar Isaih Roberto");
+    printf("\n • Marquez Guerrero Kevin ");
+    printf("\n • Ojeda Gutiérrez Fernando Juriel");
+    printf("\n • Rodriguez Perez José Rogelio");
+    printf("\n • Rojas Martínez Jorge Ángel");
+    printf("\n • Salazar Rico Diego Isaí");
+    printf("\n • Villaseñor Monsiváis Alfredo ");
+    printf("\n\n ════════════════════════════════════════════════════════════\n");
+
+	int op;
+	do{
+        fflush(stdin);
+    	printf("\n ╔══════════════════════════════════════════════════════════╗");
+		printf("\n ║1. BISIESTO                         5. TRIGONOMETRÍA      ║"); //Como observamos, de primera instancia tenemos un menú
+		printf("\n ║2. DÍAS PARA LLEGAR A UNA FECHA     6. ESTADÍSTICA        ║"); //el cual se programó con ayuda de un ciclo do while y
+		printf("\n ║3. TEMPERATURA                      7. FACTORIAL	    ║");   //un switch. Mostramos cada opeción y en una variable
+		printf("\n ║4. EDADES                           8. SALIR              ║"); //guardamos el numero de la opción elegida para mandarlo
+		printf("\n ╚══════════════════════════════════════════════════════════╝"); //al switch de manera que cuando dicha variable sea 8
+		printf("\n\n Elige una opción: ");                                         //el ciclo do while nos sacará del programa.
+		scanf("%d",&op);
+
+        printf("\n ════════════════════════════════════════════════════════════\n");
+    	switch(op)
+    	{
+    		case 1:
+    			printf("\n BISIESTO \n");
+    			//PROBLEMA A
+				is_a_leap_year();
+    			break;
+    		case 2:
+    			printf("\n DÍAS PARA LLEGAR A UNA FECHA \n"); //Observemos que en cada case pusimos una función dependiendo de la opción que
+    			//PROBLEMA B                                    le correspondía seguido de un break para volver al menú de opciones.
+				days();
+    			break;
+    		case 3:
+    			printf("\n TEMPERATURA \n");
+    			//PROBLEMA C
+				get_temperature();
+    			break;
+    		case 4:
+    			printf("\n EDADES \n");
+    			//PROBLEMA D
+				average_age();
+    			break;
+    		case 5:
+    			printf("\n TRIGONOMETRÍA \n");
+    			//PROBLEMA E
+				trigonometry();
+    			break;
+    		case 6:
+    			printf("\n ESTADÍSTICA \n");
+    			//PROBLEMA F
+				g_estadistica();		
+    			break;
+    		case 7:
+    			printf("\n FACTORIAL \n");
+				//PROBLEMA G
+				factorial();
+    			break;
+    		case 8:
+    			printf("\n PROGRAMA ELABORADO POR EL EQUIPO 1 \n");
+    			break;
+    		default:
+    			printf("\n OPCIÓN INVÁLIDA");
+		}
+        printf("\n ════════════════════════════════════════════════════════════\n");
+	} while(op != 8);
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////PROBLEMA A////////////////////////////////////////////////
+void is_a_leap_year()
+{
+    int year, leap_year;
+
+    do{
+        printf("\n Ingresa el año a consultar: ");
+        scanf("%d", &year);
+        if(year<0){
+            printf(" El año no es válido. ");
+        }
+    }while(year<0);
+
+    if(year%4==0){
+        if(year%100 == 0){
+            if(year%400 == 0){
+                leap_year=1;
+            }else{
+                leap_year=0;
+            }
+        }else{
+            leap_year=1;
+        }
+    }else{
+        leap_year=0;
+    }
+
+    if(leap_year==1){
+        printf(" El año SÍ es bisiesto\n");
+    }else{
+        printf(" El año NO es bisiesto\n");
+    }
+}
+
+///////////////////////////////////////////////////PROBLEMA B////////////////////////////////////////////////
+void days()
+{
+    int start_year = 0, end_year = 0, num_years = 0;
+    long total_days = 0;
+
+    date_t current, future;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
+    current.day = local->tm_mday;            // obtener el día del mes (1 a 31)
+    current.month = local->tm_mon + 1;       // obtener el mes del año (0 a 11)
+    current.year = local->tm_year + 1900;    // obtener el año desde 1900
+
+    int band=1;
+    while(band){
+        printf("\n Ingresa el día de la fecha a consultar: ");
+        scanf("%d", &future.day);
+
+        printf(" Ingresa el mes de la fecha a consultar: ");
+        scanf("%d", &future.month);
+
+        printf(" Ingresa el año de la fecha a consultar: ");
+        scanf("%d", &future.year);
+
+        if((future.day > 32 || future.day < 0) || (future.month > 13 || future.month < 0) || (future.year < current.year)){
+            printf(" Ingrese una fecha válida \n");
+        }
+        else{
+            band=0;
+        }
+    }
+
+    start_year = current.day == future.day ? 0 : 365 - days_elapsed(current);
+
+    end_year = days_elapsed(future);
+
+    for(num_years=current.day+1; num_years<future.day; num_years)
+     {
+        if(((num_years%4==0) && (num_years%100!=0)))
+            total_days+=366;
+        else
+            total_days+=365;
+     }
+
+     total_days += start_year + end_year;
+
+     printf("\n\n El numero de días transcurridos entre %i/%i/%i y %i/%i/%i es: %li días \n", current.day, current.month, current.year, future.day, future.month, future.year, total_days);
+}
+
+
+int days_elapsed(date_t date)
+{
+  int sum=0;
+
+  int months[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+  for (int cont=0;cont<date.month-1;cont++){
+     sum+= months[cont];
+  }
+
+  sum+= date.day;
+
+  if((((date.year % 4 == 0) && (date.year % 100 != 0)) || (date.year % 400==0)) && date.month>2){
+    sum++;
+  }
+
+  return sum;
+}
+
+///////////////////////////////////////////////////PROBLEMA C////////////////////////////////////////////////
+void get_temperature()
+{
+    
+    //VARIABLES INICIALES//
+    float temperature;
+    char scale;
+    char option;
+    
+    //AQUI SE PIDE LA ESCALA QUE SE ESTA UTILIZANDO, SI INGRESA UN VALOR 
+    //INVALIDO RE REPETIRA HASTA QUE SEA UNO CORRECTO
+    do{
+    printf("\n Ingresa la escala que estas utilizando[C/F/K]: ");
+    scanf(" %c",&scale);
+    }while(scale!='C' && scale!='F' && scale!='K');
+    //AQUI SE INGRESA LA TEMPERATURA//
+    printf(" Ingresa la temperatura: ");
+    scanf("%f",&temperature);
+    void calculated_temperatur(char scale, float temperature);
+    //SE DECLARA LA VARIABLE QUE UTILIZAREMOS 
+    float converted_temperature;
+
+    switch(scale){
+        case 'C':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[F/K]: ");
+                scanf(" %c",&option);
+            }while(option!='F' && option!='K');
+
+            if(option=='F'){
+                converted_temperature=(temperature * (1.8)) + 32;
+                printf(" %.2f Celsius a Fahrenheit son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=temperature + 273.15;
+                printf(" %.2f Celsius a Kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'F':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[C/K]: ");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='K');
+
+            if(option=='C'){
+                converted_temperature=(temperature - 32) * (0.55555);
+                printf(" %.2f Fahrenheit a Celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 32) * (0.555)) + 273.15;
+                printf(" %.2f Fahrenheit a Kelvin son: %.2f",temperature,converted_temperature);
+            }
+        break;
+
+        case 'K':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[C/F]: ");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='F');
+            if(option=='C'){
+                converted_temperature=temperature - 273.15;
+               printf(" %.2f Kelvin a Celsius son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=((temperature - 273.15) * (1.8)) + 32;
+                printf("%.2f Kelvin a Fahrenheit son: %.2f",temperature,converted_temperature);
+            }
+        break;
+    }
+    printf("\n");
+}
+
+///////////////////////////////////////////////////PROBLEMA D////////////////////////////////////////////////
+void average_age()
+{
+    FAMILY array_family[MAX];
+    int i, members, year_2;
+    float month, month_2, total;
+
+    printf("\n Número de miembros en tu familia:  ");
+    scanf("%d", &members);
+
+    for(i = 0; i < members; i++)
+    {
+        printf("\n Edad en años del integrante %d: ", i + 1);
+        scanf("%d", &array_family[i].age_year);
+        printf(" Edad en meses del integrante %d: ", i + 1);
+        scanf("%f", &month);
+
+        month *= CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        array_family[i].age_month = month;
+        total = total + array_family[i].age_year + month;
+    }
+
+    total /= members;
+    year_2 = total;
+    month_2 = total - year_2;
+    month_2 *= 10;
+    month_2 = month_2 * 12 / 10;
+
+    printf("\n El promedio de edad es %d años y %.0f meses.\n", year_2, month_2);
+}
+
+///////////////////////////////////////////////////PROBLEMA E////////////////////////////////////////////////
+void trigonometry()
+{
+    float rad, ans;
+    int function;
+    char op;
+    do
+    {
+        fflush(stdin);
+        printf("\n Ángulo en radianes: ");
+        scanf("%f",&rad);
+        printf("\n 1. Seno");
+        printf("\n 2. Coseno");
+        printf("\n 3. Tangente");
+        printf("\n\n Función a realizar: ");
+        scanf("%d",&function);
+        printf("\n");
+        switch(function)
+        {
+            case 1:     //Funcion seno
+                ans=sin(rad);
+                printf(" Seno de %.2f radianes: %.2f \n", rad, ans);
+            break;
+            case 2:     //Funcion coseno
+                ans=cos(rad);
+                printf(" Coseno de %.2f radianes: %.2f \n", rad , ans);
+            break;
+            case 3:     //Funcion tangente
+                ans=tan(rad);
+                printf(" Tangente de %.2f radianes: %.2f \n", rad , ans);
+            break;
+            default:
+                printf(" Opción inválida.\n");
+        }
+        printf("\n Continuar[s/n]: ");
+        scanf(" %c",&op);
+    }while(op=='s');
+}
+
+///////////////////////////////////////////////////PROBLEMA F////////////////////////////////////////////////
+void g_estadistica()
+{
+    int size;
+    double sample[MAX];
+
+    do{
+        printf("\n Ingresar tamano de la muestra: " );
+        scanf("%d", &size);
+        if(size <= 0 || size > MAX){
+            printf("\n Tamaño Inválido: " );
+        }
+    } while(size <= 0 || size > MAX);
+
+    printf("\n");
+    scan_sample(sample, size);
+
+    //Se ordenan los valores de la muestra desde el inicio, ya que se necesita para calcular la mediana y la moda.
+    qsort(sample, size, sizeof(double), double_comparator);
+
+    int op;
+    do{
+        fflush(stdin);
+        printf("\n 1. Media aritmetica." );
+        printf("\n 2. Moda." );
+        printf("\n 3. Mediana." );
+        printf("\n 4. Salir." );
+        printf("\n\n Operacion a realizar: " );
+		scanf("%d", &op);
+        printf("\n");
+
+        switch(op)
+        {
+            case 1:
+                printf("\n Media aritmetica: %lf", get_arithmetic_mean(sample, size)); 
+                break;
+
+            case 2:
+                printf("\n Moda: %lf", get_mode(sample, size)); 
+                break;
+            
+            case 3:
+                printf("\n Mediana: %lf", get_median(sample, size)); 
+                break;
+            
+            case 4:
+                printf("\n Saliendo...\n"); 
+                break;
+            
+            default:
+                printf("\n Opcion inválida."); 
+        }
+
+    } while(op != 4);
+
+}
+
+//Leer la muestra de datos
+void scan_sample(double *sample, int size)
+{
+    for(int i = 0; i < size; i++){
+        printf(" Elemento %d: ", i+1);
+        scanf("%lf", &sample[i]);
+    }
+}
+
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b)
+{
+    return *(double *)a - *(double *)b;
+}
+
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size)
+{
+	double mean = 0;
+
+	for(int i = 0; i < size; i++){
+        mean += sample[i];
+    }
+	mean /= size;
+
+	return mean;
+}
+
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size)
+{
+    double mode = sample[0]; //Se le da un valor por default
+    int max_frequency = 0, current_frequency = 0;
+
+    for(int i = 1; i < size; i++){
+        
+        if(sample[i] == sample[i-1]){ //Mientras sean iguales los elementos contiguos, se aumenta la frecuencia actual.
+            current_frequency++;
+        }else{
+            if(current_frequency > max_frequency){ //Cuando se encuentra un valor diferente al actual, se compara la frecuencia del último con la frecuencia máxima.
+                mode = sample[i-1];
+                max_frequency = current_frequency;
+            }
+            current_frequency = 0;
+        }
+    }
+
+    return mode;
+}
+
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size)
+{
+    int mid = size / 2;
+
+	if(size % 2 == 0){ //si el no. de elementos es impar, se toma el promedio de ambos elementos de en medio.
+        return (sample[mid] + sample[mid - 1]) / 2;
+    }
+
+    return sample[mid];
+}
+
+///////////////////////////////////////////////////PROBLEMA G////////////////////////////////////////////////
+void factorial()
+{
+    int factorial=1;
+    int contador, dato;
+
+    printf("\n Factorial de: ");
+    scanf("%d",&dato);
+
+    for(contador=1;contador<=dato;contador++)
+         factorial = factorial*contador;
+	printf(" El factorial de %d es %d\n",dato,factorial);
+}
+[15/09/22, 17:27:56] ‪+52 444 718 5474‬: Man pero todos los acentos se imprimen con simbolos raros
+[15/09/22, 17:28:02] ‪+52 444 718 5474‬: Por eso se los quité :v
+[15/09/22, 17:29:44] Mikel Barajas: En replit sí deja
+[15/09/22, 17:29:46] Mikel Barajas: Prueben ahí
+[15/09/22, 17:29:58] Mikel Barajas: El profe va a usar replit para correrlos
+[15/09/22, 17:30:07] Mikel Barajas: Cómo el de la tarea extra 1
+[15/09/22, 17:32:21] Mikel Barajas: Bueno, vamos a hacer una versión sin acentos de nuevo
+[15/09/22, 17:32:23] Mikel Barajas: Por si acaso
+[15/09/22, 17:32:33] Mikel Barajas: Pero me imagino sí usará replit
+[15/09/22, 17:32:51] Mikel Barajas: @5214447185474 , puedes hacerla?
+[15/09/22, 17:32:58] Mikel Barajas: Sobre esta versión
+[15/09/22, 17:33:38] Mikel Barajas: /*
+Ingeniería de Software
+
+TAREA 2: REQUERIMIENTOS Y TRABAJO EN EQUIPO
+
+• Abarca Cárcamo Alan Yahir
+• Barajas Martínez Mikel Ignacio
+• Cerda Moreno Carlos Raul
+• Hernández Gallegos Montserrat Ximena
+• Hernández Guerrero Sergio Andrés
+• Hernández Salazar Isaih Roberto
+• Marquez Guerrero Kevin
+• Ojeda Gutiérrez Fernando Juriel
+• Rodriguez Perez José Rogelio
+• Rojas Martínez Jorge Ángel
+• Salazar Rico Diego Isaí
+• Villaseñor Monsiváis Alfredo
+
+15/09/2022
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<time.h>
+
+#define MAX 100
+#define CONSTANT 0.08333 // Es la división de 1 mes entre 12 que sería para pasar un mes a años
+
+/////////////////////////ESTRUCTURAS DE DATOS///////////////////////////////
+
+typedef struct{
+    int age_year;
+    float age_month;
+}FAMILY;
+
+typedef struct{
+    int day;
+    int month;
+    int year;
+}date_t;
+
+/////////////////////////PROTOTIPOS////////////////////////////////////////
+
+//PROBLEMA A
+void is_a_leap_year();
+
+//PROBLEMA B
+void days();
+int days_elapsed(date_t date);
+
+//PROBLEMA C
+void get_temperature();
+
+//PROBLEMA D
+void average_age();
+
+//PROBLEMA E
+void trigonometry();
+
+//PROBLEMA F
+void g_estadistica();
+void scan_sample(double *sample, int size);
+int double_comparator(const void* a, const void* b);
+double get_arithmetic_mean(double *sample, int size);
+double get_mode(double *sample, int size);
+double get_median(double *sample, int size);
+
+//PROBLEMA G
+void factorial();
+
+/////////////////////////FUNCIÓN PRINCIPAL////////////////////////////////////////
+int main()
+{
+    printf("\n ╔══════════════════════════════════════════════════════════╗");
+    printf("\n ║       TAREA 2: REQUERIMIENTOS Y TRABAJO EN EQUIPO        ║");
+    printf("\n ╚══════════════════════════════════════════════════════════╝");
+    printf("\n\n INTEGRANTES: ");
+    printf("\n • Abarca Cárcamo Alan Yahir ");
+    printf("\n • Barajas Martínez Mikel Ignacio ");
+    printf("\n • Cerda Moreno Carlos Raul ");
+    printf("\n • Hernández Gallegos Montserrat Ximena ");
+    printf("\n • Hernández Guerrero Sergio Andrés ");
+    printf("\n • Hernández Salazar Isaih Roberto");
+    printf("\n • Marquez Guerrero Kevin ");
+    printf("\n • Ojeda Gutiérrez Fernando Juriel");
+    printf("\n • Rodriguez Perez José Rogelio");
+    printf("\n • Rojas Martínez Jorge Ángel");
+    printf("\n • Salazar Rico Diego Isaí");
+    printf("\n • Villaseñor Monsiváis Alfredo ");
+    printf("\n\n ════════════════════════════════════════════════════════════\n");
+
+	int op;
+	do{
+        fflush(stdin);
+    	printf("\n ╔══════════════════════════════════════════════════════════╗");
+		printf("\n ║1. BISIESTO                         5. TRIGONOMETRÍA      ║"); //Como observamos, de primera instancia tenemos un menú
+		printf("\n ║2. DÍAS PARA LLEGAR A UNA FECHA     6. ESTADÍSTICA        ║"); //el cual se programó con ayuda de un ciclo do while y
+		printf("\n ║3. TEMPERATURA                      7. FACTORIAL          ║");   //un switch. Mostramos cada opeción y en una variable
+		printf("\n ║4. EDADES                           8. SALIR              ║"); //guardamos el numero de la opción elegida para mandarlo
+		printf("\n ╚══════════════════════════════════════════════════════════╝"); //al switch de manera que cuando dicha variable sea 8
+		printf("\n\n Elige una opción: ");                                         //el ciclo do while nos sacará del programa.
+		scanf("%d",&op);
+
+        printf("\n ════════════════════════════════════════════════════════════\n");
+    	switch(op)
+    	{
+    		case 1:
+    			printf("\n BISIESTO \n");
+    			//PROBLEMA A
+				is_a_leap_year();
+    			break;
+
+    		case 2:
+    			printf("\n DÍAS PARA LLEGAR A UNA FECHA \n"); //Observemos que en cada case pusimos una función dependiendo de la opción que
+    			//PROBLEMA B                                    le correspondía seguido de un break para volver al menú de opciones.
+				days();
+    			break;
+
+    		case 3:
+    			printf("\n TEMPERATURA \n");
+    			//PROBLEMA C
+				get_temperature();
+    			break;
+
+    		case 4:
+    			printf("\n EDADES \n");
+    			//PROBLEMA D
+				average_age();
+    			break;
+
+    		case 5:
+    			printf("\n TRIGONOMETRÍA \n");
+    			//PROBLEMA E
+				trigonometry();
+    			break;
+
+    		case 6:
+    			printf("\n ESTADÍSTICA \n");
+    			//PROBLEMA F
+				g_estadistica();		
+    			break;
+
+    		case 7:
+    			printf("\n FACTORIAL \n");
+				//PROBLEMA G
+				factorial();
+    			break;
+
+    		case 8:
+    			printf("\n UASLP, 2022 \n");
+    			break;
+
+    		default:
+    			printf("\n OPCIÓN INVÁLIDA");
+		}
+        printf("\n ════════════════════════════════════════════════════════════\n");
+	} while(op != 8);
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////PROBLEMA A////////////////////////////////////////////////
+void is_a_leap_year()
+{
+    int year, leap_year;
+
+    do{
+        printf("\n Ingresa el año a consultar: ");
+        scanf("%d", &year);
+        if(year<0){
+            printf(" El año no es válido. ");
+        }
+    }while(year<0);
+
+    if(year%4==0){
+        if(year%100 == 0){
+            if(year%400 == 0){
+                leap_year=1;
+            }else{
+                leap_year=0;
+            }
+        }else{
+            leap_year=1;
+        }
+    }else{
+        leap_year=0;
+    }
+
+    if(leap_year==1){
+        printf(" El año SÍ es bisiesto\n");
+    }else{
+        printf(" El año NO es bisiesto\n");
+    }
+}
+
+///////////////////////////////////////////////////PROBLEMA B////////////////////////////////////////////////
+void days()
+{
+    int start_year = 0, end_year = 0, num_years = 0;
+    long total_days = 0;
+
+    date_t current, future;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
+    current.day = local->tm_mday;            // obtener el día del mes (1 a 31)
+    current.month = local->tm_mon + 1;       // obtener el mes del año (0 a 11)
+    current.year = local->tm_year + 1900;    // obtener el año desde 1900
+
+    int band=1;
+    while(band){
+        printf("\n Ingresa el día de la fecha a consultar: ");
+        scanf("%d", &future.day);
+
+        printf(" Ingresa el mes de la fecha a consultar: ");
+        scanf("%d", &future.month);
+
+        printf(" Ingresa el año de la fecha a consultar: ");
+        scanf("%d", &future.year);
+
+        if((future.day > 32 || future.day < 0) || (future.month > 13 || future.month < 0) || (future.year < current.year)){
+            printf(" Ingrese una fecha válida \n");
+        }
+        else{
+            band=0;
+        }
+    }
+
+    start_year = current.day == future.day ? 0 : 365 - days_elapsed(current);
+
+    end_year = days_elapsed(future);
+
+    for(num_years=current.day+1; num_years<future.day; num_years){
+        if(((num_years%4==0) && (num_years%100!=0))){
+            total_days+=366;
+        }
+        else{
+            total_days+=365;
+        }
+    }
+
+     total_days += start_year + end_year;
+
+     printf("\n\n El numero de días transcurridos entre %i/%i/%i y %i/%i/%i es: %li días \n", current.day, current.month, current.year, future.day, future.month, future.year, total_days);
+}
+
+
+int days_elapsed(date_t date)
+{
+    int sum=0;
+
+    int months[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+    for (int cont=0;cont<date.month-1;cont++){
+        sum+= months[cont];
+    }
+
+    sum+= date.day;
+
+    if((((date.year % 4 == 0) && (date.year % 100 != 0)) || (date.year % 400==0)) && date.month>2){
+        sum++;
+    }
+
+    return sum;
+}
+
+///////////////////////////////////////////////////PROBLEMA C////////////////////////////////////////////////
+void get_temperature()
+{
+    
+    //VARIABLES INICIALES//
+    float temperature;
+    char scale;
+    char option;
+    
+    //AQUI SE PIDE LA ESCALA QUE SE ESTA UTILIZANDO, SI INGRESA UN VALOR 
+    //INVALIDO RE REPETIRA HASTA QUE SEA UNO CORRECTO
+    do{
+        printf("\n Ingresa la escala que estas utilizando[C/F/K]: ");
+        scanf(" %c",&scale);
+    }while(scale!='C' && scale!='F' && scale!='K');
+
+    //AQUI SE INGRESA LA TEMPERATURA//
+    printf(" Ingresa la temperatura: ");
+    scanf("%f",&temperature);
+    void calculated_temperatur(char scale, float temperature);
+
+    //SE DECLARA LA VARIABLE QUE UTILIZAREMOS 
+    float converted_temperature;
+
+    switch(scale){
+        case 'C':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[F/K]: ");
+                scanf(" %c",&option);
+            }while(option!='F' && option!='K');
+
+            if(option=='F'){
+                converted_temperature=(temperature * (1.8)) + 32;
+                printf(" %.2f Celsius a Fahrenheit son: %.2f",temperature,converted_temperature);
+            }
+            else{
+                converted_temperature=temperature + 273.15;
+                printf(" %.2f Celsius a Kelvin son: %.2f",temperature,converted_temperature);
+            }
+            break;
+
+        case 'F':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[C/K]: ");
+                scanf(" %c",&option);
+            }while(option!='C' && option!='K');
+
+            if(option=='C'){
+                converted_temperature=(temperature - 32) * (0.55555);
+                printf(" %.2f Fahrenheit a Celsius son: %.2f",temperature,converted_temperature);
+            } else{
+                converted_temperature=((temperature - 32) * (0.555)) + 273.15;
+                printf(" %.2f Fahrenheit a Kelvin son: %.2f",temperature,converted_temperature);
+            }
+            break;
+
+        case 'K':
+            do{
+                printf("\n Ingresa la escala a la que la quieres convertir[C/F]: ");
+                scanf(" %c",&option);
+            } while(option!='C' && option!='F');  
+             
+            if(option=='C'){
+                converted_temperature=temperature - 273.15;
+               printf(" %.2f Kelvin a Celsius son: %.2f",temperature,converted_temperature);
+            } else{
+                converted_temperature=((temperature - 273.15) * (1.8)) + 32;
+                printf("%.2f Kelvin a Fahrenheit son: %.2f",temperature,converted_temperature);
+            }
+            break;
+    }
+    printf("\n");
+}
+
+///////////////////////////////////////////////////PROBLEMA D////////////////////////////////////////////////
+void average_age()
+{
+    FAMILY array_family[MAX];
+    int i, members, year_2;
+    float month, month_2, total;
+
+    printf("\n Número de miembros en tu familia:  ");
+    scanf("%d", &members);
+
+    for(i = 0; i < members; i++) {
+        printf("\n Edad en años del integrante %d: ", i + 1);
+        scanf("%d", &array_family[i].age_year);
+        printf(" Edad en meses del integrante %d: ", i + 1);
+        scanf("%f", &month);
+
+        month *= CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        array_family[i].age_month = month;
+        total = total + array_family[i].age_year + month;
+    }
+
+    total /= members;
+    year_2 = total;
+    month_2 = total - year_2;
+    month_2 *= 10;
+    month_2 = month_2 * 12 / 10;
+
+    printf("\n El promedio de edad es %d años y %.0f meses.\n", year_2, month_2);
+}
+
+///////////////////////////////////////////////////PROBLEMA E////////////////////////////////////////////////
+void trigonometry()
+{
+    float rad, ans;
+    int function;
+    char op;
+    do
+    {
+        fflush(stdin);
+
+        printf("\n Ángulo en radianes: ");
+        scanf("%f",&rad);
+
+        printf("\n 1. Seno");
+        printf("\n 2. Coseno");
+        printf("\n 3. Tangente");
+        printf("\n\n Función a realizar: ");
+        scanf("%d",&function);
+
+        printf("\n");
+        switch(function)
+        {
+            case 1:     //Funcion seno
+                ans=sin(rad);
+                printf(" Seno de %.2f radianes: %.2f \n", rad, ans);
+                break;
+
+            case 2:     //Funcion coseno
+                ans=cos(rad);
+                printf(" Coseno de %.2f radianes: %.2f \n", rad , ans);
+                break;
+
+            case 3:     //Funcion tangente
+                ans=tan(rad);
+                printf(" Tangente de %.2f radianes: %.2f \n", rad , ans);
+                break;
+
+            default:
+                printf(" Opción inválida.\n");
+        }
+
+        printf("\n Continuar[s/n]: ");
+        scanf(" %c",&op);
+
+    }while(op=='s');
+}
+
+///////////////////////////////////////////////////PROBLEMA F////////////////////////////////////////////////
+void g_estadistica()
+{
+    int size;
+    double sample[MAX];
+
+    do{
+        printf("\n Ingresar tamano de la muestra: " );
+        scanf("%d", &size);
+        if(size <= 0 || size > MAX){
+            printf("\n Tamaño Inválido: " );
+        }
+    } while(size <= 0 || size > MAX);
+
+    printf("\n");
+    scan_sample(sample, size);
+
+    //Se ordenan los valores de la muestra desde el inicio, ya que se necesita para calcular la mediana y la moda.
+    qsort(sample, size, sizeof(double), double_comparator);
+
+    int op;
+    do{
+        fflush(stdin);
+        printf("\n 1. Media aritmetica." );
+        printf("\n 2. Moda." );
+        printf("\n 3. Mediana." );
+        printf("\n 4. Salir." );
+        printf("\n\n Operacion a realizar: " );
+		scanf("%d", &op);
+
+        switch(op)
+        {
+            case 1:
+                printf("\n Media aritmetica: %lf", get_arithmetic_mean(sample, size)); 
+                break;
+
+            case 2:
+                printf("\n Moda: %lf", get_mode(sample, size)); 
+                break;
+            
+            case 3:
+                printf("\n Mediana: %lf", get_median(sample, size)); 
+                break;
+            
+            case 4:
+                printf("\n Saliendo..."); 
+                break;
+            
+            default:
+                printf("\n Opcion inválida."); 
+        }
+        
+        printf("\n");
+
+    } while(op != 4);
+
+}
+
+//Leer la muestra de datos
+void scan_sample(double *sample, int size)
+{
+    for(int i = 0; i < size; i++){
+        printf(" Elemento %d: ", i+1);
+        scanf("%lf", &sample[i]);
+    }
+}
+
+//Comparador para la función qsort, regresa la diferencia entre dos double
+int double_comparator(const void* a, const void* b)
+{
+    return *(double *)a - *(double *)b;
+}
+
+//Calcular la media arimética sumando todos los valores, y dividiéndolos por el número de valores.
+double get_arithmetic_mean(double *sample, int size)
+{
+	double mean = 0;
+
+	for(int i = 0; i < size; i++){
+        mean += sample[i];
+    }
+	mean /= size;
+
+	return mean;
+}
+
+//Calcular la moda eligiendo el valor que aparece con mayor frecuencia (se asume la muestra está ordenada).
+double get_mode(double *sample, int size)
+{
+    double mode = sample[0]; //Se le da un valor por default
+    int max_frequency = 0, current_frequency = 0;
+
+    for(int i = 1; i < size; i++){
+        
+        if(sample[i] == sample[i-1]){ //Mientras sean iguales los elementos contiguos, se aumenta la frecuencia actual.
+            current_frequency++;
+        }else{
+            if(current_frequency > max_frequency){ //Cuando se encuentra un valor diferente al actual, se compara la frecuencia del último con la frecuencia máxima.
+                mode = sample[i-1];
+                max_frequency = current_frequency;
+            }
+            current_frequency = 0;
+        }
+    }
+
+    return mode;
+}
+
+//Obtener el valor de la media (se asume la muestra está ordenada).
+double get_median(double *sample, int size)
+{
+    int mid = size / 2;
+
+	if(size % 2 == 0){ //si el no. de elementos es impar, se toma el promedio de ambos elementos de en medio.
+        return (sample[mid] + sample[mid - 1]) / 2;
+    }
+
+    return sample[mid];
+}
+
+///////////////////////////////////////////////////PROBLEMA G////////////////////////////////////////////////
+void factorial()
+{
+    int factorial=1;
+    int contador, dato;
+
+    printf("\n Factorial de: ");
+    scanf("%d",&dato);
+
+    for(contador=1;contador<=dato;contador++){
+        factorial = factorial*contador;
+    }
+    
+	printf(" El factorial de %d es %d\n",dato,factorial);
+}
+[15/09/22, 17:33:50] Mikel Barajas: Los demás por favor prueben ponerla en replit
+[15/09/22, 17:33:52] Mikel Barajas: Ya sea de aquí
+[15/09/22, 17:33:58] Mikel Barajas: O del archivo que va a estar en teams
+[15/09/22, 17:38:09] Mikel Barajas: Ya está subida
+[15/09/22, 17:38:19] Mikel Barajas: De nuevo Gracias a todos equipo
+[15/09/22, 17:38:30] Mikel Barajas: Revise la en replit y en su máquina
+[15/09/22, 17:46:49] ‪+52 444 718 5474‬: Si man, yo la preparo
+[15/09/22, 17:52:23] Mikel Barajas: Gravias
+[15/09/22, 17:52:27] Mikel Barajas: La llevas en tu compu el martes
+[15/09/22, 17:52:41] Mikel Barajas: Por si se ocupa una demostración y salen mal los acentos
