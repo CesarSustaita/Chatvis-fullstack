@@ -10,28 +10,14 @@ nlp = spacy.load("es_dep_news_trf")
 def processDocs(messages):
     docs = []
     for doc, label in nlp.pipe(messages, as_tuples=True):
-        if label == "Code":
-            doc.cats['Codigo'] = 1
-            doc.cats['Logistica'] = 0
-            doc.cats['Intrascendente'] = 0
-        elif label == "Logistica":
-            doc.cats['Codigo'] = 0
-            doc.cats['Logistica'] = 1
-            doc.cats['Intrascendente'] = 0
-        elif label == "Intrascendente":
-            doc.cats['Codigo'] = 0
-            doc.cats['Logistica'] = 0
-            doc.cats['Intrascendente'] = 1
-        else:
-            doc.cats['Codigo'] = 0
-            doc.cats['Logistica'] = 0
-            doc.cats['Intrascendente'] = 0
+        doc.cats[label] = 1
         docs.append(doc)
     return docs
 
-msgs_code = msg_parser.getMessages('data/training-validation/code.txt')
-msgs_logistica = msg_parser.getMessages('data/training-validation/logistica.txt')
-msgs_intrascendente = msg_parser.getMessages('data/training-validation/intrascendente.txt')
+
+msgs_code = msg_parser.getMessages('training-data/codigo.txt')
+msgs_logistica = msg_parser.getMessages('training-data/logistica.txt')
+msgs_intrascendente = msg_parser.getMessages('training-data/intrascendente.txt')
 
 msgs = [(text, "Codigo") for text in msgs_code] + \
         [(text, "Logistica") for text in msgs_logistica] + \
@@ -48,7 +34,7 @@ train_docs = processDocs(training_msgs)
 valid_docs = processDocs(validatn_msgs)
 
 doc_bin_t = DocBin(docs=train_docs)
-doc_bin_t.to_disk('./data/BinDocs/train_3c.spacy')
+doc_bin_t.to_disk('./BinDocs/train.spacy')
 
 doc_bin_v = DocBin(docs=valid_docs)
-doc_bin_v.to_disk('./data/BinDocs/valid_3c.spacy')
+doc_bin_v.to_disk('./BinDocs/valid.spacy')

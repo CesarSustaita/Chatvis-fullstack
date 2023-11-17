@@ -1,0 +1,1078 @@
+[30/08/21 13:58:06] Luis Gerardo  Campos IS : /*
+1.- El programa muestra inicialmente los nombres de los tres
+integrantes del equipo
+*/
+void nombresequi()
+{
+
+    printf("Los integrantes son: \n");
+    printf("Campos Rodriguez Luis Gerardo\n");
+    printf(" nombre \n");
+    printf(" nombre \n");
+}
+[30/08/21 14:01:29] Josa: /*
+1.- El programa muestra inicialmente los nombres de los tres
+integrantes del equipo
+*/
+void nombresequi()
+{
+
+    printf("Los integrantes son: \n");
+    printf("Campos Rodriguez Luis Gerardo\n");
+    printf(" Moreno Muñoz Obed Josafat \n");
+    printf(" nombre \n");
+}
+[30/08/21 14:02:33] Emma IS : void nombresaqui()
+{
+    printf("Los integrantes son: \n");
+    printf("Campos Rodriguez Luis Gerardo\n");
+    printf(" Moreno Muñoz Obed Josafat \n");
+    printf("Florencio Trujillo Emmanuel\n");
+}
+[30/08/21 14:08:40] Josa: int menu()
+{
+    int op;
+
+    do{
+        printf("\n 1.-  ");
+        printf("\n 2.- ");
+        printf("\n 3.-  ");
+        printf("\n 4.-  ");
+        printf("\n 5.-  ");
+        printf("\n 6.- ");
+        printf("\n 5.- Salir ");
+        printf("\n    ---Opcion: ");
+        scanf("%d", &op);
+
+    }while (op < 1 || op > 5);
+    return (op);
+}
+[30/08/21 14:13:22] Luis Gerardo  Campos IS : int menu()
+{
+    int m;
+    printf("\nSeleccione una opcion: \n\n\n");
+    printf("Opcion 1)Aritmetica (3 operaciones basicas, cada una con 2 operandos y un operador)\n");
+[30/08/21 14:14:21] Josa: int menu()
+{
+    int op;
+
+    do{
+        printf("\n 1.- Suma ");
+        printf("\n 2.- Resta ");
+        printf("\n 3.- Multiplicación");
+        printf("\n 4.- División ");
+        printf("\n 5.-  ");
+        printf("\n 6.- ");
+        printf("\n 5.- Salir ");
+        printf("\n    ---Opcion: ");
+        scanf("%d", &op);
+
+    }while (op < 1 || op > 5);
+    return (op);
+}
+[30/08/21 19:00:21] Emma IS : switch(menuPrincipal()){
+    case 1:
+        printf("\n Aritmética:\n");
+        switch(menuAritmetica()){
+            case 1:
+               //Suma
+               break;
+
+            case 2:
+                //Resta
+                break;
+
+            case 3:
+                //Multiplicación
+                break;
+
+            case 4:
+                //División
+                break;
+        }
+
+    case 2:
+        printf("\n Trigonometría:\n");
+        switch(menuTrigonometria()){
+            case 1:
+                //Función 1;
+                break;
+
+            case 2:
+                //Función 2;
+                break;
+
+            case 3:
+                //Función 3;
+                break;
+        }
+
+    case 3:
+        printf("\n Geometría 2D (Perímetro):\n");
+        switch(menuGeo2DPeri()){
+            case 1:
+                //Rectángulo
+                break;
+
+            case 2:
+                //Triángulo
+                break;
+
+            case 3:
+                //Círculo
+                break;
+        }
+
+    case 4:
+        printf("\n Geometría 2D (Área):\n");
+        switch(menuGeo2DArea()){
+            case 1:
+                //Rectángulo
+                break;
+
+            case 2:
+                //Triángulo
+                break;
+
+            case 3:
+                //Círculo
+                break;
+        }
+
+    case 5:
+        printf("\n Geometría 3D (Volumen):\n");
+        switch(menuGeo3D()){
+            case 1:
+                //Prisma Rectangular
+                break;
+
+            case 2:
+                //Cilindro
+                break;
+
+            case 3:
+                //Pirámide cuadrangular
+                break;
+        }
+
+    case 6:
+        printf("\n Estadísitica:\n");
+        //Estadística
+        break;
+
+    case 7:
+        printf("\n Factorial:\n");
+        //Factorial
+        break;
+
+    case 8:
+        printf("\n Velocidad:\n");
+        //Velocidad
+        break;
+
+    case 9:
+        printf("\n Fuerza:\n");
+        //Fuerza
+        break;
+}
+[30/08/21 19:01:03] Emma IS : int menuPrincipal(){
+    int op;
+    printf("Elige la operacion que desees ejecutar:\n\n");
+    do{
+        printf("1.- Aritmética\n ");
+        printf("2.- Trigonometría\n ");
+        printf("3.- Geometría 2D (perímetro)\n ");
+        printf("4.- Geometría 2D (área)\n ");
+        printf("5.- Geometría 3D (volumen)\n ");
+        printf("6.- Estadística\n ");
+        printf("7.- Factorial\n ");
+        printf("8.- Velocidad\n ");
+        printf("9.- Fuerza\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 7);
+    return (op);
+}
+[30/08/21 19:01:13] Emma IS : int menuAritmetica(){
+    int op;
+    printf("Elige que operación arimética deseas ejecutar:\n\n");
+    do{
+        printf("1.- Suma\n ");
+        printf("2.- Resta\n ");
+        printf("3.- Multiplicación\n ");
+        printf("4.- División\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 4);
+    return (op);
+}
+[30/08/21 19:02:23] Emma IS : int menuTrigonometria(){
+    int op;
+    printf("Elige que operacion trigonometrica  deseas ejecutar:\n\n");
+    do{
+        printf("1.- \n ");
+        printf("2.- \n ");
+        printf("3.- \n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:02:36] Emma IS : int menuGeo2DPeri(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el perímetro:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:02:49] Emma IS : int menuGeo2DArea(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el área:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:03:01] Emma IS : int menuGeo3D(){
+    int op;
+    printf("Elige el poliedro del que quiere obtener el volumen:\n\n");
+    do{
+        printf("1.- Prisma rectangular\n ");
+        printf("2.- Cilindro\n ");
+        printf("2.- Pirámide cuadrangular\n ");
+    }
+}
+[30/08/21 19:12:25] Josa: void hanoi(int N, char origen, char destino, char auxiliar)
+{
+    if(N == 1)
+    {
+        hanoi(N-1, origen, auxiliar, destino);
+       printf("\n %c -> %c" , origen, destino);
+       hanoi(N-1, auxiliar, destino, origen);
+    }
+}
+[30/08/21 19:16:07] Luis Gerardo  Campos IS : void aritmetica(Numeros *C)
+{
+    int op;
+    float resultado;
+    printf("Seleccione una opcion: ");
+    printf("\n1)Suma:\n2)Resta:\n3)Multiplicacion:\n");
+    scanf("%d",&op);//Lee la opcion a realizar
+    printf("\nIngrese los datos: ");
+    scanf("%f",&C->n1);
+    scanf("%f",&C->n2);
+    switch(op)
+    {
+    case 1:
+        resultado=(C->n1+C->n2);
+        break;
+    case 2:
+        resultado=(C->n1-C->n2);
+        break;
+    case 3:
+        resultado=(C->n1*C->n3);
+        break;
+        default:
+        printf("Error, opcion no valida");
+    }
+    printf("El resultado es: %.1f",resultado);
+}
+[30/08/21 19:23:37] Emma IS : #include<stdio.h>
+#include<stdlib.h>
+
+int menuPrincipal();
+int menuAritmetica();
+int menuTrigonometria();
+int menuGeo2DPeri();
+int menuGeo2DArea();
+int menuGeo3D();
+
+int main(){
+    char resp;
+
+    do{
+        fflush(stdin);
+        switch(menuPrincipal()){
+            case 1:
+                printf("\n Aritmética:\n");
+                switch(menuAritmetica()){
+                    case 1:
+                    //Suma
+                    break;
+
+                    case 2:
+                        //Resta
+                        break;
+
+                    case 3:
+                        //Multiplicación
+                        break;
+
+                    case 4:
+                        //División
+                        break;
+                }
+
+            case 2:
+                printf("\n Trigonometría:\n");
+                switch(menuTrigonometria()){
+                    case 1:
+                        //Función 1;
+                        break;
+
+                    case 2:
+                        //Función 2;
+                        break;
+
+                    case 3:
+                        //Función 3;
+                        break;
+                }
+
+            case 3:
+                printf("\n Geometría 2D (Perímetro):\n");
+                switch(menuGeo2DPeri()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+
+            case 4:
+                printf("\n Geometría 2D (Área):\n");
+                switch(menuGeo2DArea()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+
+            case 5:
+                printf("\n Geometría 3D (Volumen):\n");
+                switch(menuGeo3D()){
+                    case 1:
+                        //Prisma Rectangular
+                        break;
+
+                    case 2:
+                        //Cilindro
+                        break;
+
+                    case 3:
+                        //Pirámide cuadrangular
+                        break;
+                }
+
+            case 6:
+                printf("\n Estadísitica:\n");
+                //Estadística
+                break;
+
+            case 7:
+                printf("\n Factorial:\n");
+                //Factorial
+                break;
+
+            case 8:
+                printf("\n Velocidad:\n");
+                //Velocidad
+                break;
+
+            case 9:
+                printf("\n Fuerza:\n");
+                //Fuerza
+                break;
+        }
+        fflush(stdin);
+        printf("\n\n¿Desea seleccionar otra opcion diferente? (s/n) ");
+        fflush(stdin);
+        scanf("%c", &resp);
+    }while( resp == 's');
+}
+
+int menuPrincipal(){
+    int op;
+    printf("Elige la operacion que desees ejecutar:\n\n ");
+    do{
+        printf("1.- Aritmética\n ");
+        printf("2.- Trigonometría\n ");
+        printf("3.- Geometría 2D (perímetro)\n ");
+        printf("4.- Geometría 2D (área)\n ");
+        printf("5.- Geometría 3D (volumen)\n ");
+        printf("6.- Estadística\n ");
+        printf("7.- Factorial\n ");
+        printf("8.- Velocidad\n ");
+        printf("9.- Fuerza\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 7);
+    return (op);
+}
+
+int menuAritmetica(){
+    int op;
+    printf("Elige que operación arimética deseas ejecutar:\n\n");
+    do{
+        printf("1.- Suma\n ");
+        printf("2.- Resta\n ");
+        printf("3.- Multiplicación\n ");
+        printf("4.- División\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 4);
+    return (op);
+}
+
+int menuTrigonometria(){
+    int op;
+    printf("Elige que operacion trigonometrica  deseas ejecutar:\n\n");
+    do{
+        printf("1.- \n ");
+        printf("2.- \n ");
+        printf("3.- \n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DPeri(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el perímetro:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DArea(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el área:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo3D(){
+    int op;
+    printf("Elige el poliedro del que quiere obtener el volumen:\n\n");
+    do{
+        printf("1.- Prisma rectangular\n ");
+        printf("2.- Cilindro\n ");
+        printf("2.- Pirámide cuadrangular\n ");
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:26:52] Emma IS : #include<stdio.h>
+#include<stdlib.h>
+
+int menuPrincipal();
+int menuAritmetica();
+int menuTrigonometria();
+int menuGeo2DPeri();
+int menuGeo2DArea();
+int menuGeo3D();
+
+int main(){
+    char resp;
+
+    do{
+        fflush(stdin);
+        switch(menuPrincipal()){
+            case 1:
+                printf("\n Aritmética:\n");
+                switch(menuAritmetica()){
+                    case 1:
+                        //Suma
+                        break;
+
+                    case 2:
+                        //Resta
+                        break;
+
+                    case 3:
+                        //Multiplicación
+                        break;
+
+                    case 4:
+                        //División
+                        break;
+                }
+                break;
+
+            case 2:
+                printf("\n Trigonometría:\n");
+                switch(menuTrigonometria()){
+                    case 1:
+                        //Función 1;
+                        break;
+
+                    case 2:
+                        //Función 2;
+                        break;
+
+                    case 3:
+                        //Función 3;
+                        break;
+                }
+                break;
+
+            case 3:
+                printf("\n Geometría 2D (Perímetro):\n");
+                switch(menuGeo2DPeri()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+                break;
+
+            case 4:
+                printf("\n Geometría 2D (Área):\n");
+                switch(menuGeo2DArea()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+                break;
+
+            case 5:
+                printf("\n Geometría 3D (Volumen):\n");
+                switch(menuGeo3D()){
+                    case 1:
+                        //Prisma Rectangular
+                        break;
+
+                    case 2:
+                        //Cilindro
+                        break;
+
+                    case 3:
+                        //Pirámide cuadrangular
+                        break;
+                }
+                break;
+
+            case 6:
+                printf("\n Estadísitica:\n");
+                //Estadística
+                break;
+
+            case 7:
+                printf("\n Factorial:\n");
+                //Factorial
+                break;
+
+            case 8:
+                printf("\n Velocidad:\n");
+                //Velocidad
+                break;
+
+            case 9:
+                printf("\n Fuerza:\n");
+                //Fuerza
+                break;
+        }
+        fflush(stdin);
+        printf("\n\n¿Desea seleccionar otra opcion diferente? (s/n) ");
+        fflush(stdin);
+        scanf("%c", &resp);
+    }while( resp == 's');
+}
+
+int menuPrincipal(){
+    int op;
+    printf("Elige la operacion que desees ejecutar:\n\n ");
+    do{
+        printf("1.- Aritmética\n ");
+        printf("2.- Trigonometría\n ");
+        printf("3.- Geometría 2D (perímetro)\n ");
+        printf("4.- Geometría 2D (área)\n ");
+        printf("5.- Geometría 3D (volumen)\n ");
+        printf("6.- Estadística\n ");
+        printf("7.- Factorial\n ");
+        printf("8.- Velocidad\n ");
+        printf("9.- Fuerza\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 7);
+    return (op);
+}
+
+int menuAritmetica(){
+    int op;
+    printf("Elige que operación arimética deseas ejecutar:\n\n");
+    do{
+        printf("1.- Suma\n ");
+        printf("2.- Resta\n ");
+        printf("3.- Multiplicación\n ");
+        printf("4.- División\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 4);
+    return (op);
+}
+
+int menuTrigonometria(){
+    int op;
+    printf("Elige que operacion trigonometrica  deseas ejecutar:\n\n");
+    do{
+        printf("1.- \n ");
+        printf("2.- \n ");
+        printf("3.- \n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DPeri(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el perímetro:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DArea(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el área:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo3D(){
+    int op;
+    printf("Elige el poliedro del que quiere obtener el volumen:\n\n");
+    do{
+        printf("1.- Prisma rectangular\n ");
+        printf("2.- Cilindro\n ");
+        printf("2.- Pirámide cuadrangular\n ");
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:32:46] Emma IS : #include<stdio.h>
+#include<stdlib.h>
+
+int menuPrincipal();
+int menuAritmetica();
+int menuTrigonometria();
+int menuGeo2DPeri();
+int menuGeo2DArea();
+int menuGeo3D();
+
+int main(){
+    char resp;
+
+    do{
+        fflush(stdin);
+        switch(menuPrincipal()){
+            case 1:
+                printf("\n Aritmética:\n");
+                switch(menuAritmetica()){
+                    case 1:
+                        //Suma
+                        break;
+
+                    case 2:
+                        //Resta
+                        break;
+
+                    case 3:
+                        //Multiplicación
+                        break;
+
+                    case 4:
+                        //División
+                        break;
+                }
+                break;
+
+            case 2:
+                printf("\n Trigonometría:\n");
+                switch(menuTrigonometria()){
+                    case 1:
+                        //Función 1;
+                        break;
+
+                    case 2:
+                        //Función 2;
+                        break;
+
+                    case 3:
+                        //Función 3;
+                        break;
+                }
+                break;
+
+            case 3:
+                printf("\n Geometría 2D (Perímetro):\n");
+                switch(menuGeo2DPeri()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+                break;
+
+            case 4:
+                printf("\n Geometría 2D (Área):\n");
+                switch(menuGeo2DArea()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+                break;
+
+            case 5:
+                printf("\n Geometría 3D (Volumen):\n");
+                switch(menuGeo3D()){
+                    case 1:
+                        //Prisma Rectangular
+                        break;
+
+                    case 2:
+                        //Cilindro
+                        break;
+
+                    case 3:
+                        //Pirámide cuadrangular
+                        break;
+                }
+                break;
+
+            case 6:
+                printf("\n Estadísitica:\n");
+                //Estadística
+                break;
+
+            case 7:
+                printf("\n Factorial:\n");
+                //Factorial
+                break;
+
+            case 8:
+                printf("\n Velocidad:\n");
+                //Velocidad
+                break;
+
+            case 9:
+                printf("\n Fuerza:\n");
+                //Fuerza
+                break;
+        }
+        fflush(stdin);
+        printf("\n\n¿Desea seleccionar otra opcion diferente? (s/n) ");
+        fflush(stdin);
+        scanf("%c", &resp);
+    }while( resp == 's');
+}
+
+int menuPrincipal(){
+    int op;
+    printf("Elige la operacion que desees ejecutar:\n\n ");
+    do{
+        printf("1.- Aritmética\n ");
+        printf("2.- Trigonometría\n ");
+        printf("3.- Geometría 2D (perímetro)\n ");
+        printf("4.- Geometría 2D (área)\n ");
+        printf("5.- Geometría 3D (volumen)\n ");
+        printf("6.- Estadística\n ");
+        printf("7.- Factorial\n ");
+        printf("8.- Velocidad\n ");
+        printf("9.- Fuerza\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 9);
+    return (op);
+}
+
+int menuAritmetica(){
+    int op;
+    printf("Elige que operación arimética deseas ejecutar:\n\n");
+    do{
+        printf("1.- Suma\n ");
+        printf("2.- Resta\n ");
+        printf("3.- Multiplicación\n ");
+        printf("4.- División\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 4);
+    return (op);
+}
+
+int menuTrigonometria(){
+    int op;
+    printf("Elige que operacion trigonometrica  deseas ejecutar:\n\n");
+    do{
+        printf("1.- \n ");
+        printf("2.- \n ");
+        printf("3.- \n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DPeri(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el perímetro:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DArea(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el área:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo3D(){
+    int op;
+    printf("Elige el poliedro del que quiere obtener el volumen:\n\n");
+    do{
+        printf("1.- Prisma rectangular\n ");
+        printf("2.- Cilindro\n ");
+        printf("3.- Pirámide cuadrangular\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:56:13] Josa: typedef struct
+{
+    float n1;
+    float n2;
+
+}Numeros;
+[30/08/21 19:56:21] Josa: void aritmetica(Numeros *C, int op)
+{
+    float resultado;
+    printf("\nIngrese los datos: ");
+    scanf("%f",&C->n1);
+    scanf("%f",&C->n2);
+    switch(op)
+    {
+    case 1:
+        resultado=(C->n1+C->n2);
+        break;
+    case 2:
+        resultado=(C->n1-C->n2);
+        break;
+    case 3:
+        resultado=(C->n1*C->n2);
+        break;
+    case 4:
+        resultado=(C->n1/C->n2);
+        break;
+        default:
+        printf("Error, opcion no valida");
+    }
+    printf("El resultado es: %.1f",resultado);
+}
+[31/08/21 18:49:23] Josa: int factorial(int n)
+{
+    int fact = 1;
+
+    if( n >= 0)
+    {
+        if(n == 0)
+        {
+            fact = 1; //caso base
+        }
+        else
+        {
+            fact = n * factorial(n-1);
+        }
+    }
+    else
+    {
+       fact = 1;
+    }
+    return (fact);
+}
+[31/08/21 18:50:06] Emma IS : void trigonometria(NUM *C, int op){
+    int disc=0;
+    printf("\n Ingrese el ángulo x: ");
+    scanf("%f", &C->n1);
+    switch(op){
+        case 1:
+            C->res = sin(conv_aRadianes(C->n1));
+            break;
+
+        case 2:
+            C->res = cos(conv_aRadianes(C->n1));
+            break;
+
+        case 3:
+            if(conv_aRadianes(C->n1) == conv_aRadianes(90)){
+                printf("\n El resultado es indefinido\n");
+                disc++;
+            }
+            else
+                C->res = tan(conv_aRadianes(C->n1));
+            break;
+    }
+    if(disc != 1)
+        printf("\n El resultado es: %.5f\n", C->res);
+}
+
+float conv_aRadianes(float anguloDec)
+{
+    float rad;
+    rad=(anguloDec*pi)/180;
+    return(rad);
+}
+[31/08/21 18:51:16] Emma IS : Faltaría contar esto para que funcione:
+#include<math.h>
+
+#define pi 3.141592654
+[31/08/21 19:25:26] Luis Gerardo  Campos IS : void geometria3d(Numeros *C)
+{
+        int op;
+    float resultado;
+    printf("Seleccione una opcion a realizar: ");
+    printf("\n1)Area de un cubo: ");
+    printf("\n2)Area de un prisma: ");
+    printf("\n3)Area de un esfera: ");
+    scanf("%d",&op);//Lee la opcion a realizar
+    switch(op)
+    {
+    case 1:
+        printf("Ingrese el lado del cubo: ");
+        scanf("%f",&C->n1);
+        resultado=(C->n1*C->n1*C->n1);//son flotantes, no me deja usar ^ por eso lo hice asi
+        break;
+    case 2:
+        printf("\nIngrese la base: ");
+        scanf("%f",&C->n1);
+        printf("\nIngrese la altura: ");
+        scanf("%f",&C->n2);
+        printf("\Ingrese la profundidad: ");
+        scanf("%f",&C->n3);
+        resultado=(C->n1*C->n2*C->n3);
+        break;
+    case 3:
+        printf("\nIngrese el radio: ");
+        scanf("%f",&C->n1);
+        resultado=(C->n1*C->n1*C->n1);
+        resultado=((4/3)*PI*resultado);
+        break;
+        default:
+        printf("Error, opcion no valida");
+    }
+    printf("El resultado es: %.1f",resultado);
+}
+[31/08/21 19:35:05] Luis Gerardo  Campos IS : void velocidad(Numeros *C)
+{
+    printf("\nIngresa la distancia en km: ");
+    scanf("%d",&C->n4);
+    printf("\nIngresa el tiempo en hr: ");
+    scanf("%f",&C->n1);
+    C->n2=C->n4/C->n1; //C->n2 es igual a la velocidad
+    printf("\nLa velocidad es %.2f km/hr",C->n2);
+}
+[31/08/21 19:45:02] Luis Gerardo  Campos IS : void fuerza(Numeros *C)
+{
+    printf("\nIngrese la masa: ");
+    scanf("%f",&C->n1);
+    printf("\nIngrese la aceleracion: ");
+    scanf("%f",&C->n2);
+    C->n3=C->n1*C->n2;
+    printf("\nLa fuerza es %.1f F",C->n3);
+}
+[01/09/21 18:47:13] Emma IS : /*Bibliotecas*/
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+/*Constante definida*/
+#define pi 3.141592654
+
+/*Estructura para manejo de datos*/
+typedef struct{
+    float n1, n2, n3, res;
+    int nI, resI;
+}NUM;
+
+/*Menus & Display*/
+void autores();
+int menuPrincipal();
+int menuAritmetica();
+int menuTrigonometria();
+int menuGeo2DPeri();
+int menuGeo2DArea();
+int menuGeo3D();
+
+/*Funciones de resolución*/
+void aritmetica(NUM *C, int op);
+void trigonometria(NUM *C, int op);
+float conv_aRadianes(float anguloDec);
+void geo2DPeri(NUM *C, int op);
+void geo2DArea(NUM *C, int op);
+void geo3D(NUM *C, int op);

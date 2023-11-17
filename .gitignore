@@ -1,8 +1,11 @@
 /.DS_Store
+*/.DS_Store
 /.venv
 /.env
 /.env.local
 /.env.*.local
 /__pycache__
 /app/__pycache__
+app/__pycache__
 /app/.pytest_cache
+/model-training/out*
