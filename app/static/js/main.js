@@ -27,6 +27,9 @@ var readerSA = new FileReader();
 var input = document.getElementById("whatsChat");
 var inputSA = document.getElementById("whatsChatSinAnimaciones");
 
+const cdByDay = new Map(); //intrascendenteByDay
+const inByDay = new Map(); //logisticaByDay
+const orByDay = new Map(); //codigoByDay
 
 // sleep time expects milliseconds
 function sleep(time) {
@@ -379,11 +382,15 @@ readerSA.addEventListener('loadend', function (e) {
 		});
 	}
 
-	for (const day in messagesByDay) {
+	(async () => {for (const day in messagesByDay) {
 		// Inicializamos el contador de mensajes intrascendentes para este día
 		intrascendenteByDay[day] = 0;
 		logisticaByDay[day] = 0;
 		codigoByDay[day] = 0;
+
+		cdByDay.set(day, 0);
+		inByDay.set(day, 0);
+		orByDay.set(day, 0);
 
 		// Iteramos sobre los mensajes de este día
 		for (var i = 0; i < messagesByDay[day].length; i++) {
@@ -392,7 +399,7 @@ readerSA.addEventListener('loadend', function (e) {
 			};
 	
 			// Realiza la clasificación del mensaje
-			fetch('/classify', {
+			await fetch('/classify', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',
@@ -403,20 +410,38 @@ readerSA.addEventListener('loadend', function (e) {
 				.then(data => {
 					// Incrementa el contador si el mensaje es intrascendente
 					if (data.category === "Intrascendente") {
+						let num = inByDay.get(day);
+						num++;
+						inByDay.set(day, num);
+
 						intrascendenteByDay[day]++;
 					}
 					if (data.category === "Logistica") {
+						let num = orByDay.get(day);
+						num++;
+						orByDay.set(day, num);
+
 						logisticaByDay[day]++;
 					}
 					if (data.category === "Codigo") {
+						let num = cdByDay.get(day);
+						num++;
+
+						
+						cdByDay.set(day, num);
+						
+						//console.log('value ', cdByDay.get(day));
 						codigoByDay[day]++;
+
 					}
 				})
 				.catch((error) => {
 					console.error('Error:', error);
 				});
 		}
-	}
+	}})().then(() => {
+		generateChart(dayMonth, countmessages, orByDay, cdByDay, inByDay);
+	})
 	for (var i = 0; i < countmessages.length; i++)
 	{
 		console.log(countmessages[i]);
@@ -472,7 +497,10 @@ readerSA.addEventListener('loadend', function (e) {
 	if (uniqueContacts.length < 99)
 		$("#chat").height($("#chart").height());
 
-	generateChart(dayMonth,countmessages);
+	console.log('antes de generate', codigoByDay)
+	console.log('antes de generateasdasd', dayMonth)
+	console.log('valores antes de generate: ', cdByDay);
+	//generateChart(dayMonth,countmessages, logisticaByDay, codigoByDay, cdByDay);
 });
 
 $(document).ready(function () {
@@ -481,14 +509,25 @@ $(document).ready(function () {
 	$("#tiempo").hide();
 });
 
-function generateChart(days,countMess) {
+function generateChart(days,countMess,logisticaByDay, codigoByDay, inByDay) {
+	console.log('dentro de generate' ,codigoByDay)
+	console.log('dentro de generate' ,days)
 	//console.log(days)
 	//console.log(countMess)
 	// Obtiene el contexto del elemento canvas con el id 'myChart'
 	var ctx = document.getElementById('myChart').getContext('2d');
 
+	
+	console.log("organizacion: ", logisticaByDay);
+	console.log("codigo: ", codigoByDay);
+	console.log("intrasendencia: ", inByDay);
+
+	const codigo = days.map(day => codigoByDay.get(day));
+	const organizacion = days.map(day => logisticaByDay.get(day));
+	const intrascendente = days.map(day => inByDay.get(day));
+
 	//Define un arreglo de datos de ejemplo
-	var arreglo = [1,2,3,4,5,6,7,8];
+	//var arreglo = [1,2,3,4,5,6,7,8];
 
 	//Crea una nueva instancia de Chart.js, configurando un gráfico de barras apiladas
 	var chart = new Chart(ctx, {
@@ -502,19 +541,19 @@ function generateChart(days,countMess) {
 				{
 					label: 'Codigo',							//Etiqueta para el conjunto de datos
 					backgroundColor: 'rgba(255, 99, 132, 0.5)', //Color de las barras
-					data: arreglo, 								//Datos para este conjunto
+					data: codigo, 								//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
 				},
 				{
 					label: 'Organizacion',						//Etiqueta para el conjunto de datos
 					backgroundColor: 'rgba(54, 162, 235, 0.5)',	//Color de las barras
-					data: [8, 10, 5, 12, 9], 					//Datos para este conjunto
+					data: organizacion, 					//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
 				},
 				{
 					label: 'Intrascendente',					//Etiqueta para el conjunto de datos
 					backgroundColor: 'rgba(255, 206, 86, 0.5)',	//Color de las barras
-					data: [5, 7, 8, 6, 11], 					//Datos para este conjunto
+					data: intrascendente, 					//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
 				}
 			]
