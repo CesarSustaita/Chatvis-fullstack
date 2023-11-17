@@ -3,6 +3,7 @@ import sys
 
 nlp = spacy.load('output/3cats/model-best')
 
+
 msg = sys.argv[1]
 doc = nlp(msg)
 
