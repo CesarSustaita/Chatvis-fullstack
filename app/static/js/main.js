@@ -366,15 +366,56 @@ readerSA.addEventListener('loadend', function (e) {
 			*/
 			if(data.category === "Intrascendente"){
 				countIntrascendente++;
-			}else if(data.category == "Logistica"){
+			}
+			if(data.category === "Logistica"){
 				countLogistica++;
-			}else if(data.category == "Codigo"){
+			}
+			if(data.category === "Codigo"){
 				countCodigo++;
 			}
 		})
 		.catch((error) => {
 			console.error('Error:', error);
 		});
+	}
+
+	for (const day in messagesByDay) {
+		// Inicializamos el contador de mensajes intrascendentes para este día
+		intrascendenteByDay[day] = 0;
+		logisticaByDay[day] = 0;
+		codigoByDay[day] = 0;
+
+		// Iteramos sobre los mensajes de este día
+		for (var i = 0; i < messagesByDay[day].length; i++) {
+			var msg = {
+				message: messagesByDay[day][i]
+			};
+	
+			// Realiza la clasificación del mensaje
+			fetch('/classify', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(msg)
+				})
+				.then(response => response.json())
+				.then(data => {
+					// Incrementa el contador si el mensaje es intrascendente
+					if (data.category === "Intrascendente") {
+						intrascendenteByDay[day]++;
+					}
+					if (data.category === "Logistica") {
+						logisticaByDay[day]++;
+					}
+					if (data.category === "Codigo") {
+						codigoByDay[day]++;
+					}
+				})
+				.catch((error) => {
+					console.error('Error:', error);
+				});
+		}
 	}
 	for (var i = 0; i < countmessages.length; i++)
 	{
