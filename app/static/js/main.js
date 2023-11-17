@@ -515,6 +515,9 @@ function generateChart(days,countMess,logisticaByDay, codigoByDay, inByDay) {
 	//console.log(days)
 	//console.log(countMess)
 	// Obtiene el contexto del elemento canvas con el id 'myChart'
+	$("#myChart").remove();
+	$('.chart-container').append("<canvas id='myChart'></canvas>");
+
 	var ctx = document.getElementById('myChart').getContext('2d');
 
 	
@@ -540,19 +543,19 @@ function generateChart(days,countMess,logisticaByDay, codigoByDay, inByDay) {
 			datasets: [
 				{
 					label: 'Codigo',							//Etiqueta para el conjunto de datos
-					backgroundColor: 'rgba(255, 99, 132, 0.5)', //Color de las barras
+					backgroundColor: 'rgba(161,221,113, 255)', //Color de las barras
 					data: codigo, 								//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
 				},
 				{
 					label: 'Organizacion',						//Etiqueta para el conjunto de datos
-					backgroundColor: 'rgba(54, 162, 235, 0.5)',	//Color de las barras
+					backgroundColor: 'rgba(106,159,194, 255)',	//Color de las barras
 					data: organizacion, 					//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
 				},
 				{
 					label: 'Intrascendente',					//Etiqueta para el conjunto de datos
-					backgroundColor: 'rgba(255, 206, 86, 0.5)',	//Color de las barras
+					backgroundColor: 'rgba(189,103,189,255)',	//Color de las barras
 					data: intrascendente, 					//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
 				}
