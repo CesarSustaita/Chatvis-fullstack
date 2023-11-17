@@ -7,6 +7,14 @@ var colors = [
 
 var whatsMessages;
 
+var countIntrascendente = 0;
+var countLogistica = 0;
+var countCodigo = 0;
+
+var intrascendenteMessages = [];
+var logisticaMessages = [];
+var codigoMessages = [];
+
 var reader = new FileReader();
 var readerSA = new FileReader();
 
@@ -252,7 +260,7 @@ reader.addEventListener('loadend', function (e) {
 			.then(data => {
 				console.log('Success');
 				console.log('msg: ', msg);
-				console.log('response: ', data);
+				console.log('category: ', data);
 			})
 			.catch((error) => {
 				console.error('Error:', error);
@@ -313,6 +321,11 @@ readerSA.addEventListener('loadend', function (e) {
 		contacts.push(array[1]);
 		messages.push(array[2]);
 		prueba.push(i);
+
+		let msg = {
+			message: messages[i]
+		};
+		
 		//console.log(formatWhatsappDayMonth(array[0]));
 		if (!dayMonth.includes(formatWhatsappDayMonth(array[0]))) {//Si la fecha actual no existe en la lista lo guarda
 			dayMonth.push(formatWhatsappDayMonth(array[0]));//guarda la fecha en formato DD MM
@@ -323,8 +336,31 @@ readerSA.addEventListener('loadend', function (e) {
 			countmessages[ind]+=1;
 		}
 		
-		//var horas = hora[0] + hora[1];
-		
+		fetch('/classify',  {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(msg)
+		})
+		.then(response => response.json())
+		.then(data => {
+			/*
+			console.log('Success');
+			console.log('msg: ', msg);
+			console.log('category: ', data);
+			*/
+			if(data.category == "Intrascendente"){
+				countIntrascendente++;
+			}else if(data.category == "Logistica"){
+				countLogistica++;
+			}else if(data.category == "Codigo"){
+				countCodigo++;
+			}
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+		});
 	}
 	for (var i = 0; i < countmessages.length; i++)
 	{
@@ -373,6 +409,7 @@ readerSA.addEventListener('loadend', function (e) {
 
 			$("#chat").append(message);
 		}
+		
 	}
 
 	makeChordDiagram(relationships, uniqueContacts, colors, true);
@@ -390,12 +427,19 @@ $(document).ready(function () {
 });
 
 function generateChart(days,countMess) {
-
+	//console.log(days)
+	//console.log(countMess)
+	// Obtiene el contexto del elemento canvas con el id 'myChart'
 	var ctx = document.getElementById('myChart').getContext('2d');
+
+	//Define un arreglo de datos de ejemplo
+	var arreglo = [1,2,3,4,5,6,7,8];
+
+	//Crea una nueva instancia de Chart.js, configurando un gráfico de barras apiladas
 	var chart = new Chart(ctx, {
-		// The type of chart we want to create
+		//Tipo de gráfico de barras
 		type: 'bar',
-		// The data for our dataset
+
 		//Datos para el conjunto de datos del gráfico
 		data: {
 			labels: days,		//Etiquetas en el eje X (días)
@@ -421,7 +465,6 @@ function generateChart(days,countMess) {
 			]
 		},
 
-		// Configuration options go here
 		//Opciones de configuración para el gráfico
 		options: {
 			plugins: {
@@ -445,6 +488,7 @@ function generateChart(days,countMess) {
 		}
 	});
 	
+	//Ajusta el tamaño del contenedor del canvas
 	chart.canvas.parentNode.style.height = '600px';
 	chart.canvas.parentNode.style.width = '60%';
 }
