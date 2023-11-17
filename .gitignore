@@ -6,6 +6,7 @@
 /.env.*.local
 /__pycache__
 /app/__pycache__
-app/__pycache__
+/app/__pycache__/*
 /app/.pytest_cache
 /model-training/out*
+app/__pycache__/__init__.cpython-311.pyc

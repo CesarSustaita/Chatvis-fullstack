@@ -47,7 +47,7 @@ function sanitizeWhatsMessage(message) {
 	// Remove remaining " from contact
 	array[0] = array[0].replace("\"", "");
 	// Decode back string
-	array[2] = decodeURIComponent(escape(array[2])).trim();
+	// array[2] = decodeURIComponent(escape(array[2])).trim();
 	// Strim unnecessary info
 	array[2] = array[2].substring(0, array[2].length - 1);
 	// Replace special characters
@@ -284,22 +284,28 @@ reader.addEventListener('loadend', function (e) {
 
 // Loads Whatsapp Chat
 readerSA.addEventListener('load', function (e) {
-	whatsappChatParser
-		.parseString(e.target.result)
-		.then(json => {
-			var fields = Object.keys(json[0]);
-			var replacer = function (key, value) {
-				return value === null ? '' : value
-			};
-			whatsMessages = json.map(function (row) {
-				return fields.map(function (fieldName) {
-					return JSON.stringify(row[fieldName], replacer)
-				}).join(',');
-			});
-		})
-		.catch(err => {
-			console.log(err);
+	// let invisibleCharacters = ['\u200B', '\u200C', '\u200D', '\u200E', '\u200F', '\u202A', '\u202B', '\u202C', '\u202D', '\u202E', '\u2060', '\u2061', '\u2062', '\u2063', '\u2064', '\u2066', '\u2067', '\u2068', '\u2069', '\u206A', '\u206B', '\u206C', '\u206D', '\u206E', '\u206F', '\uFEFF', '\uFFF9', '\uFFFA', '\uFFFB'];
+	// let archivo_sin_caracteres_invisibles = e.target.result;
+	// // Quitar caracteres invisibles
+	// for (var i = 0; i < invisibleCharacters.length; i++) {
+	// 	archivo_sin_caracteres_invisibles = archivo_sin_caracteres_invisibles.replace(new RegExp(invisibleCharacters[i], 'g'), '');
+	// }
+
+	// Sync method
+	try {
+		var json = whatsappChatParser.parseString(e.target.result);
+		var fields = Object.keys(json[0]);
+		var replacer = function (key, value) {
+			return value === null ? '' : value
+		};
+		whatsMessages = json.map(function (row) {
+			return fields.map(function (fieldName) {
+				return JSON.stringify(row[fieldName], replacer)
+			}).join(',');
 		});
+	} catch (err) {
+		console.log(err);
+	}
 });
 
 inputSA.addEventListener("change", function () {
@@ -307,7 +313,7 @@ inputSA.addEventListener("change", function () {
 		var whatsChat = this.files[0];
 
 		// Loads the file, triggering the event
-		readerSA.readAsBinaryString(whatsChat);
+		readerSA.readAsText(whatsChat, 'UTF-8');
 
 	};
 });
@@ -340,8 +346,8 @@ readerSA.addEventListener('loadend', function (e) {
 		messagesByDay[date].push(array[2]);
 
 		//console.log(formatWhatsappDayMonth(array[0]));
-		if (!dayMonth.includes(formatWhatsappDayMonth(array[0]))) {//Si la fecha actual no existe en la lista lo guarda
-			dayMonth.push(formatWhatsappDayMonth(array[0]));//guarda la fecha en formato DD MM
+		if (!dayMonth.includes(date)) {//Si la fecha actual no existe en la lista lo guarda
+			dayMonth.push(date);//guarda la fecha en formato DD MM
 			ind++;
 			countmessages.push(1);
 		}
