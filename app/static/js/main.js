@@ -15,6 +15,12 @@ var intrascendenteMessages = [];
 var logisticaMessages = [];
 var codigoMessages = [];
 
+var messagesByDay = {};		
+
+var intrascendenteByDay = [];
+var logisticaByDay = [];
+var codigoByDay = [];
+
 var reader = new FileReader();
 var readerSA = new FileReader();
 
@@ -313,6 +319,7 @@ readerSA.addEventListener('loadend', function (e) {
 		dayMonth = [],
 		countmessages = [],
 		messages = [];
+	
 
 	var ind=-1,aux=0;
 	for (var i = 0; i < whatsMessages.length; i++) {
@@ -321,11 +328,14 @@ readerSA.addEventListener('loadend', function (e) {
 		contacts.push(array[1]);
 		messages.push(array[2]);
 		prueba.push(i);
+		var date = formatWhatsappDayMonth(array[0]);
 
-		let msg = {
-			message: messages[i]
-		};
-		
+		if (!messagesByDay[date]) {
+			messagesByDay[date] = [];
+		}
+
+		messagesByDay[date].push(array[2]);
+
 		//console.log(formatWhatsappDayMonth(array[0]));
 		if (!dayMonth.includes(formatWhatsappDayMonth(array[0]))) {//Si la fecha actual no existe en la lista lo guarda
 			dayMonth.push(formatWhatsappDayMonth(array[0]));//guarda la fecha en formato DD MM
@@ -336,6 +346,10 @@ readerSA.addEventListener('loadend', function (e) {
 			countmessages[ind]+=1;
 		}
 		
+		let msg = {
+			message: array[2]  // Mensaje correspondiente a la fecha
+		};
+
 		fetch('/classify',  {
 			method: 'POST',
 			headers: {
@@ -345,12 +359,12 @@ readerSA.addEventListener('loadend', function (e) {
 		})
 		.then(response => response.json())
 		.then(data => {
-			/*
+			/*intrascendenteByDay
 			console.log('Success');
 			console.log('msg: ', msg);
 			console.log('category: ', data);
 			*/
-			if(data.category == "Intrascendente"){
+			if(data.category === "Intrascendente"){
 				countIntrascendente++;
 			}else if(data.category == "Logistica"){
 				countLogistica++;
