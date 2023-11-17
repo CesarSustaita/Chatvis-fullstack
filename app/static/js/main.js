@@ -396,27 +396,52 @@ function generateChart(days,countMess) {
 		// The type of chart we want to create
 		type: 'bar',
 		// The data for our dataset
+		//Datos para el conjunto de datos del gráfico
 		data: {
-			labels: days,
-			datasets: [{
-				label: 'Cantidad de mensajes enviados por día',
-				fontColor: 'black',
-				/*backgroundColor: 'rgb(20, 183, 110)',*/
-				backgroundColor: 'rgb(83, 207, 217)',
-				borderColor: 'rgb(20, 183, 110)',
-				data: countMess
-			}]
+			labels: days,		//Etiquetas en el eje X (días)
+			datasets: [
+				{
+					label: 'Codigo',							//Etiqueta para el conjunto de datos
+					backgroundColor: 'rgba(255, 99, 132, 0.5)', //Color de las barras
+					data: arreglo, 								//Datos para este conjunto
+					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
+				},
+				{
+					label: 'Organizacion',						//Etiqueta para el conjunto de datos
+					backgroundColor: 'rgba(54, 162, 235, 0.5)',	//Color de las barras
+					data: [8, 10, 5, 12, 9], 					//Datos para este conjunto
+					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
+				},
+				{
+					label: 'Intrascendente',					//Etiqueta para el conjunto de datos
+					backgroundColor: 'rgba(255, 206, 86, 0.5)',	//Color de las barras
+					data: [5, 7, 8, 6, 11], 					//Datos para este conjunto
+					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
+				}
+			]
 		},
 
 		// Configuration options go here
+		//Opciones de configuración para el gráfico
 		options: {
-			scales: {
-				yAxes: [{
-					ticks: {
-						beginAtZero: true
-					}
-				}]
-			}
+			plugins: {
+				title: {
+				  display: true,
+				  text: 'Chart.js Bar Chart - Stacked'		//Título del gráfico
+				},
+			  },
+			  responsive: true,								//Hace el gráfico responsive
+			  interaction: {
+				intersect: false,
+			  },
+			  scales: {
+				x: {
+				  stacked: true,							//Apila las barras en el eje X
+				},
+				y: {
+				  stacked: true								//Apila las barras en el eje Y
+				}
+			  }
 		}
 	});
 	
