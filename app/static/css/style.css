@@ -129,7 +129,7 @@ body {
 .msg .bubble .txt .timestamp {
   font-size: 11px;
   margin: auto;
-  padding: 0 15px 0 0;
+  padding: 4px 8px 6px 0;
   display: table;
   float: right;
   position: relative;

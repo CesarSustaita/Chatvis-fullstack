@@ -11,17 +11,6 @@ var readerSA = new FileReader();
 
 var messages_data = [];
 
-// Contadores de mensajes por categoría
-var countIntrascendente = 0;
-var countLogistica = 0;
-var countCodigo = 0;
-var intrascendenteByDay = [];
-var logisticaByDay = [];
-var codigoByDay = [];
-const cdByDay = new Map(); //intrascendenteByDay
-const inByDay = new Map(); //logisticaByDay
-const orByDay = new Map(); //codigoByDay
-
 // Colores
 var colors = [
 	"#ff7400", "#7ceac9", "#57abe4", "#262043", "#a74949",
@@ -61,20 +50,16 @@ readerSA.addEventListener('loadend', function (e) {
 	$("#chart").empty();
 	$("#chart").show();
 
-	// var dates = [];
-	// var contacts = [];
 	var dates_day_month = [];
-	// var count_messages = [];
-	// var messages = [];
     var messages_by_day_month = [];
-	
-	var ind = -1;
+
+	// Contadores de mensajes por categoría
+	var category_counts_by_day = [];
+	category_counts_by_day["Logistica"] = [];
+	category_counts_by_day["Codigo"] = [];
+	category_counts_by_day["Intrascendente"] = [];
 
 	for (var i = 0; i < messages_data.length; i++) {
-		// dates.push(messages_json[i].date);
-		// contacts.push(messages_json[i].author);
-		// messages.push(messages_json[i].message);
-
         var msg_day_month = formatWhatsappDayMonth(messages_data[i].date);
 
 		if (!messages_by_day_month[msg_day_month]) {
@@ -85,63 +70,18 @@ readerSA.addEventListener('loadend', function (e) {
 
 		if (!dates_day_month.includes(msg_day_month)) {//Si la fecha actual no existe en la lista lo guarda
 			dates_day_month.push(msg_day_month);//guarda la fecha en formato DD MM
-			ind++; // ??????
-			// count_messages.push(1);
 		}
-		// else{
-		// 	// count_messages[ind]+=1;
-		// }
-		
-		var msg_json = {
-			message: messages_data[i].message  // Mensaje correspondiente a la fecha
-		};
-
-		// fetch('/classify',  {
-		// 	method: 'POST',
-		// 	headers: {
-		// 		'Content-Type': 'application/json',
-		// 	},
-		// 	body: JSON.stringify(msg_json)
-		// })
-		// .then(response => response.json())
-		// .then(response_data => {
-		// 	// intrascendenteByDay
-		// 	console.log('Success');
-		// 	console.log('msg: ', msg_json);
-		// 	console.log('category: ', response_data);
-			
-		// 	if(response_data.category === "Intrascendente"){
-		// 		countIntrascendente++;
-		// 	}
-		// 	if(response_data.category === "Logistica"){
-		// 		countLogistica++;
-		// 	}
-		// 	if(response_data.category === "Codigo"){
-		// 		countCodigo++;
-		// 	}
-		// })
-		// .catch((error) => {
-        //     console.error('Error: ', error);
-		// });
 	}
 
     console.log('messages_by_day_month: ', messages_by_day_month);
     console.log('dates_day_month: ', dates_day_month);
-    // console.log('count_messages: ', count_messages);
-    // console.log('messages: ', messages);
-    // console.log('dates: ', dates);
-    // console.log('contacts: ', contacts);
-    // console.log('countIntrascendente: ', countIntrascendente);
-    // console.log('countLogistica: ', countLogistica);
-    // console.log('countCodigo: ', countCodigo);
-
 
     (async () => {
         for (const day in messages_by_day_month) {
             // Inicializamos el contador de mensajes intrascendentes para este día
-            intrascendenteByDay[day] = 0;
-            logisticaByDay[day] = 0;
-            codigoByDay[day] = 0;
+			category_counts_by_day["Logistica"][day] = 0;
+			category_counts_by_day["Codigo"][day] = 0;
+			category_counts_by_day["Intrascendente"][day] = 0;
 
             // Iteramos sobre los mensajes de este día
             for (var i = 0; i < messages_by_day_month[day].length; i++) {
@@ -159,42 +99,19 @@ readerSA.addEventListener('loadend', function (e) {
                 })
                     .then(response => response.json())
                     .then(data => {
-                        // Incrementa el contador según la categoría
-                        if (data.category === "Intrascendente") {
-                            intrascendenteByDay[day]++;
-                        }
-                        else if (data.category === "Logistica") {
-                            logisticaByDay[day]++;
-                        }
-                        else if (data.category === "Codigo") {
-                            codigoByDay[day]++;
-                        }
+						category_counts_by_day[data.category][day]++;
                     })
                     .catch((error) => {
                         console.error('Error:', error);
                     }
                     );
             }
-            
-            cdByDay.set(day, codigoByDay[day]);
-            inByDay.set(day, intrascendenteByDay[day]);
-            orByDay.set(day, logisticaByDay[day]);
         }
     })()
         .then(() => {
-            generateChart(dates_day_month, count_messages, orByDay, cdByDay, inByDay);
+            // generateChart(dates_day_month, orByDay, cdByDay, inByDay);
+            generateChart(dates_day_month, category_counts_by_day);
         });
-
-    // for (var i = 0; i < count_messages.length; i++) {
-    //     // console.log(count_messages[i]);
-    //     console.log("Dia " + i + ": " + count_messages[i]);  // Cantidad de mensajes por día
-    // }
-	//console.log(countmessages.length);
-	//console.log(label_time.length);
-
-    // var contacts = messages_data.map(function(item) {
-    //     return item.author;
-    // });
 
 	var uniqueContacts = messages_data.map(function(item) {
             return item.author;
@@ -233,8 +150,8 @@ readerSA.addEventListener('loadend', function (e) {
         }
 		
 		if (uniqueContacts.length < 99) {
-            let author_same_as_previous = i > 0 && contacts[i - 1] == contacts[i];
-			var message = makeMessage(messages_data[i], index, author_same_as_previous)
+            let author_same_as_previous = i > 0 && messages_data[i - 1].author == messages_data[i].author;
+			var message = makeMessage(messages_data[i], index, author_same_as_previous);
 
 			$("#chat").append(message);
 		}
@@ -245,11 +162,6 @@ readerSA.addEventListener('loadend', function (e) {
 
 	if (uniqueContacts.length < 99)
 		$("#chat").height($("#chart").height());
-    
-	// console.log('antes de generate', codigoByDay)
-	// console.log('antes de generateasdasd', dates_day_month)
-	// console.log('valores antes de generate: ', cdByDay);
-	//generateChart(dayMonth,countmessages, logisticaByDay, codigoByDay, cdByDay);
 });
 
 
@@ -331,16 +243,97 @@ function makeMessage(message_data, author_index, author_same_as_previous) {
 							{3}
 						</div>
 					</div>`;
-	if (message_data.author == "System")
+	if (message_data.author == null) // If message is a system message
 		if (author_same_as_previous)
 			return message.format("altfollow", "", "follow", "");
-		else return message.format("alt", `<span class="name alt">${message_data.author}</span>`,
+		else return message.format("alt", `<span class="name alt">System</span>`,
 			"", '<div class="bubble-arrow alt"></div>');
-	else if (i > 0 && contacts[i - 1] == contacts[i])
+	else if (author_same_as_previous)
 		return message.format("follow", "", "follow", "");
 	else {
 		var coloredContact = `<span class="name"
 					style="color: ${colors[author_index % colors.length]}">${message_data.author}</span>`;
 		return message.format("", coloredContact, "", '<div class="bubble-arrow"></div>');
 	}
+}
+
+String.prototype.format = function () {
+	a = this;
+	for (k in arguments) {
+		a = a.replace("{" + k + "}", arguments[k])
+	}
+	return a
+}
+
+function generateChart(days, category_counts_by_day) {
+	// Obtiene el contexto del elemento canvas con el id 'myChart'
+	$("#myChart").remove();
+	$('.chart-container').append("<canvas id='myChart'></canvas>");
+
+	var ctx = document.getElementById('myChart').getContext('2d');
+
+	console.log("organizacion: ", category_counts_by_day["Logistica"]);
+	console.log("codigo: ", category_counts_by_day["Codigo"]);
+	console.log("intrasendencia: ", category_counts_by_day["Intrascendente"]);
+
+	const codigo = days.map(day => category_counts_by_day["Codigo"][day]);
+	const organizacion = days.map(day => category_counts_by_day["Logistica"][day]);
+	const intrascendente = days.map(day => category_counts_by_day["Intrascendente"][day]);
+
+	//Crea una nueva instancia de Chart.js, configurando un gráfico de barras apiladas
+	var chart = new Chart(ctx, {
+		//Tipo de gráfico de barras
+		type: 'bar',
+
+		//Datos para el conjunto de datos del gráfico
+		data: {
+			labels: days,		//Etiquetas en el eje X (días)
+			datasets: [
+				{
+					label: 'Codigo',							//Etiqueta para el conjunto de datos
+					backgroundColor: 'rgba(161,221,113, 255)', //Color de las barras
+					data: codigo, 								//Datos para este conjunto
+					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
+				},
+				{
+					label: 'Organizacion',						//Etiqueta para el conjunto de datos
+					backgroundColor: 'rgba(106,159,194, 255)',	//Color de las barras
+					data: organizacion, 					//Datos para este conjunto
+					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
+				},
+				{
+					label: 'Intrascendente',					//Etiqueta para el conjunto de datos
+					backgroundColor: 'rgba(189,103,189,255)',	//Color de las barras
+					data: intrascendente, 					//Datos para este conjunto
+					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
+				}
+			]
+		},
+
+		//Opciones de configuración para el gráfico
+		options: {
+			plugins: {
+				title: {
+					display: true,
+					text: 'Chart.js Bar Chart - Stacked'		//Título del gráfico
+				},
+			},
+			responsive: true,								//Hace el gráfico responsive
+			interaction: {
+				intersect: false,
+			},
+			scales: {
+				x: {
+					stacked: true,							//Apila las barras en el eje X
+				},
+				y: {
+					stacked: true								//Apila las barras en el eje Y
+				}
+			}
+		}
+	});
+
+	//Ajusta el tamaño del contenedor del canvas
+	chart.canvas.parentNode.style.height = '600px';
+	chart.canvas.parentNode.style.width = '80%';
 }
