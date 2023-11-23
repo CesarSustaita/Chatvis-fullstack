@@ -19,6 +19,12 @@ var colors = [
 	"#DF7C00", "#00BCD4", "#F26623", "#C6DE89", "#FFB52A"
 ];
 
+// Variables de fechas
+const today = new Date();
+const today_day = today.getDate();
+const today_month = today.getMonth();
+const today_year = today.getFullYear();
+
 
 // ************************************************************
 // ************************************************************
@@ -183,33 +189,45 @@ readerSA.addEventListener('loadend', function (e) {
 // ************************************************************
 
 function isToday(date) {
-	const today = new Date();
-	return date.getDate() == today.getDate() &&
-		date.getMonth() == today.getMonth() &&
-		date.getFullYear() == today.getFullYear();
+	return date.getDate() === today_day &&
+		date.getMonth() === today_month &&
+		date.getFullYear() === today_year;
 }
 
-function formatWhatsappDate(date) {
-	date = new Date(date);
+function getTimeFormatted(date) {
+	return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+}
+
+function formatWhatsappDate(date_string) {
+	date = new Date(date_string);
+	let formatted_date = '';
 
 	if (!isToday(date)) {
-		// Remove extra info from default format
-		date = date.toString();
-		date = date.substring(0, 22);
+		formatted_date += date.toLocaleString(undefined, { weekday: 'short' }) + ' ';
+		formatted_date = formatted_date.charAt(0).toUpperCase() + formatted_date.slice(1);
+		formatted_date += String(date.getDate()).padStart(2, '0') + ' ';
+		formatted_date += date.toLocaleString(undefined, { month: 'short' }) + ' ';
+
+		if (date.getFullYear() !== today_year) {
+			formatted_date += ' ' + String(date.getFullYear()).slice(-2) + ' ';
+		}
+
+		formatted_date += getTimeFormatted(date);
 	}
 	else {
-		date = date.toLocaleTimeString(); // Displays time
-		date = date.substring(0, date.length - 3);
+		formatted_date = getTimeFormatted(date);
 	}
-	return date;
+	return formatted_date;
 }
 
+// Needs update
 function formatWhatsappHour(date) {
 	var auxdate;
 	auxdate = formatWhatsappDate(date);
 	return auxdate.slice(auxdate.length - 5, auxdate.length);
 }
 
+// Needs update
 function formatWhatsappDayMonth(date) {
 	var auxdate;
 	auxdate = formatWhatsappDate(date);
@@ -232,6 +250,7 @@ function createRelationshipMatrix(uniqueContacts) {
 	return relationships;
 }
 
+// Gives format to the html whatsapp style messages
 function makeMessage(message_data, author_index, author_same_as_previous) {
 	var message = `<div class="msg">
 						<div class="bubble {0}">

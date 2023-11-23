@@ -133,7 +133,6 @@ body {
   display: table;
   float: right;
   position: relative;
-  text-transform: uppercase;
   color: #999;
 }
 .msg .bubble .bubble-arrow {
