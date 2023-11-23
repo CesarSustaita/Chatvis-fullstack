@@ -36,6 +36,12 @@ inputSA.addEventListener("change", function () {
 	if (this.files && this.files[0]) {
 		var whatsChat = this.files[0];
 
+		// Check if file is .txt
+		if (whatsChat.type != "text/plain") {
+			swal("Error", "El archivo debe ser de tipo .txt", "error");
+			return;
+		}
+
 		// Loads the file, triggering the event
 		readerSA.readAsText(whatsChat, 'UTF-8');
 	};
@@ -109,7 +115,7 @@ readerSA.addEventListener('loadend', function (e) {
 						console.log('message: ', msg.message);
 						console.log('category: ', data.category);
 						console.log('scores: ', data.scores);
-						
+
 						category_counts_by_day[data.category][day]++;
                     })
                     .catch((error) => {
