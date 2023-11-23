@@ -1,0 +1,165 @@
+[30/08/21 13:36:08] Emma IS : Hola chavos, como ven que nos organicemos un poco para ver como hacemos el programa de tarea
+[30/08/21 13:37:12] Emma IS : No se si ya hayan checado el archivo que mandaron a teams, solamente tengo una duda en algunos funciones que piden
+[30/08/21 13:37:13] Josa: Hola, me parece bien.
+[30/08/21 13:37:24] Josa: Si, ya lo cheque yo
+[30/08/21 13:38:12] Emma IS : Sería en la de trigonometría, la de estadística y la de aritmética
+[30/08/21 13:38:13] Luis Gerardo  Campos IS : Hola, falto en checarlo, en un momento lo veo
+[30/08/21 13:39:41] Emma IS : Tendría duda, no se si ustedes si le hayan entendido a que se refiere por ejemplo en trigonometría a un operando y un operador
+[30/08/21 13:43:18] Josa: Creo que se refiere al hecho de que en trigonometría, un operando sería el resultado que devuelve la función. No?
+[30/08/21 13:44:46] Josa: O sea solo devolvería uno
+[30/08/21 13:45:08] Josa: Y en el caso de la suma les pasaríamos dos datos por referencia
+[30/08/21 13:46:28] Emma IS : Mmm no sabría decirte, es que en trigonometría por ejemplo, yo creo que pediría el coseno de un ángulo, donde el ángulo sería nuestro operador
+[30/08/21 13:47:39] Emma IS : Y pues por lo que entiendo los operadores serían de que '+' , '-' , '*' y ese estilo de operadores
+[30/08/21 13:48:25] Emma IS : No entiendo muy bien de ahí que sería a lo que se refiere con 1 operando y un operador
+[30/08/21 13:49:28] Josa: Podríamos esperar a que sea la clase de mañana para preguntar
+[30/08/21 13:49:38] Josa: O le podemos mandar correo a alguno de nuestros profesores
+[30/08/21 13:50:29] Emma IS : Me parece bien, podríamos esperar hasta mañana para preguntar bien por esos
+[30/08/21 13:51:14] Emma IS : Por lo tanto creo que nos podríamos dividir las funciones con las que no tenemos dudas
+[30/08/21 13:51:50] Emma IS : Por ejemplo las de geometría 2d y geometría 3d, factorial, velocidad, fuerza
+[30/08/21 13:52:54] Josa: Ajá
+[30/08/21 13:53:00] Josa: Si si, esta bien.
+[30/08/21 13:53:07] Josa: Cómo las quieres repartir?
+[30/08/21 13:54:26] Emma IS : Pues así contándolas del archivo entre esas son 6 funciones diferentes y somos 3
+[30/08/21 13:54:58] Emma IS : Que tal de que 2 funciones cada quien, eligiendo las que quieran?
+[30/08/21 13:55:03] Josa: Si
+[30/08/21 13:55:15] Josa: Las de aritmética también tienes dudas en esas?
+[30/08/21 13:55:30] Luis Gerardo  Campos IS : Creo que no la tenemos que repartir
+[30/08/21 13:55:38] Luis Gerardo  Campos IS : Acuérdense que avían dicho eso
+[30/08/21 13:55:43] Luis Gerardo  Campos IS : Que es trabajo en equipo
+[30/08/21 13:56:00] Emma IS : Por lo mismo de no confundir operandos y operadores
+[30/08/21 13:56:01] Luis Gerardo  Campos IS : No que repartieramos
+[30/08/21 13:56:07] Josa: O sea que todos tenemos que hacer todas las funciones y nos ponemos de acuerdo por aquí
+[30/08/21 13:56:12] Josa: ?
+[30/08/21 13:56:18] Luis Gerardo  Campos IS : Toy igual ...
+[30/08/21 13:56:37] Luis Gerardo  Campos IS : O sea que lo vayamos elaborando por este medio
+[30/08/21 13:56:40] Luis Gerardo  Campos IS : Por ejemplo
+[30/08/21 13:56:46] Emma IS : Ok sis, pues lo que podemos hacer es pasar el código de las funciones y lo revisamos por aquí y luego vamos haciendo el main entre todos
+[30/08/21 13:56:51] Luis Gerardo  Campos IS : El ejercicio 1 es poner los nombres
+[30/08/21 13:56:56] Luis Gerardo  Campos IS : Será algo así
+[30/08/21 13:56:58] Luis Gerardo  Campos IS : Aguanten
+[30/08/21 13:57:07] Josa: Va
+[30/08/21 13:57:23] Emma IS : SSale
+[30/08/21 13:58:01] Josa: Te leemos
+[30/08/21 13:58:16] Luis Gerardo  Campos IS : Y ya entre nosotros lo vamos completando
+[30/08/21 13:58:39] Luis Gerardo  Campos IS : Pongan sus nombres jajaja
+[30/08/21 13:58:59] Luis Gerardo  Campos IS : O día me sus nombres completos 🤣
+[30/08/21 13:59:19] Josa: O sea de qué vamos ir compiando el código que vayamos haciendo.
+[30/08/21 13:59:29] Josa: Copiando*
+[30/08/21 13:59:37] Josa: Y lo vamos a ir completando
+[30/08/21 13:59:43] Luis Gerardo  Campos IS : Si
+[30/08/21 13:59:48] Luis Gerardo  Campos IS : Para trabajar en equipon
+[30/08/21 13:59:49] Emma IS : Sisis exacto
+[30/08/21 13:59:52] Josa: Oigan ya me surgió otra duda jaja
+[30/08/21 13:59:58] Luis Gerardo  Campos IS : Y no solo repartir trabajo
+[30/08/21 14:00:13] Josa: Los nombres tienen que ir impresos? O solo van comentados en la parte de arriba?
+[30/08/21 14:00:31] Josa: Es que se podría entender de ambas maneras
+[30/08/21 14:00:36] Emma IS : Creo que si son impresos, pero igual los podemos comentar como un encabezado
+[30/08/21 14:00:43] Luis Gerardo  Campos IS : Creo impresos
+[30/08/21 14:00:48] Josa: Ah bueno
+[30/08/21 14:00:53] Josa: Serán impresos entonces
+[30/08/21 14:01:13] Luis Gerardo  Campos IS : Pongan su nombre y lo pasan
+[30/08/21 14:01:21] Luis Gerardo  Campos IS : Primero uno y después el otro jajaja
+[30/08/21 14:01:52] Emma IS : Si pues ya aquí vamos viendo cada función y la vamos guardando cada uien por nuestra cuenta para ver si podemos hacer mejoras o lo que sea
+[30/08/21 14:02:44] Luis Gerardo  Campos IS : Okey quien entendió el 2 ??
+[30/08/21 14:02:53] Josa: Es un menú
+[30/08/21 14:03:08] Emma IS : Sip, podríamos implementarlo con un switch
+[30/08/21 14:03:09] Josa: También lo hacemos función verdad?
+[30/08/21 14:03:29] Luis Gerardo  Campos IS : Parece que si
+[30/08/21 14:03:45] Emma IS : Podría ser, para en el main solamente poner las funciones que nosotros escribamos
+[30/08/21 14:03:58] Josa: Si, me parece bien.
+[30/08/21 14:05:11] Luis Gerardo  Campos IS : Ya le entendí
+[30/08/21 14:05:20] Josa: Sisi
+[30/08/21 14:05:42] Emma IS : Jajaja sale, si quieren ahorita voy modelando esa función y la paso porque para que la corrijamos
+[30/08/21 14:06:11] Luis Gerardo  Campos IS : Va
+[30/08/21 14:06:17] Josa: Va va
+[30/08/21 14:08:44] Josa: Miren
+[30/08/21 14:08:52] Josa: No se si esta sirva
+[30/08/21 14:09:28] Josa: Solo les agregamos lo que se supone que tiene que hacer cada opción
+[30/08/21 14:09:44] Luis Gerardo  Campos IS : Okey pero tenemos que especificar cada uno
+[30/08/21 14:09:49] Luis Gerardo  Campos IS : O sea lo que hace cada uno
+[30/08/21 14:10:06] Josa: Sip y ya en el main ponemos los switch
+[30/08/21 14:10:18] Emma IS : Perfecto! Si está bien
+[30/08/21 14:12:44] Luis Gerardo  Campos IS : Chequen cuántas opciones son
+[30/08/21 14:12:49] Luis Gerardo  Campos IS : Miren el primero sería
+[30/08/21 14:13:32] Emma IS : Bueno después de que se realice el código que se quiera realizar, estaba pensando en que tipo podríamos preguntarle al usuario si quiere volver a elegir otra opción y que el usuario confirme con un 's' o con un 'n'
+[30/08/21 14:13:46] Emma IS : Para que en dado caso no se confunda con las opciones de los números
+[30/08/21 14:13:47] Luis Gerardo  Campos IS : Es el de aritmética
+[30/08/21 14:13:54] Luis Gerardo  Campos IS : Así es como lo entendí
+[30/08/21 14:14:07] Luis Gerardo  Campos IS : Y ya adentro se llevará acabó
+[30/08/21 14:14:13] Josa: Yo entendí que tenemos que poner por ejemplo
+[30/08/21 14:14:38] Josa: Y así hasta agregar todas las 20 funciones que tiene que hacer
+[30/08/21 14:14:42] Josa: No se
+[30/08/21 14:16:07] Josa: Esto lo podriamos poner en el main, no?
+[30/08/21 14:16:32] Luis Gerardo  Campos IS : Sip
+[30/08/21 14:16:55] Emma IS : Sip
+[30/08/21 14:20:56] Josa: Sip
+[30/08/21 14:21:16] Luis Gerardo  Campos IS : Me agrada
+[30/08/21 14:25:06] Josa: Entonces lo hacemos así?
+[30/08/21 14:26:44] Emma IS : Mm a mi me parece mejor esta
+[30/08/21 14:33:35] Josa: Que operaciones básicas quieren poner en las de trigonometría?
+[30/08/21 18:59:55] Emma IS : Oigan estaba considerando y si hacemos un menu que nos muestre solo las 9 categorías y dependiendo de lo que elijamos que nos muestre un submenu
+[30/08/21 19:00:02] Emma IS : Miren hice algo así
+[30/08/21 19:00:43] Emma IS : Considerando que las funciones de menu son algo así:
+[30/08/21 19:01:43] Josa: Sisisi
+[30/08/21 19:01:45] Josa: Perfecto
+[30/08/21 19:02:17] Emma IS : Muy bien, dejen les paso los otros menu para que los tengan
+[30/08/21 19:03:50] Josa: Va va
+[30/08/21 19:03:59] Josa: Entonces ya tenemos lo que irá en el main verdad?
+[30/08/21 19:04:15] Josa: Ya solo quedaría hacer las funciones
+[30/08/21 19:04:21] Josa: Con cuál quieren empezar?
+[30/08/21 19:04:59] Luis Gerardo  Campos IS : Ya te lo el de aritmética
+[30/08/21 19:05:00] Emma IS : Sip algo así, todavía no lo pruebo, así que si lo pudieran probar y ya vemos si va a correr o no
+[30/08/21 19:05:17] Josa: Va a
+[30/08/21 19:05:21] Josa: Ahorita lo pruebo
+[30/08/21 19:05:24] Luis Gerardo  Campos IS : En un momento se los paso pa que lo  chequen
+[30/08/21 19:05:38] Emma IS : Okok va
+[30/08/21 19:12:09] Josa: Miren
+[30/08/21 19:12:15] Josa: este es de recursividad
+[30/08/21 19:14:22] Luis Gerardo  Campos IS : Chequen
+[30/08/21 19:15:48] Josa: Faltaba el de la división, verdad?
+[30/08/21 19:16:29] Luis Gerardo  Campos IS : a siiii
+[30/08/21 19:16:45] Luis Gerardo  Campos IS : se la puedes poner ???
+[30/08/21 19:16:51] Josa: Sip
+[30/08/21 19:21:57] Emma IS : Ya lo corrí, si compila pero no lo hace bien
+[30/08/21 19:22:25] Luis Gerardo  Campos IS : Aver mandalo
+[30/08/21 19:24:31] Emma IS : Ya me di cuenta, me faltaron unos break por ahí, aguanta
+[30/08/21 19:27:15] Emma IS : Ahora si ya le puse los break que le faltaban, nada más que sigue haciendo cosas raras
+[30/08/21 19:32:31] Emma IS : Ahora si, ya encontré los errores que hacían que trabajara mal
+[30/08/21 19:32:42] Emma IS : Ya funciona bien el menu
+[30/08/21 19:33:35] Luis Gerardo  Campos IS : Se ve bien deja lo checo más
+[30/08/21 19:34:24] Emma IS : Si, cualquier problema que te salga por ahí me dices
+[30/08/21 19:34:50] Josa: Va va
+[30/08/21 19:34:56] Josa: Para checarlo
+[30/08/21 19:43:28] Josa: Oye luis
+[30/08/21 19:43:34] Josa: Una preguntota
+[30/08/21 19:44:07] Josa: En tu estructura cuantos numeros declaraste?
+[30/08/21 19:47:34] Josa: No olvídalo, ya pude
+[30/08/21 19:52:34] Emma IS : Entonces haremos la implementación de las funciones con estructuras?
+[30/08/21 19:52:53] Josa: Aguanten
+[30/08/21 19:53:03] Josa: estoy modificanto el programa para lo de aritmetica
+[30/08/21 19:53:20] Emma IS : Okok
+[30/08/21 19:55:30] Josa: Mira
+[30/08/21 19:55:35] Josa: Miren*
+[30/08/21 19:55:52] Josa: Les voy a pasar solo las partes que cambie va?
+[30/08/21 19:56:37] Josa: Agregue la estructura
+[30/08/21 19:57:01] Josa: Y como puso estructura, entonces no necesitariamos el switch que esta en aritmetica
+[30/08/21 19:59:23] Luis Gerardo  Campos IS : Ohhhh okey
+[30/08/21 20:00:09] Josa: JAJAJA
+[30/08/21 20:00:12] Josa: Si?
+[30/08/21 20:03:53] Emma IS : Okok ya veo, queda bien voy ahorita a escribirlo y probarlo
+[30/08/21 20:04:13] Emma IS : En un momento jaja aguántame tantito
+[30/08/21 20:04:18] Josa: Es que pusiste un switch dentro de tu funcion Aritmetica, no nos va a servir el switch que tenemos en el main porque ya lo tiene la función.
+[30/08/21 20:04:44] Josa: Entonces solo cambie la función aritmetica y le agregue otro parametro.
+[30/08/21 20:06:23] Josa: Ya lo cheque y si funciona
+[30/08/21 20:07:11] Emma IS : Okok me parece
+[01/09/21 18:48:22] Emma IS : Un momento que whatsapp le esta moviendo a alguna combinación de caracteres
+[01/09/21 18:49:40] Josa: Esta perfecto Emma
+[01/09/21 18:49:59] Josa: Aunque todavía no se termine de mandar
+[01/09/21 18:50:03] Josa: Jajaja
+[01/09/21 18:50:21] Emma IS : Los comentarios están quedando medio raros jeje
+[01/09/21 18:51:00] Josa: Jajaja por qué dices?
+[01/09/21 18:54:30] Emma IS : Ah no jajaja es que en mi compu el comentario de /**Bibliotecas**/ se ve em negritas y solo se lee /Bibliotecas/
+[01/09/21 18:54:50] Emma IS : Para ti el comentario se ve bien?
+[01/09/21 19:01:38] Josa: No aparece en negritas
+[01/09/21 19:02:04] Josa: Pero esta bien, es que whats lo cambia cuando detecta eso.
+[01/09/21 19:08:32] Emma IS : Si, bien raro bro bueno, que bien que no aparece así
