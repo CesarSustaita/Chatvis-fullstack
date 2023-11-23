@@ -105,6 +105,11 @@ readerSA.addEventListener('loadend', function (e) {
                 })
                     .then(response => response.json())
                     .then(data => {
+						console.log('-------------------');
+						console.log('message: ', msg.message);
+						console.log('category: ', data.category);
+						console.log('scores: ', data.scores);
+						
 						category_counts_by_day[data.category][day]++;
                     })
                     .catch((error) => {

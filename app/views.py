@@ -20,8 +20,12 @@ def classify_message():
 
         scores = doc.cats
         category = max(scores, key=scores.get)
+        score_values = {k: round(v, 2) for k, v in scores.items()}
 
-        return jsonify({'category': category})
+        return jsonify({
+            'category': category,
+            'scores': score_values
+        })
     
     except Exception as e:
         return jsonify({'error': str(e)})
