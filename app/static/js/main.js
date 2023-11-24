@@ -38,11 +38,8 @@ inputSA.addEventListener("change", function () {
 
 		// Check if file is .txt
 		if (whatsChat.type != "text/plain") {
-			swal("Error", "El archivo debe ser de tipo .txt", "error")
-			.then(() => {
-				// Recargar la página después de mostrar la alerta
-				location.reload();
-			});
+			swal("Error", "El archivo debe ser de tipo .txt", "error");
+			this.value = '';
 			return;
 		}
 
