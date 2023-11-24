@@ -63,6 +63,7 @@ readerSA.addEventListener('load', function (e) {
 
 // Cuando se termina de cargar el archivo se ejecuta esta funcion
 readerSA.addEventListener('loadend', function (e) {
+	console.clear();
 	showAppElements();
 	$("hr").show();
 	$("#chart").empty();

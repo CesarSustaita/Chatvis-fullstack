@@ -1,0 +1,1533 @@
+[30/08/21 13:58:06] Luis Gerardo  Campos IS : /*
+1.- El programa muestra inicialmente los nombres de los tres
+integrantes del equipo
+*/
+void nombresequi()
+{
+
+    printf("Los integrantes son: \n");
+    printf("Campos Rodriguez Luis Gerardo\n");
+    printf(" nombre \n");
+    printf(" nombre \n");
+}
+[30/08/21 14:01:29] Josa: /*
+1.- El programa muestra inicialmente los nombres de los tres
+integrantes del equipo
+*/
+void nombresequi()
+{
+
+    printf("Los integrantes son: \n");
+    printf("Campos Rodriguez Luis Gerardo\n");
+    printf(" Moreno Muñoz Obed Josafat \n");
+    printf(" nombre \n");
+}
+[30/08/21 14:02:33] Emma IS : void nombresaqui()
+{
+    printf("Los integrantes son: \n");
+    printf("Campos Rodriguez Luis Gerardo\n");
+    printf(" Moreno Muñoz Obed Josafat \n");
+    printf("Florencio Trujillo Emmanuel\n");
+}
+[30/08/21 14:08:40] Josa: int menu()
+{
+    int op;
+
+    do{
+        printf("\n 1.-  ");
+        printf("\n 2.- ");
+        printf("\n 3.-  ");
+        printf("\n 4.-  ");
+        printf("\n 5.-  ");
+        printf("\n 6.- ");
+        printf("\n 5.- Salir ");
+        printf("\n    ---Opcion: ");
+        scanf("%d", &op);
+
+    }while (op < 1 || op > 5);
+    return (op);
+}
+[30/08/21 14:13:22] Luis Gerardo  Campos IS : int menu()
+{
+    int m;
+    printf("\nSeleccione una opcion: \n\n\n");
+    printf("Opcion 1)Aritmetica (3 operaciones basicas, cada una con 2 operandos y un operador)\n");
+[30/08/21 14:14:21] Josa: int menu()
+{
+    int op;
+
+    do{
+        printf("\n 1.- Suma ");
+        printf("\n 2.- Resta ");
+        printf("\n 3.- Multiplicación");
+        printf("\n 4.- División ");
+        printf("\n 5.-  ");
+        printf("\n 6.- ");
+        printf("\n 5.- Salir ");
+        printf("\n    ---Opcion: ");
+        scanf("%d", &op);
+
+    }while (op < 1 || op > 5);
+    return (op);
+}
+[30/08/21 19:00:21] Emma IS : switch(menuPrincipal()){
+    case 1:
+        printf("\n Aritmética:\n");
+        switch(menuAritmetica()){
+            case 1:
+               //Suma
+               break;
+
+            case 2:
+                //Resta
+                break;
+
+            case 3:
+                //Multiplicación
+                break;
+
+            case 4:
+                //División
+                break;
+        }
+
+    case 2:
+        printf("\n Trigonometría:\n");
+        switch(menuTrigonometria()){
+            case 1:
+                //Función 1;
+                break;
+
+            case 2:
+                //Función 2;
+                break;
+
+            case 3:
+                //Función 3;
+                break;
+        }
+
+    case 3:
+        printf("\n Geometría 2D (Perímetro):\n");
+        switch(menuGeo2DPeri()){
+            case 1:
+                //Rectángulo
+                break;
+
+            case 2:
+                //Triángulo
+                break;
+
+            case 3:
+                //Círculo
+                break;
+        }
+
+    case 4:
+        printf("\n Geometría 2D (Área):\n");
+        switch(menuGeo2DArea()){
+            case 1:
+                //Rectángulo
+                break;
+
+            case 2:
+                //Triángulo
+                break;
+
+            case 3:
+                //Círculo
+                break;
+        }
+
+    case 5:
+        printf("\n Geometría 3D (Volumen):\n");
+        switch(menuGeo3D()){
+            case 1:
+                //Prisma Rectangular
+                break;
+
+            case 2:
+                //Cilindro
+                break;
+
+            case 3:
+                //Pirámide cuadrangular
+                break;
+        }
+
+    case 6:
+        printf("\n Estadísitica:\n");
+        //Estadística
+        break;
+
+    case 7:
+        printf("\n Factorial:\n");
+        //Factorial
+        break;
+
+    case 8:
+        printf("\n Velocidad:\n");
+        //Velocidad
+        break;
+
+    case 9:
+        printf("\n Fuerza:\n");
+        //Fuerza
+        break;
+}
+[30/08/21 19:01:03] Emma IS : int menuPrincipal(){
+    int op;
+    printf("Elige la operacion que desees ejecutar:\n\n");
+    do{
+        printf("1.- Aritmética\n ");
+        printf("2.- Trigonometría\n ");
+        printf("3.- Geometría 2D (perímetro)\n ");
+        printf("4.- Geometría 2D (área)\n ");
+        printf("5.- Geometría 3D (volumen)\n ");
+        printf("6.- Estadística\n ");
+        printf("7.- Factorial\n ");
+        printf("8.- Velocidad\n ");
+        printf("9.- Fuerza\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 7);
+    return (op);
+}
+[30/08/21 19:01:13] Emma IS : int menuAritmetica(){
+    int op;
+    printf("Elige que operación arimética deseas ejecutar:\n\n");
+    do{
+        printf("1.- Suma\n ");
+        printf("2.- Resta\n ");
+        printf("3.- Multiplicación\n ");
+        printf("4.- División\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 4);
+    return (op);
+}
+[30/08/21 19:02:23] Emma IS : int menuTrigonometria(){
+    int op;
+    printf("Elige que operacion trigonometrica  deseas ejecutar:\n\n");
+    do{
+        printf("1.- \n ");
+        printf("2.- \n ");
+        printf("3.- \n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:02:36] Emma IS : int menuGeo2DPeri(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el perímetro:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:02:49] Emma IS : int menuGeo2DArea(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el área:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:03:01] Emma IS : int menuGeo3D(){
+    int op;
+    printf("Elige el poliedro del que quiere obtener el volumen:\n\n");
+    do{
+        printf("1.- Prisma rectangular\n ");
+        printf("2.- Cilindro\n ");
+        printf("2.- Pirámide cuadrangular\n ");
+    }
+}
+[30/08/21 19:12:25] Josa: void hanoi(int N, char origen, char destino, char auxiliar)
+{
+    if(N == 1)
+    {
+        hanoi(N-1, origen, auxiliar, destino);
+       printf("\n %c -> %c" , origen, destino);
+       hanoi(N-1, auxiliar, destino, origen);
+    }
+}
+[30/08/21 19:16:07] Luis Gerardo  Campos IS : void aritmetica(Numeros *C)
+{
+    int op;
+    float resultado;
+    printf("Seleccione una opcion: ");
+    printf("\n1)Suma:\n2)Resta:\n3)Multiplicacion:\n");
+    scanf("%d",&op);//Lee la opcion a realizar
+    printf("\nIngrese los datos: ");
+    scanf("%f",&C->n1);
+    scanf("%f",&C->n2);
+    switch(op)
+    {
+    case 1:
+        resultado=(C->n1+C->n2);
+        break;
+    case 2:
+        resultado=(C->n1-C->n2);
+        break;
+    case 3:
+        resultado=(C->n1*C->n3);
+        break;
+        default:
+        printf("Error, opcion no valida");
+    }
+    printf("El resultado es: %.1f",resultado);
+}
+[30/08/21 19:23:37] Emma IS : #include<stdio.h>
+#include<stdlib.h>
+
+int menuPrincipal();
+int menuAritmetica();
+int menuTrigonometria();
+int menuGeo2DPeri();
+int menuGeo2DArea();
+int menuGeo3D();
+
+int main(){
+    char resp;
+
+    do{
+        fflush(stdin);
+        switch(menuPrincipal()){
+            case 1:
+                printf("\n Aritmética:\n");
+                switch(menuAritmetica()){
+                    case 1:
+                    //Suma
+                    break;
+
+                    case 2:
+                        //Resta
+                        break;
+
+                    case 3:
+                        //Multiplicación
+                        break;
+
+                    case 4:
+                        //División
+                        break;
+                }
+
+            case 2:
+                printf("\n Trigonometría:\n");
+                switch(menuTrigonometria()){
+                    case 1:
+                        //Función 1;
+                        break;
+
+                    case 2:
+                        //Función 2;
+                        break;
+
+                    case 3:
+                        //Función 3;
+                        break;
+                }
+
+            case 3:
+                printf("\n Geometría 2D (Perímetro):\n");
+                switch(menuGeo2DPeri()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+
+            case 4:
+                printf("\n Geometría 2D (Área):\n");
+                switch(menuGeo2DArea()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+
+            case 5:
+                printf("\n Geometría 3D (Volumen):\n");
+                switch(menuGeo3D()){
+                    case 1:
+                        //Prisma Rectangular
+                        break;
+
+                    case 2:
+                        //Cilindro
+                        break;
+
+                    case 3:
+                        //Pirámide cuadrangular
+                        break;
+                }
+
+            case 6:
+                printf("\n Estadísitica:\n");
+                //Estadística
+                break;
+
+            case 7:
+                printf("\n Factorial:\n");
+                //Factorial
+                break;
+
+            case 8:
+                printf("\n Velocidad:\n");
+                //Velocidad
+                break;
+
+            case 9:
+                printf("\n Fuerza:\n");
+                //Fuerza
+                break;
+        }
+        fflush(stdin);
+        printf("\n\n¿Desea seleccionar otra opcion diferente? (s/n) ");
+        fflush(stdin);
+        scanf("%c", &resp);
+    }while( resp == 's');
+}
+
+int menuPrincipal(){
+    int op;
+    printf("Elige la operacion que desees ejecutar:\n\n ");
+    do{
+        printf("1.- Aritmética\n ");
+        printf("2.- Trigonometría\n ");
+        printf("3.- Geometría 2D (perímetro)\n ");
+        printf("4.- Geometría 2D (área)\n ");
+        printf("5.- Geometría 3D (volumen)\n ");
+        printf("6.- Estadística\n ");
+        printf("7.- Factorial\n ");
+        printf("8.- Velocidad\n ");
+        printf("9.- Fuerza\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 7);
+    return (op);
+}
+
+int menuAritmetica(){
+    int op;
+    printf("Elige que operación arimética deseas ejecutar:\n\n");
+    do{
+        printf("1.- Suma\n ");
+        printf("2.- Resta\n ");
+        printf("3.- Multiplicación\n ");
+        printf("4.- División\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 4);
+    return (op);
+}
+
+int menuTrigonometria(){
+    int op;
+    printf("Elige que operacion trigonometrica  deseas ejecutar:\n\n");
+    do{
+        printf("1.- \n ");
+        printf("2.- \n ");
+        printf("3.- \n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DPeri(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el perímetro:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DArea(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el área:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo3D(){
+    int op;
+    printf("Elige el poliedro del que quiere obtener el volumen:\n\n");
+    do{
+        printf("1.- Prisma rectangular\n ");
+        printf("2.- Cilindro\n ");
+        printf("2.- Pirámide cuadrangular\n ");
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:26:52] Emma IS : #include<stdio.h>
+#include<stdlib.h>
+
+int menuPrincipal();
+int menuAritmetica();
+int menuTrigonometria();
+int menuGeo2DPeri();
+int menuGeo2DArea();
+int menuGeo3D();
+
+int main(){
+    char resp;
+
+    do{
+        fflush(stdin);
+        switch(menuPrincipal()){
+            case 1:
+                printf("\n Aritmética:\n");
+                switch(menuAritmetica()){
+                    case 1:
+                        //Suma
+                        break;
+
+                    case 2:
+                        //Resta
+                        break;
+
+                    case 3:
+                        //Multiplicación
+                        break;
+
+                    case 4:
+                        //División
+                        break;
+                }
+                break;
+
+            case 2:
+                printf("\n Trigonometría:\n");
+                switch(menuTrigonometria()){
+                    case 1:
+                        //Función 1;
+                        break;
+
+                    case 2:
+                        //Función 2;
+                        break;
+
+                    case 3:
+                        //Función 3;
+                        break;
+                }
+                break;
+
+            case 3:
+                printf("\n Geometría 2D (Perímetro):\n");
+                switch(menuGeo2DPeri()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+                break;
+
+            case 4:
+                printf("\n Geometría 2D (Área):\n");
+                switch(menuGeo2DArea()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+                break;
+
+            case 5:
+                printf("\n Geometría 3D (Volumen):\n");
+                switch(menuGeo3D()){
+                    case 1:
+                        //Prisma Rectangular
+                        break;
+
+                    case 2:
+                        //Cilindro
+                        break;
+
+                    case 3:
+                        //Pirámide cuadrangular
+                        break;
+                }
+                break;
+
+            case 6:
+                printf("\n Estadísitica:\n");
+                //Estadística
+                break;
+
+            case 7:
+                printf("\n Factorial:\n");
+                //Factorial
+                break;
+
+            case 8:
+                printf("\n Velocidad:\n");
+                //Velocidad
+                break;
+
+            case 9:
+                printf("\n Fuerza:\n");
+                //Fuerza
+                break;
+        }
+        fflush(stdin);
+        printf("\n\n¿Desea seleccionar otra opcion diferente? (s/n) ");
+        fflush(stdin);
+        scanf("%c", &resp);
+    }while( resp == 's');
+}
+
+int menuPrincipal(){
+    int op;
+    printf("Elige la operacion que desees ejecutar:\n\n ");
+    do{
+        printf("1.- Aritmética\n ");
+        printf("2.- Trigonometría\n ");
+        printf("3.- Geometría 2D (perímetro)\n ");
+        printf("4.- Geometría 2D (área)\n ");
+        printf("5.- Geometría 3D (volumen)\n ");
+        printf("6.- Estadística\n ");
+        printf("7.- Factorial\n ");
+        printf("8.- Velocidad\n ");
+        printf("9.- Fuerza\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 7);
+    return (op);
+}
+
+int menuAritmetica(){
+    int op;
+    printf("Elige que operación arimética deseas ejecutar:\n\n");
+    do{
+        printf("1.- Suma\n ");
+        printf("2.- Resta\n ");
+        printf("3.- Multiplicación\n ");
+        printf("4.- División\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 4);
+    return (op);
+}
+
+int menuTrigonometria(){
+    int op;
+    printf("Elige que operacion trigonometrica  deseas ejecutar:\n\n");
+    do{
+        printf("1.- \n ");
+        printf("2.- \n ");
+        printf("3.- \n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DPeri(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el perímetro:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DArea(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el área:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo3D(){
+    int op;
+    printf("Elige el poliedro del que quiere obtener el volumen:\n\n");
+    do{
+        printf("1.- Prisma rectangular\n ");
+        printf("2.- Cilindro\n ");
+        printf("2.- Pirámide cuadrangular\n ");
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:32:46] Emma IS : #include<stdio.h>
+#include<stdlib.h>
+
+int menuPrincipal();
+int menuAritmetica();
+int menuTrigonometria();
+int menuGeo2DPeri();
+int menuGeo2DArea();
+int menuGeo3D();
+
+int main(){
+    char resp;
+
+    do{
+        fflush(stdin);
+        switch(menuPrincipal()){
+            case 1:
+                printf("\n Aritmética:\n");
+                switch(menuAritmetica()){
+                    case 1:
+                        //Suma
+                        break;
+
+                    case 2:
+                        //Resta
+                        break;
+
+                    case 3:
+                        //Multiplicación
+                        break;
+
+                    case 4:
+                        //División
+                        break;
+                }
+                break;
+
+            case 2:
+                printf("\n Trigonometría:\n");
+                switch(menuTrigonometria()){
+                    case 1:
+                        //Función 1;
+                        break;
+
+                    case 2:
+                        //Función 2;
+                        break;
+
+                    case 3:
+                        //Función 3;
+                        break;
+                }
+                break;
+
+            case 3:
+                printf("\n Geometría 2D (Perímetro):\n");
+                switch(menuGeo2DPeri()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+                break;
+
+            case 4:
+                printf("\n Geometría 2D (Área):\n");
+                switch(menuGeo2DArea()){
+                    case 1:
+                        //Rectángulo
+                        break;
+
+                    case 2:
+                        //Triángulo
+                        break;
+
+                    case 3:
+                        //Círculo
+                        break;
+                }
+                break;
+
+            case 5:
+                printf("\n Geometría 3D (Volumen):\n");
+                switch(menuGeo3D()){
+                    case 1:
+                        //Prisma Rectangular
+                        break;
+
+                    case 2:
+                        //Cilindro
+                        break;
+
+                    case 3:
+                        //Pirámide cuadrangular
+                        break;
+                }
+                break;
+
+            case 6:
+                printf("\n Estadísitica:\n");
+                //Estadística
+                break;
+
+            case 7:
+                printf("\n Factorial:\n");
+                //Factorial
+                break;
+
+            case 8:
+                printf("\n Velocidad:\n");
+                //Velocidad
+                break;
+
+            case 9:
+                printf("\n Fuerza:\n");
+                //Fuerza
+                break;
+        }
+        fflush(stdin);
+        printf("\n\n¿Desea seleccionar otra opcion diferente? (s/n) ");
+        fflush(stdin);
+        scanf("%c", &resp);
+    }while( resp == 's');
+}
+
+int menuPrincipal(){
+    int op;
+    printf("Elige la operacion que desees ejecutar:\n\n ");
+    do{
+        printf("1.- Aritmética\n ");
+        printf("2.- Trigonometría\n ");
+        printf("3.- Geometría 2D (perímetro)\n ");
+        printf("4.- Geometría 2D (área)\n ");
+        printf("5.- Geometría 3D (volumen)\n ");
+        printf("6.- Estadística\n ");
+        printf("7.- Factorial\n ");
+        printf("8.- Velocidad\n ");
+        printf("9.- Fuerza\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 9);
+    return (op);
+}
+
+int menuAritmetica(){
+    int op;
+    printf("Elige que operación arimética deseas ejecutar:\n\n");
+    do{
+        printf("1.- Suma\n ");
+        printf("2.- Resta\n ");
+        printf("3.- Multiplicación\n ");
+        printf("4.- División\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 4);
+    return (op);
+}
+
+int menuTrigonometria(){
+    int op;
+    printf("Elige que operacion trigonometrica  deseas ejecutar:\n\n");
+    do{
+        printf("1.- \n ");
+        printf("2.- \n ");
+        printf("3.- \n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DPeri(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el perímetro:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo2DArea(){
+    int op;
+    printf("Elige el polígono del que quiere obtener el área:\n\n");
+    do{
+        printf("1.- Rectángulo\n ");
+        printf("2.- Triángulo\n ");
+        printf("3.- Círculo\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+
+int menuGeo3D(){
+    int op;
+    printf("Elige el poliedro del que quiere obtener el volumen:\n\n");
+    do{
+        printf("1.- Prisma rectangular\n ");
+        printf("2.- Cilindro\n ");
+        printf("3.- Pirámide cuadrangular\n ");
+        scanf("%d", &op);
+    }while (op < 1 || op > 3);
+    return (op);
+}
+[30/08/21 19:56:13] Josa: typedef struct
+{
+    float n1;
+    float n2;
+
+}Numeros;
+[30/08/21 19:56:21] Josa: void aritmetica(Numeros *C, int op)
+{
+    float resultado;
+    printf("\nIngrese los datos: ");
+    scanf("%f",&C->n1);
+    scanf("%f",&C->n2);
+    switch(op)
+    {
+    case 1:
+        resultado=(C->n1+C->n2);
+        break;
+    case 2:
+        resultado=(C->n1-C->n2);
+        break;
+    case 3:
+        resultado=(C->n1*C->n2);
+        break;
+    case 4:
+        resultado=(C->n1/C->n2);
+        break;
+        default:
+        printf("Error, opcion no valida");
+    }
+    printf("El resultado es: %.1f",resultado);
+}
+[31/08/21 18:49:23] Josa: int factorial(int n)
+{
+    int fact = 1;
+
+    if( n >= 0)
+    {
+        if(n == 0)
+        {
+            fact = 1; //caso base
+        }
+        else
+        {
+            fact = n * factorial(n-1);
+        }
+    }
+    else
+    {
+       fact = 1;
+    }
+    return (fact);
+}
+[31/08/21 18:50:06] Emma IS : void trigonometria(NUM *C, int op){
+    int disc=0;
+    printf("\n Ingrese el ángulo x: ");
+    scanf("%f", &C->n1);
+    switch(op){
+        case 1:
+            C->res = sin(conv_aRadianes(C->n1));
+            break;
+
+        case 2:
+            C->res = cos(conv_aRadianes(C->n1));
+            break;
+
+        case 3:
+            if(conv_aRadianes(C->n1) == conv_aRadianes(90)){
+                printf("\n El resultado es indefinido\n");
+                disc++;
+            }
+            else
+                C->res = tan(conv_aRadianes(C->n1));
+            break;
+    }
+    if(disc != 1)
+        printf("\n El resultado es: %.5f\n", C->res);
+}
+
+float conv_aRadianes(float anguloDec)
+{
+    float rad;
+    rad=(anguloDec*pi)/180;
+    return(rad);
+}
+[31/08/21 18:51:16] Emma IS : Faltaría contar esto para que funcione:
+#include<math.h>
+
+#define pi 3.141592654
+[31/08/21 19:25:26] Luis Gerardo  Campos IS : void geometria3d(Numeros *C)
+{
+        int op;
+    float resultado;
+    printf("Seleccione una opcion a realizar: ");
+    printf("\n1)Area de un cubo: ");
+    printf("\n2)Area de un prisma: ");
+    printf("\n3)Area de un esfera: ");
+    scanf("%d",&op);//Lee la opcion a realizar
+    switch(op)
+    {
+    case 1:
+        printf("Ingrese el lado del cubo: ");
+        scanf("%f",&C->n1);
+        resultado=(C->n1*C->n1*C->n1);//son flotantes, no me deja usar ^ por eso lo hice asi
+        break;
+    case 2:
+        printf("\nIngrese la base: ");
+        scanf("%f",&C->n1);
+        printf("\nIngrese la altura: ");
+        scanf("%f",&C->n2);
+        printf("\Ingrese la profundidad: ");
+        scanf("%f",&C->n3);
+        resultado=(C->n1*C->n2*C->n3);
+        break;
+    case 3:
+        printf("\nIngrese el radio: ");
+        scanf("%f",&C->n1);
+        resultado=(C->n1*C->n1*C->n1);
+        resultado=((4/3)*PI*resultado);
+        break;
+        default:
+        printf("Error, opcion no valida");
+    }
+    printf("El resultado es: %.1f",resultado);
+}
+[31/08/21 19:35:05] Luis Gerardo  Campos IS : void velocidad(Numeros *C)
+{
+    printf("\nIngresa la distancia en km: ");
+    scanf("%d",&C->n4);
+    printf("\nIngresa el tiempo en hr: ");
+    scanf("%f",&C->n1);
+    C->n2=C->n4/C->n1; //C->n2 es igual a la velocidad
+    printf("\nLa velocidad es %.2f km/hr",C->n2);
+}
+[31/08/21 19:45:02] Luis Gerardo  Campos IS : void fuerza(Numeros *C)
+{
+    printf("\nIngrese la masa: ");
+    scanf("%f",&C->n1);
+    printf("\nIngrese la aceleracion: ");
+    scanf("%f",&C->n2);
+    C->n3=C->n1*C->n2;
+    printf("\nLa fuerza es %.1f F",C->n3);
+}
+[01/09/21 18:47:13] Emma IS : /*Bibliotecas*/
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+/*Constante definida*/
+#define pi 3.141592654
+
+/*Estructura para manejo de datos*/
+typedef struct{
+    float n1, n2, n3, res;
+    int nI, resI;
+}NUM;
+
+/*Menus & Display*/
+void autores();
+int menuPrincipal();
+int menuAritmetica();
+int menuTrigonometria();
+int menuGeo2DPeri();
+int menuGeo2DArea();
+int menuGeo3D();
+
+/*Funciones de resolución*/
+void aritmetica(NUM *C, int op);
+void trigonometria(NUM *C, int op);
+float conv_aRadianes(float anguloDec);
+void geo2DPeri(NUM *C, int op);
+void geo2DArea(NUM *C, int op);
+void geo3D(NUM *C, int op);
+[07/09/22, 22:03:13] ‪+52 444 718 5474‬: int main()
+{
+	system("color 0A");
+    NODO *cab=NULL, *aux;
+    int dato;
+    int opcion;
+
+	do
+    {
+    	printf("\n |-----------------LISTAS SIMPLES ENLAZADAS-----------------|");
+		printf("\n |1. Insertar al Inicio              5. Eliminar Final      |");
+		printf("\n |2. Insertar al Final               6. Buscar y Eliminar   |");
+		printf("\n |3. Insertar Ordenado               7. Mostrar Lista	      |");
+		printf("\n |4. Elimina Inicio                  8. Salir               |");
+		printf("\n |----------------------------------------------------------|");
+		printf("\n\n\t Elige una opcion: ");
+		scanf("%d",&opcion);
+
+    	switch(opcion)
+    	{
+    		case 1:
+    			printf("\n Insercion al inicio");
+				printf("\n Ingresa el dato: ");
+				scanf("%d",&dato);
+    			InsertaInicio(&cab, dato);
+    			break;
+    		case 2:
+    			printf("Insercion al Final");
+    			printf("\n Ingresa el dato: ");
+				scanf("%d",&dato);
+    			insertaFinal(&cab, dato);
+    			break;
+    		case 3:
+    			printf("Insercion Ordenada");
+    			printf("\n Ingresa el dato: ");
+				scanf("%d",&dato);
+				insertaOrdenadoRec(&cab, dato);
+    			break;
+    		case 4:
+    			printf("Elimina Inicio");
+				eliminaInicio(&cab);
+    			break;
+    		case 5:
+    			printf("Elimina Final");
+				eliminaFinalRec(&cab);
+    			break;
+    		case 6:
+    			printf("Buscar y Eliminar");
+    			printf("\n Dato a eliminar: ");
+    			scanf("%d",&dato);
+    			eliminaDatoBuscadoRec(&cab, dato);
+    		case 7:
+    			printf("Mostrar Lista \n");
+    			imprimeListaRec(cab);
+    			break;
+    		case 8:
+    			printf("PROGRAMA ELABORADO POR ISAIH HERNANDEZ IsaGamesInc.");
+    			break;
+		}
+	}while(opcion < 8);
+	
+	liberaLista(&cab);
+    
+    return 0;
+}
+[30/08/21 14:01:29] fake: import re
+
+def getMessages(filename):
+    messages = []
+
+[30/08/21 14:01:29] fake:    with open(filename, 'r') as file:
+        for line in file:
+            if re.match(r'\d{2}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}', line):
+                messages.append(line)
+    return messages
+[30/08/21 14:01:29] fake: if match:
+            if message:
+                messages.append(message)
+            
+            message = match.groups()[-1].strip()
+[30/08/21 14:01:29] fake: @app.route('/')
+def index():
+    return render_template('index.html')
+[30/08/21 14:01:29] fake: @app.route('/messages')
+[30/08/21 14:01:29] fake: def messages():
+    messages = getMessages('static/messages.txt')
+    return render_template('messages.html', messages=messages)
+[30/08/21 14:01:29] fake: <html>
+[30/08/21 14:01:29] fake: <head>
+[30/08/21 14:01:29] fake:     <title>Messages</title>
+[30/08/21 14:01:29] fake: </head>
+[30/08/21 14:01:29] fake: <body>
+[30/08/21 14:01:29] fake:     <h1>Messages</h1>
+[30/08/21 14:01:29] fake:     <ul>
+[30/08/21 14:01:29] fake:         {% for message in messages %}
+[30/08/21 14:01:29] fake:         <li>{{ message }}</li>
+[30/08/21 14:01:29] fake:         {% endfor %}
+[30/08/21 14:01:29] fake:     </ul>
+[30/08/21 14:01:29] fake: </body>
+[30/08/21 14:01:29] fake: </html>
+[30/08/21 14:01:29] fake: @app.route('/hello-world')
+def hello_world():
+    return render_template('hello-world.html')
+
+@app.route('/classify', methods=['POST'])
+def classify_message():
+    try:
+[30/08/21 14:01:29] fake:        message = request.form['message']
+        if message:
+            classification = classify(message)
+            return render_template('classify.html', message=message, classification=classification)
+        else:
+            return render_template('classify.html', error='No message to classify')
+    except Exception as e:
+        return render_template('classify.html', error='Error classifying message: {}'.format(e))
+[30/08/21 14:01:29] fake: <html>
+[30/08/21 14:01:29] fake: <head>
+[30/08/21 14:01:29] fake:     <title>Classify</title>
+[30/08/21 14:01:29] fake: </head>
+[30/08/21 14:01:29] fake: <body>
+[30/08/21 14:01:29] fake:     <h1>Classify</h1>
+[30/08/21 14:01:29] fake:     {% if error %}
+[30/08/21 14:01:29] fake:     <p>{{ error }}</p>
+[30/08/21 14:01:29] fake:     {% endif %}
+[30/08/21 14:01:29] fake:     <form action="/classify" method="post">
+[30/08/21 14:01:29] fake:         <label for="message">Message:</label>
+[30/08/21 14:01:29] fake:         <input type="text" name="message" id="message">
+[30/08/21 14:01:29] fake:         <input type="submit" value="Classify">
+[30/08/21 14:01:29] fake:     </form>
+[30/08/21 14:01:29] fake:     {% if message and classification %}
+[30/08/21 14:01:29] fake:     <p>Message: {{ message }}</p>
+[30/08/21 14:01:29] fake:     <p>Classification: {{ classification }}</p>
+[30/08/21 14:01:29] fake:     {% endif %}
+[30/08/21 14:01:29] fake: </body>
+[30/08/21 14:01:29] fake:         return jsonify({
+            'category': category,
+            'scores': score_values
+        })
+    
+    except Exception as e:
+        return jsonify({'error': str(e)})
+[30/08/21 14:01:29] fake:     <title>Classify</title>
+[30/08/21 14:01:29] fake:     <h1>Classify</h1>
+[30/08/21 14:01:29] fake:     {% if error %}
+[30/08/21 14:01:29] fake:     <p>{{ error }}</p>
+[30/08/21 14:01:29] fake:     {% endif %}
+[30/08/21 14:01:29] fake:     <form action="/classify" method="post">
+[30/08/21 14:01:29] fake:         <label for="message">Message:</label>
+[30/08/21 14:01:29] fake:         <input type="text" name="message" id="message">
+[30/08/21 14:01:29] fake:         <input type="submit" value="Classify">
+
+[30/08/21 14:01:29] fake:     {% if message and classification %}
+[30/08/21 14:01:29] fake:     <p>Message: {{ message }}</p>
+[30/08/21 14:01:29] fake:   Tooltip.prototype.setContent = function () {
+    var $tip  = this.tip()
+    var title = this.getTitle()
+
+    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
+    $tip.removeClass('fade in top bottom left right')
+  }
+[30/08/21 14:01:29] fake:     var that = this
+    var $tip = this.tip()
+    var e    = $.Event('hide.bs.' + this.type)
+
+    function complete() {
+      if (that.hoverState != 'in') $tip.detach()
+      that.$element.trigger('hidden.bs.' + that.type)
+    }
+[30/08/21 14:01:29] fake:     $(this.options.container).off('mousemove');
+    this.$element.trigger(e)
+[30/08/21 14:01:29] fake:     $.support.transition && this.$tip.hasClass('fade') ?
+      $tip
+        .one($.support.transition.end, complete)
+        .emulateTransitionEnd(150) :
+      complete()
+[30/08/21 14:01:29] fake: 
+    return this
+  }
+
+  Tooltip.prototype.fixTitle = function ()
+    var $e = this.$element
+[30/08/21 14:01:29] fake:    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
+      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '')
+    }
+[30/08/21 14:01:29] fake:     var $tip = this.tip()
+    var title = this.getTitle()
+[30/08/21 14:01:29] fake:     $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
+    $tip.removeClass('fade in top bottom left right')
+[30/08/21 14:01:29] fake:     var placement = typeof this.options.placement == 'function' ?
+      this.options.placement.call(this, $tip[0], this.$element[0]) :
+      this.options.placement
+[30/08/21 14:01:29] fake:     var pos     = this.getPosition()
+    var actualWidth  = $tip[0].offsetWidth
+    var actualHeight = $tip[0].offsetHeight
+[30/08/21 14:01:29] fake:     var calculatedOffset = typeof placement == 'function' ?
+      placement.call(this, $tip[0], this.$element[0]) :
+      placement
+[30/08/21 14:01:29] fake:     var offset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight)
+[30/08/21 14:01:29] fake:     this.applyPlacement(offset, placement)
+[30/08/21 14:01:29] fake:     var replace
+    var $viewport   = this.options.viewport && $(this.options.viewport.selector || this.options.viewport)
+[30/08/21 14:01:29] fake:     if (placement == 'bottom') {
+      replace = { top: pos.top + pos.height, left: pos.left + pos.width / 2 - actualWidth / 2 }
+    } else if (placement == 'top') {
+[30/08/21 14:01:29] fake:     } else if (placement == 'left') {
+      replace = { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth }
+[30/08/21 14:01:29] fake:    } else {
+      replace = { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
+    }
+[30/08/21 14:01:29] fake:     if ($viewport) {
+      var viewportPadding = this.options.viewport && this.options.viewport.padding || 0
+      var viewportDimensions = $viewport[0].getBoundingClientRect()
+[30/08/21 14:01:29] fake:       if (/top|bottom/.test(placement)) {
+        left = pos.left + pos.width / 2 - actualWidth / 2
+[30/08/21 14:01:29] fake:         if (left < viewportDimensions.left + viewportPadding) {
+          replace.left = viewportDimensions.left + viewportPadding
+        } else if (left + actualWidth > viewportDimensions.right - viewportPadding) {
+[30/08/21 14:01:29] fake:       } else if (/left|right/.test(placement)) {
+        top = pos.top + pos.height / 2 - actualHeight / 2
+[30/08/21 14:01:29] fake:         if (top < viewportDimensions.top + viewportPadding) {
+          replace.top = viewportDimensions.top + viewportPadding
+        } else if (top + actualHeight > viewportDimensions.bottom - viewportPadding) {
+[30/08/21 14:01:29] fake:     }
+[30/08/21 14:01:29] fake:     if (replace) {
+      $tip.offset(replace)
+    }
+[30/08/21 14:01:29] fake:     this.replaceArrow(offset.left - $tip.offset().left, $tip[0].offsetWidth, placement)
+  }
+
+  Tooltip.prototype.replaceArrow = function (delta, dimension, placement) {
+[30/08/21 14:01:29] fake:     this.arrow().css(placement == 'left' ? 'right' : 'left', 50 * (1 - delta / dimension) + '%')
+  }
+
+  Tooltip.prototype.setContent = function () {
+[30/08/21 14:01:29] fake:     var $tip  = this.tip()
+    var title = this.getTitle()
+[30/08/21 14:01:29] fake: var Names;
+var svg;
+var colors;
+var opacityDefault;
+var enablePopover = false;
+[30/08/21 14:01:29] fake: var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+[30/08/21 14:01:29] fake:     height = 500 - margin.top - margin.bottom;
+[30/08/21 14:01:29] fake: var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+[30/08/21 14:01:29] fake: var y = d3.scale.linear()
+    .rangeRound([height, 0]);
+[30/08/21 14:01:29] fake: var color = d3.scale.ordinal()
+    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+[30/08/21 14:01:29] fake: var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+[30/08/21 14:01:29] fake: var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(d3.format(".2s"));
+[30/08/21 14:01:29] fake: var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+[30/08/21 14:01:29] fake:     .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+[30/08/21 14:01:29] fake: d3.csv("data.csv", function(error, data) {
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "State"; }));
+[30/08/21 14:01:29] fake:   data.forEach(function(d) {
+    var y0 = 0;
+    d.ages = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
+    d.total = d.ages[d.ages.length - 1].y1;
+[30/08/21 14:01:29] fake:   });
+[30/08/21 14:01:29] fake:   data.sort(function(a, b) { return b.total - a.total; });
+[30/08/21 14:01:29] fake: /*outerArcs.append("text")
+		.attr("class", "titles")
+		.attr("dy", function(d,i) { return (d.endAngle > 90*Math.PI/180 & d.startAngle < 270*Math.PI/180 ? 25 : -16); })
+	   .append("textPath")
+		.attr("startOffset","50%")
+		.attr("font-size", (newNames.length<99?16:12)+"px")
+		.style("text-anchor","middle")
+		.attr("xlink:href",function(d,i){return "#arc"+i;})
+		.text(function(d,i){ return Names.length<99?Names[i]:i+1; });
+		*/
+[30/08/21 14:01:29] fake:   x.domain(data.map(function(d) { return d.State; }));
+    y.domain([0, d3.max(data, function(d) { return d.total; })]);
+[30/08/21 14:01:29] fake:   svg.append("g")
+      .attr("class", "x axis")
+[30/08/21 14:01:29] fake:       .attr("transform", "translate(0," + height + ")")
+[30/08/21 14:01:29] fake:      .call(xAxis);
+[30/08/21 14:01:29] fake:   svg.append("g")
+      .attr("class", "y axis")
+[30/08/21 14:01:29] fake:       .call(yAxis)
+[30/08/21 14:01:29] fake:     .append("text")
+      .attr("transform", "rotate(-90)")
+[30/08/21 14:01:29] fake:       .attr("y", 6)
+      .attr("dy", ".71em")
+[30/08/21 14:01:29] fake:       .style("text-anchor", "end")
+      .text("Population");
+[30/08/21 14:01:29] fake:   var state = svg.selectAll(".state")
+      .data(data)
+[30/08/21 14:01:29] fake:     .enter().append("g")
+      .attr("class", "g")
+      .attr("transform", function(d) { return "translate(" + x(d.State) + ",0)"; });
+[30/08/21 14:01:29] fake:   state.selectAll("rect")
+      .data(function(d) { return d.ages; })
+[30/08/21 14:01:29] fake:     .enter().append("rect")
+      .attr("width", x.rangeBand())
+[30/08/21 14:01:29] fake:       .attr("y", function(d) { return y(d.y1); })
+      .attr("height", function(d) { return y(d.y0) - y(d.y1); })
+[30/08/21 14:01:29] fake:       .style("fill", function(d) { return color(d.name); });
+[30/08/21 14:01:29] fake:   var legend = svg.selectAll(".legend")
+      .data(color.domain().slice().reverse())
+[30/08/21 14:01:29] fake:     .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+[30/08/21 14:01:29] fake:   legend.append("rect")
+      .attr("x", width - 18)
+[30/08/21 14:01:29] fake:       .attr("width", 18)
+      .attr("height", 18)
+[30/08/21 14:01:29] fake:       .style("fill", color);
+[30/08/21 14:01:29] fake:   legend.append("text")
+      .attr("x", width - 24)
+[30/08/21 14:01:29] fake:       .attr("y", 9)
+      .attr("dy", ".35em")
+[30/08/21 14:01:29] fake:       .style("text-anchor", "end")
+      .text(function(d) { return d; });
+[30/08/21 14:01:29] fake: });
+[30/08/21 14:01:29] fake: </script>
+[10/09/22, 15:29:52] ‪+52 444 718 5474‬: int main()
+{
+	int opcion;
+
+	do
+    {
+    	printf("\n |------------------PROGRAMA FORMULAS 2022------------------|");
+		printf("\n |1. BISIESTO                         5. TRIGONOMETRIA      |");
+		printf("\n |2. DIAS PARA LLEGAR A UNA FECHA     6. ESTADISTICA        |");
+		printf("\n |3. TEMPERATURA                      7. FACTORIAL	      |");
+		printf("\n |4. EDADES                           8. SALIR              |");
+		printf("\n |----------------------------------------------------------|");
+		printf("\n\n Elige una opcion: ");
+		scanf("%d",&opcion);
+
+    	switch(opcion)
+    	{
+    		case 1:
+    			printf("\n BISIESTO");
+    			break;
+    		case 2:
+    			printf("\n DIAS PARA LLEGAR A UNA FECHA");
+    			break;
+    		case 3:
+    			printf("\n TEMPERATURA");
+    			break;
+    		case 4:
+    			printf("\n EDADES");
+    			break;
+    		case 5:
+    			printf("\n TRIGONOMETRIA");
+    			break;
+    		case 6:
+    			printf("\n ESTADISTICA");
+    			break;
+    		case 7:
+    			printf("\n FACTORAIL");
+    			break;
+    		case 8:
+    			break;
+    		default:
+    			printf("\n NO EXISTE");
+		}
+	}while(opcion != 8);
+    
+    return 0;
+}
+[11/09/22, 17:40:15] ‪+52 444 136 6505‬: //PROTOTIPO: 
+//void dias();
+
+//LIBRERÍAS:
+//#include <stdio.h>
+//#include <stdlib.h>
+
+//FUNCION:
+
+void dias()
+{
+    int dia, anio;
+    
+    printf("\nIngresa el dia de le fecha a consultar:");
+    scanf("%i", &dia);
+    
+    printf("\nIngresa el anio de la fecha a consultar:");
+    scanf("%i", &anio);
+}
+[11/09/22, 17:40:15] none: struct tm *local = localtime(&now);
+
+    fecha1.dia = local->tm_mday;
+    fecha1.mes = local->tm_mon + 1;
+    fecha1.anio = local->tm_year + 1900;
+[11/09/22, 17:40:15] none: printf("\nIngresa el dia de la fecha a consultar:");
+    scanf("%i", &fecha2.dia);
+
+    printf("\nIngresa el mes de la fecha a consultar:");
+    scanf("%i", &fecha2.mes);
+
+    printf("\nIngresa el anio de la fecha a consultar:");
+    scanf("%i", &fecha2.anio);
+[11/09/22, 17:40:15] none:  printf("\n\n%i %i %i", fecha1.dia, fecha1.mes, fecha1.anio);
+
+    printf("\n\n%i %i %i", fecha2.dia, fecha2.mes, fecha2.anio);
+
+
+    anioinicio = fecha1.anio==fecha2.anio?0:
+        365 - DiasTranscurridos(fecha1);
+
+[11/09/22, 17:40:15] none: aniofinal = DiasTranscurridos(fecha2);
+
+
+    for(numanios=fecha1.anio+1;numanios<fecha2.anio;numanios)
+     {
+        if(((numanios%4==0) && (numanios%100!=0)))
+            totaldias+=366;
+        else
+            totaldias+=365;
+[11/09/22, 17:40:15] none:   totaldias+=365;
+     }
+
+     totaldias+=anioinicio+aniofinal;
+
+[11/09/22, 17:40:15] none: family arr_family[MAX];
+    int members;
+    int i;
+    float month,total;
+    int aux;
+[11/09/22, 17:40:15] none: float month_2;
+
+    printf("El numero de miembros en tu familia:  ");
+
+    scanf("%d",&members);
+    for(i = 0; i < members; i++)
+[11/09/22, 17:40:15] none: {
+        printf("Edad en anios del integrante %d\n",i + 1);
+        scanf("%d",&arr_family[i].age_year);
+        printf("Edad en mes del integrante %d\n",i + 1);
+        scanf("%f",&month);
+
+        month = month * CONSTANT; //Aquí se pasan los meses a años para así poder sacar el promedio
+        arr_family[i].age_month = month;
+        total = total + arr_family[i].age_year + month;
+    }
+    total = total / members;
+
+    year_2 = total;
+    month_2 = total - year_2;
+[11/09/22, 17:40:15] none: month_2 = month_2 * 10;
+
+    printf("El promedio de edad es %d anios y %.0f meses ",year_2, month_2);
+

@@ -1,0 +1,47 @@
+[21/11/23, 15:56:53] Raul Moreno: Eso pasa por no querer dejármelo
+[21/11/23, 15:57:33] Mikel Barajas: Ponle un espacio antes del %c
+[21/11/23, 15:57:42] ‪+52 444 285 9212‬: Una disculpa estimado
+[21/11/23, 15:57:47] Mikel Barajas: Lo qué pasa es que scanf lee lo que está en el buffer
+[21/11/23, 15:58:08] Mikel Barajas: Y cuando le das enter se queda el espacio de ‘/n’ guardado
+[21/11/23, 15:58:18] Mikel Barajas: Y eso pone en la variable option
+[21/11/23, 15:58:29] Mikel Barajas: Si pones “ %c”
+[21/11/23, 15:58:33] Mikel Barajas: Con un espacio antes
+[21/11/23, 15:58:36] Mikel Barajas: En el segundo scanf
+[21/11/23, 15:58:39] Mikel Barajas: Ya lo lee bien
+[21/11/23, 15:59:14] ‪+52 444 285 9212‬: Ahhhh ya ya, esa no me la sabia. Ya me jalo la función jejej, en un momento la mando, ya solo la complemento
+[21/11/23, 15:59:24] ‪+52 444 285 9212‬: Muchas gracias 🫱🏽‍🫲🏽
+[21/11/23, 16:06:46] Raul Moreno: También pudiste usar la función setbuff después del scanf donde lees el entero
+[21/11/23, 16:07:09] Mikel Barajas: *entrega* Oigan, entonces se entrega el jueves o el martes?
+[21/11/23, 16:07:38] Raul Moreno: Yo también tengo la misma duda, porque lo encargo el martes, pero luego mencionó que el jueves
+[21/11/23, 16:07:52] ‪+52 444 380 2885‬: Según yo se entrega el jueves
+[21/11/23, 16:08:13] Mikel Barajas: Vamos a intentar acabar una versión hoy o mañana
+[21/11/23, 16:08:18] Mikel Barajas: Para no presionarnos tanto
+[21/11/23, 16:08:22] Mikel Barajas: Qué opinan
+[21/11/23, 16:10:20] ‪+52 444 380 2885‬: Yo digo que sip mañana, sirve que nos actualiza el programa
+[21/11/23, 16:14:22] Mikel Barajas: @5214441932391 puedes hacer una función que reciba un arreglo de double y regrese un valor double que sea el promedio?
+[21/11/23, 16:14:33] Mikel Barajas: También recibiría tamaño
+[21/11/23, 16:14:45] ‪+52 444 193 2391‬: Sip
+[21/11/23, 16:16:32] ‪+52 444 374 1420‬: void Trigonometria()
+[23/11/23, 13:39:01] ‪+52 444 124 3709‬: banda los del main, bueno siento yo que seria mejor que ellos colocaran los saltos de linea y la forma en que va a ver el menu, porque sino se va a ver un desmadre
+[23/11/23, 13:39:18] ‪+52 444 286 6055‬: Es lo mejor
+[23/11/23, 13:39:19] ‪+52 444 124 3709‬: claro tambien los que hacemos las funciones colocamos los saltos "basicos"
+[23/11/23, 13:39:41] Alan: Si, nosotros nos encargamos de eso
+[23/11/23, 13:40:04] ‪+52 444 233 3187‬: que les quedé divino
+[23/11/23, 13:40:09] ‪+52 444 233 3187‬: debemos de ganar eh
+[23/11/23, 13:40:11] ‪+52 444 233 3187‬: ‎Ce message a été supprimé.
+[23/11/23, 13:40:21] ‪+52 444 208 0753‬: Que ganamos si ganamos?
+[23/11/23, 13:40:39] ‪+52 444 233 3187‬: sabe
+[23/11/23, 13:40:40] ‪+52 444 286 6055‬: El sentimiento
+[23/11/23, 13:40:44] ‪+52 444 233 3187‬: pero es genial ganar
+[23/11/23, 14:23:08] Soto: Pues basicamente sin imporyar como te vaya en el examen pasas el parcial
+[23/11/23, 14:23:21] Soto: Osea mientras no saque un dos o menos
+[23/11/23, 14:28:51] Soto: Es correcto. Los del main nos encargamos de la parte estetica y de homogeneizar lo que se muestra en pantalla.
+[23/11/23, 14:30:14] Alan: Hay que aprovechar hoy para los que tienen que hacer las demás funciones y ya empezar a acomodar
+[23/11/23, 14:32:39] Soto: Si, de hecho a mas tardar hoy las funciones, para que mañana los del main tengamos tiempo de hacerlo bien.
+[23/11/23, 14:41:56] ‪+52 444 849 9975‬: Aprendizaje 😉👍🏻
+[23/11/23, 14:57:40] ‪+52 444 286 6055‬: Igual pon alguna hora para que todos ya la tengan y la manden en orden por equipo
+[23/11/23, 14:58:02] Alan: Máximo 10pm
+[23/11/23, 14:58:30] Alan: Está bien esa hora o lo pongo un poco más tarde?
+[23/11/23, 14:58:43] ‪+52 444 286 6055‬: Ta bien
+[23/11/23, 14:58:54] Alan: Están todos de acuerdo?
+[23/11/23, 14:59:37] ‪+52 444 264 1979‬: Va la función del equipo 8

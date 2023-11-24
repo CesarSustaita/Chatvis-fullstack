@@ -1,0 +1,80 @@
+[30/08/21 14:01:29] Alguien: <html>
+[30/08/21 14:01:29] Alguien: <head>
+[30/08/21 14:01:29] Alguien:     <title>Messages</title>
+[30/08/21 14:01:29] Alguien: </head>
+[30/08/21 14:01:29] Alguien: <body>
+[30/08/21 14:01:29] Alguien:     <h1>Messages</h1>
+[30/08/21 14:01:29] Alguien:     <ul>
+[30/08/21 14:01:29] Alguien:         {% for message in messages %}
+[30/08/21 14:01:29] Alguien:         <li>{{ message }}</li>
+[30/08/21 14:01:29] Alguien:         {% endfor %}
+[30/08/21 14:01:29] Alguien:     </ul>
+[30/08/21 14:01:29] Alguien: </body>
+[30/08/21 14:01:29] Alguien: </html>
+[30/08/21 14:01:29] Alguien: @app.route('/hello-world')
+[30/08/21 14:01:29] Alguien:     return 'Hello, World!'
+[30/08/21 14:01:29] Alguien: if __name__ == '__main__':
+[30/08/21 14:01:29] Alguien:     app.run(debug=True)
+[31/08/21 12:41:05] Guerra Cesar: Feliz año 2018 para todos ustedes... reciban un fuerte abrazo.
+[31/08/21 12:42:20] ‪+52 662 298 2632‬: Feliz 2018, lleno de buenos deseos cumplidos
+[31/08/21 12:56:14] Zac Sodel: Doce nuevos capítulos esperándonos, lo mejor durante el 2018. Un afectuoso abrazo
+[31/08/21 01:26:54] ‪+52 55 4054 6178‬: Felicidades y un provechoso año a todos!!!
+[31/08/21 04:13:21] Hanna Oktaba: Abrazos y deseos del exitoso 2018 les desea Hanna desde Varsovia 🤓🤓🤓
+[01/09/21 13:38:12] Emma IS : Sería en la de trigonometría, la de estadística y la de aritmética
+[01/09/21 13:38:13] Luis Gerardo  Campos IS : Hola, falto en checarlo, en un momento lo veo
+[01/09/21 13:39:41] Emma IS : Tendría duda, no se si ustedes si le hayan entendido a que se refiere por ejemplo en trigonometría a un operando y un operador
+[01/09/21 13:43:18] Josa: Creo que se refiere al hecho de que en trigonometría, un operando sería el resultado que devuelve la función. No?
+[01/09/21 13:44:46] Josa: O sea solo devolvería uno
+[01/09/21 13:45:08] Josa: Y en el caso de la suma les pasaríamos dos datos por referencia
+[01/09/21 13:46:28] Emma IS : Mmm no sabría decirte, es que en trigonometría por ejemplo, yo creo que pediría el coseno de un ángulo, donde el ángulo sería nuestro operador
+[01/09/21 13:47:39] Emma IS : Y pues por lo que entiendo los operadores serían de que '+' , '-' , '*' y ese estilo de operadores
+[01/09/21 13:48:25] Emma IS : No entiendo muy bien de ahí que sería a lo que se refiere con 1 operando y un operador
+[01/09/21 13:49:28] Josa: Podríamos esperar a que sea la clase de mañana para preguntar
+[01/09/21 13:49:38] Josa: O le podemos mandar correo a alguno de nuestros profesores
+[01/09/21 13:50:29] Emma IS : Me parece bien, podríamos esperar hasta mañana para preguntar bien por esos
+[01/09/21 13:51:14] Emma IS : Por lo tanto creo que nos podríamos dividir las funciones con las que no tenemos dudas
+[01/09/21 13:51:50] Emma IS : Por ejemplo las de geometría 2d y geometría 3d, factorial, velocidad, fuerza
+[02/09/21 14:01:29] Alguien: from flask import Flask, render_template, request, redirect, url_for, flash
+[02/09/21 14:01:29] Alguien: from flask_mysqldb import MySQL
+switch(opcion)
+    		case 1:
+    			printf("\n BISIESTO");
+    			break;
+    		case 2:
+    			printf("\n DIAS PARA LLEGAR A UNA FECHA");
+    			break;
+[02/09/21 14:01:29] Alguien: app = Flask(__name__)
+[02/09/21 14:01:29] Alguien: app.secret_key = 'mysecretkey'
+[02/09/21 14:01:29] Alguien: app.config['MYSQL_HOST'] = 'localhost'
+[02/09/21 14:01:29] Alguien: app.config['MYSQL_USER'] = 'root'
+[02/09/21 14:01:29] Alguien: app.config['MYSQL_PASSWORD'] = '12345678'
+[02/09/21 14:01:29] Alguien: app.config['MYSQL_DB'] = 'flaskcontacts'
+[02/09/21 14:01:29] Alguien: mysql = MySQL(app)
+[02/09/21 14:01:29] Alguien: @app.route('/')
+[02/09/21 14:01:29] Alguien:     fecha1.dia = local->tm_mday;
+    fecha1.mes = local->tm_mon + 1;
+    fecha1.anio = local->tm_year + 1900;
+[02/09/21 14:01:29] Alguien:     cur = mysql.connection.cursor()
+[02/09/21 14:01:29] Alguien:     cur.execute('SELECT * FROM contacts')
+[02/09/21 14:01:29] Alguien:     data = cur.fetchall()
+[02/09/21 14:01:29] Alguien:     return render_template('index.html', contacts = data)
+[02/09/21 14:01:29] Alguien: @app.route
+[03/09/21 21:50:12] ‎+52 444 285 9212 añadió a ‪+52 444 887 5251‬
+[03/09/21 21:40:38] ‪+52 444 718 5474‬: xd
+[03/09/21 21:40:42] ‪+52 444 718 5474‬: No todos
+[03/09/21 21:40:53] ‪+52 444 718 5474‬: Conozco unos que van en Pensamiento avrdd
+[03/09/21 21:40:54] ‪+52 444 718 5474‬: xd
+[03/09/21 21:41:01] ‪+52 444 718 5474‬: Por cierto
+[03/09/21 21:41:09] ‪+52 444 718 5474‬: Falta un chavo
+[04/09/21 13:56:40] Luis Gerardo  Campos IS : Por ejemplo
+[04/09/21 13:56:46] Emma IS : Ok sis, pues lo que podemos hacer es pasar el código de las funciones y lo revisamos por aquí y luego vamos haciendo el main entre todos
+[04/09/21 13:56:51] Luis Gerardo  Campos IS : El ejercicio 1 es poner los nombres
+[04/09/21 13:56:56] Luis Gerardo  Campos IS : Será algo así
+[04/09/21 13:56:58] Luis Gerardo  Campos IS : Aguanten
+[04/09/21 13:57:07] Josa: Va
+[04/09/21 13:57:23] Emma IS : SSale
+[04/09/21 13:58:01] Josa: Te leemos
+[04/09/21 13:58:16] Luis Gerardo  Campos IS : Y ya entre nosotros lo vamos completando
+[04/09/21 13:58:39] Luis Gerardo  Campos IS : Pongan sus nombres jajaja
+[04/09/21 13:58:59] Luis Gerardo  Campos IS : O día me sus nombres completos 🤣
+[04/09/21 13:59:19] Josa: O sea de qué vamos ir compiando el código que vayamos haciendo.
