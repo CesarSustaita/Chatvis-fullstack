@@ -10,6 +10,7 @@ var reader = new FileReader();
 var readerSA = new FileReader();
 
 var messages_data = [];
+var uniqueContacts;
 
 // Colores
 var colors = [
@@ -24,6 +25,9 @@ const today = new Date();
 const today_day = today.getDate();
 const today_month = today.getMonth();
 const today_year = today.getFullYear();
+
+// Variables para el diagrama Chord
+var relationships = [];
 
 
 // ************************************************************
@@ -59,6 +63,7 @@ readerSA.addEventListener('load', function (e) {
 
 // Cuando se termina de cargar el archivo se ejecuta esta funcion
 readerSA.addEventListener('loadend', function (e) {
+	showAppElements();
 	$("hr").show();
 	$("#chart").empty();
 	$("#chart").show();
@@ -85,9 +90,6 @@ readerSA.addEventListener('loadend', function (e) {
 			dates_day_month.push(msg_day_month);//guarda la fecha en formato DD MM
 		}
 	}
-
-    console.log('messages_by_day_month: ', messages_by_day_month);
-    console.log('dates_day_month: ', dates_day_month);
 
     (async () => {
         for (const day in messages_by_day_month) {
@@ -127,23 +129,23 @@ readerSA.addEventListener('loadend', function (e) {
         }
     })()
         .then(() => {
-            // generateChart(dates_day_month, orByDay, cdByDay, inByDay);
             generateChart(dates_day_month, category_counts_by_day);
         });
 
-	var uniqueContacts = messages_data.map(function(item) {
+	uniqueContacts = messages_data.map(function(item) {
             return item.author;
         }).filter(onlyUnique);
-	var relationships = createRelationshipMatrix(uniqueContacts);
+	relationships = createRelationshipMatrix(uniqueContacts);
 
 	if (uniqueContacts.length >= 99) {
-		$("#chart").css('width', '100%');
+		// $("#chart").css('width', '100%');
 		$("tbody").empty();
 		for (var i = 0; i < uniqueContacts.length; i++)
 			$("tbody").append('<tr> <th scope="row" class="col-3">' + (i + 1) + '</th>' +
 				'<td colspan="4" class="col-9" style="color:' + colors[i % colors.length] + ';">' + uniqueContacts[i] + '</td>' +
 				'</tr>');
-	} else $("#chart").css('width', '45%');
+	} 
+	// else $("#chart").css('width', '45%');
 
 	disablePopover();
 	if (uniqueContacts.length < 99) {
@@ -178,8 +180,8 @@ readerSA.addEventListener('loadend', function (e) {
 
 	makeChordDiagram(relationships, uniqueContacts, colors, true);
 
-	if (uniqueContacts.length < 99)
-		$("#chat").height($("#chart").height());
+	// if (uniqueContacts.length < 99)
+	// 	$("#chat").height($("#chart").height());
 });
 
 
@@ -188,6 +190,8 @@ readerSA.addEventListener('loadend', function (e) {
 //                  Funciones con animaciones
 // ************************************************************
 // ************************************************************
+
+
 
 
 
@@ -301,10 +305,6 @@ function generateChart(days, category_counts_by_day) {
 
 	var ctx = document.getElementById('myChart').getContext('2d');
 
-	console.log("organizacion: ", category_counts_by_day["Logistica"]);
-	console.log("codigo: ", category_counts_by_day["Codigo"]);
-	console.log("intrasendencia: ", category_counts_by_day["Intrascendente"]);
-
 	const codigo = days.map(day => category_counts_by_day["Codigo"][day]);
 	const organizacion = days.map(day => category_counts_by_day["Logistica"][day]);
 	const intrascendente = days.map(day => category_counts_by_day["Intrascendente"][day]);
@@ -344,7 +344,7 @@ function generateChart(days, category_counts_by_day) {
 			plugins: {
 				title: {
 					display: true,
-					text: 'Chart.js Bar Chart - Stacked'		//Título del gráfico
+					text: 'Distribución de mensajes en el tiempo, por categoría'		//Título del gráfico
 				},
 			},
 			responsive: true,								//Hace el gráfico responsive
@@ -361,8 +361,42 @@ function generateChart(days, category_counts_by_day) {
 			}
 		}
 	});
+}
 
-	//Ajusta el tamaño del contenedor del canvas
-	chart.canvas.parentNode.style.height = '600px';
-	chart.canvas.parentNode.style.width = '80%';
+
+
+// ************************************************************
+// ************************************************************
+//                  Chord Diagram
+// ************************************************************
+// ************************************************************
+
+// Función para actualizar el tamaño del gráfico al cambiar el tamaño de la ventana
+function resizeChordDiagram() {
+    // Actualiza el tamaño del diagrama
+	d3.select("#chart").select("svg").remove();
+	makeChordDiagram(relationships, uniqueContacts, colors, true);
+}
+
+// Event listener para actualizar el tamaño del gráfico al cambiar el tamaño de la ventana
+window.addEventListener('resize', resizeChordDiagram);
+
+
+// ************************************************************
+// ************************************************************
+//                Mostrar y ocultar elementos
+// ************************************************************
+// ************************************************************
+
+// When document is ready
+$(document).ready(function () {
+	$("#chord-chat-section").hide();
+	$("#bar-chart-section").hide();
+});
+
+// Cuando se lee un archivo
+function showAppElements() {
+	$("#chord-chat-section").show();
+	$("#bar-chart-section").show();
+	$("#instructions-section").hide();
 }

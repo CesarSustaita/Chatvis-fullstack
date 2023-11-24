@@ -64,12 +64,15 @@ function mouseoutChord(d) {
 
 // Receives a matrix with the relationships
 function makeChordDiagram(matrix, newNames, newColors, bindEvents) {
-	var size = newNames.length<99?700:window.innerHeight;
+	// var size = newNames.length<99?500:window.innerHeight;
+	var parentWidth = d3.select("#chart").node().getBoundingClientRect().width;
+	var parentHeight = d3.select("#chart").node().getBoundingClientRect().height;
 
-	var margin = { left:20, top:20, right:20, bottom:20 },
-		width = Math.min(window.innerWidth, size) - margin.left - margin.right,
-	    height = Math.min(window.innerWidth, size) - margin.top - margin.bottom,
-	    innerRadius = Math.min(width, height) * .39,
+	var size = Math.min(parentWidth, parentHeight);
+
+	var	width = parentWidth,
+	    height = parentHeight,
+	    innerRadius = Math.min(width, height) * .3,
 	    outerRadius = innerRadius * 1.1;
 
 	Names = newNames;
@@ -102,10 +105,10 @@ function makeChordDiagram(matrix, newNames, newColors, bindEvents) {
 	////////////////////////////////////////////////////////////
 
 	svg = d3.select("#chart").append("svg")
-	    .attr("width", width + margin.left + margin.right)
-	    .attr("height", height + margin.top + margin.bottom)
+	    .attr("width", width)
+	    .attr("height", height)
 		.append("g")
-	    .attr("transform", "translate(" + (width/2 + margin.left) + "," + (height/2 + margin.top) + ")");
+	    .attr("transform", "translate(" + (width/2) + "," + (height/2) + ")");
 
 	////////////////////////////////////////////////////////////
 	/////////////// Create the gradient fills //////////////////
@@ -114,7 +117,7 @@ function makeChordDiagram(matrix, newNames, newColors, bindEvents) {
 	//Create the gradients definitions for each chord
 	var grads = svg.append("defs").selectAll("linearGradient")
 		.data(chord.chords())
-	   .enter().append("linearGradient")
+		.enter().append("linearGradient")
 		.attr("id", getGradID)
 		.attr("gradientUnits", "userSpaceOnUse")
 		.attr("x1", function(d,i) { return innerRadius * Math.cos((d.source.endAngle-d.source.startAngle)/2 + d.source.startAngle - Math.PI/2); })
@@ -192,17 +195,17 @@ function makeChordDiagram(matrix, newNames, newColors, bindEvents) {
 
 	//Append the label names on the outside
 	outerArcs.append("text")
-  .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
-  /*.attr("dy", ".15em")*/
-  
-  .attr("class", "titles")
-  .attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
-  .attr("transform", function(d) {
-    return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
-    + "translate(" + (outerRadius + 10) + ")"
-    + (d.angle > Math.PI ? "rotate(180)" : "");
-  })
-  .text(function(d,i) { return Names[i]; });
+		.each(function (d) { d.angle = (d.startAngle + d.endAngle) / 2; })
+		/*.attr("dy", ".15em")*/
+
+		.attr("class", "titles")
+		.attr("text-anchor", function (d) { return d.angle > Math.PI ? "end" : null; })
+		.attr("transform", function (d) {
+			return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+				+ "translate(" + (outerRadius + 10) + ")"
+				+ (d.angle > Math.PI ? "rotate(180)" : "");
+		})
+		.text(function (d, i) { return Names[i]; });
 	/*outerArcs.append("text")
 		.attr("class", "titles")
 		.attr("dy", function(d,i) { return (d.endAngle > 90*Math.PI/180 & d.startAngle < 270*Math.PI/180 ? 25 : -16); })
