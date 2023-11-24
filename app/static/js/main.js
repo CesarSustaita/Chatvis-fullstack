@@ -268,13 +268,22 @@ function createRelationshipMatrix(uniqueContacts) {
 	return relationships;
 }
 
+function escapeHtml(unsafe) {
+	return unsafe
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;")
+		.replace(/'/g, "&#039;");
+}
+
 // Gives format to the html whatsapp style messages
 function makeMessage(message_data, author_index, author_same_as_previous) {
 	var message = `<div class="msg">
 						<div class="bubble {0}">
 							<div class="txt">
 								{1}
-								<p class="message {2}">${message_data.message}</p>
+								<p class="message {2}">${escapeHtml(message_data.message)}</p>
 								<span class="timestamp">${formatWhatsappDate(message_data.date)}</span>
 							</div>
 							{3}
