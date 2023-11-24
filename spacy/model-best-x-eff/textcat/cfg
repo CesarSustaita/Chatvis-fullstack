@@ -1,0 +1,9 @@
+{
+  "labels":[
+    "Codigo",
+    "Intrascendente",
+    "Logistica"
+  ],
+  "threshold":0.0,
+  "positive_label":null
+}
