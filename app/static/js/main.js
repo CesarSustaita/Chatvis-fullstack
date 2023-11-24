@@ -65,9 +65,24 @@ readerSA.addEventListener('load', function (e) {
 readerSA.addEventListener('loadend', function (e) {
 	console.clear();
 	showAppElements();
+	// Check if #myChart exists
+	if ($("#myChart").length) {
+		$("#myChart").remove();
+	}
+
+	if ($("#loading-message").length) {
+		$("#loading-message").remove();
+	}
+
 	$("hr").show();
 	$("#chart").empty();
 	$("#chart").show();
+
+	// Add loading spinner to bar chart div
+	$("#bar-chart-section").prepend('<div id="loading-message"' +
+		'style="text-align:center; padding: 15vh 30vw; font-size:1.5em; color:#5b5b5b; font-style:italic;">' +
+		'<span >🧠 Clasificando mensajes...</span>' +
+		'</div>');
 
 	var dates_day_month = [];
     var messages_by_day_month = [];
@@ -133,6 +148,9 @@ readerSA.addEventListener('loadend', function (e) {
         }
     })()
         .then(() => {
+			if ($("#loading-message").length) {
+				$("#loading-message").remove();
+			}
             generateChart(dates_day_month, category_counts_by_day);
         });
 
@@ -322,10 +340,22 @@ function generateChart(days, category_counts_by_day) {
 	const organizacion = days.map(day => category_counts_by_day["Logistica"][day]);
 	const intrascendente = days.map(day => category_counts_by_day["Intrascendente"][day]);
 
+	// Colores aleatorios
+	// color_index = Math.floor(Math.random() * colors.length);
+	// var color1 = colors[color_index % colors.length];
+	// var color2 = colors[(color_index + 1) % colors.length];
+	// var color3 = colors[(color_index + 2) % colors.length];
+	// var color1 = "#C6DE89";
+	// var color2 = "#eed27a";
+	// var color3 = "#d4d4d4";
+
+
 	//Crea una nueva instancia de Chart.js, configurando un gráfico de barras apiladas
 	var chart = new Chart(ctx, {
 		//Tipo de gráfico de barras
 		type: 'bar',
+
+		
 
 		//Datos para el conjunto de datos del gráfico
 		data: {

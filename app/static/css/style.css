@@ -110,6 +110,12 @@ svg text:hover {
   background-size: cover;
 }
 
+/* #bar-chart-container {
+  background-color: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+} */
+
 body {
   background-color: #1dcaff21;
   font-family: "Helvetica Neue", Helvetica;
