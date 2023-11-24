@@ -34,7 +34,7 @@ train_docs = processDocs(training_msgs)
 valid_docs = processDocs(validatn_msgs)
 
 doc_bin_t = DocBin(docs=train_docs)
-doc_bin_t.to_disk('model-training/BinDocs/train.spacy')
+doc_bin_t.to_disk('model-training/BinDocs2/train.spacy')
 
 doc_bin_v = DocBin(docs=valid_docs)
-doc_bin_v.to_disk('model-training/BinDocs/valid.spacy')
+doc_bin_v.to_disk('model-training/BinDocs2/valid.spacy')

@@ -163,3 +163,146 @@
 [01/09/21 19:01:38] Josa: No aparece en negritas
 [01/09/21 19:02:04] Josa: Pero esta bien, es que whats lo cambia cuando detecta eso.
 [01/09/21 19:08:32] Emma IS : Si, bien raro bro bueno, que bien que no aparece así
+[06/09/22, 11:54:19] ‪+52 444 718 5474‬: Quién está a cargo?
+[06/09/22, 11:54:29] Mikel Barajas: Podría ser yo
+[06/09/22, 11:54:35] Mikel Barajas: Si están de acuerdo los demás?
+[06/09/22, 11:54:42] Raul Moreno: Yo si
+[06/09/22, 11:54:53] ‪+52 444 718 5474‬: Yo no
+[06/09/22, 12:08:01] ‪+52 444 285 9212‬: Si
+‎[07/09/22, 15:29:45] Raul Moreno: Tarea-2-REQUERIMIENTOS Y TRABAJO EN EQUIPO 2022-otoño.pdf • ‎2 páginas ‎documento omitido
+[07/09/22, 15:30:18] Raul Moreno: El profesor ya subió los requerimientos de la tarea, se los pasó para que lo tengan a la mano
+[07/09/22, 15:32:14] Mikel Barajas: Hay que escribir nuestro nombre
+[07/09/22, 15:32:18] Mikel Barajas: Para tenerlo de una vez
+[07/09/22, 15:32:20] Mikel Barajas: Por apellidos
+[07/09/22, 15:32:22] Mikel Barajas: Empiezo yo
+[07/09/22, 15:32:53] Mikel Barajas: Nombre: Barajas Marínes Mikel Ignacio
+[07/09/22, 15:33:05] Mikel Barajas: Lo de nombre es para buscarlo más rápido por chat
+[07/09/22, 15:33:45] Montserrat Gallegos: Hernández Gallegos Montserrat Ximena
+[07/09/22, 15:33:50] Raul Moreno: Cerda Moreno Carlos Raul
+[07/09/22, 15:37:04] ‪+52 444 380 2885‬: Abarca Cárcamo Alan Yahir
+[07/09/22, 15:37:27] ‪+52 444 285 9212‬: Ojeda Gutiérrez Fernando Juriel
+[07/09/22, 15:43:09] ‪+52 444 374 1420‬: Hernández Guerrero Sergio Andrés
+[07/09/22, 15:43:52] Alfredo Villaseñor: Villaseñor Monsiváis Alfredo
+[07/09/22, 16:03:32] ‪+52 444 136 6505‬: Rojas Martínez Jorge Ángel
+[07/09/22, 16:39:57] Kevin Márquez: Marquez Guerrero Kevin
+[07/09/22, 17:35:37] ‪+52 444 718 5474‬: Hernández Salazar Isaih Roberto
+[07/09/22, 21:37:29] ‪+52 444 718 5474‬: Como propuesta para hacer los códigos les recomiendo que antes de programar cualquier cosa definamos el algoritmo en una especie de pseudocódigo y veamos si el algoritmo es correcto, para que a la hora de programar haya los menos errores y problemas posibles
+[07/09/22, 21:43:40] ‪+52 444 285 9212‬: @5214441190036 dame admin
+[07/09/22, 21:45:29] Kevin Márquez: O hacer un diagrama de flujo
+[07/09/22, 21:49:43] Raul Moreno: Yo también digo que está bien eso, analizar los problemas antes de hacerlos siempre ayuda
+[07/09/22, 22:00:39] Kevin Márquez: Estuve leyendo el programa y pide 7 cosas diferentes, propongo que nos dividamos  las 7 actividades, y luego ver si entre esas 7 hay una parte de algoritmo en comun para luego resumirlo
+[07/09/22, 22:01:30] Mikel Barajas: Me parece bien lo de dividir
+[07/09/22, 22:01:36] Mikel Barajas: Son 7 problemas más el menú
+[07/09/22, 22:01:40] ‪+52 444 718 5474‬: Hay que ir viendo porque hay algunos que realmente están muy fáciles man
+[07/09/22, 22:01:40] Mikel Barajas: En total 8 cosas
+[07/09/22, 22:01:55] ‪+52 444 718 5474‬: Por ejemplo el Factorial es un ciclo nada más
+[07/09/22, 22:02:11] Mikel Barajas: Propongo que cada problema lo tengamos en su propia función y solo lo llamemos desde el menú
+[10/09/22, 13:58:34] Mikel Barajas: Los demás hacemos pareja
+[10/09/22, 13:59:41] Mikel Barajas: Dejen llego a mi casa y mando una propuesta de lista de convención
+[10/09/22, 13:59:47] Mikel Barajas: Vayan pensando en otras ustedes también
+[10/09/22, 13:59:56] Mikel Barajas: Y hacemos una final
+[10/09/22, 14:00:07] Mikel Barajas: O si quieren cambiar alguna de las que mande también digan
+[10/09/22, 14:00:11] Mikel Barajas: Pero todo por aquí
+[10/09/22, 14:00:55] Mikel Barajas: Mientras llego por favor manden su nombre los que aún no lo mandan
+[00/00/00, 00:00:00] fake: Entonces como quedaron?
+[00/00/00, 00:00:00] fake: Que me toca a mí?
+[00/00/00, 00:00:00] fake: Que me toca a mí?
+[00/00/00, 00:00:00] fake: Que me toca a mí?
+[00/00/00, 00:00:00] fake: Que me toca a mí?
+[10/09/22, 15:16:35] Mikel Barajas: Oigan hay problema si nomás asignó las parejas aleatoriamente?
+[10/09/22, 15:22:12] Mikel Barajas: Miren
+[10/09/22, 15:22:19] Mikel Barajas: Esta es mi propuesta de convenciones
+[10/09/22, 15:22:38] Mikel Barajas: *Convenciones de Mensajes*
+
+•Incluir asunto al principio del mensaje.
+•Etiquetar a las personas involucradas en el mensaje.
+•Si se esta respondiendo a un mensaje ya enviado, usar la función de responder mensaje de whatsapp.
+
+_Ejemplo:_
+
+*Asunto*
+@nombre1 @nombre2
+
+Hola, creo que… (texto del mensaje)
+[10/09/22, 15:22:59] Mikel Barajas: *Convenciones de código*
+
+_Naming Conventions (nombres de variables y funciones)_
+•Nombres en Inglés.
+•Nombres significativos, aunque queden largos.
+•Usar snake_case (ejemplo: variable_name).
+•Usar i, j, y k como contadores dentro de los ciclos.
+•Declarar variables cuando sea necesario (no todas al inicio).
+
+_Funciones_
+•Incluir prototipos de las funciones.
+•Hacer una función *void* que será llamada desde el menú, y que maneje las entradas y salidas.
+•Hacer otras funciones si se requiere un proceso más complejo, que se llame desde la funcion anterior.
+
+_Entradas y salidas (scanf, printf)_
+•Mensajes en español.
+•*No* escribir los mensajes a manera de pregunta. (Ejemplo: "¿Cuál es la escala de temperatura?")
+•Si una entrada tiene opciones específicas, imprimirlas entre corchetes.
+    ·Ejemplos:
+    ·"Confirmar operación [Y/N]:"
+    ·Escala de temperatura [C, F, R]: "
+
+_Comentarios_
+•Todas las funciones deben ir comentadas.
+[10/09/22, 15:25:06] Mikel Barajas: *Tareas*
+
+•*Main:* Isaih @5214447185474
+•*a) Bisiesto:* Montse @5214871594881
+•*b) Días:* Raul @5214441190036 Joe @5214441366505
+•*c) Temperatura:* Fernando @5214442859212
+•*d) Edades:* Alan @5214443802885 Alfredo @5214442145259
+•*e) Trigonometría:*  Sergio @5214443741420 Kevin @5214443163254
+•*f) Estadística:* Mikel @yo Isaí @5214441932391
+•*g) Factorial:* Rogelio @5214448875251
+[10/09/22, 15:25:15] Mikel Barajas: Qué les parece?
+[10/09/22, 15:25:45] Mikel Barajas: Intenté respetar a los que les tocó juntos en la primera tarea según
+[10/09/22, 15:25:59] Mikel Barajas: Denle like si están de acuerdo
+[10/09/22, 15:29:58] ‪+52 444 718 5474‬: Ese es el main prototipo
+[10/09/22, 15:30:19] ‪+52 444 718 5474‬: En cada case habrá una función obviamente, la cosa es la siguiente
+[10/09/22, 15:30:46] ‪+52 444 718 5474‬: Necesito que en las funciones me especifiquen si lo están mandando por parámetro o por retorno
+[10/09/22, 15:30:54] ‪+52 444 718 5474‬: Para así saber qué variables necesito
+[11/09/22, 16:57:48] ‪+52 444 380 2885‬: ah caray, yo ya andaba haciendo uno, pero llevaba poco
+
+Déjame checar eso que me dices
+[11/09/22, 17:22:36] ‪+52 444 136 6505‬: @5214441190036 avisas cuando puedas
+[11/09/22, 17:22:53] Raul Moreno: Ya puedo, como quieres hacerlo?
+[11/09/22, 17:27:05] ‪+52 444 136 6505‬: Como vamos a regresar el resultado? por parametro o retorno?
+[11/09/22, 17:28:23] Raul Moreno: Creo que no debemos regresar ningún valor, o si @5214445027537 ?
+[11/09/22, 17:40:20] ‪+52 444 136 6505‬: Esto es lo que llevo
+[11/09/22, 17:41:19] Raul Moreno: Chin creo que llevamos mas o menos lo mismo jajaa
+[11/09/22, 17:41:22] Raul Moreno: Deja te lo mando
+[11/09/22, 17:41:53] ‪+52 444 136 6505‬: Va
+12/09/22, 21:08:43] ‪+52 444 718 5474‬: Listo
+[12/09/22, 21:08:49] ‪+52 444 718 5474‬: Todo funciona correctamente
+[12/09/22, 21:09:18] ‪+52 444 718 5474‬: Básicamente y en términos generales... está terminado
+[12/09/22, 21:09:37] Mikel Barajas: Mañana todos hay que probar las funciones para ver qué no se pase nada
+[15/09/22, 16:32:25] ‪+52 444 136 6505‬: Checa si es bisiesto el año
+[15/09/22, 16:34:11] Mikel Barajas: Pero por qué en un for?
+[15/09/22, 16:39:32] Mikel Barajas: Bueno aún así, si lo corre en replit no le va a dar el warning
+[15/09/22, 16:39:46] Mikel Barajas: Ya quedó el archivo,solo me falta el comentario de los nombres
+[15/09/22, 16:39:59] Mikel Barajas: Le hice unos cambios para que quedara con las convenciones
+[15/09/22, 16:40:04] Mikel Barajas: De variables en inglés y así
+[15/09/22, 16:40:13] Mikel Barajas: Además cambié el borde para que tuviera esquinas
+[15/09/22, 16:40:19] Mikel Barajas: Dejen lo mando por aquí para que lo vean
+[16/03/18 3:29:33 p.m.] sdfsdfds: yo intentaré hasta el otro año, y aquí nos mandó el siguiente mensaje la Universidad:
+
+"En comunicación vía telefónica con SNI Conacyt del día de hoy, respecto a fallas en la plataforma para el envío de las solicitudes de nuevo ingreso o renovación no vigente, les comento lo siguiente.
+Aunque el plazo de la Convocatoria SNI se vence hoy a las 6 de la tarde para los solicitantes de nuevo ingreso o renovación no vigente, parece que la plataforma seguirá abierta hasta que el problema de falta de botón de envío de la solicitud sea resuelto. Se espera que el problema se resuelva en cualquier momento y puedan enviar las solicitudes. Sin embargo, de no ser así, el sistema estará abierto el fin de semana o principios de la semana entrante."
+[16/03/18 3:29:33 p.m.] Zac Sodel: en conclusión sigan pegados a su computadora hasta que parezca el botón de enviar 🤣
+[16/03/18 3:30:36 p.m.] ‪+52 222 547 8284‬: Yo, hoy sin falta.
+[16/03/18 3:38:18 p.m.] Hector Gerardo: Ya.  La firma.  
+
+Sigo en espera de botón
+[16/03/18 3:42:03 p.m.] ‪+52 662 298 2632‬: ¿qué firma?
+[03/10/18 4:35:08 p.m.] ‪+52 999 338 3682‬: En camino...
+[03/10/18 4:50:01 p.m.] ‪+52 55 4054 6178‬: Yo voy en el autobús
+[03/10/18 4:55:58 p.m.] Reyes Juarez: Yo dalgo a las 500 pm, llego a H Cocoyoc por las 7:30 pm
+[03/10/18 5:23:08 p.m.] Reyes Juarez: Quien se regresa el VIERNES? Podemos rentar un servicio de Shottle
+[03/10/18 5:40:09 p.m.] ‪+52 55 4054 6178‬: Ya en el hotel
+[03/10/18 5:53:56 p.m.] ‪+52 222 547 8284‬: Yo también ya en el hotel.
+[04/10/18 6:42:10 p.m.] ‪+52 999 338 3682‬: Alguien sabe q si para libros en digital se requiere aaber el numero de hojas para el isbn
+[04/10/18 6:42:48 p.m.] ‪+52 999 338 3682‬: O en esos casos no se requiere sabee al tramitarlo
