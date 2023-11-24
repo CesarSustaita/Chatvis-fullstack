@@ -15,9 +15,9 @@ def processDocs(messages):
     return docs
 
 
-msgs_code = msg_parser.getMessages('training-data/codigo.txt')
-msgs_logistica = msg_parser.getMessages('training-data/logistica.txt')
-msgs_intrascendente = msg_parser.getMessages('training-data/intrascendente.txt')
+msgs_code = msg_parser.getMessages('model-training/training-data/codigo.txt')
+msgs_logistica = msg_parser.getMessages('model-training/training-data/logistica.txt')
+msgs_intrascendente = msg_parser.getMessages('model-training/training-data/intrascendente.txt')
 
 msgs = [(text, "Codigo") for text in msgs_code] + \
         [(text, "Logistica") for text in msgs_logistica] + \
@@ -34,7 +34,7 @@ train_docs = processDocs(training_msgs)
 valid_docs = processDocs(validatn_msgs)
 
 doc_bin_t = DocBin(docs=train_docs)
-doc_bin_t.to_disk('./BinDocs/train.spacy')
+doc_bin_t.to_disk('model-training/BinDocs/train.spacy')
 
 doc_bin_v = DocBin(docs=valid_docs)
-doc_bin_v.to_disk('./BinDocs/valid.spacy')
+doc_bin_v.to_disk('model-training/BinDocs/valid.spacy')
