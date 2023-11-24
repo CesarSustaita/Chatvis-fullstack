@@ -69,7 +69,7 @@
 [30/08/21 14:03:58] Josa: Si, me parece bien.
 [30/08/21 14:05:11] Luis Gerardo  Campos IS : Ya le entendí
 [30/08/21 14:05:20] Josa: Sisi
-[30/08/21 14:05:42] Emma IS : Jajaja sale, si quieren ahorita voy modelando esa función y la paso porque para que la corrijamos
+[30/08/21 14:05:42] Emma IS : sale, si quieren ahorita voy modelando esa función y la paso porque para que la corrijamos
 [30/08/21 14:06:11] Luis Gerardo  Campos IS : Va
 [30/08/21 14:06:17] Josa: Va va
 [30/08/21 14:08:44] Josa: Miren
@@ -144,7 +144,6 @@
 [30/08/21 19:56:37] Josa: Agregue la estructura
 [30/08/21 19:57:01] Josa: Y como puso estructura, entonces no necesitariamos el switch que esta en aritmetica
 [30/08/21 19:59:23] Luis Gerardo  Campos IS : Ohhhh okey
-[30/08/21 20:00:09] Josa: JAJAJA
 [30/08/21 20:00:12] Josa: Si?
 [30/08/21 20:03:53] Emma IS : Okok ya veo, queda bien voy ahorita a escribirlo y probarlo
 [30/08/21 20:04:13] Emma IS : En un momento jaja aguántame tantito
@@ -155,7 +154,6 @@
 [01/09/21 18:48:22] Emma IS : Un momento que whatsapp le esta moviendo a alguna combinación de caracteres
 [01/09/21 18:49:40] Josa: Esta perfecto Emma
 [01/09/21 18:49:59] Josa: Aunque todavía no se termine de mandar
-[01/09/21 18:50:03] Josa: Jajaja
 [01/09/21 18:50:21] Emma IS : Los comentarios están quedando medio raros jeje
 [01/09/21 18:51:00] Josa: Jajaja por qué dices?
 [01/09/21 18:54:30] Emma IS : Ah no jajaja es que en mi compu el comentario de /**Bibliotecas**/ se ve em negritas y solo se lee /Bibliotecas/
@@ -273,7 +271,7 @@ Déjame checar eso que me dices
 [11/09/22, 17:27:05] ‪+52 444 136 6505‬: Como vamos a regresar el resultado? por parametro o retorno?
 [11/09/22, 17:28:23] Raul Moreno: Creo que no debemos regresar ningún valor, o si @5214445027537 ?
 [11/09/22, 17:40:20] ‪+52 444 136 6505‬: Esto es lo que llevo
-[11/09/22, 17:41:19] Raul Moreno: Chin creo que llevamos mas o menos lo mismo jajaa
+[11/09/22, 17:41:19] Raul Moreno: Chin creo que llevamos mas o menos lo mismo
 [11/09/22, 17:41:22] Raul Moreno: Deja te lo mando
 [11/09/22, 17:41:53] ‪+52 444 136 6505‬: Va
 12/09/22, 21:08:43] ‪+52 444 718 5474‬: Listo

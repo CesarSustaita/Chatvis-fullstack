@@ -114,10 +114,13 @@ readerSA.addEventListener('loadend', function (e) {
                 })
                     .then(response => response.json())
                     .then(data => {
-						console.log('-------------------');
-						console.log('message: ', msg.message);
-						console.log('category: ', data.category);
-						console.log('scores: ', data.scores);
+						console.log(' ');
+						console.log('📅', day);
+						let cat_icon = data.category == 'Logistica' ? '🗣️' : data.category == 'Codigo' ? '🧑‍💻' : data.category == 'Intrascendente' ? '🎲' : '🤷';
+						console.log(cat_icon, data.category);
+						console.log(data.scores);
+						console.log('💬', msg.message);
+						console.log(' ');
 
 						category_counts_by_day[data.category][day]++;
                     })
