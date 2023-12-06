@@ -5,14 +5,25 @@ from flask import jsonify
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    """
+    Renders the index.html template.
 
-@app.route('/hello-world')
-def hello_world():
-    return render_template('hello-world.html')
+    Returns:
+        The rendered index.html template.
+    """
+    return render_template('index.html')
 
 @app.route('/classify', methods=['POST'])
 def classify_message():
+    """
+    Classifies a message using a pre-trained model.
+
+    Returns:
+        A JSON response containing the predicted category and scores.
+
+    Raises:
+        Exception: If an error occurs during the classification process.
+    """
     try:
         message = request.json['message']
 

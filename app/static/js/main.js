@@ -1,3 +1,13 @@
+/**
+ * This file contains the main JavaScript code for Semantic ChatVis with Flask.
+ * It includes global variables, functions for handling file input, data parsing, chart generation, and auxiliary functions.
+ * The code is divided into sections for functions without animations, functions with animations, and auxiliary functions.
+ * 
+ * @file FILEPATH: /Semantic-ChatVis-with-Flask/app/static/js/main.js
+ * @global
+ * @namespace
+ */
+
 // Variables globales
 
 // Mensaje de error al cargar el archivo
@@ -36,6 +46,11 @@ var relationships = [];
 // ************************************************************
 // ************************************************************
 
+/**
+ * Esta función se ejecuta cuando el usuario selecciona un archivo.
+ * Se encarga de verificar que el archivo sea de tipo .txt y de cargarlo.
+ * 
+ */
 inputSA.addEventListener("change", function () {
 	if (this.files && this.files[0]) {
 		var whatsChat = this.files[0];
@@ -53,6 +68,11 @@ inputSA.addEventListener("change", function () {
 });
 
 // Cuando se carga el archivo se ejecuta esta funcion
+/**
+ * Esta función se ejecuta cuando se carga el archivo.
+ * Se encarga de parsear los datos como mensajes de whatsapp.
+ * 
+ */
 readerSA.addEventListener('load', function (e) {
 	try {
 		messages_data = whatsappChatParser.parseString(e.target.result);
@@ -62,6 +82,11 @@ readerSA.addEventListener('load', function (e) {
 });
 
 // Cuando se termina de cargar el archivo se ejecuta esta funcion
+/**
+ * Esta función se ejecuta cuando se termina de leer el archivo.
+ * Se encarga de procesar los datos y generar los gráficos.
+ * 
+ */
 readerSA.addEventListener('loadend', function (e) {
 	console.clear();
 	showAppElements();
@@ -70,10 +95,12 @@ readerSA.addEventListener('loadend', function (e) {
 		$("#myChart").remove();
 	}
 
+	// Check if #loading-message exists
 	if ($("#loading-message").length) {
 		$("#loading-message").remove();
 	}
 
+	// Check if #chart exists
 	$("hr").show();
 	$("#chart").empty();
 	$("#chart").show();
@@ -84,6 +111,7 @@ readerSA.addEventListener('loadend', function (e) {
 		'<span >🧠 Clasificando mensajes...</span>' +
 		'</div>');
 
+	// Arreglos que guardan las fechas (por ejemplo: '04 Nov') y los mensajes por estas fechas
 	var dates_day_month = [];
     var messages_by_day_month = [];
 
@@ -93,23 +121,29 @@ readerSA.addEventListener('loadend', function (e) {
 	category_counts_by_day["Codigo"] = [];
 	category_counts_by_day["Intrascendente"] = [];
 
+	// Itera sobre los mensajes
 	for (var i = 0; i < messages_data.length; i++) {
+		// Obtiene la fecha del mensaje en formato DD MM
         var msg_day_month = formatWhatsappDayMonth(messages_data[i].date);
 
+		// Si no existe el arreglo de mensajes para esta fecha, lo crea
 		if (!messages_by_day_month[msg_day_month]) {
 			messages_by_day_month[msg_day_month] = [];
 		}
 
+		// Agrega el mensaje al arreglo de mensajes de la fecha actual
 		messages_by_day_month[msg_day_month].push(messages_data[i].message);
 
+		// Si no existe la fecha en el arreglo de fechas, la agrega
 		if (!dates_day_month.includes(msg_day_month)) {//Si la fecha actual no existe en la lista lo guarda
 			dates_day_month.push(msg_day_month);//guarda la fecha en formato DD MM
 		}
 	}
 
+	// Genera una llamada asíncrona para clasificar los mensajes
     (async () => {
         for (const day in messages_by_day_month) {
-            // Inicializamos el contador de mensajes intrascendentes para este día
+            // Inicializamos los contadores de mensajes por categoría para este día
 			category_counts_by_day["Logistica"][day] = 0;
 			category_counts_by_day["Codigo"][day] = 0;
 			category_counts_by_day["Intrascendente"][day] = 0;
@@ -120,7 +154,7 @@ readerSA.addEventListener('loadend', function (e) {
                     message: messages_by_day_month[day][i]
                 };
 
-                // Realiza la clasificación del mensaje
+                // Hacemos una llamada asíncrona a la API para clasificar el mensaje
                 await fetch('/classify', {
                     method: 'POST',
                     headers: {
@@ -130,6 +164,7 @@ readerSA.addEventListener('loadend', function (e) {
                 })
                     .then(response => response.json())
                     .then(data => {
+						// Imprime el mensaje y su clasificación en consola
 						console.log(' ');
 						console.log('📅', day);
 						let cat_icon = data.category == 'Logistica' ? '🗣️' : data.category == 'Codigo' ? '🧑‍💻' : data.category == 'Intrascendente' ? '🎲' : '🤷';
@@ -148,27 +183,32 @@ readerSA.addEventListener('loadend', function (e) {
         }
     })()
         .then(() => {
+			// Si existe el mensaje de carga, lo elimina
 			if ($("#loading-message").length) {
 				$("#loading-message").remove();
 			}
+			// Genera el gráfico de barras con los datos obtenidos
             generateChart(dates_day_month, category_counts_by_day);
         });
 
+	// Obtiene los contactos únicos
 	uniqueContacts = messages_data.map(function(item) {
             return item.author;
         }).filter(onlyUnique);
+	
+	// Crea la matriz de relaciones
 	relationships = createRelationshipMatrix(uniqueContacts);
 
+
 	if (uniqueContacts.length >= 99) {
-		// $("#chart").css('width', '100%');
 		$("tbody").empty();
 		for (var i = 0; i < uniqueContacts.length; i++)
 			$("tbody").append('<tr> <th scope="row" class="col-3">' + (i + 1) + '</th>' +
 				'<td colspan="4" class="col-9" style="color:' + colors[i % colors.length] + ';">' + uniqueContacts[i] + '</td>' +
 				'</tr>');
 	} 
-	// else $("#chart").css('width', '45%');
 
+	// Deshabilita el popover
 	disablePopover();
 	if (uniqueContacts.length < 99) {
 		$("#chat").empty(); // Clean old chat
@@ -182,7 +222,9 @@ readerSA.addEventListener('loadend', function (e) {
 		$("#tabla").show();
 	}
 
+	// Itera sobre todos los mensajes
 	for (var i = 0; i < messages_data.length; i++) {
+		// Obtiene el índice del contacto actual
 		var index = uniqueContacts.indexOf(messages_data[i].author);
 
 		if (i > 0) {
@@ -190,7 +232,7 @@ readerSA.addEventListener('loadend', function (e) {
 			if (index != index2)
 				relationships[index2][index]++;
         }
-		
+	
 		if (uniqueContacts.length < 99) {
             let author_same_as_previous = i > 0 && messages_data[i - 1].author == messages_data[i].author;
 			var message = makeMessage(messages_data[i], index, author_same_as_previous);
@@ -200,10 +242,11 @@ readerSA.addEventListener('loadend', function (e) {
 		
 	}
 
-	makeChordDiagram(relationships, uniqueContacts, colors, true);
+	// Crea el diagrama Chord de forma asíncrona
+	(async () => {
+		await makeChordDiagram(relationships, uniqueContacts, colors, true);
+	})();
 
-	// if (uniqueContacts.length < 99)
-	// 	$("#chat").height($("#chart").height());
 });
 
 
@@ -224,16 +267,65 @@ readerSA.addEventListener('loadend', function (e) {
 // ************************************************************
 // ************************************************************
 
+// Esta función limita la frecuencia con la que se ejecuta una función
+/**
+ * Esta función limita la frecuencia con la que se ejecuta una función.
+/**
+ * Esta función limita la frecuencia con la que se ejecuta una función.
+ * @param {*} func La función que se desea ejecutar.
+ * @param {*} wait El tiempo de espera en milisegundos.
+ * @returns La función con la limitación de frecuencia.
+ */
+function debounce(func, wait) {
+	let timeout;
+	return function executedFunction(...args) {
+		const later = () => {
+			clearTimeout(timeout);
+			func(...args);
+		};
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+	};
+};
+
+/**
+ * Esta función verifica si una fecha es la fecha de hoy.
+ * @param {*} date  La fecha que se desea verificar.
+ * @returns  True si la fecha es la fecha de hoy, False en caso contrario.
+ */
 function isToday(date) {
 	return date.getDate() === today_day &&
 		date.getMonth() === today_month &&
 		date.getFullYear() === today_year;
 }
 
+/**
+ * Esta función da formato a una fecha para mostrarla en el chat de whatsapp.
+ * @param {*} date  La fecha que se desea formatear.
+ * @returns  La fecha formateada.
+ * @example
+ * // returns '12:34'
+ * getTimeFormatted(new Date('2021-01-01T12:34:56'))
+ */
 function getTimeFormatted(date) {
 	return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
 
+/**
+ * Esta función da formato a una fecha para mostrarla en el chat de whatsapp.
+ * Si la fecha es de hoy, solo muestra la hora.
+ * Si la fecha no es de hoy, muestra el día de la semana, el día del mes, el mes y la hora.
+ * Si la fecha no es de este año, muestra el año.
+ * @param {*} date_string  La fecha que se desea formatear.
+ * @returns  La fecha formateada.
+ * @example
+ * // returns '12:34' (if today is 2023-04-11)
+ * formatWhatsappDate('2023-04-11T12:34:56')
+ * // returns 'Sat 04 Nov 12:34' (if today is not 2023-04-11)
+ * formatWhatsappDate('2023-04-11T12:34:56')
+ * // returns 'Sat 04 Nov 23 12:34' (if current year is not 2023)
+ * formatWhatsappDate('2023-04-11T12:34:56')
+ */
 function formatWhatsappDate(date_string) {
 	date = new Date(date_string);
 	let formatted_date = '';
@@ -271,10 +363,31 @@ function formatWhatsappDayMonth(date) {
 }
 
 // Returns unique values from an array
+/**
+ * Esta función se usa para obtener los valores únicos de un arreglo.
+ * @param {*} value El elemento que se está evaluando.
+ * @param {*} index El índice del elemento que se está evaluando.
+ * @param {*} self El arreglo que se está evaluando.
+ * @returns  True si el primer índice en el cual se encuentra value es igual al índice actual, False en caso contrario.
+ * @example
+ * // returns [1, 2, 3]
+ * [1, 2, 2, 3, 3, 3].filter(onlyUnique)
+ * @example
+ * // returns ['a', 'b', 'c']
+ * ['a', 'b', 'b', 'c', 'c', 'c'].filter(onlyUnique)
+ */
 function onlyUnique(value, index, self) {
 	return self.indexOf(value) === index;
 }
 
+/**
+ * Esta función crea una matriz de relaciones.
+ * @param {*} uniqueContacts  Los contactos únicos.
+ * @returns  La matriz de relaciones.
+ * @example
+ * // returns [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+ * createRelationshipMatrix(['contact1', 'contact2', 'contact3'])
+ */
 function createRelationshipMatrix(uniqueContacts) {
 	var relationships = [];
 	for (var i = 0; i < uniqueContacts.length; i++) {
@@ -286,6 +399,14 @@ function createRelationshipMatrix(uniqueContacts) {
 	return relationships;
 }
 
+/**
+ * Esta función escapa los caracteres especiales de un string para que pueda ser mostrado en el chat de whatsapp.
+ * @param {*} unsafe  El string que se desea escapar.
+ * @returns  El string escapado.
+ * @example
+ * // returns '&lt;script&gt;alert("Hello");&lt;/script&gt;'
+ * escapeHtml('<script>alert("Hello");</script>')
+ */
 function escapeHtml(unsafe) {
 	return unsafe
 		.replace(/&/g, "&amp;")
@@ -296,6 +417,13 @@ function escapeHtml(unsafe) {
 }
 
 // Gives format to the html whatsapp style messages
+/**
+ * Esta función da formato a los mensajes para mostrarlos en el chat de whatsapp.
+ * @param {*} message_data  El mensaje que se desea formatear.
+ * @param {*} author_index  El índice del autor del mensaje.
+ * @param {*} author_same_as_previous  True si el autor del mensaje es el mismo que el del mensaje anterior, False en caso contrario.
+ * @returns  El mensaje formateado.
+ */
 function makeMessage(message_data, author_index, author_same_as_previous) {
 	var message = `<div class="msg">
 						<div class="bubble {0}">
@@ -321,6 +449,12 @@ function makeMessage(message_data, author_index, author_same_as_previous) {
 	}
 }
 
+/**
+ * Este código es una función auxiliar para dar formato a un string.
+ * @param {*} args  Los argumentos que se desean formatear.
+ * @returns  El string formateado.
+ * 
+ */
 String.prototype.format = function () {
 	a = this;
 	for (k in arguments) {
@@ -329,6 +463,11 @@ String.prototype.format = function () {
 	return a
 }
 
+/**
+ * Genera el gráfico de barras con los datos obtenidos.
+ * @param {*} days  Los días que se desean mostrar en el gráfico.
+ * @param {*} category_counts_by_day  Los mensajes por categoría por día.
+ */
 function generateChart(days, category_counts_by_day) {
 	// Obtiene el contexto del elemento canvas con el id 'myChart'
 	$("#myChart").remove();
@@ -349,14 +488,10 @@ function generateChart(days, category_counts_by_day) {
 	// var color2 = "#eed27a";
 	// var color3 = "#d4d4d4";
 
-
 	//Crea una nueva instancia de Chart.js, configurando un gráfico de barras apiladas
 	var chart = new Chart(ctx, {
 		//Tipo de gráfico de barras
 		type: 'bar',
-
-		
-
 		//Datos para el conjunto de datos del gráfico
 		data: {
 			labels: days,		//Etiquetas en el eje X (días)
@@ -415,14 +550,26 @@ function generateChart(days, category_counts_by_day) {
 // ************************************************************
 
 // Función para actualizar el tamaño del gráfico al cambiar el tamaño de la ventana
-function resizeChordDiagram() {
+/** 
+ * Esta función se ejecuta cuando se cambia el tamaño de la ventana.
+ * Se encarga de actualizar el tamaño del diagrama Chord.
+ *
+ * @async
+ * @returns  La promesa de actualizar el tamaño del diagrama.
+ */
+async function resizeChordDiagram() {
     // Actualiza el tamaño del diagrama
-	d3.select("#chart").select("svg").remove();
-	makeChordDiagram(relationships, uniqueContacts, colors, true);
+	// Check if svg exists
+	var svg = d3.select("#chart").select("svg").node();
+
+	if (svg) {
+		d3.select("#chart").select("svg").remove();
+		await makeChordDiagram(relationships, uniqueContacts, colors, true);
+	}
 }
 
 // Event listener para actualizar el tamaño del gráfico al cambiar el tamaño de la ventana
-window.addEventListener('resize', resizeChordDiagram);
+window.addEventListener('resize', debounce(resizeChordDiagram, 500));
 
 
 // ************************************************************
@@ -432,12 +579,20 @@ window.addEventListener('resize', resizeChordDiagram);
 // ************************************************************
 
 // When document is ready
+/**
+ * Esta función se ejecuta cuando el documento está listo.
+ * Se encarga de ocultar los elementos que no se deben mostrar al inicio.
+ */
 $(document).ready(function () {
 	$("#chord-chat-section").hide();
 	$("#bar-chart-section").hide();
 });
 
 // Cuando se lee un archivo
+/**
+ * Esta función se ejecuta cuando se lee un archivo.
+ * Se encarga de mostrar los elementos que se deben mostrar al leer un archivo.
+ */
 function showAppElements() {
 	$("#chord-chat-section").show();
 	$("#bar-chart-section").show();
