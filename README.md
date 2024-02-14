@@ -1,15 +1,22 @@
 # Instalacion y configuracion
 
-## Repositorio en GitHub
+## Descargar [Python](https://www.python.org/downloads/)
+> [!IMPORTANT]
+> En Windows es importante marcar la casilla de `agregar al PATH` para hacer uso del comando pip.
+> 
+> Se está usando la versión 3.12.2
+
+## Clonar este repositorio 
 El proyecto se puede clonar desde el repositorio de GitHub. Los siguientes comandos
 asumen que hay una consola cuyo directorio de trabajo es la carpeta raíz del proyecto.
 
 ## Entorno virtual
-Se recomienda crear un entorno virtual de Python para que las librerías instaladas no
+Con Python instalado, se recomienda primero reiniciar. Una vez hecho esto, es necesario crear un entorno virtual de Python para que las librerías instaladas no
 interfieran con otras instalaciones del sistema
 
 ### Windows
 `python -m venv .env`
+
 `.env\Scripts\activate`
 
 ## spaCy
@@ -17,11 +24,13 @@ spaCy es la biblioteca de Python utilizada para cargar el modelo clasificador de
 siguientes comandos se ejecutan en la consola, después de activar el entorno virtual.
 
 `pip install -U pip setuptools wheel`
+
 `pip install -U spacy`
 
-Los siguientes módulos deben instalarse si se ejecutará el entrenamiento de modelos
+### Los siguientes módulos son en caso de necesitar entrenar modelos
 
 `pip install -U 'spacy[transformers,lookups]'`
+
 `python -m spacy download es_core_news_sm`
 
 ## Flask
@@ -30,7 +39,8 @@ ejecutar los siguientes comandos en la misma terminal (con el entorno virtual ac
 
 `pip install -U Flask`
 
-Después de este punto, el servidor está listo para ejecutarse.
+> [!TIP]
+> Después de este punto, el servidor está listo para ejecutarse.
 
 ## Ejecución del servidor
 El servidor se inicializa con el siguiente comando
