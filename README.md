@@ -19,7 +19,7 @@ interfieran con otras instalaciones del sistema
 
 `.env\Scripts\activate`
 
-## spaCy
+## [spaCy](https://spacy.io/usage)
 spaCy es la biblioteca de Python utilizada para cargar el modelo clasificador de texto. Los
 siguientes comandos se ejecutan en la consola, después de activar el entorno virtual.
 
