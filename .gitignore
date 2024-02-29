@@ -13,3 +13,4 @@ app/__pycache__/__init__.cpython-311.pyc
 app/static/.DS_Store
 *.DS_Store
 spacy/model-best-x-eff/.DS_Store
+node_modules

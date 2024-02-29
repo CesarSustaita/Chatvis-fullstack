@@ -25,13 +25,24 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
 
+    <!-- Desarrollo -->
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <script type="module" src="{{ url_for('static', filename='vue/app.js') }}"></script>
+
+
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <a class="navbar-brand" href="">Semantic Chatvis</a>
         </nav>
+
+        
+
+
     </header>
     <main>
         <div class="container">
@@ -69,6 +80,10 @@
             </div>
 
             <div id="instructions-section" class="row">
+
+                <div id="app">
+                    <MyComponent></MyComponent>
+                </div>
 
                 <div class=" col-sm-12 ">
                     <div class="explanation texts">
@@ -139,6 +154,9 @@
 
     <!-- Sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    
 
 </body>
 
