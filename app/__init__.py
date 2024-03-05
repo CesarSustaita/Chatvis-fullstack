@@ -1,7 +1,8 @@
 from flask import Flask
 import spacy
 
-app = Flask(__name__)
+# New Flask app definition (Vue.js)
+app = Flask(__name__, static_folder='dist')
 
 # Load the spacy model
 app.nlp = spacy.load('spacy/model-last-x-eff3')
