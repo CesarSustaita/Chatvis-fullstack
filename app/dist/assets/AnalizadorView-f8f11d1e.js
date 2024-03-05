@@ -1,0 +1,1 @@
+import{_ as a,o as s,g as o,i as e,d as t,e as r,F as _}from"./index-db4c4ab5.js";import{U as n}from"./UserNavbar-e4aa988d.js";import{C as c}from"./ChatvisComponents-b57a6549.js";const i={class:"full-screen-container"},l={__name:"AnalizadorView",setup(d){return(p,m)=>(s(),o(_,null,[e(t(n)),r("div",i,[e(c)])],64))}},V=a(l,[["__scopeId","data-v-a21c05ee"]]);export{V as default};
