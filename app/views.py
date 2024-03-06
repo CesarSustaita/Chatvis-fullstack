@@ -5,15 +5,7 @@ from flask import send_from_directory
 
 import os
 
-@app.route('/')
-def index():
-    """
-    Renders the index.html template.
 
-    Returns:
-        The rendered index.html template.
-    """
-    return render_template('index.html')
 
 
 @app.route('/classify', methods=['POST'])
