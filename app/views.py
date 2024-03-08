@@ -2,10 +2,19 @@ from app import app
 from flask import request
 from flask import jsonify
 from flask import send_from_directory
+from flask import render_template
 
 import os
 
+@app.route('/')
+def index():
+    """
+    Renders the index.html template.
 
+    Returns:
+        The rendered index.html template.
+    """
+    return render_template('index.html')
 
 
 """
