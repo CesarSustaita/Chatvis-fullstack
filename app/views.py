@@ -35,8 +35,14 @@ def index():
         -Conversation, chord diagrama and classification graph (it is currently) -(must be second navbar with its routes works correctly and third navbar)
 """
 @app.route('/login')
-def login():
+def lector():
     return render_template('login.html')
+
+
+@app.route('/lector')
+def login():
+    return render_template('lector.html')
+
 
 @app.route('/classify', methods=['POST'])
 def classify_message():
