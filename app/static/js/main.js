@@ -15,7 +15,6 @@
 
 var input = document.getElementById("whatsChat");
 var inputSA = document.getElementById("whatsChatSinAnimaciones");
-var prueba = document.getElementById("fileInput");
 
 var reader = new FileReader();
 var readerSA = new FileReader();
@@ -52,7 +51,7 @@ var relationships = [];
  * Se encarga de verificar que el archivo sea de tipo .txt y de cargarlo.
  * 
  */
-prueba.addEventListener("change", function () {
+inputSA.addEventListener("change", function () {
 	if (this.files && this.files[0]) {
 		var whatsChat = this.files[0];
 
@@ -64,11 +63,9 @@ prueba.addEventListener("change", function () {
 		}
 
 		// Loads the file, triggering the event
-		Swal.fire("Cargado correctamente", "El archivo se ha cargado correctamente.", "success");
 		readerSA.readAsText(whatsChat, 'UTF-8');
 	};
-})
-;
+});
 
 // Cuando se carga el archivo se ejecuta esta funcion
 /**
