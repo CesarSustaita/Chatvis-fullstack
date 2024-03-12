@@ -55,7 +55,12 @@
                         <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
                     </div>
                 </div>
-            </div>
+
+                <div class="col">
+                    <div class="explanation texts" style="text-align: center;">
+                        <label id="redirectButton" style="width: 300px; border-radius: 5px;border: none; background-color: #4ab969;color: white; cursor: pointer;">Iniciar</label>
+                    </div>
+                </div>
 
             <div id="chord-chat-section" class="row">
                 <!-- Chord diagram -->
@@ -136,6 +141,14 @@
     <footer>
         <!-- place footer here -->
     </footer>
+
+    <script>
+        // Manejar el clic en el botón "Iniciar"
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            // Redireccionar a la vista /lector
+            window.location.href = '/lector';
+        });
+    </script>
 
     <!-- * jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

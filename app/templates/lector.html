@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/static/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
        <!-- Bootstrap CSS -->
        
@@ -55,6 +56,8 @@
         </div>
     </div>
 
+
+    
     <script>
         document.getElementById('fileInput').addEventListener('change', function(event) {
             var file = event.target.files[0];
@@ -74,6 +77,9 @@
                 }
                 // Mostrar mensaje de confirmación
                 Swal.fire("Cargado correctamente", "El archivo se ha cargado correctamente.", "success");
+                window.location.href = '/';
+                sendFileNameToMainJs(fileName);
+                
             }
         });
     </script>
