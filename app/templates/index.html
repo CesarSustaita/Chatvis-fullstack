@@ -33,87 +33,65 @@
 
     <style scoped>
         .hidden {
-      display: none;
-    }
+            display: none;
+        }
+
         .botones-pestañas {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  .btn-outline-secondary {
-    color: black;
-    font-weight: 500;
-  }
-        .wrapper {
-            border: 0px solid rgb(196, 25, 25);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
         }
 
-        a:link,
-        a:visited,
-        a:active {
-            text-decoration: none;
-            color: rgb(44, 44, 44);
-            font-size: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        a:hover {
-            color: #2cb983;
+        .btn-outline-secondary {
+            color: black;
+            font-weight: 500;
         }
 
         .nav {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 45px;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
-        .der {
-            border: 0px solid rgb(29, 29, 29);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 220px;
-        }
-
-        .icon-button {
-            padding: 5px;
-            width: auto;
-            height: auto;
-            border: none;
+            padding: 10px 100px;
         }
 
         .btn-dark {
             color: white;
         }
+
+        .nav-link {
+            color: black;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #2cb983;
+        }
     </style>
+
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <nav>
-            <div class="nav">
-                <div class="izq">
-                    <a href="/">Chatvis Analyzer</a>
-                </div>
-                <div class="der">
-                    <div class="">
-                        <div class="btn btn-dark"><i class="fa-solid fa-upload" style="color: #ffffff"></i>
-                            <label for="whatsChatSinAnimaciones">Subir Archivo</label>
-                            <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
-                        </div>
-                    </div>
-                    <div class="registro">
-                        <a href="/register/mail">Registro</a>
-                    </div>
-                    <div class="inicioSesion">
-                        <a href="/login">Iniciar Sesion</a>
-                    </div>
-
+    <div class="navbarrr">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Chatvis Analyzer</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <label for="whatsChatSinAnimaciones" class="nav-link">
+                                <div class="btn btn-dark">
+                                    <i class="fa-solid fa-upload"></i> Subir Archivo
+                                    <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register/mail">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Iniciar Sesion</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -121,27 +99,17 @@
 
     <div class="botones-pestañas">
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-          <input
-            type="radio"
-            class="btn-check"
-            name="btnradio"
-            id="btnradio1"
-            autocomplete="off"/>
-          <label class="btn btn-outline-secondary" for="btnradio1">
-            <i class="fa-solid fa-user-group"></i> Usuarios
-          </label>
-  
-          <input
-            type="radio"
-            class="btn-check"
-            name="btnradio"
-            id="btnradio2"
-            autocomplete="off" />
-          <label class="btn btn-outline-secondary" for="btnradio2">
-            <i class="fa-solid fa-chart-simple"></i> Analizador
-          </label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+            <label class="btn btn-outline-secondary" for="btnradio1">
+                <i class="fa-solid fa-user-group"></i> Usuarios
+            </label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+            <label class="btn btn-outline-secondary" for="btnradio2">
+                <i class="fa-solid fa-chart-simple"></i> Analizador
+            </label>
         </div>
-      </div>
+    </div>
 
 
     <main>
@@ -151,24 +119,24 @@
 
                 <div id="usuariosContent" class="hidden">
                     Contenido de Usuarios
-                  </div>
+                </div>
 
-                  <div id="analizadorContent" class="hidden">
+                <div id="analizadorContent" class="hidden">
                     Contenido del Analizador
 
                     <div id="chord-chat-section" class="row">
                         <!-- Chord diagram -->
                         <div id="chord-container" class="col-sm-6 mt-1 mb-1 ">
-    
+
                             <div id="chart" style="display: none;"></div>
                         </div>
-    
+
                         <!-- Chat window -->
                         <div id="chat-container" class="col-sm-6 mt-1 mb-1">
                             <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
                         </div>
                     </div>
-    
+
                     <div id="bar-chart-section" class="row">
                         <!-- Bar chart -->
                         <div class="col mt-1 mb-1">
@@ -177,8 +145,8 @@
                             </div>
                         </div>
                     </div>
-                  </div>
-                
+                </div>
+
 
                 <div id="instructions-section" class="row">
 
@@ -245,18 +213,18 @@
         const btnradio2 = document.getElementById('btnradio2');
         const usuariosContent = document.getElementById('usuariosContent');
         const analizadorContent = document.getElementById('analizadorContent');
-    
+
         // Añadir eventos de clic a los botones
         btnradio1.addEventListener('click', () => {
-          usuariosContent.classList.remove('hidden');
-          analizadorContent.classList.add('hidden');
+            usuariosContent.classList.remove('hidden');
+            analizadorContent.classList.add('hidden');
         });
-    
+
         btnradio2.addEventListener('click', () => {
-          usuariosContent.classList.add('hidden');
-          analizadorContent.classList.remove('hidden');
+            usuariosContent.classList.add('hidden');
+            analizadorContent.classList.remove('hidden');
         });
-      </script>
+    </script>
 
     <!-- * jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
