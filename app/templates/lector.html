@@ -77,8 +77,10 @@
                 }
                 // Mostrar mensaje de confirmación
                 Swal.fire("Cargado correctamente", "El archivo se ha cargado correctamente.", "success");
-                window.location.href = '/';
+                
                 sendFileNameToMainJs(fileName);
+                window.location.href = '/';
+                
                 
             }
         });

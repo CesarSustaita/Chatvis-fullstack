@@ -33,6 +33,10 @@ def index():
         -Users registers(table) - (must be added Second navbar  and third navbar)
         -Conversation, chord diagrama and classification graph (it is currently) -(must be second navbar with its routes works correctly and third navbar)
 """
+@app.route('/inicio')
+def login():
+    return render_template('inicio.html')
+
 @app.route('/login')
 def login():
     return render_template('login.html')
@@ -53,31 +57,14 @@ def register_state():
 def register_u():
     return render_template('register4.html')
 
-"""
-    This is a example to add new routes.
-    
-    -Remember it´s important that every route works,
-    -The route are: 
-        [USER VIEW]
-        -Index (must be added first navbar)
-        -Login (must be added first navbar)
-        -Register (must be added first navbar)
-        -Upload the file (must be added Second navbar)
-        -Conversation, chord diagrama and classification graph (it is currently) - (must be second navbar with its routes works correctly)
-
-        [ADMIN VIEW]
-        -Upload the file (must be added Second navbar and third navbar)
-        -Users registers(table) - (must be added Second navbar  and third navbar)
-        -Conversation, chord diagrama and classification graph (it is currently) -(must be second navbar with its routes works correctly and third navbar)
-"""
-@app.route('/login')
-def lector():
-    return render_template('login.html')
+#@app.route('/login')
+#def lector():
+ #   return render_template('login.html')
 
 
-@app.route('/lector')
-def login():
-    return render_template('lector.html')
+##@app.route('/lector')
+#def login():
+ #   return render_template('lector.html')
 
 
 @app.route('/classify', methods=['POST'])
