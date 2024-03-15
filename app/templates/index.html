@@ -6,8 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Estilos gráficas -->
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
@@ -29,6 +30,41 @@
 
     <script type="module" src="{{ url_for('static', filename='vue/app.js') }}"></script>
 
+    <style scoped>
+        .hidden {
+            display: none;
+        }
+
+        .botones-pestañas {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .btn-outline-secondary {
+            color: black;
+            font-weight: 500;
+        }
+
+        .nav {
+            padding: 10px 100px;
+        }
+
+        .btn-dark {
+            color: white;
+        }
+
+        .nav-link {
+            color: black;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #2cb983;
+        }
+    </style>
 
 =======
     <meta charset="UTF-8">
@@ -163,25 +199,64 @@
 <body>
 
 
+
     <header>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <a class="navbar-brand" href="">Semantic Chatvis</a>
+
+    <div class="navbarrr">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Chatvis Analyzer</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <label for="whatsChatSinAnimaciones" class="nav-link">
+                                <div class="btn btn-dark">
+                                    <i class="fa-solid fa-upload"></i> Subir Archivo
+                                    <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register/mail">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Iniciar Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </nav>
+    </div>
 
-        
+    <div class="botones-pestañas">
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+            <label class="btn btn-outline-secondary" for="btnradio1">
+                <i class="fa-solid fa-user-group"></i> Usuarios
+            </label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+            <label class="btn btn-outline-secondary" for="btnradio2">
+                <i class="fa-solid fa-chart-simple"></i> Analizador
+            </label>
+        </div>
+    </div>
 
 
-    </header>
     <main>
         <div class="container">
             <div class="row">
                 <!-- Botón iniciar sin animaciones -->
+
                 <div class="col">
                     <div class="explanation texts" style="text-align: center;">
                         <label for="whatsChatSinAnimaciones"
                             style="width: 300px; border-radius: 5px;border: none; background-color: #4ab969;color: white;">Iniciar</label>
                         <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
-=======
+
     <div class="wrapper">
         <nav>
             <div class="nav">
@@ -213,62 +288,100 @@
                 tu toma de decisiones, mejora tus estrategias y maximiza tus resultados.
             </div>
 
-            <div id="instructions-section" class="row">
 
-                <div id="app">
-                    <MyComponent></MyComponent>
+                <div id="usuariosContent" class="hidden">
+                    Contenido de Usuarios
                 </div>
 
-                <div class=" col-sm-12 ">
-                    <div class="explanation texts">
-                        <br>
-                        * Antes de iniciar, se le mostrará un diálogo de selección de archivo para que cargue el archivo
-                        exportado por
-                        WhatsApp
-                        <br> <br>
-                        ** Para chats con 12 o más contactos se ocultará la simulación del chat, se ampliará el diagrama
-                        y en vez de mostrar
-                        el nombre de los contactos se usará un ID para facilitar la visualización.
-                        <br>En la esquina superior izquierda se habilitará una tabla que indica que ID le corresponde a
-                        cada contacto.
+                <div id="analizadorContent" class="hidden">
+                    Contenido del Analizador
+
+                    <div id="chord-chat-section" class="row">
+                        <!-- Chord diagram -->
+                        <div id="chord-container" class="col-sm-6 mt-1 mb-1 ">
+
+                            <div id="chart" style="display: none;"></div>
+                        </div>
+
+                        <!-- Chat window -->
+                        <div id="chat-container" class="col-sm-6 mt-1 mb-1">
+                            <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
+                        </div>
                     </div>
-                    <hr>
-                    <h2 class="texts">Ayuda</h2>
-                    <div class="explanation texts" style="text-align: center;">
-                        <br>
-                        <span type="file" id="exportarArchivo"
-                            style="width: 300px; border-radius: 5px; border: none; background-color: #4ab969;">
-                            <a style="color:white;" href="https://faq.whatsapp.com/es/android/23756533/"
-                                target="_blank">
-                                Link: Cómo exportar un chat de WhatsApp
-                            </a>
-                        </span>
-                        <br> <br>
+
+
+                    <div id="bar-chart-section" class="row">
+                        <!-- Bar chart -->
+                        <div class="col mt-1 mb-1">
+                            <div id="bar-chart-container" class="chart-container">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="credit texts">Basado en el trabajo de <a
-                            href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2">Nadieh
-                            Bremer</a> | <a href="http://www.visualcinnamon.com/">VisualCinnamon.com</a></div>
-                    <div class="notes texts">
-                        Bibliotecas usadas:
-                        <ul>
-                            <li><a href="https://jquery.com/">jQuery</a></li>
-                            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-                            <li><a href="https://github.com/Pustur/whatsapp-chat-parser">WhatsApp Chat Parser</a></li>
-                            <li><a href="https://d3js.org/">D3.js</a></li>
-                            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-                        </ul>
+                </div>
+
+
+                <div id="instructions-section" class="row">
+
+
+                    <div class=" col-sm-12 ">
+                        <div class="explanation texts">
+                            <br>
+                            * Antes de iniciar, se le mostrará un diálogo de selección de archivo para que cargue el
+                            archivo
+                            exportado por
+                            WhatsApp
+                            <br> <br>
+                            ** Para chats con 12 o más contactos se ocultará la simulación del chat, se ampliará el
+                            diagrama
+                            y en vez de mostrar
+                            el nombre de los contactos se usará un ID para facilitar la visualización.
+                            <br>En la esquina superior izquierda se habilitará una tabla que indica que ID le
+                            corresponde a
+                            cada contacto.
+                        </div>
+                        <hr>
+                        <h2 class="texts">Ayuda</h2>
+                        <div class="explanation texts" style="text-align: center;">
+                            <br>
+                            <span type="file" id="exportarArchivo"
+                                style="width: 300px; border-radius: 5px; border: none; background-color: #4ab969;">
+                                <a style="color:white;" href="https://faq.whatsapp.com/es/android/23756533/"
+                                    target="_blank">
+                                    Link: Cómo exportar un chat de WhatsApp
+                                </a>
+                            </span>
+                            <br> <br>
+                        </div>
+                        <hr>
+                        <div class="credit texts">Basado en el trabajo de <a
+                                href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2">Nadieh
+                                Bremer</a> | <a href="http://www.visualcinnamon.com/">VisualCinnamon.com</a></div>
+                        <div class="notes texts">
+                            Bibliotecas usadas:
+                            <ul>
+                                <li><a href="https://jquery.com/">jQuery</a></li>
+                                <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                                <li><a href="https://github.com/Pustur/whatsapp-chat-parser">WhatsApp Chat Parser</a>
+                                </li>
+                                <li><a href="https://d3js.org/">D3.js</a></li>
+                                <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
 
 =======
             <div class="boton">
                 <a type="button" class="btn btn-outline-secondary">Registrarse</a>
             </div>
+
         </div>
         <div class="img">
         </div>
     </div>
+
 
 
     </main>
@@ -276,11 +389,34 @@
         <!-- place footer here -->
     </footer>
 
+    <script>
+        // Obtener los elementos del DOM
+        const btnradio1 = document.getElementById('btnradio1');
+        const btnradio2 = document.getElementById('btnradio2');
+        const usuariosContent = document.getElementById('usuariosContent');
+        const analizadorContent = document.getElementById('analizadorContent');
+
+        // Añadir eventos de clic a los botones
+        btnradio1.addEventListener('click', () => {
+            usuariosContent.classList.remove('hidden');
+            analizadorContent.classList.add('hidden');
+        });
+
+        btnradio2.addEventListener('click', () => {
+            usuariosContent.classList.add('hidden');
+            analizadorContent.classList.remove('hidden');
+        });
+    </script>
+
     <!-- * jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Bootstrap Javascript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
     <script src="/static/js/bootstrap.tooltip.js"></script>
     <script src="/static/js/bootstrap.popover.js"></script>
 
@@ -295,9 +431,8 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-    
 
-=======
+
     <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
