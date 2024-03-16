@@ -1,337 +1,192 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
-    <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <title>Semantic ChatVis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style scoped>
+    .wrapper {
+      border: 0px solid rgb(196, 25, 25);
+    }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: rgb(44, 44, 44);
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-    <!-- CSS de Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    a:hover {
+      color: #2cb983;
+    }
 
-    <!-- Estilos gráficas -->
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 45px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
 
-    <!-- Dependencias -->
-    <!-- * D3: https://github.com/d3/d3 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-    <!-- * WhatsApp Chat Parser: https://github.com/Pustur/whatsapp-chat-parser -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser/dist/whatsapp-chat-parser.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser@4.0.0/dist/index.global.js"></script>
-    <!-- * Google Fonts -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'> -->
-    <link href='https://fonts.googleapis.com/css2?family=Noto+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    .der {
+      border: 0px solid rgb(29, 29, 29);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 220px;
+    }
 
-    <!-- Desarrollo -->
-    <script src="https://unpkg.com/vue@3"></script>
+    @media (min-width: 1500px) {
+      .contenedor {
+        padding: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
 
-    <script type="module" src="{{ url_for('static', filename='vue/app.js') }}"></script>
+      .title {
+        font-size: 118px;
+        width: 550px;
+        font-weight: bold;
+        color: rgb(92, 92, 92);
+        margin-bottom: 50px;
+      }
 
-=======
-    <meta charset="UTF-8">
-    <title>Semantic ChatVis</title>    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS de Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style scoped>
-        .wrapper {
-          border: 0px solid rgb(196, 25, 25);
-        }
-        
-        a:link, a:visited, a:active {
-          text-decoration:none;
-          color: rgb(44, 44, 44);
-          font-size: 20px;
-          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        a:hover {
-          color:#2cb983 ;
-        }
-        
-        .nav {
-          display: flex;
-          justify-content: space-between;
-          width: 100%;
-          padding: 45px;
-          padding-left: 100px;
-          padding-right: 100px;
-        }
-        
-        .der {
-          border: 0px solid rgb(29, 29, 29);
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          width: 220px;
-        }
-        
-        @media (min-width: 1500px) {
-              .contenedor {
-                padding: 45px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-              }
-            
-              .title {
-                font-size: 118px;
-                width: 550px;
-                font-weight: bold;
-                color: rgb(92, 92, 92);
-                margin-bottom: 50px;
-              }
-            
-              .subtitle {
-                width: 670px;
-                font-size: 20px;
-              }
-            
-              .boton {
-                margin-top: 50px;
-              }
-            
-              .btn {
-                font-size: 18px;
-                width: 230px;
-                color: white;
-              }
-            
-              .btn-dark {
-                color: white;
-              }
-            
-              .img {
-                background-image: url('http://127.0.0.1:5000/static/img/imgindex.png');
-                background-size:cover;
-                background-position:center;
-                background-repeat:no-repeat;
-                width: 800px;
-              }
-        }
+      .subtitle {
+        width: 670px;
+        font-size: 20px;
+      }
 
-        @media (min-width: 100px) and (max-width: 1500px) {
-              .contenedor {
-                padding: 45px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-              }
-            
-              .title {
-                font-size: 90px;
-                width: 550px;
-                font-weight: bold;
-                color: rgb(92, 92, 92);
-                margin-bottom: 50px;
-              }
-            
-              .subtitle {
-                width: 560px;
-                font-size: 16px;
-              }
-            
-              .boton {
-                margin-top: 50px;
-              }
-            
-              .btn {
-                font-size: 18px;
-                width: 230px;
-                color: white;
-              }
-            
-              .btn-dark {
-                color: white;
-              }
-            
-              .img {
-                background-image: url('http://127.0.0.1:5000/static/img/imgindex.png');
-                background-size:cover;
-                background-position:center;
-                background-repeat:no-repeat;
-                width: 600px;
-              }
-            }
-    </style>
+      .boton {
+        margin-top: 50px;
+      }
+
+      .btn {
+        font-size: 18px;
+        width: 230px;
+        color: white;
+      }
+
+      .btn-dark {
+        color: white;
+      }
+
+      .img {
+        background-image: url('http://127.0.0.1:5000/static/img/imgindex.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 800px;
+      }
+    }
+
+    @media (min-width: 100px) and (max-width: 1500px) {
+      .contenedor {
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .title {
+        font-size: 90px;
+        width: 550px;
+        font-weight: bold;
+        color: rgb(92, 92, 92);
+        margin-bottom: 50px;
+      }
+
+      .subtitle {
+        width: 560px;
+        font-size: 16px;
+      }
+
+      .boton {
+        margin-top: 50px;
+      }
+
+      .btn {
+        font-size: 18px;
+        width: 230px;
+        color: white;
+      }
+
+      .btn-dark {
+        color: white;
+      }
+
+      .img {
+        background-image: url('http://127.0.0.1:5000/static/img/imgindex.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 600px;
+      }
+    }
+  </style>
 
 </head>
+
 <body>
 
-
-
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <a class="navbar-brand" href="">Semantic Chatvis</a>
-
-    
-
-
-    <main>
-        
+  <main>
     <div class="wrapper">
-        <nav>
-            <div class="nav">
-                <div class="izq">
-                    <a href="/">Chatvis Analyzer</a>
-                </div>
-                <div class="der">
-                    <div class="registro">
-                        <a href="/register/mail">Registro</a>
-                    </div>
-                    <div class="inicioSesion">
-                        <a href="/login">Iniciar Sesion</a>
-                    </div>
-                </div>
+      <nav>
+        <div class="nav">
+          <div class="izq">
+            <a href="/">Chatvis Analyzer</a>
+          </div>
+          <div class="der">
+            <div class="registro">
+              <a href="/register/mail">Registro</a>
             </div>
-        </nav>
+            <div class="inicioSesion">
+              <a href="/login">Iniciar Sesion</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-    
+
     <div class="contenedor">
-        <div class="texts">
-            <div class="title">
-                Analizador de datos
-            </div>
-            <div class="subtitle">
-                ¡Descubre ChatVis, la solución revolucionaria para implementar análisis 
-                semántico en tus conversaciones en archivos .txt! Con nuestra avanzada 
-                tecnología, obtener información valiosa. Aumenta la precisión y eficiencia 
-                de tus análisis con nuestra plataforma intuitiva y fácil de usar. Potencia 
-                tu toma de decisiones, mejora tus estrategias y maximiza tus resultados.
-            </div>
-
-
-                <div id="usuariosContent" class="hidden">
-                    Contenido de Usuarios
-                </div>
-
-                <div id="analizadorContent" class="hidden">
-                    Contenido del Analizador
-
-                    <div id="chord-chat-section" class="row">
-                        <!-- Chord diagram -->
-                        <div id="chord-container" class="col-sm-6 mt-1 mb-1 ">
-
-                            <div id="chart" style="display: none;"></div>
-                        </div>
-
-                        <!-- Chat window -->
-                        <div id="chat-container" class="col-sm-6 mt-1 mb-1">
-                            <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
-                        </div>
-                    </div>
-
-
-                    <div id="bar-chart-section" class="row">
-                        <!-- Bar chart -->
-                        <div class="col mt-1 mb-1">
-                            <div id="bar-chart-container" class="chart-container">
-                                <canvas id="myChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="instructions-section" class="row">
-
-
-                    <div class=" col-sm-12 ">
-                        <div class="explanation texts">
-                            <br>
-                            * Antes de iniciar, se le mostrará un diálogo de selección de archivo para que cargue el
-                            archivo
-                            exportado por
-                            WhatsApp
-                            <br> <br>
-                            ** Para chats con 12 o más contactos se ocultará la simulación del chat, se ampliará el
-                            diagrama
-                            y en vez de mostrar
-                            el nombre de los contactos se usará un ID para facilitar la visualización.
-                            <br>En la esquina superior izquierda se habilitará una tabla que indica que ID le
-                            corresponde a
-                            cada contacto.
-                        </div>
-                        <hr>
-                        <h2 class="texts">Ayuda</h2>
-                        <div class="explanation texts" style="text-align: center;">
-                            <br>
-                            <span type="file" id="exportarArchivo"
-                                style="width: 300px; border-radius: 5px; border: none; background-color: #4ab969;">
-                                <a style="color:white;" href="https://faq.whatsapp.com/es/android/23756533/"
-                                    target="_blank">
-                                    Link: Cómo exportar un chat de WhatsApp
-                                </a>
-                            </span>
-                            <br> <br>
-                        </div>
-                        <hr>
-                        <div class="credit texts">Basado en el trabajo de <a
-                                href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2">Nadieh
-                                Bremer</a> | <a href="http://www.visualcinnamon.com/">VisualCinnamon.com</a></div>
-                        <div class="notes texts">
-                            Bibliotecas usadas:
-                            <ul>
-                                <li><a href="https://jquery.com/">jQuery</a></li>
-                                <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-                                <li><a href="https://github.com/Pustur/whatsapp-chat-parser">WhatsApp Chat Parser</a>
-                                </li>
-                                <li><a href="https://d3js.org/">D3.js</a></li>
-                                <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-=======
-            <div class="boton">
-                <a type="button" class="btn btn-outline-secondary">Registrarse</a>
-            </div>
-
+      <div class="texts">
+        <div class="title">
+          Analizador de datos
         </div>
-        <div class="img">
+        <div class="subtitle">
+          ¡Descubre ChatVis, la solución revolucionaria para implementar análisis
+          semántico en tus conversaciones en archivos .txt! Con nuestra avanzada
+          tecnología, obtener información valiosa. Aumenta la precisión y eficiencia
+          de tus análisis con nuestra plataforma intuitiva y fácil de usar. Potencia
+          tu toma de decisiones, mejora tus estrategias y maximiza tus resultados.
         </div>
+
+         <!-- Botones de acción, sin lógica de Vue -->
+         <a href="/register/mail" class="btn btn-outline-dark mt-3" role="button">
+          Registrarse
+      </a>
+      </div>
+      <div class="img">
+      </div>
     </div>
 
 
-
-    </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-
-    
-    <!-- * jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <!-- Bootstrap Javascript -->
-    <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-    </script>
-
-    <script src="/static/js/bootstrap.tooltip.js"></script>
-    <script src="/static/js/bootstrap.popover.js"></script>
-
-    <script src="/static/js/chordDiagram.js"></script>
-    <script src="/static/js/main.js"></script>
-
-    <!-- Extras -->
-    <script src="/static/js/d3.layout.chord.sort.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-
-    <!-- Sweet alert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
-
-
-    <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>

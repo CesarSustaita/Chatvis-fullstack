@@ -7,6 +7,10 @@ from flask import send_from_directory
 
 
 
+@app.route('/inicio')
+def inicio():
+    return render_template('inicio.html')
+
 @app.route('/')
 def index():
     """
@@ -33,9 +37,7 @@ def index():
         -Users registers(table) - (must be added Second navbar  and third navbar)
         -Conversation, chord diagrama and classification graph (it is currently) -(must be second navbar with its routes works correctly and third navbar)
 """
-@app.route('/inicio')
-def login():
-    return render_template('inicio.html')
+
 
 @app.route('/login')
 def login():
