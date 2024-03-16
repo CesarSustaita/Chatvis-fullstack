@@ -1,23 +1,22 @@
 /* All display flex and box sizing */
-* {
+/* {
   box-sizing: border-box;
-}
+}*/
 
 body {
-	font-size: 14px;
+	/*font-size: 14px;
 	font-family: 'Lato', sans-serif;
-  text-align: left;
-  background-color: #1dcaff;
+  text-align: left;*/
+  /*background-color: #1dcaff;
 	color: #757575;
-	cursor: default;
-  padding-top: 80px ;
+	cursor: default;*/
 }
 
-.main {
+/*.main {
   margin-top: 70px;
   margin-bottom: 70px;
   padding: 20px !important;
-}
+}*/
 
 .title {
 	margin-top: 20px;
@@ -117,7 +116,7 @@ svg text:hover {
 } */
 
 body {
-  background-color: #1dcaff21;
+  /*background-color: #1dcaff21;*/
   font-family: "Helvetica Neue", Helvetica;
 }
 
@@ -259,23 +258,23 @@ body {
 	min-width: 225px;
 }
 
-tbody {
+/*tbody {
   display:block;
   overflow:auto;
   height:100px;
   width:100%;
-}
+}*/
 
 thead tr{
   display:block;
 }
 
-label, #exportarArchivo {
+/*label, #exportarArchivo {
   background-color: white;
   border: 2px solid black;
   padding: 15px;
   z-index: 1000;  
-}
+}*/
 
 #boton:hover{
   background-color: #075e54;

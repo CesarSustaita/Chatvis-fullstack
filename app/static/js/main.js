@@ -8,6 +8,14 @@
  * @namespace
  */
 
+////prueba
+function sendFileNameToMainJs(fileName) {
+    // Aquí puedes hacer lo que quieras con el nombre del archivo
+    console.log('El nombre del archivo seleccionado es: ' + fileName);
+    // Por ejemplo, puedes pasarlo a otra función o realizar algún otro procesamiento.
+}
+
+
 // Variables globales
 
 // Mensaje de error al cargar el archivo
@@ -15,6 +23,7 @@
 
 var input = document.getElementById("whatsChat");
 var inputSA = document.getElementById("whatsChatSinAnimaciones");
+
 
 var reader = new FileReader();
 var readerSA = new FileReader();
@@ -61,7 +70,8 @@ inputSA.addEventListener("change", function () {
 			this.value = '';
 			return;
 		}
-
+	swal("Cargado correctamente", "El archivo se ha cargado correctamente.", "success");
+       // window.location.href = '/';
 		// Loads the file, triggering the event
 		readerSA.readAsText(whatsChat, 'UTF-8');
 	};
