@@ -65,6 +65,103 @@
     .nav-link:hover {
       color: #2cb983;
     }
+
+    @media (min-width: 1500px) {
+ 
+    #analizadorContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    #chord-chat-section{
+      display: flex;
+      justify-content:center;
+      flex-direction: row;
+      gap: 40px;
+      margin-top: 25px;
+    }
+
+    #chord-container{
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      width: 75vh;
+      height: 55vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #chat-container  {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      width: 75vh;
+      height: 55vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    #bar-chart-section {
+      border: 0px solid rgb(146, 5, 5);
+    }
+
+    }    
+
+
+
+    @media (min-width: 100px) and (max-width: 1500px) {
+      #analizadorContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    #chord-chat-section{
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 25px;
+    }
+
+    #chord-container{
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      width: 75vh;
+      height: 55vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #chat-container  {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      width: 75vh;
+      height: 55vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    #bar-chart-section {
+      border: 0px solid rgb(146, 5, 5);
+    }
+
+    }
+
+    
   </style>
 
 </head>
@@ -127,17 +224,19 @@
 
         <div id="chord-chat-section" class="row">
           <!-- Chord diagram -->
-          <div id="chord-container" class="col-sm-6 mt-1 mb-1 ">
+          <div id="chord-container" >
 
             <div id="chart" style="display: none;"></div>
           </div>
 
           <!-- Chat window -->
-          <div id="chat-container" class="col-sm-6 mt-1 mb-1">
+          <div id="chat-container" >
             <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
           </div>
         </div>
 
+
+        <!--<div title="Messages" id="chat" class=" rounded " style="display: none;"></div>-->
 
         <div id="bar-chart-section" class="row">
           <!-- Bar chart -->
