@@ -69,96 +69,105 @@
     @media (min-width: 1500px) {
  
     #analizadorContent {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr;
       width: 100%;
+      height: 100%;
     }
 
-    #chord-chat-section{
-      display: flex;
-      justify-content:center;
-      flex-direction: row;
+    #chord-chat-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 40px;
-      margin-top: 25px;
+      margin: 2%;
+      height: 55vh;
     }
 
-    #chord-container{
+    #chord-component{ /*CHORD GRAPH COMPONENT*/
       background-color: white;
       border-radius: 10px;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-      width: 75vh;
-      height: 55vh;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
-  
-    #chat-container  {
+
+    #chat-component{ /*CHAT GRAPH COMPONENT*/
       background-color: white;
       border-radius: 10px;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-      width: 75vh;
-      height: 55vh;
+      
+    }
+
+    #bar-chart-section { /*CHART GRAPH COMPONENT*/
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      margin-left: 2% ;
+      margin-right: 2%;  
+      
+    }
+
+    #title {
       display: flex;
-      justify-content: center;
+      border-bottom: 1px solid rgba(95, 95, 95, 0.103);
+      height: 5vh;
       align-items: center;
-      gap: 40px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:large;
+      font-weight: 600;
+      padding-left: 2vh;
     }
-  
-    #bar-chart-section {
-      border: 0px solid rgb(146, 5, 5);
-    }
+
 
     }    
 
 
-
     @media (min-width: 100px) and (max-width: 1500px) {
-      #analizadorContent {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+     
+    #analizadorContent {
+      display: grid;
+      grid-template-columns: 1fr;
       width: 100%;
+      
     }
 
-    #chord-chat-section{
-      display: flex;
-      justify-content:center;
-      flex-direction: column;
+    #chord-chat-section {
+      display: grid;
+      grid-template-columns: 1fr;
       gap: 40px;
-      margin-top: 25px;
+      margin: 2%;
+      height: 120vh;
     }
 
-    #chord-container{
+    #chord-component { /*CHORD GRAPH COMPONENT*/
       background-color: white;
       border-radius: 10px;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-      width: 75vh;
-      height: 55vh;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
-  
-    #chat-container  {
+
+    #chat-component { /*CHAT GRAPH COMPONENT*/
       background-color: white;
       border-radius: 10px;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-      width: 75vh;
-      height: 55vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-    }
-  
-    #bar-chart-section {
-      border: 0px solid rgb(146, 5, 5);
+      
     }
 
+    #title {
+      display: flex;
+      border-bottom: 1px solid rgba(95, 95, 95, 0.103);
+      height: 5vh;
+      align-items: center;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:large;
+      font-weight: 600;
+      padding-left: 2vh;
+    }
+
+    #bar-chart-section { /*CHART GRAPH COMPONENT*/
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      margin-left: 2% ;
+      margin-right: 2%;  
+    }
     }
 
     
@@ -221,29 +230,30 @@
       </div>
 
       <div id="analizadorContent" class="hidden">
-
-        <div id="chord-chat-section" class="row">
-          <!-- Chord diagram -->
-          <div id="chord-container" >
-
-            <div id="chart" style="display: none;"></div>
+        <div id="chord-chat-section" >
+          <div id="chord-component" class="row">
+            <div id="title">
+              Grafica de Relaciones
+            </div>
+            <div id="chord-container">
+              <div id="chart" style="display: none;"></div>
+            </div>
           </div>
-
-          <!-- Chat window -->
-          <div id="chat-container" >
-            <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
+          <div id="chat-component" class="row">
+            <div id="title">
+              Conversación
+            </div>
+            <div id="chat-container">
+              <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
+            </div>
           </div>
         </div>
-
-
-        <!--<div title="Messages" id="chat" class=" rounded " style="display: none;"></div>-->
-
         <div id="bar-chart-section" class="row">
-          <!-- Bar chart -->
-          <div class="col mt-1 mb-1">
-            <div id="bar-chart-container" class="chart-container">
-              <canvas id="myChart"></canvas>
-            </div>
+          <div id="title">
+            Analisis
+          </div>
+          <div id="bar-chart-container" class="chart-container">
+            <canvas id="myChart"></canvas>
           </div>
         </div>
       </div>
