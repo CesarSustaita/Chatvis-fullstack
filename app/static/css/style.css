@@ -2,14 +2,26 @@
 /* {
   box-sizing: border-box;
 }*/
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #dddddd;
+  border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #b6b6b6;
+}
 
 body {
 	/*font-size: 14px;
 	font-family: 'Lato', sans-serif;
   text-align: left;*/
-  /*background-color: #1dcaff;
-	color: #757575;
-	cursor: default;*/
+  background-color: #F5F6FA;
+	color: #000000;
+	cursor: default;
 }
 
 /*.main {
@@ -32,10 +44,10 @@ body {
 	margin-right: 20px;
 	line-height: 140%;
 }
-.chart-container
+/*.chart-container
 {
   margin: 0% auto;
-}
+}*/
 .credit {
 	color: #9E9E9E;
 	font-size: 10px;
@@ -51,24 +63,25 @@ body {
 	pointer-events: none;
 }
 
-#chord-container {
+/*#chord-container {
   height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 #chart{
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 92%;
+  width: 92%;
   align-items: center;
   justify-content: center;
 	font-family: 'Noto Sans', sans-serif;
 	text-align: center;
-  font-size: calc(min(0.9vw, 0.8em));
+  font-size: calc(min(0.8vw, 0.7em));
   font-weight: normal;
 	fill: #2B2B2B;
+  border: 0px solid black;
 }
 
 svg {
@@ -93,19 +106,33 @@ svg text:hover {
 
 
 
-#chat-container {
+/*#chat-container {
   height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}*/
+
+#chat::-webkit-scrollbar {
+  width: 12px;
+}
+
+#chat::-webkit-scrollbar-thumb {
+  background: #dddddd;
+  border-radius: 12px;
+}
+
+#chat::-webkit-scrollbar-thumb:hover {
+  background: #b6b6b6;
 }
 
 #chat {
-  height: 100%;
+  height: 96%;
   width: 100%;
-  border: 2px solid rgba(224, 218, 208, 0.84);
+  border: 0px solid rgba(224, 218, 208, 0.84);
   overflow: scroll;
-  background-image: url(/static/img/wp_132.jpg);
+  overflow-x: hidden;
+  /*background-image: url(/static/img/wp_132.jpg);*/
   background-size: cover;
 }
 
@@ -120,9 +147,7 @@ body {
   font-family: "Helvetica Neue", Helvetica;
 }
 
-.rounded {
-  border-radius: 12px;
-}
+
 
 .mt-1 {
   margin-top: 1rem;
@@ -165,7 +190,7 @@ body {
   border-radius: 8px;
   position: relative;
   margin: 10px 0 3px 25px;
-  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .msg .bubble.alt {
   margin: 10px 25px 3px 0px;
