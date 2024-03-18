@@ -3,6 +3,13 @@ from flask import render_template
 from flask import request
 from flask import jsonify
 
+from flask import send_from_directory
+
+
+
+@app.route('/inicio')
+def inicio():
+    return render_template('inicio.html')
 
 @app.route('/')
 def index():
@@ -30,6 +37,8 @@ def index():
         -Users registers(table) - (must be added Second navbar  and third navbar)
         -Conversation, chord diagrama and classification graph (it is currently) -(must be second navbar with its routes works correctly and third navbar)
 """
+
+
 @app.route('/login')
 def login():
     return render_template('login.html')
@@ -49,6 +58,16 @@ def register_state():
 @app.route('/register/u')
 def register_u():
     return render_template('register4.html')
+
+#@app.route('/login')
+#def lector():
+ #   return render_template('login.html')
+
+
+##@app.route('/lector')
+#def login():
+ #   return render_template('lector.html')
+
 
 @app.route('/classify', methods=['POST'])
 def classify_message():
