@@ -1,6 +1,14 @@
 from app import app
+from flask import render_template
 from flask import request
 from flask import jsonify
+
+from flask import send_from_directory
+
+
+@app.route("/inicio")
+def inicio():
+    return render_template("inicio.html")
 
 
 @app.route("/")
@@ -12,6 +20,59 @@ def index():
         The rendered index.html template.
     """
     return render_template("index.html")
+
+
+"""
+    This is a example to add new routes.    
+    -Remember it´s important that every route works,
+    -The route are: 
+        [USER VIEW]
+        -Index (must be added first navbar)
+        -Login (must be added first navbar)
+        -Register (must be added first navbar)
+        -Upload the file (must be added Second navbar)
+        -Conversation, chord diagrama and classification graph (it is currently) - (must be second navbar with its routes works correctly)
+
+        [ADMIN VIEW]
+        -Upload the file (must be added Second navbar and third navbar)
+        -Users registers(table) - (must be added Second navbar  and third navbar)
+        -Conversation, chord diagrama and classification graph (it is currently) -(must be second navbar with its routes works correctly and third navbar)
+"""
+
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+
+@app.route("/register/mail")
+def register_mail():
+    return render_template("register1.html")
+
+
+@app.route("/register/account")
+def register_account():
+    return render_template("register2.html")
+
+
+@app.route("/register/state")
+def register_state():
+    return render_template("register3.html")
+
+
+@app.route("/register/u")
+def register_u():
+    return render_template("register4.html")
+
+
+# @app.route('/login')
+# def lector():
+#   return render_template('login.html')
+
+
+##@app.route('/lector')
+# def login():
+#   return render_template('lector.html')
 
 
 @app.route("/classify", methods=["POST"])
@@ -38,17 +99,3 @@ def classify_message():
 
     except Exception as e:
         return jsonify({"error": str(e)})
-
-
-@app.route("/", defaults={"path": ""})
-@app.route("/<path:path>")
-def serve(path):
-    """
-    Handles the serving of static files (Vue.js) and the index.html file.
-    Returns:
-        The requested file or the index.html file if the file is not found.
-    """
-    if path != "" and os.path.exists(app.static_folder + "/" + path):
-        return send_from_directory(app.static_folder, path)
-    else:
-        return send_from_directory(app.static_folder, "index.html")

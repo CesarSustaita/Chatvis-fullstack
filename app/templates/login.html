@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CDN de FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style scoped>
+        .wrapper {
+            border: 0px solid rgb(196, 25, 25);
+        }
+
+        a:link,
+        a:visited,
+        a:active {
+            text-decoration: none;
+            color: rgb(44, 44, 44);
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a:hover {
+            color: #2cb983;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 45px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .der {
+            border: 0px solid rgb(29, 29, 29);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 220px;
+        }
+
+        .return-btn {
+            cursor: pointer;
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border: 0px solid black;
+                margin-top: 120px;
+            }
+
+            .encabezados {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                border: 0px solid black;
+            }
+
+            .title {
+                border: 0px solid black;
+                width: 350px;
+                margin-bottom: 20px;
+            }
+
+            .inicio {
+                border: 0px solid black;
+                width: 350px;
+            }
+
+            .btn {
+                width: 350px;
+            }
+
+            .next {
+                color: white;
+            }
+
+            .cuenta {
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="nav">
+                <div class="izq">
+                    <a href="/inicio">Chatvis Analyzer</a>
+                </div>
+                <div class="der">
+                    <div class="registro">
+                        <a href="/register/mail">Registro</a>
+                    </div>
+                    <div class="inicioSesion">
+                        <a href="/login">Iniciar Sesion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="encabezados">
+            <div class="back">
+                <a href="/inicio">
+                    <h3 class="return-btn">
+                        <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
+                        Regresar
+                    </h3>
+                </a>
+            </div>
+            <div class="title">
+                <h3>¿Cuál es tu dirección de email?</h3>
+            </div>
+            <div class="next">
+                <h3>Siguiente <i class="fa-solid fa-chevron-right" style="color: #ffffff"></i></h3>
+            </div>
+        </div>
+
+        <div class="inicio">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" v-model="user.password" id="exampleInputPassword1" />
+                </div>
+                <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+
+                <div class="cuenta">
+                    ¿Aun no tienes cuenta? <a href="/register/mail" class="link-primary">Regístrate</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
