@@ -2,6 +2,7 @@ from app import app
 from flask import render_template
 from flask import request
 from flask import jsonify
+from flask import Flask, render_template, redirect, url_for, request
 
 from flask import send_from_directory
 
@@ -47,6 +48,11 @@ def login():
 
 @app.route("/register/mail")
 def register_mail():
+    if request.method == "POST":
+        # Aquí iría tu lógica para verificar las credenciales del usuario
+        # Si el inicio de sesión es exitoso, puedes redireccionar a otra página
+        # por ejemplo, si el nombre de la página es 'dashboard':
+        return redirect(url_for("inicio"))
     return render_template("register1.html")
 
 
