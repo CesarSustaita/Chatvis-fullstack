@@ -278,7 +278,10 @@
             <i class="fa-solid fa-user fa-xl" style="color: #a3a3a3"></i>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+            <li>
+              <p class="dropdown-item">{{name}}</p>
+            </li>
+            <li><a class="dropdown-item" href="{{url_for('logout')}}">Cerrar Sesión</a></li>
           </ul>
         </div>
       </div>
@@ -323,8 +326,6 @@
 
 
   <main>
-
-
 
     <div class="contenedor">
       <div id="usuariosContent" class="hidden">

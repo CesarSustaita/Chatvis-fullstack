@@ -2,9 +2,19 @@ from app import app
 from flask import render_template
 from flask import request
 from flask import jsonify
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, session
+from pymongo import MongoClient
 
 from flask import send_from_directory
+
+app.secret_key = "chatvis"
+
+# client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient(
+    "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
+)
+db = client["test"]
+users_collection = db["users"]
 
 
 @app.route("/inicio")
@@ -20,7 +30,7 @@ def index():
     Returns:
         The rendered index.html template.
     """
-    return render_template("index.html")
+    return render_template("inicio.html")
 
 
 """
@@ -41,24 +51,61 @@ def index():
 """
 
 
-@app.route("/login")
+@app.route("/login", methods=["GET", "POST"])
 def login():
-    return render_template("login.html")
+    if request.method == "POST":
+        email = request.form["email"]
+        password = request.form["password"]
+
+        # Buscar el usuario en la base de datos por email
+        user = users_collection.find_one({"email": email})
+
+        if user and user["password"] == password:
+            # Iniciar sesión
+            session["logged_in"] = True
+            session["email"] = email
+            session["name"] = user.get("nombre")
+            return redirect(url_for("dashboard"))
+        else:
+            error = "Credenciales incorrectas. Por favor, inténtalo de nuevo."
+            return render_template("login.html", error=error)
+    else:
+        return render_template("login.html")
+
+
+@app.route("/dashboard")
+def dashboard():
+    if "logged_in" in session:
+        email = session["email"]
+        name = session.get("name")  # Obtener el nombre del usuario desde la sesión
+        return render_template("index.html", email=email, name=name)
+    else:
+        return redirect(url_for("login"))
+
+
+# Cerrar sesión
+@app.route("/logout")
+def logout():
+    session.pop("logged_in", None)
+    session.pop("email", None)
+    session.pop("name", None)
+    return redirect(url_for("login"))
 
 
 @app.route("/register/mail")
 def register_mail():
-    if request.method == "POST":
-        # Aquí iría tu lógica para verificar las credenciales del usuario
-        # Si el inicio de sesión es exitoso, puedes redireccionar a otra página
-        # por ejemplo, si el nombre de la página es 'dashboard':
-        return redirect(url_for("inicio"))
     return render_template("register1.html")
 
 
 @app.route("/register/account")
 def register_account():
     return render_template("register2.html")
+
+
+@app.route("/tabla")
+def tabla_admin():
+    usuarios = list(users_collection.find())
+    return render_template("tabla_admin.html", users=usuarios)
 
 
 @app.route("/register/state")

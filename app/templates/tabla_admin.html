@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Analizador - Semantic ChatVis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Estilos gráficas -->
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+  <!-- Dependencias -->
+  <!-- * D3: https://github.com/d3/d3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  <!-- * WhatsApp Chat Parser: https://github.com/Pustur/whatsapp-chat-parser -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser/dist/whatsapp-chat-parser.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser@4.0.0/dist/index.global.js"></script>
+  <!-- * Google Fonts -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'> -->
+  <link href='https://fonts.googleapis.com/css2?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+  <!-- CDN de FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav>
+    <div class="navUser">
+      <div class="seccion1">
+        <div class="title-inter">
+          <a href="/inicio">Chatvis Analyzer</a>
+        </div>
+        <label for="whatsChatSinAnimaciones" class="nav-link">
+          <div class="btn btn-dark">
+            <i class="fa-solid fa-upload"></i> Subir Archivo
+            <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
+          </div>
+        </label>
+      </div>
+      <div class="seccion2">
+        <div class="icon-info">
+          <button class="btn icon-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-circle-info fa-xl" style="color: #a3a3a3"></i> Info
+          </button>
+        </div>
+        <div class="line" style="color: #a3a3a3">|</div>
+        <div class="profile-icon">
+          <div class="btn-group" role="group">
+            <button class="btn icon-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user fa-xl" style="color: #a3a3a3"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="botones-pestañas">
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+        <label class="btn btn-outline-secondary" for="btnradio1">
+          <i class="fa-solid fa-user-group"></i> Usuarios
+        </label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+        <label class="btn btn-outline-secondary" for="btnradio2">
+          <i class="fa-solid fa-chart-simple"></i> Analizador
+        </label>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div id="app">
+      <div class="full-screen-container">
+
+        <div class="cont-superior">
+          <div class="user-table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Universidad</th>
+                  <th scope="col">Estado</th>
+                  <th scope="col">Ciudad</th>
+                  <th scope="col">Numero de usos</th>
+                  <th scope="col">Edición</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                  <th scope="row">1</th>
+                  <td>Jaime Garcia</td>
+                  <td>UAA</td>
+                  <td>Aguascalientes</td>
+                  <td>México</td>
+                  <td>Séptimo</td>
+                  <td>Agosto 12, 2022 - 9:42 am</td>
+                  <td><i class="fa-solid fa-trash" style="color: #292929"></i></td>
+                </tr> -->
+                <!-- quitado codigo de aqui -->
+                {% for user in users %}
+                <tr>
+                  <td>
+                    <p>1</p>
+                  </td>
+                  <td>{{ user.nombre }} {{ user.apellido_paterno }} {{ user.apellido_materno }}</td>
+                  <td>{{ user.universidad }}</td>
+                  <td>{{ user.estado }}</td>
+                  <td>{{ user.ciudad }}</td>
+                  <td>{{ user.num_uso }}</td>
+                  <td>ocultar</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- * jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <!-- Opcional, solo si necesitas jQuery para otros componentes -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+  <!-- Sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
