@@ -69,6 +69,7 @@ def login():
         if login_successful:
             user = users_collection.find_one({"email": email})
             # Iniciar sesión
+            session.permanent = True
             session["logged_in"] = True
             session["email"] = email
             session["name"] = user.get("nombre")
