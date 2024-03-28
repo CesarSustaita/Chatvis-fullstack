@@ -1,10 +1,7 @@
 from app import app
-from flask import render_template
-from flask import request
 from flask import jsonify
 from flask import Flask, render_template, redirect, url_for, request, session
 from pymongo import MongoClient
-
 from flask import send_from_directory
 
 app.secret_key = "chatvis"
@@ -15,6 +12,7 @@ client = MongoClient(
 )
 db = client["test"]
 users_collection = db["users"]
+registro_exitoso = db["users"]
 
 
 @app.route("/inicio")
@@ -92,30 +90,82 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/register/mail")
+@app.route("/register/mail", methods=["GET", "POST"])
 def register_mail():
-    return render_template("register1.html")
+    if request.method == "POST":
+        # Obtener los datos del formulario
+        datos = request.form.to_dict()
+        # Almacenar los datos en la sesión
+        session["registro_pagina1"] = datos
+        return redirect(url_for("register_account"))
+    else:
+        return render_template("register1.html")
+    # return render_template("register1.html")
 
 
-@app.route("/register/account")
+@app.route("/register/account", methods=["GET", "POST"])
 def register_account():
-    return render_template("register2.html")
+    if request.method == "POST":
+        # Obtener los datos del formulario
+        datos = request.form.to_dict()
+        # Almacenar los datos en la sesión
+        session["registro_pagina2"] = datos
+        return redirect(url_for("register_state"))
+    else:
+        # datos = session.get("registro_pagina1", {})
+        return render_template("register2.html")
+    # return render_template("register2.html")
+
+
+@app.route("/register/state", methods=["GET", "POST"])
+def register_state():
+    if request.method == "POST":
+        # Obtener los datos del formulario
+        datos = request.form.to_dict()
+        # Almacenar los datos en la sesión
+        session["registro_pagina3"] = datos
+        return redirect(url_for("register_u"))
+    else:
+        return render_template("register3.html")
+    # return render_template("register3.html")
+
+
+@app.route("/register/u", methods=["GET", "POST"])
+def register_u():
+    if request.method == "POST":
+        # Obtener los datos del formulario
+        datos = request.form.to_dict()
+        # Almacenar los datos en la sesión
+        session["registro_pagina4"] = datos
+        # Recopilar todos los datos de la sesión
+        registro_completo = {
+            **session.get("registro_pagina1", {}),
+            **session.get("registro_pagina2", {}),
+            **session.get("registro_pagina3", {}),
+            **datos,
+            "admin": 0,
+            "num_uso": 0,
+        }
+        # Guardar los datos en la base de datos MongoDB
+        registro_exitoso.insert_one(registro_completo)
+        # Limpiar la sesión después de guardar los datos
+        session.pop("registro_pagina1", None)
+        session.pop("registro_pagina2", None)
+        session.pop("registro_pagina3", None)
+        session.pop("registro_pagina4", None)
+        return redirect(url_for("index"))
+    # poner la ruta siguiente
+    else:
+        return render_template("register4.html")
+    # return render_template("register4.html")
 
 
 @app.route("/tabla")
 def tabla_admin():
-    usuarios = list(users_collection.find())
-    return render_template("tabla_admin.html", users=usuarios)
-
-
-@app.route("/register/state")
-def register_state():
-    return render_template("register3.html")
-
-
-@app.route("/register/u")
-def register_u():
-    return render_template("register4.html")
+    if "logged_in" in session:
+        permission = session.get("name")
+        usuarios = list(users_collection.find())
+        return render_template("tabla_admin.html", users=usuarios)
 
 
 # @app.route('/login')
@@ -132,10 +182,8 @@ def register_u():
 def classify_message():
     """
     Classifies a message using a pre-trained model.
-
     Returns:
         A JSON response containing the predicted category and scores.
-
     Raises:
         Exception: If an error occurs during the classification process.
     """
