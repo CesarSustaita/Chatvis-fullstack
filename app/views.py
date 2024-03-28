@@ -3,9 +3,8 @@ from flask import jsonify
 from flask import Flask, render_template, redirect, url_for, request, session
 from pymongo import MongoClient
 from flask import send_from_directory
-from app.helpers import verify_recaptcha
-from werkzeug.security import generate_password_hash, check_password_hash
-
+from app.helpers import verify_recaptcha, attempt_login
+from werkzeug.security import generate_password_hash
 app.secret_key = "chatvis"
 
 client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
@@ -36,7 +35,7 @@ def index():
 
 """
     This is a example to add new routes.    
-    -Remember it´s important that every route works,
+    -Remember it's important that every route works,
     -The route are: 
         [USER VIEW]
         -Index (must be added first navbar)
@@ -65,19 +64,17 @@ def login():
             error = "Por favor, verifica que no eres un robot."
             return render_template("login.html", error=error)
         
-
-        # Buscar el usuario en la base de datos por email
-        user = users_collection.find_one({"email": email})
+        login_successful, error = attempt_login(email, password, users_collection)
         
-        if user is None or not check_password_hash(user["password"], password):
-            error = "Credenciales incorrectas. Por favor, inténtalo de nuevo."
+        if login_successful:
+            user = users_collection.find_one({"email": email})
+            # Iniciar sesión
+            session["logged_in"] = True
+            session["email"] = email
+            session["name"] = user.get("nombre")
+            return redirect(url_for("dashboard"))
+        else:   
             return render_template("login.html", error=error)
-
-        # Iniciar sesión
-        session["logged_in"] = True
-        session["email"] = email
-        session["name"] = user.get("nombre")
-        return redirect(url_for("dashboard"))
     
     else:
         return render_template("login.html")
