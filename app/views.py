@@ -4,6 +4,7 @@ from flask import Flask, render_template, redirect, url_for, request, session
 from pymongo import MongoClient
 from flask import send_from_directory
 from app.helpers import verify_recaptcha
+from werkzeug.security import generate_password_hash, check_password_hash
 
 app.secret_key = "chatvis"
 
@@ -67,16 +68,17 @@ def login():
 
         # Buscar el usuario en la base de datos por email
         user = users_collection.find_one({"email": email})
-
-        if user and user["password"] == password:
-            # Iniciar sesión
-            session["logged_in"] = True
-            session["email"] = email
-            session["name"] = user.get("nombre")
-            return redirect(url_for("dashboard"))
-        else:
+        
+        if user is None or not check_password_hash(user["password"], password):
             error = "Credenciales incorrectas. Por favor, inténtalo de nuevo."
             return render_template("login.html", error=error)
+
+        # Iniciar sesión
+        session["logged_in"] = True
+        session["email"] = email
+        session["name"] = user.get("nombre")
+        return redirect(url_for("dashboard"))
+    
     else:
         return render_template("login.html")
 
