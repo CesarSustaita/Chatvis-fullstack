@@ -11,6 +11,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CDN de FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    
     <style scoped>
         .wrapper {
             border: 0px solid rgb(196, 25, 25);
@@ -144,7 +148,14 @@
                     <input type="password" class="form-control" id="password" name="password" required />
                     <!-- v-model="user.password" -->
                 </div>
-                <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+                
+                <button 
+                    class="btn btn-dark g-recaptcha" 
+                    data-sitekey="6Ld58aEpAAAAAN4FEZGbbinFl6MhutiyQwWsFF1f" 
+                    data-callback='onSubmit'
+                    data-action='submit'>
+                        Iniciar Sesión
+                </button>
 
                 <div class="cuenta">
                     ¿Aun no tienes cuenta? <a href="/register/mail" class="link-primary">Regístrate</a>
@@ -153,40 +164,57 @@
             </form>
         </div>
     </div>
-    <script>
+
+    <!-- <script>
         document.getElementById("loginForm").addEventListener("submit", async function (event) {
-            event.preventDefault();
-
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
-
-            try {
-                const response = await fetch("http://localhost:8000/api/user/login", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({ email, password })
-                });
-
-                const data = await response.json();
-
-                if (response.ok) {
-                    // Login exitoso
-                    document.getElementById("message").innerText = "Sesión iniciada correctamente";
-                    console.log("Sesión iniciada:", data);
-                    // Aquí podrías redireccionar a otra página o realizar otras acciones después del login exitoso
-                } else {
-                    // Error en el login
-                    document.getElementById("message").innerText = data.message;
-                    console.error("Error en el login:", data.message);
-                }
-            } catch (error) {
-                console.error("Error en la solicitud:", error);
-                document.getElementById("message").innerText = "Ocurrió un error al intentar iniciar sesión";
-            }
         });
+    </script> -->
+
+    <script>
+        async function onSubmit(token) {
+
+            console.log(grecaptcha.getResponse());
+            console.log("Validando reCAPTCHA");
+
+            if (grecaptcha.getResponse() == "") {
+                event.preventDefault();
+                alert("Completa la validación de reCAPTCHA");
+            } else {
+                alert("Validación de reCAPTCHA exitosa");
+                event.preventDefault();
+
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+
+                try {
+                    const response = await fetch("http://localhost:8000/api/user/login", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({ email, password })
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        // Login exitoso
+                        document.getElementById("message").innerText = "Sesión iniciada correctamente";
+                        console.log("Sesión iniciada:", data);
+                        // Aquí podrías redireccionar a otra página o realizar otras acciones después del login exitoso
+                    } else {
+                        // Error en el login
+                        document.getElementById("message").innerText = data.message;
+                        console.error("Error en el login:", data.message);
+                    }
+                } catch (error) {
+                    console.error("Error en la solicitud:", error);
+                    document.getElementById("message").innerText = "Ocurrió un error al intentar iniciar sesión";
+                }
+            }
+        }
     </script>
+
     <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
