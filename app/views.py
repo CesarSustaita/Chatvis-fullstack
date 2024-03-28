@@ -3,17 +3,19 @@ from flask import jsonify
 from flask import Flask, render_template, redirect, url_for, request, session
 from pymongo import MongoClient
 from flask import send_from_directory
+from app.helpers import verify_recaptcha
 
 app.secret_key = "chatvis"
 
-# client = MongoClient("mongodb://localhost:27017/")
-client = MongoClient(
-    "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
-)
+client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
+# client = MongoClient(
+#     "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
+# )
 db = client["test"]
 users_collection = db["users"]
 registro_exitoso = db["users"]
 
+# TODO: Protect the routes that require authentication
 
 @app.route("/inicio")
 def inicio():
@@ -54,6 +56,14 @@ def login():
     if request.method == "POST":
         email = request.form["email"]
         password = request.form["password"]
+        
+        recaptcha_response = request.form["g-recaptcha-response"]
+        recaptcha_verified = verify_recaptcha(recaptcha_response)
+        
+        if not recaptcha_verified:
+            error = "Por favor, verifica que no eres un robot."
+            return render_template("login.html", error=error)
+        
 
         # Buscar el usuario en la base de datos por email
         user = users_collection.find_one({"email": email})
