@@ -170,23 +170,15 @@
             </div>
 
             <form action="/register/mail" method="post">
-                <!-- <div class="mb-3"> -->
-                <label for="exampleInputEmail1" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    name="email" />
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email" name="email" />
+                <br>
                 <!-- Mostrar errores debajo del campo de entrada -->
                 <div v-for="(error, index) in errors" :key="index" class="text-danger">{{ error }}</div>
-                <!-- </div> -->
-                <button type="submit" class="btn btn-outline-dark mt-3"">Iniciar Sesión</button>
+                <button type="submit" class="btn btn-outline-dark mt-3">Continuar</button>
             </form>
-
-            <!-- Botones de acción, sin lógica de Vue -->
-            <!-- <a href=" /register/account" class="btn btn-outline-dark mt-3" role="button">
-                    Continuar
-                    </a>
-                    <button type="button"></button> -->
         </div>
-        <div class="cuenta mt-3">
+        <div class=" cuenta mt-3">
             ¿Ya tienes una cuenta? <a href="/login" class="link-primary">Inicia Sesión</a>
         </div>
     </div>

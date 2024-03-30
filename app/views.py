@@ -5,17 +5,19 @@ from pymongo import MongoClient
 from flask import send_from_directory
 from app.helpers import verify_recaptcha, attempt_login
 from werkzeug.security import generate_password_hash
+
 app.secret_key = "chatvis"
 
-client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
-# client = MongoClient(
-#     "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
-# )
+# client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
+client = MongoClient(
+    "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
+)
 db = client["test"]
 users_collection = db["users"]
 registro_exitoso = db["users"]
 
 # TODO: Protect the routes that require authentication
+
 
 @app.route("/inicio")
 def inicio():
@@ -56,16 +58,16 @@ def login():
     if request.method == "POST":
         email = request.form["email"]
         password = request.form["password"]
-        
+
         recaptcha_response = request.form["g-recaptcha-response"]
         recaptcha_verified = verify_recaptcha(recaptcha_response)
-        
+
         if not recaptcha_verified:
             error = "Por favor, verifica que no eres un robot."
             return render_template("login.html", error=error)
-        
+
         login_successful, error = attempt_login(email, password, users_collection)
-        
+
         if login_successful:
             user = users_collection.find_one({"email": email})
             # Iniciar sesión
@@ -73,10 +75,11 @@ def login():
             session["logged_in"] = True
             session["email"] = email
             session["name"] = user.get("nombre")
+            session["admin"] = user.get("admin")
             return redirect(url_for("dashboard"))
-        else:   
+        else:
             return render_template("login.html", error=error)
-    
+
     else:
         return render_template("login.html")
 
@@ -148,11 +151,15 @@ def register_u():
         # Almacenar los datos en la sesión
         session["registro_pagina4"] = datos
         # Recopilar todos los datos de la sesión
+        hashed_password = generate_password_hash(
+            session["registro_pagina2"]["password"]
+        )
         registro_completo = {
             **session.get("registro_pagina1", {}),
             **session.get("registro_pagina2", {}),
             **session.get("registro_pagina3", {}),
             **datos,
+            "password": hashed_password,
             "admin": 0,
             "num_uso": 0,
         }
