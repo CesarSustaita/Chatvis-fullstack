@@ -2,6 +2,7 @@ import requests
 import pymongo
 from datetime import datetime, timedelta
 from werkzeug.security import check_password_hash
+import re
 
 def verify_recaptcha(recaptcha_response: str) -> bool:
     """
@@ -88,3 +89,44 @@ def attempt_login(email: str, password: str, users_collection: pymongo.collectio
     )
     
     return True, None
+
+def is_valid_email(email: str) -> bool:
+    """
+    Check if the email is valid.
+    
+    Args:
+        email (str): The email to validate.
+        
+    Returns:
+        bool: True if the email is valid, False otherwise.
+    """
+    # pattern = r'/[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/$'
+    pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+    return re.match(pattern, email) is not None
+
+def is_valid_password(password: str) -> bool:
+    """
+    Check if the password is valid.
+    
+    Args:
+        password (str): The password to validate.
+        
+    Returns:
+        bool: True if the password is valid, False otherwise.
+    """
+    if len(password) < 8:
+        return False
+    
+    if not any(char.isupper() for char in password):
+        return False
+    
+    if not any(char.islower() for char in password):
+        return False
+    
+    # Check if the password contains at least one digit or special character
+    if not (any(char.isdigit() for char in password) \
+        or any(char in "!\"\'#$%&/=?¡|°¨*,.-;:_<>€@¿\{\}[]()" for char in password)):
+        return False
+    
+    # Example of a valid password: "aK#sZ{}x[]"
+    return True

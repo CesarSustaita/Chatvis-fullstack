@@ -3,15 +3,15 @@ from flask import jsonify
 from flask import Flask, render_template, redirect, url_for, request, session
 from pymongo import MongoClient
 from flask import send_from_directory
-from app.helpers import verify_recaptcha, attempt_login
+from app.helpers import verify_recaptcha, attempt_login, is_valid_email, is_valid_password
 from werkzeug.security import generate_password_hash
 
 app.secret_key = "chatvis"
 
-# client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
-client = MongoClient(
-    "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
-)
+client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
+# client = MongoClient(
+    # "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
+# )
 db = client["test"]
 users_collection = db["users"]
 registro_exitoso = db["users"]
@@ -56,16 +56,16 @@ def index():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        email = request.form["email"]
-        password = request.form["password"]
-
-        recaptcha_response = request.form["g-recaptcha-response"]
+        recaptcha_response = request.form.get("g-recaptcha-response")
         recaptcha_verified = verify_recaptcha(recaptcha_response)
 
         if not recaptcha_verified:
             error = "Por favor, verifica que no eres un robot."
             return render_template("login.html", error=error)
 
+        email = request.form.get("email")
+        password = request.form.get("password")
+        
         login_successful, error = attempt_login(email, password, users_collection)
 
         if login_successful:
@@ -106,11 +106,40 @@ def logout():
 @app.route("/register/mail", methods=["GET", "POST"])
 def register_mail():
     if request.method == "POST":
+        # Validar datos del formulario
+        email = request.form.get("email")
+        password = request.form.get("password")
+        password_verify = request.form.get("password_verify")
+        
+        if not email or not password or not password_verify:
+            error = "Por favor, completa todos los campos."
+            return render_template("register1.html", error=error)
+        
+        if not is_valid_email(email):
+            error = "Por favor, introduce un email válido."
+            return render_template("register1.html", error=error)
+        
+        if not is_valid_password(password):
+            error = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número o caracter especial."
+            return render_template("register1.html", error=error)
+        
+        if password != password_verify:
+            error = "Las contraseñas no coinciden."
+            return render_template("register1.html", error=error)
+        
+        # Verificar si el email ya está registrado
+        user = users_collection.find_one({"email": email})
+        if user:
+            error = "Ya existe una cuenta registrada con este email."
+            return render_template("register1.html", error=error)
+        
+        
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
         session["registro_pagina1"] = datos
-        return redirect(url_for("register_account"))
+        success = "El email y la contraseña son válidos. Continúa con el registro."
+        return render_template("register2.html", success=success)
     else:
         return render_template("register1.html")
     # return render_template("register1.html")
