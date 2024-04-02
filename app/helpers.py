@@ -49,12 +49,16 @@ def attempt_login(email: str, password: str, users_collection: pymongo.collectio
     """
     # Buscar el usuario en la base de datos por email
     user = users_collection.find_one({"email": email})
+    
+    if user is None:
+        error = "Credenciales incorrectas. Por favor, inténtalo de nuevo."
+        return False, error
         
     if user.get("lockout_until") and datetime.now() < user["lockout_until"]:
         error = "Tu cuenta ha sido bloqueada. Por favor, inténtalo de nuevo más tarde."
         return False, error
     
-    if user is None or not check_password_hash(user["password"], password):
+    if not check_password_hash(user["password"], password):
         users_collection.update_one(
             {"email": email},
             {
