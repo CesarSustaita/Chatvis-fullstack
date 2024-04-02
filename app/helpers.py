@@ -150,3 +150,39 @@ def is_valid_name(name: str) -> bool:
         if unicodedata.category(char)[0] not in ('L', 'P', 'Z'):
             return False
     return True
+
+def is_valid_estado(estado: str) -> bool:
+    """
+    Check if the given estado is valid. Valid values are between 1 and 32.
+    
+    Args:
+        estado (str): The estado to validate.
+    
+    Returns:
+
+        bool: True if the estado is valid, False otherwise.
+    """
+    estado = int(estado)
+    if estado < 1 or estado > 32:
+        return False
+    
+    return True
+
+def is_valid_ciudad(ciudad: str) -> bool:
+    """
+    Check if the given ciudad is valid.
+    
+    Args:
+        ciudad (str): The ciudad to validate.
+        
+    Returns:
+        bool: True if the ciudad is valid, False otherwise.
+    """
+    if len(ciudad) < 2:
+        return False
+    
+    # Check if the ciudad contains only letters (L), punctuation (P) or separators (Z)
+    for char in ciudad:
+        if unicodedata.category(char)[0] not in ('L', 'P', 'Z'):
+            return False
+    return True
