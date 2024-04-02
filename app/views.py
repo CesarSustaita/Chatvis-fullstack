@@ -3,7 +3,7 @@ from flask import jsonify
 from flask import Flask, render_template, redirect, url_for, request, session
 from pymongo import MongoClient
 from flask import send_from_directory
-from app.helpers import verify_recaptcha, attempt_login, is_valid_email, is_valid_password
+from app.helpers import verify_recaptcha, attempt_login, is_valid_email, is_valid_password, is_valid_name
 from werkzeug.security import generate_password_hash
 
 app.secret_key = "chatvis"
@@ -148,6 +148,27 @@ def register_mail():
 @app.route("/register/account", methods=["GET", "POST"])
 def register_account():
     if request.method == "POST":
+        # Validar datos del formulario
+        nombre = request.form.get("nombre")
+        apellido_paterno = request.form.get("apellido_paterno")
+        apellido_materno = request.form.get("apellido_materno")
+        
+        if not nombre or not apellido_paterno:
+            error = "Por favor, completa los campos requeridos."
+            return render_template("register2.html", error=error)
+        
+        if not is_valid_name(nombre):
+            error = "Por favor, introduce un nombre válido."
+            return render_template("register2.html", error=error)
+
+        if not is_valid_name(apellido_paterno):
+            error = "Por favor, introduce un apellido paterno válido."
+            return render_template("register2.html", error=error)
+        
+        if apellido_materno and not is_valid_name(apellido_materno):
+            error = "Por favor, introduce un apellido materno válido."
+            return render_template("register2.html", error=error)
+        
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión

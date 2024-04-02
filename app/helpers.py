@@ -3,6 +3,7 @@ import pymongo
 from datetime import datetime, timedelta
 from werkzeug.security import check_password_hash
 import re
+import unicodedata
 
 def verify_recaptcha(recaptcha_response: str) -> bool:
     """
@@ -92,7 +93,7 @@ def attempt_login(email: str, password: str, users_collection: pymongo.collectio
 
 def is_valid_email(email: str) -> bool:
     """
-    Check if the email is valid.
+    Check if the given email is valid.
     
     Args:
         email (str): The email to validate.
@@ -106,7 +107,7 @@ def is_valid_email(email: str) -> bool:
 
 def is_valid_password(password: str) -> bool:
     """
-    Check if the password is valid.
+    Check if the given password is valid.
     
     Args:
         password (str): The password to validate.
@@ -129,4 +130,23 @@ def is_valid_password(password: str) -> bool:
         return False
     
     # Example of a valid password: "aK#sZ{}x[]"
+    return True
+
+def is_valid_name(name: str) -> bool:
+    """
+    Check if the given name is valid.
+    
+    Args:
+        name (str): The name to validate.
+        
+    Returns:
+        bool: True if the name is valid, False otherwise.
+    """
+    if len(name) < 1:
+        return False
+    
+    # Check if the name contains only letters (L), punctuation (P) or separators (Z)
+    for char in name:
+        if unicodedata.category(char)[0] not in ('L', 'P', 'Z'):
+            return False
     return True
