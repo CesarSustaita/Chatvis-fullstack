@@ -11,9 +11,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CDN de FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- CDN de Toastify -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
+    
     <style scoped>
         .wrapper {
             border: 0px solid rgb(196, 25, 25);
@@ -204,46 +202,8 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <!-- JavaScript de Toastify -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    
-    {% if error %}
-    <script>
-        Toastify({
-            text: "{{ error }}",
-            duration: 4000,
-            gravity: 'top',
-            position: 'center',
-            style: {
-                background: "linear-gradient(to left, #e33a3a, #db3838)",
-            },
-            offset: {
-                y: 20
-            },
-            close: true,
-            stopOnFocus: true,
-        }).showToast();
-    </script>
-    {% endif %}
-    
-    {% if success %}
-    <script>
-        Toastify({
-            text: "{{ success }}",
-            duration: 4000,
-            gravity: 'top',
-            position: 'center',
-            style: {
-                background: "linear-gradient(to right, #2cb983, #29ab7b)",
-            },
-            offset: {
-                y: 20
-            },
-            close: true,
-            stopOnFocus: true,
-        }).showToast();
-    </script>
-    {% endif %}
+    <!-- Toasts block -->
+    {% include "toasts.html" %}
 
     <!-- Validación de formulario -->
     <script src="{{ url_for('static', filename='js/register-uni-validation.js') }}"></script>

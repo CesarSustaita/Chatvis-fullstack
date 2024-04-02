@@ -1,6 +1,6 @@
 from app import app
 from flask import jsonify
-from flask import Flask, render_template, redirect, url_for, request, session
+from flask import Flask, render_template, redirect, url_for, request, session, flash
 from pymongo import MongoClient
 from flask import send_from_directory
 from app import helpers
@@ -15,10 +15,10 @@ client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSel
 # )
 db = client["test"]
 users_collection = db["users"]
-registro_exitoso = db["users"]
 
 # TODO: Protect the routes that require authentication
 
+# TODO: Use 'flash' to display messages to the user (e.g., success, error, warning, info)
 
 @app.route("/inicio")
 def inicio():
@@ -33,7 +33,7 @@ def index():
     Returns:
         The rendered index.html template.
     """
-    return render_template("inicio.html")
+    return redirect(url_for("inicio"))
 
 
 """
@@ -77,8 +77,8 @@ def login():
             session["email"] = email
             session["name"] = user.get("nombre")
             session["admin"] = user.get("admin")
-            success = "Has iniciado sesión exitosamente."
-            return render_template("index.html", success=success)
+            flash("Has iniciado sesión exitosamente.", "success")
+            return redirect(url_for("dashboard"))
         else:
             return render_template("login.html", error=error)
 
@@ -89,10 +89,11 @@ def login():
 @app.route("/dashboard")
 def dashboard():
     if "logged_in" in session:
-        email = session["email"]
+        email = session.get("email")  # Obtener el email del usuario desde la sesión
         name = session.get("name")  # Obtener el nombre del usuario desde la sesión
         return render_template("index.html", email=email, name=name)
     else:
+        flash("Inicia sesión para acceder al dashboard.", "warning")
         return redirect(url_for("login"))
 
 
@@ -280,15 +281,15 @@ def register_u():
         datos_de_registro["password"] = hashed_password
         
         # Guardar los datos en la base de datos MongoDB
-        registro_exitoso.insert_one(datos_de_registro)
+        users_collection.insert_one(datos_de_registro)
         
         # Limpiar la sesión después de guardar los datos
         session.pop("registro_pagina1", None)
         session.pop("registro_pagina2", None)
         session.pop("registro_pagina3", None)
         session.pop("registro_pagina4", None)
-        success = "¡Registro exitoso! Ahora puedes iniciar sesión."
-        return render_template("login.html", success=success)
+        flash("¡Registro exitoso! Ahora puedes iniciar sesión.", "success")
+        return redirect(url_for("login"))
     # poner la ruta siguiente
     else:
         datos = helpers.get_register_data()
