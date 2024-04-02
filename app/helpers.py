@@ -55,7 +55,7 @@ def attempt_login(email: str, password: str, users_collection: pymongo.collectio
         return False, error
         
     if user.get("lockout_until") and datetime.now() < user["lockout_until"]:
-        error = "Tu cuenta ha sido bloqueada. Por favor, inténtalo de nuevo más tarde."
+        error = "Esta cuenta ha sido bloqueada. Por favor, inténtalo de nuevo más tarde."
         return False, error
     
     if not check_password_hash(user["password"], password):
@@ -75,7 +75,7 @@ def attempt_login(email: str, password: str, users_collection: pymongo.collectio
                     "$unset": {"failed_login_attempts": ""}
                 }
             )
-            error = "Tu cuenta ha sido bloqueada. Por favor, inténtalo de nuevo más tarde."
+            error = "Esta cuenta ha sido bloqueada. Por favor, inténtalo de nuevo más tarde."
             return False, error
         error = "Credenciales incorrectas. Por favor, inténtalo de nuevo."
         return False, error
