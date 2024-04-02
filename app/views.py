@@ -143,6 +143,8 @@ def register_mail():
         
         # Obtener los datos del formulario
         datos = request.form.to_dict()
+        # Eliminar el campo de verificación de contraseña
+        datos.pop('password_verify', None)
         # Almacenar los datos en la sesión
         session["registro_pagina1"] = datos
         datos_existentes = helpers.get_register_data()
