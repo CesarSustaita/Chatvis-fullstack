@@ -1,6 +1,7 @@
 import requests
 import pymongo
 from datetime import datetime, timedelta
+from flask import session
 from werkzeug.security import check_password_hash
 import re
 import unicodedata
@@ -90,6 +91,21 @@ def attempt_login(email: str, password: str, users_collection: pymongo.collectio
     )
     
     return True, None
+
+def get_register_data() -> dict:
+    """
+    Get the data required to register a user.
+    
+    Returns:
+        dict: The data required to register a user.
+    """
+    datos = {
+        **session.get("registro_pagina1", {}),
+        **session.get("registro_pagina2", {}),
+        **session.get("registro_pagina3", {}),
+        **session.get("registro_pagina4", {}),
+    }
+    return datos
 
 def is_valid_email(email: str) -> bool:
     """
@@ -186,3 +202,41 @@ def is_valid_ciudad(ciudad: str) -> bool:
         if unicodedata.category(char)[0] not in ('L', 'P', 'Z'):
             return False
     return True
+
+def is_valid_universidad(universidad: str) -> bool:
+    """
+    Check if the given universidad is valid.
+    
+    Args:
+        universidad (str): The universidad to validate.
+        
+    Returns:
+        bool: True if universidad is valid, False otherwise.
+    """
+    if len(universidad) < 3:
+        return False
+    
+    # Check if universidad contains only letters (L), punctuation (P) or separators (Z)
+    for char in universidad:
+        if unicodedata.category(char)[0] not in ('L', 'P', 'Z'):
+            return False
+    return True
+
+def register_data_is_complete (data: dict) -> tuple:
+    """
+    Check if the data required to register a user is complete.
+    
+    Args:
+        data (dict): The data to validate.
+        
+    Returns:
+        tuple: A tuple where the first element is a boolean indicating whether the data is complete
+        and the second element is the missing field if the data is incomplete.
+    """
+    required_fields = ["email", "password", "nombre", "apellido_paterno", "estado", "ciudad", "terminos"]
+    
+    for field in required_fields:
+        if field not in data:
+            return False, field
+    
+    return True, None

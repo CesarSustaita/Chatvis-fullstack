@@ -3,8 +3,9 @@ from flask import jsonify
 from flask import Flask, render_template, redirect, url_for, request, session
 from pymongo import MongoClient
 from flask import send_from_directory
-from app.helpers import verify_recaptcha, attempt_login, is_valid_email, is_valid_password, is_valid_name, is_valid_estado, is_valid_ciudad
+from app import helpers
 from werkzeug.security import generate_password_hash
+from datetime import timedelta
 
 app.secret_key = "chatvis"
 
@@ -57,7 +58,7 @@ def index():
 def login():
     if request.method == "POST":
         recaptcha_response = request.form.get("g-recaptcha-response")
-        recaptcha_verified = verify_recaptcha(recaptcha_response)
+        recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
 
         if not recaptcha_verified:
             error = "Por favor, verifica que no eres un robot."
@@ -66,7 +67,7 @@ def login():
         email = request.form.get("email")
         password = request.form.get("password")
         
-        login_successful, error = attempt_login(email, password, users_collection)
+        login_successful, error = helpers.attempt_login(email, password, users_collection)
 
         if login_successful:
             user = users_collection.find_one({"email": email})
@@ -76,7 +77,8 @@ def login():
             session["email"] = email
             session["name"] = user.get("nombre")
             session["admin"] = user.get("admin")
-            return redirect(url_for("dashboard"))
+            success = "Has iniciado sesión exitosamente."
+            return render_template("index.html", success=success)
         else:
             return render_template("login.html", error=error)
 
@@ -97,10 +99,12 @@ def dashboard():
 # Cerrar sesión
 @app.route("/logout")
 def logout():
+    app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=-10)
     session.pop("logged_in", None)
     session.pop("email", None)
     session.pop("name", None)
-    return redirect(url_for("login"))
+    success = "Has cerrado sesión exitosamente."
+    return render_template("inicio.html", success=success)
 
 
 @app.route("/register/mail", methods=["GET", "POST"])
@@ -111,37 +115,40 @@ def register_mail():
         password = request.form.get("password")
         password_verify = request.form.get("password_verify")
         
+        datos_existentes = helpers.get_register_data()
+        
         if not email or not password or not password_verify:
             error = "Por favor, completa todos los campos."
-            return render_template("register1.html", error=error)
+            return render_template("register1.html", error=error, datos=datos_existentes)
         
-        if not is_valid_email(email):
+        if not helpers.is_valid_email(email):
             error = "Por favor, introduce un email válido."
-            return render_template("register1.html", error=error)
+            return render_template("register1.html", error=error, datos=datos_existentes)
         
-        if not is_valid_password(password):
+        if not helpers.is_valid_password(password):
             error = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número o caracter especial."
-            return render_template("register1.html", error=error)
+            return render_template("register1.html", error=error, datos=datos_existentes)
         
         if password != password_verify:
             error = "Las contraseñas no coinciden."
-            return render_template("register1.html", error=error)
+            return render_template("register1.html", error=error, datos=datos_existentes)
         
         # Verificar si el email ya está registrado
         user = users_collection.find_one({"email": email})
         if user:
             error = "Ya existe una cuenta registrada con este email."
-            return render_template("register1.html", error=error)
+            return render_template("register1.html", error=error, datos=datos_existentes)
         
         
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
         session["registro_pagina1"] = datos
-        success = "El email y la contraseña son válidos. Continúa con el registro."
-        return render_template("register2.html", success=success)
+        datos_existentes = helpers.get_register_data()
+        return render_template("register2.html", datos=datos_existentes)
     else:
-        return render_template("register1.html")
+        datos = helpers.get_register_data()
+        return render_template("register1.html", datos=datos)
     # return render_template("register1.html")
 
 
@@ -153,30 +160,34 @@ def register_account():
         apellido_paterno = request.form.get("apellido_paterno")
         apellido_materno = request.form.get("apellido_materno")
         
+        datos_existentes = helpers.get_register_data()
+        
         if not nombre or not apellido_paterno:
             error = "Por favor, completa los campos requeridos."
-            return render_template("register2.html", error=error)
+            return render_template("register2.html", error=error, datos=datos_existentes)
         
-        if not is_valid_name(nombre):
+        if not helpers.is_valid_name(nombre):
             error = "Por favor, introduce un nombre válido."
-            return render_template("register2.html", error=error)
+            return render_template("register2.html", error=error, datos=datos_existentes)
 
-        if not is_valid_name(apellido_paterno):
+        if not helpers.is_valid_name(apellido_paterno):
             error = "Por favor, introduce un apellido paterno válido."
-            return render_template("register2.html", error=error)
+            return render_template("register2.html", error=error, datos=datos_existentes)
         
-        if apellido_materno and not is_valid_name(apellido_materno):
+        if apellido_materno and not helpers.is_valid_name(apellido_materno):
             error = "Por favor, introduce un apellido materno válido."
-            return render_template("register2.html", error=error)
+            return render_template("register2.html", error=error, datos=datos_existentes)
         
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
         session["registro_pagina2"] = datos
-        return redirect(url_for("register_state"))
+        datos_existentes = helpers.get_register_data()
+        return render_template("register3.html", datos=datos_existentes)
     else:
         # datos = session.get("registro_pagina1", {})
-        return render_template("register2.html")
+        datos = helpers.get_register_data()
+        return render_template("register2.html", datos=datos)
     # return render_template("register2.html")
 
 
@@ -187,59 +198,101 @@ def register_state():
         estado = request.form.get("estado")
         ciudad = request.form.get("ciudad")
         
+        datos_existentes = helpers.get_register_data()
+        
         if not estado or not ciudad:
             error = "Por favor, completa los campos requeridos."
-            return render_template("register3.html", error=error)
+            return render_template("register3.html", error=error, datos=datos_existentes)
         
-        if not is_valid_estado(estado):
+        if not helpers.is_valid_estado(estado):
             error = "Por favor, introduce un estado válido."
-            return render_template("register3.html", error=error)
+            return render_template("register3.html", error=error, datos=datos_existentes)
         
-        if not is_valid_ciudad(ciudad):
+        if not helpers.is_valid_ciudad(ciudad):
             error = "Por favor, introduce una ciudad válida."
-            return render_template("register3.html", error=error)
+            return render_template("register3.html", error=error, datos=datos_existentes)
         
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
         session["registro_pagina3"] = datos
-        return redirect(url_for("register_u"))
+        datos_existentes = helpers.get_register_data()
+        return render_template("register4.html", datos=datos_existentes)
     else:
-        return render_template("register3.html")
+        datos = helpers.get_register_data()
+        return render_template("register3.html", datos=datos)
     # return render_template("register3.html")
 
 
 @app.route("/register/u", methods=["GET", "POST"])
 def register_u():
     if request.method == "POST":
+        # Validar datos del formulario
+        universidad = request.form.get("universidad")
+        terminos = request.form.get("terminos")
+        
+        datos_existentes = helpers.get_register_data()
+        
+        if universidad and not helpers.is_valid_universidad(universidad):
+            error = "Por favor, introduce un nombre válido de tu universidad."
+            return render_template("register4.html", error=error, datos=datos_existentes)
+        
+        if terminos != 'accepted':
+            error = "Por favor, acepta los términos y condiciones."
+            return render_template("register4.html", error=error, datos=datos_existentes)
+        
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
         session["registro_pagina4"] = datos
         # Recopilar todos los datos de la sesión
-        hashed_password = generate_password_hash(
-            session["registro_pagina2"]["password"]
-        )
-        registro_completo = {
+        datos_de_registro = {
             **session.get("registro_pagina1", {}),
             **session.get("registro_pagina2", {}),
             **session.get("registro_pagina3", {}),
             **datos,
-            "password": hashed_password,
             "admin": 0,
             "num_uso": 0,
         }
+        
+        complete, missing_field = helpers.register_data_is_complete(datos_de_registro)
+        
+        if not complete:
+            if missing_field == 'email' or missing_field == 'password':
+                error = "Completa los campos de email y contraseña."
+                return render_template("register1.html", error=error, datos=datos_de_registro)
+            
+            if missing_field == 'nombre' or missing_field == 'apellido_paterno':
+                error = "Completa los campos de nombre y apellido paterno."
+                return render_template("register2.html", error=error, datos=datos_de_registro)
+
+                
+            if missing_field == 'estado' or missing_field == 'ciudad':
+                error = "Completa los campos de estado y ciudad."
+                return render_template("register3.html", error=error, datos=datos_de_registro)
+            
+            if missing_field == 'terminos':
+                error = "Por favor, acepta los términos y condiciones."
+                return render_template("register4.html", error=error, datos=datos_de_registro)
+        
+        # Encriptar la contraseña
+        hashed_password = generate_password_hash(datos_de_registro["password"])
+        datos_de_registro["password"] = hashed_password
+        
         # Guardar los datos en la base de datos MongoDB
-        registro_exitoso.insert_one(registro_completo)
+        registro_exitoso.insert_one(datos_de_registro)
+        
         # Limpiar la sesión después de guardar los datos
         session.pop("registro_pagina1", None)
         session.pop("registro_pagina2", None)
         session.pop("registro_pagina3", None)
         session.pop("registro_pagina4", None)
-        return redirect(url_for("index"))
+        success = "¡Registro exitoso! Ahora puedes iniciar sesión."
+        return render_template("login.html", success=success)
     # poner la ruta siguiente
     else:
-        return render_template("register4.html")
+        datos = helpers.get_register_data()
+        return render_template("register4.html", datos=datos)
     # return render_template("register4.html")
 
 

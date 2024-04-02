@@ -24,6 +24,9 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
   <!-- CDN de FontAwesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- CDN de Toastify -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
   <style scoped>
     .hidden {
       display: none;
@@ -457,6 +460,41 @@
 
   <!-- Sweet alert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- JavaScript de Toastify -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+  {% if error %}
+  <script>
+    Toastify({
+      text: "{{ error }}",
+      duration: 4000,
+      gravity: 'top',
+      position: 'center',
+      style: {
+        background: "linear-gradient(to left, #e33a3a, #db3838)",
+      },
+      close: true,
+      stopOnFocus: true,
+    }).showToast();
+  </script>
+  {% endif %}
+  
+  {% if success %}
+  <script>
+    Toastify({
+      text: "{{ success }}",
+      duration: 4000,
+      gravity: 'top',
+      position: 'center',
+      style: {
+        background: "linear-gradient(to right, #2cb983, #29ab7b)",
+      },
+      close: true,
+      stopOnFocus: true,
+    }).showToast();
+  </script>
+  {% endif %}
 </body>
 
 </html>
