@@ -14,9 +14,6 @@ def verify_recaptcha(recaptcha_response: str) -> bool:
         bool: True if the reCAPTCHA response is valid, False otherwise.
     """
     
-    # FIXME: Temporary fix to allow testing without reCAPTCHA
-    return True
-    
     # TODO: Move this to a configuration file
     secret_key = "6Ld58aEpAAAAAMGcyyBsOv62fwY9LGWQCwS9xrl1"
 
