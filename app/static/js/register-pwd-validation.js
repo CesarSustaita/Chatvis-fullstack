@@ -3,13 +3,23 @@ const password = document.getElementById('password')
 const passwordVerify = document.getElementById('password-verify')
 const passwordFeedback = document.getElementById('password-invalid-feedback')
 const passwordVerifyFeedback = document.getElementById('password-verify-invalid-feedback')
-let regex = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[\\d!"\'#$%&/=?¡|°¨*,.\\-;:_<>€@¿{}\\[\\]\\(\\)])[A-Za-z\\d!"\'#$%&/=?¡|°¨*,.\\-;:_<>€@¿{}\\[\\]\\(\\)]{8,}$')
+const regex = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[\\d!"\'#$%&/=?¡|°¨*,.\\-;:_<>€@¿{}\\[\\]\\(\\)])[A-Za-z\\d!"\'#$%&/=?¡|°¨*,.\\-;:_<>€@¿{}\\[\\]\\(\\)]{8,}$')
 
-let msgMinLength = 'La contraseña debe tener al menos 8 caracteres.'
-let msgPattern = 'La contraseña debe tener al menos una letra mayúscula, una letra minúscula, y un número o un caracter especial.'
-let msgNoMatch = 'Las contraseñas no coinciden.'
+const msgMinLength = 'La contraseña debe tener al menos 8 caracteres.'
+const msgPattern = 'La contraseña debe tener al menos una letra mayúscula, una letra minúscula, y un número o un caracter especial.'
+const msgNoMatch = 'Las contraseñas no coinciden.'
 
-password.addEventListener('input', () => {
+function checkPwdsMatchValidity() {
+    if (password.value !== passwordVerify.value) {
+        passwordVerify.setCustomValidity(msgNoMatch)
+        passwordVerifyFeedback.innerText = msgNoMatch
+    } else {
+        passwordVerify.setCustomValidity('')
+        passwordVerifyFeedback.innerText = ''
+    }
+}
+
+function checkPasswordValidity() {
     if (password.value.length < 8) {
         password.setCustomValidity(msgMinLength)
         passwordFeedback.innerText = msgMinLength
@@ -22,22 +32,22 @@ password.addEventListener('input', () => {
             passwordFeedback.innerText = ''
         }
     }
+}
 
-    if (password.value !== passwordVerify.value) {
-        passwordVerify.setCustomValidity(msgNoMatch)
-        passwordVerifyFeedback.innerText = msgNoMatch
-    } else {
-        passwordVerify.setCustomValidity('')
-        passwordVerifyFeedback.innerText = ''
-    }
-})
+function pwdFieldAddListener() {
+    password.addEventListener('input', () => {
+        checkPasswordValidity()
+        checkPwdsMatchValidity()
+    })
+}
 
-passwordVerify.addEventListener('input', () => {
-    if (password.value !== passwordVerify.value) {
-        passwordVerify.setCustomValidity(msgNoMatch)
-        passwordVerifyFeedback.innerText = msgNoMatch
-    } else {
-        passwordVerify.setCustomValidity('')
-        passwordVerifyFeedback.innerText = ''
-    }
+function pwdVerifyFieldAddListener() {
+    passwordVerify.addEventListener('input', () => {
+        checkPwdsMatchValidity()
+    })
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    pwdFieldAddListener()
+    pwdVerifyFieldAddListener()
 })
