@@ -9,10 +9,10 @@ from datetime import timedelta
 
 app.secret_key = "chatvis"
 
-client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
-# client = MongoClient(
-    # "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
-# )
+#client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
+client = MongoClient(
+    "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
+)
 db = client["test"]
 users_collection = db["users"]
 
@@ -91,6 +91,7 @@ def dashboard():
     if "logged_in" in session:
         email = session.get("email")  # Obtener el email del usuario desde la sesión
         name = session.get("name")  # Obtener el nombre del usuario desde la sesión
+        admin = session.get("admin") # Is admin?
         return render_template("index.html", email=email, name=name)
     else:
         flash("Inicia sesión para acceder al dashboard.", "warning")
@@ -302,15 +303,16 @@ def register_u():
 @app.route("/tabla")
 def tabla_admin():
     if "logged_in" in session:
+        email = session.get("email")  # Obtener el email del usuario desde la sesión
+        name = session.get("name")  # Obtener el nombre del usuario desde la sesión
         permission = session.get("name")
         usuarios = list(users_collection.find())
-        return render_template("tabla_admin.html", users=usuarios)
+        return render_template("tabla_admin.html", users=usuarios, mail=email, name=name)
 
 
 # @app.route('/login')
 # def lector():
 #   return render_template('login.html')
-
 
 ##@app.route('/lector')
 # def login():

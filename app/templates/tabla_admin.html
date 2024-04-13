@@ -25,105 +25,233 @@
   <!-- CDN de FontAwesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+  <style scoped>
+    .navUser {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 2px solid #d1d1d1;
+      height: 80px;
+      background-color: white;
+    }
+
+    .seccion1 {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .seccion2 {
+      width: 10%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .icon-button {
+      padding: 5px;
+      width: auto;
+      height: auto;
+      border: none;
+    }
+
+    .btn-dark {
+      color: white;
+    }
+
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: rgb(44, 44, 44);
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a:hover {
+      color: #2cb983;
+    }
+
+    .btn-outline-secondary {
+      color: black;
+      font-weight: 500;
+    }
+
+    .nav {
+      padding: 10px 100px;
+    }
+
+    .nav-link {
+      color: black;
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none;
+    }
+
+    .text{
+      text-decoration: none;
+      color: rgb(44, 44, 44);
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    ul{
+      list-style-type: decimal;
+    }
+
+    .center{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
-  <nav>
-    <div class="navUser">
-      <div class="seccion1">
-        <div class="title-inter">
-          <a href="/inicio">Chatvis Analyzer</a>
-        </div>
-        <label for="whatsChatSinAnimaciones" class="nav-link">
-          <div class="btn btn-dark">
-            <i class="fa-solid fa-upload"></i> Subir Archivo
-            <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
-          </div>
-        </label>
+  <div class="navUser">
+    <div class="seccion1">
+      <div class="title-inter">
+        <a href="/dashboard">Chatvis Analyzer</a>
       </div>
-      <div class="seccion2">
-        <div class="icon-info">
-          <button class="btn icon-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="fa-solid fa-circle-info fa-xl" style="color: #a3a3a3"></i> Info
+      <label for="whatsChatSinAnimaciones" class="nav-link">
+        <div class="btn btn-dark">
+          <i class="fa-solid fa-upload"></i> Subir Archivo
+          <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
+        </div>
+      </label>
+    </div>
+    <div class="seccion2">
+      <div class="icon-info">
+        <button class="btn icon-button text" data-bs-toggle="modal" data-bs-target="#modalInfo">
+          <i class="fa-solid fa-circle-info fa-xl" style="color: #a3a3a3"></i> Info
+        </button>
+      </div>
+      <div class="line text" style="color: #a3a3a3">|</div>
+      <div class="profile-icon">
+        <div class="btn-group" role="group">
+          <button class="btn icon-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user fa-xl" style="color: #a3a3a3"></i>
           </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">{{name}}</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="{{url_for('logout')}}">Cerrar Sesión</a></li>
+          </ul>
         </div>
-        <div class="line" style="color: #a3a3a3">|</div>
-        <div class="profile-icon">
-          <div class="btn-group" role="group">
-            <button class="btn icon-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-user fa-xl" style="color: #a3a3a3"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Info -->
+  <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text">
+          <h1 class="modal-title fs-3" id="modalInfoLabel">¿Cómo funciona?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text">
+          <ul>
+            <li>Importa tu conversación de WhatsApp en formato “.txt”.</li>
+            <ul style="list-style-type: '\2753';">
+              <li><h5><a href="https://faq.whatsapp.com/es/android/23756533/" target="_blank">¿Cómo exportar un chat de WhatsApp?</a></h5></li>
             </ul>
+            <li>Presiona el botón de subir archivo o arrastra tu conversación.</li>
+            <li>El analizador ChatVis subirá tu archivo, lo analizará, y mostrará el resultado.</li>
+          </ul>
+          <div class="alert alert-warning text">
+            <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO guardará</strong> ninguna conversación analizada para mantener su privacidad.
           </div>
         </div>
       </div>
     </div>
-    <div class="botones-pestañas">
-      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
-        <label class="btn btn-outline-secondary" for="btnradio1">
-          <i class="fa-solid fa-user-group"></i> Usuarios
-        </label>
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
-        <label class="btn btn-outline-secondary" for="btnradio2">
-          <i class="fa-solid fa-chart-simple"></i> Analizador
-        </label>
-      </div>
-    </div>
-  </nav>
+  </div>
+
+
   <main>
     <div id="app">
-      <div class="full-screen-container">
+      <table class="table table-bordered align-middle center text" style="text-align: center;">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 80px;" data-sort="numero">#</th>
+            <th scope="col" style="width: 300px;" data-sort="nombre">Nombre</th>
+            <th scope="col" style="width: 200px;" data-sort="universidad">Universidad</th>
+            <th scope="col" style="width: 200px;" data-sort="estado">Estado</th>
+            <th scope="col" style="width: 200px;" data-sort="ciudad">Ciudad</th>
+            <th scope="col" style="width: 200px;" data-sort="uso">Numero de usos</th>
+            <th scope="col" style="width: 80px;" data-sort="numero">Editar</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          {% for user in users %}
+          <tr>
+            <td style="width: 80px;">
+              <p>1</p>
+            </td>
+            <td style="width: 300px;">{{ user.nombre }} {{ user.apellido_paterno }} {{ user.apellido_materno }}</td>
+            <td style="width: 200px;">{{ user.universidad }}</td>
+            <td style="width: 200px;">
+              <script>
+                // Objeto de mapeo de números de estado a nombres de estado
+                var nombresEstados = {
+                  '1': 'Aguascalientes',
+                  '2': 'Baja California',
+                  '3': 'Baja California Sur',
+                  '4': 'Campeche',
+                  '5': 'Coahuila',
+                  '6': 'Colima',
+                  '7': 'Chiapas',
+                  '8': 'Chihuahua',
+                  '9': 'Ciudad de México',
+                  '10': 'Durango',
+                  '11': 'Guanajuato',
+                  '12': 'Guerrero',
+                  '13': 'Hidalgo',
+                  '14': 'Jalisco',
+                  '15': 'México',
+                  '16': 'Michoacán',
+                  '17': 'Morelos',
+                  '18': 'Nayarit',
+                  '19': 'Nuevo León',
+                  '20': 'Oaxaca',
+                  '21': 'Puebla',
+                  '22': 'Querétaro',
+                  '23': 'Quintana Roo',
+                  '24': 'San Luis Potosí',
+                  '25': 'Sinaloa',
+                  '26': 'Sonora',
+                  '27': 'Tabasco',
+                  '28': 'Tamaulipas',
+                  '29': 'Tlaxcala',
+                  '30': 'Veracruz',
+                  '31': 'Yucatán',
+                  '32': 'Zacatecas'
+                };
 
-        <div class="cont-superior">
-          <div class="user-table">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Universidad</th>
-                  <th scope="col">Estado</th>
-                  <th scope="col">Ciudad</th>
-                  <th scope="col">Numero de usos</th>
-                  <th scope="col">Edición</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- <tr>
-                  <th scope="row">1</th>
-                  <td>Jaime Garcia</td>
-                  <td>UAA</td>
-                  <td>Aguascalientes</td>
-                  <td>México</td>
-                  <td>Séptimo</td>
-                  <td>Agosto 12, 2022 - 9:42 am</td>
-                  <td><i class="fa-solid fa-trash" style="color: #292929"></i></td>
-                </tr> -->
-                <!-- quitado codigo de aqui -->
-                {% for user in users %}
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>{{ user.nombre }} {{ user.apellido_paterno }} {{ user.apellido_materno }}</td>
-                  <td>{{ user.universidad }}</td>
-                  <td>{{ user.estado }}</td>
-                  <td>{{ user.ciudad }}</td>
-                  <td>{{ user.num_uso }}</td>
-                  <td>ocultar</td>
-                </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+                // Obtener el número de estado desde la variable user.estado
+                var numeroEstado = "{{ user.estado }}";
+                
+                // Mostrar el nombre correspondiente en el <td>
+                document.write(nombresEstados[numeroEstado]);
+              </script>
+            </td>
+            <td style="width: 200px;">{{ user.ciudad }}</td>
+            <td style="width: 200px;">{{ user.num_uso }}</td>
+            <td style="width: 80px;"><a href="#"><i class="fa-solid fa-trash-can" style="color: #292929"></i></a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </main>
-
+  
   <!-- * jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Bootstrap Javascript -->
@@ -136,6 +264,9 @@
     </script>
   <!-- Sweet alert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- Toasts block -->
+  {% include "toasts.html" %}
 </body>
 
 </html>

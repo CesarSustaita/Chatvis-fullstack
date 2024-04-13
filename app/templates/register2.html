@@ -176,19 +176,22 @@
                 <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
                     name="nombre" id="nombre" autocomplete="given-name" value="{{datos['nombre']|default('')}}" required/>
                 <div class="invalid-feedback">
-                    Por favor, escribe tu nombre.
+                    Introduce tu nombre.
                 </div>
                 <br>
                 <label for="apellido_paterno" class="form-label">Apellido Paterno</label>
                 <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
                     name="apellido_paterno" id="apellido_paterno" autocomplete="family-name" value="{{datos['apellido_paterno']|default('')}}" required  />
                 <div class="invalid-feedback">
-                    Por favor, escribe tu apellido paterno.
+                    Introduce tu apellido paterno.
                 </div>
                 <br>
                 <label for="apellido_materno" class="form-label">Apellido Materno</label>
                 <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
-                    name="apellido_materno" id="apellido_materno" autocomplete="off" value="{{datos['apellido_materno']|default('')}}" />
+                    name="apellido_materno" id="apellido_materno" autocomplete="off" value="{{datos['apellido_materno']|default('')}}" required />
+                <div class="invalid-feedback">
+                    Introduce tu apellido materno.
+                </div>
                 <br>
                 <button type="submit" id="button-register-name" class="btn btn-outline-dark mt-3">Continuar</button>
                 <!-- <RouterLink to=" /registro3" type="button" class="btn btn-outline-dark ">Continuar</RouterLink>

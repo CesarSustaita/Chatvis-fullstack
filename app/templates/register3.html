@@ -210,14 +210,14 @@
                         <option value="32" {% if datos['estado'] == '32' %} selected {% endif %}>Zacatecas</option>
                     </select>
                     <div class="invalid-feedback">
-                        Por favor selecciona un estado.
+                        Selecciona un estado válido.
                     </div>
                 </div>
                 <div class="mb-3">
                     <label id="label-ciudad" for="ciudad" class="form-label">Ciudad</label>
                     <input type="text" class="form-control" name="ciudad" id="ciudad" autocomplete="address-level2" value="{{datos['ciudad']|default('')}}" required/>
                     <div class="invalid-feedback">
-                        Por favor escribe tu ciudad.
+                        Introduce tu ciudad.
                     </div>
                 </div>
                 

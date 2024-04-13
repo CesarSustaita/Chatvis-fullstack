@@ -173,10 +173,14 @@
                 <!-- Añade o quita recuadros según sea necesario -->
             </div>
 
-            <form id="form-register-uni" action="/register/u" method="post">
+            <form id="form-register-uni" action="/register/u" method="post" class="needs-validation" novalidate>
                 <div class="mb-3">
                     <label for="universidad" class="form-label">Universidad</label>
-                    <input type="text" class="form-control" name="universidad" id="universidad" value="{{datos['universidad']|default('')}}" />
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                    name="universidad" id="universidad" autocomplete="off" value="{{datos['universidad']|default('')}}" required />
+                    <div class="invalid-feedback">
+                        Introduce una universidad válida.
+                    </div>
                 </div>
                 <div class="mb-3 form-check">
                     <input class="form-check-input" type="checkbox" value="accepted" name="terminos" id="terminos-checkbox" />
