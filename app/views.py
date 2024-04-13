@@ -92,7 +92,7 @@ def dashboard():
         email = session.get("email")  # Obtener el email del usuario desde la sesión
         name = session.get("name")  # Obtener el nombre del usuario desde la sesión
         admin = session.get("admin") # Is admin?
-        return render_template("index.html", email=email, name=name)
+        return render_template("index.html", email=email, name=name, admin=admin)
     else:
         flash("Inicia sesión para acceder al dashboard.", "warning")
         return redirect(url_for("login"))
@@ -305,9 +305,15 @@ def tabla_admin():
     if "logged_in" in session:
         email = session.get("email")  # Obtener el email del usuario desde la sesión
         name = session.get("name")  # Obtener el nombre del usuario desde la sesión
+        admin = session.get("admin") # Is admin?
         permission = session.get("name")
         usuarios = list(users_collection.find())
-        return render_template("tabla_admin.html", users=usuarios, mail=email, name=name)
+
+        # Agregar un contador a cada usuario
+        for i, usuario in enumerate(usuarios, start=1):
+            usuario['contador'] = i
+            
+        return render_template("tabla_admin.html", users=usuarios, mail=email, name=name, admin=admin)
 
 
 # @app.route('/login')

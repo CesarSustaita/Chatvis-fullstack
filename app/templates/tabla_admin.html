@@ -24,8 +24,14 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
   <!-- CDN de FontAwesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+  
   <style scoped>
+    .botones-pestañas {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
     .navUser {
       display: flex;
       flex-direction: row;
@@ -50,6 +56,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
+      padding-right: 30px;
     }
 
     .icon-button {
@@ -59,16 +66,26 @@
       border: none;
     }
 
-    .btn-dark {
-      color: white;
-    }
-
     a:link,
     a:visited,
     a:active {
       text-decoration: none;
       color: rgb(44, 44, 44);
       font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text{
+      text-decoration: none;
+      color: rgb(44, 44, 44);
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .small-text{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-size: 15px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
@@ -85,6 +102,10 @@
       padding: 10px 100px;
     }
 
+    .btn-dark {
+      color: white;
+    }
+
     .nav-link {
       color: black;
       font-size: 20px;
@@ -92,15 +113,8 @@
       text-decoration: none;
     }
 
-    .text{
-      text-decoration: none;
-      color: rgb(44, 44, 44);
-      font-size: 20px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    ul{
-      list-style-type: decimal;
+    .nav-link:hover {
+      color: #2cb983;
     }
 
     .center{
@@ -111,17 +125,24 @@
       margin: 0 auto;
       padding-top: 20px;
     }
+
+    .tableUsers{
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    }
   </style>
+
 </head>
 
 <body>
+  <!-- Navbar -->
   <div class="navUser">
     <div class="seccion1">
       <div class="title-inter">
-        <a href="/dashboard">Chatvis Analyzer</a>
+        <a href="/tabla">Chatvis Analyzer</a>
       </div>
       <label for="whatsChatSinAnimaciones" class="nav-link">
-        <div class="btn btn-dark">
+        <div class="btn btn-dark" id="uploadButton" style="display: none;">
           <i class="fa-solid fa-upload"></i> Subir Archivo
           <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
         </div>
@@ -169,15 +190,72 @@
           <div class="alert alert-warning text">
             <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO guardará</strong> ninguna conversación analizada para mantener su privacidad.
           </div>
+          <!-- Footer About Project -->
+          <div style="text-align: center;">
+            <div class="icon-info">
+              <button class="btn icon-button text" data-bs-toggle="modal" data-bs-target="#modalAbout">
+                <i class="fa-solid fa-circle-question" style="color: #a3a3a3"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Modal About -->
+  <div class="modal fade" id="modalAbout" tabindex="-1" aria-labelledby="modalAboutLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text">
+          <h1 class="modal-title fs-3" id="modalAboutLabel">Acerca del Proyecto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text">
+          <div class="text">
+            Bibliotecas usadas:<br>
+            <ul class="text">
+              <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+              <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+              <li><a href="https://github.com/Pustur/whatsapp-chat-parser" target="_blank">WhatsApp Chat Parser</a></li>
+              <li><a href="https://d3js.org/" target="_blank">D3.js</a></li>
+              <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+              <li><a href="https://fontawesome.com/" target="_blank">FontAwesome</a></li>
+              <li><a href="https://spacy.io/" target="_blank">spaCY</a></li>
+              <li><a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">Flask</a></li>
+              <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+              <li><a href="https://nodejs.org/" target="_blank">Node.js</a></li>
+              <li><a href="https://cdnjs.com/libraries/toastify-js/1.6.1" target="_blank">Toastify</a></li>
+            </ul>
+          </div>
+          <br>
+          <div class="text" style="text-align: center;">
+            Basado en el trabajo de<br>
+            <a href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2">Nadieh Bremer</a> & <a href="http://www.visualcinnamon.com/">VisualCinnamon.com</a> <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <main>
-    <div id="app">
-      <table class="table table-bordered align-middle center text" style="text-align: center;">
+  <!-- Toogle Usuarios | Analizador -->
+  <div class="botones-pestañas" id="noAdminToggle">
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
+      <label class="btn btn-outline-secondary text" for="btnradio1" onclick="redirectToUsuarios()">
+        <i class="fa-solid fa-user-group"></i> Usuarios
+      </label>
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+      <label class="btn btn-outline-secondary text" for="btnradio2" onclick="redirectToAnalizador()">
+        Analizador <i class="fa-solid fa-chart-pie"></i>
+      </label>
+    </div>
+  </div>
+  
+  <!-- Table -->
+  <main id="noAdminTable">
+    <div >
+      <table class="table table-bordered align-middle center text " style="text-align: center; ">
         <thead>
           <tr>
             <th scope="col" style="width: 80px;" data-sort="numero">#</th>
@@ -190,13 +268,13 @@
           </tr>
         </thead>
         <tbody id="table-body">
-          {% for user in users %}
+          {% for usuario in users %}
           <tr>
             <td style="width: 80px;">
-              <p>1</p>
+              <p>{{ usuario.contador }}</p>
             </td>
-            <td style="width: 300px;">{{ user.nombre }} {{ user.apellido_paterno }} {{ user.apellido_materno }}</td>
-            <td style="width: 200px;">{{ user.universidad }}</td>
+            <td style="width: 300px;">{{ usuario.nombre }} {{ usuario.apellido_paterno }} {{ usuario.apellido_materno }}</td>
+            <td style="width: 200px;">{{ usuario.universidad }}</td>
             <td style="width: 200px;">
               <script>
                 // Objeto de mapeo de números de estado a nombres de estado
@@ -235,33 +313,85 @@
                   '32': 'Zacatecas'
                 };
 
-                // Obtener el número de estado desde la variable user.estado
-                var numeroEstado = "{{ user.estado }}";
+                // Obtener el número de estado desde la variable usuario.estado
+                var numeroEstado = "{{ usuario.estado }}";
                 
                 // Mostrar el nombre correspondiente en el <td>
                 document.write(nombresEstados[numeroEstado]);
               </script>
             </td>
-            <td style="width: 200px;">{{ user.ciudad }}</td>
-            <td style="width: 200px;">{{ user.num_uso }}</td>
+            <td style="width: 200px;">{{ usuario.ciudad }}</td>
+            <td style="width: 200px;">{{ usuario.num_uso }}</td>
             <td style="width: 80px;"><a href="#"><i class="fa-solid fa-trash-can" style="color: #292929"></i></a></td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
+      <br><br><br>
+    </div>
+  </main>
+
+
+  <!-- Warning No Admin -->
+  <main id="showNoAdmin" style="display: none;">
+    <div class="text center">
+      <h1 style="font-size: 80pt;">¿Cómo llegaste aquí?</h1>
+      <h1 style="font-size: 40pt;">Esta es un área de administradores</h1>
     </div>
   </main>
   
+  <!-- Is Admin? -->
+  <div id="adminValue" style="display: none;">{{ admin }}</div>
+  
+  <!-- Script Toogle Usuarios | Analizador -->
+  <script>
+    // Obtener el valor de admin desde el div oculto
+    document.addEventListener("DOMContentLoaded", function() {
+      var adminValue = document.getElementById("adminValue").innerText.trim();
+      var isAdmin = adminValue;
+      if (isAdmin != 0){
+        document.getElementById("noAdminToggle").style.display = "none";
+        document.getElementById("noAdminTable").style.display = "none";
+        document.getElementById("showNoAdmin").style.display = "block";
+      }
+    });
+
+    // Obtener los elementos del DOM
+    const btnradio1 = document.getElementById('btnradio1');
+    const btnradio2 = document.getElementById('btnradio2');
+    const usuariosContent = document.getElementById('usuariosContent');
+    const analizadorContent = document.getElementById('analizadorContent');
+
+    function redirectToAnalizador() {
+      window.location.href = "/dashboard";
+    }
+
+    function redirectToUsuarios() {
+      window.location.href = "/tabla";
+    }
+  </script>
+
   <!-- * jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
   <!-- Bootstrap Javascript -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
   <!-- Opcional, solo si necesitas jQuery para otros componentes -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <!-- Necesario para tooltips, popovers y dropdowns -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
   <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="/static/js/bootstrap.tooltip.js"></script>
+  <script src="/static/js/bootstrap.popover.js"></script>
+  <script src="/static/js/chordDiagram.js"></script>
+  <script src="/static/js/main.js"></script>
+
+  <!-- Extras -->
+  <script src="/static/js/d3.layout.chord.sort.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
   <!-- Sweet alert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
