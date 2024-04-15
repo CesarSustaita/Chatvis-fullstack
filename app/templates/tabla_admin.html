@@ -54,7 +54,7 @@
               <i class="fa-solid fa-user fa-xl" style="color: #a3a3a3"></i>
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+              <li><a class="dropdown-item" href="{{url_for('logout')}}">Cerrar Sesión</a></li>
             </ul>
           </div>
         </div>
@@ -88,7 +88,7 @@
                   <th scope="col">Estado</th>
                   <th scope="col">Ciudad</th>
                   <th scope="col">Numero de usos</th>
-                  <th scope="col">Edición</th>
+                  <th scope="col">Eliminar</th>
                 </tr>
               </thead>
               <tbody>
@@ -113,7 +113,8 @@
                   <td>{{ user.estado }}</td>
                   <td>{{ user.ciudad }}</td>
                   <td>{{ user.num_uso }}</td>
-                  <td>ocultar</td>
+                  <td><a href="{{ url_for('eliminar_usuario', id=user._id) }}"><i class="fa-solid fa-trash"></i></a>
+                  </td>
                 </tr>
                 {% endfor %}
               </tbody>

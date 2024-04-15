@@ -94,7 +94,8 @@ def dashboard():
     if "logged_in" in session:
         email = session.get("email")  # Obtener el email del usuario desde la sesión
         name = session.get("name")  # Obtener el nombre del usuario desde la sesión
-        return render_template("index.html", email=email, name=name)
+        admin = session.get("admin")  # Obtener el admin del usuario desde la sesión
+        return render_template("index.html", email=email, name=name, admin=admin)
     else:
         flash("Inicia sesión para acceder al dashboard.", "warning")
         return redirect(url_for("login"))
@@ -338,10 +339,22 @@ def register_u():
 
 @app.route("/tabla")
 def tabla_admin():
-    if "logged_in" in session:
+    if "logged_in" in session and session.get("admin") == 1:
         permission = session.get("name")
         usuarios = list(users_collection.find())
         return render_template("tabla_admin.html", users=usuarios)
+    else:
+        return render_template("login.html")
+
+
+@app.route("/eliminar_usuario/<string:id>", methods=["GET", "POST"])
+def eliminar_usuario(id):
+    if "logged_in" in session and session.get("admin") == 1:
+        # Eliminar el usuario de la base de datos
+        users_collection.delete_one({"_id": id})
+        return redirect(url_for("tabla_admin"))
+    else:
+        return render_template("login.html")
 
 
 # @app.route('/login')
