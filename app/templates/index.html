@@ -376,7 +376,10 @@
   </div>
 
   <!-- Toogle Usuarios | Analizador -->
-  <div class="botones-pestañas" id="noAdmin">
+  <!-- se borro esta linea de codigo para agregar una validacion de flask, si da error borrar lo de flask -->
+  <!-- <div class="botones-pestañas" id="noAdmin"> -->
+  {% if admin == 1 %}
+  <div class="botones-pestañas">
     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
       <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
       <label class="btn btn-outline-secondary text" for="btnradio1" onclick="redirectToUsuarios()">
@@ -388,6 +391,7 @@
       </label>
     </div>
   </div>
+  {% endif %}
   <br id="padding">
 
   <!-- Drag-N-Drop -->

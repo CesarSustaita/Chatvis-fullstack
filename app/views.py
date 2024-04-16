@@ -5,14 +5,13 @@ from pymongo import MongoClient
 from flask import send_from_directory
 from app import helpers
 from werkzeug.security import generate_password_hash
-from datetime import timedelta
+from datetime import timedelta, datetime
 
 app.secret_key = "chatvis"
-
-# client = MongoClient("mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000/")
 client = MongoClient(
     "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
 )
+# no agregar la linea de codigo local host para la base de datos #
 db = client["test"]
 users_collection = db["users"]
 
@@ -94,7 +93,7 @@ def dashboard():
     if "logged_in" in session:
         email = session.get("email")  # Obtener el email del usuario desde la sesión
         name = session.get("name")  # Obtener el nombre del usuario desde la sesión
-        admin = session.get("admin")  # Is admin?
+        admin = session.get("admin")  # Obtener el admin del usuario desde la sesión
         return render_template("index.html", email=email, name=name, admin=admin)
     else:
         flash("Inicia sesión para acceder al dashboard.", "warning")
@@ -279,6 +278,7 @@ def register_u():
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
         session["registro_pagina4"] = datos
+        fecha_creacion = datetime.now()
         # Recopilar todos los datos de la sesión
         datos_de_registro = {
             **session.get("registro_pagina1", {}),
@@ -287,6 +287,7 @@ def register_u():
             **datos,
             "admin": 0,
             "num_uso": 0,
+            "date": fecha_creacion,
         }
 
         complete, missing_field = helpers.register_data_is_complete(datos_de_registro)
@@ -339,7 +340,7 @@ def register_u():
 
 @app.route("/tabla")
 def tabla_admin():
-    if "logged_in" in session:
+    if "logged_in" in session and session.get("admin") == 1:
         email = session.get("email")  # Obtener el email del usuario desde la sesión
         name = session.get("name")  # Obtener el nombre del usuario desde la sesión
         admin = session.get("admin")  # Is admin?
@@ -353,6 +354,18 @@ def tabla_admin():
         return render_template(
             "tabla_admin.html", users=usuarios, mail=email, name=name, admin=admin
         )
+    else:
+        return render_template("login.html")
+
+
+@app.route("/eliminar_usuario/<string:id>", methods=["GET", "POST"])
+def eliminar_usuario(id):
+    if "logged_in" in session and session.get("admin") == 1:
+        # Eliminar el usuario de la base de datos
+        users_collection.delete_one({"_id": id})
+        return redirect(url_for("tabla_admin"))
+    else:
+        return render_template("login.html")
 
 
 # @app.route('/login')
