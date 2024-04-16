@@ -11,7 +11,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CDN de FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <style scoped>
         .wrapper {
             border: 0px solid rgb(196, 25, 25);
@@ -175,39 +175,40 @@
                 <div class="mb-3">
                     <label id="label-estado" for="estado" class="form-label">Estado</label>
                     <select class="form-select" aria-label="Selecciona un estado" name="estado" id="estado" required>
-                        <option {% if not datos['estado'] %} selected {% endif %} >Selecciona el estado</option>
-                        <option value="1"  {% if datos['estado'] == '1'  %} selected {% endif %}>Aguascalientes</option>
-                        <option value="2"  {% if datos['estado'] == '2'  %} selected {% endif %}>Baja California</option>
-                        <option value="3"  {% if datos['estado'] == '3'  %} selected {% endif %}>Baja California Sur</option>
-                        <option value="4"  {% if datos['estado'] == '4'  %} selected {% endif %}>Campeche</option>
-                        <option value="5"  {% if datos['estado'] == '5'  %} selected {% endif %}>Chiapas</option>
-                        <option value="6"  {% if datos['estado'] == '6'  %} selected {% endif %}>Chihuahua</option>
-                        <option value="7"  {% if datos['estado'] == '7'  %} selected {% endif %}>Ciudad de México</option>
-                        <option value="8"  {% if datos['estado'] == '8'  %} selected {% endif %}>Coahuila</option>
-                        <option value="9"  {% if datos['estado'] == '9'  %} selected {% endif %}>Colima</option>
-                        <option value="10" {% if datos['estado'] == '10' %} selected {% endif %}>Durango</option>
-                        <option value="11" {% if datos['estado'] == '11' %} selected {% endif %}>Estado de México</option>
-                        <option value="12" {% if datos['estado'] == '12' %} selected {% endif %}>Guanajuato</option>
-                        <option value="13" {% if datos['estado'] == '13' %} selected {% endif %}>Guerrero</option>
-                        <option value="14" {% if datos['estado'] == '14' %} selected {% endif %}>Hidalgo</option>
-                        <option value="15" {% if datos['estado'] == '15' %} selected {% endif %}>Jalisco</option>
-                        <option value="16" {% if datos['estado'] == '16' %} selected {% endif %}>Michoacán</option>
-                        <option value="17" {% if datos['estado'] == '17' %} selected {% endif %}>Morelos</option>
-                        <option value="18" {% if datos['estado'] == '18' %} selected {% endif %}>Nayarit</option>
-                        <option value="19" {% if datos['estado'] == '19' %} selected {% endif %}>Nuevo León</option>
-                        <option value="20" {% if datos['estado'] == '20' %} selected {% endif %}>Oaxaca</option>
-                        <option value="21" {% if datos['estado'] == '21' %} selected {% endif %}>Puebla</option>
-                        <option value="22" {% if datos['estado'] == '21' %} selected {% endif %}>Querétaro</option>
-                        <option value="23" {% if datos['estado'] == '23' %} selected {% endif %}>Quintana Roo</option>
-                        <option value="24" {% if datos['estado'] == '24' %} selected {% endif %}>San Luis Potosí</option>
-                        <option value="25" {% if datos['estado'] == '25' %} selected {% endif %}>Sinaloa</option>
-                        <option value="26" {% if datos['estado'] == '26' %} selected {% endif %}>Sonora</option>
-                        <option value="27" {% if datos['estado'] == '27' %} selected {% endif %}>Tabasco</option>
-                        <option value="28" {% if datos['estado'] == '28' %} selected {% endif %}>Tamaulipas</option>
-                        <option value="29" {% if datos['estado'] == '29' %} selected {% endif %}>Tlaxcala</option>
-                        <option value="30" {% if datos['estado'] == '30' %} selected {% endif %}>Veracruz</option>
-                        <option value="31" {% if datos['estado'] == '31' %} selected {% endif %}>Yucatán</option>
-                        <option value="32" {% if datos['estado'] == '32' %} selected {% endif %}>Zacatecas</option>
+                        <option {% if not datos['estado'] %} selected {% endif %}>Selecciona el estado</option>
+                        <option value="1" {% if datos['estado']=='1' %} selected {% endif %}>Aguascalientes</option>
+                        <option value="2" {% if datos['estado']=='2' %} selected {% endif %}>Baja California</option>
+                        <option value="3" {% if datos['estado']=='3' %} selected {% endif %}>Baja California Sur
+                        </option>
+                        <option value="4" {% if datos['estado']=='4' %} selected {% endif %}>Campeche</option>
+                        <option value="5" {% if datos['estado']=='5' %} selected {% endif %}>Chiapas</option>
+                        <option value="6" {% if datos['estado']=='6' %} selected {% endif %}>Chihuahua</option>
+                        <option value="7" {% if datos['estado']=='7' %} selected {% endif %}>Ciudad de México</option>
+                        <option value="8" {% if datos['estado']=='8' %} selected {% endif %}>Coahuila</option>
+                        <option value="9" {% if datos['estado']=='9' %} selected {% endif %}>Colima</option>
+                        <option value="10" {% if datos['estado']=='10' %} selected {% endif %}>Durango</option>
+                        <option value="11" {% if datos['estado']=='11' %} selected {% endif %}>Estado de México</option>
+                        <option value="12" {% if datos['estado']=='12' %} selected {% endif %}>Guanajuato</option>
+                        <option value="13" {% if datos['estado']=='13' %} selected {% endif %}>Guerrero</option>
+                        <option value="14" {% if datos['estado']=='14' %} selected {% endif %}>Hidalgo</option>
+                        <option value="15" {% if datos['estado']=='15' %} selected {% endif %}>Jalisco</option>
+                        <option value="16" {% if datos['estado']=='16' %} selected {% endif %}>Michoacán</option>
+                        <option value="17" {% if datos['estado']=='17' %} selected {% endif %}>Morelos</option>
+                        <option value="18" {% if datos['estado']=='18' %} selected {% endif %}>Nayarit</option>
+                        <option value="19" {% if datos['estado']=='19' %} selected {% endif %}>Nuevo León</option>
+                        <option value="20" {% if datos['estado']=='20' %} selected {% endif %}>Oaxaca</option>
+                        <option value="21" {% if datos['estado']=='21' %} selected {% endif %}>Puebla</option>
+                        <option value="22" {% if datos['estado']=='21' %} selected {% endif %}>Querétaro</option>
+                        <option value="23" {% if datos['estado']=='23' %} selected {% endif %}>Quintana Roo</option>
+                        <option value="24" {% if datos['estado']=='24' %} selected {% endif %}>San Luis Potosí</option>
+                        <option value="25" {% if datos['estado']=='25' %} selected {% endif %}>Sinaloa</option>
+                        <option value="26" {% if datos['estado']=='26' %} selected {% endif %}>Sonora</option>
+                        <option value="27" {% if datos['estado']=='27' %} selected {% endif %}>Tabasco</option>
+                        <option value="28" {% if datos['estado']=='28' %} selected {% endif %}>Tamaulipas</option>
+                        <option value="29" {% if datos['estado']=='29' %} selected {% endif %}>Tlaxcala</option>
+                        <option value="30" {% if datos['estado']=='30' %} selected {% endif %}>Veracruz</option>
+                        <option value="31" {% if datos['estado']=='31' %} selected {% endif %}>Yucatán</option>
+                        <option value="32" {% if datos['estado']=='32' %} selected {% endif %}>Zacatecas</option>
                     </select>
                     <div class="invalid-feedback">
                         Selecciona un estado válido.
@@ -215,12 +216,13 @@
                 </div>
                 <div class="mb-3">
                     <label id="label-ciudad" for="ciudad" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" name="ciudad" id="ciudad" autocomplete="address-level2" value="{{datos['ciudad']|default('')}}" required/>
+                    <input type="text" class="form-control" name="ciudad" id="ciudad" autocomplete="address-level2"
+                        value="{{datos['ciudad']|default('')}}" required />
                     <div class="invalid-feedback">
                         Introduce tu ciudad.
                     </div>
                 </div>
-                
+
                 <button type="submit" class="btn btn-outline-dark mt-3">Continuar</button>
             </form>
 

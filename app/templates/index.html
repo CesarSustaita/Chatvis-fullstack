@@ -24,7 +24,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
   <!-- CDN de FontAwesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  
+
   <style scoped>
     .hidden {
       display: none;
@@ -79,14 +79,14 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    .text{
+    .text {
       text-decoration: none;
       color: rgb(44, 44, 44);
       font-size: 20px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    .small-text{
+    .small-text {
       text-decoration: none;
       color: rgb(0, 0, 0);
       font-size: 15px;
@@ -230,7 +230,7 @@
       padding: 10px;
     }
 
-    ul{
+    ul {
       list-style-type: decimal;
     }
 
@@ -244,7 +244,8 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin: 0 auto; /* Centra horizontalmente */
+      margin: 0 auto;
+      /* Centra horizontalmente */
     }
 
     .ArrastrarArchivo {
@@ -313,13 +314,17 @@
           <ul>
             <li>Importa tu conversación de WhatsApp en formato “.txt”.</li>
             <ul style="list-style-type: '\2753';">
-              <li><h5><a href="https://faq.whatsapp.com/es/android/23756533/" target="_blank">¿Cómo exportar un chat de WhatsApp?</a></h5></li>
+              <li>
+                <h5><a href="https://faq.whatsapp.com/es/android/23756533/" target="_blank">¿Cómo exportar un chat de
+                    WhatsApp?</a></h5>
+              </li>
             </ul>
             <li>Presiona el botón de subir archivo o arrastra tu conversación.</li>
             <li>El analizador ChatVis subirá tu archivo, lo analizará, y mostrará el resultado.</li>
           </ul>
           <div class="alert alert-warning text">
-            <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO guardará</strong> ninguna conversación analizada para mantener su privacidad.
+            <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO
+              guardará</strong> ninguna conversación analizada para mantener su privacidad.
           </div>
           <!-- Footer About Project -->
           <div style="text-align: center;">
@@ -362,7 +367,8 @@
           <br>
           <div class="text" style="text-align: center;">
             Basado en el trabajo de<br>
-            <a href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2" target="_blank">Nadieh Bremer</a> & <a href="http://www.visualcinnamon.com/" target="_blank">VisualCinnamon.com</a> <br>
+            <a href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2" target="_blank">Nadieh Bremer</a> & <a
+              href="http://www.visualcinnamon.com/" target="_blank">VisualCinnamon.com</a> <br>
           </div>
         </div>
       </div>
@@ -389,11 +395,8 @@
     <h3 class="text" style="font-size: 25pt; font-weight: bold; padding-bottom: 20px;">
       Empecemos!
     </h3>
-    <div class="ArrastrarArchivo" id="ArrastrarArchivo" accept=".txt"
-    ondragover="handleDragOver(event)"
-    ondrop="handleDrop(event)"
-    ondragenter="event.preventDefault()"
-    ondragleave="handleDragLeave(event)">
+    <div class="ArrastrarArchivo" id="ArrastrarArchivo" accept=".txt" ondragover="handleDragOver(event)"
+      ondrop="handleDrop(event)" ondragenter="event.preventDefault()" ondragleave="handleDragLeave(event)">
       <div id="spinner" style="display: none;">
         <div class="spinner-border" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -411,9 +414,9 @@
   <!-- Charts -->
   <main>
     <div class="contenedor">
-      
+
       <div id="analizadorContent" class="hidden">
-        
+
         <div id="chord-chat-section">
           <div id="chord-component" class="row">
             <div id="title">Grafica de Relaciones</div>
@@ -450,10 +453,10 @@
   <!-- Script Toogle Usuarios | Analizador -->
   <script>
     // Obtener el valor de admin desde el div oculto
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       var adminValue = document.getElementById("adminValue").innerText.trim();
       var isAdmin = adminValue;
-      if (isAdmin != 0){
+      if (isAdmin != 0) {
         document.getElementById("noAdmin").style.display = "none";
       }
     });
@@ -535,7 +538,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
   <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
   <script src="/static/js/bootstrap.tooltip.js"></script>
   <script src="/static/js/bootstrap.popover.js"></script>
   <script src="/static/js/chordDiagram.js"></script>
