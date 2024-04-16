@@ -15,9 +15,19 @@ client = MongoClient(
 db = client["test"]
 users_collection = db["users"]
 
-# TODO: Protect the routes that require authentication
-
-# TODO: Use 'flash' to display messages to the user (e.g., success, error, warning, info)
+# Indice
+# inicio() - /inicio
+# index() - /
+# login() - /login
+# dashboard() - /dashboard
+# logout() - /logout
+# register_mail() - /register/mail
+# register_account() - /register/account
+# register_state() - /register/state
+# register_u() - /register/u
+# tabla_admin() - /tabla
+# eliminar_usuario(id) - /eliminar_usuario/<string:id
+# classify_message() - /classify
 
 
 @app.route("/inicio")
@@ -27,31 +37,7 @@ def inicio():
 
 @app.route("/")
 def index():
-    """
-    Renders the index.html template.
-
-    Returns:
-        The rendered index.html template.
-    """
     return redirect(url_for("inicio"))
-
-
-"""
-    This is a example to add new routes.    
-    -Remember it's important that every route works,
-    -The route are: 
-        [USER VIEW]
-        -Index (must be added first navbar)
-        -Login (must be added first navbar)
-        -Register (must be added first navbar)
-        -Upload the file (must be added Second navbar)
-        -Conversation, chord diagrama and classification graph (it is currently) - (must be second navbar with its routes works correctly)
-
-        [ADMIN VIEW]
-        -Upload the file (must be added Second navbar and third navbar)
-        -Users registers(table) - (must be added Second navbar  and third navbar)
-        -Conversation, chord diagrama and classification graph (it is currently) -(must be second navbar with its routes works correctly and third navbar)
-"""
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -368,24 +354,8 @@ def eliminar_usuario(id):
         return render_template("login.html")
 
 
-# @app.route('/login')
-# def lector():
-#   return render_template('login.html')
-
-##@app.route('/lector')
-# def login():
-#   return render_template('lector.html')
-
-
 @app.route("/classify", methods=["POST"])
 def classify_message():
-    """
-    Classifies a message using a pre-trained model.
-    Returns:
-        A JSON response containing the predicted category and scores.
-    Raises:
-        Exception: If an error occurs during the classification process.
-    """
     try:
         message = request.json["message"]
 
