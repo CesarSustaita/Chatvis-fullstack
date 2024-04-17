@@ -121,10 +121,10 @@
         gap: 40px;
         margin: 2%;
         height: 55vh;
-      }
+      }*/
 
       #chord-component{ /*CHORD GRAPH COMPONENT*/
-        background-color: white;
+       background-color: white;
         border-radius: 10px;
         box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
       }
@@ -163,14 +163,14 @@
         width: 100%;
       }
 
-      #chord-chat-section {
+     #chord-chat-section {
         display: grid;
         grid-template-columns: 1fr;
         gap: 40px;
         margin: 2%;
         height: 120vh;
       }
-
+      
       #chord-component { /*CHORD GRAPH COMPONENT*/
         background-color: white;
         border-radius: 10px;
@@ -326,15 +326,28 @@
     <div class="contenedor">
         <div id="usuariosContent" class="hidden">
           Contenido de Usuarios
+
+          <div id="chord-chat-section" class="row">
+            <!-- Chord diagram -->
+            <div id="chord-container" class="col-sm-6 mt-1 mb-1 ">
+
+                <div id="chart" style="display: none;"></div>
+            </div>
         </div>
+        </div>
+
+
         <div id="analizadorContent" class="hidden">
             <div id="chord-chat-section" >
-                <div id="chord-component" class="row">
+              <!--
+                 <div id="chord-component" class="row">
                     <div id="title">Grafica de Relaciones</div>
                   <div id="chord-container">
                     <div id="chart" style="display: none;"></div>
                   </div>
                 </div>
+              -->
+               
                 <div id="chat-component" class="row">
                   <div id="title">
                     Conversación
@@ -446,6 +459,7 @@
   <script src="/static/js/main.js"></script>
 
   <!-- Extras -->
+  <script>import * as d3 from "d3";  </script>
   <script src="/static/js/d3.layout.chord.sort.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 

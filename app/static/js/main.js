@@ -8,6 +8,8 @@
  * @namespace
  */
 
+//import * as d3 from "d3";
+
 ////prueba
 function sendFileNameToMainJs(fileName) {
     // Aquí puedes hacer lo que quieras con el nombre del archivo
@@ -579,7 +581,7 @@ async function resizeChordDiagram() {
 }
 
 // Event listener para actualizar el tamaño del gráfico al cambiar el tamaño de la ventana
-window.addEventListener('resize', debounce(resizeChordDiagram, 500));
+//window.addEventListener('resize', debounce(resizeChordDiagram, 500));
 
 
 // ************************************************************
