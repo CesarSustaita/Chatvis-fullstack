@@ -2,6 +2,7 @@ from app import app
 from flask import jsonify
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 from pymongo import MongoClient
+from bson import ObjectId
 from flask import send_from_directory
 from app import helpers
 from werkzeug.security import generate_password_hash
@@ -344,12 +345,30 @@ def tabla_admin():
         return render_template("login.html")
 
 
-@app.route("/eliminar_usuario/<string:id>", methods=["GET", "POST"])
+# @app.route("/eliminar_usuario/<string:id>", methods=["GET", "POST"])
+# def eliminar_usuario(id):
+#     if "logged_in" in session and session.get("admin") == 1:
+#         # Eliminar el usuario de la base de datos
+#         users_collection.delete_one({"_id": id})
+#         return redirect(url_for("tabla_admin"))
+#     else:
+#         return render_template("login.html")
+
+
+@app.route("/eliminar_usuario/<string:id>", methods=["DELETE"])
 def eliminar_usuario(id):
-    if "logged_in" in session and session.get("admin") == 1:
-        # Eliminar el usuario de la base de datos
-        users_collection.delete_one({"_id": id})
-        return redirect(url_for("tabla_admin"))
+    if "logged_in" in session:
+        try:
+            # Convertir el ID en un objeto ObjectId
+            object_id = ObjectId(id)
+            # Borrar el elemento de la colección por su ID
+            result = users_collection.delete_one({"_id": object_id})
+            if result.deleted_count == 1:
+                return jsonify({"message": "Elemento borrado correctamente"}), 200
+            else:
+                return jsonify({"error": "Elemento no encontrado"}), 404
+        except Exception as e:
+            return jsonify({"error": str(e)}), 500
     else:
         return render_template("login.html")
 

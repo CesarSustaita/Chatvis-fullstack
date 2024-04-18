@@ -1,5 +1,9 @@
 # Instalacion y configuracion
 
+Usar codigo 
+pip install -r requirements.txt
+
+
 ## Descargar [Python](https://www.python.org/downloads/)
 > [!IMPORTANT]
 > En Windows es importante marcar la casilla de `agregar al PATH` para hacer uso del comando pip.
