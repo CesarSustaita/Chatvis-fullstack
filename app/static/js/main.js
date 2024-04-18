@@ -509,13 +509,13 @@ function generateChart(days, category_counts_by_day) {
 			labels: days,		//Etiquetas en el eje X (días)
 			datasets: [
 				{
-					label: 'Codigo',							//Etiqueta para el conjunto de datos
+					label: 'Código',							//Etiqueta para el conjunto de datos
 					backgroundColor: 'rgba(161,221,113, 255)', //Color de las barras
 					data: codigo, 								//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
 				},
 				{
-					label: 'Organizacion',						//Etiqueta para el conjunto de datos
+					label: 'Organización',						//Etiqueta para el conjunto de datos
 					backgroundColor: 'rgba(106,159,194, 255)',	//Color de las barras
 					data: organizacion, 					//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
