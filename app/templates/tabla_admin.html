@@ -268,7 +268,7 @@
             <th scope="col" style="width: 200px;" data-sort="universidad">Universidad</th>
             <th scope="col" style="width: 200px;" data-sort="estado">Estado</th>
             <th scope="col" style="width: 200px;" data-sort="ciudad">Ciudad</th>
-            <th scope="col" style="width: 200px;" data-sort="uso">Numero de usos</th>
+            <th scope="col" style="width: 200px;" data-sort="uso">Creación de cuenta</th>
             <th scope="col" style="width: 80px;" data-sort="numero">Borrar</th>
           </tr>
         </thead>
@@ -327,9 +327,10 @@
               </script>
             </td>
             <td style="width: 200px;">{{ usuario.ciudad }}</td>
-            <td style="width: 200px;">{{ usuario.num_uso }}</td>
-            <td style="width: 80px;"><a href="{{ url_for('eliminar_usuario', id=usuario.['_id']) }}"><i
-                  class="fa-solid fa-trash-can" style="color: #292929"></i></a></td>
+            <td style="width: 200px;">{{ usuario.date }}</td>
+            <td style="width: 80px;"><a href="{{ url_for('eliminar_usuario', id=usuario._id) }}">
+              <i class="fa-solid fa-trash-can" style="color: #292929"></i></a>
+            </td>
           </tr>
           {% endfor %}
         </tbody>

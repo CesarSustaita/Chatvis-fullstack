@@ -266,6 +266,8 @@ def register_u():
         # Almacenar los datos en la sesión
         session["registro_pagina4"] = datos
         fecha_creacion = datetime.now()
+
+        fecha_formateada = fecha_creacion.strftime('%d-%m-%Y')
         # Recopilar todos los datos de la sesión
         datos_de_registro = {
             **session.get("registro_pagina1", {}),
@@ -274,7 +276,7 @@ def register_u():
             **datos,
             "admin": 0,
             "num_uso": 0,
-            "date": fecha_creacion,
+            "date": fecha_formateada,
         }
 
         complete, missing_field = helpers.register_data_is_complete(datos_de_registro)
