@@ -328,7 +328,7 @@
             </td>
             <td style="width: 200px;">{{ usuario.ciudad }}</td>
             <td style="width: 200px;">{{ usuario.num_uso }}</td>
-            <td style="width: 80px;"><a href="{{ url_for('eliminar_usuario', id=user._id) }}"><i
+            <td style="width: 80px;"><a href="{{ url_for('eliminar_usuario', id=usuario._id) }}"><i
                   class="fa-solid fa-trash-can" style="color: #292929"></i></a></td>
           </tr>
           {% endfor %}
@@ -356,7 +356,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       var adminValue = document.getElementById("adminValue").innerText.trim();
       var isAdmin = adminValue;
-      if (isAdmin != 0) {
+      if (isAdmin == 0) {
         document.getElementById("noAdminToggle").style.display = "none";
         document.getElementById("noAdminTable").style.display = "none";
         document.getElementById("showNoAdmin").style.display = "block";
