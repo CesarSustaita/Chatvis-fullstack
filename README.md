@@ -1,4 +1,7 @@
-# Instalacion y configuracion
+# Instalación y configuración
+La siguiente línea instalará todas las dependencias que el proyecto necesita:
+
+`pip install -r requirements.txt`
 
 ## Descargar [Python](https://www.python.org/downloads/)
 > [!IMPORTANT]
@@ -20,7 +23,7 @@ interfieran con otras instalaciones del sistema
 `.env\Scripts\activate`
 
 ## [spaCy](https://spacy.io/usage)
-spaCy es la biblioteca de Python utilizada para cargar el modelo clasificador de texto. Los
+spaCy es la biblioteca de Python utilizada para entrenar el clasificador de texto. Los
 siguientes comandos se ejecutan en la consola, después de activar el entorno virtual.
 
 `pip install -U pip setuptools wheel`

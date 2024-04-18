@@ -2,6 +2,7 @@ from app import app
 from flask import jsonify
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 from pymongo import MongoClient
+from bson import ObjectId
 from flask import send_from_directory
 from app import helpers
 from werkzeug.security import generate_password_hash
@@ -11,13 +12,22 @@ app.secret_key = "chatvis"
 client = MongoClient(
     "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
 )
-# no agregar la linea de codigo local host para la base de datos #
 db = client["test"]
 users_collection = db["users"]
 
-# TODO: Protect the routes that require authentication
-
-# TODO: Use 'flash' to display messages to the user (e.g., success, error, warning, info)
+# Indice
+# inicio() - /inicio
+# index() - /
+# login() - /login
+# dashboard() - /dashboard
+# logout() - /logout
+# register_mail() - /register/mail
+# register_account() - /register/account
+# register_state() - /register/state
+# register_u() - /register/u
+# tabla_admin() - /tabla
+# eliminar_usuario(email) - /eliminar_usuario/<string:email
+# classify_message() - /classify
 
 
 @app.route("/inicio")
@@ -27,31 +37,7 @@ def inicio():
 
 @app.route("/")
 def index():
-    """
-    Renders the index.html template.
-
-    Returns:
-        The rendered index.html template.
-    """
     return redirect(url_for("inicio"))
-
-
-"""
-    This is a example to add new routes.    
-    -Remember it's important that every route works,
-    -The route are: 
-        [USER VIEW]
-        -Index (must be added first navbar)
-        -Login (must be added first navbar)
-        -Register (must be added first navbar)
-        -Upload the file (must be added Second navbar)
-        -Conversation, chord diagrama and classification graph (it is currently) - (must be second navbar with its routes works correctly)
-
-        [ADMIN VIEW]
-        -Upload the file (must be added Second navbar and third navbar)
-        -Users registers(table) - (must be added Second navbar  and third navbar)
-        -Conversation, chord diagrama and classification graph (it is currently) -(must be second navbar with its routes works correctly and third navbar)
-"""
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -59,18 +45,14 @@ def login():
     if request.method == "POST":
         recaptcha_response = request.form.get("g-recaptcha-response")
         recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
-
         if not recaptcha_verified:
             error = "Por favor, verifica que no eres un robot."
             return render_template("login.html", error=error)
-
         email = request.form.get("email")
         password = request.form.get("password")
-
         login_successful, error = helpers.attempt_login(
             email, password, users_collection
         )
-
         if login_successful:
             user = users_collection.find_one({"email": email})
             # Iniciar sesión
@@ -83,7 +65,6 @@ def login():
             return redirect(url_for("dashboard"))
         else:
             return render_template("login.html", error=error)
-
     else:
         return render_template("login.html")
 
@@ -118,33 +99,27 @@ def register_mail():
         email = request.form.get("email")
         password = request.form.get("password")
         password_verify = request.form.get("password_verify")
-
         datos_existentes = helpers.get_register_data()
-
         if not email or not password or not password_verify:
             error = "Por favor, completa todos los campos."
             return render_template(
                 "register1.html", error=error, datos=datos_existentes
             )
-
         if not helpers.is_valid_email(email):
             error = "Por favor, introduce un email válido."
             return render_template(
                 "register1.html", error=error, datos=datos_existentes
             )
-
         if not helpers.is_valid_password(password):
             error = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número o caracter especial."
             return render_template(
                 "register1.html", error=error, datos=datos_existentes
             )
-
         if password != password_verify:
             error = "Las contraseñas no coinciden."
             return render_template(
                 "register1.html", error=error, datos=datos_existentes
             )
-
         # Verificar si el email ya está registrado
         user = users_collection.find_one({"email": email})
         if user:
@@ -152,7 +127,6 @@ def register_mail():
             return render_template(
                 "register1.html", error=error, datos=datos_existentes
             )
-
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Eliminar el campo de verificación de contraseña
@@ -174,33 +148,27 @@ def register_account():
         nombre = request.form.get("nombre")
         apellido_paterno = request.form.get("apellido_paterno")
         apellido_materno = request.form.get("apellido_materno")
-
         datos_existentes = helpers.get_register_data()
-
         if not nombre or not apellido_paterno:
             error = "Por favor, completa los campos requeridos."
             return render_template(
                 "register2.html", error=error, datos=datos_existentes
             )
-
         if not helpers.is_valid_name(nombre):
             error = "Por favor, introduce un nombre válido."
             return render_template(
                 "register2.html", error=error, datos=datos_existentes
             )
-
         if not helpers.is_valid_name(apellido_paterno):
             error = "Por favor, introduce un apellido paterno válido."
             return render_template(
                 "register2.html", error=error, datos=datos_existentes
             )
-
         if apellido_materno and not helpers.is_valid_name(apellido_materno):
             error = "Por favor, introduce un apellido materno válido."
             return render_template(
                 "register2.html", error=error, datos=datos_existentes
             )
-
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
@@ -220,27 +188,22 @@ def register_state():
         # Validar datos del formulario
         estado = request.form.get("estado")
         ciudad = request.form.get("ciudad")
-
         datos_existentes = helpers.get_register_data()
-
         if not estado or not ciudad:
             error = "Por favor, completa los campos requeridos."
             return render_template(
                 "register3.html", error=error, datos=datos_existentes
             )
-
         if not helpers.is_valid_estado(estado):
             error = "Por favor, introduce un estado válido."
             return render_template(
                 "register3.html", error=error, datos=datos_existentes
             )
-
         if not helpers.is_valid_ciudad(ciudad):
             error = "Por favor, introduce una ciudad válida."
             return render_template(
                 "register3.html", error=error, datos=datos_existentes
             )
-
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
@@ -259,26 +222,23 @@ def register_u():
         # Validar datos del formulario
         universidad = request.form.get("universidad")
         terminos = request.form.get("terminos")
-
         datos_existentes = helpers.get_register_data()
-
         if universidad and not helpers.is_valid_universidad(universidad):
             error = "Por favor, introduce un nombre válido de tu universidad."
             return render_template(
                 "register4.html", error=error, datos=datos_existentes
             )
-
         if terminos != "accepted":
             error = "Por favor, acepta los términos y condiciones."
             return render_template(
                 "register4.html", error=error, datos=datos_existentes
             )
-
         # Obtener los datos del formulario
         datos = request.form.to_dict()
         # Almacenar los datos en la sesión
         session["registro_pagina4"] = datos
         fecha_creacion = datetime.now()
+        fecha_formateada = fecha_creacion.strftime("%d-%m-%Y")
         # Recopilar todos los datos de la sesión
         datos_de_registro = {
             **session.get("registro_pagina1", {}),
@@ -287,43 +247,35 @@ def register_u():
             **datos,
             "admin": 0,
             "num_uso": 0,
-            "date": fecha_creacion,
+            "date": fecha_formateada,
         }
-
         complete, missing_field = helpers.register_data_is_complete(datos_de_registro)
-
         if not complete:
             if missing_field == "email" or missing_field == "password":
                 error = "Completa los campos de email y contraseña."
                 return render_template(
                     "register1.html", error=error, datos=datos_de_registro
                 )
-
             if missing_field == "nombre" or missing_field == "apellido_paterno":
                 error = "Completa los campos de nombre y apellido paterno."
                 return render_template(
                     "register2.html", error=error, datos=datos_de_registro
                 )
-
             if missing_field == "estado" or missing_field == "ciudad":
                 error = "Completa los campos de estado y ciudad."
                 return render_template(
                     "register3.html", error=error, datos=datos_de_registro
                 )
-
             if missing_field == "terminos":
                 error = "Por favor, acepta los términos y condiciones."
                 return render_template(
                     "register4.html", error=error, datos=datos_de_registro
                 )
-
         # Encriptar la contraseña
         hashed_password = generate_password_hash(datos_de_registro["password"])
         datos_de_registro["password"] = hashed_password
-
         # Guardar los datos en la base de datos MongoDB
         users_collection.insert_one(datos_de_registro)
-
         # Limpiar la sesión después de guardar los datos
         session.pop("registro_pagina1", None)
         session.pop("registro_pagina2", None)
@@ -358,44 +310,24 @@ def tabla_admin():
         return render_template("login.html")
 
 
-@app.route("/eliminar_usuario/<string:id>", methods=["GET", "POST"])
-def eliminar_usuario(id):
+@app.route("/eliminar_usuario/<string:email>", methods=["GET", "POST"])
+def eliminar_usuario(email):
     if "logged_in" in session and session.get("admin") == 1:
         # Eliminar el usuario de la base de datos
-        users_collection.delete_one({"_id": id})
+        users_collection.delete_one({"email": email})
         return redirect(url_for("tabla_admin"))
     else:
         return render_template("login.html")
 
 
-# @app.route('/login')
-# def lector():
-#   return render_template('login.html')
-
-##@app.route('/lector')
-# def login():
-#   return render_template('lector.html')
-
-
 @app.route("/classify", methods=["POST"])
 def classify_message():
-    """
-    Classifies a message using a pre-trained model.
-    Returns:
-        A JSON response containing the predicted category and scores.
-    Raises:
-        Exception: If an error occurs during the classification process.
-    """
     try:
         message = request.json["message"]
-
         doc = app.nlp(message)
-
         scores = doc.cats
         category = max(scores, key=scores.get)
         score_values = {k: round(v, 2) for k, v in scores.items()}
-
         return jsonify({"category": category, "scores": score_values})
-
     except Exception as e:
         return jsonify({"error": str(e)})
