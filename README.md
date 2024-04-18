@@ -1,5 +1,6 @@
-# Instalacion y configuracion
-Usar codigo 
+# Instalación y configuración
+La siguiente línea instalará todas las dependencias que el proyecto necesita:
+
 `pip install -r requirements.txt`
 
 ## Descargar [Python](https://www.python.org/downloads/)
