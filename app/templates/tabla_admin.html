@@ -10,7 +10,6 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- Estilos gráficas -->
   <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-
   <!-- Dependencias -->
   <!-- * D3: https://github.com/d3/d3 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
@@ -131,7 +130,6 @@
       box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     }
   </style>
-
 </head>
 
 <body>
@@ -318,18 +316,16 @@
                   '31': 'Yucatán',
                   '32': 'Zacatecas'
                 };
-
                 // Obtener el número de estado desde la variable usuario.estado
                 var numeroEstado = "{{ usuario.estado }}";
-
                 // Mostrar el nombre correspondiente en el <td>
                 document.write(nombresEstados[numeroEstado]);
               </script>
             </td>
             <td style="width: 200px;">{{ usuario.ciudad }}</td>
             <td style="width: 200px;">{{ usuario.date }}</td>
-            <td style="width: 80px;"><a href="{{ url_for('eliminar_usuario', id=usuario._id) }}">
-              <i class="fa-solid fa-trash-can" style="color: #292929"></i></a>
+            <td style="width: 80px;"><a href="{{ url_for('eliminar_usuario', email=usuario.email) }}">
+                <i class="fa-solid fa-trash-can" style="color: #292929"></i></a>
             </td>
           </tr>
           {% endfor %}
@@ -339,7 +335,6 @@
     </div>
   </main>
 
-
   <!-- Warning No Admin -->
   <main id="showNoAdmin" style="display: none;">
     <div class="text center">
@@ -347,10 +342,8 @@
       <h1 style="font-size: 40pt;">Esta es un área de administradores</h1>
     </div>
   </main>
-
   <!-- Is Admin? -->
   <div id="adminValue" style="display: none;">{{ admin }}</div>
-
   <!-- Script Toogle Usuarios | Analizador -->
   <script>
     // Obtener el valor de admin desde el div oculto
@@ -373,7 +366,6 @@
     function redirectToAnalizador() {
       window.location.href = "/dashboard";
     }
-
     function redirectToUsuarios() {
       window.location.href = "/tabla";
     }
@@ -381,14 +373,12 @@
 
   <!-- * jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
   <!-- Bootstrap Javascript -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
   <!-- Opcional, solo si necesitas jQuery para otros componentes -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <!-- Necesario para tooltips, popovers y dropdowns -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-
   <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
@@ -397,14 +387,11 @@
   <script src="/static/js/bootstrap.popover.js"></script>
   <script src="/static/js/chordDiagram.js"></script>
   <script src="/static/js/main.js"></script>
-
   <!-- Extras -->
   <script src="/static/js/d3.layout.chord.sort.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-
   <!-- Sweet alert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
   <!-- Toasts block -->
   {% include "toasts.html" %}
 </body>
