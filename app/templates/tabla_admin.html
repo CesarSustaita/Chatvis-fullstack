@@ -324,8 +324,13 @@
             </td>
             <td style="width: 200px;">{{ usuario.ciudad }}</td>
             <td style="width: 200px;">{{ usuario.date }}</td>
-            <td style="width: 80px;"><a href="{{ url_for('eliminar_usuario', email=usuario.email) }}">
-                <i class="fa-solid fa-trash-can" style="color: #292929"></i></a>
+            <td style="width: 80px;">
+              {% if usuario.admin == 1 %}
+              <i class="fa-solid fa-trash-can" style="color: #dfdfdf"></i>
+              {% else %}
+              <a href="{{ url_for('eliminar_usuario', email=usuario.email) }}">
+                <i class="fa-solid fa-trash-can" style="color: #242424"></i></a>
+              {% endif %}
             </td>
           </tr>
           {% endfor %}
