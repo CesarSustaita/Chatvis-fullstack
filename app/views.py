@@ -315,6 +315,7 @@ def eliminar_usuario(email):
     if "logged_in" in session and session.get("admin") == 1:
         # Eliminar el usuario de la base de datos
         users_collection.delete_one({"email": email})
+        flash("Usuario eliminado con éxito.", "success")
         return redirect(url_for("tabla_admin"))
     else:
         return render_template("login.html")
