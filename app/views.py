@@ -34,7 +34,6 @@ users_collection = db["users"]
 def inicio():
     return render_template("inicio.html")
 
-
 @app.route("/")
 def index():
     return redirect(url_for("inicio"))

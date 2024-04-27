@@ -135,12 +135,13 @@ def is_valid_name(name: str) -> bool:
     """
     if len(name) < 1:
         return False
+    if not name.strip():  # nombre.strip() elimina los espacios al inicio y al final
+        return False
     # Check if the name contains only letters (L), punctuation (P) or separators (Z)
     for char in name:
         if unicodedata.category(char)[0] not in ("L", "P", "Z"):
             return False
     return True
-
 
 def is_valid_estado(estado: str) -> bool:
     """

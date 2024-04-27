@@ -261,6 +261,11 @@
     .ArrastrarArchivo.drag-over {
       background-color: #f0f0f0;
     }
+
+    .modal-footer{
+      display: flex;
+      justify-content: center;
+    }
   </style>
 
 </head>
@@ -282,7 +287,7 @@
     <div class="seccion2">
       <div class="icon-info">
         <button class="btn icon-button text" data-bs-toggle="modal" data-bs-target="#modalInfo">
-          <i class="fa-solid fa-circle-info fa-xl" style="color: #a3a3a3"></i> Info
+          <i class="fa-solid fa-circle-question fa-xl" style="color: #a3a3a3"></i> Ayuda
         </button>
       </div>
       <div class="line text" style="color: #a3a3a3">|</div>
@@ -321,18 +326,94 @@
             <li>Presiona el botón de subir archivo o arrastra tu conversación.</li>
             <li>El analizador ChatVis subirá tu archivo, lo analizará, y mostrará el resultado.</li>
           </ul>
-          <div class="alert alert-warning text">
+          <div class="alert alert-warning text" style="text-align: center;">
             <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO
-              guardará</strong> ninguna conversación analizada para mantener su privacidad.
+              guardará</strong> ninguna conversación analizada para mantener su privacidad. Lea <a href="" data-bs-toggle="modal" data-bs-target="#modalToS" style="text-decoration: underline;">Términos y Condiciones</a> para más información.
           </div>
           <!-- Footer About Project -->
           <div style="text-align: center;">
             <div class="icon-info">
               <button class="btn icon-button text" data-bs-toggle="modal" data-bs-target="#modalAbout">
-                <i class="fa-solid fa-circle-question" style="color: #a3a3a3"></i>
+                Acerca del proyecto
+                <i class="fa-solid fa-circle-info fa-lg" style="color: #a3a3a3"></i>
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal ToS -->
+  <div class="modal fade" id="modalToS" tabindex="-1" aria-labelledby="modalToSLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header text">
+        <h1 class="modal-title fs-3" id="modalToSLabel">Términos y Condiciones de Chatvis Analyzer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text">
+            <div>
+                <div class="section">
+                    <h2>Introducción</h2>
+                    <p>Bienvenido a Chatvis. Estos términos y condiciones (los "Términos") regulan el uso de nuestro sistema web para analizar conversaciones de WhatsApp a partir de archivos .txt. Al acceder a nuestro sistema, usted acepta estos Términos.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Definiciones</h2>
+                    <p><strong>Chatvis:</strong> Sistema web para el análisis de conversaciones de WhatsApp a partir de archivos de texto.</p>
+                    <p><strong>Usuario:</strong> Persona que se registra y utiliza el sistema Chatvis.</p>
+                    <p><strong>Archivo .txt:</strong> Archivo de texto sin formato que contiene conversaciones de WhatsApp importadas sin imágenes.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Aceptación de los Términos</h2>
+                    <p>Al acceder o usar Chatvis, usted acepta cumplir con estos Términos. Si no está de acuerdo con alguna parte de estos Términos, debe dejar de usar el sistema.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Registro y Cuentas</h2>
+                    <p>Para usar Chatvis, se requiere iniciar sesión o registrarse como nuevo usuario. El registro es necesario para mantener un control de los usuarios que ingresan al sistema. La información proporcionada durante el registro será utilizada únicamente para fines administrativos y no será compartida con terceros.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Uso del Sistema</h2>
+                    <p>Una vez registrado, el usuario puede cargar un archivo .txt para su análisis. Al cargar el archivo, Chatvis analizará las conversaciones y presentará:</p>
+                    <ul>
+                        <li>La conversación del archivo: El texto contenido en el archivo .txt.</li>
+                        <li>Gráfica de relaciones: Representación visual de la interacción entre las personas en la conversación.</li>
+                        <li>Gráfica de análisis de texto: Categoriza las conversaciones en tres tipos:</li>
+                        <ul>
+                            <li><strong>Código:</strong> Conversaciones que contienen código de programación.</li>
+                            <li><strong>Organización:</strong> Conversaciones relacionadas con la organización de actividades.</li>
+                            <li><strong>Intrascendente:</strong> Conversaciones que no encajan en las categorías anteriores.</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Privacidad y Seguridad</h2>
+                    <p>Chatvis no guarda ninguna de las conversaciones cargadas por los usuarios. Todo el análisis se realiza en tiempo real y no se almacena información personal ni de las conversaciones por motivos de seguridad y privacidad. El registro es solo para que el administrador pueda ver cuántos usuarios han usado el sistema.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Conducta del Usuario</h2>
+                    <p>Al usar Chatvis, el usuario acepta no cargar archivos que contengan contenido ilegal, ofensivo, o que infrinja los derechos de propiedad intelectual de terceros. El usuario es responsable del contenido que carga y del uso que haga del sistema.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Limitación de Responsabilidad</h2>
+                    <p>Chatvis no será responsable de cualquier daño o pérdida derivada del uso del sistema, incluidos, entre otros, errores en el análisis, pérdidas de datos, o cualquier daño consecuente. El usuario usa el sistema bajo su propio riesgo.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Modificaciones de los Términos</h2>
+                    <p>Chatvis se reserva el derecho de modificar estos Términos en cualquier momento. Cualquier cambio será comunicado a los usuarios registrados a través de la plataforma. El uso continuado del sistema después de dichos cambios constituye la aceptación de los nuevos términos.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Entendido</button>
+            </div>
         </div>
       </div>
     </div>
