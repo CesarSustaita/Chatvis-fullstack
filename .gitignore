@@ -16,3 +16,4 @@ spacy/model-best-x-eff/.DS_Store
 node_modules
 .vscode/launch.json
 .vscode/settings.json
+.keys
