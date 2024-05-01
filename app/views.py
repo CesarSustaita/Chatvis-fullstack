@@ -81,14 +81,14 @@ def dashboard():
 
 
 # Cerrar sesión
-@app.route("/logout")
+@app.route("/logout", methods=["GET", "POST"])
 def logout():
-    app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(minutes=-10)
+    app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(seconds=0)
     session.pop("logged_in", None)
     session.pop("email", None)
     session.pop("name", None)
-    success = "Has cerrado sesión exitosamente."
-    return render_template("inicio.html", success=success)
+    info = "Has cerrado sesión exitosamente."
+    return render_template("inicio.html", info=info)
 
 
 @app.route("/register/mail", methods=["GET", "POST"])
