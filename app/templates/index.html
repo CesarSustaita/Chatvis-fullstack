@@ -1,145 +1,647 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-MX">
 
 <head>
-    <title>Analizador de Chats de WhatsApp</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <title>Analizador - Semantic ChatVis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Estilos gráficas -->
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Dependencias -->
+  <!-- * D3: https://github.com/d3/d3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  <!-- * WhatsApp Chat Parser: https://github.com/Pustur/whatsapp-chat-parser -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser/dist/whatsapp-chat-parser.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser@4.0.0/dist/index.global.js"></script>
+  <!-- * Google Fonts -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'> -->
+  <link href='https://fonts.googleapis.com/css2?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+  <!-- CDN de FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Estilos gráficas -->
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  <style scoped>
+    .hidden {
+      display: none;
+    }
 
-    <!-- Dependencias -->
-    <!-- * D3: https://github.com/d3/d3 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-    <!-- * WhatsApp Chat Parser: https://github.com/Pustur/whatsapp-chat-parser -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser/dist/whatsapp-chat-parser.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser@4.0.0/dist/index.global.js"></script>
-    <!-- * Google Fonts -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'> -->
-    <link href='https://fonts.googleapis.com/css2?family=Noto+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    .botones-pestañas {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .navUser {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 2px solid #d1d1d1;
+      height: 80px;
+      background-color: white;
+    }
+
+    .seccion1 {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .seccion2 {
+      width: 10%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding-right: 30px;
+    }
+
+    .icon-button {
+      padding: 5px;
+      width: auto;
+      height: auto;
+      border: none;
+    }
+
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: rgb(44, 44, 44);
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text{
+      text-decoration: none;
+      color: rgb(44, 44, 44);
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .small-text{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-size: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a:hover {
+      color: #2cb983;
+    }
+
+    .btn-outline-secondary {
+      color: black;
+      font-weight: 500;
+    }
+
+    .nav {
+      padding: 10px 100px;
+    }
+
+    .btn-dark {
+      color: white;
+    }
+
+    .nav-link {
+      color: black;
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #2cb983;
+    }
+
+    @media (min-width: 1500px) {
+      #analizadorContent {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+      }
+
+      #chord-chat-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: 2%;
+        height: 55vh;
+      }
+
+      #chord-component {
+        /*CHORD GRAPH COMPONENT*/
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      }
+
+      #chat-component {
+        /*CHAT GRAPH COMPONENT*/
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      }
+
+      #bar-chart-section {
+        /*CHART GRAPH COMPONENT*/
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+
+      #title {
+        display: flex;
+        border-bottom: 1px solid rgba(95, 95, 95, 0.103);
+        height: 5vh;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        font-weight: 600;
+        padding-left: 2vh;
+      }
+    }
+
+
+    @media (min-width: 100px) and (max-width: 1500px) {
+      #analizadorContent {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+
+      #chord-chat-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 2%;
+        height: 120vh;
+      }
+
+      #chord-component {
+        /*CHORD GRAPH COMPONENT*/
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      }
+
+      #chat-component {
+        /*CHAT GRAPH COMPONENT*/
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+      }
+
+      #title {
+        display: flex;
+        border-bottom: 1px solid rgba(95, 95, 95, 0.103);
+        height: 5vh;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        font-weight: 600;
+        padding-left: 2vh;
+      }
+
+      #bar-chart-section {
+        /*CHART GRAPH COMPONENT*/
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+    }
+
+    .footer-help {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    ul{
+      list-style-type: decimal;
+    }
+
+    .ReaderFile {
+      background-color: white;
+      width: 750px;
+      height: 350px;
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto; /* Centra horizontalmente */
+    }
+
+    .ArrastrarArchivo {
+      width: 90%;
+      height: 65%;
+      border-radius: 10px;
+      border: 1px solid #dcdcdc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .ArrastrarArchivo.drag-over {
+      background-color: #f0f0f0;
+    }
+
+    .modal-footer{
+      display: flex;
+      justify-content: center;
+    }
+  </style>
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <a class="navbar-brand" href="">Semantic Chatvis</a>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <!-- Botón iniciar sin animaciones -->
-                <div class="col">
-                    <div class="explanation texts" style="text-align: center;">
-                        <label for="whatsChatSinAnimaciones"
-                            style="width: 300px; border-radius: 5px;border: none; background-color: #4ab969;color: white;">Iniciar</label>
-                        <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
-                    </div>
-                </div>
-            </div>
-
-            <div id="chord-chat-section" class="row">
-                <!-- Chord diagram -->
-                <div id="chord-container" class="col-sm-6 mt-1 mb-1 ">
-
-                    <div id="chart" style="display: none;"></div>
-                </div>
-
-                <!-- Chat window -->
-                <div id="chat-container" class="col-sm-6 mt-1 mb-1">
-                    <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
-                </div>
-            </div>
-
-            <div id="bar-chart-section" class="row">
-                <!-- Bar chart -->
-                <div class="col mt-1 mb-1">
-                    <div id="bar-chart-container" class="chart-container">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                </div>
-            </div>
-
-            <div id="instructions-section" class="row">
-
-                <div class=" col-sm-12 ">
-                    <div class="explanation texts">
-                        <br>
-                        * Antes de iniciar, se le mostrará un diálogo de selección de archivo para que cargue el archivo
-                        exportado por
-                        WhatsApp
-                        <br> <br>
-                        ** Para chats con 12 o más contactos se ocultará la simulación del chat, se ampliará el diagrama
-                        y en vez de mostrar
-                        el nombre de los contactos se usará un ID para facilitar la visualización.
-                        <br>En la esquina superior izquierda se habilitará una tabla que indica que ID le corresponde a
-                        cada contacto.
-                    </div>
-                    <hr>
-                    <h2 class="texts">Ayuda</h2>
-                    <div class="explanation texts" style="text-align: center;">
-                        <br>
-                        <span type="file" id="exportarArchivo"
-                            style="width: 300px; border-radius: 5px; border: none; background-color: #4ab969;">
-                            <a style="color:white;" href="https://faq.whatsapp.com/es/android/23756533/"
-                                target="_blank">
-                                Link: Cómo exportar un chat de WhatsApp
-                            </a>
-                        </span>
-                        <br> <br>
-                    </div>
-                    <hr>
-                    <div class="credit texts">Basado en el trabajo de <a
-                            href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2">Nadieh
-                            Bremer</a> | <a href="http://www.visualcinnamon.com/">VisualCinnamon.com</a></div>
-                    <div class="notes texts">
-                        Bibliotecas usadas:
-                        <ul>
-                            <li><a href="https://jquery.com/">jQuery</a></li>
-                            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-                            <li><a href="https://github.com/Pustur/whatsapp-chat-parser">WhatsApp Chat Parser</a></li>
-                            <li><a href="https://d3js.org/">D3.js</a></li>
-                            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
+  <!-- Navbar -->
+  <div class="navUser">
+    <div class="seccion1">
+      <div class="title-inter">
+        <a href="/dashboard">Chatvis Analyzer</a>
+      </div>
+      <label for="whatsChatSinAnimaciones" class="nav-link">
+        <div class="btn btn-dark" id="uploadButton" style="display: none;">
+          <i class="fa-solid fa-upload"></i> Subir Archivo
+          <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
         </div>
+      </label>
+    </div>
+    <div class="seccion2">
+      <div class="icon-info">
+        <button class="btn icon-button text" data-bs-toggle="modal" data-bs-target="#modalInfo">
+          <i class="fa-solid fa-circle-question fa-xl" style="color: #a3a3a3"></i> Ayuda
+        </button>
+      </div>
+      <div class="line text" style="color: #a3a3a3">|</div>
+      <div class="profile-icon">
+        <div class="btn-group" role="group">
+          <button class="btn icon-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user fa-xl" style="color: #a3a3a3"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">{{name}}</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="{{url_for('logout')}}">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Info -->
+  <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text">
+          <h1 class="modal-title fs-3" id="modalInfoLabel">¿Cómo funciona?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text">
+          <ul>
+            <li>Importa tu conversación de WhatsApp en formato “.txt”.</li>
+            <ul style="list-style-type: '\2753';">
+              <li>
+                <h5><a href="https://faq.whatsapp.com/es/android/23756533/" target="_blank">¿Cómo exportar un chat de
+                    WhatsApp?</a></h5>
+              </li>
+            </ul>
+            <li>Presiona el botón de subir archivo o arrastra tu conversación.</li>
+            <li>El analizador ChatVis subirá tu archivo, lo analizará, y mostrará el resultado.</li>
+          </ul>
+          <div class="alert alert-warning text" style="text-align: center;">
+            <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO
+              guardará</strong> ninguna conversación analizada para mantener su privacidad. Lea <a href="" data-bs-toggle="modal" data-bs-target="#modalToS" style="text-decoration: underline;">Términos y Condiciones</a> para más información.
+          </div>
+          <!-- Footer About Project -->
+          <div style="text-align: center;">
+            <div class="icon-info">
+              <button class="btn icon-button text" data-bs-toggle="modal" data-bs-target="#modalAbout">
+                Acerca del proyecto
+                <i class="fa-solid fa-circle-info fa-lg" style="color: #a3a3a3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal ToS -->
+  <div class="modal fade" id="modalToS" tabindex="-1" aria-labelledby="modalToSLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header text">
+        <h1 class="modal-title fs-3" id="modalToSLabel">Términos y Condiciones de Chatvis Analyzer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text">
+            <div>
+                <div class="section">
+                    <h2>Introducción</h2>
+                    <p>Bienvenido a Chatvis. Estos términos y condiciones (los "Términos") regulan el uso de nuestro sistema web para analizar conversaciones de WhatsApp a partir de archivos .txt. Al acceder a nuestro sistema, usted acepta estos Términos.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Definiciones</h2>
+                    <p><strong>Chatvis:</strong> Sistema web para el análisis de conversaciones de WhatsApp a partir de archivos de texto.</p>
+                    <p><strong>Usuario:</strong> Persona que se registra y utiliza el sistema Chatvis.</p>
+                    <p><strong>Archivo .txt:</strong> Archivo de texto sin formato que contiene conversaciones de WhatsApp importadas sin imágenes.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Aceptación de los Términos</h2>
+                    <p>Al acceder o usar Chatvis, usted acepta cumplir con estos Términos. Si no está de acuerdo con alguna parte de estos Términos, debe dejar de usar el sistema.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Registro y Cuentas</h2>
+                    <p>Para usar Chatvis, se requiere iniciar sesión o registrarse como nuevo usuario. El registro es necesario para mantener un control de los usuarios que ingresan al sistema. La información proporcionada durante el registro será utilizada únicamente para fines administrativos y no será compartida con terceros.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Uso del Sistema</h2>
+                    <p>Una vez registrado, el usuario puede cargar un archivo .txt para su análisis. Al cargar el archivo, Chatvis analizará las conversaciones y presentará:</p>
+                    <ul>
+                        <li>La conversación del archivo: El texto contenido en el archivo .txt.</li>
+                        <li>Gráfica de relaciones: Representación visual de la interacción entre las personas en la conversación.</li>
+                        <li>Gráfica de análisis de texto: Categoriza las conversaciones en tres tipos:</li>
+                        <ul>
+                            <li><strong>Código:</strong> Conversaciones que contienen código de programación.</li>
+                            <li><strong>Organización:</strong> Conversaciones relacionadas con la organización de actividades.</li>
+                            <li><strong>Intrascendente:</strong> Conversaciones que no encajan en las categorías anteriores.</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Privacidad y Seguridad</h2>
+                    <p>Chatvis no guarda ninguna de las conversaciones cargadas por los usuarios. Todo el análisis se realiza en tiempo real y no se almacena información personal ni de las conversaciones por motivos de seguridad y privacidad. El registro es solo para que el administrador pueda ver cuántos usuarios han usado el sistema.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Conducta del Usuario</h2>
+                    <p>Al usar Chatvis, el usuario acepta no cargar archivos que contengan contenido ilegal, ofensivo, o que infrinja los derechos de propiedad intelectual de terceros. El usuario es responsable del contenido que carga y del uso que haga del sistema.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Limitación de Responsabilidad</h2>
+                    <p>Chatvis no será responsable de cualquier daño o pérdida derivada del uso del sistema, incluidos, entre otros, errores en el análisis, pérdidas de datos, o cualquier daño consecuente. El usuario usa el sistema bajo su propio riesgo.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Modificaciones de los Términos</h2>
+                    <p>Chatvis se reserva el derecho de modificar estos Términos en cualquier momento. Cualquier cambio será comunicado a los usuarios registrados a través de la plataforma. El uso continuado del sistema después de dichos cambios constituye la aceptación de los nuevos términos.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal About -->
+  <div class="modal fade" id="modalAbout" tabindex="-1" aria-labelledby="modalAboutLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text">
+          <h1 class="modal-title fs-3" id="modalAboutLabel">Acerca del Proyecto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text">
+          <div class="text">
+            Bibliotecas usadas:<br>
+            <ul class="text">
+              <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+              <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+              <li><a href="https://github.com/Pustur/whatsapp-chat-parser" target="_blank">WhatsApp Chat Parser</a></li>
+              <li><a href="https://d3js.org/" target="_blank">D3.js</a></li>
+              <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+              <li><a href="https://fontawesome.com/" target="_blank">FontAwesome</a></li>
+              <li><a href="https://spacy.io/" target="_blank">spaCY</a></li>
+              <li><a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">Flask</a></li>
+              <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+              <li><a href="https://nodejs.org/" target="_blank">Node.js</a></li>
+              <li><a href="https://cdnjs.com/libraries/toastify-js/1.6.1" target="_blank">Toastify</a></li>
+            </ul>
+          </div>
+          <br>
+          <div class="text" style="text-align: center;">
+            Basado en el trabajo de<br>
+            <a href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2" target="_blank">Nadieh Bremer</a> & <a
+              href="http://www.visualcinnamon.com/" target="_blank">VisualCinnamon.com</a> <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toogle Usuarios | Analizador -->
+  <!-- se borro esta linea de codigo para agregar una validacion de flask, si da error borrar lo de flask -->
+  <!-- <div class="botones-pestañas" id="noAdmin"> -->
+  {% if admin == 1 %}
+  <div class="botones-pestañas">
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+      <label class="btn btn-outline-secondary text" for="btnradio1" onclick="redirectToUsuarios()">
+        <i class="fa-solid fa-user-group"></i> Usuarios
+      </label>
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked />
+      <label class="btn btn-outline-secondary text" for="btnradio2" onclick="redirectToAnalizador()">
+        Analizador <i class="fa-solid fa-chart-pie"></i>
+      </label>
+    </div>
+  </div>
+  {% endif %}
+  <br id="padding">
+
+  <!-- Drag-N-Drop -->
+  <div class="ReaderFile" id="dragAndDropArea">
+    <h3 class="text" style="font-size: 18pt; font-weight: 600; padding-bottom: 20px;">
+      ¡Analicemos tu Archivo!
+    </h3>
+    <div class="ArrastrarArchivo" id="ArrastrarArchivo" accept=".txt" ondragover="handleDragOver(event)"
+      ondrop="handleDrop(event)" ondragenter="event.preventDefault()" ondragleave="handleDragLeave(event)">
+      <div id="spinner" style="display: none;">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <div id="fileIcon">
+        <img src="http://127.0.0.1:5000/static/img/attach_file.svg" alt="Clip" width="100" height="100" />
+      </div>
+      <h5 id="message" class="text">
+        Arrastra y suelta tu conversación con extensión ".txt".
+      </h5>
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <main>
+    <div class="contenedor">
+
+      <div id="analizadorContent" class="hidden">
+
+        <div id="chord-chat-section">
+          <div id="chord-component" class="row">
+            <div id="title">Gráfica de Relaciones</div>
+            <div id="chord-container">
+              <div id="chart" style="display: none;"></div>
 
 
-    </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
+            </div>
+          </div>
+          <div id="chat-component" class="row">
+            <div id="title">
+              Conversación
+            </div>
+            <div id="chat-container" style="background-image: url('http://127.0.0.1:5000/static/img/background.jpg');">
+              <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        <div id="bar-chart-section" class="row">
+          <div id="title">
+            Análisis
+          </div>
+          <div id="bar-chart-container" class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <br><br><br>
+  </main>
 
-    <!-- * jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Is Admin? -->
+  <div id="adminValue" style="display: none;">{{ admin }}</div>
 
-    <!-- Bootstrap Javascript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="/static/js/bootstrap.tooltip.js"></script>
-    <script src="/static/js/bootstrap.popover.js"></script>
+  <!-- Script Toogle Usuarios | Analizador -->
+  <script>
+    // Obtener el valor de admin desde el div oculto
+    document.addEventListener("DOMContentLoaded", function () {
+      var adminValue = document.getElementById("adminValue").innerText.trim();
+      var isAdmin = adminValue;
+      if (isAdmin != 0) {
+        document.getElementById("noAdmin").style.display = "none";
+      }
+    });
+    // Obtener los elementos del DOM
+    const btnradio1 = document.getElementById('btnradio1');
+    const btnradio2 = document.getElementById('btnradio2');
+    const usuariosContent = document.getElementById('usuariosContent');
+    const analizadorContent = document.getElementById('analizadorContent');
 
-    <script src="/static/js/chordDiagram.js"></script>
-    <script src="/static/js/main.js"></script>
+    // Añadir eventos de clic a los botones
+    btnradio1.addEventListener('click', () => {
+      usuariosContent.classList.remove('hidden');
+      analizadorContent.classList.add('hidden');
+    });
 
-    <!-- Extras -->
-    <script src="/static/js/d3.layout.chord.sort.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    btnradio2.addEventListener('click', () => {
+      usuariosContent.classList.add('hidden');
+      analizadorContent.classList.remove('hidden');
+    });
 
-    <!-- Sweet alert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    function redirectToAnalizador() {
+      window.location.href = "/dashboard";
+    }
 
+    function redirectToUsuarios() {
+      window.location.href = "/tabla";
+    }
+  </script>
+
+  <!-- Script Drag-N-Drop -->
+  <script>
+    function handleDragOver(event) {
+      event.preventDefault();
+      event.dataTransfer.dropEffect = 'copy';
+      document.getElementById('message').innerText = 'Suelta tu archivo aquí.';
+      document.getElementById('ArrastrarArchivo').classList.add('drag-over');
+    }
+
+    function handleDrop(event) {
+      event.preventDefault();
+      const file = event.dataTransfer.files[0];
+      if (file) {
+        if (file.name.endsWith('.txt')) {
+          const inputFile = document.getElementById('whatsChatSinAnimaciones');
+          inputFile.files = event.dataTransfer.files; // Establece los archivos seleccionados en el input oculto
+          inputFile.dispatchEvent(new Event('change')); // Simula el evento de cambio
+          document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
+          // Oculta el área de arrastrar y soltar al cargar un archivo
+          document.getElementById("dragAndDropArea").style.display = "none";
+          document.getElementById("padding").style.display = "none";
+          // Muestra el botón de subir archivo al cargar un archivo
+          document.getElementById("uploadButton").style.display = "block";
+          document.getElementById('message').innerText = 'Tu conversación se ha subido correctamente.';
+        } else {
+          document.getElementById('spinner').style.display = 'none';
+          document.getElementById('fileIcon').style.display = 'block';
+          document.getElementById('message').innerText = 'Suelta tu archivo aquí.';
+          swal("Error", "El archivo debe ser de tipo .txt", "error");
+        }
+        document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
+      }
+    }
+
+    function handleDragLeave(event) {
+      event.preventDefault();
+      document.getElementById('message').innerText = 'Arrastra y suelta tu conversación con extensión ".txt".';
+      document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
+    }
+  </script>
+
+  <!-- * jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <!-- Opcional, solo si necesitas jQuery para otros componentes -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <!-- Necesario para tooltips, popovers y dropdowns -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+  <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="/static/js/bootstrap.tooltip.js"></script>
+  <script src="/static/js/bootstrap.popover.js"></script>
+  <script src="/static/js/chordDiagram.js"></script>
+  <script src="/static/js/main.js"></script>
+
+  <!-- Extras -->
+  <script>import * as d3 from "d3";  </script>
+  <script src="/static/js/d3.layout.chord.sort.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+  <!-- Sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- Toasts block -->
+  {% include "toasts.html" %}
 </body>
 
 </html>

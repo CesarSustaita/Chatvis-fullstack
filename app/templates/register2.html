@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Cuenta</title>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CDN de FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- ReCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <style scoped>
+        .wrapper {
+            border: 0px solid rgb(196, 25, 25);
+        }
+
+        a:link,
+        a:visited,
+        a:active {
+            text-decoration: none;
+            color: rgb(44, 44, 44);
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a:hover {
+            color: #2cb983;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 45px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .der {
+            border: 0px solid rgb(29, 29, 29);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 220px;
+        }
+
+        .return-btn {
+            cursor: pointer;
+        }
+
+        .next-btn {
+            cursor: pointer;
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border: 0px solid black;
+            }
+
+            .encabezados {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                border: 0px solid black;
+            }
+
+            .title {
+                width: 350px;
+                margin-bottom: 20px;
+                align-items: center;
+            }
+
+            .inicio {
+                width: 350px;
+            }
+
+            .btn {
+                width: 350px;
+            }
+
+            .next {
+                color: black;
+            }
+
+            .avance {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 0.25rem;
+                width: 100%;
+                height: 10px;
+                margin-top: 10px;
+                margin-bottom: 25px;
+            }
+
+            .recuadro {
+                flex: 1;
+                border-radius: 4px;
+            }
+
+            .recuadro-futuro {
+                background-color: rgb(186, 186, 186);
+            }
+
+            .recuadro-coloreado {
+                background-color: rgb(54, 54, 54);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="nav">
+                <div class="izq">
+                    <a href="/inicio">Chatvis Analyzer</a>
+                </div>
+                <div class="der">
+                    <div class="registro">
+                        <a href="/register/mail">Registro</a>
+                    </div>
+                    <div class="inicioSesion">
+                        <a href="/login">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
+        <div class="encabezados d-flex justify-content-between">
+            <div class="back">
+                <a href="{{ url_for('register_mail') }}">
+                    <h3 class="return-btn">
+                        <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
+                        Regresar
+                    </h3>
+                </a>
+            </div>
+            <div class="title">
+                <h3>Registro de cuenta</h3>
+            </div>
+            <div class="next">
+                <a href="/register/state">
+                    <h3 class="next-btn">
+                        Siguiente
+                        <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
+                    </h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="inicio mt-1">
+            <div class="avance d-flex">
+                <div class="recuadro recuadro-futuro"></div>
+                <div class="recuadro recuadro-coloreado"></div>
+                <div class="recuadro recuadro-futuro"></div>
+                <div class="recuadro recuadro-futuro"></div>
+            </div>
+
+            <form id="form-register-name" action="/register/account" method="post" class="needs-validation" novalidate>
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                    name="nombre" id="nombre" autocomplete="given-name" value="{{datos['nombre']|default('')}}" required/>
+                <div class="invalid-feedback">
+                    Introduce tu nombre.
+                </div>
+                <br>
+                <label for="apellido_paterno" class="form-label">Apellido Paterno</label>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                    name="apellido_paterno" id="apellido_paterno" autocomplete="family-name" value="{{datos['apellido_paterno']|default('')}}" required  />
+                <div class="invalid-feedback">
+                    Introduce tu apellido paterno.
+                </div>
+                <br>
+                <label for="apellido_materno" class="form-label">Apellido Materno</label>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                    name="apellido_materno" id="apellido_materno" autocomplete="off" value="{{datos['apellido_materno']|default('')}}" required />
+                <div class="invalid-feedback">
+                    Introduce tu apellido materno.
+                </div>
+                <br>
+                <button type="submit" id="button-register-name" 
+                    class="btn btn-outline-dark mt-3 g-recaptcha"
+                    data-sitekey="6Ld58aEpAAAAAN4FEZGbbinFl6MhutiyQwWsFF1f"
+                    data-callback='onLoginFormSubmit'
+                    data-action='submit'>
+                    Continuar
+                </button>
+            </button>
+            </form>
+        </div>
+        <div class="cuenta mt-3">
+            ¿Ya tienes una cuenta? <a href="/login" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
+        </div>
+    </div>
+
+    <script>
+        // ReCAPTCHA callback function to submit the form
+        function onLoginFormSubmit(token) {
+            document.getElementById("form-register-name").requestSubmit();
+        }
+    </script>
+
+    <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Toasts block -->
+    {% include "toasts.html" %}
+
+    <!-- Validación de formulario -->
+    <script>
+        (() => {
+            'use strict'
+
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>

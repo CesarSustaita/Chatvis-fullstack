@@ -1,0 +1,60 @@
+{% block toasts %}
+<!-- CDN de Toastify -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+<!-- JavaScript de Toastify -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- Toasts -->
+<script src="{{ url_for('static', filename='js/toasts.js') }}"></script>
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            {% if category == 'error' %}
+                <script>
+                    showToastError("{{ message }}")
+                </script>
+            {% elif category == 'success' %}
+                <script>
+                    showToastSuccess("{{ message }}")
+                </script>
+            {% elif category == 'info' %}
+                <script>
+                    showToastInfo("{{ message }}")
+                </script>
+            {% elif category == 'warning' %}
+                <script>
+                    showToastWarning("{{ message }}")
+                </script>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+{% if error %}
+    <script>
+        showToastError("{{ error }}")
+    </script>
+{% endif %}
+
+{% if success %}
+    <script>
+        showToastSuccess("{{ success }}")
+    </script>
+{% endif %}
+
+{% if info %}
+    <script>
+        showToastInfo("{{ info }}")
+    </script>
+{% endif %}
+
+{% if warning %}
+    <script>
+        showToastWarning("{{ warning }}")
+    </script>
+{% endif %}
+
+    
+{% endblock %}

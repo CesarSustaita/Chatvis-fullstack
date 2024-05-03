@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/static/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+       <!-- Bootstrap CSS -->
+       
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        
+        .ReaderFile {
+            background-color: white;
+            width: 50%;
+            padding: 10px; /* Agregamos un relleno para mejorar la apariencia */
+            border-radius: 10px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+            display: inline-block; /* Cambiamos display a inline-block */
+            border: 2px solid #ccc; /* Añadimos un borde */
+            outline: none; /* Eliminamos el borde de enfoque */
+            font-size: 16px; /* Tamaño de la fuente */
+        }
+
+        /* Estilos para el hover */
+        .ReaderFile:hover {
+            border-color: #aaa;
+        }
+
+        /* Estilos para el enfoque */
+        .ReaderFile:focus {
+            border-color: dodgerblue;
+        }
+        </style>
+        <!-- * Google Fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css2?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+
+   
+
+    <!-- Desarrollo -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+        
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="column">Comencemos a analizar tu archivo</h2>
+                <input type="file" id="fileInput" class="ReaderFile"> 
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            var file = event.target.files[0];
+            var fileName = event.target.files[0].name;
+
+            // Verificar si se ha seleccionado un archivo
+            if (file) {
+                // Obtener la extensión del archivo
+                var extension = file.name.split('.').pop().toLowerCase();
+                console.log("Nombre del archivo:", fileName);
+
+                // Verificar si la extensión es .txt
+                if (extension !== "txt") {
+                    // Mostrar un mensaje de error utilizando SweetAlert
+                    Swal.fire("Error", "El archivo debe ser de tipo .txt", "error");
+                    return;
+                }
+                // Mostrar mensaje de confirmación
+                Swal.fire("Cargado correctamente", "El archivo se ha cargado correctamente.", "success");
+                
+                sendFileNameToMainJs(fileName);
+                window.location.href = '/';
+                
+                
+            }
+        });
+    </script>
+  
+  
+</body>
+</html>

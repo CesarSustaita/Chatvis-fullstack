@@ -1,5 +1,3 @@
-# Instalacion y configuracion
-
 ## Descargar [Python](https://www.python.org/downloads/)
 > [!IMPORTANT]
 > En Windows es importante marcar la casilla de `agregar al PATH` para hacer uso del comando pip.
@@ -20,7 +18,7 @@ interfieran con otras instalaciones del sistema
 `.env\Scripts\activate`
 
 ## [spaCy](https://spacy.io/usage)
-spaCy es la biblioteca de Python utilizada para cargar el modelo clasificador de texto. Los
+spaCy es la biblioteca de Python utilizada para entrenar el clasificador de texto. Los
 siguientes comandos se ejecutan en la consola, después de activar el entorno virtual.
 
 `pip install -U pip setuptools wheel`
@@ -41,6 +39,12 @@ ejecutar los siguientes comandos en la misma terminal (con el entorno virtual ac
 
 > [!TIP]
 > Después de este punto, el servidor está listo para ejecutarse.
+
+## Instalación y configuración
+La siguiente línea instalará todas las dependencias que el proyecto necesita
+ubicadas en requirements.txt 
+`pip install -r requirements.txt`
+
 
 ## Ejecución del servidor
 El servidor se inicializa con el siguiente comando

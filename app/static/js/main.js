@@ -8,6 +8,16 @@
  * @namespace
  */
 
+//import * as d3 from "d3";
+
+////prueba
+function sendFileNameToMainJs(fileName) {
+    // Aquí puedes hacer lo que quieras con el nombre del archivo
+    console.log('El nombre del archivo seleccionado es: ' + fileName);
+    // Por ejemplo, puedes pasarlo a otra función o realizar algún otro procesamiento.
+}
+
+
 // Variables globales
 
 // Mensaje de error al cargar el archivo
@@ -15,6 +25,7 @@
 
 var input = document.getElementById("whatsChat");
 var inputSA = document.getElementById("whatsChatSinAnimaciones");
+
 
 var reader = new FileReader();
 var readerSA = new FileReader();
@@ -61,7 +72,8 @@ inputSA.addEventListener("change", function () {
 			this.value = '';
 			return;
 		}
-
+	swal("Cargado correctamente", "El archivo se ha cargado correctamente.", "success");
+       // window.location.href = '/';
 		// Loads the file, triggering the event
 		readerSA.readAsText(whatsChat, 'UTF-8');
 	};
@@ -497,13 +509,13 @@ function generateChart(days, category_counts_by_day) {
 			labels: days,		//Etiquetas en el eje X (días)
 			datasets: [
 				{
-					label: 'Codigo',							//Etiqueta para el conjunto de datos
+					label: 'Código',							//Etiqueta para el conjunto de datos
 					backgroundColor: 'rgba(161,221,113, 255)', //Color de las barras
 					data: codigo, 								//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
 				},
 				{
-					label: 'Organizacion',						//Etiqueta para el conjunto de datos
+					label: 'Organización',						//Etiqueta para el conjunto de datos
 					backgroundColor: 'rgba(106,159,194, 255)',	//Color de las barras
 					data: organizacion, 					//Datos para este conjunto
 					stack: 'Stack 0',							//Define la pila a la que pertenecerán las barras
@@ -569,7 +581,7 @@ async function resizeChordDiagram() {
 }
 
 // Event listener para actualizar el tamaño del gráfico al cambiar el tamaño de la ventana
-window.addEventListener('resize', debounce(resizeChordDiagram, 500));
+//window.addEventListener('resize', debounce(resizeChordDiagram, 500));
 
 
 // ************************************************************
