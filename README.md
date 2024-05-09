@@ -1,8 +1,3 @@
-# Instalación y configuración
-La siguiente línea instalará todas las dependencias que el proyecto necesita:
-
-`pip install -r requirements.txt`
-
 ## Descargar [Python](https://www.python.org/downloads/)
 > [!IMPORTANT]
 > En Windows es importante marcar la casilla de `agregar al PATH` para hacer uso del comando pip.
@@ -44,6 +39,12 @@ ejecutar los siguientes comandos en la misma terminal (con el entorno virtual ac
 
 > [!TIP]
 > Después de este punto, el servidor está listo para ejecutarse.
+
+## Instalación y configuración
+La siguiente línea instalará todas las dependencias que el proyecto necesita
+ubicadas en requirements.txt 
+`pip install -r requirements.txt`
+
 
 ## Ejecución del servidor
 El servidor se inicializa con el siguiente comando

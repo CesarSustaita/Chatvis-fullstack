@@ -45,7 +45,7 @@ def login():
         recaptcha_response = request.form.get("g-recaptcha-response")
         recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
         if not recaptcha_verified:
-            error = "Por favor, verifica que no eres un robot."
+            error = "No pudimos verificar que no eres un robot."
             return render_template("login.html", error=error)
         email = request.form.get("email")
         password = request.form.get("password")
@@ -81,19 +81,26 @@ def dashboard():
 
 
 # Cerrar sesión
-@app.route("/logout")
+@app.route("/logout", methods=["GET", "POST"])
 def logout():
-    app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(minutes=-10)
+    app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(seconds=0)
     session.pop("logged_in", None)
     session.pop("email", None)
     session.pop("name", None)
-    success = "Has cerrado sesión exitosamente."
-    return render_template("inicio.html", success=success)
+    info = "Has cerrado sesión exitosamente."
+    return render_template("inicio.html", info=info)
 
 
 @app.route("/register/mail", methods=["GET", "POST"])
 def register_mail():
     if request.method == "POST":
+        # Validar Recaptcha
+        recaptcha_response = request.form.get("g-recaptcha-response")
+        recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
+        if not recaptcha_verified:
+            error = "No pudimos verificar que no eres un robot."
+            return render_template("register1.html", error=error, datos=[])
+        
         # Validar datos del formulario
         email = request.form.get("email")
         password = request.form.get("password")
@@ -122,14 +129,15 @@ def register_mail():
         # Verificar si el email ya está registrado
         user = users_collection.find_one({"email": email})
         if user:
-            error = "Ya existe una cuenta registrada con este email."
+            error = "La dirección de email no está disponible."
             return render_template(
                 "register1.html", error=error, datos=datos_existentes
             )
         # Obtener los datos del formulario
         datos = request.form.to_dict()
-        # Eliminar el campo de verificación de contraseña
+        # Eliminar campos no necesarios
         datos.pop("password_verify", None)
+        datos.pop("g-recaptcha-response", None)
         # Almacenar los datos en la sesión
         session["registro_pagina1"] = datos
         datos_existentes = helpers.get_register_data()
@@ -143,6 +151,13 @@ def register_mail():
 @app.route("/register/account", methods=["GET", "POST"])
 def register_account():
     if request.method == "POST":
+        # Validar Recaptcha
+        recaptcha_response = request.form.get("g-recaptcha-response")
+        recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
+        if not recaptcha_verified:
+            error = "No pudimos verificar que no eres un robot."
+            return render_template("register2.html", error=error, datos=[])
+        
         # Validar datos del formulario
         nombre = request.form.get("nombre")
         apellido_paterno = request.form.get("apellido_paterno")
@@ -170,6 +185,8 @@ def register_account():
             )
         # Obtener los datos del formulario
         datos = request.form.to_dict()
+        # Eliminar campos no necesarios
+        datos.pop("g-recaptcha-response", None)
         # Almacenar los datos en la sesión
         session["registro_pagina2"] = datos
         datos_existentes = helpers.get_register_data()
@@ -184,6 +201,13 @@ def register_account():
 @app.route("/register/state", methods=["GET", "POST"])
 def register_state():
     if request.method == "POST":
+        # Validar Recaptcha
+        recaptcha_response = request.form.get("g-recaptcha-response")
+        recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
+        if not recaptcha_verified:
+            error = "No pudimos verificar que no eres un robot."
+            return render_template("register3.html", error=error, datos=[])
+        
         # Validar datos del formulario
         estado = request.form.get("estado")
         ciudad = request.form.get("ciudad")
@@ -205,6 +229,8 @@ def register_state():
             )
         # Obtener los datos del formulario
         datos = request.form.to_dict()
+        # Eliminar campos no necesarios
+        datos.pop("g-recaptcha-response", None)
         # Almacenar los datos en la sesión
         session["registro_pagina3"] = datos
         datos_existentes = helpers.get_register_data()
@@ -212,12 +238,18 @@ def register_state():
     else:
         datos = helpers.get_register_data()
         return render_template("register3.html", datos=datos)
-    # return render_template("register3.html")
 
 
 @app.route("/register/u", methods=["GET", "POST"])
 def register_u():
     if request.method == "POST":
+        # Validar Recaptcha
+        recaptcha_response = request.form.get("g-recaptcha-response")
+        recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
+        if not recaptcha_verified:
+            error = "No pudimos verificar que no eres un robot."
+            return render_template("register4.html", error=error, datos=[])
+        
         # Validar datos del formulario
         universidad = request.form.get("universidad")
         terminos = request.form.get("terminos")
@@ -234,6 +266,8 @@ def register_u():
             )
         # Obtener los datos del formulario
         datos = request.form.to_dict()
+        # Eliminar campos no necesarios
+        datos.pop("g-recaptcha-response", None)
         # Almacenar los datos en la sesión
         session["registro_pagina4"] = datos
         fecha_creacion = datetime.now()
@@ -282,11 +316,9 @@ def register_u():
         session.pop("registro_pagina4", None)
         flash("¡Registro exitoso! Ahora puedes iniciar sesión.", "success")
         return redirect(url_for("login"))
-    # poner la ruta siguiente
     else:
         datos = helpers.get_register_data()
         return render_template("register4.html", datos=datos)
-    # return render_template("register4.html")
 
 
 @app.route("/tabla")

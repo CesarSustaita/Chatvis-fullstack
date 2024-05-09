@@ -1,12 +1,15 @@
 from flask import Flask
 from datetime import timedelta
 import spacy
+from dotenv import load_dotenv
+import os
 
+load_dotenv('./.keys')
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 
 # TODO: Set the secret key to a secure value
-app.config['SECRET_KEY'] = "chatvis-secret-key-f03949f"
+app.config['SECRET_KEY'] = os.getenv("APP_SECRET_KEY")
 app.config['SESSION_COOKIE_SECURE'] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15)
 
