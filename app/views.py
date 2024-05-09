@@ -15,6 +15,8 @@ client = MongoClient(
 db = client["test"]
 users_collection = db["users"]
 
+prefix = "chatvis2024"
+
 # Indice
 # inicio() - /inicio
 # index() - /
@@ -30,7 +32,7 @@ users_collection = db["users"]
 # classify_message() - /classify
 
 
-@app.route("/inicio")
+@app.route(f"/{prefix}/inicio")
 def inicio():
     return render_template("inicio.html")
 
@@ -67,8 +69,7 @@ def login():
     else:
         return render_template("login.html")
 
-
-@app.route("/dashboard")
+@app.route(f"/{prefix}/dashboard")
 def dashboard():
     if "logged_in" in session:
         email = session.get("email")  # Obtener el email del usuario desde la sesión
@@ -320,8 +321,7 @@ def register_u():
         datos = helpers.get_register_data()
         return render_template("register4.html", datos=datos)
 
-
-@app.route("/tabla")
+@app.route(f"/{prefix}/tabla")
 def tabla_admin():
     if "logged_in" in session and session.get("admin") == 1:
         email = session.get("email")  # Obtener el email del usuario desde la sesión

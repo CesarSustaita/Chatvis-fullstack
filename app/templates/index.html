@@ -275,7 +275,7 @@
   <div class="navUser">
     <div class="seccion1">
       <div class="title-inter">
-        <a href="/dashboard">Chatvis Analyzer</a>
+        <a href="{{ url_for('dashboard') }}">Chatvis Analyzer</a>
       </div>
       <label for="whatsChatSinAnimaciones" class="nav-link">
         <div class="btn btn-dark" id="uploadButton" style="display: none;">
@@ -564,11 +564,11 @@
     });
 
     function redirectToAnalizador() {
-      window.location.href = "/dashboard";
+      window.location.href = "{{ url_for('dashboard') }}";
     }
 
     function redirectToUsuarios() {
-      window.location.href = "/tabla";
+      window.location.href = "{{ url_for('tabla_admin') }}";
     }
   </script>
 
