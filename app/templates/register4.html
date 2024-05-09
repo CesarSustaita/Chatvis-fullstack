@@ -160,10 +160,10 @@
                 </div>
                 <div class="der">
                     <div class="registro">
-                        <a href="/register/mail">Registro</a>
+                        <a href="{{ url_for('register_mail') }}">Registro</a>
                     </div>
                     <div class="inicioSesion">
-                        <a href="/login">Iniciar Sesión</a>
+                        <a href="{{url_for("login")}}">Iniciar Sesión</a>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
     <div class="container mt-5 ">
         <div class="encabezados d-flex justify-content-between">
             <div class="back">
-                <a href="/register/state">
+                <a href="{{ url_for('register_state') }}">
                     <h3 class="return-btn">
                         <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
                         Regresar
@@ -200,7 +200,7 @@
                 <div class="recuadro recuadro-coloreado"></div>
             </div>
 
-            <form id="form-register-uni" action="/register/u" method="post" class="needs-validation" novalidate>
+            <form id="form-register-uni" action="{{ url_for('register_u') }}" method="post" class="needs-validation" novalidate>
                 <div class="mb-3">
                     <label for="universidad" class="form-label">Universidad</label>
                     <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
@@ -231,7 +231,7 @@
             </form>
             </div>
         <div class="mt-3">
-            ¿Ya tienes una cuenta? <a href="/login" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
+            ¿Ya tienes una cuenta? <a href="{{url_for("login")}}" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
         </div>
     </div>
 

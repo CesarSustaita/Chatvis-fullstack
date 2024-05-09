@@ -9,6 +9,7 @@
  */
 
 //import * as d3 from "d3";
+var prefix = "chatvis2024";
 
 ////prueba
 function sendFileNameToMainJs(fileName) {
@@ -167,7 +168,8 @@ readerSA.addEventListener('loadend', function (e) {
                 };
 
                 // Hacemos una llamada asíncrona a la API para clasificar el mensaje
-                await fetch('/classify', {
+				var direccion_completa = '/' + prefix + '/classify';
+                await fetch(direccion_completa, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

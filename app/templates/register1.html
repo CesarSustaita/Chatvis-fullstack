@@ -128,10 +128,10 @@
                 </div>
                 <div class="der">
                     <div class="registro">
-                        <a href="/register/mail">Registro</a>
+                        <a href="{{ url_for('register_mail') }}">Registro</a>
                     </div>
                     <div class="inicioSesion">
-                        <a href="/login">Iniciar Sesión</a>
+                        <a href="{{url_for("login")}}">Iniciar Sesión</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                 <h3>Registro de cuenta</h3>
             </div>
             <div class="next">
-                <a href="/register/account">
+                <a href="{{ url_for('register_account') }}">
                     <h3 class="next-btn">
                         Siguiente
                         <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
@@ -169,7 +169,7 @@
                 <div class="recuadro recuadro-futuro"></div>
             </div>
 
-            <form id="form-register-email-pwd" action="/register/mail" method="post" class="needs-validation"
+            <form id="form-register-email-pwd" action="{{ url_for('register_mail') }}" method="post" class="needs-validation"
                 novalidate>
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" autocomplete="email"
@@ -201,7 +201,7 @@
             </form>
         </div>
         <div class=" cuenta mt-3">
-            ¿Ya tienes una cuenta? <a href="/login" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
+            ¿Ya tienes una cuenta? <a href="{{url_for("login")}}" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
         </div>
     </div>
 

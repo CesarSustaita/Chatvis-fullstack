@@ -128,10 +128,10 @@
                 </div>
                 <div class="der">
                     <div class="registro">
-                        <a href="/register/mail">Registro</a>
+                        <a href="{{ url_for('register_mail') }}">Registro</a>
                     </div>
                     <div class="inicioSesion">
-                        <a href="/login">Iniciar Sesión</a>
+                        <a href="{{url_for("login")}}">Iniciar Sesión</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                 <h3>Registro de cuenta</h3>
             </div>
             <div class="next">
-                <a href="/register/state">
+                <a href="{{ url_for('register_state') }}">
                     <h3 class="next-btn">
                         Siguiente
                         <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
@@ -169,7 +169,7 @@
                 <div class="recuadro recuadro-futuro"></div>
             </div>
 
-            <form id="form-register-name" action="/register/account" method="post" class="needs-validation" novalidate>
+            <form id="form-register-name" action="{{ url_for('register_account') }}" method="post" class="needs-validation" novalidate>
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
                     name="nombre" id="nombre" autocomplete="given-name" value="{{datos['nombre']|default('')}}" required/>
@@ -202,7 +202,7 @@
             </form>
         </div>
         <div class="cuenta mt-3">
-            ¿Ya tienes una cuenta? <a href="/login" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
+            ¿Ya tienes una cuenta? <a href="{{url_for("login")}}" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
         </div>
     </div>
 

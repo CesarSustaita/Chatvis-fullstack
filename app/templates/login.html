@@ -112,7 +112,7 @@
                         <a href="/register/mail">Registro</a>
                     </div>
                     <div class="inicioSesion">
-                        <a href="/login">Iniciar Sesión</a>
+                        <a href="{{url_for("login")}}">Iniciar Sesión</a>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
     <div class="container">
         <div class="encabezados">
             <div class="back">
-                <a href="/inicio">
+                <a href="{{ url_for('inicio') }}">
                     <h3 class="return-btn">
                         <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
                         Regresar
@@ -138,7 +138,7 @@
         </div>
 
         <div class="inicio">
-            <form action="/login" method="post" id="loginForm">
+            <form action="{{url_for("login")}}" method="post" id="loginForm">
                 <label for="email" class="form-label">Email:</label><br>
                 <input type="email" id="email" name="email" class="form-control" required autocomplete="email"><br>
                 <label for="password" class="form-label">Contraseña:</label><br>

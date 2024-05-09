@@ -40,8 +40,7 @@ def inicio():
 def index():
     return redirect(url_for("inicio"))
 
-
-@app.route("/login", methods=["GET", "POST"])
+@app.route(f"/{prefix}/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
         recaptcha_response = request.form.get("g-recaptcha-response")
@@ -82,7 +81,7 @@ def dashboard():
 
 
 # Cerrar sesión
-@app.route("/logout", methods=["GET", "POST"])
+@app.route(f"/{prefix}/logout", methods=["GET", "POST"])
 def logout():
     app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(seconds=0)
     session.pop("logged_in", None)
@@ -92,7 +91,7 @@ def logout():
     return render_template("inicio.html", info=info)
 
 
-@app.route("/register/mail", methods=["GET", "POST"])
+@app.route(f"/{prefix}/register/mail", methods=["GET", "POST"])
 def register_mail():
     if request.method == "POST":
         # Validar Recaptcha
@@ -149,7 +148,7 @@ def register_mail():
     # return render_template("register1.html")
 
 
-@app.route("/register/account", methods=["GET", "POST"])
+@app.route(f"/{prefix}/register/account", methods=["GET", "POST"])
 def register_account():
     if request.method == "POST":
         # Validar Recaptcha
@@ -199,7 +198,7 @@ def register_account():
     # return render_template("register2.html")
 
 
-@app.route("/register/state", methods=["GET", "POST"])
+@app.route(f"/{prefix}/register/state", methods=["GET", "POST"])
 def register_state():
     if request.method == "POST":
         # Validar Recaptcha
@@ -241,7 +240,7 @@ def register_state():
         return render_template("register3.html", datos=datos)
 
 
-@app.route("/register/u", methods=["GET", "POST"])
+@app.route(f"/{prefix}/register/u", methods=["GET", "POST"])
 def register_u():
     if request.method == "POST":
         # Validar Recaptcha
@@ -341,7 +340,7 @@ def tabla_admin():
         return render_template("login.html")
 
 
-@app.route("/eliminar_usuario/<string:email>", methods=["GET", "POST"])
+@app.route(f"/{prefix}/eliminar_usuario/<string:email>", methods=["GET", "POST"])
 def eliminar_usuario(email):
     if "logged_in" in session and session.get("admin") == 1:
         # Eliminar el usuario de la base de datos
@@ -352,7 +351,7 @@ def eliminar_usuario(email):
         return render_template("login.html")
 
 
-@app.route("/classify", methods=["POST"])
+@app.route(f"/{prefix}/classify", methods=["POST"])
 def classify_message():
     try:
         message = request.json["message"]

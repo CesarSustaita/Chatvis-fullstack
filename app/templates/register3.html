@@ -128,10 +128,10 @@
                 </div>
                 <div class="der">
                     <div class="registro">
-                        <a href="/register/mail">Registro</a>
+                        <a href="{{ url_for('register_mail') }}">Registro</a>
                     </div>
                     <div class="inicioSesion">
-                        <a href="/login">Iniciar Sesión</a>
+                        <a href="{{url_for("login")}}">Iniciar Sesión</a>
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
     <div class="container mt-5 ">
         <div class="encabezados d-flex justify-content-between">
             <div class="back">
-                <a href="/register/account">
+                <a href="{{ url_for('register_account') }}">
                     <h3 class="return-btn">
                         <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
                         Regresar
@@ -153,7 +153,7 @@
                 <h3>Registro de cuenta</h3>
             </div>
             <div class="next">
-                <a href="/register/u">
+                <a href="{{ url_for('register_u') }}">
                     <h3 class="next-btn">
                         Siguiente
                         <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
@@ -170,7 +170,7 @@
                 <div class="recuadro recuadro-futuro"></div>
             </div>
 
-            <form id="form-register-city" action="/register/state" method="post" class="needs-validation" novalidate>
+            <form id="form-register-city" action="{{ url_for('register_state') }}" method="post" class="needs-validation" novalidate>
                 <div class="mb-3">
                     <label id="label-estado" for="estado" class="form-label">Estado</label>
                     <select class="form-select" aria-label="Selecciona un estado" name="estado" id="estado" required>
@@ -236,7 +236,7 @@
             </a> -->
         </div>
         <div class="cuenta mt-3">
-            ¿Ya tienes una cuenta? <a href="/login" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
+            ¿Ya tienes una cuenta? <a href="{{url_for("login")}}" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
         </div>
     </div>
 
