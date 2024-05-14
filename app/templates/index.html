@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- Estilos gráficas -->
-  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css', _external=True) | replace(request.url_root, request.url_root + prefix + '/') }}">
 
   <!-- Dependencias -->
   <!-- * D3: https://github.com/d3/d3 -->
@@ -487,7 +487,7 @@
         </div>
       </div>
       <div id="fileIcon">
-        <img src="http://127.0.0.1:5000/static/img/attach_file.svg" alt="Clip" width="100" height="100" />
+        <img src="{{ url_for('static', filename='img/attach_file.svg', _external=True) | replace(request.url_root, request.url_root + prefix + '/') }}" alt="Clip" width="100" height="100" />
       </div>
       <h5 id="message" class="text">
         Arrastra y suelta tu conversación con extensión ".txt".
@@ -538,103 +538,41 @@
 
   <!-- Script Toogle Usuarios | Analizador -->
   <script>
-    // Obtener el valor de admin desde el div oculto
-    document.addEventListener("DOMContentLoaded", function () {
-      var adminValue = document.getElementById("adminValue").innerText.trim();
-      var isAdmin = adminValue;
-      if (isAdmin != 0) {
-        document.getElementById("noAdmin").style.display = "none";
-      }
-    });
-    // Obtener los elementos del DOM
-    const btnradio1 = document.getElementById('btnradio1');
-    const btnradio2 = document.getElementById('btnradio2');
-    const usuariosContent = document.getElementById('usuariosContent');
-    const analizadorContent = document.getElementById('analizadorContent');
-
-    // Añadir eventos de clic a los botones
-    btnradio1.addEventListener('click', () => {
-      usuariosContent.classList.remove('hidden');
-      analizadorContent.classList.add('hidden');
-    });
-
-    btnradio2.addEventListener('click', () => {
-      usuariosContent.classList.add('hidden');
-      analizadorContent.classList.remove('hidden');
-    });
-
-    function redirectToAnalizador() {
-      window.location.href = "{{ url_for('dashboard') }}";
-    }
-
-    function redirectToUsuarios() {
-      window.location.href = "{{ url_for('tabla_admin') }}";
-    }
-  </script>
-
-  <!-- Script Drag-N-Drop -->
-  <script>
-    function handleDragOver(event) {
-      event.preventDefault();
-      event.dataTransfer.dropEffect = 'copy';
-      document.getElementById('message').innerText = 'Suelta tu archivo aquí.';
-      document.getElementById('ArrastrarArchivo').classList.add('drag-over');
-    }
-
-    function handleDrop(event) {
-      event.preventDefault();
-      const file = event.dataTransfer.files[0];
-      if (file) {
-        if (file.name.endsWith('.txt')) {
-          const inputFile = document.getElementById('whatsChatSinAnimaciones');
-          inputFile.files = event.dataTransfer.files; // Establece los archivos seleccionados en el input oculto
-          inputFile.dispatchEvent(new Event('change')); // Simula el evento de cambio
-          document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
-          // Oculta el área de arrastrar y soltar al cargar un archivo
-          document.getElementById("dragAndDropArea").style.display = "none";
-          document.getElementById("padding").style.display = "none";
-          // Muestra el botón de subir archivo al cargar un archivo
-          document.getElementById("uploadButton").style.display = "block";
-          document.getElementById('message').innerText = 'Tu conversación se ha subido correctamente.';
-        } else {
-          document.getElementById('spinner').style.display = 'none';
-          document.getElementById('fileIcon').style.display = 'block';
-          document.getElementById('message').innerText = 'Suelta tu archivo aquí.';
-          swal("Error", "El archivo debe ser de tipo .txt", "error");
-        }
-        document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
-      }
-    }
-
-    function handleDragLeave(event) {
-      event.preventDefault();
-      document.getElementById('message').innerText = 'Arrastra y suelta tu conversación con extensión ".txt".';
-      document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
-    }
+    var urls = {
+      dashboard: "{{ url_for('dashboard') }}",
+      tabla_admin: "{{ url_for('tabla_admin') }}"
+    };
   </script>
 
   <!-- * jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+  
   <!-- Bootstrap Javascript -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
   <!-- Opcional, solo si necesitas jQuery para otros componentes -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+
   <!-- Necesario para tooltips, popovers y dropdowns -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
   <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-  <script src="/static/js/bootstrap.tooltip.js"></script>
-  <script src="/static/js/bootstrap.popover.js"></script>
-  <script src="/static/js/chordDiagram.js"></script>
-  <script src="/static/js/main.js"></script>
+    crossorigin="anonymous">
+  </script>
+
+  <script src="{{ url_for('static', filename='js/bootstrap.tooltip.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap.popover.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/chordDiagram.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  <script src="{{ url_for('static', filename='js/index-toogle-usr-admin.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/index-dragndrop.js') }}"></script>
 
   <!-- Extras -->
   <script>import * as d3 from "d3";  </script>
-  <script src="/static/js/d3.layout.chord.sort.js"></script>
+  <script src="{{ url_for('static', filename='js/d3.layout.chord.sort.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
   <!-- Sweet alert -->

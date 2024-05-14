@@ -109,7 +109,7 @@
                 </div>
                 <div class="der">
                     <div class="registro">
-                        <a href="/register/mail">Registro</a>
+                        <a href="{{url_for("register_mail")}}">Registro</a>
                     </div>
                     <div class="inicioSesion">
                         <a href="{{url_for("login")}}">Iniciar Sesión</a>
@@ -148,7 +148,7 @@
                     data-callback='onLoginFormSubmit' data-action='submit'>
                     Iniciar Sesión</button>
                 <div class="cuenta mt-3 ">
-                    ¿Aun no tienes cuenta? <a href="/register/mail" class="link-primary" style="font-size: inherit;">Regístrate</a>
+                    ¿Aun no tienes cuenta? <a href="{{url_for("register_mail")}}" class="link-primary" style="font-size: inherit;">Regístrate</a>
                 </div>
                 <p id="message mt-3"></p>
                 {% if error %}

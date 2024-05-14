@@ -31,12 +31,15 @@ prefix = "chatvis2024"
 # eliminar_usuario(email) - /eliminar_usuario/<string:email
 # classify_message() - /classify
 
+@app.context_processor
+def inject_prefix():
+    return dict(prefix=prefix)
 
 @app.route(f"/{prefix}/inicio")
 def inicio():
     return render_template("inicio.html")
 
-@app.route("/")
+@app.route(f"/{prefix}/")
 def index():
     return redirect(url_for("inicio"))
 
@@ -362,3 +365,7 @@ def classify_message():
         return jsonify({"category": category, "scores": score_values})
     except Exception as e:
         return jsonify({"error": str(e)})
+
+def get_prefixed_static(filename):
+    prefix = "chatvis2024"
+    return f"/{prefix}/static/{filename}"

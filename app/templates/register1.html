@@ -220,24 +220,7 @@
     <!-- Toasts block -->
     {% include "toasts.html" %}
 
-    <!-- Validación de formulario -->
-    <script>
-        (() => {
-            'use strict'
-
-            const forms = document.querySelectorAll('.needs-validation')
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
+    <script src="{{ url_for('static', filename='js/register-form-validation.js') }}"></script>
 
     <!-- Validación de contraseñas -->
     <script src="{{ url_for('static', filename= 'js/register-pwd-validation.js') }}"></script>

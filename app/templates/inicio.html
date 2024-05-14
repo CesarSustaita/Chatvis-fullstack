@@ -10,7 +10,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   
   <!-- Default custom style -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css', _external=True) | replace(request.url_root, request.url_root + prefix + '/') }}">
 
 </head>
 
@@ -29,7 +29,7 @@
         </div>
         <div class="col-12 col-md-4 col-lg-6 align-content-start align-content-md-center hero">
           <div class="container ">
-            <img class="mw-100 align-self-center " src="{{url_for('static', filename='img/imgindex_alpha.png')}}" alt="">
+            <img class="mw-100 align-self-center " src="{{ url_for('static', filename='img/imgindex_alpha.png', _external=True) | replace(request.url_root, request.url_root + prefix + '/') }}" alt=""/>
           </div>
         </div>
       </div>
