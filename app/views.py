@@ -31,10 +31,6 @@ prefix = "chatvis2024"
 # eliminar_usuario(email) - /eliminar_usuario/<string:email
 # classify_message() - /classify
 
-@app.context_processor
-def inject_prefix():
-    return dict(prefix=prefix)
-
 @app.route(f"/{prefix}/inicio")
 def inicio():
     return render_template("inicio.html")
