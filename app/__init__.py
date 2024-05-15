@@ -6,7 +6,9 @@ import os
 
 load_dotenv('./.keys')
 
-app = Flask(__name__, static_folder="static", static_url_path="/static")
+prefix = "chatvis2024"
+
+app = Flask(__name__, static_folder="static", static_url_path=f"/{prefix}/static")
 
 # TODO: Set the secret key to a secure value
 app.config['SECRET_KEY'] = os.getenv("APP_SECRET_KEY")

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- Estilos gráficas -->
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css', _external=True) | replace(request.url_root, request.url_root + prefix + '/') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 
   <!-- Dependencias -->
   <!-- * D3: https://github.com/d3/d3 -->
@@ -487,7 +487,7 @@
         </div>
       </div>
       <div id="fileIcon">
-        <img src="{{ url_for('static', filename='img/attach_file.svg', _external=True) | replace(request.url_root, request.url_root + prefix + '/') }}" alt="Clip" width="100" height="100" />
+        <img src="{{ url_for('static', filename='img/attach_file.svg') }}" alt="Clip" width="100" height="100" />
       </div>
       <h5 id="message" class="text">
         Arrastra y suelta tu conversación con extensión ".txt".
@@ -514,7 +514,7 @@
             <div id="title">
               Conversación
             </div>
-            <div id="chat-container" style="background-image: url('http://127.0.0.1:5000/static/img/background.jpg');">
+            <div id="chat-container" style="background-image: url('{{ url_for('static', filename='img/background.jpg') }}');">
               <div title="Messages" id="chat" class=" rounded " style="display: none;"></div>
             </div>
           </div>
@@ -563,7 +563,7 @@
   </script>
 
   <script src="{{ url_for('static', filename='js/bootstrap.tooltip.js') }}"></script>
-  <script src="{{ url_for('static', filename='bootstrap.popover.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.popover.js') }}"></script>
   <script src="{{ url_for('static', filename='js/chordDiagram.js') }}"></script>
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
