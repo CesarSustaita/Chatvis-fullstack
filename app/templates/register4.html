@@ -13,225 +13,91 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- ReCAPTCHA v3 -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
-
-    <style scoped>
-        .wrapper {
-            border: 0px solid rgb(196, 25, 25);
-        }
-
-        a:link,
-        a:visited,
-        a:active {
-            text-decoration: none;
-            color: rgb(44, 44, 44);
-            font-size: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        a:hover {
-            color: #2cb983;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 45px;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
-        .der {
-            border: 0px solid rgb(29, 29, 29);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 220px;
-        }
-
-        .return-btn {
-            cursor: pointer;
-        }
-
-        .ntw:hover {
-            cursor: default !important;
-        }
-
-        .next-btn {
-            cursor: pointer;
-        }
-
-        @media (min-width: 1024px) {
-            .container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                border: 0px solid black;
-            }
-
-            .encabezados {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 100%;
-                border: 0px solid black;
-            }
-
-            .title {
-                width: 350px;
-                margin-bottom: 20px;
-                align-items: center;
-            }
-
-            .inicio {
-                width: 350px;
-            }
-
-            .btn {
-                width: 350px;
-            }
-
-            .next {
-                color: black;
-            }
-
-            .avance {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                gap: 0.25rem;
-                width: 100%;
-                height: 10px;
-                margin-top: 10px;
-                margin-bottom: 25px;
-            }
-
-            .recuadro {
-                flex: 1;
-                border-radius: 4px;
-            }
-
-            .recuadro-futuro {
-                background-color: rgb(186, 186, 186);
-            }
-
-            .recuadro-coloreado {
-                background-color: rgb(54, 54, 54);
-            }
-        }
-
-        h1, h2, h3 {
-            font-family: Arial, sans-serif;
-            color: #1f1f1f;
-        }
-        p {
-            font-family: Arial, sans-serif;
-            color: #555;
-            line-height: 1.5;
-        }
-
-        ul {
-            font-family: Arial, sans-serif;
-            color: #1f1f1f;
-        }
-
-        strong {
-            font-family: Arial, sans-serif;
-            color: #1f1f1f;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .modal-footer{
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+    <!-- Default custom style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav>
-            <div class="nav">
-                <div class="izq">
-                    <a href="{{ url_for('inicio') }}">Chatvis Analyzer</a>
-                </div>
-                <div class="der">
-                    <div class="registro">
-                        <a href="{{ url_for('register_mail') }}">Registro</a>
-                    </div>
-                    <div class="inicioSesion">
-                        <a href="{{url_for("login")}}">Iniciar Sesión</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
 
+    <!-- Navbar -->
+    {% include "navbar.html" %}
 
-    <div class="container mt-5 ">
-        <div class="encabezados d-flex justify-content-between">
-            <div class="back">
-                <a href="{{ url_for('register_state') }}">
-                    <h3 class="return-btn">
-                        <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
-                        Regresar
-                    </h3>
+    <!-- Contenido -->
+    <div class="container">
+        <!-- Encabezado con botones y título -->
+        <div class="row d-flex flex-row align-items-center pt-5 pb-3 pb-md-4 justify-content-between">
+            <!-- Regresar -->
+            <div class="col-2 col-md-2 col-lg-3 d-flex flex-row align-items-center justify-content-start gap-2 ps-md-0">
+                <a href="{{ url_for('register_state') }}" id="regresar-button" role="button"
+                    aria-label="Regresar al paso anterior" class="btn btn-sm w-auto chevron">
+                    <i class="fa-solid fa-chevron-left"></i> <span class="d-none d-lg-inline-block">Regresar</span>
                 </a>
             </div>
-            <div class="title">
-                <h3>Registro de cuenta</h3>
+            <!-- Título -->
+            <div
+                class="col-8 col-md-8 col-lg-6 col-xl-5 col-xxl-4 d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                <h2 class="text-center m-0">Registro de cuenta</h2>
             </div>
-            <div class="next">
-                <h3 class="next-btn ntw" style="color: white;">
-                    Siguiente
-                    <i class="fa-solid fa-chevron-right" style="color: white"></i>
-                </h3>
+            <!-- Siguiente -->
+            <div class="col-2 col-lg-3 d-flex flex-row align-items-center justify-content-end gap-2 pe-md-0">
+                <!-- Vacío -->
             </div>
         </div>
-
-        <div class="inicio mt-1">
-            <div class="avance d-flex">
-                <div class="recuadro recuadro-futuro"></div>
-                <div class="recuadro recuadro-futuro"></div>
-                <div class="recuadro recuadro-futuro"></div>
-                <div class="recuadro recuadro-coloreado"></div>
-            </div>
-
-            <form id="form-register-uni" action="{{ url_for('register_u') }}" method="post" class="needs-validation" novalidate>
-                <div class="mb-3">
-                    <label for="universidad" class="form-label">Universidad</label>
-                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
-                    name="universidad" id="universidad" autocomplete="off" value="{{datos['universidad']|default('')}}" required />
-                    <div class="invalid-feedback">
-                        Introduce una universidad válida.
-                    </div>
+    
+        <!-- Progress bar -->
+        <div class="row justify-content-center py-3 py-md-3">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5 col-xxl-4 d-flex d-row align-items-center justify-content-center">
+                <div class="avance d-flex flex-row justify-content-between">
+                    <div class="recuadro recuadro-futuro"></div>
+                    <div class="recuadro recuadro-futuro"></div>
+                    <div class="recuadro recuadro-futuro"></div>
+                    <div class="recuadro recuadro-coloreado"></div>
                 </div>
-                <div class="mb-3 form-check">
-                    <input class="form-check-input" type="checkbox" value="accepted" name="terminos" id="terminos-checkbox" />
-                    <!-- TODO: add link to ToS -->
-                    <label class="form-check-label" for="terminos-checkbox">
-                        He leído y estoy de acuerdo con los <a href="" class="link-primary" data-bs-toggle="modal" data-bs-target="#modalToS" style="font-size: inherit;">Términos y Condiciones</a>.
-                    </label>
-                    
-                    <div class="invalid-feedback">
-                        Debes aceptar los Términos y Condiciones.
-                    </div>
-                </div>
-            
-                <button type="submit" id="button-register-uni" 
-                    class="btn btn-outline-dark mt-3 g-recaptcha"
-                    data-sitekey="{{ site_key }}"
-                    data-callback='onLoginFormSubmit'
-                    data-action='submit'>
-                    Crear mi cuenta
-                </button>
-            </form>
             </div>
-        <div class="mt-3">
-            ¿Ya tienes una cuenta? <a href="{{url_for("login")}}" class="link-primary" style="font-size: inherit;">Inicia Sesión</a>
+        </div>
+    
+        <!-- Formulario -->
+        <div class="row justify-content-center py-4">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5 col-xxl-4 d-flex flex-column ">
+                <form id="form-register-uni" action="{{ url_for('register_u') }}" method="post" 
+                class="needs-validation d-flex flex-column" 
+                novalidate>
+                    <div class="mb-3">
+                        <label for="universidad" class="form-label">Universidad</label>
+                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="universidad"
+                            id="universidad" autocomplete="off" value="{{datos['universidad']|default('')}}" required />
+                        <div class="invalid-feedback">
+                            Introduce una universidad válida.
+                        </div>
+                    </div>
+                    <div class="mb-3 py-4 form-check">
+                        <input class="form-check-input" type="checkbox" value="accepted" name="terminos" id="terminos-checkbox" />
+                        <!-- TODO: add link to ToS -->
+                        <label class="form-check-label" for="terminos-checkbox">
+                            He leído y estoy de acuerdo con los <a href="" class="link-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalToS" style="font-size: inherit;">Términos y condiciones de uso</a>.
+                        </label>
+                
+                        <div class="invalid-feedback">
+                            Debes aceptar los Términos y condiciones de uso.
+                        </div>
+                    </div>
+                
+                    <button type="submit" id="button-register-uni" 
+                        class="btn btn-outline-dark mt-3 align-self-center w-100 g-recaptcha"
+                        data-sitekey="{{ site_key }}" data-callback='onLoginFormSubmit' data-action='submit'>
+                        Crear mi cuenta
+                    </button>
+                </form>
+    
+                <!-- Link hacia crear cuenta -->
+                <div class="cuenta my-5 align-self-center ">
+                    ¿Ya tienes una cuenta?
+                    <a href="{{url_for('login')}}" class="link-primary" style="font-size: inherit;">
+                        Inicia Sesión
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -240,36 +106,36 @@
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header text">
-            <h1 class="modal-title fs-3" id="modalToSLabel">Términos y Condiciones de Chatvis Analyzer</h1>
+            <h2 class="modal-title" id="modalToSLabel">Términos y condiciones de uso</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text">
                 <div>
                     <div class="section">
-                        <h2>Introducción</h2>
-                        <p>Bienvenido a Chatvis. Estos términos y condiciones (los "Términos") regulan el uso de nuestro sistema web para analizar conversaciones de WhatsApp a partir de archivos .txt. Al acceder a nuestro sistema, usted acepta estos Términos.</p>
+                        <h4>Introducción</h4>
+                        <p>Bienvenido a Semantic ChatVis. Estos Términos y condiciones de uso (los "Términos") regulan el uso de nuestro sistema web para analizar conversaciones de WhatsApp a partir de archivos .txt. Al acceder a nuestro sistema, usted acepta estos Términos.</p>
                     </div>
 
                     <div class="section">
-                        <h2>Definiciones</h2>
-                        <p><strong>Chatvis:</strong> Sistema web para el análisis de conversaciones de WhatsApp a partir de archivos de texto.</p>
-                        <p><strong>Usuario:</strong> Persona que se registra y utiliza el sistema Chatvis.</p>
-                        <p><strong>Archivo .txt:</strong> Archivo de texto sin formato que contiene conversaciones de WhatsApp importadas sin imágenes.</p>
+                        <h4>Definiciones</h4>
+                        <p><strong>ChatVis:</strong> Semantic ChatVis, sistema web para el análisis de conversaciones de WhatsApp a partir de archivos de texto.</p>
+                        <p><strong>Usuario:</strong> Persona que se registra y utiliza el sistema ChatVis.</p>
+                        <p><strong>Archivo .txt:</strong> Archivo de texto sin formato que contiene conversaciones de WhatsApp exportadas sin imágenes.</p>
                     </div>
 
                     <div class="section">
-                        <h2>Aceptación de los Términos</h2>
-                        <p>Al acceder o usar Chatvis, usted acepta cumplir con estos Términos. Si no está de acuerdo con alguna parte de estos Términos, debe dejar de usar el sistema.</p>
+                        <h4>Aceptación de los Términos</h4>
+                        <p>Al acceder o usar ChatVis, usted acepta cumplir con estos Términos. Si no está de acuerdo con alguna parte de estos Términos, debe dejar de usar el sistema.</p>
                     </div>
 
                     <div class="section">
-                        <h2>Registro y Cuentas</h2>
-                        <p>Para usar Chatvis, se requiere iniciar sesión o registrarse como nuevo usuario. El registro es necesario para mantener un control de los usuarios que ingresan al sistema. La información proporcionada durante el registro será utilizada únicamente para fines administrativos y no será compartida con terceros.</p>
+                        <h4>Registro y Cuentas</h4>
+                        <p>Para usar ChatVis, se requiere iniciar sesión o registrarse como nuevo usuario. El registro es necesario para mantener un control de los usuarios que ingresan al sistema. La información proporcionada durante el registro será utilizada únicamente para fines administrativos y no será compartida con terceros.</p>
                     </div>
 
                     <div class="section">
-                        <h2>Uso del Sistema</h2>
-                        <p>Una vez registrado, el usuario puede cargar un archivo .txt para su análisis. Al cargar el archivo, Chatvis analizará las conversaciones y presentará:</p>
+                        <h4>Uso del Sistema</h4>
+                        <p>Una vez registrado, el usuario puede cargar un archivo .txt para su análisis. Al cargar el archivo, ChatVis analizará las conversaciones y presentará:</p>
                         <ul>
                             <li>La conversación del archivo: El texto contenido en el archivo .txt.</li>
                             <li>Gráfica de relaciones: Representación visual de la interacción entre las personas en la conversación.</li>
@@ -283,23 +149,23 @@
                     </div>
 
                     <div class="section">
-                        <h2>Privacidad y Seguridad</h2>
-                        <p>Chatvis no guarda ninguna de las conversaciones cargadas por los usuarios. Todo el análisis se realiza en tiempo real y no se almacena información personal ni de las conversaciones por motivos de seguridad y privacidad. El registro es solo para que el administrador pueda ver cuántos usuarios han usado el sistema.</p>
+                        <h4>Privacidad y Seguridad</h4>
+                        <p>ChatVis no guarda ninguna de las conversaciones cargadas por los usuarios. Todo el análisis se realiza en tiempo real y no se almacena información personal ni de las conversaciones por motivos de seguridad y privacidad. La única finalidad del registro es para que los administradores puedan consultar cuántos usuarios utilizan el sistema.</p>
                     </div>
 
                     <div class="section">
-                        <h2>Conducta del Usuario</h2>
-                        <p>Al usar Chatvis, el usuario acepta no cargar archivos que contengan contenido ilegal, ofensivo, o que infrinja los derechos de propiedad intelectual de terceros. El usuario es responsable del contenido que carga y del uso que haga del sistema.</p>
+                        <h4>Conducta del Usuario</h4>
+                        <p>Al usar ChatVis, el usuario acepta no cargar archivos que contengan contenido ilegal, ofensivo, o que infrinja los derechos de propiedad intelectual de terceros. El usuario es responsable del contenido que carga y del uso que haga del sistema.</p>
                     </div>
 
                     <div class="section">
-                        <h2>Limitación de Responsabilidad</h2>
-                        <p>Chatvis no será responsable de cualquier daño o pérdida derivada del uso del sistema, incluidos, entre otros, errores en el análisis, pérdidas de datos, o cualquier daño consecuente. El usuario usa el sistema bajo su propio riesgo.</p>
+                        <h4>Limitación de Responsabilidad</h4>
+                        <p>ChatVis no será responsable de cualquier daño o pérdida derivada del uso del sistema, incluidos, entre otros, errores en el análisis, pérdidas de datos, o cualquier daño consecuente. El usuario usa el sistema bajo su propio riesgo.</p>
                     </div>
 
                     <div class="section">
-                        <h2>Modificaciones de los Términos</h2>
-                        <p>Chatvis se reserva el derecho de modificar estos Términos en cualquier momento. Cualquier cambio será comunicado a los usuarios registrados a través de la plataforma. El uso continuado del sistema después de dichos cambios constituye la aceptación de los nuevos términos.</p>
+                        <h4>Modificaciones de los Términos</h4>
+                        <p>ChatVis se reserva el derecho de modificar estos Términos en cualquier momento. Cualquier cambio será comunicado a los usuarios registrados a través de la plataforma. El uso continuado del sistema después de dichos cambios constituye la aceptación de los nuevos términos.</p>
                     </div>
                 </div>
                 <div class="modal-footer">

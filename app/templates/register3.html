@@ -28,7 +28,7 @@
         <div class="row d-flex flex-row align-items-center pt-5 pb-3 pb-md-4 justify-content-between">
             <!-- Regresar -->
             <div class="col-2 col-md-2 col-lg-3 d-flex flex-row align-items-center justify-content-start gap-2 ps-md-0">
-                <a href="{{ url_for('register_account') }}" id="regresar-button" role="button" aria-label="Regresar a la página de inicio"
+                <a href="{{ url_for('register_account') }}" id="regresar-button" role="button" aria-label="Regresar al paso anterior"
                     class="btn btn-sm w-auto chevron">
                     <i class="fa-solid fa-chevron-left"></i> <span class="d-none d-lg-inline-block">Regresar</span>
                 </a>
@@ -65,7 +65,7 @@
                 <form id="form-register-city" action="{{ url_for('register_state') }}" method="post" 
                 class="needs-validation d-flex flex-column"
                     novalidate>
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label id="label-estado" for="estado" class="form-label">Estado</label>
                         <select class="form-select" aria-label="Selecciona un estado" name="estado" id="estado" required>
                             <option {% if not datos['estado'] %} selected {% endif %}>Selecciona el estado</option>
@@ -106,7 +106,7 @@
                             Selecciona un estado válido.
                         </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label id="label-ciudad" for="ciudad" class="form-label">Ciudad</label>
                         <input type="text" class="form-control" name="ciudad" id="ciudad" autocomplete="address-level2"
                             value="{{datos['ciudad']|default('')}}" required />
