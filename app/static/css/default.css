@@ -5,14 +5,25 @@
     --color-text-black: #2c2c2c;
     --color-background: #f8f9fa;
     --color-nav-background: hsl(210, 17%, 95%);
+    --color-light-grey: #dadada;
+    --color-dark-grey: #363636;
+    --color-almost-black: #1d1d1d;
 }
 
 body {
     background-color: var(--color-background) !important;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Oxygen, Ubuntu, Cantarell, 'Open Sans', Arial, sans-serif;
 }
 
 .navbar {
     background-color: var(--color-nav-background) !important;
+    color: var(--color-text-grey) !important;
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+.navbar-brand {
+    /* font-family: 'Roboto Mono', 'Andale Mono', 'Menlo', 'Monaco', 'Courier New', monospace; */
+    font-family: inherit;
 }
 
 .wrapper {
@@ -23,9 +34,8 @@ a:link,
 a:visited,
 a:active {
     text-decoration: none;
-    color: rgb(44, 44, 44);
+    /* color: rgb(44, 44, 44); */
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:hover {
@@ -67,10 +77,49 @@ a:hover {
     font-size: calc(3.475rem + 2.7vw);
     /* width: 550px; */
     font-weight: bold;
-    color: rgb(92, 92, 92);
+    color: var(--color-text-grey);
     margin-bottom: 50px;
     margin-top: 50px;
     hyphens: none;
+}
+
+.chevron {
+    color: var(--color-text-black);
+    font-size: 1.5em !important;
+    border: 0px !important
+}
+
+.chevron:hover {
+    color: var(--color-primary);
+}
+
+.avance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.25rem;
+    width: 100%;
+    height: 10px;
+}
+
+.recuadro {
+    flex: 1;
+    border-radius: 4px;
+}
+
+.recuadro-futuro {
+    background-color: rgb(186, 186, 186);
+}
+
+.recuadro-coloreado {
+    background-color: rgb(54, 54, 54);
+}
+
+/* Media query for medium size break */
+@media (min-width: 768px) {
+    .hero {
+        max-height: unset;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -102,7 +151,7 @@ a:hover {
     .btn {
         font-size: 18px;
         width: 230px;
-        color: white;
+        /* color: white; */
     }
 
     .btn-dark {
@@ -110,7 +159,6 @@ a:hover {
     }
 
     .img {
-        background-image: url('http://127.0.0.1:5000/static/img/imgindex.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -127,7 +175,7 @@ a:hover {
         justify-content: flex-start;
     }
 
-    
+
 
     .subtitle {
         width: 560px;
@@ -141,7 +189,7 @@ a:hover {
     .btn {
         font-size: 18px;
         width: 230px;
-        color: white;
+        /* color: white; */
     }
 
     .btn-dark {
@@ -149,7 +197,6 @@ a:hover {
     }
 
     .img {
-        background-image: url('http://127.0.0.1:5000/static/img/imgindex.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

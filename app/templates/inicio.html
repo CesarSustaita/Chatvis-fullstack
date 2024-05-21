@@ -19,18 +19,17 @@
   <main>
     <!-- Navbar -->
     {% include "navbar.html" %}
-    <div class="container justify-content-center py-0 pb-4 py-sm-4  px-3 flex-column">
+
+    <div class="container d-flex justify-content-center py-0 pb-4 py-sm-4  px-3 flex-column">
       <div class="row align-content-center align-items-center flex-column-reverse flex-md-row ">
-        <div class="col-12 col-md-8 col-lg-6 pt-5 overlay">
+        <div class="col-12 col-md-8 col-lg-6 pt-5 pt-md-0 overlay d-flex flex-column">
           <h1 class="display-4 title">¡Bienve&shy;nido a ChatVis!</h1>
           <p class="lead">Descubre la solución revolucionaria para implementar análisis semántico en tus conversaciones en archivos .txt.</p>
           <p class="lead">Con nuestra avanzada tecnología, obtén información valiosa. Aumenta la precisión y eficiencia de tus análisis con nuestra plataforma que es intuitiva y fácil de usar. Potencia tu toma de decisiones, mejora tus estrategias y maximiza tus resultados.</p>
-          <a href="{{ url_for('register_mail') }}" class="btn btn-outline-dark mt-3" role="button">Registrarse</a>
+          <a href="{{ url_for('register_mail') }}" class="btn btn-outline-dark my-4 align-self-center align-self-md-start  " role="button">Registrarse</a>
         </div>
-        <div class="col-12 col-md-4 col-lg-6 align-content-start align-content-md-center hero">
-          <div class="container ">
-            <img class="mw-100 align-self-center " src="{{ url_for('static', filename='img/imgindex_alpha.png') }}" alt=""/>
-          </div>
+        <div class="col-12 col-md-4 col-lg-6 d-flex flex-column align-items-center hero">
+          <img class="mw-100 align-self-center " src="{{ url_for('static', filename='img/imgindex_alpha.png') }}" alt=""/>
         </div>
       </div>
     </div>
