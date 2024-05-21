@@ -35,11 +35,15 @@ a:visited,
 a:active {
     text-decoration: none;
     /* color: rgb(44, 44, 44); */
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 a:hover {
     color: #2cb983 !important;
+}
+
+a.btn:not(.chevron):hover {
+    color: var(--bs-btn-hover-color) !important;
 }
 
 .lead {
@@ -78,8 +82,8 @@ a:hover {
     /* width: 550px; */
     font-weight: bold;
     color: var(--color-text-grey);
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 0.3em;
+    margin-top: 0.4em;
     hyphens: none;
 }
 
