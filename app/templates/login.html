@@ -14,149 +14,72 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- ReCAPTCHA v3 -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
-
-    <!-- Estilos personalizados -->
-    <style scoped>
-        .wrapper {
-            border: 0px solid rgb(196, 25, 25);
-        }
-
-        a:link,
-        a:visited,
-        a:active {
-            text-decoration: none;
-            color: rgb(44, 44, 44);
-            font-size: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        a:hover {
-            color: #2cb983;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 45px;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
-        .der {
-            border: 0px solid rgb(29, 29, 29);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 220px;
-        }
-
-        .return-btn {
-            cursor: pointer;
-        }
-
-        @media (min-width: 1024px) {
-            .container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                border: 0px solid black;
-                margin-top: 50px;
-            }
-
-            .encabezados {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 100%;
-                border: 0px solid black;
-            }
-
-            .title {
-                border: 0px solid black;
-                width: 350px;
-                margin-bottom: 20px;
-            }
-
-            .inicio {
-                border: 0px solid black;
-                width: 350px;
-            }
-
-            .btn {
-                width: 350px;
-            }
-
-            .next {
-                color: white;
-            }
-
-            .cuenta {
-                margin-top: 15px;
-                text-align: center;
-            }
-        }
-    </style>
+    <!-- Default custom style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav>
-            <div class="nav">
-                <div class="izq">
-                    <a href="{{ url_for('inicio') }}">Chatvis Analyzer</a>
-                </div>
-                <div class="der">
-                    <div class="registro">
-                        <a href="{{url_for("register_mail")}}">Registro</a>
-                    </div>
-                    <div class="inicioSesion">
-                        <a href="{{url_for("login")}}">Iniciar Sesión</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <!-- Navbar -->
+    {% include "navbar.html" %}
 
+    <!-- Contenido -->
     <div class="container">
-        <div class="encabezados">
-            <div class="back">
-                <a href="{{ url_for('inicio') }}">
-                    <h3 class="return-btn">
-                        <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
-                        Regresar
-                    </h3>
+        <!-- Encabezado con botones y título -->
+        <div class="row d-flex flex-row align-items-center pt-5 pb-3 pb-md-4 justify-content-between">
+            <!-- Regresar -->
+            <div class="col-2 col-md-2 col-lg-3 d-flex flex-row align-items-center justify-content-start gap-2 ps-md-0">
+                <a href="{{ url_for('inicio') }}" id="regresar-button" role="button" aria-label="Regresar a la página de inicio"
+                    class="btn btn-sm w-auto chevron">
+                    <i class="fa-solid fa-chevron-left"></i> <span class="d-none d-lg-inline-block">Regresar</span>
                 </a>
             </div>
-            <div class="title">
-                <h3>¿Cuál es tu dirección de email?</h3>
+            <!-- Título -->
+            <div
+                class="col-8 col-md-8 col-lg-6 col-xl-5 col-xxl-4 d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                <h2 class="text-center m-0">Accede a tu cuenta</h2>
             </div>
-            <div class="next">
-                <h3>Siguiente <i class="fa-solid fa-chevron-right" style="color: #ffffff"></i></h3>
+            <!-- Slot vacío -->
+            <div class="col-2 col-lg-3 d-flex flex-row align-items-center justify-content-end gap-2 pe-md-0">
+                <!-- Vacío -->
             </div>
         </div>
 
-        <div class="inicio">
-            <form action="{{url_for("login")}}" method="post" id="loginForm">
-                <label for="email" class="form-label">Email:</label><br>
-                <input type="email" id="email" name="email" class="form-control" required autocomplete="email"><br>
-                <label for="password" class="form-label">Contraseña:</label><br>
-                <input type="password" id="password" name="password" class="form-control" required
-                    autocomplete="current-password"><br>
-                <button class="btn btn-dark g-recaptcha" data-sitekey="{{ site_key }}"
-                    data-callback='onLoginFormSubmit' data-action='submit'>
-                    Iniciar Sesión</button>
-                <div class="cuenta mt-3 ">
-                    ¿Aun no tienes cuenta? <a href="{{url_for("register_mail")}}" class="link-primary" style="font-size: inherit;">Regístrate</a>
+        <!-- Formulario -->
+        <div class="row justify-content-center py-4">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5 col-xxl-4 d-flex flex-column ">
+                <form action="{{url_for("login")}}" method="post" id="loginForm"
+                class="d-flex flex-column">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required autocomplete="email"><br>
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form-control" required
+                        autocomplete="current-password">
+
+                    <button type="submit" id="button-login"
+                    class="btn btn-dark mt-5 mb-2 align-self-center w-100 g-recaptcha" 
+                    data-sitekey="{{ site_key }}" data-callback='onLoginFormSubmit' data-action='submit'>
+                        Iniciar sesión
+                    </button>
+
+                    <p id="message mt-3"></p>
+                    {% if error %}
+                    <!-- <p style="color: red;">{{ error }}</p> -->
+                    {% endif %}
+                </form>
+        
+                <!-- Link hacia crear cuenta -->
+                <div class="cuenta my-5 align-self-center ">
+                    ¿Aún no tienes cuenta?
+                    <a href="{{url_for('register_mail')}}" class="link-primary" style="font-size: inherit;">
+                        Crea una cuenta.
+                    </a>
+                    
                 </div>
-                <p id="message mt-3"></p>
-                {% if error %}
-                <!-- <p style="color: red;">{{ error }}</p> -->
-                {% endif %}
-            </form>
+            </div>
         </div>
     </div>
+
+
 
     <script>
         // ReCAPTCHA callback function to submit the form

@@ -5,9 +5,11 @@
     --color-text-black: #2c2c2c;
     --color-background: #f8f9fa;
     --color-nav-background: hsl(210, 17%, 95%);
+    --color-grey: #717171;
     --color-light-grey: #dadada;
     --color-dark-grey: #363636;
     --color-almost-black: #1d1d1d;
+    --color-primary-dark: #259f71;
 }
 
 body {
@@ -44,6 +46,20 @@ a:hover {
 
 a.btn:not(.chevron):hover {
     color: var(--bs-btn-hover-color) !important;
+}
+
+.btn-dark {
+    background-color: var(--color-dark-grey) !important;
+}
+
+.btn-dark:hover {
+    color: white !important;
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary-dark) !important;
+}
+
+.btn-dark:active {
+    background-color: var(--color-primary-dark) !important;
 }
 
 .lead {
@@ -95,6 +111,10 @@ a.btn:not(.chevron):hover {
 
 .chevron:hover {
     color: var(--color-primary);
+}
+
+.chevron:active {
+    color: var(--color-primary-dark);
 }
 
 .avance {
