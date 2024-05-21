@@ -195,7 +195,7 @@
                 <!-- Mostrar errores debajo del campo de entrada -->
                 <div v-for="(error, index) in errors" :key="index" class="text-danger">{{ error }}</div>
                 <button type="submit" id="button-register-email-pwd" class="btn btn-outline-dark mt-3 g-recaptcha"
-                    data-sitekey="6Ld58aEpAAAAAN4FEZGbbinFl6MhutiyQwWsFF1f" data-callback='onLoginFormSubmit' data-action='submit'>
+                    data-sitekey="{{ site_key }}" data-callback='onLoginFormSubmit' data-action='submit'>
                     Continuar
                 </button>
             </form>

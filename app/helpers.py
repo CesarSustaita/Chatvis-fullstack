@@ -10,6 +10,7 @@ import os
 
 load_dotenv('./.keys')
 
+# TODO: Cambiar RECAPTCHA_SECRET_KEY a key del dominio uaslp en .keys
 def verify_recaptcha(recaptcha_response: str) -> bool:
     """
     Verify the user's response to reCAPTCHA using Google's reCAPTCHA API.
@@ -121,7 +122,7 @@ def is_valid_password(password: str) -> bool:
     # Check if the password contains at least one digit or special character
     if not (
         any(char.isdigit() for char in password)
-        or any(char in "!\"'#$%&/=?¡|°¨*,.-;:_<>€@¿\{\}[]()" for char in password)
+        or any(char in "!\"'#$%&/=?¡|°¨*,.-;:_<>€@¿{}[]()" for char in password)
     ):
         return False
     # Example of a valid password: "aK#sZ{}x[]"

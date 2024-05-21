@@ -6,9 +6,16 @@ import os
 
 load_dotenv('./.keys')
 
-prefix = "chatvis2024"
+# TODO: Cambiar el prefijo SITE_PREFIX a "chatvis2024" en .keys
+prefix = os.getenv("SITE_PREFIX")
 
-app = Flask(__name__, static_folder="static", static_url_path=f"/{prefix}/static")
+# Cambiar según si static está en la raíz o en la carpeta del prefijo
+#app = Flask(__name__, static_folder="static", static_url_path=f"/{prefix}/static")
+app = Flask(__name__, static_folder="static", static_url_path=f"/static")
+
+app.prefix = prefix
+
+app.recaptcha_site_key = os.getenv("RECAPTCHA_SITE_KEY")
 
 # TODO: Set the secret key to a secure value
 app.config['SECRET_KEY'] = os.getenv("APP_SECRET_KEY")

@@ -1,21 +1,21 @@
 from app import app
 from flask import jsonify
-from flask import Flask, render_template, redirect, url_for, request, session, flash
+from flask import render_template, redirect, url_for, request, session, flash
 from pymongo import MongoClient
-from bson import ObjectId
-from flask import send_from_directory
+# from bson import ObjectId
+# from flask import send_from_directory
 from app import helpers
 from werkzeug.security import generate_password_hash
 from datetime import timedelta, datetime
 
-app.secret_key = "chatvis"
+app.secret_key = app.config['SECRET_KEY']
 client = MongoClient(
     "mongodb+srv://lj:lj12345@cluster0.jil1xg7.mongodb.net/?retryWrites=true&w=majority"
 )
 db = client["test"]
 users_collection = db["users"]
 
-prefix = "chatvis2024"
+prefix = app.prefix
 
 # Indice
 # inicio() - /inicio
@@ -46,7 +46,7 @@ def login():
         recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
         if not recaptcha_verified:
             error = "No pudimos verificar que no eres un robot."
-            return render_template("login.html", error=error)
+            return render_template("login.html", error=error, site_key=app.recaptcha_site_key)
         email = request.form.get("email")
         password = request.form.get("password")
         login_successful, error = helpers.attempt_login(
@@ -63,9 +63,9 @@ def login():
             flash("Has iniciado sesión exitosamente.", "success")
             return redirect(url_for("dashboard"))
         else:
-            return render_template("login.html", error=error)
+            return render_template("login.html", error=error, site_key=app.recaptcha_site_key)
     else:
-        return render_template("login.html")
+        return render_template("login.html", site_key=app.recaptcha_site_key)
 
 @app.route(f"/{prefix}/dashboard")
 def dashboard():
@@ -98,7 +98,7 @@ def register_mail():
         recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
         if not recaptcha_verified:
             error = "No pudimos verificar que no eres un robot."
-            return render_template("register1.html", error=error, datos=[])
+            return render_template("register1.html", error=error, datos=[], site_key=app.recaptcha_site_key)
         
         # Validar datos del formulario
         email = request.form.get("email")
@@ -108,29 +108,29 @@ def register_mail():
         if not email or not password or not password_verify:
             error = "Por favor, completa todos los campos."
             return render_template(
-                "register1.html", error=error, datos=datos_existentes
+                "register1.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if not helpers.is_valid_email(email):
             error = "Por favor, introduce un email válido."
             return render_template(
-                "register1.html", error=error, datos=datos_existentes
+                "register1.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if not helpers.is_valid_password(password):
             error = "La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número o caracter especial."
             return render_template(
-                "register1.html", error=error, datos=datos_existentes
+                "register1.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if password != password_verify:
             error = "Las contraseñas no coinciden."
             return render_template(
-                "register1.html", error=error, datos=datos_existentes
+                "register1.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         # Verificar si el email ya está registrado
         user = users_collection.find_one({"email": email})
         if user:
             error = "La dirección de email no está disponible."
             return render_template(
-                "register1.html", error=error, datos=datos_existentes
+                "register1.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         # Obtener los datos del formulario
         datos = request.form.to_dict()
@@ -140,11 +140,11 @@ def register_mail():
         # Almacenar los datos en la sesión
         session["registro_pagina1"] = datos
         datos_existentes = helpers.get_register_data()
-        return render_template("register2.html", datos=datos_existentes)
+        return render_template("register2.html", datos=datos_existentes, site_key=app.recaptcha_site_key)
     else:
         datos = helpers.get_register_data()
-        return render_template("register1.html", datos=datos)
-    # return render_template("register1.html")
+        return render_template("register1.html", datos=datos, site_key=app.recaptcha_site_key)
+
 
 
 @app.route(f"/{prefix}/register/account", methods=["GET", "POST"])
@@ -155,7 +155,7 @@ def register_account():
         recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
         if not recaptcha_verified:
             error = "No pudimos verificar que no eres un robot."
-            return render_template("register2.html", error=error, datos=[])
+            return render_template("register2.html", error=error, datos=[], site_key=app.recaptcha_site_key)
         
         # Validar datos del formulario
         nombre = request.form.get("nombre")
@@ -165,22 +165,22 @@ def register_account():
         if not nombre or not apellido_paterno:
             error = "Por favor, completa los campos requeridos."
             return render_template(
-                "register2.html", error=error, datos=datos_existentes
+                "register2.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if not helpers.is_valid_name(nombre):
             error = "Por favor, introduce un nombre válido."
             return render_template(
-                "register2.html", error=error, datos=datos_existentes
+                "register2.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if not helpers.is_valid_name(apellido_paterno):
             error = "Por favor, introduce un apellido paterno válido."
             return render_template(
-                "register2.html", error=error, datos=datos_existentes
+                "register2.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if apellido_materno and not helpers.is_valid_name(apellido_materno):
             error = "Por favor, introduce un apellido materno válido."
             return render_template(
-                "register2.html", error=error, datos=datos_existentes
+                "register2.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         # Obtener los datos del formulario
         datos = request.form.to_dict()
@@ -189,12 +189,11 @@ def register_account():
         # Almacenar los datos en la sesión
         session["registro_pagina2"] = datos
         datos_existentes = helpers.get_register_data()
-        return render_template("register3.html", datos=datos_existentes)
+        return render_template("register3.html", datos=datos_existentes, site_key=app.recaptcha_site_key)
     else:
         # datos = session.get("registro_pagina1", {})
         datos = helpers.get_register_data()
-        return render_template("register2.html", datos=datos)
-    # return render_template("register2.html")
+        return render_template("register2.html", datos=datos, site_key=app.recaptcha_site_key)
 
 
 @app.route(f"/{prefix}/register/state", methods=["GET", "POST"])
@@ -205,7 +204,7 @@ def register_state():
         recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
         if not recaptcha_verified:
             error = "No pudimos verificar que no eres un robot."
-            return render_template("register3.html", error=error, datos=[])
+            return render_template("register3.html", error=error, datos=[], site_key=app.recaptcha_site_key)
         
         # Validar datos del formulario
         estado = request.form.get("estado")
@@ -214,17 +213,17 @@ def register_state():
         if not estado or not ciudad:
             error = "Por favor, completa los campos requeridos."
             return render_template(
-                "register3.html", error=error, datos=datos_existentes
+                "register3.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if not helpers.is_valid_estado(estado):
             error = "Por favor, introduce un estado válido."
             return render_template(
-                "register3.html", error=error, datos=datos_existentes
+                "register3.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if not helpers.is_valid_ciudad(ciudad):
             error = "Por favor, introduce una ciudad válida."
             return render_template(
-                "register3.html", error=error, datos=datos_existentes
+                "register3.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         # Obtener los datos del formulario
         datos = request.form.to_dict()
@@ -233,10 +232,10 @@ def register_state():
         # Almacenar los datos en la sesión
         session["registro_pagina3"] = datos
         datos_existentes = helpers.get_register_data()
-        return render_template("register4.html", datos=datos_existentes)
+        return render_template("register4.html", datos=datos_existentes, site_key=app.recaptcha_site_key)
     else:
         datos = helpers.get_register_data()
-        return render_template("register3.html", datos=datos)
+        return render_template("register3.html", datos=datos, site_key=app.recaptcha_site_key)
 
 
 @app.route(f"/{prefix}/register/u", methods=["GET", "POST"])
@@ -247,7 +246,7 @@ def register_u():
         recaptcha_verified = helpers.verify_recaptcha(recaptcha_response)
         if not recaptcha_verified:
             error = "No pudimos verificar que no eres un robot."
-            return render_template("register4.html", error=error, datos=[])
+            return render_template("register4.html", error=error, datos=[], site_key=app.recaptcha_site_key)
         
         # Validar datos del formulario
         universidad = request.form.get("universidad")
@@ -256,12 +255,12 @@ def register_u():
         if universidad and not helpers.is_valid_universidad(universidad):
             error = "Por favor, introduce un nombre válido de tu universidad."
             return render_template(
-                "register4.html", error=error, datos=datos_existentes
+                "register4.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         if terminos != "accepted":
             error = "Por favor, acepta los términos y condiciones."
             return render_template(
-                "register4.html", error=error, datos=datos_existentes
+                "register4.html", error=error, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
         # Obtener los datos del formulario
         datos = request.form.to_dict()
@@ -286,22 +285,22 @@ def register_u():
             if missing_field == "email" or missing_field == "password":
                 error = "Completa los campos de email y contraseña."
                 return render_template(
-                    "register1.html", error=error, datos=datos_de_registro
+                    "register1.html", error=error, datos=datos_de_registro, site_key=app.recaptcha_site_key
                 )
             if missing_field == "nombre" or missing_field == "apellido_paterno":
                 error = "Completa los campos de nombre y apellido paterno."
                 return render_template(
-                    "register2.html", error=error, datos=datos_de_registro
+                    "register2.html", error=error, datos=datos_de_registro, site_key=app.recaptcha_site_key
                 )
             if missing_field == "estado" or missing_field == "ciudad":
                 error = "Completa los campos de estado y ciudad."
                 return render_template(
-                    "register3.html", error=error, datos=datos_de_registro
+                    "register3.html", error=error, datos=datos_de_registro, site_key=app.recaptcha_site_key
                 )
             if missing_field == "terminos":
                 error = "Por favor, acepta los términos y condiciones."
                 return render_template(
-                    "register4.html", error=error, datos=datos_de_registro
+                    "register4.html", error=error, datos=datos_de_registro, site_key=app.recaptcha_site_key
                 )
         # Encriptar la contraseña
         hashed_password = generate_password_hash(datos_de_registro["password"])
@@ -317,7 +316,7 @@ def register_u():
         return redirect(url_for("login"))
     else:
         datos = helpers.get_register_data()
-        return render_template("register4.html", datos=datos)
+        return render_template("register4.html", datos=datos, site_key=app.recaptcha_site_key)
 
 @app.route(f"/{prefix}/tabla")
 def tabla_admin():
@@ -336,7 +335,7 @@ def tabla_admin():
             "tabla_admin.html", users=usuarios, mail=email, name=name, admin=admin
         )
     else:
-        return render_template("login.html")
+        return render_template("login.html", site_key=app.recaptcha_site_key)
 
 
 @app.route(f"/{prefix}/eliminar_usuario/<string:email>", methods=["GET", "POST"])
@@ -347,7 +346,7 @@ def eliminar_usuario(email):
         flash("Usuario eliminado con éxito.", "success")
         return redirect(url_for("tabla_admin"))
     else:
-        return render_template("login.html")
+        return render_template("login.html", site_key=app.recaptcha_site_key)
 
 
 @app.route(f"/{prefix}/classify", methods=["POST"])
