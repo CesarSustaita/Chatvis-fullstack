@@ -139,39 +139,7 @@
 
 <body>
   <!-- Navbar -->
-  <div class="navUser">
-    <div class="seccion1">
-      <div class="title-inter">
-        <a href="{{ url_for('tabla_admin') }}">Chatvis Analyzer</a>
-      </div>
-      <label for="whatsChatSinAnimaciones" class="nav-link">
-        <div class="btn btn-dark" id="uploadButton" style="display: none;">
-          <i class="fa-solid fa-upload"></i> Subir Archivo
-          <input style="display: none;" type="file" id="whatsChatSinAnimaciones">
-        </div>
-      </label>
-    </div>
-    <div class="seccion2">
-      <div class="icon-info">
-        <button class="btn icon-button text" data-bs-toggle="modal" data-bs-target="#modalInfo">
-          <i class="fa-solid fa-circle-question fa-xl" style="color: #a3a3a3"></i> Ayuda
-        </button>
-      </div>
-      <div class="line text" style="color: #a3a3a3">|</div>
-      <div class="profile-icon">
-        <div class="btn-group" role="group">
-          <button class="btn icon-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-user fa-xl" style="color: #a3a3a3"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">{{name}}</a></li>
-            <hr>
-            <li><a class="dropdown-item" href="{{url_for('logout')}}">Cerrar Sesión</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% include "navbar.html" %}
 
   <!-- Modal Info -->
   <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
@@ -323,18 +291,25 @@
   </div>
 
   <!-- Toogle Usuarios | Analizador -->
-  <div class="botones-pestañas" id="noAdminToggle">
-    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
-      <label class="btn btn-outline-secondary text" for="btnradio1" onclick="redirectToUsuarios()">
-        <i class="fa-solid fa-user-group"></i> Usuarios
-      </label>
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
-      <label class="btn btn-outline-secondary text" for="btnradio2" onclick="redirectToAnalizador()">
-        Analizador <i class="fa-solid fa-chart-pie"></i>
-      </label>
+  {% if admin == 1 %}
+  <div class="container py-3 w-100">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-auto usuarios-analisis-switch">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked/>
+            <label class="btn btn-outline-secondary" for="btnradio1" onclick="redirectToUsuarios()">
+              <i class="fa-solid fa-user-group"></i> Usuarios
+            </label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+            <label class="btn btn-outline-secondary" for="btnradio2" onclick="redirectToAnalizador()">
+              Analizador <i class="fa-solid fa-chart-pie"></i>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  {% endif %}
 
   <!-- Table -->
   <main id="noAdminTable">

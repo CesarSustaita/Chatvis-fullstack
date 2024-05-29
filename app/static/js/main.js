@@ -64,8 +64,14 @@ var relationships = [];
  * 
  */
 inputSA.addEventListener("change", function () {
+	//Nombre del chat cuando se sube
+	const labelChatUploaded = document.getElementById('fileNameLabel');
+
 	if (this.files && this.files[0]) {
 		var whatsChat = this.files[0];
+
+		//Mostrar nombre del chat cuando se sube
+		labelChatUploaded.textContent = `Conversación: ${this.files[0].name}`;
 
 		// Check if file is .txt
 		if (whatsChat.type != "text/plain") {
@@ -73,8 +79,9 @@ inputSA.addEventListener("change", function () {
 			this.value = '';
 			return;
 		}
-	swal("Cargado correctamente", "El archivo se ha cargado correctamente.", "success");
-       // window.location.href = '/';
+
+		swal("Cargado correctamente", 'Tu archivo "'+this.files[0].name+'" se ha cargado correctamente.', "success");
+        // window.location.href = '/';
 		// Loads the file, triggering the event
 		readerSA.readAsText(whatsChat, 'UTF-8');
 	};
