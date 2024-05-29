@@ -101,7 +101,7 @@ readerSA.addEventListener('load', function (e) {
  * 
  */
 readerSA.addEventListener('loadend', function (e) {
-	console.clear();
+	// console.clear();
 	showAppElements();
 	// Check if #myChart exists
 	if ($("#myChart").length) {

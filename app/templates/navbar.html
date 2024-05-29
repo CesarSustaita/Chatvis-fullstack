@@ -2,25 +2,55 @@
 <!-- TODO: Change Vpadding to 45px -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
     <div class="container align-items-center py-1 py-md-0">
-        <a class="navbar-brand" href="{{url_for('inicio')}}"><i class="fa-solid fa-comments"></i> Semantic ChatVis</a>
+        <a class="navbar-brand" href="{{url_for('dashboard') if 'logged_in' in session else url_for('inicio') }}">
+            <i class="fa-solid fa-comments"></i> Semantic ChatVis
+        </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
+            {% if 'logged_in' in session %}
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                
+                <!-- Ayuda -->
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" data-bs-toggle="modal"
+                        data-bs-target="#modalInfo">
+                        <i class="fa-solid fa-circle-question"></i> Ayuda
+                    </a>
+                </li>
+
+                <!-- Username -->
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="">
+                        <i class="fa-solid fa-user"></i> {{session['name']|default('Usuario')}}
+                    </a>
+                </li>
+
+                <!-- Cerrar sesión -->
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('logout')}}">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Cerrar sesión
+                    </a>
+                </li>
+                
+            </ul>
+            {% else %}
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for("register_mail")}}">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('register_mail')}}">
                         <i class="fa-solid fa-user-plus"></i> Crear cuenta
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for("login")}}">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('login')}}">
                         <i class="fa-solid fa-arrow-right-to-bracket"></i> Iniciar Sesión
                     </a>
                 </li>
             </ul>
+            {% endif %}
 
         </div>
     </div>

@@ -16,10 +16,11 @@ function handleDrop(event) {
         document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
         // Oculta el área de arrastrar y soltar al cargar un archivo
         document.getElementById("dragAndDropArea").style.display = "none";
-        document.getElementById("padding").style.display = "none";
+        // document.getElementById("padding").style.display = "none";
         // Muestra el botón de subir archivo al cargar un archivo
-        document.getElementById("uploadButton").style.display = "block";
-        document.getElementById('message').innerText = 'Tu conversación se ha subido correctamente.';
+        // document.getElementById("uploadButton").style.display = "block";
+        document.getElementById('main-chart-container').classList.remove('d-none');
+        // document.getElementById('message').innerText = 'Tu conversación se ha subido correctamente.';
       } else {
         document.getElementById('spinner').style.display = 'none';
         document.getElementById('fileIcon').style.display = 'block';
