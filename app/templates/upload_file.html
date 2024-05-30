@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Chatvis - Carga tu archivo</title>
+
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CDN de FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Default custom style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    {% include "navbar.html" %}
+    
+    <!-- Formulario de carga de archivo (Oculto) -->
+    <input type="file" name="conversacion_exportada" id="chat_file_input" style="display: none;">
+    
+    {% if admin == 1 %}
+    <!-- Toggle Usuarios | Analizador -->
+        {% include "admin_tabbar.html" %}
+    {% endif %}
+
+    <!-- Contenido -->
+    <div class="container-fluid py-3">
+        <div class="row d-flex flex-column align-content-center">
+            <div class="ReaderFile my-3" id="dragAndDropArea">
+                <h4 class="text py-3 bold text-center">
+                    ¡Analicemos tu Archivo!
+                </h4>
+                <div class="ArrastrarArchivo p-3" id="ArrastrarArchivo" accept=".txt" ondragover="handleDragOver(event)"
+                    ondrop="handleDrop(event)" ondragenter="event.preventDefault()" ondragleave="handleDragLeave(event)">
+                    <div id="spinner" class="d-none">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <div id="fileIcon" class="">
+                        <img src="{{ url_for('static', filename='img/attach_file.svg') }}" alt="Clip" width="100" height="100" />
+                    </div>
+                    <h5 id="message" class="text text-center">
+                        Arrastra y suelta tu conversación con extensión ".txt".
+                    </h5>
+                </div>
+                <button id="selectFileButton" class="btn btn-dark mt-4 mb-2">
+                    Selecciona un archivo
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Drag and Drop -->
+<script src="{{ url_for('static', filename='js/index-dragndrop.js') }}"></script>
+
+<!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+<!-- Sweet alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- Toasts block -->
+{% include "toasts.html" %}
+
+</html>

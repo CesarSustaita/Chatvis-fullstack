@@ -13,6 +13,15 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             {% if 'logged_in' in session %}
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+
+                {% if hideCargarArchivo is not defined %}
+                <!-- Cargar archivo -->
+                <li class="nav-item" id="navbar-btn-cargar-archivo">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{ url_for('dashboard') }}">
+                        <i class="fa-solid fa-upload"></i> Cargar archivo
+                    </a>
+                </li>
+                {% endif %}
                 
                 <!-- Ayuda -->
                 <li class="nav-item">
@@ -31,8 +40,8 @@
 
                 <!-- Cerrar sesión -->
                 <li class="nav-item">
-                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('logout')}}">
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Cerrar sesión
+                    <a id="logoutLink" class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('logout')}}">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión
                     </a>
                 </li>
                 
@@ -55,5 +64,205 @@
         </div>
     </div>
 </nav>
+
+{% if 'logged_in' in session %}
+<!-- Modal Info -->
+<div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text">
+                <h1 class="modal-title fs-3" id="modalInfoLabel">¿Cómo funciona?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ol class="py-2">
+                    <li>Importa tu conversación de WhatsApp en formato “.txt”.</li>
+                    <ul style="list-style-type: '\1F914   ';">
+                        <li>
+                            <strong><a href="https://faq.whatsapp.com/1180414079177245/" target="_blank">
+                                    ¿Cómo exportar un chat de WhatsApp? <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a></strong>
+                        </li>
+                    </ul>
+                    <li>Presiona el botón de subir archivo o arrastra tu conversación.</li>
+                    <li>El analizador ChatVis subirá tu archivo, lo analizará, y mostrará el resultado.</li>
+                </ol>
+                <div class="alert alert-warning text" style="text-align: center;">
+                    <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO
+                        guardará</strong> ninguna conversación analizada para mantener su privacidad. Lee los <a
+                        data-bs-toggle="modal" data-bs-target="#modalToS" style="text-decoration: underline;">Términos y
+                        condiciones de uso</a> para más información.
+                </div>
+                <!-- Footer About Project -->
+                <div class="py-3" style="text-align: center;">
+                    <div class="icon-info">
+                        <a class="text" data-bs-toggle="modal" data-bs-target="#modalAbout">
+                            Acerca del proyecto
+                            <i class="fa-solid fa-circle-info"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal ToS -->
+<div class="modal fade" id="modalToS" tabindex="-1" aria-labelledby="modalToSLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header text">
+                <h2 class="modal-title" id="modalToSLabel">Términos y condiciones de uso</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text">
+                <div>
+                    <div class="section">
+                        <h4>Introducción</h4>
+                        <p>Bienvenido a Semantic ChatVis. Estos Términos y condiciones de uso (los "Términos") regulan
+                            el uso de nuestro
+                            sistema web para analizar conversaciones de WhatsApp a partir de archivos .txt. Al acceder a
+                            nuestro sistema,
+                            usted acepta estos Términos.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>Definiciones</h4>
+                        <p><strong>ChatVis:</strong> Semantic ChatVis, sistema web para el análisis de conversaciones de
+                            WhatsApp a
+                            partir de archivos de texto.</p>
+                        <p><strong>Usuario:</strong> Persona que se registra y utiliza el sistema ChatVis.</p>
+                        <p><strong>Archivo .txt:</strong> Archivo de texto sin formato que contiene conversaciones de
+                            WhatsApp
+                            exportadas sin imágenes.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>Aceptación de los Términos</h4>
+                        <p>Al acceder o usar ChatVis, usted acepta cumplir con estos Términos. Si no está de acuerdo con
+                            alguna parte de
+                            estos Términos, debe dejar de usar el sistema.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>Registro y Cuentas</h4>
+                        <p>Para usar ChatVis, se requiere iniciar sesión o registrarse como nuevo usuario. El registro
+                            es necesario para
+                            mantener un control de los usuarios que ingresan al sistema. La información proporcionada
+                            durante el registro
+                            será utilizada únicamente para fines administrativos y no será compartida con terceros.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>Uso del Sistema</h4>
+                        <p>Una vez registrado, el usuario puede cargar un archivo .txt para su análisis. Al cargar el
+                            archivo, ChatVis
+                            analizará las conversaciones y presentará:</p>
+                        <ul>
+                            <li>La conversación del archivo: El texto contenido en el archivo .txt.</li>
+                            <li>Gráfica de relaciones: Representación visual de la interacción entre las personas en la
+                                conversación.</li>
+                            <li>Gráfica de análisis de texto: Categoriza las conversaciones en tres tipos:</li>
+                            <ul>
+                                <li><strong>Código:</strong> Conversaciones que contienen código de programación.</li>
+                                <li><strong>Organización:</strong> Conversaciones relacionadas con la organización de
+                                    actividades.</li>
+                                <li><strong>Intrascendente:</strong> Conversaciones que no encajan en las categorías
+                                    anteriores.</li>
+                            </ul>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h4>Privacidad y Seguridad</h4>
+                        <p>ChatVis no guarda ninguna de las conversaciones cargadas por los usuarios. Todo el análisis
+                            se realiza en
+                            tiempo real y no se almacena información personal ni de las conversaciones por motivos de
+                            seguridad y
+                            privacidad. La única finalidad del registro es para que los administradores puedan consultar
+                            cuántos usuarios
+                            utilizan el sistema.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>Conducta del Usuario</h4>
+                        <p>Al usar ChatVis, el usuario acepta no cargar archivos que contengan contenido ilegal,
+                            ofensivo, o que
+                            infrinja los derechos de propiedad intelectual de terceros. El usuario es responsable del
+                            contenido que carga
+                            y del uso que haga del sistema.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>Limitación de Responsabilidad</h4>
+                        <p>ChatVis no será responsable de cualquier daño o pérdida derivada del uso del sistema,
+                            incluidos, entre otros,
+                            errores en el análisis, pérdidas de datos, o cualquier daño consecuente. El usuario usa el
+                            sistema bajo su
+                            propio riesgo.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>Modificaciones de los Términos</h4>
+                        <p>ChatVis se reserva el derecho de modificar estos Términos en cualquier momento. Cualquier
+                            cambio será
+                            comunicado a los usuarios registrados a través de la plataforma. El uso continuado del
+                            sistema después de
+                            dichos cambios constituye la aceptación de los nuevos términos.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal About -->
+<div class="modal fade" id="modalAbout" tabindex="-1" aria-labelledby="modalAboutLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text">
+                <h1 class="modal-title fs-3" id="modalAboutLabel">Acerca del Proyecto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text">
+                <div class="text">
+                    Bibliotecas usadas:<br>
+                    <ul class="text">
+                        <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+                        <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+                        <li><a href="https://github.com/Pustur/whatsapp-chat-parser" target="_blank">WhatsApp Chat
+                                Parser</a></li>
+                        <li><a href="https://d3js.org/" target="_blank">D3.js</a></li>
+                        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                        <li><a href="https://fontawesome.com/" target="_blank">FontAwesome</a></li>
+                        <li><a href="https://spacy.io/" target="_blank">spaCY</a></li>
+                        <li><a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">Flask</a></li>
+                        <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+                        <li><a href="https://nodejs.org/" target="_blank">Node.js</a></li>
+                        <li><a href="https://cdnjs.com/libraries/toastify-js/1.6.1" target="_blank">Toastify</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="text" style="text-align: center;">
+                    Basado en el trabajo de<br>
+                    <a href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2" target="_blank">Nadieh Bremer</a> & <a
+                        href="http://www.visualcinnamon.com/" target="_blank">VisualCinnamon.com</a> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('logoutLink').addEventListener('click', function () {
+        sessionStorage.clear();
+    });
+</script>
+
+{% endif %}
 
 {% endblock %}

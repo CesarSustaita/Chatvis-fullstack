@@ -1,3 +1,50 @@
+const reader = new FileReader();
+
+reader.onload = function (e) {
+    const content = e.target.result;
+    sessionStorage.setItem('chat_file_content', content);
+    const file = document.getElementById('chat_file_input').files[0];
+    sessionStorage.setItem('chat_file_name', file.name);
+    sessionStorage.setItem('first_load_after_upload', 'true');
+
+    window.location.href = '/analisis'; // Redirige a la página de análisis
+};
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Select file button
+    let input = document.getElementById('chat_file_input');
+    let selectFileButton = document.getElementById('selectFileButton');
+
+    selectFileButton.addEventListener('click', function () {
+        input.click();
+    });
+
+    input.addEventListener('change', function () {
+        const file = input.files[0]; // Obtiene el archivo seleccionado
+
+        if (file) {
+            document.getElementById('spinner').classList.remove('d-none'); // Muestra el spinner
+            document.getElementById('fileIcon').classList.add('d-none'); // Oculta el ícono de archivo
+            document.getElementById('message').innerText = 'Cargando...';
+
+            if (file.type === 'text/plain') { // Si el archivo es de tipo texto plano
+                console.log('File selected:', file);
+                reader.readAsText(file, 'UTF-8');
+
+            } else { // Si el archivo no es de tipo texto plano
+                document.getElementById('spinner').classList.add('d-none'); // Oculta el spinner
+                document.getElementById('fileIcon').classList.remove('d-none'); // Muestra el ícono de archivo
+                document.getElementById('message').innerText = 'Arrastra y suelta tu conversación con extensión ".txt".';
+                // swal("Error", "El archivo debe ser de tipo .txt", "error");
+                showToastError('El archivo debe ser de tipo .txt'); // Cambiado a Toast de error para consistencia
+            }
+        }
+    });
+
+});
+
+
 function handleDragOver(event) {
     event.preventDefault();
     event.dataTransfer.dropEffect = 'copy';
@@ -7,28 +54,15 @@ function handleDragOver(event) {
 
 function handleDrop(event) {
     event.preventDefault();
-    const file = event.dataTransfer.files[0];
+    const file = event.dataTransfer.files[0]; // Obtiene el archivo arrastrado
+
     if (file) {
-      if (file.name.endsWith('.txt')) {
-        const inputFile = document.getElementById('whatsChatSinAnimaciones');
-        inputFile.files = event.dataTransfer.files; // Establece los archivos seleccionados en el input oculto
-        inputFile.dispatchEvent(new Event('change')); // Simula el evento de cambio
+        const input = document.getElementById('chat_file_input');
+        input.files = event.dataTransfer.files; // Asigna el archivo arrastrado al input
         document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
-        // Oculta el área de arrastrar y soltar al cargar un archivo
-        document.getElementById("dragAndDropArea").style.display = "none";
-        // document.getElementById("padding").style.display = "none";
-        // Muestra el botón de subir archivo al cargar un archivo
-        // document.getElementById("uploadButton").style.display = "block";
-        document.getElementById('main-chart-container').classList.remove('d-none');
-        // document.getElementById('message').innerText = 'Tu conversación se ha subido correctamente.';
-      } else {
-        document.getElementById('spinner').style.display = 'none';
-        document.getElementById('fileIcon').style.display = 'block';
-        document.getElementById('message').innerText = 'Suelta tu archivo aquí.';
-        swal("Error", "El archivo debe ser de tipo .txt", "error");
-      }
-      document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
+        input.dispatchEvent(new Event('change')); // Simula el evento de cambio
     }
+    document.getElementById('ArrastrarArchivo').classList.remove('drag-over');
 }
 
 function handleDragLeave(event) {

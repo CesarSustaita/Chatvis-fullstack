@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_compress import Compress
 from datetime import timedelta
 import spacy
 from dotenv import load_dotenv
@@ -40,6 +41,8 @@ def make_session_permanent():
 # Load the spacy model
 app.nlp = spacy.load("spacy/model-last-x-eff3")
 
+# Enable Gzip compression
+Compress(app)
 
 # Import the views after the Flask app is created
 from app import views

@@ -11,14 +11,6 @@
 //import * as d3 from "d3";
 var prefix = "chatvis2024";
 
-////prueba
-function sendFileNameToMainJs(fileName) {
-    // Aquí puedes hacer lo que quieras con el nombre del archivo
-    console.log('El nombre del archivo seleccionado es: ' + fileName);
-    // Por ejemplo, puedes pasarlo a otra función o realizar algún otro procesamiento.
-}
-
-
 // Variables globales
 
 // Mensaje de error al cargar el archivo

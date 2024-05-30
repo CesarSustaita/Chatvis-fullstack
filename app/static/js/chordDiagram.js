@@ -99,13 +99,14 @@ function mouseoutChord(d) {
  * @param {Array<string>} newNames - The names for the diagram elements.
  * @param {Array<string>} newColors - The colors for the diagram elements.
  * @param {boolean} bindEvents - Indicates whether to bind events to the diagram elements.
+ * @param {string} parentID - The ID of the parent element to append the diagram to.
  * @returns {Promise<void>} A promise that resolves when the chord diagram is created successfully.
  * @throws {Error} If an error occurs while creating the chord diagram.
  */
-async function makeChordDiagram(matrix, newNames, newColors, bindEvents) {
+async function makeChordDiagram(matrix, newNames, newColors, bindEvents, parentID) {
 	return new Promise((resolve, reject) => {
 		try {
-			makeChordDiagramSync(matrix, newNames, newColors, bindEvents);
+			makeChordDiagramSync(matrix, newNames, newColors, bindEvents, parentID);
 			resolve();
 		}
 		catch (err) {
@@ -122,12 +123,13 @@ async function makeChordDiagram(matrix, newNames, newColors, bindEvents) {
  * @param {Array<string>} newNames - The names for the outer arcs.
  * @param {Array<string>} newColors - The colors for the outer arcs.
  * @param {boolean} bindEvents - Indicates whether to bind mouseover and mouseout events to the chords.
+ * @param {string} parentID - The ID of the parent element to append the diagram to.
  * @returns {void}
  */
-function makeChordDiagramSync(matrix, newNames, newColors, bindEvents) {
+function makeChordDiagramSync(matrix, newNames, newColors, bindEvents, parentID) {
 	// var size = newNames.length<99?500:window.innerHeight;
-	var parentWidth = d3.select("#chart").node().getBoundingClientRect().width;
-	var parentHeight = d3.select("#chart").node().getBoundingClientRect().height;
+	var parentWidth = d3.select(parentID).node().getBoundingClientRect().width;
+	var parentHeight = d3.select(parentID).node().getBoundingClientRect().height;
 
 	var size = Math.min(parentWidth, parentHeight);
 
@@ -165,7 +167,7 @@ function makeChordDiagramSync(matrix, newNames, newColors, bindEvents) {
 	////////////////////// Create SVG //////////////////////////
 	////////////////////////////////////////////////////////////
 
-	svg = d3.select("#chart").append("svg")
+	svg = d3.select(parentID).append("svg")
 		.attr("width", width)
 		.attr("height", height)
 		.append("g")
@@ -259,7 +261,7 @@ function makeChordDiagramSync(matrix, newNames, newColors, bindEvents) {
 		.each(function (d) { d.angle = (d.startAngle + d.endAngle) / 2; })
 		/*.attr("dy", ".15em")*/
 
-		.attr("class", "titles")
+		.attr("class", "chordLabel")
 		.attr("text-anchor", function (d) { return d.angle > Math.PI ? "end" : null; })
 		.attr("transform", function (d) {
 			return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"

@@ -19,7 +19,7 @@ def verify_recaptcha(recaptcha_response: str) -> bool:
     Returns:
         bool: True if the reCAPTCHA response is valid, False otherwise.
     """
-    secret_key = os.getenv("RECAPTCHA_SECRET_KEY")
+    secret_key = os.getenv("RECAPTCHA_SECRET_KEY_DEV")
     google_recaptcha_api_url = "https://www.google.com/recaptcha/api/siteverify"
     data = {"secret": secret_key, "response": recaptcha_response}
     try:

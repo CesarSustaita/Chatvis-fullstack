@@ -73,9 +73,29 @@ def dashboard():
         email = session.get("email")  # Obtener el email del usuario desde la sesión
         name = session.get("name")  # Obtener el nombre del usuario desde la sesión
         admin = session.get("admin")  # Obtener el admin del usuario desde la sesión
-        return render_template("index.html", email=email, name=name, admin=admin)
+        return render_template("upload_file.html", email=email, name=name, admin=admin, hideCargarArchivo=True)
     else:
         flash("Inicia sesión para acceder al dashboard.", "warning")
+        return redirect(url_for("login"))
+
+@app.route(f"/{prefix}/analisis", methods=["GET"])
+def analisis():
+    if "logged_in" in session:
+        email = session.get("email")
+        name = session.get("name")
+        admin = session.get("admin")
+        return render_template("analisis.html", email=email, name=name, admin=admin)
+    else:
+        flash("Inicia sesión para acceder al dashboard.", "warning")
+        return redirect(url_for("login"))
+
+@app.route(f"/{prefix}/no_file", methods=["GET"])
+def no_file():
+    if "logged_in" in session:
+        flash("Por favor, carga un archivo para analizar.", "warning")
+        return redirect(url_for("dashboard"))
+    else:
+        flash("Inicia sesión para acceder.", "warning")
         return redirect(url_for("login"))
 
 
@@ -352,9 +372,7 @@ def eliminar_usuario(email):
 @app.route(f"/{prefix}/classify", methods=["POST"])
 def classify_message():
     try:
-        message = request.json["message"]
-        doc = app.nlp(message)
-        scores = doc.cats
+        scores = app.nlp(request.json["message"]).cats
         category = max(scores, key=scores.get)
         score_values = {k: round(v, 2) for k, v in scores.items()}
         return jsonify({"category": category, "scores": score_values})

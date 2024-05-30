@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Chatvis - Carga tu archivo</title>
+
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CDN de FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Default custom style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+
+    <!-- Charts CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    {% include "navbar.html" %}
+
+    <!-- Formulario de carga de archivo (Oculto) -->
+    <input type="file" name="conversacion_exportada" id="chat_file_input" style="display: none;">
+
+    {% if admin == 1 %}
+    <!-- Toggle Usuarios | Analizador -->
+    {% include "admin_tabbar.html" %}
+    {% endif %}
+
+
+    <!-- Contenido -->
+    <div class="container py-1 py-sm-2">
+        <!-- Título -->
+        <div class="row my-1 my-sm-2 my-sm-3">
+            <div class="col-12 d-flex flex-row align-items-center gap-3 justify-content-between">
+                <div class="d-flex flex-row align-items-baseline gap-3 gap-md-4 gap-lg-5">
+                    <h3 class="mb-1" id="chat-title">Análisis de la conversación</h3>
+                    <!-- TODO: Move this icons next to trash button -->
+                    <h5 class="m-0 text-center">
+                        <i class="fa-solid fa-users"></i>
+                        <span id="chat-members-count">...</span>
+                    </h5>
+                    <h5 class="m-0 text-center">
+                        <i class="fa-regular fa-comments"></i> 
+                        <span id="chat-messages-count">...</span>
+                    </h5>
+                </div>
+                <button id="delete-chat" class="btn btn-outline-dark btn-md my-2"
+                data-bs-toggle="modal"
+                data-bs-target="#modalDeleteChat">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Cartas con gráficas -->
+        <div class="row align-content-center">
+
+            <!-- Chord chart -->
+            <div class="col-12 col-md-6 my-3">
+                <div id="chord-card" class="card h-50vhi">
+                    <div class="card-header">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <strong class="card-title m-0">Gráfica de relaciones</strong>
+                            <button class="btn btn-sm btn-close d-block d-md-none" id="buttonCloseChord"
+                            data-bs-toggle="collapse"
+                            href="#chord-chart-container"
+                            aria-expanded="true"
+                            aria-controls="chord-chart-container"></button>
+                        </div>
+                    </div>
+
+                    <div id="chord-chart-container" class="card-body p-0 collapse show">
+                        <!-- Aquí se insertará el svg de la gráfica de relaciones -->
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- Chat -->
+            <div class="col-12 col-md-6 my-3">
+                <div id="chat-card" class="card h-50vhi">
+                    <div class="card-header">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <strong class="card-title m-0">Conversación</strong>
+                            <button class="btn btn-sm btn-close d-block d-md-none" id="buttonCloseChat" 
+                            data-bs-toggle="collapse"
+                            href="#chat-container"
+                            aria-expanded="true" 
+                            aria-controls="chat-container"></button>
+                        </div>
+                    </div>
+                    <div id="chat-container" class="card-body p-0 collapse show"
+                    style='background-image: url("{{ url_for('static', filename='img/background.jpg' ) }}");'>
+                        <div title="Messages" id="chat" class="mh-100">
+                            <!-- Aquí se llenará con los mensajes -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Histograma con clasificaciones -->
+            <div class="col-12 my-3">
+                <div id="histogram-card" class="card">
+                    <div class="card-header">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <strong class="card-title m-0">Análisis semántico</strong>
+                            <button class="btn btn-sm btn-close d-block d-md-none" id="buttonCloseHistogram"
+                            data-bs-toggle="collapse"
+                            href="#histogram-chart-container"
+                            aria-expanded="true"
+                            aria-controls="histogram-chart-container"></button>
+                        </div>
+                    </div>
+                    <div id="histogram-chart-container" class="card-body collapse show">
+                        <!-- Aquí se insertará el canvas del histograma -->
+                        <canvas id="histogram-canvas" class=""></canvas>
+                    </div>
+                </div>
+            
+            
+
+            
+
+            
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="modalDeleteChat"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalDeleteChatTitleID"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-md modal-dialog-centered"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDeleteChatTitleID">
+                        Eliminar chat
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body py-3 py-lg-4">
+                    <p class=""><b>¿Deseas eliminar este chat y su análisis?</b></p>
+                    <p> Los archivos de chat se almacenan temporalmente solo en tu navegador. Con esta opción puedes eliminarlos de inmediato. </p>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-outline-dark"
+                        data-bs-dismiss="modal"
+                    >
+                        Cancelar
+                    </button>
+                    <button id="button-confirm-delete-chat" type="button" class="btn btn-outline-danger">
+                        <i class="fas fa-trash-alt"></i> Eliminar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+
+<!-- * jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- * WhatsApp Chat Parser: https://github.com/Pustur/whatsapp-chat-parser -->
+<script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser@4.0.0/dist/index.global.js"></script>
+
+<!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    
+<!-- Otros -->
+<script src="{{ url_for('static', filename='js/d3.layout.chord.sort.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<!-- * D3: https://github.com/d3/d3 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+<!-- Sweet alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- JavaScript de analisis -->
+<script src="{{ url_for('static', filename='js/analisis.js') }}"></script>
+
+<!-- JavaScript de chordDiagram -->
+<script src="{{ url_for('static', filename='js/chordDiagram.js') }}"></script>
+
+<!-- Toasts block -->
+{% include "toasts.html" %}
+
+</html>
