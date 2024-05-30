@@ -5,6 +5,7 @@ var chatContainerID = "#chat";
 var histogramParentID = "#histogram-chart-container";
 var histogramCanvasID = "#histogram-canvas";
 var histogramCanvasIDNoHashtag = "histogram-canvas";
+var histogramProgressBarID = "#histogram-progress-bar";
 var chatMembersCountID = "#chat-members-count";
 var chatMessagesCountID = "#chat-messages-count";
 var maxUniqueContacts = 99;
@@ -296,6 +297,10 @@ function analizarYGenerarGraficos() {
             }
             // Genera el gráfico de barras con los datos obtenidos
             generateChart(dates_day_month, category_counts_by_day);
+            // Muestra canvas
+            $(histogramCanvasID).removeClass('d-none');
+            // Oculta progress bar
+            $(histogramProgressBarID).addClass('d-none');
         });
 
     // Obtiene los contactos únicos

@@ -7,8 +7,10 @@
     <title>Semantic Chatvis - Carga tu archivo</title>
 
     <!-- CSS de Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
     <!-- CDN de FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -41,15 +43,15 @@
             <div class="col-12 d-flex flex-row align-items-center gap-3 justify-content-between">
                 <div class="d-flex flex-row align-items-baseline gap-3 gap-md-4 gap-lg-5">
                     <h3 class="mb-1" id="chat-title">Análisis de la conversación</h3>
-                    <!-- TODO: Move this icons next to trash button -->
-                    <h5 class="m-0 text-center">
+                    <!-- TODO: Move these icons next to trash button? -->
+                    <p class="m-0 text-center">
                         <i class="fa-solid fa-users"></i>
                         <span id="chat-members-count">...</span>
-                    </h5>
-                    <h5 class="m-0 text-center">
+                    </p>
+                    <p class="m-0 text-center">
                         <i class="fa-regular fa-comments"></i> 
                         <span id="chat-messages-count">...</span>
-                    </h5>
+                    </p>
                 </div>
                 <button id="delete-chat" class="btn btn-outline-dark btn-md my-2"
                 data-bs-toggle="modal"
@@ -122,7 +124,21 @@
                     </div>
                     <div id="histogram-chart-container" class="card-body collapse show">
                         <!-- Aquí se insertará el canvas del histograma -->
-                        <canvas id="histogram-canvas" class=""></canvas>
+                        <canvas id="histogram-canvas" class="d-none"></canvas>
+                        <div id="histogram-progress-bar" class="progress w-100">
+                            <div
+                                class="progress-bar progress-bar-striped progress-bar-animated w-100"
+                                role="progressbar"
+                                aria-valuenow="100"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <strong>
+                                    Analizando...
+                                </strong>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             
@@ -189,9 +205,15 @@
 <script src="https://cdn.jsdelivr.net/npm/whatsapp-chat-parser@4.0.0/dist/index.global.js"></script>
 
 <!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script> -->
     
 <!-- Otros -->
 <script src="{{ url_for('static', filename='js/d3.layout.chord.sort.js') }}"></script>
@@ -208,6 +230,7 @@
 
 <!-- JavaScript de chordDiagram -->
 <script src="{{ url_for('static', filename='js/chordDiagram.js') }}"></script>
+
 
 <!-- Toasts block -->
 {% include "toasts.html" %}

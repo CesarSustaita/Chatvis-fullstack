@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('fileIcon').classList.remove('d-none'); // Muestra el ícono de archivo
                 document.getElementById('message').innerText = 'Arrastra y suelta tu conversación con extensión ".txt".';
                 // swal("Error", "El archivo debe ser de tipo .txt", "error");
-                showToastError('El archivo debe ser de tipo .txt'); // Cambiado a Toast de error para consistencia
+                showToastError('El archivo debe ser de tipo texto'); // Cambiado a Toast de error para consistencia
             }
         }
     });

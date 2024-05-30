@@ -56,6 +56,20 @@ body::-webkit-scrollbar-thumb:hover {
   transform: rotate(-45deg);
 }
 
+.progress {
+  height: 2.4rem;
+  border-radius: 1.22rem;
+  background-color: var(--color-primary) !important;
+}
+
+.progress-bar {
+  background-color: var(--color-primary) !important;
+}
+
+#histogram-canvas,
+#histogram-progress-bar {
+  transition: display 0.5s ease-in-out;
+}
 .title {
 	margin-top: 20px;
 	margin-bottom: 10px;
