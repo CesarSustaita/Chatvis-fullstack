@@ -341,7 +341,7 @@ def register_state():
             return render_template(
                 "register3.html", warning=warning, datos=datos_existentes, site_key=app.recaptcha_site_key
             )
-        if not helpers.is_valid_estado(estado):
+        if not helpers.is_valid_estado_str(estado):
             warning = "Por favor, introduce un estado válido."
             return render_template(
                 "register3.html", warning=warning, datos=datos_existentes, site_key=app.recaptcha_site_key
@@ -355,6 +355,7 @@ def register_state():
         datos = request.form.to_dict()
         # Eliminar campos no necesarios
         datos.pop("g-recaptcha-response", None)
+        datos.pop("estado-mx", None)
         # Almacenar los datos en la sesión
         session["registro_pagina3"] = datos
         datos_existentes = helpers.get_register_data()
@@ -400,6 +401,7 @@ def register_u():
             **session.get("registro_pagina1", {}),
             **session.get("registro_pagina2", {}),
             **session.get("registro_pagina3", {}),
+            "estado_str": session.get("registro_pagina3", {}).get("estado"),
             **datos,
             "admin": 0,
             "num_uso": 0,
