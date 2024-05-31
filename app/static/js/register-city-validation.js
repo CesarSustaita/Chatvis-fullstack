@@ -1,13 +1,15 @@
 function toggleCiudadAlcaldiaAddListener() {    
-    const ciudad_label = document.getElementById('label-ciudad');
-    document.getElementById('estado-mx').addEventListener('input', function() {
-                let estado = document.getElementById('estado-mx').value;
-                if (estado === '7' || estado === 'Ciudad de México') { // CDMX
-                    ciudad_label.textContent = 'Alcaldía';
-                } else {
-                    ciudad_label.textContent = 'Ciudad';
-                }
-    });
+    document.getElementById('estado-mx').addEventListener('input', toggleCiudadAlcaldia);
+}
+
+function toggleCiudadAlcaldia() {
+    let ciudad_label = document.getElementById('label-ciudad');
+    let estado = document.getElementById('estado-mx').value;
+    if (estado === '7' || estado === 'Ciudad de México') { // CDMX
+        ciudad_label.textContent = 'Alcaldía';
+    } else {
+        ciudad_label.textContent = 'Ciudad';
+    }
 }
 
 function toggleEstadoInputListener() {
@@ -48,21 +50,30 @@ function checkStateValidity() {
     let paisValue = document.getElementById('pais').value;
 
     if (strIsLikeMexico(paisValue)) {
-        let estadoMX = document.getElementById('estado-mx');
-        let valueMX = estadoMX.value;
-        if (valueMX == "Selecciona el estado") {
-            estadoMX.setCustomValidity('Selecciona un estado de la lista.');
-        } else {
-            estadoMX.setCustomValidity('');
-        }
+        _checkStateValidityMX();
+        _checkStateValidityIntl();
     } else {
-        let estado = document.getElementById('estado');
-        let value = estado.value;
-        if (value == "") {
-            estado.setCustomValidity('Introduce tu estado.');
-        } else {
-            estado.setCustomValidity('');
-        }
+        _checkStateValidityIntl();
+    }
+}
+
+function _checkStateValidityMX() {
+    let estadoMX = document.getElementById('estado-mx');
+    let valueMX = estadoMX.value;
+    if (valueMX == "Selecciona el estado") {
+        estadoMX.setCustomValidity('Selecciona un estado de la lista.');
+    } else {
+        estadoMX.setCustomValidity('');
+    }
+}
+
+function _checkStateValidityIntl() {
+    let estado = document.getElementById('estado');
+    let value = estado.value;
+    if (value == "") {
+        estado.setCustomValidity('Introduce tu estado.');
+    } else {
+        estado.setCustomValidity('');
     }
 }
 
@@ -116,10 +127,11 @@ function strIsLikeMexico(str) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    toggleCiudadAlcaldiaAddListener();
     formValidationAddListener();
     stateInputAddListener();
     toggleEstadoInputListener();
     selectSavedEstadoMX();
     checkIfSavedOtherCountry();
+    toggleCiudadAlcaldia();
+    toggleCiudadAlcaldiaAddListener();
 });
