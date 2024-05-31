@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
@@ -24,6 +24,16 @@
 
 <body>
 
+    <script>
+        var thisPageis = "analisis";
+    </script>
+
+    <div id="spinner-full-page" class="">
+        <div class="spinner-border">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+
     <!-- Navbar -->
     {% include "navbar.html" %}
 
@@ -43,7 +53,6 @@
             <div class="col-12 d-flex flex-row align-items-center gap-3 justify-content-between">
                 <div class="d-flex flex-row align-items-baseline gap-3 gap-md-4 gap-lg-5">
                     <h3 class="mb-1" id="chat-title">Análisis de la conversación</h3>
-                    <!-- TODO: Move these icons next to trash button? -->
                     <p class="m-0 text-center">
                         <i class="fa-solid fa-users"></i>
                         <span id="chat-members-count">...</span>
@@ -182,12 +191,12 @@
                 <div class="modal-footer">
                     <button
                         type="button"
-                        class="btn btn-outline-dark"
+                        class="btn btn-dark"
                         data-bs-dismiss="modal"
                     >
                         Cancelar
                     </button>
-                    <button id="button-confirm-delete-chat" type="button" class="btn btn-outline-danger">
+                    <button id="button-confirm-delete-chat" type="button" class="btn btn-danger">
                         <i class="fas fa-trash-alt"></i> Eliminar
                     </button>
                 </div>
@@ -221,9 +230,6 @@
 
 <!-- * D3: https://github.com/d3/d3 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-
-<!-- Sweet alert -->
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <!-- JavaScript de analisis -->
 <script src="{{ url_for('static', filename='js/analisis.js') }}"></script>

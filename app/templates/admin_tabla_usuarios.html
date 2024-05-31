@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Chatvis - Usuarios registrados</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+    <!-- CDN de FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Default custom style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+
+</head>
+
+<body>
+
+    <script>
+        var thisPageis = "admin_tabla_usuarios";
+    </script>
+
+    <!-- Navbar -->
+    {% include "navbar.html" %}
+
+    <!-- Formulario de carga de archivo (Oculto) -->
+    <input type="file" name="conversacion_exportada" id="chat_file_input" style="display: none;">
+
+    {% if admin == 1 %}
+    <!-- Toggle Usuarios | Analizador -->
+    {% include "admin_tabbar.html" %}
+    {% endif %}
+
+
+    <!-- Contenido -->
+    <div class="container py-1 py-sm-2">
+        <!-- Título -->
+        <div class="row my-1 my-sm-2 my-sm-3">
+            <div class="col-12 d-flex flex-row align-items-center gap-3 justify-content-between">
+                <div class="d-flex flex-row align-items-baseline gap-3">
+                    <h4>
+
+                        <i class="fa-solid fa-users"></i>
+                    </h4>
+                    <h3 class="mb-1" id="page-title">
+                        Usuarios registrados
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de usuarios -->
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped table-bordered table-sm align-middle mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-center">#</th>
+                                        <th scope="col" class="text-center">Admin</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Universidad</th>
+                                        <th scope="col">País</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Ciudad</th>
+                                        <th scope="col">Fecha de registro</th>
+                                        <th scope="col">Login más reciente</th>
+                                        <th scope="col" class="text-center"># Logins</th>
+                                        <th scope="col" class="text-center"> # Análisis</th>
+                                        <th scope="col" class="text-center"><i class="fa-solid fa-bolt-lightning"></i></th>
+                                    </tr>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for user in users %}
+                                    <tr>
+                                        <th scope="row" class="text-center">{{ loop.index }}</th>
+                                        <td class="text-center">
+                                            {% if user.admin == 1 %}
+                                            <i class="fa-solid fa-circle-check text-primary"></i>
+                                            {% else %}
+                                            <i class="fa-regular fa-circle-xmark text-secondary"></i>
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ user.nombre + " " + user.apellido_paterno + " " + user.apellido_materno }}</td>
+                                        <td>{{ user.universidad }}</td>
+                                        <td>{{ user.pais }}</td>
+                                        <td>{{ user.estado_str }}</td>
+                                        <td>{{ user.ciudad }}</td>
+                                        <td>{{ user.date }}</td>
+                                        <td>{{ user.last_login }}</td>
+                                        <td class="text-center">{{ user.num_uso }}</td>
+                                        <td class="text-center">{{ user.count_analisis }}</td>
+                                        <td class="text-center">
+                                            {% if user.admin == 0 %}
+                                            <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#modalDeleteUserConfirmation"
+                                                data-name="{{ user.nombre + ' ' + user.apellido_paterno + ' ' + user.apellido_materno }}"
+                                                data-email="{{ user.email }}">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    
+    </div>
+    
+    <!-- Modal: Confirm Delete User -->
+    <div
+        class="modal fade"
+        id="modalDeleteUserConfirmation"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalDeleteUserConfirmationTitle"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDeleteUserConfirmationTitle">
+                        Eliminar usuario
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>Confirma que deseas eliminar este usuario.</p>
+                        <br>
+                        <p>Nombre: <span id="modalDeleteUserName" class="fw-bold">Nombre de usuario</span></p>
+                        <p>Email: <span id="modalDeleteUserEmail" class="fw-bold">Email de usuario</span></p>
+                        <br>
+                        <p>Esta acción no se puede deshacer.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-dark"
+                        data-bs-dismiss="modal"
+                    >
+                        Cancelar
+                    </button>
+                    <form action="{{ url_for('admin_delete_user') }}" method="POST">
+                        <input id="modalDeleteUserFormInput" type="hidden" name="email" value="sdfsdfs">
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i>
+                            Eliminar usuario
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Custom script -->
+<script src="{{ url_for('static', filename='js/admin_tabla_usuarios.js') }}"></script>
+
+<!-- * jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- JavaScript de Bootstrap y sus dependencias (Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+<!-- Toasts block -->
+{% include "toasts.html" %}
+
+</html>

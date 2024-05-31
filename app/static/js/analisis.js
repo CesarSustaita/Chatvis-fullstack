@@ -1,4 +1,5 @@
 var chat_content;
+var analisisCountCallPending = false;
 
 var chordParentID = "#chord-chart-container";
 var chatContainerID = "#chat";
@@ -22,6 +23,7 @@ window.onload = function() {
     // Check if first load after upload and show success toast
     if (sessionStorage.getItem('first_load_after_upload') === 'true') {
         showToastSuccess('Archivo cargado correctamente');
+        analisisCountCallPending = true;
         sessionStorage.setItem('first_load_after_upload', 'false');
     }
 
@@ -41,11 +43,24 @@ window.onload = function() {
     chatTitle.innerText = fileName;
 
     // Parse messages
-    parseMessages();
+    // Check if messages data is in session storage
+    if (sessionStorage.getItem('messages_data') !== null) {
+        messages_data = JSON.parse(sessionStorage.getItem('messages_data'));
+    } else {
+        parseMessages();
+    }
+
+    // Page loading spinner
+    // appears by default
 
     // Analyze and generate charts
     analizarYGenerarGraficos();
 
+    // Remove loading spinner
+    $("#spinner-full-page").addClass('hide-spinner');
+    setTimeout(() => {
+        $("#spinner-full-page").remove();
+    }, 1000);
 
     // Event listener for delete chat button
     var deleteChatButton = document.getElementById('button-confirm-delete-chat');
@@ -53,7 +68,9 @@ window.onload = function() {
         sessionStorage.removeItem('chat_file_content');
         sessionStorage.removeItem('chat_file_name');
         sessionStorage.removeItem('first_load_after_upload');
-        window.location.href = '/dashboard';
+        sessionStorage.removeItem('category_counts_by_day');
+        sessionStorage.removeItem('messages_data');
+        window.location.href = '/chat_deleted';
     });
 
     // Event listener for collapse chord chart button
@@ -186,8 +203,39 @@ var relationships = [];
 function parseMessages() {
     try {
         messages_data = whatsappChatParser.parseString(chat_content);
-    } catch (err) {
-        console.log(err);
+
+        if (messages_data.length < 1) {
+            console.log('Error: No se encontraron mensajes en el archivo.');
+            window.location.href = '/no_messages';
+            return;
+        }
+
+        // POST Call para registrar el nuevo análisis
+        // TODO: Cambiar prefijo a "chatvis2024" para producción
+        if (analisisCountCallPending) {
+            fetch('/new_analisis', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ counter: 1 }),
+            })
+                .then(response => {
+                    if (response.ok) {
+                        analisisCountCallPending = false;
+                    } else {
+                        throw new Error('Network response was not ok');
+                    }
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+        }
+
+        // Guarda en sessionStorage los datos del chat
+        sessionStorage.setItem('messages_data', JSON.stringify(messages_data));
+    } catch (error) {
+        console.error('Error:', error);
     }
 }
 
@@ -219,10 +267,15 @@ function analizarYGenerarGraficos() {
     var messages_by_day_month = [];
 
     // Contadores de mensajes por categoría
-    var category_counts_by_day = [];
-    category_counts_by_day["Logistica"] = [];
-    category_counts_by_day["Codigo"] = [];
-    category_counts_by_day["Intrascendente"] = [];
+    // var category_counts_by_day = [];
+    // category_counts_by_day["Logistica"] = [];
+    // category_counts_by_day["Codigo"] = [];
+    // category_counts_by_day["Intrascendente"] = [];
+    var category_counts_by_day = {
+        "Logistica": {},
+        "Codigo": {},
+        "Intrascendente": {}
+    };
 
     // Ajusta el número de mensajes en la pantalla
     $(chatMessagesCountID).text(messages_data.length);
@@ -246,62 +299,76 @@ function analizarYGenerarGraficos() {
         }
     }
 
-    // Genera una llamada asíncrona para clasificar los mensajes
-    (async () => {
-        for (const day in messages_by_day_month) {
-            // Inicializamos los contadores de mensajes por categoría para este día
-            category_counts_by_day["Logistica"][day] = 0;
-            category_counts_by_day["Codigo"][day] = 0;
-            category_counts_by_day["Intrascendente"][day] = 0;
+    // Checa si category_counts_by_day está en sessionStorage
+    if (sessionStorage.getItem('category_counts_by_day') !== null) {
+        category_counts_by_day = JSON.parse(sessionStorage.getItem('category_counts_by_day'));
+        generateChart(dates_day_month, category_counts_by_day);
+        $(histogramCanvasID).removeClass('d-none');
+        $(histogramProgressBarID).addClass('d-none');
+    } else {
+        // Genera una llamada asíncrona para clasificar los mensajes
+        (async () => {
+            for (const day in messages_by_day_month) {
+                // Inicializamos los contadores de mensajes por categoría para este día
+                category_counts_by_day["Logistica"][day] = 0;
+                category_counts_by_day["Codigo"][day] = 0;
+                category_counts_by_day["Intrascendente"][day] = 0;
 
-            // Iteramos sobre los mensajes de este día
-            for (var i = 0; i < messages_by_day_month[day].length; i++) {
-                var msg = {
-                    message: messages_by_day_month[day][i]
-                };
+                // Iteramos sobre los mensajes de este día
+                for (var i = 0; i < messages_by_day_month[day].length; i++) {
+                    var msg = {
+                        message: messages_by_day_month[day][i]
+                    };
+                    
+                    // #TODO: UNCOMMENT IN PROD
 
-                // Hacemos una llamada asíncrona a la API para clasificar el mensaje
-                // var direccion_completa = '/' + prefix + '/classify'; #TODO: UNCOMMENT IN PROD
-                var direccion_completa = '/classify';
-                await fetch(direccion_completa, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(msg)
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        // Imprime el mensaje y su clasificación en consola
-                        console.log(' ');
-                        console.log('📅', day);
-                        let cat_icon = data.category == 'Logistica' ? '🗣️' : data.category == 'Codigo' ? '🧑‍💻' : data.category == 'Intrascendente' ? '🎲' : '🤷';
-                        console.log(cat_icon, data.category);
-                        console.log(data.scores);
-                        console.log('💬', msg.message);
-                        console.log(' ');
-
-                        category_counts_by_day[data.category][day]++;
+                    // Hacemos una llamada asíncrona a la API para clasificar el mensaje
+                    // var direccion_completa = '/' + prefix + '/classify'; 
+                    var direccion_completa = '/classify';
+                    await fetch(direccion_completa, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(msg)
                     })
-                    .catch((error) => {
-                        console.error('Error:', error);
-                    }
-                    );
+                        .then(response => response.json())
+                        .then(data => {
+                            // Imprime el mensaje y su clasificación en consola
+                            console.log(' ');
+                            console.log('📅', day);
+                            let cat_icon = data.category == 'Logistica' ? '🗣️' : data.category == 'Codigo' ? '🧑‍💻' : data.category == 'Intrascendente' ? '🎲' : '🤷';
+                            console.log(cat_icon, data.category);
+                            console.log(data.scores);
+                            console.log('💬', msg.message);
+                            console.log(' ');
+
+                            // if (!category_counts_by_day[data.category][day]) {
+                            //     category_counts_by_day[data.category][day] = 0;
+                            // }
+                            category_counts_by_day[data.category][day]++;
+
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        }
+                        );
+                }
             }
-        }
-    })()
-        .then(() => {
-            // Si existe el mensaje de carga, lo elimina
-            if ($("#loading-message").length) {
-                $("#loading-message").remove();
-            }
-            // Genera el gráfico de barras con los datos obtenidos
-            generateChart(dates_day_month, category_counts_by_day);
-            // Muestra canvas
-            $(histogramCanvasID).removeClass('d-none');
-            // Oculta progress bar
-            $(histogramProgressBarID).addClass('d-none');
-        });
+        })()
+            .then(() => {
+                // Guarda en sessionStorage los datos del analisis
+                var category_counts_by_day_json = JSON.stringify(category_counts_by_day);
+                sessionStorage.setItem('category_counts_by_day', category_counts_by_day_json);
+
+                // Genera el gráfico de barras con los datos obtenidos
+                generateChart(dates_day_month, category_counts_by_day);
+                // Muestra canvas
+                $(histogramCanvasID).removeClass('d-none');
+                // Oculta progress bar
+                $(histogramProgressBarID).addClass('d-none');
+            });
+    }
 
     // Obtiene los contactos únicos
     uniqueContacts = messages_data.map(function (item) {
@@ -324,7 +391,7 @@ function analizarYGenerarGraficos() {
     // }
 
     // Deshabilita el popover
-    // disablePopover();
+    disablePopover();
     // if (uniqueContacts.length < maxUniqueContacts) {
     //     $(chatContainerID).empty(); // Clean old chat
     //     $(chatContainerID).show();

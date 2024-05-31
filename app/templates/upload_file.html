@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Chatvis - Carga tu archivo</title>
+    <title>Semantic Chatvis - Carga tu chat</title>
 
     <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
 </head>
 <body>
+
+    <script>
+        var thisPageis = "upload_file";
+    </script>
 
     <!-- Navbar -->
     {% include "navbar.html" %}
@@ -33,7 +37,7 @@
         <div class="row d-flex flex-column align-content-center">
             <div class="ReaderFile my-3" id="dragAndDropArea">
                 <h4 class="text py-3 bold text-center">
-                    ¡Analicemos tu Archivo!
+                    ¡Analicemos tu Chat!
                 </h4>
                 <div class="ArrastrarArchivo p-3" id="ArrastrarArchivo" accept=".txt" ondragover="handleDragOver(event)"
                     ondrop="handleDrop(event)" ondragenter="event.preventDefault()" ondragleave="handleDragLeave(event)">
@@ -50,7 +54,7 @@
                     </h5>
                 </div>
                 <button id="selectFileButton" class="btn btn-dark mt-4 mb-2">
-                    Selecciona un archivo
+                    Selecciona un chat
                 </button>
             </div>
         </div>

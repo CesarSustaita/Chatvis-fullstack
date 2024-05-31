@@ -8,7 +8,7 @@ var Names;
 var svg;
 var colors;
 var opacityDefault;
-var enablePopover = true;
+var enablePopover = false;
 
 //Function to create the id for each chord gradient
 /**
@@ -57,21 +57,21 @@ function mouseoverChord(d, i) {
 		.style("opacity", 1);
 
 	//Define and show the tooltip over the mouse location
-	$(this).popover({
-		placement: 'auto top',
-		container: 'body',
-		mouseOffset: 10,
-		followMouse: true,
-		trigger: 'hover',
-		html: true,
-		content: function () {
-			return `<p style='font-size: 11px; text-align: center;'>
-						<span style='font-weight:900; color: ${colors[d.source.index % colors.length]}'> ${Names[d.source.index] + (Names.length < 99 ? "" : " [" + (d.source.index + 1) + "]")} </span> envió <span style='font-weight:900'> ${d.source.value} </span> mensaje(s). <br>
-						<span style='font-weight:900; color: ${colors[d.target.index % colors.length]}'> ${Names[d.target.index] + (Names.length < 99 ? "" : " [" + (d.target.index + 1) + "]")} </span> envió <span style='font-weight:900'> ${d.target.value} </span> mensaje(s).
-					</p>`;
-		}
-	});
-	$(this).popover('show');
+	// $(this).popover({
+	// 	placement: 'auto top',
+	// 	container: 'body',
+	// 	mouseOffset: 10,
+	// 	followMouse: true,
+	// 	trigger: 'hover',
+	// 	html: true,
+	// 	content: function () {
+	// 		return `<p style='font-size: 11px; text-align: center;'>
+	// 					<span style='font-weight:900; color: ${colors[d.source.index % colors.length]}'> ${Names[d.source.index] + (Names.length < 99 ? "" : " [" + (d.source.index + 1) + "]")} </span> envió <span style='font-weight:900'> ${d.source.value} </span> mensaje(s). <br>
+	// 					<span style='font-weight:900; color: ${colors[d.target.index % colors.length]}'> ${Names[d.target.index] + (Names.length < 99 ? "" : " [" + (d.target.index + 1) + "]")} </span> envió <span style='font-weight:900'> ${d.target.value} </span> mensaje(s).
+	// 				</p>`;
+	// 	}
+	// });
+	// $(this).popover('show');
 }//mouseoverChord
 
 //Bring all chords back to default opacity

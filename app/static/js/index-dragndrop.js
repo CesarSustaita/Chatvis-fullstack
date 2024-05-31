@@ -2,6 +2,7 @@ const reader = new FileReader();
 
 reader.onload = function (e) {
     const content = e.target.result;
+    sessionStorage.clear(); // Limpia datos previos
     sessionStorage.setItem('chat_file_content', content);
     const file = document.getElementById('chat_file_input').files[0];
     sessionStorage.setItem('chat_file_name', file.name);

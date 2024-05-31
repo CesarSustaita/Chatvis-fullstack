@@ -14,13 +14,34 @@
             {% if 'logged_in' in session %}
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
 
-                {% if hideCargarArchivo is not defined %}
+                {% if hideNavBarCargarArchivo is not defined %}
                 <!-- Cargar archivo -->
                 <li class="nav-item" id="navbar-btn-cargar-archivo">
                     <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{ url_for('dashboard') }}">
-                        <i class="fa-solid fa-upload"></i> Cargar archivo
+                        <i class="fa-solid fa-upload"></i> Cargar chat
                     </a>
                 </li>
+                {% endif %}
+
+                {% if hideNavBarAnalisis is not defined %}
+                <!-- Análisis -->
+                <li class="nav-item" id="navbar-analisis">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('analisis')}}">
+                        <i class="fa-solid fa-chart-pie"></i> Análisis
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if admin == 1 %}
+                {% if hideNavBarUsuarios is not defined %}
+                <!-- Tabla de usuarios -->
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center"
+                        href="{{url_for('admin_tabla')}}">
+                        <i class="fa-solid fa-user-group"></i> Usuarios
+                    </a>
+                </li>
+                {% endif %}
                 {% endif %}
                 
                 <!-- Ayuda -->
@@ -85,12 +106,12 @@
                                 </a></strong>
                         </li>
                     </ul>
-                    <li>Presiona el botón de subir archivo o arrastra tu conversación.</li>
-                    <li>El analizador ChatVis subirá tu archivo, lo analizará, y mostrará el resultado.</li>
+                    <li>Presiona el botón para subir un chat o arrastra tu conversación.</li>
+                    <li>El analizador ChatVis subirá tu chat, lo analizará, y mostrará el resultado.</li>
                 </ol>
                 <div class="alert alert-warning text" style="text-align: center;">
                     <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO
-                        guardará</strong> ninguna conversación analizada para mantener su privacidad. Lee los <a
+                        guardará</strong> ninguna conversación analizada para proteger tu privacidad. Lee los <a
                         data-bs-toggle="modal" data-bs-target="#modalToS" style="text-decoration: underline;">Términos y
                         condiciones de uso</a> para más información.
                 </div>
@@ -260,6 +281,12 @@
 <script>
     document.getElementById('logoutLink').addEventListener('click', function () {
         sessionStorage.clear();
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        if(sessionStorage.getItem('chat_file_content') === null) {
+            document.getElementById('navbar-analisis').classList.add('d-none');
+        }
     });
 </script>
 
