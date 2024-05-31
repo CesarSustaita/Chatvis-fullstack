@@ -67,9 +67,11 @@ window.onload = function() {
     analizarYGenerarGraficos();
 
     // Remove loading spinner
-    $("#spinner-full-page").addClass('hide-spinner');
     setTimeout(() => {
-        $("#spinner-full-page").remove();
+        $("#spinner-full-page").addClass('hide-spinner');
+        setTimeout(() => {
+            $("#spinner-full-page").remove();
+        }, 100);
     }, 1000);
 
     // Event listener for delete chat button
@@ -78,6 +80,18 @@ window.onload = function() {
         clearChatSessionStorage();
         window.location.href = basePathname + '/chat_deleted';
     });
+
+    // Event listeners for hover on chord chart
+    var chordChartContainer = document.getElementById('chord-chart-container');
+    chordChartContainer.addEventListener('mouseenter', function() {
+        var chordCardHeader = document.getElementById('chord-card-header');
+        chordCardHeader.classList.add('card-title-fade-color');
+    });
+    chordChartContainer.addEventListener('mouseleave', function() {
+        var chordCardHeader = document.getElementById('chord-card-header');
+        chordCardHeader.classList.remove('card-title-fade-color');
+    });
+
 
     // Event listener for collapse chord chart button
     var collapseChordChartButton = document.getElementById('buttonCloseChord');

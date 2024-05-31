@@ -43,6 +43,10 @@ def inicio():
 def index():
     return redirect(url_for("inicio"))
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
+
 
 #################################
 ######      Admin routes

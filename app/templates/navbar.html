@@ -1,16 +1,15 @@
 {% block navbar %}
-<!-- TODO: Change Vpadding to 45px -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
     <div class="container align-items-center py-1 py-md-0">
         <a class="navbar-brand" href="{{url_for('dashboard') if 'logged_in' in session else url_for('inicio') }}">
             <i class="fa-solid fa-comments"></i> Semantic ChatVis
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            data-bs-target="#collapsibleNavMenu" aria-controls="collapsibleNavMenu" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <div class="collapse navbar-collapse" id="collapsibleNavMenu">
             {% if 'logged_in' in session %}
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
 
@@ -54,7 +53,7 @@
 
                 <!-- Username -->
                 <li class="nav-item">
-                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="">
+                    <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center">
                         <i class="fa-solid fa-user"></i> {{session['name']|default('Usuario')}}
                     </a>
                 </li>
@@ -100,7 +99,7 @@
                     <li>Exporta tu conversación de WhatsApp en formato “.txt”.</li>
                     <ul style="list-style-type: '\1F914   ';"> 
                         <li>
-                            <strong><a href="https://faq.whatsapp.com/1180414079177245/" target="_blank">
+                            <strong><a href="https://faq.whatsapp.com/1180414079177245/">
                                     ¿Cómo exportar un chat de WhatsApp? <i
                                         class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a></strong>
@@ -109,20 +108,27 @@
                     <li>Presiona el botón para subir un chat o arrastra tu conversación.</li>
                     <li>El analizador ChatVis subirá tu chat, lo analizará, y mostrará el resultado.</li>
                 </ol>
-                <div class="alert alert-warning text" style="text-align: center;">
-                    <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong style="text-decoration: underline;">NO
-                        guardará</strong> ninguna conversación analizada para proteger tu privacidad. Lee los <a
-                        data-bs-toggle="modal" data-bs-target="#modalToS" style="text-decoration: underline;">Términos y
-                        condiciones de uso</a> para más información.
+                <div class="alert alert-warning text-center">
+                    <p>
+                        <strong>¡IMPORTANTE! </strong>Semantic ChatVis <strong>NO guardará</strong> 
+                        ningún archivo de chat ni su análisis para proteger tu privacidad.
+                    </p>
+                    <p class="mb-0">
+                        Lee los 
+                        <a data-bs-toggle="modal" data-bs-target="#modalToS" class="keep-color">
+                            Términos y condiciones de uso
+                        </a> 
+                        para más información.
+                    </p>
                 </div>
+            </div>
+            <div class="modal-footer py-4">
                 <!-- Footer About Project -->
-                <div class="py-3" style="text-align: center;">
-                    <div class="icon-info">
-                        <a class="text" data-bs-toggle="modal" data-bs-target="#modalAbout">
-                            Acerca del proyecto
-                            <i class="fa-solid fa-circle-info"></i>
-                        </a>
-                    </div>
+                <div class="icon-info">
+                    <a class="keep-color" data-bs-toggle="modal" data-bs-target="#modalAbout">
+                        Acerca del proyecto
+                        <i class="fa-solid fa-circle-info"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -131,7 +137,7 @@
 
 <!-- Modal ToS -->
 <div class="modal fade" id="modalToS" tabindex="-1" aria-labelledby="modalToSLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-dialog modal-lg modal-fullscreen-sm-down modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header text">
                 <h2 class="modal-title" id="modalToSLabel">Términos y condiciones de uso</h2>
@@ -245,33 +251,34 @@
 <div class="modal fade" id="modalAbout" tabindex="-1" aria-labelledby="modalAboutLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header text">
+            <div class="modal-header">
                 <h1 class="modal-title fs-3" id="modalAboutLabel">Acerca del Proyecto</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text">
-                <div class="text">
-                    Bibliotecas usadas:<br>
-                    <ul class="text">
-                        <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
-                        <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
-                        <li><a href="https://github.com/Pustur/whatsapp-chat-parser" target="_blank">WhatsApp Chat
-                                Parser</a></li>
-                        <li><a href="https://d3js.org/" target="_blank">D3.js</a></li>
-                        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
-                        <li><a href="https://fontawesome.com/" target="_blank">FontAwesome</a></li>
-                        <li><a href="https://spacy.io/" target="_blank">spaCY</a></li>
-                        <li><a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">Flask</a></li>
-                        <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
-                        <li><a href="https://nodejs.org/" target="_blank">Node.js</a></li>
-                        <li><a href="https://cdnjs.com/libraries/toastify-js/1.6.1" target="_blank">Toastify</a></li>
+            <div class="modal-body">
+                <div class="">
+                    <p class="mb-3">
+                        Este proyecto funciona gracias a las siguientes bibliotecas:
+                    </p>
+                    <ul style="list-style-type: '→  ' ">
+                        <li><a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a></li>
+                        <li><a href="https://spacy.io/">spaCy</a></li>
+                        <li><a href="https://www.mongodb.com/">MongoDB</a></li>
+                        <li><a href="https://github.com/Pustur/whatsapp-chat-parser">WhatsApp Chat Parser</a></li>
+                        <li><a href="https://d3js.org/">D3.js</a></li>
+                        <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                        <li><a href="https://jquery.com/" >jQuery</a></li>
+                        <li><a href="https://fontawesome.com/">FontAwesome</a></li>
+                        <li><a href="https://nodejs.org/">Node.js</a></li>
+                        <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                        <li><a href="https://apvarun.github.io/toastify-js/">Toastify</a></li>
                     </ul>
                 </div>
                 <br>
                 <div class="text" style="text-align: center;">
                     Basado en el trabajo de<br>
-                    <a href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2" target="_blank">Nadieh Bremer</a> & <a
-                        href="http://www.visualcinnamon.com/" target="_blank">VisualCinnamon.com</a> <br>
+                    <a href="http://bl.ocks.org/nbremer/864b11eb83aac3a1f6a2">Nadieh Bremer</a> & <a
+                        href="http://www.visualcinnamon.com/">VisualCinnamon.com</a> <br>
                 </div>
             </div>
         </div>
@@ -279,14 +286,15 @@
 </div>
 
 <script>
-    document.getElementById('logoutLink').addEventListener('click', function () {
-        sessionStorage.clear();
-    });
-
+    
     document.addEventListener('DOMContentLoaded', function () {
         if(sessionStorage.getItem('chat_file_content') === null) {
             document.getElementById('navbar-analisis').classList.add('d-none');
         }
+
+        document.getElementById('logoutLink').addEventListener('click', function () {
+            sessionStorage.clear();
+        });
     });
 </script>
 

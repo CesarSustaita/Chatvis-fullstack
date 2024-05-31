@@ -38,6 +38,7 @@ body {
     visibility: visible;
     justify-content: center;
     align-items: center;
+    cursor: progress;
     z-index: 1000;
     transition: visibility 0ms ease-out 500ms, 
                 backdrop-filter 500ms ease-out,
@@ -101,14 +102,16 @@ a.btn:not(.chevron):hover {
 }
 
 .btn-dark:hover,
-.btn-outline-dark:hover {
+.btn-outline-dark:hover,
+.btn-outline-secondary:hover {
     color: white !important;
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary-dark) !important;
 }
 
 .btn-dark:active,
-.btn-outline-dark:active {
+.btn-outline-dark:active,
+.btn-outline-secondary:active {
     background-color: var(--color-primary-dark) !important;
 }
 
@@ -233,12 +236,12 @@ nav a:active {
 }
 
 .modal a {
-    color: var(--color-text-grey);
+    color: var(--color-primary);
     text-decoration: none;
 }
 
 .modal a:hover {
-    color: var(--color-primary) !important;
+    color: var(--color-primary-dark) !important;
     cursor: pointer;
 }
 

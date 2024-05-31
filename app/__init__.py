@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 
 # TODO: Cambiar a True en producción
-env_is_prod = True
+env_is_prod = False
 
 load_dotenv('./.keys')
 
@@ -27,8 +27,10 @@ app.env_is_prod = env_is_prod
 
 if env_is_prod:
     app.recaptcha_site_key = os.getenv("RECAPTCHA_SITE_KEY")
+    app.recaptcha_secret_key = os.getenv("RECAPTCHA_SECRET_KEY")
 else:
     app.recaptcha_site_key = os.getenv("RECAPTCHA_SITE_KEY_DEV")
+    app.recaptcha_secret_key = os.getenv("RECAPTCHA_SECRET_KEY_DEV")
 
 # TODO: Set the secret key to a secure value in .keys
 app.config['SECRET_KEY'] = os.getenv("APP_SECRET_KEY")

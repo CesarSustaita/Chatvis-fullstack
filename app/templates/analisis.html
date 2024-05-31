@@ -53,16 +53,19 @@
             <div class="col-12 d-flex flex-row align-items-center gap-3 justify-content-between">
                 <div class="d-flex flex-row align-items-baseline gap-3 gap-md-4 gap-lg-5">
                     <h3 class="mb-1" id="chat-title">Análisis de la conversación</h3>
+                    <!-- Contador de integrantes del chat -->
                     <p class="m-0 text-center">
                         <i class="fa-solid fa-users"></i>
                         <span id="chat-members-count">...</span>
                     </p>
+                    <!-- Contador de mensajes del chat -->
                     <p class="m-0 text-center">
                         <i class="fa-regular fa-comments"></i> 
                         <span id="chat-messages-count">...</span>
                     </p>
                 </div>
-                <button id="delete-chat" class="btn btn-outline-dark btn-md my-2"
+                <!-- Borrar chat button -->
+                <button id="delete-chat" class="btn btn-outline-secondary btn-md my-2"
                 data-bs-toggle="modal"
                 data-bs-target="#modalDeleteChat">
                     <i class="fas fa-trash-alt"></i>
@@ -73,12 +76,12 @@
         <!-- Cartas con gráficas -->
         <div class="row align-content-center">
 
-            <!-- Chord chart -->
+            <!-- Chord diagran -->
             <div class="col-12 col-md-6 my-3">
                 <div id="chord-card" class="card h-50vhi">
-                    <div class="card-header">
+                    <div id="chord-card-header" class="card-header">
                         <div class="d-flex flex-row justify-content-between align-items-center">
-                            <strong class="card-title m-0">Gráfica de relaciones</strong>
+                            <strong class="card-title m-0">Diagrama de cuerdas</strong>
                             <button class="btn btn-sm btn-close d-block d-md-none" id="buttonCloseChord"
                             data-bs-toggle="collapse"
                             href="#chord-chart-container"
@@ -88,7 +91,7 @@
                     </div>
 
                     <div id="chord-chart-container" class="card-body p-0 collapse show">
-                        <!-- Aquí se insertará el svg de la gráfica de relaciones -->
+                        <!-- Aquí se insertará el svg del diagrama de relaciones -->
                     </div>
 
                 </div>
