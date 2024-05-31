@@ -22,30 +22,4 @@
     </div>
 </div>
 
-<script>
-
-    var analisisURL = "/admin/dashboard";
-
-    function redirectToAnalizador() {
-        window.location.href = analisisURL;
-    }
-
-    function redirectToUsuarios() {
-        window.location.href = "/admin/tabla_usuarios";
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        if (thisPageis == "admin_tabla_usuarios") {
-            document.getElementById("btnSwitchUsuarios").checked = true;
-            document.getElementById("btnSwitchAnalisis").checked = false;
-        } else {
-            document.getElementById("btnSwitchAnalisis").checked = true;
-            document.getElementById("btnSwitchUsuarios").checked = false;
-        }
-
-        // Check if there is a chat saved
-        if (sessionStorage.getItem('chat_file_content')) {
-            analisisURL = '/analisis';
-        }
-    });
-</script>
+<script src="{{ url_for('static', filename='js/admin_tabbar.js') }}"></script>

@@ -19,3 +19,4 @@ node_modules
 .keys
 chatvis-env/*
 .ssl/*
+chatvis2024/static

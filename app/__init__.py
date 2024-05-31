@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 
 # TODO: Cambiar a True en producción
-env_is_prod = False
+env_is_prod = True
 
 load_dotenv('./.keys')
 
@@ -23,6 +23,7 @@ else:
     app = Flask(__name__, static_folder="static", static_url_path="/static")
 
 app.prefix = prefix
+app.env_is_prod = env_is_prod
 
 if env_is_prod:
     app.recaptcha_site_key = os.getenv("RECAPTCHA_SITE_KEY")

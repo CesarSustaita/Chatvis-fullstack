@@ -1,5 +1,7 @@
 const reader = new FileReader();
 
+var basePathname = window.location.pathname.split('/').slice(0, -1).join('/');
+
 reader.onload = function (e) {
     const content = e.target.result;
     sessionStorage.clear(); // Limpia datos previos
@@ -8,7 +10,7 @@ reader.onload = function (e) {
     sessionStorage.setItem('chat_file_name', file.name);
     sessionStorage.setItem('first_load_after_upload', 'true');
 
-    window.location.href = '/analisis'; // Redirige a la página de análisis
+    window.location.href = basePathname + '/analisis'; // Redirige a la página de análisis
 };
 
 

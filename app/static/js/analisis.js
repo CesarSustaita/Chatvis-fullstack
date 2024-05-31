@@ -1,5 +1,6 @@
 var chat_content;
 var analisisCountCallPending = false;
+var basePathname = window.location.pathname.split('/').slice(0, -1).join('/');
 
 var chordParentID = "#chord-chart-container";
 var chatContainerID = "#chat";
@@ -11,10 +12,19 @@ var chatMembersCountID = "#chat-members-count";
 var chatMessagesCountID = "#chat-messages-count";
 var maxUniqueContacts = 99;
 
+function clearChatSessionStorage() {
+    sessionStorage.removeItem('chat_file_content');
+    sessionStorage.removeItem('chat_file_name');
+    sessionStorage.removeItem('first_load_after_upload');
+    sessionStorage.removeItem('category_counts_by_day');
+    sessionStorage.removeItem('messages_data');
+}
+
 window.onload = function() {
     // Check if chat content is null
     if (sessionStorage.getItem('chat_file_content') === null) {
-        window.location.href = '/no_file';
+        clearChatSessionStorage();
+        window.location.href = basePathname + '/no_file';
     }
 
     // Get chat content from session storage
@@ -65,12 +75,8 @@ window.onload = function() {
     // Event listener for delete chat button
     var deleteChatButton = document.getElementById('button-confirm-delete-chat');
     deleteChatButton.addEventListener('click', function() {
-        sessionStorage.removeItem('chat_file_content');
-        sessionStorage.removeItem('chat_file_name');
-        sessionStorage.removeItem('first_load_after_upload');
-        sessionStorage.removeItem('category_counts_by_day');
-        sessionStorage.removeItem('messages_data');
-        window.location.href = '/chat_deleted';
+        clearChatSessionStorage();
+        window.location.href = basePathname + '/chat_deleted';
     });
 
     // Event listener for collapse chord chart button
@@ -206,14 +212,15 @@ function parseMessages() {
 
         if (messages_data.length < 1) {
             console.log('Error: No se encontraron mensajes en el archivo.');
-            window.location.href = '/no_messages';
+            clearChatSessionStorage();
+            window.location.href = basePathname + '/no_messages';
             return;
         }
 
         // POST Call para registrar el nuevo análisis
         // TODO: Cambiar prefijo a "chatvis2024" para producción
         if (analisisCountCallPending) {
-            fetch('/new_analisis', {
+            fetch(basePathname + '/new_analisis', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -320,12 +327,9 @@ function analizarYGenerarGraficos() {
                         message: messages_by_day_month[day][i]
                     };
                     
-                    // #TODO: UNCOMMENT IN PROD
 
                     // Hacemos una llamada asíncrona a la API para clasificar el mensaje
-                    // var direccion_completa = '/' + prefix + '/classify'; 
-                    var direccion_completa = '/classify';
-                    await fetch(direccion_completa, {
+                    await fetch(basePathname + '/classify', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
