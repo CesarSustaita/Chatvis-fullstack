@@ -214,17 +214,16 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label id="label-ciudad" for="ciudad" class="form-label">Ciudad</label>
+                    <label id="label-ciudad" for="ciudad" class="form-label">País</label>
                     <input type="text" class="form-control" name="ciudad" id="ciudad" autocomplete="address-level2"
                         value="{{datos['ciudad']|default('')}}" required />
                     <div class="invalid-feedback">
-                        Introduce tu ciudad.
+                        Introduce tu País.
                     </div>
                 </div>
 
                 <button type="submit" class="btn btn-outline-dark mt-3 g-recaptcha"
-                    data-sitekey="6Ld58aEpAAAAAN4FEZGbbinFl6MhutiyQwWsFF1f"
-                    data-callback='onLoginFormSubmit'
+                    data-sitekey="6Ld58aEpAAAAAN4FEZGbbinFl6MhutiyQwWsFF1f" data-callback='onLoginFormSubmit'
                     data-action='submit'>
                     Continuar
                 </button>
