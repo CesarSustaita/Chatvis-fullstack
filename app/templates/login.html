@@ -29,7 +29,7 @@
             <!-- Regresar -->
             <div class="col-2 col-md-2 col-lg-3 d-flex flex-row align-items-center justify-content-start gap-2 ps-md-0">
                 <a href="{{ url_for('inicio') }}" id="regresar-button" role="button" aria-label="Regresar a la página de inicio"
-                    class="btn btn-sm w-auto chevron">
+                    class="btn btn-sm w-auto chevron" tabindex="5">
                     <i class="fa-solid fa-chevron-left"></i> <span class="d-none d-lg-inline-block">Regresar</span>
                 </a>
             </div>
@@ -50,13 +50,13 @@
                 <form action="{{url_for("login")}}" method="post" id="loginForm"
                 class="d-flex flex-column">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required autocomplete="email"><br>
+                    <input type="email" id="email" name="email" class="form-control" tabindex="1" required autocomplete="email"><br>
                     <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" id="password" name="password" class="form-control" required
+                    <input type="password" id="password" name="password" class="form-control" tabindex="2" required
                         autocomplete="current-password">
 
                     <button type="submit" id="button-login"
-                    class="btn btn-dark mt-5 mb-2 align-self-center w-100 g-recaptcha" 
+                    class="btn btn-dark mt-5 mb-2 align-self-center w-100 g-recaptcha" tabindex="3"
                     data-sitekey="{{ site_key }}" data-callback='onLoginFormSubmit' data-action='submit'>
                         Iniciar sesión
                     </button>
@@ -70,7 +70,7 @@
                 <!-- Link hacia crear cuenta -->
                 <div class="cuenta my-5 align-self-center ">
                     ¿Aún no tienes cuenta?
-                    <a href="{{url_for('register_mail')}}" class="link-primary" style="font-size: inherit;">
+                    <a href="{{url_for('register_mail')}}" class="link-primary" tabindex="4" style="font-size: inherit;">
                         Crea una cuenta.
                     </a>
                     
@@ -79,7 +79,8 @@
         </div>
     </div>
 
-
+    <!-- Dark mode script -->
+    <script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
 
     <script>
         // ReCAPTCHA callback function to submit the form

@@ -127,41 +127,38 @@ async function makeChordDiagram(matrix, newNames, newColors, bindEvents, parentI
  * @returns {void}
  */
 function makeChordDiagramSync(matrix, newNames, newColors, bindEvents, parentID) {
-	// var size = newNames.length<99?500:window.innerHeight;
 	var parentWidth = d3.select(parentID).node().getBoundingClientRect().width;
 	var parentHeight = d3.select(parentID).node().getBoundingClientRect().height;
 
-	var size = Math.min(parentWidth, parentHeight);
+	// var size = Math.min(parentWidth, parentHeight);
 
 	var width = parentWidth,
 		height = parentHeight,
-		innerRadius = Math.min(width, height) * .3,
+		innerRadius = Math.min(width, height) * .4,
 		outerRadius = innerRadius * 1.1;
 
 	Names = newNames;
 	colors = newColors;
-	opacityDefault = 0.8;
+	opacityDefault = 0.7;
 
 	////////////////////////////////////////////////////////////
 	/////////// Create scale and layout functions //////////////
 	////////////////////////////////////////////////////////////
 
-	var colors = d3.scale.ordinal()
+	var colors = d3.scaleOrdinal()
 		.domain(d3.range(Names.length))
 		.range(colors);
 
 	//A "custom" d3 chord function that automatically sorts the order of the chords in such a manner to reduce overlap	
 	var chord = customChordLayout()
-		//.padding(.15)
 		.sortChords(d3.descending) //which chord should be shown on top when chords cross. Now the biggest chord is at the bottom
 		.matrix(matrix);
 
-	var arc = d3.svg.arc()
-		.innerRadius(innerRadius * 1.01)
+	var arc = d3.arc()
+		.innerRadius(innerRadius) // Changed from innerRadius * 1.01
 		.outerRadius(outerRadius);
 
-	var path = d3.svg.chord()
-		.radius(innerRadius);
+	var path = d3.ribbon(innerRadius);
 
 	////////////////////////////////////////////////////////////
 	////////////////////// Create SVG //////////////////////////
@@ -210,8 +207,22 @@ function makeChordDiagramSync(matrix, newNames, newColors, bindEvents, parentID)
 		.on("mouseout", (d, i) => { fade(opacityDefault)(d, i); });
 
 	outerArcs.append("path")
-		.style("fill", function (d) { return colors(d.index); })
-		.attr("d", arc)
+		.style("fill", function (d) { 
+			if (isNaN(d.index)) {
+				console.warn("NaN index in d: ", d);
+				return "#ccc";
+			}
+			return colors(d.index);
+		})
+		.attr("d", function(d) {
+			// Check that arc data has only numbers and not NaN
+			if (typeof d.startAngle === 'number' && !isNaN(d.startAngle) && typeof d.endAngle === 'number' && !isNaN(d.endAngle) ) {
+				return arc(d);
+			} else {
+				console.warn("Invalid arc data: ", d);
+				return "";
+			}
+		})
 		.each(function (d, i) {
 			//Search pattern for everything between the start and the first capital L
 			var firstArcSection = /(^.+?)L/;
@@ -259,39 +270,21 @@ function makeChordDiagramSync(matrix, newNames, newColors, bindEvents, parentID)
 	//Append the label names on the outside
 	outerArcs.append("text")
 		.each(function (d) { d.angle = (d.startAngle + d.endAngle) / 2; })
-		/*.attr("dy", ".15em")*/
-
 		.attr("class", "chordLabel")
+		.attr("style", "font-family: sans-serif;")
 		.attr("text-anchor", function (d) { return d.angle > Math.PI ? "end" : null; })
 		.attr("transform", function (d) {
-			return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
-				+ "translate(" + (outerRadius + 10) + ")"
-				+ (d.angle > Math.PI ? "rotate(180)" : "");
+			if (typeof d.angle === 'number' && !isNaN(d.angle)) {
+				return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+					+ "translate(" + (outerRadius + 10) + ")"
+					+ (d.angle > Math.PI ? "rotate(180)" : "");
+			} else {
+				console.warn("Invalid angle data: ", d);
+				return "";
+			}
 		})
 		.text(function (d, i) { return Names[i]; });
-	/*outerArcs.append("text")
-		.attr("class", "titles")
-		.attr("dy", function(d,i) { return (d.endAngle > 90*Math.PI/180 & d.startAngle < 270*Math.PI/180 ? 25 : -16); })
-		.append("textPath")
-		.attr("startOffset","50%")
-		.attr("font-size", (newNames.length<99?16:12)+"px")
-		.style("text-anchor","middle")
-		.attr("xlink:href",function(d,i){return "#arc"+i;})
-		.text(function(d,i){ return Names.length<99?Names[i]:i+1; });
-		*/
-	/*group.selectAll(".group-tick-label")
-	.data(function(d) { return groupTicks(d, 25); })
-	.enter()
-	.filter(function(d) { return d.value % 25 === 0; })
-	.append("g")
-	  .attr("transform", function(d) { return "rotate(" + (d.angle * 180 / Math.PI - 90) + ") translate(" + 200 + ",0)"; })
-	.append("text")
-		.attr("x", 8)
-		.attr("dy", ".35em")
-		.attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180) translate(-16)" : null; })
-		.style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
-		.text(function(d) { return d.value })
-		.style("font-size", 9)*/
+
 	////////////////////////////////////////////////////////////
 	////////////////// Draw inner chords ///////////////////////
 	////////////////////////////////////////////////////////////
@@ -302,11 +295,18 @@ function makeChordDiagramSync(matrix, newNames, newColors, bindEvents, parentID)
 		.attr("class", "chord")
 		.style("fill", function (d) { return "url(#" + getGradID(d) + ")"; })
 		.style("opacity", opacityDefault)
-		.attr("d", path)
+		.attr("d", function(d) {
+			if (typeof d.innerRadius === 'number' && !isNaN(d.innerRadius)) {
+				return path(d);
+			} else {
+				console.warn("Invalid innerRadius data: ", d);
+				return "";
+			}
+		})
 		.on("mouseover", mouseoverChord)
 		.on("mouseout", mouseoutChord);
-	if (bindEvents === true)
-		enablePopover = true;
+		
+	enablePopover = bindEvents;
 }
 
 /**

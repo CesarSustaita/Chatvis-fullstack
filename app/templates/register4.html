@@ -29,7 +29,7 @@
             <!-- Regresar -->
             <div class="col-2 col-md-2 col-lg-3 d-flex flex-row align-items-center justify-content-start gap-2 ps-md-0">
                 <a href="{{ url_for('register_state') }}" id="regresar-button" role="button"
-                    aria-label="Regresar al paso anterior" class="btn btn-sm w-auto chevron">
+                    aria-label="Regresar al paso anterior" class="btn btn-sm w-auto chevron" tabindex="5">
                     <i class="fa-solid fa-chevron-left"></i> <span class="d-none d-lg-inline-block">Regresar</span>
                 </a>
             </div>
@@ -65,14 +65,13 @@
                     <div class="mb-3">
                         <label for="universidad" class="form-label">Universidad</label>
                         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="universidad"
-                            id="universidad" autocomplete="off" value="{{datos['universidad']|default('')}}" required />
+                            id="universidad" autocomplete="off" tabindex="1" value="{{datos['universidad']|default('')}}" />
                         <div class="invalid-feedback">
                             Introduce una universidad válida.
                         </div>
                     </div>
                     <div class="mb-3 py-4 form-check">
-                        <input class="form-check-input" type="checkbox" value="accepted" name="terminos" id="terminos-checkbox" />
-                        <!-- TODO: add link to ToS -->
+                        <input class="form-check-input" type="checkbox" value="accepted" name="terminos" id="terminos-checkbox" tabindex="2" />
                         <label class="form-check-label" for="terminos-checkbox">
                             He leído y estoy de acuerdo con los <a href="" class="link-primary" data-bs-toggle="modal"
                                 data-bs-target="#modalToS" style="font-size: inherit;">Términos y condiciones de uso</a>.
@@ -84,7 +83,7 @@
                     </div>
                 
                     <button type="submit" id="button-register-uni" 
-                        class="btn btn-dark mt-3 align-self-center w-100 g-recaptcha"
+                        class="btn btn-dark mt-3 align-self-center w-100 g-recaptcha" tabindex="3"
                         data-sitekey="{{ site_key }}" data-callback='onLoginFormSubmit' data-action='submit'>
                         Crear mi cuenta
                     </button>
@@ -93,7 +92,7 @@
                 <!-- Link hacia iniciar sesión -->
                 <div class="cuenta my-5 align-self-center ">
                     ¿Ya tienes una cuenta?
-                    <a href="{{url_for('login')}}" class="link-primary" style="font-size: inherit;">
+                    <a href="{{url_for('login')}}" class="link-primary" tabindex="4" style="font-size: inherit;">
                         Inicia sesión.
                     </a>
                 </div>
@@ -175,6 +174,9 @@
         </div>
         </div>
     </div>
+
+    <!-- Dark mode script -->
+    <script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
 
     <script>
         // ReCAPTCHA callback function to submit the form

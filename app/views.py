@@ -414,17 +414,17 @@ def register_u():
         complete, missing_field = helpers.register_data_is_complete(datos_de_registro)
         if not complete:
             if missing_field == "email" or missing_field == "password":
-                warning = "Completa los campos de email y contraseña."
+                warning = "Completa estos datos"
                 return render_template(
                     "register1.html", warning=warning, datos=datos_de_registro, site_key=app.recaptcha_site_key
                 )
             if missing_field == "nombre" or missing_field == "apellido_paterno":
-                warning = "Completa los campos de nombre y apellido paterno."
+                warning = "Completa estos datos"
                 return render_template(
                     "register2.html", warning=warning, datos=datos_de_registro, site_key=app.recaptcha_site_key
                 )
-            if missing_field == "estado" or missing_field == "ciudad":
-                warning = "Completa los campos de estado y ciudad."
+            if missing_field == "pais" or missing_field == "estado" or missing_field == "ciudad":
+                warning = "Completa estos datos"
                 return render_template(
                     "register3.html", warning=warning, datos=datos_de_registro, site_key=app.recaptcha_site_key
                 )
@@ -456,10 +456,44 @@ def register_u():
 @app.route(f"/{prefix}/classify", methods=["POST"])
 def classify_message():
     try:
-        scores = app.nlp(request.json["message"]).cats
-        category = max(scores, key=scores.get)
-        score_values = {k: round(v, 2) for k, v in scores.items()}
-        return jsonify({"category": category, "scores": score_values})
+        class_scores = app.nlp(request.json["message"]).cats
+        category_str = max(class_scores, key=class_scores.get)
+        
+        if (category_str.lower() == "logistica"):
+            category = 0
+        elif (category_str.lower() == "codigo"):
+            category = 1
+        elif (category_str.lower() == "intrascendente"):
+            category = 2
+        else:
+            category = 3
+            
+        score_values = {k: round(v, 2) for k, v in class_scores.items()}
+        return jsonify({"class": category, "scores": score_values})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+@app.route(f"/{prefix}/classify_batch", methods=["POST"])
+def classify_message_batch():
+    try:
+        messages = request.json["messages"]
+        results = []
+        for message in messages:
+            class_results = app.nlp(message).cats
+            most_likely_class_name = max(class_results, key=class_results.get)
+            
+            if (most_likely_class_name.lower() == "logistica"):
+                classification = 0
+            elif (most_likely_class_name.lower() == "codigo"):
+                classification = 1
+            elif (most_likely_class_name.lower() == "intrascendente"):
+                classification = 2
+            else:
+                classification = 3
+                
+            class_scores = {label: round(v, 2) for label, v in class_results.items()}
+            results.append({"class": classification, "scores": class_scores})
+        return jsonify(results)
     except Exception as e:
         return jsonify({"error": str(e)})
 
@@ -521,6 +555,6 @@ def eliminar_usuario(email):
 #################################
 ######      Other functions
 
-def get_prefixed_static(filename):
-    prefix = "chatvis2024"
-    return f"/{prefix}/static/{filename}"
+# def get_prefixed_static(filename):
+#     prefix = "chatvis2024"
+#     return f"/{prefix}/static/{filename}"

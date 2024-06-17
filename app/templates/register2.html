@@ -28,7 +28,7 @@
             <!-- Regresar -->
             <div class="col-2 col-md-2 col-lg-3 d-flex flex-row align-items-center justify-content-start gap-2 ps-md-0">
                 <a href="{{ url_for('register_mail') }}" id="regresar-button" role="button" aria-label="Regresar al paso anterior"
-                    class="btn btn-sm w-auto chevron">
+                    class="btn btn-sm w-auto chevron" tabindex="6">
                     <i class="fa-solid fa-chevron-left"></i> <span class="d-none d-lg-inline-block">Regresar</span>
                 </a>
             </div>
@@ -40,7 +40,7 @@
             <!-- Siguiente -->
             <div class="col-2 col-lg-3 d-flex flex-row align-items-center justify-content-end gap-2 pe-md-0">
                 <a href="{{ url_for('register_state') }}" id="siguiente-button" role="button" aria-label="Siguiente paso"
-                    class="btn btn-sm w-auto chevron">
+                    class="btn btn-sm w-auto chevron" tabindex="7">
                     <span class="d-none d-lg-inline-block">Siguiente</span> <i class="fa-solid fa-chevron-right"></i>
                 </a>
             </div>
@@ -66,14 +66,14 @@
                     novalidate>
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="nombre"
-                        id="nombre" autocomplete="given-name" value="{{datos['nombre']|default('')}}" required />
+                        id="nombre" autocomplete="given-name" tabindex="1" value="{{datos['nombre']|default('')}}" required />
                     <div class="invalid-feedback">
                         Introduce tu nombre.
                     </div>
                     <br>
                     <label for="apellido_paterno" class="form-label">Apellido Paterno</label>
                     <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
-                        name="apellido_paterno" id="apellido_paterno" autocomplete="family-name"
+                        name="apellido_paterno" id="apellido_paterno" autocomplete="family-name" tabindex="2"
                         value="{{datos['apellido_paterno']|default('')}}" required />
                     <div class="invalid-feedback">
                         Introduce tu apellido paterno.
@@ -81,14 +81,11 @@
                     <br>
                     <label for="apellido_materno" class="form-label">Apellido Materno</label>
                     <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
-                        name="apellido_materno" id="apellido_materno" autocomplete="off"
+                        name="apellido_materno" id="apellido_materno" autocomplete="off" tabindex="3"
                         value="{{datos['apellido_materno']|default('')}}"/>
-                    <div class="invalid-feedback">
-                        Introduce tu apellido materno.
-                    </div>
                     <br>
                     <button type="submit" id="button-register-name" 
-                        class="btn btn-dark mt-3 align-self-center w-100 g-recaptcha"
+                        class="btn btn-dark mt-3 align-self-center w-100 g-recaptcha" tabindex="4"
                         data-sitekey="{{ site_key }}" data-callback='onLoginFormSubmit' data-action='submit'>
                             Continuar
                     </button>
@@ -97,7 +94,7 @@
                 <!-- Link hacia iniciar sesión -->
                 <div class="cuenta my-5 align-self-center ">
                     ¿Ya tienes una cuenta? 
-                    <a href="{{url_for('login')}}" class="link-primary" style="font-size: inherit;">
+                    <a href="{{url_for('login')}}" class="link-primary" tabindex="5" style="font-size: inherit;">
                         Inicia sesión.
                     </a>
                 </div>
@@ -106,6 +103,9 @@
 
     </div>
 
+    <!-- Dark mode script -->
+    <script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
+    
     <script>
         // ReCAPTCHA callback function to submit the form
         function onLoginFormSubmit(token) {

@@ -30,7 +30,7 @@
             <div class="col-2 col-md-2 col-lg-3 d-flex flex-row align-items-center justify-content-start gap-2 ps-md-0">
                 <a href="{{ url_for('inicio') }}" id="regresar-button" 
                 role="button" aria-label="Regresar a la página de inicio"
-                class="btn btn-sm w-auto chevron">
+                class="btn btn-sm w-auto chevron" tabindex="6">
                     <i class="fa-solid fa-chevron-left"></i> <span class="d-none d-lg-inline-block">Regresar</span>
                 </a>
             </div>
@@ -42,7 +42,7 @@
             <div class="col-2 col-lg-3 d-flex flex-row align-items-center justify-content-end gap-2 pe-md-0">
                 <a href="{{ url_for('register_account') }}" id="siguiente-button" 
                 role="button" aria-label="Siguiente paso"
-                class="btn btn-sm w-auto chevron">
+                class="btn btn-sm w-auto chevron" tabindex="7">
                     <span class="d-none d-lg-inline-block">Siguiente</span> <i class="fa-solid fa-chevron-right"></i>
                 </a>
             </div>
@@ -67,19 +67,19 @@
                 class="needs-validation d-flex flex-column"
                     novalidate>
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                    <input type="email" class="form-control" id="email" name="email" autocomplete="email" tabindex="1"
                         value="{{datos['email']|default('')}}" required />
                     <div id="email-invalid-feedback" class="invalid-feedback">
                         Introduce un correo electrónico válido.</div>
                     <br>
                     <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="password" name="password" autocomplete="new-password" {% if
-                        datos['password'] is defined %} placeholder="Guardada. Escribe aquí para cambiarla." {% endif %} required />
+                    <input type="password" class="form-control" id="password" name="password" autocomplete="new-password" tabindex="2"
+                    {% if datos['password'] is defined %} placeholder="Guardada. Escribe aquí para cambiarla." {% endif %} required />
                     <div id="password-invalid-feedback" class="invalid-feedback">
                         Introduce una contraseña válida.</div>
                     <br>
                     <label for="password-verify" class="form-label">Confirma tu contraseña</label>
-                    <input type="password" class="form-control" id="password-verify" name="password_verify" autocomplete="new-password"
+                    <input type="password" class="form-control" id="password-verify" name="password_verify" autocomplete="new-password" tabindex="3"
                         {% if datos['password'] is defined %} placeholder="Guardada. Escribe aquí para cambiarla." {% endif %}
                         required />
                     <div id="password-verify-invalid-feedback" class="invalid-feedback">
@@ -89,7 +89,7 @@
                     <!-- Mostrar errores debajo del campo de entrada -->
                     <div v-for="(error, index) in errors" :key="index" class="text-danger">{{ error }}</div>
                     <button type="submit" id="button-register-email-pwd" 
-                        class="btn btn-dark mt-3 align-self-center w-100 g-recaptcha"
+                        class="btn btn-dark mt-3 align-self-center w-100 g-recaptcha" tabindex="4"
                         data-sitekey="{{ site_key }}" data-callback='onLoginFormSubmit' data-action='submit'>
                             Continuar
                     </button>
@@ -98,7 +98,7 @@
                 <!-- Link hacia iniciar sesión -->
                 <div class="cuenta my-5 align-self-center ">
                     ¿Ya tienes una cuenta?
-                    <a href="{{url_for('login')}}" class="link-primary" style="font-size: inherit;">
+                    <a href="{{url_for('login')}}" class="link-primary" tabindex="5" style="font-size: inherit;">
                         Inicia sesión.
                     </a>
                 </div>
@@ -106,7 +106,9 @@
         </div>
     </div>
 
-
+    <!-- Dark mode script -->
+    <script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
+    
     <script>
         // ReCAPTCHA callback function to submit the form
         function onLoginFormSubmit(token) {

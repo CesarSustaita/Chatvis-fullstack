@@ -1,5 +1,5 @@
 {% block navbar %}
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container align-items-center py-1 py-md-0">
         <a class="navbar-brand" href="{{url_for('dashboard') if 'logged_in' in session else url_for('inicio') }}">
             <i class="fa-solid fa-comments"></i> Semantic ChatVis
@@ -7,17 +7,20 @@
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavMenu" aria-controls="collapsibleNavMenu" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavMenu">
             {% if 'logged_in' in session %}
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav ms-auto mt-lg-0">
 
                 {% if hideNavBarCargarArchivo is not defined %}
                 <!-- Cargar archivo -->
                 <li class="nav-item" id="navbar-btn-cargar-archivo">
                     <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{ url_for('dashboard') }}">
-                        <i class="fa-solid fa-upload"></i> Cargar chat
+                        <i class="fa-solid fa-upload"></i> 
+                        <div class="nav-label">
+                            Cargar chat
+                        </div>
                     </a>
                 </li>
                 {% endif %}
@@ -26,7 +29,10 @@
                 <!-- Análisis -->
                 <li class="nav-item" id="navbar-analisis">
                     <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('analisis')}}">
-                        <i class="fa-solid fa-chart-pie"></i> Análisis
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <div class="nav-label">
+                            Análisis
+                        </div>
                     </a>
                 </li>
                 {% endif %}
@@ -37,7 +43,10 @@
                 <li class="nav-item">
                     <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center"
                         href="{{url_for('admin_tabla')}}">
-                        <i class="fa-solid fa-user-group"></i> Usuarios
+                        <i class="fa-solid fa-user-group"></i>
+                        <div class="nav-label">
+                            Usuarios
+                        </div>
                     </a>
                 </li>
                 {% endif %}
@@ -47,21 +56,30 @@
                 <li class="nav-item">
                     <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" data-bs-toggle="modal"
                         data-bs-target="#modalInfo">
-                        <i class="fa-solid fa-circle-question"></i> Ayuda
+                        <i class="fa-solid fa-circle-question"></i>
+                        <div class="nav-label">
+                            Ayuda
+                        </div>
                     </a>
                 </li>
 
                 <!-- Username -->
                 <li class="nav-item">
                     <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center">
-                        <i class="fa-solid fa-user"></i> {{session['name']|default('Usuario')}}
+                        <i class="fa-solid fa-user"></i>
+                        <div class="nav-label">
+                            {{session['name']|default('Usuario')}}
+                        </div>
                     </a>
                 </li>
 
                 <!-- Cerrar sesión -->
                 <li class="nav-item">
                     <a id="logoutLink" class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('logout')}}">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <div class="nav-label">
+                            Cerrar sesión
+                        </div>
                     </a>
                 </li>
                 
@@ -70,12 +88,18 @@
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('register_mail')}}">
-                        <i class="fa-solid fa-user-plus"></i> Crear cuenta
+                        <i class="fa-solid fa-user-plus"></i>
+                        <div class="nav-label">
+                            Crear cuenta
+                        </div>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link d-flex flex-row gap-2 flex-md-column gap-md-0 align-items-center" href="{{url_for('login')}}">
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Iniciar Sesión
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <div class="nav-label">
+                            Iniciar sesión
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -106,7 +130,7 @@
                         </li>
                     </ul>
                     <li>Presiona el botón para subir un chat o arrastra tu conversación.</li>
-                    <li>El analizador ChatVis subirá tu chat, lo analizará, y mostrará el resultado.</li>
+                    <li>ChatVis cargará tu chat, lo analizará, y mostrará los resultados del análisis.</li>
                 </ol>
                 <div class="alert alert-warning text-center">
                     <p>
@@ -285,8 +309,11 @@
     </div>
 </div>
 
+<!-- Navbar Script -->
 <script>
-    
+    var navbarIsCollapsed = false;
+    var navbarTimeout;
+
     document.addEventListener('DOMContentLoaded', function () {
         if(sessionStorage.getItem('chat_file_content') === null) {
             document.getElementById('navbar-analisis').classList.add('d-none');
@@ -296,6 +323,51 @@
             sessionStorage.clear();
         });
     });
+
+    // Collapse navbar script
+    window.onscroll = function () {
+        clearTimeout(navbarTimeout);
+
+        navbarTimeout = setTimeout(function (){
+            if (window.scrollY > 50) {
+                collapseNavbar();
+            } else {
+                expandNavbar();
+            }
+        }, 50);
+    };
+
+    function collapseNavbar() {
+        document.querySelector('.navbar').classList.add('collapsed');
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.add('collapsed');
+            link.classList.remove('gap-md-0');
+        });
+        document.querySelectorAll('.nav-label').forEach(label => {
+            label.classList.add('collapsed');
+        });
+        navbarIsCollapsed = true;
+    }
+
+    function expandNavbar() {
+        document.querySelectorAll('.nav-label').forEach(label => {
+            label.classList.remove('collapsed');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('collapsed');
+            link.classList.add('gap-md-0');
+        });
+        document.querySelector('.navbar').classList.remove('collapsed');
+        navbarIsCollapsed = false;
+    }
+
+    function toggleNavbarCollapse() {
+        if (navbarIsCollapsed) {
+            expandNavbar();
+        } else {
+            collapseNavbar();
+        }
+    }
 </script>
 
 {% endif %}

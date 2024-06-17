@@ -25,7 +25,7 @@
     {% include "navbar.html" %}
     
     <!-- Formulario de carga de archivo (Oculto) -->
-    <input type="file" name="conversacion_exportada" id="chat_file_input" style="display: none;">
+    <input type="file" accept=".txt" name="conversacion_exportada" id="chat_file_input" style="display: none;">
     
     {% if admin == 1 %}
     <!-- Toggle Usuarios | Analizador -->
@@ -50,7 +50,7 @@
                         <img src="{{ url_for('static', filename='img/attach_file.svg') }}" alt="Clip" width="100" height="100" />
                     </div>
                     <h5 id="message" class="text text-center">
-                        Arrastra y suelta tu conversación con extensión ".txt".
+                        Arrastra y suelta el archivo de texto con tu conversación.
                     </h5>
                 </div>
                 <button id="selectFileButton" class="btn btn-dark mt-4 mb-2">
@@ -60,6 +60,9 @@
         </div>
     </div>
 </body>
+
+<!-- Dark mode script -->
+<script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
 
 <!-- Drag and Drop -->
 <script src="{{ url_for('static', filename='js/index-dragndrop.js') }}"></script>

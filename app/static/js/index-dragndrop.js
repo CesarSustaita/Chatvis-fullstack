@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else { // Si el archivo no es de tipo texto plano
                 document.getElementById('spinner').classList.add('d-none'); // Oculta el spinner
                 document.getElementById('fileIcon').classList.remove('d-none'); // Muestra el ícono de archivo
-                document.getElementById('message').innerText = 'Arrastra y suelta tu conversación con extensión ".txt".';
+                document.getElementById('message').innerText = 'Arrastra un archivo de tipo texto (.txt).';
                 // swal("Error", "El archivo debe ser de tipo .txt", "error");
                 showToastError('El archivo debe ser de tipo texto'); // Cambiado a Toast de error para consistencia
             }

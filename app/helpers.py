@@ -225,6 +225,7 @@ def register_data_is_complete(data: dict) -> tuple:
         "password",
         "nombre",
         "apellido_paterno",
+        "pais",
         "estado",
         "ciudad",
         "terminos",

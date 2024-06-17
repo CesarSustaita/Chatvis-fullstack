@@ -101,7 +101,7 @@
                                         <td class="text-center">{{ user.count_analisis }}</td>
                                         <td class="text-center">
                                             {% if user.admin == 0 %}
-                                            <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                            <button type="button" class="btn btn-outline-danger icon-btn btn-sm" data-bs-toggle="modal"
                                                 data-bs-target="#modalDeleteUserConfirmation"
                                                 data-name="{{ user.nombre + ' ' + user.apellido_paterno + ' ' + user.apellido_materno }}"
                                                 data-email="{{ user.email }}">
@@ -137,7 +137,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalDeleteUserConfirmationTitle">
-                        Eliminar usuario
+                        ¿Eliminar cuenta de usuario?
                     </h5>
                     <button
                         type="button"
@@ -146,36 +146,37 @@
                         aria-label="Close"
                     ></button>
                 </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <p>Confirma que deseas eliminar este usuario.</p>
-                        <br>
-                        <p>Nombre: <span id="modalDeleteUserName" class="fw-bold">Nombre de usuario</span></p>
-                        <p>Email: <span id="modalDeleteUserEmail" class="fw-bold">Email de usuario</span></p>
-                        <br>
-                        <p>Esta acción no se puede deshacer.</p>
+                <div class="modal-body px-3 py-3 py-lg-4 text-center">
+                    <div class="text-center">
+                        <p class="inline-big-icon-text text-danger">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </p>
                     </div>
+                    <p class="text-danger fw-bold">Esta cuenta se eliminará permanentemente.</p>
+                    <br>
+                    <p><span><i class="fa-solid fa-user-large me-1"></i></span> <span id="modalDeleteUserName" class="fw-bold">Nombre de usuario</span></p>
+                    <p><span><i class="fa-solid fa-envelope me-1"></i></span> <span id="modalDeleteUserEmail" class="fw-bold">Email de usuario</span></p>
+                    <br>
                 </div>
-                <div class="modal-footer">
-                    <button
-                        type="button"
-                        class="btn btn-dark"
-                        data-bs-dismiss="modal"
-                    >
-                        Cancelar
-                    </button>
+                <div class="modal-footer justify-content-between">
                     <form action="{{ url_for('admin_delete_user') }}" method="POST">
                         <input id="modalDeleteUserFormInput" type="hidden" name="email" value="sdfsdfs">
                         <button type="submit" class="btn btn-danger">
                             <i class="fa-solid fa-trash"></i>
-                            Eliminar usuario
+                            Eliminar cuenta
                         </button>
                     </form>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+<!-- Dark mode script -->
+<script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
 
 <!-- Custom script -->
 <script src="{{ url_for('static', filename='js/admin_tabla_usuarios.js') }}"></script>

@@ -52,68 +52,88 @@
         <div class="row my-1 my-sm-2 my-sm-3">
             <div class="col-12 d-flex flex-row align-items-center gap-3 justify-content-between">
                 <div class="d-flex flex-row align-items-baseline gap-3 gap-md-4 gap-lg-5">
-                    <h3 class="mb-1" id="chat-title">Análisis de la conversación</h3>
+                    <h3 class="mb-1" id="chat-title" title="Nombre del chat">Análisis de la conversación</h3>
                     <!-- Contador de integrantes del chat -->
-                    <p class="m-0 text-center">
+                    <p class="m-0 text-center" id="members-button" title="Integrantes del chat"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalMembersList"
+                    onclick="populateMembersTable();">
                         <i class="fa-solid fa-users"></i>
                         <span id="chat-members-count">...</span>
                     </p>
                     <!-- Contador de mensajes del chat -->
-                    <p class="m-0 text-center">
+                    <p class="m-0 text-center" id="chat-messages-count-container" title="Mensajes en el chat">
                         <i class="fa-regular fa-comments"></i> 
                         <span id="chat-messages-count">...</span>
                     </p>
                 </div>
-                <!-- Borrar chat button -->
-                <button id="delete-chat" class="btn btn-outline-secondary btn-md my-2"
-                data-bs-toggle="modal"
-                data-bs-target="#modalDeleteChat">
-                    <i class="fas fa-trash-alt"></i>
-                </button>
+                <div class="d-flex flex-row align-items-baseline gap-1 gap-md-3 gap-lg-3">
+                    <!-- Restart button -->
+                    <button id="restart-button" class="btn btn-outline-secondary icon-btn btn-md my-2"
+                    title="Reiniciar el análisis"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalRestartAnalysis">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </button>
+                    <!-- Borrar chat button -->
+                    <button id="delete-chat" class="btn btn-outline-secondary icon-btn btn-md my-2"
+                    title="Eliminar el chat y el análisis"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteChat">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    
+                </div>
             </div>
         </div>
 
         <!-- Cartas con gráficas -->
         <div class="row align-content-center">
 
-            <!-- Chord diagran -->
+            <!-- Chord diagram -->
             <div class="col-12 col-md-6 my-3">
-                <div id="chord-card" class="card h-50vhi">
+                <div id="chord-card" class="card h-60vhi">
                     <div id="chord-card-header" class="card-header">
                         <div class="d-flex flex-row justify-content-between align-items-center">
                             <strong class="card-title m-0">Diagrama de cuerdas</strong>
-                            <button class="btn btn-sm btn-close d-block d-md-none" id="buttonCloseChord"
-                            data-bs-toggle="collapse"
-                            href="#chord-chart-container"
-                            aria-expanded="true"
-                            aria-controls="chord-chart-container"></button>
+                            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                
+                                <button class="btn btn-sm btn-close icon-btn d-block d-md-none" id="buttonCloseChord"
+                                data-bs-toggle="collapse"
+                                href="#chord-card-body"
+                                aria-expanded="true"
+                                aria-controls="chord-card-body"></button>
+                            </div>
                         </div>
                     </div>
 
-                    <div id="chord-chart-container" class="card-body p-0 collapse show">
-                        <!-- Aquí se insertará el svg del diagrama de relaciones -->
+                    <div id="chord-card-body" class="card-body p-0 collapse show">
+                        <div id="chord-chart-container" class="hideable-quick hideable-show">
+                            <!-- Aquí se insertará el svg del diagrama de relaciones -->
+                        </div>
+                        <button class="btn btn-sm btn-outline-secondary icon-btn" id="buttonDownloadChord" onclick="downloadChordSVG();">
+                            <i class="fas fa-download"></i>
+                        </button>
                     </div>
-
                 </div>
                 
             </div>
 
             <!-- Chat -->
             <div class="col-12 col-md-6 my-3">
-                <div id="chat-card" class="card h-50vhi">
+                <div id="chat-card" class="card h-60vhi">
                     <div class="card-header">
                         <div class="d-flex flex-row justify-content-between align-items-center">
                             <strong class="card-title m-0">Conversación</strong>
-                            <button class="btn btn-sm btn-close d-block d-md-none" id="buttonCloseChat" 
+                            <button class="btn btn-sm btn-close icon-btn d-block d-md-none" id="buttonCloseChat" 
                             data-bs-toggle="collapse"
                             href="#chat-container"
                             aria-expanded="true" 
                             aria-controls="chat-container"></button>
                         </div>
                     </div>
-                    <div id="chat-container" class="card-body p-0 collapse show"
-                    style='background-image: url("{{ url_for('static', filename='img/background.jpg' ) }}");'>
-                        <div title="Messages" id="chat" class="mh-100">
+                    <div id="chat-container" class="card-body p-0 collapse show">
+                        <div title="Messages" id="chat" class="mh-100 py-2 px-3 hideable-quick hideable-show">
                             <!-- Aquí se llenará con los mensajes -->
                         </div>
                     </div>
@@ -127,16 +147,18 @@
                     <div class="card-header">
                         <div class="d-flex flex-row justify-content-between align-items-center">
                             <strong class="card-title m-0">Análisis semántico</strong>
-                            <button class="btn btn-sm btn-close d-block d-md-none" id="buttonCloseHistogram"
+                            <button class="btn btn-sm btn-close icon-btn d-block d-md-none" id="buttonCloseHistogram"
                             data-bs-toggle="collapse"
                             href="#histogram-chart-container"
                             aria-expanded="true"
                             aria-controls="histogram-chart-container"></button>
                         </div>
                     </div>
-                    <div id="histogram-chart-container" class="card-body collapse show">
-                        <!-- Aquí se insertará el canvas del histograma -->
-                        <canvas id="histogram-canvas" class="d-none"></canvas>
+                    <div id="histogram-chart-container" class="card-body collapse show hideable-quick hideable-show">
+                        <div id="canvas-container" class="" style="position: relative; width: 100%; height: 60vh;">
+                            <!-- Aquí se insertará el canvas del histograma -->
+                            <canvas id="histogram-canvas" class="d-none"></canvas>
+                        </div>
                         <div id="histogram-progress-bar" class="progress w-100">
                             <div
                                 class="progress-bar progress-bar-striped progress-bar-animated w-100"
@@ -162,7 +184,7 @@
         </div>
     </div>
     
-    <!-- Modal -->
+    <!-- Modal Eliminar Chat -->
     <div
         class="modal fade"
         id="modalDeleteChat"
@@ -178,7 +200,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalDeleteChatTitleID">
-                        Eliminar chat
+                        ¿Eliminar chat y análisis?
                     </h5>
                     <button
                         type="button"
@@ -187,11 +209,15 @@
                         aria-label="Close"
                     ></button>
                 </div>
-                <div class="modal-body py-3 py-lg-4">
-                    <p class=""><b>¿Deseas eliminar este chat y su análisis?</b></p>
-                    <p> Los archivos de chat se almacenan temporalmente solo en tu navegador. Con esta opción puedes eliminarlos de inmediato. </p>
+                <div class="modal-body px-3 py-3 py-lg-4 text-center">
+                    <p class="inline-big-icon-text"> <i class="fa-solid fa-circle-info"></i> </p>
+                    <p>Los archivos de chat se almacenan temporalmente solo en tu navegador.</p>
+                    <p>Con esta opción puedes eliminarlos de inmediato.</p>
                 </div>
                 <div class="modal-footer">
+                    <button id="button-confirm-delete-chat" type="button" class="btn btn-danger">
+                        <i class="fas fa-trash-alt"></i> Eliminar
+                    </button>
                     <button
                         type="button"
                         class="btn btn-dark"
@@ -199,16 +225,76 @@
                     >
                         Cancelar
                     </button>
-                    <button id="button-confirm-delete-chat" type="button" class="btn btn-danger">
-                        <i class="fas fa-trash-alt"></i> Eliminar
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Reiniciar análisis -->
+    <div class="modal fade" id="modalRestartAnalysis" tabindex="-1" role="dialog" aria-labelledby="modalRestartAnalysisTitleID"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRestartAnalysisTitleID">
+                        ¿Reiniciar el análisis?
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-3 py-lg-4 text-center">
+                    <p class="text-warning inline-big-icon-text"><i class="fa-solid fa-triangle-exclamation"></i></p> 
+                    <p> 
+                        El progreso actual se perderá.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button id="button-confirm-restart-analysis" type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-arrow-rotate-right"></i> Reiniciar análisis
+                    </button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                        Cancelar
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- Modal Lista de integrantes -->
+    <div class="modal fade" id="modalMembersList" tabindex="-1" role="dialog"
+        aria-labelledby="modalMembersListTitleID" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-scrollable modal-md modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMembersListTitleID">
+                        Integrantes de la conversación
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-3 p-lg-4">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped table-bordered m-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col" title="Color" class="text-center"><i class="fa-solid fa-palette"></i></th>
+                                    <th scope="col" title="Nombre del integrante"><i class="fa-solid fa-user"></i> Nombre del integrante</th>
+                                    <th scope="col" title="Número de mensajes" class="text-center"># <i class="fa-regular fa-comments"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody id="membersTableBody">
+                                <!-- Aquí se llenará con los integrantes -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
 
+
+<!-- Dark mode script -->
+<script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
 
 <!-- * jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -229,16 +315,26 @@
     
 <!-- Otros -->
 <script src="{{ url_for('static', filename='js/d3.layout.chord.sort.js') }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<!-- Chart.js -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+    integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"
+    integrity="sha512-7DgGWBKHddtgZ9Cgu8aGfJXvgcVv4SWSESomRtghob4k4orCBUTSRQ4s5SaC2Rz+OptMqNk0aHHsaUBk6fzIXw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 
 <!-- * D3: https://github.com/d3/d3 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/d3@7"></script> -->
 
 <!-- JavaScript de analisis -->
 <script src="{{ url_for('static', filename='js/analisis.js') }}"></script>
 
 <!-- JavaScript de chordDiagram -->
-<script src="{{ url_for('static', filename='js/chordDiagram.js') }}"></script>
+<script src="{{ url_for('static', filename='js/chordDiagramd3v3.js') }}"></script>
 
 
 <!-- Toasts block -->
